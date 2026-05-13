@@ -47,6 +47,18 @@
 % \maketitle
 % \section{Documentation}
 %
+% \subsection{Commands for landscape pages}
+% 
+% \begin{function}{\startlandscape,\finishlandscape}
+% \begin{syntax}
+% \cs{startlandscape}\\
+% \cs{finishlandscape}
+% \end{syntax}
+% These commands issue a \cs{clearpage} and switch the geometry from portrait to 
+% landscape and back again.
+% \end{function}
+% 
+% 
 % \section{Implementation}
 % \subsection{Declaration}
 %    \begin{macrocode}
@@ -1565,24 +1577,30 @@
     }
 } % Footer into the margin
 
-%%%% Commands for landscape page
+%    \end{macrocode}
+%
+% Commands for landscape page: 
+% \begin{macro}{\startlandscape,\finishlandscape}
+%    \begin{macrocode}
 \newcommand{\startlandscape}{%
 \isPreprints{%
 	\clearpage
-	\paperwidth=\pdfpageheight
-	\paperheight=\pdfpagewidth
-	\pdfpageheight=\paperheight
-	\pdfpagewidth=\paperwidth
-	\newgeometry{layoutwidth=297mm, layoutheight=210 mm, left=1.27cm, right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
+    \@tempskipa=\paperwidth
+	\paperwidth=\paperheight
+	\paperheight=\@tempskipa
+    \UseName{pdf_pagesize_gset:nn}{\paperwidth}{\paperheight}%
+	\newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm, 
+                 right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
 	\fancyheadoffset{0pt}
 	\captionsetup{margin={0cm,0cm}}
       }{%
 	\clearpage
-	\paperwidth=\pdfpageheight
-	\paperheight=\pdfpagewidth
-	\pdfpageheight=\paperheight
-	\pdfpagewidth=\paperwidth
-	\newgeometry{layoutwidth=297mm, layoutheight=210 mm, left=1.27cm, right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
+	\@tempskipa=\paperwidth
+	\paperwidth=\paperheight
+	\paperheight=\@tempskipa
+	\UseName{pdf_pagesize_gset:nn}{\paperwidth}{\paperheight}%
+	\newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm, 
+                 right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
 	\fancyheadoffset{0pt}
 	\captionsetup{margin={4.6cm,0cm}}
 	}
@@ -1590,15 +1608,18 @@
 
 \newcommand{\finishlandscape}{%
 	\clearpage 
-	\paperwidth=\pdfpageheight
-	\paperheight=\pdfpagewidth
-	\pdfpageheight=\paperheight
-	\pdfpagewidth=\paperwidth
+	\@tempskipa=\paperwidth
+	\paperwidth=\paperheight
+	\paperheight=\@tempskipa
+	\UseName{pdf_pagesize_gset:nn}{\paperwidth}{\paperheight}%
 	\restoregeometry
 	\fancyheadoffset[L]{\extralength}
 	\captionsetup{margin={0cm,0cm}}
 }
-
+%    \end{macrocode}
+% \end{macro}
+% 
+%    \begin{macrocode}
 %%%% Figures and tables
 \RequirePackage{newfloat}
 \DeclareFloatingEnvironment[]{listing}
