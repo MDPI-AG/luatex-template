@@ -24,7 +24,7 @@
 
 %% IDENTIFICATION
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{Definitions/mdpi}[14/04/2026 MDPI paper class]
+\ProvidesClass{mdpi-pdftex}[13/05/2026 MDPI paper class]
 
  %% PRELIMINARY DECLARATIONS
 \LoadClass[10pt,a4paper]{article}
@@ -78,7 +78,7 @@
 
 %% To choose the journal
 % All journals (website name, full name, short name, DOI abbreviation, and ISSN + choice of continuous page numbers) are defined in an extra file. 
-\input{Definitions/journalnames}
+\input{journalnames}
 \DeclareOption{journal}{\ClassWarning{mdpi}{You used an invalid journal name or you have not specified the journal. The first option of the documentclass command specifies the journal. The word 'journal' should be replaced by one of the journal names specified in template.tex (in the comment 'Choose between the following MDPI journal').}} 
 
 %% To choose the type of manuscript
@@ -366,7 +366,7 @@
 
 %%%% References
 \isAPAStyle{%
-\RequirePackage[natbibapa]{Definitions/mdpi_apacite} % Only used for APA style journals
+\RequirePackage[natbibapa]{mdpi_apacite} % Only used for APA style journals
           }{%
           \RequirePackage[sort&compress,sectionbib]{natbib}
 } % Option sectionbib is for optionally organizing references using sections (author request)
@@ -402,13 +402,13 @@
   \fi}
 
 \isAPAStyle{%
-      \bibliographystyle{Definitions/mdpi_apacite}
+      \bibliographystyle{mdpi_apacite}
           }{%
               \isChicagoStyle{%
-	        \bibliographystyle{Definitions/mdpi_chicago}
+	        \bibliographystyle{mdpi_chicago}
 	        \bibpunct{(}{)}{;}{x}{}{,}%
 	        }{%
-	            \bibliographystyle{Definitions/mdpi}
+	            \bibliographystyle{mdpi}
 	            \bibpunct{[}{]}{,}{n}{}{,}%
        }%
 }
@@ -728,7 +728,7 @@
 
 %% ORCID
 % Make Orcid icon
-\newcommand{\orcidicon}{\includegraphics[width=0.32cm]{Definitions/logo-orcid.pdf}}
+\newcommand{\orcidicon}{\includegraphics[width=0.32cm]{logo-orcid.pdf}}
 
 % Define link and button for each author
 \foreach \x in {A, ..., Z}{%
@@ -841,27 +841,27 @@
 				\ifthenelse{\equal{\@status}{submit}}{%	
 				\vspace{5pt}%
 					\hfill \href{https://www.mdpi.com}{%
-					\includegraphics[height=1cm]{Definitions/logo-mdpi.eps}}%
+					\includegraphics[height=1cm]{logo-mdpi}}%
 					}{
 					\href{https://www.mdpi.com/journal/\@journal}{
-					\includegraphics[height=1.2cm]{Definitions/\@journal-logo.eps}}%
+					\includegraphics[height=1.2cm]{\@journal-logo}}%
 					\hfill
 					\ifthenelse{\equal{\@IsAssociation}{\@empty} \OR \isundefined{\@IsAssociation}}{%
 					\ifthenelse{\equal{\@journal}{ijom}}{%
-						\href{https://www.mdpi.com}{\includegraphics[height=1cm]{Definitions/logo-mdpi-ijom.eps}}
+						\href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-ijom}}
 						}{
 					\ifthenelse{\equal{\@journal}{siuj}}{%
-						\href{https://www.mdpi.com}{\includegraphics[height=1cm]{Definitions/logo-mdpi-siuj.eps}}
+						\href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-siuj}}
 						}{
 						\ifthenelse{\equal{\@journal}{scipharm}}{%
-							\href{https://www.mdpi.com}{\includegraphics[height=1cm]{Definitions/logo-mdpi-scipharm.eps}}%
+							\href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}%
 						}{%
-							\href{https://www.mdpi.com}{\includegraphics[height=1cm]{Definitions/logo-mdpi.eps}}%
+							\href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi}}%
 							}			
 				                 }%				
 				            }%				
 				        }{	
-				\href{https://www.mdpi.com}{\includegraphics[height=1cm]{Definitions/logo-mdpi-\@journal.eps}}%	
+				\href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%	
 				      }%		
 			      }%	
 				\par
@@ -943,7 +943,7 @@
 	\leftcolFont
 	\ifthenelse{\equal{\@status}{submit}}{
 		}{%
-		\href{https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\twodigits{\the\month}-\twodigits{\the\day}}{\includegraphics[height=.6cm]{Definitions/logo-updates.eps}}
+		\href{https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\twodigits{\the\month}-\twodigits{\the\day}}{\includegraphics[height=.6cm]{logo-updates}}
 	\vspace{-18pt}\\
 		}%
 }

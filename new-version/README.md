@@ -4,9 +4,10 @@ This folder contains the development code for the new class.
 
 * The code of the new class is mdpi-luatex.dtx
 * mdpi_apacite.sty will need updates too once tagging is activated 
-* The support folder contains logo files and the original `mdpi.cls` and the original `.bst` files. These files should not be changed.  
+* mdpi-pdftex.cls is an adapted copy of the old class, it is loaded if lualatex is not used. 
+* The support folder contains logo files and the original `.bst` files. These files should not be changed.  
 
-To ease development references to the folder `Definitions/` habe been removed from the class and the template. 
+To ease development references to the folder `Definitions/` has been removed from the old and new class and from the template. 
 
 ## Installation 
 

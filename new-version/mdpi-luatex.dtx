@@ -54,7 +54,16 @@
 %% IDENTIFICATION
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mdpi-luatex}[\mdpidate\ \mdpiversion\ MDPI paper class for lualatex]
-
+\@ifundefined{directlua}
+ {
+  \ClassWarning{mdpi-luatex}{This class requires lualatex, loading the class 
+  mpdi-pdftex instead}
+  \LoadClassWithOptions{mdpi-pdftex}
+ }
+ {}
+\@ifundefined{directlua}
+ {\endinput}
+ {}
  %% PRELIMINARY DECLARATIONS
 \LoadClass[10pt,a4paper]{article}
 

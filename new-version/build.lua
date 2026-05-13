@@ -36,7 +36,7 @@ sourcefiles = {
                 "*.dtx", 
                 "*.ins",
                 "*.sty",
-                "support/mdpi.cls",
+                "mdpi-pdftex.cls",
                 "support/*.pdf",               
                 "support/*.bst",
                 "support/journalnames.tex"
