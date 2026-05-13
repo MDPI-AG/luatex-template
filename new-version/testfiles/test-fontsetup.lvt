@@ -1,0 +1,27 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\input{regression-test}
+
+\documentclass{mdpi-luatex}
+
+\begin{document}
+\START\showoutput
+
+Normalfont 
+
+12345789 
+
+\textit{italic} \textbf{bold} \textit{\textbf{bolditalic}}
+
+\sffamily Sans serif font 
+
+12345789 
+
+\textit{italic} \textbf{bold} \textit{\textbf{bolditalic}}
+
+\ttfamily typewriter font
+
+12345789 
+
+\textit{italic} \textbf{bold} \textit{\textbf{bolditalic}}
+
+\end{document}

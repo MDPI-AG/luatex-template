@@ -6,3 +6,4 @@
 *.pdf
 *.synctex.gz
 *.html
+new-version/build/*

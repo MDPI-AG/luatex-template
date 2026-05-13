@@ -1,0 +1,59 @@
+\iffalse meta-comment
+
+File: mdpi-luatex.ins
+
+It may be distributed and/or modified under the conditions of the
+LaTeX Project Public License (LPPL), either version 1.3c of this
+license or (at your option) any later version.  The latest version
+of this license is in the file
+
+   https://www.latex-project.org/lppl.txt
+
+This file is part of the "mdpi bundle" (The Work in LPPL)
+and all files in that bundle must be distributed together.
+
+-----------------------------------------------------------------------
+
+The development version of the bundle can be found at
+
+   https://github.com/MDPI-AG/luatex-template/
+
+for those people who are interested.
+
+-----------------------------------------------------------------------
+
+\fi
+
+\input l3docstrip.tex
+\askforoverwritefalse
+
+\let\MetaPrefix\relax
+\preamble
+
+
+It may be distributed and/or modified under the conditions of
+the LaTeX Project Public License (LPPL), either version 1.3c of
+this license or (at your option) any later version.  The latest
+version of this license is in the file:
+
+   https://www.latex-project.org/lppl.txt
+
+This file is part of the "mdpi bundle" (The Work in LPPL)
+and all files in that bundle must be distributed together.
+
+\endpreamble
+\let\MetaPrefix\DoubleperCent
+% stop docstrip adding \endinput
+\postamble
+\endpostamble
+
+\keepsilent
+
+\generate
+  {\file{mdpi-luatex.cls}
+      {
+        \from{mdpi-luatex.dtx}{class}
+      }
+  }
+
+\endbatchfile
