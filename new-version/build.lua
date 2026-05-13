@@ -19,8 +19,9 @@ stdengine ="luatex"
 docfiledir = "./doc"
 
 typesetexe = "lualatex-dev"
-
 typesetfiles = {"*.dtx","template-*.tex"} 
+
+function docinit_hook() return cp("mdpi-luatex.cls", unpackdir, typesetdir) end
 
 installfiles = {
                 "**/*.sty",
@@ -36,7 +37,7 @@ sourcefiles = {
                 "*.dtx", 
                 "*.ins",
                 "*.sty",
-                "mdpi-pdftex.cls",
+                "mdpi-pdftex.cls",               
                 "support/*.pdf",               
                 "support/*.bst",
                 "support/journalnames.tex"
