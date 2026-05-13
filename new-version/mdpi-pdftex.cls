@@ -1257,6 +1257,7 @@
 } % For Monograph, remove front part
 
 %%%% Print maketitle and abstractkeywords
+\AddToHook{begindocument/end}{\calculateMyLen}
 \ifthenelse{\equal{\@arttype}{Supfile}}{
 	\AfterEndPreamble{
 		\maketitle
@@ -1274,13 +1275,11 @@
 	}%
 }
 	
-\AtBeginDocument{
-	\calculateMyLen
+\AtBeginDocument{	
 	\DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
 	\DeclareSymbolFontAlphabet{\mathbb}{AMSb}
 	\cleverefDefinitions
       %%%% URL
-      \RequirePackage{url}
       \urlstyle{same}
      % Line breaks in URL
      \def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
