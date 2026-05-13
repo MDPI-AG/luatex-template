@@ -15,7 +15,7 @@
 %% Updated on December 17, 2024
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{mdpi_apacite}
+\ProvidesPackage{mdpi_apacite}[2026-05-14 v6.03a apacite adapted for mdpi]
 
 %% apacite.sty : citation and reference list according to APA manual
 %% Written by Erik Meijer
@@ -977,7 +977,9 @@
     \def\NAT@year{#1#2}\def\NAT@exlab{{#3}}}
 \DeclareRobustCommand{\BBA}{\BBA@nat}
 \let\orig@nat@@lbibitem\@lbibitem
-\def\@lbibitem{\NAT@swatrue\orig@nat@@lbibitem}
+% 2026-05-14: add arguments for compatibility with tagging code which 
+% uses a cmd-hook with arguments
+\def\@lbibitem[#1]#2{\NAT@swatrue\orig@nat@@@@lbibitem[#1]#2}
 \renewcommand\citetext[1]{\NAT@open\begingroup\NAT@swatrue
   #1\endgroup\NAT@close}
 \DeclareRobustCommand\citeauthort{\citeauthor}
