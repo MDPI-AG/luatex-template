@@ -111,7 +111,7 @@
 \RequirePackage{array} % For table array
 \RequirePackage{tabularx}
 \RequirePackage{pbox} % For biography environment
-\RequirePackage{ragged2e} % For command \justifying
+\IfDocumentMetadataF{\RequirePackage{ragged2e}} % For command \justifying
 \RequirePackage[subfigure]{tocloft} % For dots in TOC. If subfigure package is loaded, the subfigure option needs to be added here to avoid clash: \RequirePackage[subfigure]{tocloft}
 \RequirePackage{marginnote} % For left column
 \reversemarginpar % To have the left column on the left side
@@ -243,17 +243,22 @@
 {}% theorem head spec (can be left empty, meaning `normal')
 
 %\renewcommand{\qed}{\unskip\nobreak\quad\qedsymbol} %% This places the symbol right after the text instead of placing it at the end on the line.
-
-\renewenvironment{proof}[1][\proofname]{\par %% \proofname allows to have "Proof of my theorem"
-  \pushQED{\qed}%
-  \normalfont \topsep6\p@\@plus6\p@\relax
-  \trivlist
-  \item[\hskip\labelsep
-        \bfseries %% "Proof" is bold
-    #1\@addpunct{.}]\ignorespaces %% Period instead of colon
-}{%
-  \popQED\endtrivlist\@endpefalse
-}
+\IfDocumentMetadataTF
+ {
+   \EditInstance{captionedtext}{proof}{caption-decls = \bfseries}
+ }
+ {
+    \renewenvironment{proof}[1][\proofname]{\par %% \proofname allows to have "Proof of my theorem"
+      \pushQED{\qed}%
+      \normalfont \topsep6\p@\@plus6\p@\relax
+      \trivlist
+      \item[\hskip\labelsep
+            \bfseries %% "Proof" is bold
+        #1\@addpunct{.}]\ignorespaces %% Period instead of colon
+    }{%
+      \popQED\endtrivlist\@endpefalse
+    }
+ }
 
  \theoremstyle{mdpi}
  \newcounter{theorem}
@@ -1678,8 +1683,9 @@
 %    \end{macrocode}
 % \end{macro}
 % 
+% \subsection{Figures and tables}
+% New floating environments:
 %    \begin{macrocode}
-%%%% Figures and tables
 \RequirePackage{newfloat}
 \DeclareFloatingEnvironment[]{listing}
 \DeclareFloatingEnvironment[name=Box]{boxenv}	
@@ -1687,7 +1693,26 @@
 \DeclareFloatingEnvironment[]{scheme}
 \DeclareFloatingEnvironment[]{figurewide}
 \DeclareFloatingEnvironment[]{graph}
-
+%    \end{macrocode}
+%
+% Setup the tagging code. This will error if \pkg{newfloat}
+% does the tagging setup too!
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \tagpdfsetup
+     {
+       float/new=listing,
+       float/new=boxenv,
+       float/new=chart,
+       float/new=scheme,
+       float/new=figurewide,
+       float/new=graph,
+     }
+ }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \RequirePackage{caption}
 \isPreprints{%
 \captionsetup[figure]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
@@ -1730,10 +1755,24 @@
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X} % centered text in R columns
 
 %%%%% Bullet lists
-\setlist[itemize]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
-\setlist[enumerate]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
+%    \end{macrocode}
+% \subsection{List settings}
+% The tagging code doesn't support yet the star-value for \texttt{leftmargin} and
+% the value \texttt{parleft} for align, so we have to change that:
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+ {
+  \setlist[itemize]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=20.5pt,labelsep=5.5mm,align=left}
+  \setlist[enumerate]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=20.5pt,labelsep=5.5mm,align=left}
+ }
+ {
+  \setlist[itemize]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
+  \setlist[enumerate]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
+ } 
 \setlist[description]{itemsep=0mm}
+%    \end{macrocode}
 
+%    \begin{macrocode}
 %%%% Quote environment
 \renewenvironment{quote}{
 	\list{}{
@@ -1869,6 +1908,11 @@
 %%%% Bibliography
 \renewcommand\bibname{References} % Backwards compatibility for book production
 \renewcommand\@biblabel[1]{#1.\hfill}
+%    \end{macrocode}
+% TODO: errors with tagging, needs adjustment.
+%    \begin{macrocode}
+\IfDocumentMetadataF
+{
 \def\thebibliography#1{
 \emergencystretch 2em
 \titleformat {\section} [block] {\raggedright \fontsize{12}{12}\selectfont\bfseries} {} {0pt} {}
@@ -1895,7 +1939,7 @@
 \usecounter{enumi}}
 }
 \let\endthebibliography=\endlist
-
+}
 %%%% Publisher's note
 \newcommand{\PublishersNote}{
 \null\par\noindent\fontsize{9}{11}\selectfont\textbf{Disclaimer/Publisher's Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
