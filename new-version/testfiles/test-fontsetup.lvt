@@ -32,4 +32,7 @@ Normalfont
 
 \textit{italic} \textbf{bold} \textit{\textbf{bolditalic}}
 
+\vfill 
+
+\normalfont xx\llap{\rule{10cm}{1pt}}xyxxxxxxxxxxxxxxxxxx
 \end{document} 

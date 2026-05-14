@@ -974,128 +974,187 @@
 	}
 }
 
-%%% Left column on first page (= "left column" = "leftcol")
-
-% Definite font size for the narrow column
-\newcommand{\leftcolFont}{%
-	\linespread{1.71} 
+%    \end{macrocode}
+% \subsection[label=sec:leftcolumn]{Left Column}
+% Left column on first page (= \enquote{left column} = \enquote{leftcol})
+% 
+% A command for the font setup in this column:
+% \begin{macro}{\leftcolFont}
+%    \begin{macrocode}
+\newcommand{\leftcolFont}
+ {%
+	\linespread{1.71}% 
 	\fontsize{7}{7}\selectfont
 	\justifying
+    \parindent=0pt
+    \parskip=2pt
 	\hyphenpenalty=10000
 	\tolerance=1000
-}
-
-% Split content into six parts
-
-% Part 1: Update logo
-\newcommand{\leftcolumnUpdatelogo}{
-	\leftcolFont
-	\ifthenelse{\equal{\@status}{submit}}{
-		}{%
-		\href{https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\twodigits{\the\month}-\twodigits{\the\day}}{\includegraphics[height=.6cm]{logo-updates}}
-	\vspace{-18pt}\\
-		}%
-}
-
-%% Part 2: Academic editor(s)
-\newcommand{\leftcolExternalEditor}{
-	\ifthenelse{\equal{\@externaleditor}{\@empty}}{%
-		}{%
-		\leftcolFont
-		\raggedright            
-            \IfSubStr{\@externaleditor}{ and }{Academic Editors: \@externaleditor}{{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}
-            %\@externaleditor % For urgent situation, you can release this command and comment out line 953
-	      \vspace{-4pt}	
+ }
+%    \end{macrocode}
+% \end{macro}
+%
+% The contents is split into six parts.
+% 
+% \subsubsection{Part 1: Update the logo}% 
+% \begin{macro}{\leftcolumnUpdatelogo}
+%    \begin{macrocode}
+\newcommand{\leftcolumnUpdatelogo}
+ {%
+	\ifthenelse{\equal{\@status}{submit}}
+     {}
+     {%
+		\href
+          {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\twodigits{\the\month}-\twodigits{\the\day}}
+          {\includegraphics[height=.6cm,actualtext=Check for updates]{logo-updates}}%
+	 }%
+ }
+%    \end{macrocode}
+% \end{macro}
+% 
+% \subsubsection{Part 2: Academic editor(s)}
+% \begin{macro}{\leftcolExternalEditor}
+%    \begin{macrocode}
+\newcommand{\leftcolExternalEditor}
+  {%
+	\ifthenelse{\equal{\@externaleditor}{\@empty}}
+     {}
+     {%
+      \IfSubStr{\@externaleditor}{ and }
+         {Academic Editors: \@externaleditor}
+         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}%
+         %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before	     
+	 }%
+  }
+%    \end{macrocode}
+% \end{macro}
+% \subsubsection{Part 3: Dates}
+% \begin{macro}{\leftcolDates}
+%    \begin{macrocode}
+\newcommand{\leftcolDates}
+ {%
+   \isPreprints
+    {}
+    {%
+      \ifthenelse
+       {
+        \equal{\@journal}{proceedings}
+    	\OR \equal{\@journal}{chemproc}
+    	\OR \equal{\@journal}{engproc}
+    	\OR \equal{\@journal}{eesp}
+    	\OR \equal{\@journal}{materproc}
+    	\OR \equal{\@journal}{blsf}
+    	\OR \equal{\@journal}{msf}
+    	\OR \equal{\@journal}{psf}
+    	\OR \equal{\@journal}{csmf}
+       }
+       {Published: \@datepublished}
+       {%
+    	 Received: \@datereceived\\
+    	 \ifthenelse{\equal{\@daterevised}{\@empty}}
+          {}{Revised: \@daterevised\\}
+    	 Accepted: \@dateaccepted\\
+    	 Published: \@datepublished
+    	 \ifthenelse{\equal{\@datecorrected}{\@empty}}
+          {}{\\ Corrected: \@datecorrected}
+    	 \ifthenelse{\equal{\@dateretracted}{\@empty}}
+          {}{\\ Retracted: \@dateretracted}
+       }
 	}
-}
-
-% Part 3: Dates
-\newcommand{\leftcolDates}{
-\isPreprints{%
-	}{%
-	\leftcolFont
-	\ifthenelse{\equal{\@journal}{proceedings}
-		\OR \equal{\@journal}{chemproc}
-		\OR \equal{\@journal}{engproc}
-		\OR \equal{\@journal}{eesp}
-		\OR \equal{\@journal}{materproc}
-		\OR \equal{\@journal}{blsf}
-		\OR \equal{\@journal}{msf}
-		\OR \equal{\@journal}{psf}
-		\OR \equal{\@journal}{csmf}}{%
-			Published: \@datepublished\\\vspace{-16pt}
-			}{%
-			Received: \@datereceived\\
-			\ifthenelse{\equal{\@daterevised}{\@empty}}{%
-				}{%
-				Revised: \@daterevised\\%
-				}
-			Accepted: \@dateaccepted\\
-			Published: \@datepublished
-			\ifthenelse{\equal{\@datecorrected}{\@empty}}{%
-				}{%
-			\newline Corrected: \@datecorrected
-			}
-			\ifthenelse{\equal{\@dateretracted}{\@empty}}{%
-				}{%
-			\newline Retracted: \@dateretracted
-			}\vspace{-4pt}
-		}
-	}
-}
-
-% Part 4: Correction statement
-\newcommand{\leftcolumnCorrstatement}{%
-\isPreprints{}{%
-	\ifthenelse{\equal{\@CorrStatement}{yes}}{%
-		\leftcolFont%
-		\textcorrstatement%
-             \vspace{-2pt}
-		}{%
-             \vspace{-2pt}
-             }
-	}
-}
-
-% Part 5: Copyright
-\newcommand{\leftcolumnCright}{
-\isPreprints{}{%
-	\leftcolFont
-	\raggedright
-	\cright
-     }
-}
-
-% Content of the left column. The marginnote with this content will be placed it at the very top of the first page to have a fixed reference point
-\newcommand{\contentleftcolumn}{%
-       \ifthenelse{\equal{\@arttype}{Supfile} 
+  }
+%    \end{macrocode}
+% \end{macro}
+% 
+% \subsubsection{Part 4: Correction statement}
+% \begin{macro}{\leftcolCorrstatement}
+%    \begin{macrocode}
+\newcommand{\leftcolumnCorrstatement}
+ {%
+   \isPreprints
+    {}
+    {%
+	 \ifthenelse{\equal{\@CorrStatement}{yes}}
+       {\textcorrstatement}{}%
+	}%
+ }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsubsection{Part 5: Copyright}
+%
+% \begin{macro}{\leftcolCright}
+%    \begin{macrocode}
+\newcommand{\leftcolumnCright}
+  {%
+    \isPreprints{}{\cright}%
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsubsection{Building the left column}
+% The content of the left column. The marginnote with this content will be placed 
+% at the very top of the first page to have a fixed reference point
+% \begin{macro}{\contentleftcolumn}
+%    \begin{macrocode}
+ \newcommand{\contentleftcolumn}
+  {%
+    \leftcolFont
+    \ifthenelse
+      {%
+       \equal{\@arttype}{Supfile} 
        \OR \equal{\@journal}{preprints} 
        \OR \equal{\@journal}{preprintschicago}
        \OR \equal{\@journal}{preprintsapa}
-              }{
-          }{%
-	\ifthenelse{\equal{\@status}{submit}}{%
-		}{\leftcolumnUpdatelogo}             %1
-      \leftcolExternalEditor                            %2
-	\leftcolDates		                                 %3
-	\leftcolumnCorrstatement 			 %4
-	\leftcolumnCright 		                    %5
-            }
-}
-
-% Placing on the left column
+      }
+      {}
+      {%
+	    \ifthenelse{\equal{\@status}{submit}}
+         {}
+         {\leftcolumnUpdatelogo\par}%   % %1
+        \leftcolExternalEditor\par      % %2
+	    \leftcolDates\par		        % %3
+	    \leftcolumnCorrstatement\par    % %4
+	    \leftcolumnCright\par		    % %5
+     }
+   }  
+%    \end{macrocode}
+% \end{macro}
+%
+%    \begin{macrocode}
 \newlength{\MyLen} % For length of the left column content
 \newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
-
-\newcommand{\calculateMyLen}{ % The calculation needs to be done after begin document, therefore this command is executed at \AtBeginDocument
-	\savebox{\MyBox}{ % All this savebox and parbox is apparently needed to measure the length (= height) of the text
-		\parbox[l]{\leftcolumnlength}{ %This is the width of the left column, defined above at "Dimensions" and "Layout"
-			\contentleftcolumn
-		}
-	}
-	\settototalheight{\MyLen}{\usebox{\MyBox}} % Use the length (= height) of the box to assign this value to \MyLen (this can be queried in .tex by \the\MyLen)
-	\setlength{\MyLen}{\textheight-\MyLen-12pt} % Change \MyLen to be \textheight minus \MyLen so that the resulting value can be used to alig the left column to the bottom of \textheight. Then substract 12pt to make the bottom alignment
-}
+%    \end{macrocode}
+%
+% \subsection{Placing of the left column}
+% The following calculation needs to be done after begin document, but before the title is typeset.
+% It is therefore executed in the \texttt{begindocument/end} hook. 
+% It is only for measuring, so tagging should be suspended.
+% \begin{macro}{\calculateMyLen}
+%    \begin{macrocode}
+\newcommand{\calculateMyLen}
+  {%
+   \SuspendTagging{}%
+   \savebox{\MyBox}
+    {% 
+%    \end{macrocode}
+% \cs{leftcolumnlength} is the width of the left column defined in section \ref{sec:dimensions}.
+% \cs{contentleftcolumn} is the content defined in section \ref{sec:leftcolumn}
+%    \begin{macrocode}
+		\parbox{\leftcolumnlength}{\contentleftcolumn}%
+	}%
+   \ResumeTagging{}%  
+%    \end{macrocode}
+% \cs{Mylen} should be \cs{textheight} minus the total height of the box
+%  so that the resulting value can be used to align the left column to the bottom of \cs{textheight}. 
+%  Then substract 17pt (\cs{topskip}+\cs{baselineskip} defined in \cs{leftcolFont})
+%  to make the bottom alignment. 
+%    \begin{macrocode}
+	\setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-17pt}}%  
+  }
+%    \end{macrocode}
+% \end{macro}%
+% 
+%    \begin{macrocode}
 
 % Left column split options for long titles/author lists
 % Make new command for deciding for the split option
