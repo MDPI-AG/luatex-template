@@ -63,9 +63,13 @@
 % \subsection{Declaration}
 %    \begin{macrocode}
 %<*class>
-%% IDENTIFICATION
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mdpi-luatex}[\mdpidate\ \mdpiversion\ MDPI paper class for lualatex]
+%    \end{macrocode}
+% If lualatex is not used we fall back to a (not tagging aware)
+% version of the older class under the name  mdpi-pdftex. This allows to compare 
+% the lualatex output with the pdflatex output.
+%    \begin{macrocode}
 \@ifundefined{directlua}
  {
   \ClassWarning{mdpi-luatex}{This class requires lualatex, loading the class 
@@ -76,9 +80,39 @@
 \@ifundefined{directlua}
  {\endinput}
  {}
- %% PRELIMINARY DECLARATIONS
+%    \end{macrocode}
+% \subsection{Class loading}
+%    \begin{macrocode}
 \LoadClass[10pt,a4paper]{article}
-
+%    \end{macrocode}
+% \subsection{Packages}
+% \subsubsection{Font setup}
+% TODO: sans serif, typewriter, math fonts?
+%    \begin{macrocode}
+\RequirePackage{fontspec}
+\setmainfont{texgyrepagella}
+\RequirePackage{lua-unicode-math}
+%    \end{macrocode}
+% \subsubsection{Tables}
+% Tagging compatible packages:
+%    \begin{macrocode}
+\RequirePackage{array}
+\RequirePackage{tabularx}
+%    \end{macrocode}
+% For \toprule etc. in tables. 
+%    \begin{macrocode}
+\RequirePackage{booktabs}
+%    \end{macrocode}
+% Partially tagging compatible:
+%    \begin{macrocode}
+\RequirePackage{colortbl}
+%    \end{macrocode}
+% Currently tagging incompatible:
+%    \begin{macrocode}
+\RequirePackage{multirow}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \RequirePackage{calc}
 \RequirePackage{indentfirst}
 \RequirePackage{fancyhdr}
@@ -91,25 +125,18 @@
 \RequirePackage[right,mathlines]{lineno}
 \RequirePackage{setspace}
 \RequirePackage{enumitem}
-\RequirePackage{fontspec}
-\setmainfont{texgyrepagella}
-\RequirePackage{lua-unicode-math}
-\RequirePackage{booktabs} % For \toprule etc. in tables
 \RequirePackage{titlesec}
 \RequirePackage{etoolbox} % For \AtBeginDocument etc.
 \RequirePackage{tabto} % To use tab for alignment on first page
-\RequirePackage{xcolor, colortbl} % To provide color for soul (for english editing), for adding cell color of table
+\RequirePackage{xcolor} % To provide color for soul (for english editing), for adding cell color of table
 \RequirePackage{lua-ul} % To highlight text
 \newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
-\RequirePackage{multirow}
 \RequirePackage{microtype} % For command \textls[]{}
 \RequirePackage{tikz} % For \foreach used for Orcid icon
 \RequirePackage{refcount} % To enable extracting the value of the counter "LastPage" 
 \RequirePackage{changepage} % To adjust the width of the column for the title part and figures/tables (adjustwidth environment)
 \RequirePackage{attrib} % For XML2PDF use \tag{} for equation
 %\RequirePackage{upgreek} % For making greek letters not italic
-\RequirePackage{array} % For table array
-\RequirePackage{tabularx}
 \RequirePackage{pbox} % For biography environment
 \IfDocumentMetadataF{\RequirePackage{ragged2e}} % For command \justifying
 \RequirePackage[subfigure]{tocloft} % For dots in TOC. If subfigure package is loaded, the subfigure option needs to be added here to avoid clash: \RequirePackage[subfigure]{tocloft}
