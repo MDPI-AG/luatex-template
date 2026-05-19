@@ -2,14 +2,6 @@
 \input{regression-test}
 
 \documentclass{mdpi-luatex}
-\makeatletter
-% provide data, should led to test failure once there are better defaults 
-\providecommand\@pubvolume{43}
-\providecommand\@articlenumber{43}
-\providecommand\@Title{?Title?}
-\providecommand\@datepublished{?date?}
-\providecommand\@address{?Adress?}
-\def\@issuenum{43}
 \usepackage{kantlipsum}
 \makeatother
 \begin{document}
