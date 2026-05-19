@@ -1,0 +1,256 @@
+  %  LaTeX support: latex@mdpi.com
+\documentclass[animals,article,accept,moreauthors,pdftex]{Definitions/mdpi}
+%\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi}
+
+\input{Definitions/package}
+\include{Definitions/unicode}
+
+\firstpage{1}
+\makeatletter %%NEW LAYOUT%%
+\setcounter{page}{\@firstpage} %%NEW LAYOUT%%
+\makeatother %%NEW LAYOUT%%
+\articlenumber{0}
+%\doinum{} % Used for some special journals, like proceeding
+\pubvolume{16}
+\issuenum{10}
+\pubyear{2026}
+\copyrightyear{2026}
+\externaleditor{Cristina~Castillo Rodríguez} % More than 1 editor, please add `` and '' before the last editor name
+\datereceived{1 April 2026}
+\daterevised{6 May 2026}
+\dateaccepted{11 May 2026}
+\datepublished{12 May 2026}
+%\datecorrected{}
+%\dateretracted{}
+
+%\IsAssociation{yes} % For association journals
+%\CorrStatement{yes}  % For updates
+%\pdfoutput=1 % The following line should be uncommented if the LaTeX file is uploaded to arXiv.org
+
+%\usepackage{combelow}
+\usepackage[OT1,OT2,T2A,T2B,T2C,T3,T5,T1]{fontenc}
+\usepackage[russian,english]{babel}
+
+% Full title of the paper (Capitalized)
+\Title{My Title}
+
+% Author Orchid ID: enter ID or remove command
+%\newcommand{\orcidauthorA}{0000-0000-0000-000X} % Add \orcidA{} behind the author's name
+%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+
+% Authors, for metadata in PDF
+\Author{XXX~Zhang~\textsuperscript{1}\href{https://orcid.org/0009-0006-3218-482X}{\orcidicon}, XX~Na~\textsuperscript{1}, XXX~Guo~\textsuperscript{2}, XXX~Zhang~\textsuperscript{1} and XXX~Na~\textsuperscript{1}\textsuperscript{,}*\href{https://orcid.org/0000-0001-7601-9646}{\orcidicon}}
+
+%\longauthorlist{yes}
+
+\AuthorNames{XXX Zhang, XXX Na, XXX Guo, XXX Zhang and XXX Na}
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+%address
+\address{\textsuperscript{1} \quad College of Animal Science, Inner Mongolia Agricultural University, Hohhot 010018, China
+
+\textsuperscript{2} \quad College of Food and Agriculture, Hetao College, Bayannur 015000, China}
+
+% Contact information of the corresponding author (Add [2] after \corres if there are more than one corresponding author.)
+\corres{Correspondence: XXXX@163.com}
+
+%\conference{} % An extended version of a conference paper
+
+% Abstract (Do not use inserted blank lines, i.e. \\)
+\simplesumm{Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text.}
+
+\abstract{Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text.}
+
+
+
+% Keywords: add 3 to 10 keywords
+\keyword{Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text; sheep; breed; meat;~metabolomic}
+
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Different journals have different requirements. Please check the specific journal guidelines in the "Instructions for Authors" on the journal's official website.
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+%
+%\noindent The goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What are the implications of the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+
+\makeatletter
+% \textsubscript defined equivalent to \textsuperscript in latex.ltx
+\DeclareRobustCommand*\textsubscript[1]{%
+  \@textsubscript{\selectfont#1}}
+\def\@textsubscript#1{%
+  {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}
+\makeatother
+
+\renewcommand{\highlighting}[2][yellow]{\mathchoice%
+  {\colorbox{#1}{$\displaystyle#2$}}%
+  {\colorbox{#1}{$\textstyle#2$}}%
+  {\colorbox{#1}{$\scriptstyle#2$}}%
+  {\colorbox{#1}{$\scriptscriptstyle#2$}}}%
+\usepackage{sansmath}
+
+\begin{document}
+\section{Introduction \label{sect:sec1-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+\section{Materials and Methods \label{sect:sec2-animals-4264543}}
+
+\subsection{Experimental Animals and Sample Collection \label{sect:sec2dot1-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+\subsection{Non-Targeted Metabolomics Analysis and Sample Preparation \label{sect:sec2dot2-animals-4264543}}
+
+\subsubsection{Sample Extraction Procedure \label{sect:sec2dot2dot1-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+\subsubsection{UPLC--MS Analytical Conditions \label{sect:sec2dot2dot2-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+\subsubsection{Metabolite Data Processing \label{sect:sec2dot2dot3-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+\subsection{Statistical Analysis \label{sect:sec2dot3-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+\section{Results \label{sect:sec3-animals-4264543}}
+
+\subsection{QC Sample Analysis \label{sect:sec3dot1-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+    \begin{figure}[H]
+          \begin{adjustwidth}{-\extralength}{0cm}
+      \centering
+      \includegraphics[scale=1]{Definitions/Test-samples-g001.pdf}
+          \end{adjustwidth}
+\caption{Test context. (\textbf{\boldmath{a}}) Correlation of QC samples; (\textbf{\boldmath{b}}) Classification of metabolites.}
+\label{fig:animals-4264543-f001}
+\end{figure}
+
+
+
+\subsection{Detection, Identification, and PCA of Metabolites \label{sect:sec3dot2-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+
+
+
+\subsection{Screening and Analysis of Differential Metabolites \label{sect:sec3dot3-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+
+
+\subsection{Metabolic Pathway Enrichment Analysis of Differential Metabolites \label{sect:sec3dot4-animals-4264543}}
+
+\fig{fig:animals-4264543-f001} Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+.    
+
+
+
+
+\section{Discussion \label{sect:sec4-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+
+\section{Conclusions \label{sect:sec5-animals-4264543}}
+
+Test text Test text Test text Test text Test text~\cite{B1-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B2-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text~\cite{B3-animals-4264543} Test text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B4-animals-4264543} text Test text Test text Test text Test text Test text Test text Test text Test text Test text Test~\cite{B5-animals-4264543} text Test~\cite{B6-animals-4264543} text Test text Test text Test text Test text.
+
+\vspace{6pt}
+%% optional
+\appendixtitles{no} %Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A").
+%If the appendix sections contain a heading then change the argument to "yes".
+
+\appendixstart
+\appendix
+
+\supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Table S1. Ingredient composition and nutritional value of experimental feed (dry matter basis). Table S2. Metrics for evaluating the quality of PCA and OPLS-DA models. Table S3. The Effects of Different Roughage Types on Metabolic Differences in the Muscle Metabolome of Dumont and Mongolian Sheep. Table S4. Effects of Roughage Sources on Growth Performance in Dumont Sheep and Mongolian Sheep. Figure S1. PAC Analysis of QC Samples. Figure S2. Plot of OPLS-DA permutation of the DSAH vs. DSCS; MSAH vs. MSCS; DSAH vs. MSAH; DSCS vs. MSCS.
+
+}
+\authorcontributions{Conceptualization, R.N.; methodology, R.Z., W.G., M.N. and J.Z.; software, R.Z.; validation, R.N.; formal analysis, R.Z., W.G. and M.N.; Investigation, R.N.; resources, R.N.; data curation, R.Z.; writing---original draft preparation, R.Z.; writing---review and editing, R.Z.; supervision, R.N.; project administration, R.N.; funding acquisition, R.N. All authors have read and agreed to the published version of the manuscript.}
+\funding{This research was supported by Double First-Class Initiative---Self-initiated Research Projects in Animal Science (DC2500000980), and lateral research funding (RH2300002907).}
+\institutionalreview{All experimental protocols involving animals were reviewed and approved by the Animal Welfare and Ethics Committee of Inner Mongolia Agricultural University (Approval No. NND2024076). Animal management and experimental procedures were conducted in accordance with the guidelines of the Chinese Academy of Animal Health Research (GB 14925-2010) and the European Union’s welfare guidelines (Directive 2010/63/EU) on the protection of animals used for scientific purposes.}
+\informedconsent{Not applicable.}
+\dataavailability{The original contributions presented in this study are included in the article/Supplementary Material. Further inquiries can be directed to the corresponding authors.}
+\acknowledgments{The authors are grateful to Jing Zhang, Meila Na, and Ran Zhang for their assistance in the sample collection and laboratory analysis and to Renhua Na and Yue Wang for the experimental design and financial support.
+
+}
+\conflictsofinterest{The authors declare that there are no competing interests.}
+\begin{adjustwidth}{-\extralength}{0cm}
+
+\reftitle{References}
+\begin{thebibliography}{999}
+\bibitem{B1-animals-4264543}
+Fu, Y.; Chen, Y.; Han, X.; Tan, D.; Chen, J.; Lai, C.; Yang, X.; Shan, X.; Silva, L.H.P.; Jiang, H. Effects of Muscle Fiber Composition on Meat Quality, Flavor Characteristics, and Nutritional Traits in Lamb. \emph{Foods} \textbf{\boldmath{2025}}, \emph{14}, 2309. [\href{https://doi.org/10.3390/foods14132309}{CrossRef}] [\href{https://www.ncbi.nlm.nih.gov/pubmed/40647060}{PubMed}]
+
+\bibitem{B2-animals-4264543}
+Wang, X.; Shen, W.; Wu, P.; Wang, C.; Li, J.; Wang, D.; Yue, W. How Food Consumption Trends Change the Direction of Sheep Breeding in China. \emph{Animals} \textbf{\boldmath{2024}}, \emph{14}, 3047. [\href{https://doi.org/10.3390/ani14213047}{CrossRef}] [\href{https://www.ncbi.nlm.nih.gov/pubmed/39518770}{PubMed}]
+
+\bibitem{B3-animals-4264543}
+Cloete, J.J.E.; Hoffman, L.C.; Cloete, S.W.P. A Comparison between Slaughter Traits and Meat Quality of Various Sheep Breeds: Wool, Dual-Purpose and Mutton. \emph{Meat Sci.} \textbf{\boldmath{2012}}, \emph{91}, 318--324. [\href{https://doi.org/10.1016/j.meatsci.2012.02.010}{CrossRef}]
+
+\bibitem{B4-animals-4264543}
+Xiang, J.; Zhong, L.; Luo, H.; Meng, L.; Dong, Y.; Qi, Z.; Wang, H. A Comparative Analysis of Carcass and Meat Traits, and Rumen Bacteria between Chinese Mongolian Sheep and Dorper $\times$ Chinese Mongolian Crossbred Sheep. \emph{Animal} \textbf{\boldmath{2022}}, \emph{16}, 100503. [\href{https://doi.org/10.1016/j.animal.2022.100503}{CrossRef}]
+
+\bibitem{B5-animals-4264543}
+Kong, L.; Yue, Y.; Li, J.; Yang, B.; Chen, B.; Liu, J.; Lu, Z. Transcriptomics and Metabolomics Reveal Improved Performance of Hu Sheep on Hybridization with Southdown Sheep. \emph{Food Res. Int.} \textbf{\boldmath{2023}}, \emph{173}, 113240. [\href{https://doi.org/10.1016/j.foodres.2023.113240}{CrossRef}]
+
+\bibitem{B6-animals-4264543}
+Zhang, X.Q.; Jiang, C.; Jin, Y.M.; Li, P.; Zhong, J.F. The Effect of Substitution of Mixed Grass Hay with Urtica Cannabina Hay and/or Leymus Chinensis Hay on Blood Biochemical Profile, Carcass Traits, and Intramuscular Fatty Acid Composition in Finishing Lambs. \emph{Anim. Feed Sci. Technol.} \textbf{\boldmath{2021}}, \emph{272}, 114780. [\href{https://doi.org/10.1016/j.anifeedsci.2020.114780}{CrossRef}]
+
+\bibitem{B7-animals-4264543}
+Lascano, G.J.; Heinrichs, A.J. Effects of Feeding Different Levels of Dietary Fiber through the Addition of Corn Stover on Nutrient Utilization of Dairy Heifers Precision-Fed High and Low Concentrate Diets. \emph{J. Dairy Sci.} \textbf{\boldmath{2011}}, \emph{94}, 3025--3036. [\href{https://doi.org/10.3168/jds.2010-3831}{CrossRef}]
+
+
+
+\end{thebibliography}
+\end{adjustwidth}
+\begin{adjustwidth}{-\extralength}{0cm}
+\PublishersNote{}
+\end{adjustwidth}
+
+
+\end{document}
+
+
