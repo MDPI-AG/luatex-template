@@ -640,8 +640,9 @@
 \def\instring#1#2{TT\fi\begingroup\edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
 
 \newcommand{\firstargument}{}
+\def\@Title{TITLE}
 \newcommand{\Title}[1]{\gdef\@Title{#1}}%
-\def\@Author{}
+\def\@Author{AUTHOR}
 \newcommand{\Author}[1]{\gdef\@Author{#1}}%
 \def\@AuthorNames{}
 \newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
@@ -710,10 +711,13 @@
 		\fi
 	\fi
 }
-
+\def\@pubvolume{0}
 \newcommand{\pubvolume}[1]{\gdef\@pubvolume{\cutdigits{#1}}}
+\def\@pubyear{0000}
 \newcommand{\pubyear}[1]{\gdef\@pubyear{#1}}
+\def\@copyrightyear{0000}
 \newcommand{\copyrightyear}[1]{\gdef\@copyrightyear{#1}}
+\def\@address{ADDRESS}
 \newcommand{\address}[2][]{\renewcommand{\firstargument}{#1}\gdef\@address{#2}}
 \newcommand{\corresfirstargument}{}
 \def\@corres{}
@@ -732,6 +736,7 @@
 \newcommand{\daterevised}[1]{\gdef\@daterevised{#1}} 
 \def\@dateaccepted{}
 \newcommand{\dateaccepted}[1]{\gdef\@dateaccepted{#1}} 
+\def\@datepublished{}
 \newcommand{\datepublished}[1]{\gdef\@datepublished{#1}} 
 \def\@datecorrected{}
 \newcommand{\datecorrected}[1]{\gdef\@datecorrected{#1}}
@@ -754,7 +759,7 @@
 \def\@keycontribution{}
 \newcommand{\keycontribution}[1]{\gdef\@keycontribution{#1}}
 % this is the wrong default: it should be a number
-\def\@issuenum{}
+\def\@issuenum{0}
 \newcommand{\issuenum}[1]{\gdef\@issuenum{\cutdigits{#1}}}
 \def\@firstnote{}
 \newcommand{\firstnote}[1]{\gdef\@firstnote{#1}}
@@ -780,6 +785,7 @@
 \newcommand{\eleventhnote}[1]{\gdef\@eleventhnote{#1}}%
 \def\@simplesumm{}
 \newcommand{\simplesumm}[1]{\gdef\@simplesumm{#1}}
+\def\@articlenumber{0}
 \newcommand{\articlenumber}[1]{
 	\ifthenelse{\equal{\@journal}{molbank}}{
 		\gdef\@articlenumber{#1}%
@@ -1506,6 +1512,9 @@
 
 \newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\fontsize{12}{12}\selectfont\textbf{#1}}{%
 \par\vspace{3pt}\hspace{-0.85cm}{\fontsize{9}{11.2}\selectfont #2}\par}}
+
+% UF TODO correct semantic 
+\renewcommand\abbreviations[2]{\section*{#1}#2\par}
 
 % Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
