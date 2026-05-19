@@ -2,7 +2,23 @@
 
 Working repository for the development of an accessible MDPI LaTeX template in LuaTeX in a joint efforty between MDPI Production Team and the LaTeX Project Team.
 
-## Generate HTML diffs
+## Version Folders
+
+### `lpt-version`
+
+First version provided by the LaTeX Team Project.
+
+### `mdpi-version`
+
+First trial on LuaLaTeX provided by Xiu Li / MDPI Production Team.
+
+### `new-version`
+
+This is the version being worked on by Ulrike & Frank.
+
+## Tools & Helpers
+
+### Generate HTML diffs
 
 From the repository root, run:
 
