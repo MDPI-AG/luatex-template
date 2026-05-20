@@ -4,17 +4,23 @@ Working repository for the development of an accessible MDPI LaTeX template in L
 
 ## Version Folders
 
-### `lpt-version`
+### `legacy-lpt-version`
 
 First version provided by the LaTeX Team Project.
 
-### `mdpi-version`
+### `legacy-pdftex-version`
 
-First trial on LuaLaTeX provided by Xiu Li / MDPI Production Team.
+This is MDPI's current PDFLaTeX version used in production, which is due to be replaced by the LuaLaTeX version.
+
+### `legacy-xelatex-version`
+
+This is MDPI's current XeLaTeX version used in production when Unicode support is needed. This version is due to be merged into the LuaLaTeX version, which will support Unicode as well.
 
 ### `new-version`
 
-This is the version being worked on by Ulrike & Frank.
+This is the target version for the new LuaLaTeX template, which will be developed based on MDPI's production requirements and will eventually replace it. This is the version being worked on by Ulrike & Frank.
+
+Note: this version currently needs to be compiled using `lualatex-dev` version. In June 2026 this will be distributed in the LaTeX release and the version will be updated to `lualatex` in the documentation.
 
 ## Tools & Helpers
 
