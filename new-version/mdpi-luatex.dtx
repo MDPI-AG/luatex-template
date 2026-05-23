@@ -247,6 +247,18 @@
 % Large        & 14pt & 18pt \\
 % LARGE        & 17pt & 22pt  
 % \end{tabular}
+% We increase the baselineskip of \cs{normalsize} as it was previously 12*1.165
+%    \begin{macrocode}
+\DeclareRobustCommand\normalsize{%
+   \@setfontsize\normalsize{10pt}{13.98pt}%
+   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+   \abovedisplayshortskip \z@ \@plus3\p@
+   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@listI}
+\normalsize
+%    \end{macrocode}
+% 
 % We increase the baselineskip of \cs{small} as previously $11 \times 1.165=12.81$ was used:
 %    \begin{macrocode}
 \DeclareRobustCommand\small{%
