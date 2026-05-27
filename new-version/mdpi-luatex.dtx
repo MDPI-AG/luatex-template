@@ -427,32 +427,50 @@
 \renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
 \renewcommand{\right}{\aftergroup\egroup\originalright}
 
-%%%% Chicago style journals
-\newcommand{\isChicagoStyle}{
-  \ifthenelse{\equal{\@journal}{arts}
-    \OR \equal{\@journal}{genealogy}
-    \OR \equal{\@journal}{histories}
-    \OR \equal{\@journal}{humanities}
-    \OR \equal{\@journal}{laws}
-    \OR \equal{\@journal}{literature}
-    \OR \equal{\@journal}{religions}
-    \OR \equal{\@journal}{risks}
-    \OR \equal{\@journal}{socsci}
-    \OR \equal{\@journal}{preprintschicago} %% Just use for preprints, not a real Chicago journal
-    \OR \equal{\@journal}{chicagojournal} %% Just use for chicago submission, not a real Chicago journal
-    }
-}
-
 %    \end{macrocode}
-% 
-% \begin{macro}{\isAPAstyle}
-% Journals in \emph{APAstyle} use the package \pkg{mdpi_apacite} and the bibliography style
-% \texttt{mdpi\_apacite}. \cs{@journal} is defined in \texttt{journalnames.tex} and is by default 
+% \subsection{Journal conditionals}
+% The command \cs{@journal} used in the conditionals 
+% is defined in \texttt{journalnames.tex} and is by default 
 % \texttt{unspecified}. 
+% 
+% \subsubsection{Chicago style journals}
+% These journals use the \texttt{mdpi\_chicago} bibliography style. 
+% \begin{macro}{\isChicagoStyle}
 %    \begin{macrocode}
 \ExplSyntaxOn
-\clist_new:N  \l_mdpi_journal_apastyle_clist
-\clist_set:Nn \l_mdpi_journal_apastyle_clist
+\clist_new:N  \l__mdpi_journal_chicagostyle_clist
+\clist_set:Nn \l__mdpi_journal_chicagostyle_clist
+ {
+     arts
+    ,genealogy
+    ,histories
+    ,humanities
+    ,laws
+    ,literature
+    ,religions
+    ,risks
+    ,socsci
+    ,preprintschicago  %% Just use for preprints, not a real Chicago journal
+    ,chicagojournal    %% Just use for chicago submission, not a real Chicago journal
+ }
+\prg_new_conditional:Npnn \__mdpi_is_journal_chicagostyle: {TF}
+ {
+   \clist_if_in:NoTF \l__mdpi_journal_chicagostyle_clist {\@journal}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\newcommand{\isChicagoStyle}{\__mdpi_is_journal_chicagostyle:TF} 
+%    \end{macrocode}
+% \end{macro}
+% 
+% \subsubsection{APA style journals}
+% Journals in \emph{APAstyle} use the package \pkg{mdpi_apacite} and the bibliography style
+% \texttt{mdpi\_apacite}. 
+% 
+% \begin{macro}{\isAPAStyle}
+%    \begin{macrocode}
+\clist_new:N  \l__mdpi_journal_apastyle_clist
+\clist_set:Nn \l__mdpi_journal_apastyle_clist
  {
      admsci        % Transfer to APA type
     ,aieduc
@@ -482,68 +500,56 @@
     ,preprintsapa  %% Just use for preprints, not a real APA journal
     ,apajournal    %% Just use for APA submission, not a real APA journal
  }
-\prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF,T,F}
+\prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF}
  {
-  \clist_if_in:NoTF \l_mdpi_journal_apastyle_clist {\@journal}
+  \clist_if_in:NoTF \l__mdpi_journal_apastyle_clist {\@journal}
    {\prg_return_true:}
    {\prg_return_false:}
  }
 \newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
+%    \end{macrocode}
+% \end{macro}
+% \subsubsection{APA or Chicago style journals}
+% 
+% A combination of both tests: true if a journal is either APA or a Chicago style journal.
+% \begin{macro}{\ifAPAorChicago}
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
+ {
+   \__mdpi_is_journal_chicagostyle:TF
+    {
+      \prg_return_true:
+    }
+    {
+      \__mdpi_is_journal_apastyle:TF
+       {
+        \prg_return_true:
+       }
+       {
+         \prg_return_false:
+       }
+    }
+ }
+\newcommand{\isAPAorChicago}{\__mdpi_is_journal_chicagostyle:TF}
 \ExplSyntaxOff
 %    \end{macrocode}
 % \end{macro}
-
+%
+% \subsection{References} 
+% The default system is natbib, APA style journals use a local version 
+% of the \pkg{apacite} package.
 %    \begin{macrocode}
-%%%% Chicago style journals
-\newcommand{\isAPAandChicago}{
-  \ifthenelse{\equal{\@journal}{arts}
-    \OR \equal{\@journal}{genealogy}
-    \OR \equal{\@journal}{histories}
-    \OR \equal{\@journal}{humanities}
-    \OR \equal{\@journal}{jintelligence}
-    \OR \equal{\@journal}{laws}
-    \OR \equal{\@journal}{literature}
-    \OR \equal{\@journal}{religions}
-    \OR \equal{\@journal}{risks}
-    \OR \equal{\@journal}{socsci}
-    \OR \equal{\@journal}{preprintschicago}
-    \OR \equal{\@journal}{admsci}
-    \OR \equal{\@journal}{aieduc}
-    \OR \equal{\@journal}{behavsci}
-    \OR \equal{\@journal}{businesses}
-    \OR \equal{\@journal}{econometrics}
-    \OR \equal{\@journal}{economies}
-    \OR \equal{\@journal}{education}
-    \OR \equal{\@journal}{ejihpe}
-    \OR \equal{\@journal}{famsci}
-    \OR \equal{\@journal}{games}
-    \OR \equal{\@journal}{humans}
-    \OR \equal{\@journal}{ijcs}
-    \OR \equal{\@journal}{ijfs}
-    \OR \equal{\@journal}{investment}
-    \OR \equal{\@journal}{journalmedia}
-    \OR \equal{\@journal}{jrfm}
-    \OR \equal{\@journal}{jsam}
-    \OR \equal{\@journal}{languages}
-    \OR \equal{\@journal}{peacestud}
-    \OR \equal{\@journal}{projmanag}
-    \OR \equal{\@journal}{psycholint}
-    \OR \equal{\@journal}{publications}
-    \OR \equal{\@journal}{tourismhosp}
-    \OR \equal{\@journal}{youth}
-    \OR \equal{\@journal}{preprintsapa}
-    \OR \equal{\@journal}{chicagojournal} %% Just use for chicago submission, not a real Chicago journal
-    \OR \equal{\@journal}{apajournal} %% Just use for APA submission, not a real APA journal
-    }
-}
-
-%%%% References
-\isAPAStyle{%
-\RequirePackage[natbibapa]{mdpi_apacite} % Only used for APA style journals
-          }{%
-          \RequirePackage[sort&compress,sectionbib]{natbib}
-} % Option sectionbib is for optionally organizing references using sections (author request)
-
+\isAPAStyle
+  {\RequirePackage[natbibapa]{mdpi_apacite}} 
+%    \end{macrocode}
+% Option sectionbib is for optionally organizing references using sections (author request).
+%    \begin{macrocode}
+  {\RequirePackage[sort&compress,sectionbib]{natbib}} 
+%    \end{macrocode}
+%
+%
+% TODO: check what this doing.
+%    \begin{macrocode}
 \renewcommand\NAT@set@cites{%
   \ifNAT@numbers
     \ifNAT@super \let\@cite\NAT@citesuper
@@ -573,19 +579,26 @@
     \renewcommand\NAT@idxtxt{\NAT@name\NAT@spacechar\NAT@open\NAT@date\NAT@close}%
     \def\natexlab##1{##1}%
   \fi}
-
-\isAPAStyle{%
-      \bibliographystyle{mdpi_apacite}
-          }{%
-      \isChicagoStyle{%
-          \bibliographystyle{mdpi_chicago}
-          \bibpunct{(}{)}{;}{x}{}{,}%
-          }{%
-              \bibliographystyle{mdpi}
-              \bibpunct{[}{]}{,}{n}{}{,}%
-       }%
-}
-
+%    \end{macrocode}
+%
+% \subsection{The bibliography styles}
+%    \begin{macrocode}
+\isAPAStyle
+  {\bibliographystyle{mdpi_apacite}}
+  {
+    \isChicagoStyle
+      {
+        \bibliographystyle{mdpi_chicago}
+        \bibpunct{(}{)}{;}{x}{}{,}
+      }
+      {
+        \bibliographystyle{mdpi}
+        \bibpunct{[}{]}{,}{n}{}{,}
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 
 
 
@@ -2051,7 +2064,7 @@
 \partopsep=0\p@
 \itemsep=0\p@
 \labelsep=1.5mm
-\isAPAandChicago{%
+\isAPAorChicago{%
   \ifthenelse{\equal{\@externalbibliography}{\@empty}}{%
     \itemindent=-7.7mm
     }{%
