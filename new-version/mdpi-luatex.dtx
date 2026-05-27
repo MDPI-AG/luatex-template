@@ -700,8 +700,6 @@
 %%%% To avoid "Output-loop.." compile bug
 \maxdeadcycles=10000
 
-% line and word spacing
-%\linespread{1.165}
 
 % Indents & Commands for hanging indent
 \setlength{\parindent}{0.75cm}
@@ -1307,7 +1305,6 @@
 \newcommand{\maketitlen}{%
 	\isBookContribution{\vspace{12pt}}{%
 	\begin{flushleft}
-	\begin{spacing}{1.35}
 	\hyphenpenalty=10000
 	\tolerance=1000
 	\footnotesize
@@ -1388,7 +1385,6 @@
 	\vskip12pt \@LSID}
 	\par
 	}%
-	\end{spacing}
 	\end{flushleft}
 }
 }
