@@ -1,4 +1,5 @@
 % regression-test should be before the class as microtype defines \pdfoutput!
+\DocumentMetadata{tagging=on}
 \input{regression-test}
 
 \documentclass{mdpi-luatex}
