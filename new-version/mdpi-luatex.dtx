@@ -247,7 +247,10 @@
 % Large        & 14pt & 18pt \\
 % LARGE        & 17pt & 22pt  
 % \end{tabular}
-% We increase the baselineskip of \cs{normalsize} as it was previously 12*1.165
+% 
+% We increase the \cs{baselineskip} of the font sizes to compensate the
+% \cs{linespread} of 1.165 was used previously:
+% 
 %    \begin{macrocode}
 \DeclareRobustCommand\normalsize{%
    \@setfontsize\normalsize{10pt}{13.98pt}%
@@ -259,10 +262,9 @@
 \normalsize
 %    \end{macrocode}
 % 
-% We increase the baselineskip of \cs{small} as previously $11 \times 1.165=12.81$ was used:
 %    \begin{macrocode}
 \DeclareRobustCommand\small{%
-   \@setfontsize\small{9pt}{12.81pt}% %increased
+   \@setfontsize\small{9pt}{12.815pt}% 
    \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
    \abovedisplayshortskip \z@ \@plus2\p@
    \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
@@ -273,13 +275,36 @@
    \belowdisplayskip \abovedisplayskip
 }
 %    \end{macrocode}
-% We increase the size of \cs{LARGE} to 18pt. The baselineskip is
-% smaller. TODO: check.
+%
+%    \begin{macrocode}
+\DeclareRobustCommand\footnotesize{%
+   \@setfontsize\footnotesize\@viiipt{10.485pt}%
+   \abovedisplayskip 6\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus\p@
+   \belowdisplayshortskip 3\p@ \@plus\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 3\p@ \@plus\p@ \@minus\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+%    \end{macrocode}
+%    \begin{macrocode}
+\DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{7pt}{9.32pt}
+\DeclareRobustCommand\tiny{\@setfontsize\tiny\@vpt\@viipt}
+\DeclareRobustCommand\large{\@setfontsize\large\@xiipt{16.32pt}}
+\DeclareRobustCommand\Large{\@setfontsize\Large\@xivpt{20.97pt}}
+\DeclareRobustCommand\huge{\@setfontsize\huge\@xxpt{29.125pt}}
+\DeclareRobustCommand\Huge{\@setfontsize\Huge\@xxvpt{34.95}}
+%    \end{macrocode}
+%
+% The exception is  \cs{LARGE} where an 18pt font was use. 
+% The baselineskip is rather small. TODO: check.
 %    \begin{macrocode}
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
 %    \end{macrocode}
 % 
-% We increate the baselineskip of \cs{scriptsize} to 12pt as previously a 
+% We increase the baselineskip of \cs{scriptsize} to 12pt as previously a 
 % linespread of 1.71 was used in the left column:
 %    \begin{macrocode}
  \DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{7pt}{12pt}}
@@ -1066,10 +1091,11 @@
 % 
 % A command for the font setup in this column:
 % \begin{macro}{\leftcolFont}
+% We increase the linespread to get a baselineskip of 12pt.
 %    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
-	%\linespread{1.71}% 
+	\linespread{1.288}%  
 	\scriptsize
 	\justifying
     \parindent=0pt
