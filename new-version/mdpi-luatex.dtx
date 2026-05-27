@@ -99,7 +99,7 @@
 \RequirePackage{array}
 \RequirePackage{tabularx}
 %    \end{macrocode}
-% For \toprule etc. in tables. 
+% For \cs{toprule} etc. in tables. 
 %    \begin{macrocode}
 \RequirePackage{booktabs}
 %    \end{macrocode}
@@ -123,7 +123,6 @@
 \RequirePackage{amsmath}
 %\RequirePackage{amssymb} % For math environment bold format
 \RequirePackage[right,mathlines]{lineno}
-\RequirePackage{setspace}
 \RequirePackage{enumitem}
 \RequirePackage{titlesec}
 \RequirePackage{etoolbox} % For \AtBeginDocument etc.
@@ -236,8 +235,82 @@
 %% Process options
 \ProcessOptions\relax
 
+%    \end{macrocode}
+% \subsection{Fontsizes}
+% The following font size are inherited from article
+% \begin{tabular}{lll}
+% normalsize   & 10pt & 12pt \\
+% small        & 9pt  & 11pt \\
+% footnotesize & 8pt  & 9.5pt\\
+% scriptsize   & 7pt  & 8pt\\
+% large        & 12pt & 14pt \\ 
+% Large        & 14pt & 18pt \\
+% LARGE        & 17pt & 22pt  
+% \end{tabular}
+% 
+% We increase the \cs{baselineskip} of the font sizes to compensate the
+% \cs{linespread} of 1.165 was used previously:
+% 
+%    \begin{macrocode}
+\DeclareRobustCommand\normalsize{%
+   \@setfontsize\normalsize{10pt}{13.98pt}%
+   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+   \abovedisplayshortskip \z@ \@plus3\p@
+   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@listI}
+\normalsize
+%    \end{macrocode}
+% 
+%    \begin{macrocode}
+\DeclareRobustCommand\small{%
+   \@setfontsize\small{9pt}{12.815pt}% 
+   \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus2\p@
+   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 4\p@ \@plus2\p@ \@minus2\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+\DeclareRobustCommand\footnotesize{%
+   \@setfontsize\footnotesize\@viiipt{10.485pt}%
+   \abovedisplayskip 6\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus\p@
+   \belowdisplayshortskip 3\p@ \@plus\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 3\p@ \@plus\p@ \@minus\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+%    \end{macrocode}
+%    \begin{macrocode}
+\DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{7pt}{9.32pt}}
+\DeclareRobustCommand\tiny{\@setfontsize\tiny\@vpt\@viipt}
+\DeclareRobustCommand\large{\@setfontsize\large\@xiipt{16.32pt}}
+\DeclareRobustCommand\Large{\@setfontsize\Large\@xivpt{20.97pt}}
+\DeclareRobustCommand\huge{\@setfontsize\huge\@xxpt{29.125pt}}
+\DeclareRobustCommand\Huge{\@setfontsize\Huge\@xxvpt{34.95}}
+%    \end{macrocode}
+%
+% The exception is  \cs{LARGE} where an 18pt font was use. 
+% The baselineskip is rather small. TODO: check.
+%    \begin{macrocode}
+\DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
+%    \end{macrocode}
+% 
+% We increase the baselineskip of \cs{scriptsize} to 12pt as previously a 
+% linespread of 1.71 was used in the left column:
+%    \begin{macrocode}
+ \DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{7pt}{12pt}}
+%    \end{macrocode}
 %% MORE DECLARATIONS
-
+%    \begin{macrocode}
 %%% Book contributions based on the article type
 \newcommand{\isBookContribution}{%
 	\ifthenelse{\equal{\@arttype}{Book}%
@@ -607,7 +680,7 @@
 %%%%% Endnotes
 \setenotez{backref=true}
 \DeclareInstance{enotez-list}{custom}{paragraph}{
-	format=\fontsize{9}{11}\selectfont\leftskip0.76cm,
+	format=\small\leftskip0.76cm,
       number=\textsuperscript{\makebox[6mm][l]{#1}},
 	notes-sep=0pt
 }
@@ -627,8 +700,6 @@
 %%%% To avoid "Output-loop.." compile bug
 \maxdeadcycles=10000
 
-% line and word spacing
-\linespread{1.165}
 
 % Indents & Commands for hanging indent
 \setlength{\parindent}{0.75cm}
@@ -839,14 +910,14 @@
 	}
 	\begin{flushleft}
 	\ifthenelse{\equal{\@arttype}{Supfile}}{%
-		\fontsize{18}{18}\selectfont
+		\LARGE
 		\raggedright
 		\hyphenpenalty=10000
 		\tolerance=1000
 		\noindent\textbf{Supplementary Materials: \@Title}%
 		\par
 		\vspace{12pt}
-		\fontsize{10}{10}\selectfont
+		\normalsize
 		\noindent\boldmath\bfseries{\@Author}
 		}{%
 		\isBookContribution{}{%
@@ -892,14 +963,14 @@
 		}%0
 		{%1
     		\vspace{14pt}
-    		\fontsize{10}{10}\selectfont
+    		\normalsize
 		\isBookContribution{}{%
 			\textit{\@arttype}%
 			}%	
  	   	\par
     		}%1
     		{%2
-  	  	\fontsize{18}{18}\selectfont
+  	  	\LARGE
 		\hyphenpenalty=10000
 		\tolerance=1000
    	 	\isMonograph{}{%
@@ -992,7 +1063,7 @@
 		\renewcommand{\footrulewidth}{0.4pt}
 			\fancyhead{\null\vspace{8pt}}
 			\fancyfoot[L]{
-			\fontsize{8}{8}\selectfont
+			\footnotesize
 			\ifthenelse{\equal{\@status}{submit}}{%
 				Version {\@ \today} submitted to {\em \journalname}%
 				}{%
@@ -1005,7 +1076,7 @@
 				}%
 			}
 			\fancyfoot[R]{
-			\fontsize{8}{8}\selectfont
+			\footnotesize
 			{%
 			}{\url{https://doi.org/\@doinum}}}%
 		}
@@ -1018,11 +1089,12 @@
 % 
 % A command for the font setup in this column:
 % \begin{macro}{\leftcolFont}
+% We increase the linespread to get a baselineskip of 12pt.
 %    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
-	\linespread{1.71}% 
-	\fontsize{7}{7}\selectfont
+	\linespread{1.288}%  
+	\scriptsize
 	\justifying
     \parindent=0pt
     \parskip=2pt
@@ -1233,10 +1305,9 @@
 \newcommand{\maketitlen}{%
 	\isBookContribution{\vspace{12pt}}{%
 	\begin{flushleft}
-	\begin{spacing}{1.35}
 	\hyphenpenalty=10000
 	\tolerance=1000
-	\fontsize{8}{8}\selectfont
+	\footnotesize
 	{%
 	\ifthenelse{\equal{\firstargument}{1}}{}{%
 	\hang}\@address
@@ -1314,7 +1385,6 @@
 	\vskip12pt \@LSID}
 	\par
 	}%
-	\end{spacing}
 	\end{flushleft}
 }
 }
@@ -1451,82 +1521,82 @@
 \setcounter{secnumdepth}{4} % Default: 3 in the article class. To get paragraphs numbered and counted, increase the default value of secnumdepth to 4
 
 \isMonograph{%
-	\titleformat {\section} [block] {\raggedright \fontsize{18}{18}\selectfont\bfseries} {\thesection.\space} {0pt} {}
+	\titleformat {\section} [block] {\raggedright \LARGE\bfseries} {\thesection.\space} {0pt} {}
 	\titlespacing {\section} {0pt} {12pt} {8pt}
 	}{
-	\titleformat {\section} [block] {\raggedright \fontsize{12}{12}\selectfont\bfseries} {\thesection.\space} {0pt} {}
+	\titleformat {\section} [block] {\raggedright \large\bfseries} {\thesection.\space} {0pt} {}
 	\titlespacing {\section} {0pt} {12pt} {3pt}
 }
 
-\titleformat {\subsection} [block] {\raggedright \fontsize{10}{10}\selectfont\itshape} {\thesubsection.\space} {0pt} {}
+\titleformat {\subsection} [block] {\raggedright \normalsize\itshape} {\thesubsection.\space} {0pt} {}
 \titlespacing {\subsection} {0pt} {12pt} {3pt}
 
-\titleformat {\subsubsection} [block] {\raggedright \fontsize{10}{10}\selectfont} {\thesubsubsection.\space} {0pt} {}
+\titleformat {\subsubsection} [block] {\raggedright \normalsize} {\thesubsubsection.\space} {0pt} {}
 \titlespacing {\subsubsection} {0pt} {12pt} {3pt}
 
-\titleformat {\paragraph} [block] {\raggedright \fontsize{10}{10}\selectfont} {} {0pt} {}
+\titleformat {\paragraph} [block] {\raggedright \normalsize} {} {0pt} {}
 \titlespacing {\paragraph} {0pt} {12pt} {3pt}
 
 %%%% Special section title style for back matter
 \newcommand{\supplementary}[1]{
-\par\vspace{6pt}\noindent{\fontsize{9}{11.5}\selectfont\textbf{Supplementary Materials:} {#1}\par}}
+\par\vspace{6pt}\noindent{\small\textbf{Supplementary Materials:} {#1}\par}}
 
 \newcommand{\authorcontributions}[1]{%
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Author Contributions:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Author Contributions:} {#1}\par}}
 
 \newcommand{\funding}[1]{
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Funding:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Funding:} {#1}\par}}
 
 \newcommand{\institutionalreview}[1]{
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Institutional Review Board Statement:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Institutional Review Board Statement:} {#1}\par}}
 
 \newcommand{\informedconsent}[1]{
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Informed Consent Statement:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Informed Consent Statement:} {#1}\par}}
 
 \newcommand{\dataavailability}[1]{
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Data Availability Statement:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Data Availability Statement:} {#1}\par}}
 
 \newcommand{\durcstatement}[1]{% For journal Drones
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{DURC Statement:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{DURC Statement:} {#1}\par}}
 
 \newcommand{\publicinvolvement}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Public Involvement Statement:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Public Involvement Statement:} {#1}\par}}
 
 \newcommand{\guidelinesstandards}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Guidelines and Standards Statement:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Guidelines and Standards Statement:} {#1}\par}}
 
 \newcommand{\acknowledgments}[1]{
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Acknowledgments:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Acknowledgments:} {#1}\par}}
 
 \newcommand{\conflictsofinterest}[1]{%
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Conflicts of Interest:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Conflicts of Interest:} {#1}\par}}
 
 \newcommand{\entrylink}[1]{% For journal Encyclopedia
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Entry Link:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Entry Link:} {#1}\par}}
 
 \newcommand{\useofartificialintelligence}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Use of Artificial Intelligence:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Use of Artificial Intelligence:} {#1}\par}}
 
 \newcommand{\reviewreports}[1]{%
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Review Reports:} {#1}\par}}
+\vspace{6pt}\noindent{\small\textbf{Review Reports:} {#1}\par}}
 
-\newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\fontsize{12}{12}\selectfont\textbf{#1}}{%
-\par\vspace{3pt}\hspace{-0.85cm}{\fontsize{9}{11.2}\selectfont #2}\par}}
+\newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\large\textbf{#1}}{%
+\par\vspace{3pt}\hspace{-0.85cm}{\small #2}\par}}
 
 % UF TODO correct semantic 
 \renewcommand\abbreviations[2]{\section*{#1}#2\par}
 
 % Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
-\vspace{12pt}\noindent{\selectfont\textbf{#1}\par\vspace{6pt}\noindent {\fontsize{9}{9}\selectfont #2}\par}}
+\vspace{12pt}\noindent{\selectfont\textbf{#1}\par\vspace{6pt}\noindent {\small #2}\par}}
 
 % Command for author's biography
 \newcommand{\bio}[2]{%
-\noindent{#1}\hspace{1.1cm}\noindent {\fontsize{9}{11.2}\selectfont \pbox[b]{13.86cm}{#2}}\par\vspace{6pt}}
+\noindent{#1}\hspace{1.1cm}\noindent {\small \pbox[b]{13.86cm}{#2}}\par\vspace{6pt}}
 
 % Use for special paragraph requirement in back matter
 \newcommand{\backnotes}[2]{
-\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{#1:} {#2}\par}}
+\vspace{6pt}\noindent{\small\textbf{#1:} {#2}\par}}
 
 %%%%% Defines the appendix
 \def\@appendixtitles{}
@@ -1570,7 +1640,7 @@
 \gdef\thesection{\AlphAlph{\value{section}}}%
 \gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
 
-\titleformat {\section} [block] {\raggedright\bfseries\fontsize{12}{12}\selectfont} {\fontsize{12}{12}\selectfont\bfseries%
+\titleformat {\section} [block] {\raggedright\bfseries\large} {\large\bfseries%
 	\ifthenelse{\equal{\@appendixtitles}{yes}}{%
 		\appendixname~\thesection.%
 		}{%
@@ -1842,7 +1912,7 @@
 	\OR \equal{\@arttype}{Book}
 	\OR \equal{\@arttype}{Monograph}}{%
 		}{%
-		\fontsize{8}{8}\selectfont%
+		\footnotesize%
 		\ifthenelse{\equal{\@status}{submit}}{%
 		      \vspace{2pt}Version {\@ \today} submitted to {\em \journalname}%
 			}{%
@@ -1870,12 +1940,12 @@
 \rhead{%
     \isBookContribution{}{%
 	\ifthenelse{\equal{\@arttype}{Supfile}}{%
-		\fontsize{8}{8}\selectfont S\thepage{} of S\pageref*{LastPage}%
+		\footnotesize S\thepage{} of S\pageref*{LastPage}%
 		}{%
 		\ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-			\fontsize{8}{8}\selectfont\thepage{} of \pageref*{LastPage}%
+			\footnotesize\thepage{} of \pageref*{LastPage}%
 			}{%
-			\fontsize{8}{8}\selectfont\thepage%
+			\footnotesize\thepage%
 		}%
 		}\\%
 		\isPreprints{}{%
@@ -1886,7 +1956,7 @@
 
 \cfoot{%
 	\isBookContribution{%
-		\fontsize{8}{8}\selectfont\thepage
+		\footnotesize\thepage
 		}{%
 	}
 }
@@ -1895,7 +1965,7 @@
     }{%
       \isPreprints{}{%
         \rfoot{%
-	   \fontsize{8}{8}\selectfont%
+	   \footnotesize%
 	  {\url{https://doi.org/\@doinum}}%
      }
   }
@@ -1951,11 +2021,11 @@
 {
 \def\thebibliography#1{
 \emergencystretch 2em
-\titleformat {\section} [block] {\raggedright \fontsize{12}{12}\selectfont\bfseries} {} {0pt} {}
+\titleformat {\section} [block] {\raggedright \large\bfseries} {} {0pt} {}
      \isBookContribution{}{% to remove the sectin from the TOC in books
 	\section{\@reftitle}
 }
-\fontsize{9}{11}\selectfont
+\small
 \list{{\arabic{enumi}}}{\def\makelabel##1{\hss{##1}}
 \topsep=0\p@
 \parsep=0\p@
@@ -1978,7 +2048,7 @@
 }
 %%%% Publisher's note
 \newcommand{\PublishersNote}{
-\null\par\noindent\fontsize{9}{11}\selectfont\textbf{Disclaimer/Publisher's Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+\null\par\noindent\small\textbf{Disclaimer/Publisher's Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
 }
 
 %%%% Copyright info

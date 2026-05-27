@@ -1,0 +1,29 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\input{regression-test}
+
+\documentclass{mdpi-luatex}
+\usepackage{lipsum}
+\newcommand\testfontsize[1]{\par\medskip\UseName{#1}%
+\noindent\rule{1cm}{1pt}#1: \UseName{f@size}, \the\baselineskip\\
+\rule{1cm}{1pt}more text MORE TEXT}
+\RemoveFromHook{begindocument/end}[mdpi-luatex]
+\begin{document}
+\START\showoutput
+
+normal text \the\baselineskip\ \lipsum*[1][1-4]
+
+\testfontsize{normalsize}
+
+\testfontsize{small}
+
+\testfontsize{footnotesize}
+
+\testfontsize{scriptsize}
+
+\testfontsize{large}
+
+\testfontsize{Large}
+
+\testfontsize{LARGE}
+
+\end{document} 
