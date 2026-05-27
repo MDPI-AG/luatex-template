@@ -443,38 +443,57 @@
     }
 }
 
-%%%% APA style journals
-\newcommand{\isAPAStyle}{
-  \ifthenelse{\equal{\@journal}{admsci}       % Transfer to APA type
-    \OR \equal{\@journal}{aieduc}
-    \OR \equal{\@journal}{behavsci}       % Transfer to APA type
-    \OR \equal{\@journal}{businesses}    % Transfer to APA type
-    \OR \equal{\@journal}{econometrics}% Transfer to APA type
-    \OR \equal{\@journal}{economies}    % Transfer to APA type
-    \OR \equal{\@journal}{education}     % Transfer to APA type
-    \OR \equal{\@journal}{ejihpe}           % Transfer to APA type
-    \OR \equal{\@journal}{famsci}           % Transfer to APA type
-    \OR \equal{\@journal}{games}           % Transfer to APA type
-    \OR \equal{\@journal}{humans}         % Transfer to APA type
-    \OR \equal{\@journal}{ijcs}               % Transfer to APA type
-    \OR \equal{\@journal}{ijfs}                % Transfer to APA type
-    \OR \equal{\@journal}{investment}     % New APA Journal
-    \OR \equal{\@journal}{jintelligence}   % Transfer to APA type from 19 Dec. 2025
-    \OR \equal{\@journal}{journalmedia} % Transfer to APA type
-    \OR \equal{\@journal}{jrfm}              % Transfer to APA type
-    \OR \equal{\@journal}{jsam}             % New APA Journal
-    \OR \equal{\@journal}{languages}      % Transfer to APA type
-    \OR \equal{\@journal}{peacestud}      % New APA Journal
-    \OR \equal{\@journal}{projmanag}      % New APA Journal
-    \OR \equal{\@journal}{psycholint}      % Transfer to APA type
-    \OR \equal{\@journal}{publications}   % Transfer to APA type
-    \OR \equal{\@journal}{tourismhosp}   % Transfer to APA type
-    \OR \equal{\@journal}{youth}             % Transfer to APA type
-    \OR \equal{\@journal}{preprintsapa} %% Just use for preprints, not a real APA journal
-    \OR \equal{\@journal}{apajournal} %% Just use for APA submission, not a real APA journal
-    }
-}
+%    \end{macrocode}
+% 
+% \begin{macro}{\isAPAstyle}
+% Journals in \emph{APAstyle} use the package \pkg{mdpi_apacite} and the bibliography style
+% \texttt{mdpi\_apacite}. \cs{@journal} is defined in \texttt{journalnames.tex} and is by default 
+% \texttt{unspecified}. 
+%    \begin{macrocode}
+\ExplSyntaxOn
+\clist_new:N  \l_mdpi_journal_apastyle_clist
+\clist_set:Nn \l_mdpi_journal_apastyle_clist
+ {
+     admsci        % Transfer to APA type
+    ,aieduc
+    ,behavsci      % Transfer to APA type
+    ,businesses    % Transfer to APA type
+    ,econometrics  % Transfer to APA type
+    ,economies     % Transfer to APA type
+    ,education     % Transfer to APA type
+    ,ejihpe        % Transfer to APA type
+    ,famsci        % Transfer to APA type
+    ,games         % Transfer to APA type
+    ,humans        % Transfer to APA type
+    ,ijcs          % Transfer to APA type
+    ,ijfs          % Transfer to APA type
+    ,investment    % New APA Journal
+    ,jintelligence % Transfer to APA type from 19 Dec. 2025
+    ,journalmedia  % Transfer to APA type
+    ,jrfm          % Transfer to APA type
+    ,jsam          % New APA Journal
+    ,languages     % Transfer to APA type
+    ,peacestud     % New APA Journal
+    ,projmanag     % New APA Journal
+    ,psycholint    % Transfer to APA type
+    ,publications  % Transfer to APA type
+    ,tourismhosp   % Transfer to APA type
+    ,youth         % Transfer to APA type
+    ,preprintsapa  %% Just use for preprints, not a real APA journal
+    ,apajournal    %% Just use for APA submission, not a real APA journal
+ }
+\prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF,T,F}
+ {
+  \clist_if_in:NoTF \l_mdpi_journal_apastyle_clist {\@journal}
+   {\prg_return_true:}
+   {\prg_return_false:}
+ }
+\newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
+\ExplSyntaxOff
+%    \end{macrocode}
+% \end{macro}
 
+%    \begin{macrocode}
 %%%% Chicago style journals
 \newcommand{\isAPAandChicago}{
   \ifthenelse{\equal{\@journal}{arts}
