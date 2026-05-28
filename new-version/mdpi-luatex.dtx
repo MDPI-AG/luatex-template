@@ -1585,6 +1585,10 @@
    \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
    \DeclareInstanceCopy{headformat}{paragraph}    {mdpi/std}
 %    \end{macrocode}
+%
+%    \begin{macrocode}
+%
+%    \end{macrocode}
 % The \cs{section} settings:
 %    \begin{macrocode}
    \EditInstance{heading}{section}
@@ -1769,74 +1773,101 @@
 \setcounter{graph}{0}
 }
 
-\renewcommand{\appendix}{%
+%    \end{macrocode}
 %
-\gdef\thesection{\AlphAlph{\value{section}}}%
-\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
-
+% 
+%    \begin{macrocode}
+\ExplSyntaxOn
+\renewcommand{\appendix}
+ {%
+%
+  \gdef\thesection   {\AlphAlph{\value{section}}}%
+  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
 %    \end{macrocode}
 % \subsection{Formatting of the heading commands after \cs{appendix}}
 %    \begin{macrocode}
 %%% UF SECTIONFORMAT (after \appendix)
-\IfDocumentMetadataTF
- {
-  %TODO
- }
- {
-   \titleformat {\section} [block] {\raggedright\bfseries\large} {\large\bfseries%
-     \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-       \appendixname~\thesection.%
-       }{%
-       \appendixname~\thesection~%
+    \IfDocumentMetadataTF
+     {
+%    \end{macrocode}
+% Even in monographs section should use a smaller font in the appendix.
+%    \begin{macrocode}
+      \EditInstance{heading}{section}
+        {
+         after-vspace=3pt,
+         heading-decls=\raggedright\large\bfseries,         
+        }
+      \clist_map_inline:nn {section,subsection,subsubsection}
+       {
+         \EditInstance{heading}{##1}
+          {
+            number-format=
+             \appendixname\nobreakspace\theheading
+             \tl_if_eq:NnT\@appendixtitles {yes}{.}
+          }   
        }
-     } {0pt} {}
-   \titlespacing {\section} {0pt} {12pt} {3pt}
-   %
-   \titleformat {\subsection} [block] {\raggedright\itshape} {%
-     \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-       \appendixname~\thesubsection.%
-       }{%
-       \appendixname~\thesubsection%
-       }
-     } {0pt} {}
-   \titlespacing {\section} {0pt} {12pt} {3pt}
-   %
-   \titleformat {\subsubsection} [block] {\raggedright\selectfont} {%
-     \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-       \appendixname~\thesubsubsection.%
-       }{%
-       \appendixname~\thesubsubsection%
-       }
-     } {0pt} {}
-   \titlespacing {\section} {0pt} {12pt} {3pt}
- }
+     }
+%    \end{macrocode}
 %
-\gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
-\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
-\csname appendixmore\endcsname
-\renewcommand{\thefigure}{A\arabic{figure}}
-\renewcommand{\thetable}{A\arabic{table}}
-\renewcommand{\thescheme}{A\arabic{scheme}}
-\renewcommand{\thechart}{A\arabic{chart}}
-\renewcommand{\theboxenv}{A\arabic{boxenv}}
-\renewcommand{\theequation}{A\arabic{equation}}
-\renewcommand{\thetheorem}{A\arabic{theorem}}
-\renewcommand{\thelemma}{A\arabic{lemma}}
-\renewcommand{\thecorollary}{A\arabic{corollary}}
-\renewcommand{\theproposition}{A\arabic{proposition}}
-\renewcommand{\thecharacterization}{A\arabic{characterization}}
-\renewcommand{\theproperty}{A\arabic{property}}
-\renewcommand{\theproblem}{A\arabic{problem}}
-\renewcommand{\theexample}{A\arabic{example}}
-\renewcommand{\theexamplesanddefinitions}{A\arabic{examplesanddefinitions}}
-\renewcommand{\theremark}{A\arabic{remark}}
-\renewcommand{\thedefinition}{A\arabic{definition}}
-\renewcommand{\thehypothesis}{A\arabic{hypothesis}}
-\renewcommand{\thenotation}{A\arabic{notation}}
-\renewcommand{\thealgorithm}{A\arabic{algorithm}}
-\renewcommand{\thegraph}{A\arabic{graph}}
-}
+%    \begin{macrocode}
+     {
+      \titleformat {\section} [block] {\raggedright\bfseries\large} {\large\bfseries%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesection.%
+         }{%
+         \appendixname\nobreakspace\thesection\nobreakspace%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+     %
+     \titleformat {\subsection} [block] {\raggedright\itshape} {%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesubsection.%
+         }{%
+         \appendixname\nobreakspace\thesubsection%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+     %
+     \titleformat {\subsubsection} [block] {\raggedright\selectfont} {%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesubsubsection.%
+         }{%
+         \appendixname\nobreakspace\thesubsubsection%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+   }
 
+  %\gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
+  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
+  \csname appendixmore\endcsname
+  \renewcommand{\thefigure}{A\arabic{figure}}
+  \renewcommand{\thetable}{A\arabic{table}}
+  \renewcommand{\thescheme}{A\arabic{scheme}}
+  \renewcommand{\thechart}{A\arabic{chart}}
+  \renewcommand{\theboxenv}{A\arabic{boxenv}}
+  \renewcommand{\theequation}{A\arabic{equation}}
+  \renewcommand{\thetheorem}{A\arabic{theorem}}
+  \renewcommand{\thelemma}{A\arabic{lemma}}
+  \renewcommand{\thecorollary}{A\arabic{corollary}}
+  \renewcommand{\theproposition}{A\arabic{proposition}}
+  \renewcommand{\thecharacterization}{A\arabic{characterization}}
+  \renewcommand{\theproperty}{A\arabic{property}}
+  \renewcommand{\theproblem}{A\arabic{problem}}
+  \renewcommand{\theexample}{A\arabic{example}}
+  \renewcommand{\theexamplesanddefinitions}{A\arabic{examplesanddefinitions}}
+  \renewcommand{\theremark}{A\arabic{remark}}
+  \renewcommand{\thedefinition}{A\arabic{definition}}
+  \renewcommand{\thehypothesis}{A\arabic{hypothesis}}
+  \renewcommand{\thenotation}{A\arabic{notation}}
+  \renewcommand{\thealgorithm}{A\arabic{algorithm}}
+  \renewcommand{\thegraph}{A\arabic{graph}}
+}
+  \ExplSyntaxOff 
+%    \end{macrocode}
+
+%    \begin{macrocode}
 %%%% Dimensions
 %% Width of left column = marginparwidth
 \newlength{\leftcolumnlength}
