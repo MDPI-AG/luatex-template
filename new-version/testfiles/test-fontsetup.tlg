@@ -139,10 +139,10 @@ Completed box being shipped out [1]
 ......\write1{\newmarginnote{note.1.1}{{\themn@abspage }{\number \mn@lastxpos sp}}}
 ......\hbox(0.0+0.0)x0.0, glue set - 131.1672fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\vbox(0.0+0.0)x116.65646, glue set - 556.74524fil, direction TLT
+.......\vbox(0.0+0.0)x116.65646, glue set - 584.35986fil, direction TLT
 ........\kern0.0
-........\kern556.74525
-........\vbox(0.0+0.0)x116.65646, glue set - 154.59734fil, direction TLT
+........\kern584.35988
+........\vbox(0.0+0.0)x116.65646, glue set - 123.53088fil, direction TLT
 .........\kern0.0
 .........\glue(\parskip) 0.0 plus 1.0
 .........\glue(\parskip) 0.0
@@ -159,7 +159,7 @@ Completed box being shipped out [1]
 ..........\glue(\rightskip) 0.0
 .........\glue(\parskip) 2.0
 .........\glue(\parskip) 0.0
-.........\glue(\baselineskip) 6.1799
+.........\glue(\baselineskip) 2.72807
 .........\hbox(5.082+0.14)x116.65646, glue set 87.24248fil, direction TLT
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -185,7 +185,7 @@ Completed box being shipped out [1]
 ..........\penalty -10000
 ..........\glue(\rightskip) 0.0
 .........\penalty 10000
-.........\glue(\baselineskip) 10.23393
+.........\glue(\baselineskip) 6.7821
 .........\hbox(5.082+1.967)x116.65646, glue set 86.43047fil, direction TLT
 ..........\kern-0.273 (left margin)
 ..........\TU/texgyrepagella(0)/m/n/7 A
@@ -206,7 +206,7 @@ Completed box being shipped out [1]
 ..........\penalty -10000
 ..........\glue(\rightskip) 0.0
 .........\penalty 10000
-.........\glue(\baselineskip) 8.40694
+.........\glue(\baselineskip) 4.95511
 .........\hbox(5.082+0.14)x116.65646, glue set 76.73517fil, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 P
 ..........\TU/texgyrepagella(0)/m/n/7 u
@@ -227,7 +227,7 @@ Completed box being shipped out [1]
 ..........\glue(\rightskip) 0.0
 .........\glue(\parskip) 2.0
 .........\glue(\parskip) 0.0
-.........\glue(\baselineskip) 10.23393
+.........\glue(\baselineskip) 6.7821
 .........\hbox(5.082+1.981)x116.65646, glue set 17.49419fil, direction TLT
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -283,7 +283,7 @@ Completed box being shipped out [1]
 ..........\kern-1.225 (right margin)
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\penalty 10000
-.........\glue(\baselineskip) 8.34393
+.........\glue(\baselineskip) 4.8921
 .........\hbox(5.131+1.932)x116.65646, glue set 6.26448fil, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 S
 ..........\TU/texgyrepagella(0)/m/n/7 u
@@ -339,7 +339,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 r
 ..........\kern-0.14 (right margin)
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\baselineskip) 8.44193
+.........\glue(\baselineskip) 4.9901
 .........\hbox(5.082+1.967)x116.65646, glue set - 0.02301, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 p
 ..........\TU/texgyrepagella(0)/m/n/7 o
@@ -395,7 +395,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 r
 ..........\kern-0.14 (right margin)
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\baselineskip) 8.39294
+.........\glue(\baselineskip) 4.94112
 .........\hbox(5.096+0.14)x116.65646, glue set 22.96046fil, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 t
 ..........\kern0.105 (font)
@@ -436,7 +436,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 h
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\baselineskip) 10.23393
+.........\glue(\baselineskip) 6.7821
 .........\hbox(5.082+0.14)x116.65646, glue set 21.56245fil, direction TLT
 ..........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://creativecommons.org/licenses/by/4.0/)>>}
 ..........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
@@ -482,7 +482,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\penalty 10000
-.........\glue(\baselineskip) 10.10794
+.........\glue(\baselineskip) 6.65611
 .........\hbox(5.208+1.708)x116.65646, glue set 32.56607fil, direction TLT
 ..........\kern-0.322 (left margin)
 ..........\TU/texgyrepagella(0)/m/n/7 (
