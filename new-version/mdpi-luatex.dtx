@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-05-28}
-\def\mdpiversion{v7.0a}
+\def\mdpiversion{v7.0b}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -303,8 +303,6 @@
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
 %    \end{macrocode}
 %
-% We increase the baselineskip of \cs{scriptsize} to 12pt as previously a
-% linespread of 1.71 was used in the left column:
 %% MORE DECLARATIONS
 %    \begin{macrocode}
 %%% Book contributions based on the article type
@@ -1135,7 +1133,7 @@
     \fontsize{7pt}{12pt}\selectfont
     \raggedright
     \parindent=0pt
-    \parskip=2pt
+    \parskip=6pt
     \hyphenpenalty=10000
     \tolerance=1000
  }
@@ -1169,8 +1167,8 @@
      {}
      {%
       \IfSubStr{\@externaleditor}{ and }
-         {Academic Editors: \@externaleditor\\[4pt]}
-         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor\\[4pt]}}%
+         {Academic Editors: \@externaleditor}
+         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}%
          %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
    }%
   }
@@ -1208,8 +1206,8 @@
           {}{\\ Corrected: \@datecorrected}
        \ifthenelse{\equal{\@dateretracted}{\@empty}}
           {}{\\ Retracted: \@dateretracted}
-       }\\[4pt]
-  }
+       }%
+  }%
   }
 %    \end{macrocode}
 % \end{macro}
@@ -1223,7 +1221,7 @@
     {}
     {%
    \ifthenelse{\equal{\@CorrStatement}{yes}}
-       {\textcorrstatement\\[4pt]}{}%
+       {\textcorrstatement}{}%
   }%
  }
 %    \end{macrocode}
@@ -1721,8 +1719,8 @@
 \newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\large\textbf{#1}}{%
 \par\vspace{3pt}\hspace{-0.85cm}{\small #2}\par}}
 
-% UF TODO correct semantic
-\renewcommand\abbreviations[2]{\section*{#1}\small\hspace{-0.85cm}#2}
+% UF TODO correct semantic, e.g.
+%\renewcommand\abbreviations[2]{\section*{#1}\small #2\par}
 
 % Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
