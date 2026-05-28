@@ -137,7 +137,6 @@
 \RequirePackage{attrib} % For XML2PDF use \tag{} for equation
 %\RequirePackage{upgreek} % For making greek letters not italic
 \RequirePackage{pbox} % For biography environment
-\IfDocumentMetadataF{\RequirePackage{ragged2e}} % For command \justifying
 \RequirePackage[subfigure]{tocloft} % For dots in TOC. If subfigure package is loaded, the subfigure option needs to be added here to avoid clash: \RequirePackage[subfigure]{tocloft}
 \RequirePackage{marginnote} % For left column
 \reversemarginpar % To have the left column on the left side
@@ -1118,12 +1117,11 @@
 %
 % A command for the font setup in this column:
 % \begin{macro}{\leftcolFont}
-% We increase the linespread to get a baselineskip of 12pt.
+% We increase the \cs{baselineskip} to 12pt and the \cs{parskip} to 6pt.
 %    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
-    \linespread{1.288}%
-    \scriptsize
+    \fontsize{7pt}{12pt}\selectfont
     \raggedright
     \parindent=0pt
     \parskip=2pt
@@ -1285,10 +1283,10 @@
 %    \end{macrocode}
 % \cs{Mylen} should be \cs{textheight} minus the total height of the box
 %  so that the resulting value can be used to align the left column to the bottom of \cs{textheight}.
-%  Then substract 17pt (\cs{topskip}+\cs{baselineskip} defined in \cs{leftcolFont})
+%  Then substract 23pt (\cs{topskip}+\cs{baselineskip+\cs{parskip}} defined in \cs{leftcolFont})
 %  to make the bottom alignment.
 %    \begin{macrocode}
-  \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-17pt}}%
+  \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-17pt-6pt}}%
   }
 %    \end{macrocode}
 % \end{macro}%
