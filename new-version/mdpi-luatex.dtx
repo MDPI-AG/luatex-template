@@ -25,7 +25,7 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-05-13}
+\def\mdpidate{2026-05-28}
 \def\mdpiversion{v7.0a}
 %<*driver>
 \DocumentMetadata{tagging=on}
@@ -304,6 +304,8 @@
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
 %    \end{macrocode}
 %
+% We increase the baselineskip of \cs{scriptsize} to 12pt as previously a
+% linespread of 1.71 was used in the left column:
 %% MORE DECLARATIONS
 %    \begin{macrocode}
 %%% Book contributions based on the article type
@@ -1120,17 +1122,17 @@
 %    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
-  \linespread{1.288}%
-  \scriptsize
-  \justifying
+    \linespread{1.288}%
+    \scriptsize
+    \raggedright
     \parindent=0pt
     \parskip=2pt
-  \hyphenpenalty=10000
-  \tolerance=1000
+    \hyphenpenalty=10000
+    \tolerance=1000
  }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % The contents is split into six parts.
 %
 % \subsubsection{Part 1: Update the logo}%
@@ -1148,7 +1150,7 @@
  }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % \subsubsection{Part 2: Academic editor(s)}
 % \begin{macro}{\leftcolExternalEditor}
 %    \begin{macrocode}
@@ -1158,13 +1160,14 @@
      {}
      {%
       \IfSubStr{\@externaleditor}{ and }
-         {Academic Editors: \@externaleditor}
-         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}%
+         {Academic Editors: \@externaleditor\\[4pt]}
+         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor\\[4pt]}}%
          %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
    }%
   }
 %    \end{macrocode}
 % \end{macro}
+
 % \subsubsection{Part 3: Dates}
 % \begin{macro}{\leftcolDates}
 %    \begin{macrocode}
@@ -1196,12 +1199,12 @@
           {}{\\ Corrected: \@datecorrected}
        \ifthenelse{\equal{\@dateretracted}{\@empty}}
           {}{\\ Retracted: \@dateretracted}
-       }
+       }\\[4pt]
   }
   }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % \subsubsection{Part 4: Correction statement}
 % \begin{macro}{\leftcolCorrstatement}
 %    \begin{macrocode}
@@ -1211,14 +1214,13 @@
     {}
     {%
    \ifthenelse{\equal{\@CorrStatement}{yes}}
-       {\textcorrstatement}{}%
+       {\textcorrstatement\\[4pt]}{}%
   }%
  }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % \subsubsection{Part 5: Copyright}
-%
 % \begin{macro}{\leftcolCright}
 %    \begin{macrocode}
 \newcommand{\leftcolumnCright}
@@ -1227,7 +1229,7 @@
   }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % \subsubsection{Building the left column}
 % The content of the left column. The marginnote with this content will be placed
 % at the very top of the first page to have a fixed reference point
@@ -1256,12 +1258,12 @@
    }
 %    \end{macrocode}
 % \end{macro}
-%
+
 %    \begin{macrocode}
 \newlength{\MyLen} % For length of the left column content
 \newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
 %    \end{macrocode}
-%
+
 % \subsection{Placing of the left column}
 % The following calculation needs to be done after begin document, but before the title is typeset.
 % It is therefore executed in the \texttt{begindocument/end} hook.
@@ -1290,9 +1292,8 @@
   }
 %    \end{macrocode}
 % \end{macro}%
-%
-%    \begin{macrocode}
 
+%    \begin{macrocode}
 % Left column split options for long titles/author lists
 % Make new command for deciding for the split option
 \def\@leftcolumnsplit{}
@@ -1611,7 +1612,7 @@
 \par\vspace{3pt}\hspace{-0.85cm}{\small #2}\par}}
 
 % UF TODO correct semantic
-\renewcommand\abbreviations[2]{\section*{#1}#2\par}
+\renewcommand\abbreviations[2]{\section*{#1}\small\hspace{-0.85cm}#2}
 
 % Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
