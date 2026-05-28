@@ -81,7 +81,7 @@ Completed box being shipped out [1]
 ........\hbox(21.97998+0.0)x525.52245, direction TLT
 .........\hbox(21.97998+0.0)x0.0, glue set - 525.52246fil, direction TLT
 ..........\vbox(21.97998+0.0)x525.52245, direction TLT
-...........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+...........\hbox(9.78595+4.19403)x525.52245, glue set 525.52246fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -91,7 +91,7 @@ Completed box being shipped out [1]
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ...........\glue 8.0
 ...........\glue 0.0
@@ -703,7 +703,7 @@ Completed box being shipped out [1]
 .......\hbox(9.78595+4.19403)x525.52245, direction TLT
 ........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 .........\vbox(7.33946+3.14552)x525.52245, direction TLT
-..........\hbox(7.33946+3.14552)x525.52245, glue set 167.01321fil, direction TLT
+..........\hbox(7.33946+3.14552)x525.52245, glue set 334.02643fil, direction TLT
 ...........\kern-0.288 (left margin)
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -794,7 +794,7 @@ Completed box being shipped out [1]
 ...........\TU/texgyrepagella(0)/m/it/8 d
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
-...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
@@ -959,7 +959,7 @@ Completed box being shipped out [2]
 ........\hbox(18.349+3.14552)x525.52245, direction TLT
 .........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 ..........\vbox(18.349+3.14552)x525.52245, direction TLT
-...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+...........\hbox(5.864+2.264)x525.52245, glue set 334.02643fil, direction TLT
 ............\kern-0.288 (left margin)
 ............\localpar
 .............\localinterlinepenalty=0
@@ -1049,7 +1049,7 @@ Completed box being shipped out [2]
 ............\TU/texgyrepagella(0)/m/it/8 e
 ............\TU/texgyrepagella(0)/m/it/8 d
 ............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ...........\glue 2.0
 ...........\glue 0.0
@@ -1057,7 +1057,7 @@ Completed box being shipped out [2]
 ...........\glue(\parskip) 0.0
 ...........\glue(\parskip) 0.0
 ...........\glue(\baselineskip) 0.88153
-...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -1068,7 +1068,7 @@ Completed box being shipped out [2]
 .............\rule(0.4+0.0)x525.23764
 ............\rule(7.33946+3.14552)x0.0
 ............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
@@ -1146,8 +1146,9 @@ Completed box being shipped out [2]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 14.51074
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\topskip) 1.828
-....\hbox(8.172+0.204)x394.35522, glue set 159.2276fil, direction TLT
+....\hbox(8.172+0.204)x394.35522, glue set 318.4552fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1187,10 +1188,11 @@ Completed box being shipped out [2]
 .....\TU/texgyrepagella(0)/b/n/12 o
 .....\TU/texgyrepagella(0)/b/n/12 n
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\marks1{\__mark_value:nn {4}{\MakeUppercase    []{1\hskip 1em\relax Test section}}}
 ....\marks2{\__mark_value:nn {5}{}}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {1}Test section}{\thepage }{section.1}\protected@file@percent }}
@@ -1437,10 +1439,13 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.81999
-....\hbox(7.33+0.11)x394.35522, glue set 158.14761fil, direction TLT
+....\hbox(7.33+0.11)x394.35522, glue set 316.29523fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1488,10 +1493,11 @@ Completed box being shipped out [2]
 .....\TU/texgyrepagella(0)/m/it/10 o
 .....\TU/texgyrepagella(0)/m/it/10 n
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\marks2{\__mark_value:nn {6}{1.1\hskip 1em\relax Test subsection}}
 ....\marks3{\__mark_value:nn {7}{1.1\hskip 1em\relax Test subsection}}
 ....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {1.1}Test subsection}{\thepage }{subsection.1.1}\protected@file@percent }}
@@ -1738,10 +1744,13 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+0.2)x394.35522, glue set 143.5276fil, direction TLT
+....\hbox(7.26+0.2)x394.35522, glue set 287.0552fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1796,10 +1805,11 @@ Completed box being shipped out [2]
 .....\TU/texgyrepagella(0)/m/n/10 o
 .....\TU/texgyrepagella(0)/m/n/10 n
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{\protect \numberline {1.1.1}Test subsubsection}{\thepage }{subsubsection.1.1.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
@@ -2044,10 +2054,13 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 164.19261fil, direction TLT
+....\hbox(7.26+2.83)x394.35522, glue set 328.38522fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -2057,8 +2070,6 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
 ........\pdfdest name{paragraph*.1} xyz
 ........\pdfdest name{paragraph*.1} xyz
 ........\penalty 10000
@@ -2089,10 +2100,11 @@ Completed box being shipped out [2]
 .....\TU/texgyrepagella(0)/m/n/10 p
 .....\TU/texgyrepagella(0)/m/n/10 h
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{Test paragraph}{\thepage }{paragraph*.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
@@ -2346,11 +2358,12 @@ Completed box being shipped out [2]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\pdfdest name{subparagraph*.2} xyz
 .......\pdfdest name{subparagraph*.2} xyz
 .......\penalty 10000
@@ -2381,6 +2394,7 @@ Completed box being shipped out [2]
 .....\TU/texgyrepagella(0)/b/n/10 a
 .....\TU/texgyrepagella(0)/b/n/10 p
 .....\TU/texgyrepagella(0)/b/n/10 h
+.....\pdfcolorstack 0 pop
 .....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.2}\protected@file@percent }}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -2636,7 +2650,7 @@ Completed box being shipped out [2]
 .......\hbox(9.78595+4.19403)x525.52245, direction TLT
 ........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
 .........\vbox(0.0+0.0)x525.52245, direction TLT
-..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 525.52246fil, direction TLT
 ...........\localpar
 ............\localinterlinepenalty=0
 ............\localbrokenpenalty=0
@@ -2644,7 +2658,7 @@ Completed box being shipped out [2]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 10000
-...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
@@ -2809,7 +2823,7 @@ Completed box being shipped out [3]
 ........\hbox(18.349+3.14552)x525.52245, direction TLT
 .........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 ..........\vbox(18.349+3.14552)x525.52245, direction TLT
-...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+...........\hbox(5.864+2.264)x525.52245, glue set 334.02643fil, direction TLT
 ............\kern-0.288 (left margin)
 ............\localpar
 .............\localinterlinepenalty=0
@@ -2899,7 +2913,7 @@ Completed box being shipped out [3]
 ............\TU/texgyrepagella(0)/m/it/8 e
 ............\TU/texgyrepagella(0)/m/it/8 d
 ............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ...........\glue 2.0
 ...........\glue 0.0
@@ -2907,7 +2921,7 @@ Completed box being shipped out [3]
 ...........\glue(\parskip) 0.0
 ...........\glue(\parskip) 0.0
 ...........\glue(\baselineskip) 0.88153
-...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -2918,7 +2932,7 @@ Completed box being shipped out [3]
 .............\rule(0.4+0.0)x525.23764
 ............\rule(7.33946+3.14552)x0.0
 ............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
@@ -2996,8 +3010,9 @@ Completed box being shipped out [3]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 14.51074
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\topskip) 1.36
-....\hbox(8.64+3.192)x394.35522, glue set 106.51161fil, direction TLT
+....\hbox(8.64+3.192)x394.35522, glue set 213.02321fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -3062,19 +3077,21 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/12 y
 .....\penalty 10000
 .....\kern-0.336 (right margin)
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\marks1{\__mark_value:nn {8}{\MakeUppercase    []{B\hskip 1em\relax appendixtitlesempty}}}
 ....\marks2{\__mark_value:nn {9}{}}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {B}appendixtitlesempty}{\thepage }{section.B}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.488
-....\hbox(8.64+3.096)x394.35522, glue set 162.51561fil, direction TLT
+....\hbox(8.64+3.096)x394.35522, glue set 325.03122fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -3108,8 +3125,11 @@ Completed box being shipped out [3]
 ......\TU/texgyrepagella(0)/b/n/12  
 ......\glue 0.0 plus 1.5 minus 1.0
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -3353,10 +3373,13 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.81999
-....\hbox(7.33+2.76)x394.35522, glue set 167.86761fil, direction TLT
+....\hbox(7.33+2.76)x394.35522, glue set 335.73523fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -3392,8 +3415,11 @@ Completed box being shipped out [3]
 ......\TU/texgyrepagella(0)/m/it/10  
 ......\glue 0.0 plus 1.25 minus 0.83333
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -3637,10 +3663,13 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.81)x394.35522, glue set 161.35762fil, direction TLT
+....\hbox(7.26+2.81)x394.35522, glue set 322.71524fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -3678,8 +3707,11 @@ Completed box being shipped out [3]
 ......\TU/texgyrepagella(0)/m/n/10  
 ......\glue 0.0 plus 1.25 minus 0.83333
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -3923,10 +3955,13 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 11.15
-....\hbox(0.0+0.0)x394.35522, glue set 197.17761fil, direction TLT
+....\hbox(0.0+0.0)x394.35522, glue set 394.35522fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -3936,16 +3971,15 @@ Completed box being shipped out [3]
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
 ........\pdfdest name{paragraph*.3} xyz
 ........\pdfdest name{paragraph*.3} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -4192,21 +4226,24 @@ Completed box being shipped out [3]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set - 0.01146, direction TLT
+....\hbox(7.26+2.83)x394.35522, glue set - 0.01137, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\pdfdest name{subparagraph*.4} xyz
 .......\pdfdest name{subparagraph*.4} xyz
 .......\penalty 10000
 .....\kern0.0
+.....\glue 21.33955
+.....\pdfcolorstack 0 pop
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/10  
@@ -4323,16 +4360,15 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/m/n/10 u
 .....\TU/texgyrepagella(0)/m/n/10 m
 .....\TU/texgyrepagella(0)/m/n/10  
-.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\kern-1.25 (right margin)
-.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\rightskip) -2.5
 ....\penalty 20000
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x394.35522, glue set 95.46198fil, direction TLT
+....\hbox(7.28+2.83)x394.35522, glue set 81.17198fil, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\TU/texgyrepagella(0)/m/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
 .....\TU/texgyrepagella(0)/m/n/10 p
 .....\TU/texgyrepagella(0)/m/n/10 l
 .....\TU/texgyrepagella(0)/m/n/10 a
@@ -4459,7 +4495,7 @@ Completed box being shipped out [3]
 .......\hbox(9.78595+4.19403)x525.52245, direction TLT
 ........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
 .........\vbox(0.0+0.0)x525.52245, direction TLT
-..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 525.52246fil, direction TLT
 ...........\localpar
 ............\localinterlinepenalty=0
 ............\localbrokenpenalty=0
@@ -4467,7 +4503,7 @@ Completed box being shipped out [3]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 10000
-...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
@@ -5192,7 +5228,7 @@ Completed box being shipped out [4]
 ........\hbox(18.349+3.14552)x525.52245, direction TLT
 .........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 ..........\vbox(18.349+3.14552)x525.52245, direction TLT
-...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+...........\hbox(5.864+2.264)x525.52245, glue set 334.02643fil, direction TLT
 ............\kern-0.288 (left margin)
 ............\localpar
 .............\localinterlinepenalty=0
@@ -5282,7 +5318,7 @@ Completed box being shipped out [4]
 ............\TU/texgyrepagella(0)/m/it/8 e
 ............\TU/texgyrepagella(0)/m/it/8 d
 ............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ...........\glue 2.0
 ...........\glue 0.0
@@ -5290,7 +5326,7 @@ Completed box being shipped out [4]
 ...........\glue(\parskip) 0.0
 ...........\glue(\parskip) 0.0
 ...........\glue(\baselineskip) 0.88153
-...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -5301,7 +5337,7 @@ Completed box being shipped out [4]
 .............\rule(0.4+0.0)x525.23764
 ............\rule(7.33946+3.14552)x0.0
 ............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
@@ -5380,8 +5416,9 @@ Completed box being shipped out [4]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 14.51074
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\topskip) 1.36
-....\hbox(8.64+3.192)x394.35522, glue set 112.24161fil, direction TLT
+....\hbox(8.64+3.192)x394.35522, glue set 224.4832fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -5442,19 +5479,21 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/12 e
 .....\TU/texgyrepagella(0)/b/n/12 s
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\marks1{\__mark_value:nn {10}{\MakeUppercase    []{D\hskip 1em\relax appendixtitlesyes}}}
 ....\marks2{\__mark_value:nn {11}{}}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {D}appendixtitlesyes}{\thepage }{section.D}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.488
-....\hbox(8.64+3.096)x394.35522, glue set 129.7316fil, direction TLT
+....\hbox(8.64+3.096)x394.35522, glue set 259.4632fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -5507,10 +5546,11 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/12 o
 .....\TU/texgyrepagella(0)/b/n/12 n
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\marks1{\__mark_value:nn {12}{\MakeUppercase    []{E\hskip 1em\relax Test section}}}
 ....\penalty 10000
 ....\marks2{\__mark_value:nn {13}{}}
@@ -5760,10 +5800,13 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.81999
-....\hbox(7.33+2.76)x394.35522, glue set 136.61761fil, direction TLT
+....\hbox(7.33+2.76)x394.35522, glue set 273.23523fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -5824,10 +5867,11 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/m/it/10 o
 .....\TU/texgyrepagella(0)/m/it/10 n
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\marks2{\__mark_value:nn {14}{E.1\hskip 1em\relax Test subsection}}
 ....\marks3{\__mark_value:nn {15}{E.1\hskip 1em\relax Test subsection}}
 ....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {E.1}Test subsection}{\thepage }{subsection.E.1}\protected@file@percent }}
@@ -6074,10 +6118,13 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.81)x394.35522, glue set 119.44762fil, direction TLT
+....\hbox(7.26+2.81)x394.35522, glue set 238.89522fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -6145,10 +6192,11 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/m/n/10 o
 .....\TU/texgyrepagella(0)/m/n/10 n
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{\protect \numberline {E.1.1}Test subsubsection}{\thepage }{subsubsection.E.1.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
@@ -6393,10 +6441,13 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 164.19261fil, direction TLT
+....\hbox(7.26+2.83)x394.35522, glue set 328.38522fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -6406,8 +6457,6 @@ Completed box being shipped out [4]
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
 ........\pdfdest name{paragraph*.5} xyz
 ........\pdfdest name{paragraph*.5} xyz
 ........\penalty 10000
@@ -6438,10 +6487,11 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/m/n/10 p
 .....\TU/texgyrepagella(0)/m/n/10 h
 .....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
 ....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{Test paragraph}{\thepage }{paragraph*.5}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
@@ -6695,11 +6745,12 @@ Completed box being shipped out [4]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\pdfdest name{subparagraph*.6} xyz
 .......\pdfdest name{subparagraph*.6} xyz
 .......\penalty 10000
@@ -6730,6 +6781,7 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 a
 .....\TU/texgyrepagella(0)/b/n/10 p
 .....\TU/texgyrepagella(0)/b/n/10 h
+.....\pdfcolorstack 0 pop
 .....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.6}\protected@file@percent }}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -6985,7 +7037,7 @@ Completed box being shipped out [4]
 .......\hbox(9.78595+4.19403)x525.52245, direction TLT
 ........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
 .........\vbox(0.0+0.0)x525.52245, direction TLT
-..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 525.52246fil, direction TLT
 ...........\localpar
 ............\localinterlinepenalty=0
 ............\localbrokenpenalty=0
@@ -6993,7 +7045,7 @@ Completed box being shipped out [4]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 10000
-...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
