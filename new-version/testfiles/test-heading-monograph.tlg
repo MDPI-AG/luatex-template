@@ -1762,8 +1762,11 @@ Completed box being shipped out [2]
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\pdfdest name{paragraph.1.1.1.1} xyz
 ....\penalty -300
+....\glue 12.0
+....\pdfdest name{paragraph*.1} xyz
+....\penalty 10000
+....\glue -12.0
 ....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -1802,7 +1805,7 @@ Completed box being shipped out [2]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty 10000
-....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{\protect \numberline {1.1.1.1}Test paragraph}{\thepage }{paragraph.1.1.1.1}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{Test paragraph}{\thepage }{paragraph*.1}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\glue 3.0
@@ -2026,11 +2029,11 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 15.24251 plus 4.69 minus 0.93797
-....\pdfdest name{subparagraph*.1} xyz
+....\pdfdest name{subparagraph*.2} xyz
 ....\penalty 10000
 ....\glue -15.24251 plus -4.69 minus -0.93797
 ....\glue 15.24251 plus 4.69 minus 0.93797
-....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.1}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.2}\protected@file@percent }}
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -3291,8 +3294,11 @@ Completed box being shipped out [3]
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\pdfdest name{paragraph.C.1.1.1} xyz
 ....\penalty -300
+....\glue 12.0
+....\pdfdest name{paragraph*.3} xyz
+....\penalty 10000
+....\glue -12.0
 ....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -3310,7 +3316,7 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty 10000
-....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{\protect \numberline {C.1.1.1}}{\thepage }{paragraph.C.1.1.1}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{}{\thepage }{paragraph*.3}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\glue 3.0
@@ -3534,11 +3540,11 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 15.24251 plus 4.69 minus 0.93797
-....\pdfdest name{subparagraph*.2} xyz
+....\pdfdest name{subparagraph*.4} xyz
 ....\penalty 10000
 ....\glue -15.24251 plus -4.69 minus -0.93797
 ....\glue 15.24251 plus 4.69 minus 0.93797
-....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{}{\thepage }{subparagraph*.2}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{}{\thepage }{subparagraph*.4}\protected@file@percent }}
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -4829,8 +4835,11 @@ Completed box being shipped out [4]
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\pdfdest name{paragraph.E.1.1.1} xyz
 ....\penalty -300
+....\glue 12.0
+....\pdfdest name{paragraph*.5} xyz
+....\penalty 10000
+....\glue -12.0
 ....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -4869,7 +4878,7 @@ Completed box being shipped out [4]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty 10000
-....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{\protect \numberline {E.1.1.1}Test paragraph}{\thepage }{paragraph.E.1.1.1}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{Test paragraph}{\thepage }{paragraph*.5}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\glue 3.0
@@ -5093,11 +5102,11 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 15.24251 plus 4.69 minus 0.93797
-....\pdfdest name{subparagraph*.3} xyz
+....\pdfdest name{subparagraph*.6} xyz
 ....\penalty 10000
 ....\glue -15.24251 plus -4.69 minus -0.93797
 ....\glue 15.24251 plus 4.69 minus 0.93797
-....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.3}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.6}\protected@file@percent }}
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
