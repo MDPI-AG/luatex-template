@@ -1813,7 +1813,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(4.5+0.0)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(4.5+0.0)x21.25, glue set 15.65fil, direction TLT
+......\hbox(4.5+0.0)x16.25, glue set 10.65fil, direction TLT
 .......\hbox(4.5+0.0)x5.6, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
@@ -1826,7 +1826,7 @@ Completed box being shipped out [1]
 ........\kern0.0
 ........\TU/texgyrepagella(0)/m/n/10 •
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-......\glue 0.0
+......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -1856,7 +1856,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(4.5+0.0)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(4.5+0.0)x21.25, glue set 15.65fil, direction TLT
+......\hbox(4.5+0.0)x16.25, glue set 10.65fil, direction TLT
 .......\hbox(4.5+0.0)x5.6, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
@@ -1869,7 +1869,7 @@ Completed box being shipped out [1]
 ........\kern0.0
 ........\TU/texgyrepagella(0)/m/n/10 •
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-......\glue 0.0
+......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -2129,7 +2129,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(2.91+0.0)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(2.91+0.0)x21.25, glue set 16.25fil, direction TLT
+......\hbox(2.91+0.0)x16.25, glue set 11.25fil, direction TLT
 .......\hbox(2.91+0.0)x5.0, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
@@ -2142,7 +2142,7 @@ Completed box being shipped out [1]
 ........\kern0.0
 ........\TU/texgyrepagella(0)/b/n/10 –
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-......\glue 0.0
+......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -2172,7 +2172,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(2.91+0.0)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(2.91+0.0)x21.25, glue set 16.25fil, direction TLT
+......\hbox(2.91+0.0)x16.25, glue set 11.25fil, direction TLT
 .......\hbox(2.91+0.0)x5.0, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
@@ -2185,7 +2185,7 @@ Completed box being shipped out [1]
 ........\kern0.0
 ........\TU/texgyrepagella(0)/b/n/10 –
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-......\glue 0.0
+......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -2462,7 +2462,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(6.94+0.05)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(6.94+0.05)x21.25, glue set 13.75fil, direction TLT
+......\hbox(6.94+0.05)x16.25, glue set 8.75fil, direction TLT
 .......\hbox(6.94+0.05)x7.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
@@ -2476,7 +2476,7 @@ Completed box being shipped out [1]
 ........\TU/texgyrepagella(0)/m/n/10 1
 ........\TU/texgyrepagella(0)/m/n/10 .
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-......\glue 0.0
+......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -2506,7 +2506,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(6.89+0.05)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(6.89+0.05)x21.25, glue set 13.75fil, direction TLT
+......\hbox(6.89+0.05)x16.25, glue set 8.75fil, direction TLT
 .......\hbox(6.89+0.05)x7.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
@@ -2520,7 +2520,7 @@ Completed box being shipped out [1]
 ........\TU/texgyrepagella(0)/m/n/10 2
 ........\TU/texgyrepagella(0)/m/n/10 .
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-......\glue 0.0
+......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -2780,7 +2780,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(7.44+2.44)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(7.44+2.44)x21.25, glue set 7.13fil, direction TLT
+......\hbox(7.44+2.44)x16.25, glue set 2.13fil, direction TLT
 .......\hbox(7.44+2.44)x14.12, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
@@ -2795,7 +2795,7 @@ Completed box being shipped out [1]
 ........\TU/texgyrepagella(0)/m/n/10 a
 ........\TU/texgyrepagella(0)/m/n/10 )
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-......\glue 0.0
+......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -2825,7 +2825,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(7.44+2.44)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(7.44+2.44)x21.25, glue set 6.6fil, direction TLT
+......\hbox(7.44+2.44)x16.25, glue set 1.6fil, direction TLT
 .......\hbox(7.44+2.44)x14.65, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
@@ -2840,7 +2840,7 @@ Completed box being shipped out [1]
 ........\TU/texgyrepagella(0)/m/n/10 b
 ........\TU/texgyrepagella(0)/m/n/10 )
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-......\glue 0.0
+......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
