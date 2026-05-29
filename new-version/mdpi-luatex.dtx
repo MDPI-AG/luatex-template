@@ -235,6 +235,46 @@
 \ProcessOptions\relax
 
 %    \end{macrocode}
+%
+% \subsection{Temporary patches for taggings}
+% \subsubsection{The \env{adjustwidth} environment}
+% The environment is built by the \pkg{changepage} package
+% with a list. This breaks tagging, e.g., if the environment starts with
+% a heading command. The next \LaTeX-release will provide a tagging recipe that
+% can be used. Until then we have to provide directly
+%    \begin{macrocode}
+\ExplSyntaxOn
+\cs_set_protected:Npn \__block_recipe_noop: 
+ {
+   \cs_set_eq:NN \__kernel_displayblock_beginpar_hmode:w
+                                              \prg_do_nothing:
+   \cs_set_eq:NN \__kernel_displayblock_beginpar_vmode:
+                                               \prg_do_nothing:
+   \let \__kernel_displayblock_begin:          \prg_do_nothing:
+   \let \__kernel_displayblock_end:            \prg_do_nothing:
+   \socket_assign_plug:nn{block/endpe}{noop}
+ }
+%    \end{macrocode}
+% With it we redefine the environment. Note that spacing and behaviour is not fully
+% identical yet. TODO: fine tune!
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \RenewDocumentEnvironment{adjustwidth}{mm}
+    {
+      \begin{displayblock}
+       [tagging-recipe=noop,
+        left-margin=\dimeval{#1+0pt},
+        right-margin={#2+0pt},
+        para-indent=\parindent,
+        begin-vspace=0pt,
+        end-vspace=0pt]
+    }
+    {\end{displayblock}}  
+ }
+\ExplSyntaxOff 
+%    \end{macrocode}
+%
 % \subsection{Fontsizes}
 % The following font size are inherited from article
 % \begin{tabular}{lll}
