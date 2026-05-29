@@ -1598,8 +1598,11 @@
 
 %    \end{macrocode}
 % \subsection{Formatting of the heading commands}
+% By default \cs{paragraph} is not numbered.
+% To get paragraphs 
+% numbered and counted, increase the value of secnumdepth to 4
 %    \begin{macrocode}
-\setcounter{secnumdepth}{4} % Default: 3 in the article class. To get paragraphs numbered and counted, increase the default value of secnumdepth to 4
+\setcounter{secnumdepth}{3} 
 %    \end{macrocode}
 % This command will at some time be added to the LaTeX kernel. It gives a space of
 % the width of a normal word space.
@@ -1713,7 +1716,7 @@
    \titleformat {\subsubsection} [block] {\raggedright \normalsize} {\thesubsubsection.\space} {0pt} {}
    \titlespacing {\subsubsection} {0pt} {12pt} {3pt}
 
-   \titleformat {\paragraph} [block] {\raggedright \normalsize} {} {0pt} {}
+   \titleformat {\paragraph} [block] {\raggedright \normalsize} {\theparagraph.\space} {0pt} {}
    \titlespacing {\paragraph} {0pt} {12pt} {3pt}
  } 
 
