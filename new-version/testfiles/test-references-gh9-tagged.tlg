@@ -1,5 +1,9 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+LaTeX template Info: Declaring instance 'section' of type heading on line ....
+LaTeX template Info: Declaring instance 'section' of type heading on line ....
+LaTeX template Info: Declaring instance 'subsection' of type heading on line ....
+LaTeX template Info: Declaring instance 'subsubsection' of type heading on line ....
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 21.49452pt, for example:
 (fancyhdr)                \setlength{\headheight}{21.49452pt}.
@@ -257,7 +261,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 516.57953fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 518.00336fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -272,16 +276,23 @@ Completed box being shipped out [1]
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
 ....\pdfdest name{Doc-Start} xyz
-....\pdfdest name{section.A} xyz
-....\pdfdest name{section.A} xyz
-....\glue(\topskip) 0.0
-....\hbox(11.42395+4.89604)x394.35522, glue set 334.6672fil, direction TLT
+....\pdfcolorstack 0 push {0 g 0 G}
+....\glue(\topskip) 1.36
+....\hbox(8.64+0.204)x394.35522, glue set 334.6672fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\rule(11.42395+4.89604)x0.0
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+........\pdfdest name{section*.1} xyz
+........\pdfdest name{section*.1} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 R
@@ -301,25 +312,20 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/12 c
 .....\TU/texgyrepagella(0)/b/n/12 e
 .....\TU/texgyrepagella(0)/b/n/12 s
-.....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\rule(11.42395+4.89604)x0.0
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\penalty 10000
-....\marks1{\__mark_value:nn {1}{\MakeUppercase    []{A\hskip 1em\relax References}}}
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 pop
+....\marks1{\__mark_value:nn {1}{\MakeUppercase    []{References}}}
 ....\marks2{\__mark_value:nn {2}{}}
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {A}References}{\thepage }{section.A}\protected@file@percent }}
-....\penalty 10000
+....\write1{\@writefile{toc}{\protect \contentsline {section}{References}{\thepage }{section*.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
-....\glue 0.0
-....\glue 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.32196
+....\glue(\baselineskip) 6.014
 ....\hbox(6.597+1.854)x371.23933, glue set 64.03928fil, shifted 23.11589, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
@@ -2058,7 +2064,7 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(9.78595+4.19403)x525.52245, direction TLT
-.........\hbox(9.78595+4.19403)x525.52245, glue set 261.51123fil, direction TLT
+.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -2066,7 +2072,6 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-..........\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 ..........\rule(9.78595+4.19403)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0

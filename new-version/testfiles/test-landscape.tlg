@@ -123,10 +123,10 @@ Completed box being shipped out [1]
 ......\write1{\newmarginnote{note.1.1}{{\themn@abspage }{\number \mn@lastxpos sp}}}
 ......\hbox(0.0+0.0)x0.0, glue set - 131.1672fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\vbox(0.0+0.0)x116.65646, glue set - 576.3927fil, direction TLT
+.......\vbox(0.0+0.0)x116.65646, glue set - 574.3927fil, direction TLT
 ........\kern0.0
-........\kern576.39272
-........\vbox(0.0+0.0)x116.65646, glue set - 125.49394fil, direction TLT
+........\kern574.39272
+........\vbox(0.0+0.0)x116.65646, glue set - 131.49394fil, direction TLT
 .........\kern0.0
 .........\glue(\parskip) 0.0 plus 1.0
 .........\glue(\parskip) 0.0
@@ -141,7 +141,7 @@ Completed box being shipped out [1]
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\parskip) 2.0
+.........\glue(\parskip) 6.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 2.72397
 .........\hbox(5.082+0.14)x116.65646, glue set 88.11748fil, direction TLT
@@ -168,8 +168,8 @@ Completed box being shipped out [1]
 ..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue -2.0
-.........\glue(\parskip) 2.0
+.........\glue -6.0
+.........\glue(\parskip) 6.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 6.778
 .........\hbox(5.082+1.967)x116.65646, glue set 87.30547fil, direction TLT
@@ -197,11 +197,11 @@ Completed box being shipped out [1]
 ..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue -2.0
-.........\glue(\parskip) 2.0
+.........\glue -6.0
+.........\glue(\parskip) 6.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 4.951
-.........\hbox(5.082+0.14)x116.65646, glue set 82.08514fil, direction TLT
+.........\hbox(5.082+0.14)x116.65646, glue set 80.30182fil, direction TLT
 ..........\localpar
 ...........\localinterlinepenalty=0
 ...........\localbrokenpenalty=0
@@ -221,12 +221,11 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 d
 ..........\TU/texgyrepagella(0)/m/n/7 :
 ..........\glue(\spaceskip) 1.78333 plus 1.75 minus 0.29166
+..........\glue(\spaceskip) 1.78333 plus 1.75 minus 0.29166
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue -2.0
-.........\glue 4.0
-.........\glue(\parskip) 2.0
+.........\glue(\parskip) 6.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 6.778
 .........\hbox(5.082+1.981)x116.65646, glue set 17.49419fil, direction TLT
@@ -828,7 +827,7 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(9.78595+4.19403)x525.52245, direction TLT
-.........\hbox(9.78595+4.19403)x525.52245, glue set 261.51123fil, direction TLT
+.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -836,7 +835,6 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-..........\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 ..........\rule(9.78595+4.19403)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
@@ -6316,7 +6314,7 @@ Completed box being shipped out [2]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(9.78595+4.19403)x903.94383, direction TLT
-.........\hbox(9.78595+4.19403)x903.94383, glue set 450.72192fil, direction TLT
+.........\hbox(9.78595+4.19403)x903.94383, glue set 451.97192fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -6324,7 +6322,6 @@ Completed box being shipped out [2]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-..........\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 ..........\rule(9.78595+4.19403)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0

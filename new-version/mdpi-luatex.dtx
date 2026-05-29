@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-05-28}
-\def\mdpiversion{v7.0a}
+\def\mdpiversion{v7.0b}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -124,7 +124,7 @@
 %\RequirePackage{amssymb} % For math environment bold format
 \RequirePackage[right,mathlines]{lineno}
 \RequirePackage{enumitem}
-\RequirePackage{titlesec}
+\IfDocumentMetadataF{\RequirePackage{titlesec}}
 \RequirePackage{etoolbox} % For \AtBeginDocument etc.
 \RequirePackage{tabto} % To use tab for alignment on first page
 \RequirePackage{xcolor} % To provide color for soul (for english editing), for adding cell color of table
@@ -235,6 +235,46 @@
 \ProcessOptions\relax
 
 %    \end{macrocode}
+%
+% \subsection{Temporary patches for taggings}
+% \subsubsection{The \env{adjustwidth} environment}
+% The environment is built by the \pkg{changepage} package
+% with a list. This breaks tagging, e.g., if the environment starts with
+% a heading command. The next \LaTeX-release will provide a tagging recipe that
+% can be used. Until then we have to provide directly
+%    \begin{macrocode}
+\ExplSyntaxOn
+\cs_set_protected:Npn \__block_recipe_noop: 
+ {
+   \cs_set_eq:NN \__kernel_displayblock_beginpar_hmode:w
+                                              \prg_do_nothing:
+   \cs_set_eq:NN \__kernel_displayblock_beginpar_vmode:
+                                               \prg_do_nothing:
+   \let \__kernel_displayblock_begin:          \prg_do_nothing:
+   \let \__kernel_displayblock_end:            \prg_do_nothing:
+   \socket_assign_plug:nn{block/endpe}{noop}
+ }
+%    \end{macrocode}
+% With it we redefine the environment. Note that spacing and behaviour is not fully
+% identical yet. TODO: fine tune!
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \RenewDocumentEnvironment{adjustwidth}{mm}
+    {
+      \begin{displayblock}
+       [tagging-recipe=noop,
+        left-margin=\dimeval{#1+0pt},
+        right-margin={#2+0pt},
+        para-indent=\parindent,
+        begin-vspace=0pt,
+        end-vspace=0pt]
+    }
+    {\end{displayblock}}  
+ }
+\ExplSyntaxOff 
+%    \end{macrocode}
+%
 % \subsection{Fontsizes}
 % The following font size are inherited from article
 % \begin{tabular}{lll}
@@ -303,21 +343,8 @@
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
 %    \end{macrocode}
 %
-% We increase the baselineskip of \cs{scriptsize} to 12pt as previously a
-% linespread of 1.71 was used in the left column:
 %% MORE DECLARATIONS
 %    \begin{macrocode}
-%%% Book contributions based on the article type
-\newcommand{\isBookContribution}{%
-  \ifthenelse{\equal{\@arttype}{Book}%
-  \OR \equal{\@arttype}{Monograph}%
-  }%
-}
-
-\newcommand{\isMonograph}{%
-  \ifthenelse{\equal{\@arttype}{Monograph}%
-  }%
-}
 
 \newcommand{\isPreprints}{%
   \ifthenelse{\equal{\@journal}{preprints}%
@@ -429,11 +456,37 @@
 % is defined in \texttt{journalnames.tex} and is by default 
 % \texttt{unspecified}. 
 % 
+% The command \cs{@arttype} is defined through the class options and
+% is by default \texttt{Article}.
+% 
+% \subsubsection{Books} 
+% This tests if this a Book or a Monograph
+%    \begin{macrocode}
+\ExplSyntaxOn
+\newcommand\isBookContribution
+ {
+   \str_case:onTF {\@arttype}
+    {
+      {Book}{}
+      {Monograph}{}
+    }  
+ }
+%    \end{macrocode}
+% \subsubsection{Monographs}
+% \begin{macro}{\isMonograph}
+% This tests if this is a monograph
+%    \begin{macrocode}
+\newcommand\isMonograph
+ {
+  \tl_if_eq:NnTF \@arttype{Monograph}
+ }
+%    \end{macrocode}
+% \end{macro}
+% 
 % \subsubsection{Chicago style journals}
 % These journals use the \texttt{mdpi\_chicago} bibliography style. 
 % \begin{macro}{\isChicagoStyle}
 %    \begin{macrocode}
-\ExplSyntaxOn
 \clist_new:N  \l__mdpi_journal_chicagostyle_clist
 \clist_set:Nn \l__mdpi_journal_chicagostyle_clist
  {
@@ -455,7 +508,7 @@
     {\prg_return_true:}
     {\prg_return_false:}
  }
-\newcommand{\isChicagoStyle}{\__mdpi_is_journal_chicagostyle:TF} 
+\newcommand\isChicagoStyle{\__mdpi_is_journal_chicagostyle:TF} 
 %    \end{macrocode}
 % \end{macro}
 % 
@@ -1124,7 +1177,7 @@
     \fontsize{7pt}{12pt}\selectfont
     \raggedright
     \parindent=0pt
-    \parskip=2pt
+    \parskip=6pt
     \hyphenpenalty=10000
     \tolerance=1000
  }
@@ -1158,8 +1211,8 @@
      {}
      {%
       \IfSubStr{\@externaleditor}{ and }
-         {Academic Editors: \@externaleditor\\[4pt]}
-         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor\\[4pt]}}%
+         {Academic Editors: \@externaleditor}
+         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}%
          %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
    }%
   }
@@ -1197,8 +1250,8 @@
           {}{\\ Corrected: \@datecorrected}
        \ifthenelse{\equal{\@dateretracted}{\@empty}}
           {}{\\ Retracted: \@dateretracted}
-       }\\[4pt]
-  }
+       }%
+  }%
   }
 %    \end{macrocode}
 % \end{macro}
@@ -1212,7 +1265,7 @@
     {}
     {%
    \ifthenelse{\equal{\@CorrStatement}{yes}}
-       {\textcorrstatement\\[4pt]}{}%
+       {\textcorrstatement}{}%
   }%
  }
 %    \end{macrocode}
@@ -1543,25 +1596,126 @@
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots between section title and page number
 \renewcommand{\numberline}[1]{#1.~\space} % Increase space between number and title
 
-%%%% Section headings
+%    \end{macrocode}
+% \subsection{Formatting of the heading commands}
+%    \begin{macrocode}
 \setcounter{secnumdepth}{4} % Default: 3 in the article class. To get paragraphs numbered and counted, increase the default value of secnumdepth to 4
-
-\isMonograph{%
-  \titleformat {\section} [block] {\raggedright \LARGE\bfseries} {\thesection.\space} {0pt} {}
-  \titlespacing {\section} {0pt} {12pt} {8pt}
-  }{
-  \titleformat {\section} [block] {\raggedright \large\bfseries} {\thesection.\space} {0pt} {}
-  \titlespacing {\section} {0pt} {12pt} {3pt}
+%    \end{macrocode}
+% This command will at some time be added to the LaTeX kernel. It gives a space of
+% the width of a normal word space.
+%    \begin{macrocode}
+\providecommand\WordSpaceAmount[1]{
+  \glueexpr 
+        #1\fontdimen2\the\font
+  plus  #1\fontdimen3\the\font
+  minus #1\fontdimen4\the\font
+  \relax
 }
+%    \end{macrocode}
+% The settings for the tagged version:
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+ {
+   \setcounter{secnumdepth}{3} 
+%    \end{macrocode}
+% We set up a dedicated headformat instance:
+%    \begin{macrocode}
+   \DeclareInstance    {headformat}{mdpi/std}{hang} 
+    {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
+   \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
+   \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
+   \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
+   \DeclareInstanceCopy{headformat}{paragraph}    {mdpi/std}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+%
+%    \end{macrocode}
+% The \cs{section} settings:
+%    \begin{macrocode}
+   \EditInstance{heading}{section}
+     {
+       heading-decls=\raggedright\large\bfseries,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\theheading.,
+       headformat-instance = section %until the release
+     }
+%    \end{macrocode}
+% The format of \cs{section} differs in monographs:
+%    \begin{macrocode}
+   \isMonograph
+    {
+     \EditInstance{heading}{section}
+       {
+         heading-decls=\raggedright\LARGE\bfseries,        
+         after-vspace =8pt,
+       }     
+    }
+    {}   
+%    \end{macrocode}
+% The \cs{subsection} settings.
+%    \begin{macrocode}
+   \EditInstance{heading}{subsection}
+     {
+       heading-decls=\raggedright \normalsize\itshape,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\theheading.,
+       headformat-instance = subsection
+     }
+%    \end{macrocode}
+% The \cs{subsubsection} settings.
+%    \begin{macrocode}
+   \EditInstance{heading}{subsubsection}
+     {
+       heading-decls=\raggedright \normalsize,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\theheading.,
+       headformat-instance = subsection
+     } 
+%    \end{macrocode}
+% The \cs{paragraph} settings. \cs{paragraph} is not a run-in heading in the class.
+%    \begin{macrocode}
+   \DeclareInstance{heading}{paragraph}{display}
+     {
+       , name          = paragraph
+       , parent-name   = subsubsection
+       , level         = 4
+       , before-vspace = 12pt
+       , after-vspace  = 3pt
+       , heading-decls = \raggedright\normalfont\normalsize
+       , mark-cmd      = \paragraphmark {#1}
+       , number-format=\theheading.,
+       , headformat-instance = paragraph
+     }
+%    \end{macrocode}
+%    \begin{macrocode}
+ } %end of \DocumentMetadata test
+%    \end{macrocode}
+% The settings without \cs{DocumentMetadata}:
+%    \begin{macrocode}
+ {
+   \isMonograph
+    {
+     \titleformat {\section} [block] {\raggedright \LARGE\bfseries} {\thesection.\space} {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {8pt}
+    }
+    {
+     \titleformat {\section} [block] {\raggedright \large\bfseries} {\thesection.\space} {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+    }
 
-\titleformat {\subsection} [block] {\raggedright \normalsize\itshape} {\thesubsection.\space} {0pt} {}
-\titlespacing {\subsection} {0pt} {12pt} {3pt}
+   \titleformat {\subsection} [block] {\raggedright \normalsize\itshape} {\thesubsection.\space} {0pt} {}
+   \titlespacing {\subsection} {0pt} {12pt} {3pt}
 
-\titleformat {\subsubsection} [block] {\raggedright \normalsize} {\thesubsubsection.\space} {0pt} {}
-\titlespacing {\subsubsection} {0pt} {12pt} {3pt}
+   \titleformat {\subsubsection} [block] {\raggedright \normalsize} {\thesubsubsection.\space} {0pt} {}
+   \titlespacing {\subsubsection} {0pt} {12pt} {3pt}
 
-\titleformat {\paragraph} [block] {\raggedright \normalsize} {} {0pt} {}
-\titlespacing {\paragraph} {0pt} {12pt} {3pt}
+   \titleformat {\paragraph} [block] {\raggedright \normalsize} {} {0pt} {}
+   \titlespacing {\paragraph} {0pt} {12pt} {3pt}
+ } 
 
 %%%% Special section title style for back matter
 \newcommand{\supplementary}[1]{
@@ -1609,8 +1763,8 @@
 \newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\large\textbf{#1}}{%
 \par\vspace{3pt}\hspace{-0.85cm}{\small #2}\par}}
 
-% UF TODO correct semantic
-\renewcommand\abbreviations[2]{\section*{#1}\small\hspace{-0.85cm}#2}
+% UF TODO correct semantic, e.g.
+%\renewcommand\abbreviations[2]{\section*{#1}\small #2\par}
 
 % Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
@@ -1661,64 +1815,101 @@
 \setcounter{graph}{0}
 }
 
-\renewcommand{\appendix}{%
+%    \end{macrocode}
 %
-\gdef\thesection{\AlphAlph{\value{section}}}%
-\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
+% 
+%    \begin{macrocode}
+\ExplSyntaxOn
+\renewcommand{\appendix}
+ {%
+%
+  \gdef\thesection   {\AlphAlph{\value{section}}}%
+  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
+%    \end{macrocode}
+% \subsection{Formatting of the heading commands after \cs{appendix}}
+%    \begin{macrocode}
+%%% UF SECTIONFORMAT (after \appendix)
+    \IfDocumentMetadataTF
+     {
+%    \end{macrocode}
+% Even in monographs section should use a smaller font in the appendix.
+%    \begin{macrocode}
+      \EditInstance{heading}{section}
+        {
+         after-vspace=3pt,
+         heading-decls=\raggedright\large\bfseries,         
+        }
+      \clist_map_inline:nn {section,subsection,subsubsection}
+       {
+         \EditInstance{heading}{##1}
+          {
+            number-format=
+             \appendixname\nobreakspace\theheading
+             \tl_if_eq:NnT\@appendixtitles {yes}{.}
+          }   
+       }
+     }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+     {
+      \titleformat {\section} [block] {\raggedright\bfseries\large} {\large\bfseries%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesection.%
+         }{%
+         \appendixname\nobreakspace\thesection\nobreakspace%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+     %
+     \titleformat {\subsection} [block] {\raggedright\itshape} {%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesubsection.%
+         }{%
+         \appendixname\nobreakspace\thesubsection%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+     %
+     \titleformat {\subsubsection} [block] {\raggedright\selectfont} {%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesubsubsection.%
+         }{%
+         \appendixname\nobreakspace\thesubsubsection%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+   }
 
-\titleformat {\section} [block] {\raggedright\bfseries\large} {\large\bfseries%
-  \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    \appendixname~\thesection.%
-    }{%
-    \appendixname~\thesection~%
-    }
-  } {0pt} {}
-\titlespacing {\section} {0pt} {12pt} {3pt}
-%
-\titleformat {\subsection} [block] {\raggedright\itshape} {%
-  \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    \appendixname~\thesubsection.%
-    }{%
-    \appendixname~\thesubsection%
-    }
-  } {0pt} {}
-\titlespacing {\section} {0pt} {12pt} {3pt}
-%
-\titleformat {\subsubsection} [block] {\raggedright\selectfont} {%
-  \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    \appendixname~\thesubsubsection.%
-    }{%
-    \appendixname~\thesubsubsection%
-    }
-  } {0pt} {}
-\titlespacing {\section} {0pt} {12pt} {3pt}
-%
-\gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
-\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
-\csname appendixmore\endcsname
-\renewcommand{\thefigure}{A\arabic{figure}}
-\renewcommand{\thetable}{A\arabic{table}}
-\renewcommand{\thescheme}{A\arabic{scheme}}
-\renewcommand{\thechart}{A\arabic{chart}}
-\renewcommand{\theboxenv}{A\arabic{boxenv}}
-\renewcommand{\theequation}{A\arabic{equation}}
-\renewcommand{\thetheorem}{A\arabic{theorem}}
-\renewcommand{\thelemma}{A\arabic{lemma}}
-\renewcommand{\thecorollary}{A\arabic{corollary}}
-\renewcommand{\theproposition}{A\arabic{proposition}}
-\renewcommand{\thecharacterization}{A\arabic{characterization}}
-\renewcommand{\theproperty}{A\arabic{property}}
-\renewcommand{\theproblem}{A\arabic{problem}}
-\renewcommand{\theexample}{A\arabic{example}}
-\renewcommand{\theexamplesanddefinitions}{A\arabic{examplesanddefinitions}}
-\renewcommand{\theremark}{A\arabic{remark}}
-\renewcommand{\thedefinition}{A\arabic{definition}}
-\renewcommand{\thehypothesis}{A\arabic{hypothesis}}
-\renewcommand{\thenotation}{A\arabic{notation}}
-\renewcommand{\thealgorithm}{A\arabic{algorithm}}
-\renewcommand{\thegraph}{A\arabic{graph}}
+  %\gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
+  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
+  \csname appendixmore\endcsname
+  \renewcommand{\thefigure}{A\arabic{figure}}
+  \renewcommand{\thetable}{A\arabic{table}}
+  \renewcommand{\thescheme}{A\arabic{scheme}}
+  \renewcommand{\thechart}{A\arabic{chart}}
+  \renewcommand{\theboxenv}{A\arabic{boxenv}}
+  \renewcommand{\theequation}{A\arabic{equation}}
+  \renewcommand{\thetheorem}{A\arabic{theorem}}
+  \renewcommand{\thelemma}{A\arabic{lemma}}
+  \renewcommand{\thecorollary}{A\arabic{corollary}}
+  \renewcommand{\theproposition}{A\arabic{proposition}}
+  \renewcommand{\thecharacterization}{A\arabic{characterization}}
+  \renewcommand{\theproperty}{A\arabic{property}}
+  \renewcommand{\theproblem}{A\arabic{problem}}
+  \renewcommand{\theexample}{A\arabic{example}}
+  \renewcommand{\theexamplesanddefinitions}{A\arabic{examplesanddefinitions}}
+  \renewcommand{\theremark}{A\arabic{remark}}
+  \renewcommand{\thedefinition}{A\arabic{definition}}
+  \renewcommand{\thehypothesis}{A\arabic{hypothesis}}
+  \renewcommand{\thenotation}{A\arabic{notation}}
+  \renewcommand{\thealgorithm}{A\arabic{algorithm}}
+  \renewcommand{\thegraph}{A\arabic{graph}}
 }
+  \ExplSyntaxOff 
+%    \end{macrocode}
 
+%    \begin{macrocode}
 %%%% Dimensions
 %% Width of left column = marginparwidth
 \newlength{\leftcolumnlength}
@@ -2048,11 +2239,12 @@
    \renewenvironment{thebibliography}[1]
      {%
       \emergencystretch 2em
-      \titleformat {\section} [block] {\raggedright \large\bfseries} {} {0pt} {}
+      %%% UF SECTIONFORMAT
+      %\titleformat {\section} [block] {\raggedright \large\bfseries} {} {0pt} {}
       \isBookContribution
         {}
         {% to remove the sectin from the TOC in books
-          \section{\@reftitle}%
+          \section[unnumbered,heading-decls=\raggedright \large\bfseries]{\@reftitle}%
         }
       \small
       \list
