@@ -2080,16 +2080,36 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X} % centered text in L columns
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X} % centered text in R columns
 
-%%%%% Bullet lists
 %    \end{macrocode}
 % \subsection{List settings}
 % The tagging code doesn't support yet the star-value for \texttt{leftmargin} and
 % the value \texttt{parleft} for align, so we have to change that:
+% TODO: values should be reviewed, e.g. for second level. 
 %    \begin{macrocode}
 \IfDocumentMetadataTF
- {
-  \setlist[itemize]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=20.5pt,labelsep=5.5mm,align=left}
-  \setlist[enumerate]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=20.5pt,labelsep=5.5mm,align=left}
+ { 
+  \setlist[itemize]
+    {
+     topsep=3pt,
+     parsep=0pt,
+     itemsep=0pt,
+     leftmargin=21.25pt,
+     labelwidth=16.25pt,
+     itemindent=0pt,
+     labelsep=5pt,
+     align=left
+    }
+  \setlist[enumerate]
+    {
+     topsep=3pt,
+     parsep=0pt,
+     itemsep=0pt,
+     leftmargin=21.25pt,
+     labelwidth=16.25pt,
+     itemindent=0pt,
+     labelsep=5pt,
+     align=left,
+     }
  }
  {
   \setlist[itemize]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
