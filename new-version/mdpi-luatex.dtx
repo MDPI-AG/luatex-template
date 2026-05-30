@@ -1401,8 +1401,11 @@
 
 %%%% Maketitle part 2
 \newcommand{\maketitlen}{%
+  \par
   \isBookContribution{\vspace{12pt}}{%
-  \begin{flushleft}
+  \begingroup 
+  \vspace{\dimeval{\topsep+\partopsep}}
+  \raggedright
   \hyphenpenalty=10000
   \tolerance=1000
   \footnotesize
@@ -1483,7 +1486,8 @@
   \vskip12pt \@LSID}
   \par
   }%
-  \end{flushleft}
+  \vspace{\dimeval{\topsep+\partopsep}}
+  \endgroup
 }
 }
 
