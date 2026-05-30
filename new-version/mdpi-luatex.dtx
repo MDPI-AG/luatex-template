@@ -1399,11 +1399,18 @@
   \vspace{6pt}\leftcolumnCright %3
 }
 
+%    \end{macrocode}
+% 
+%    \begin{macrocode}
 %%%% Maketitle part 2
 \newcommand{\maketitlen}{%
   \par
   \isBookContribution{\vspace{12pt}}{%
   \begingroup 
+%    \end{macrocode}
+% \env{flushleft} doesn't work together with the \cs{hang} command,
+% so we use \cs{raggedright} and insert spaces manually.
+%    \begin{macrocode}
   \vspace{\dimeval{\topsep+\partopsep}}
   \raggedright
   \hyphenpenalty=10000

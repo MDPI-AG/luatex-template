@@ -1,0 +1,21 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass[acoustics,article,accept,moreauthors]{mdpi-luatex}
+\usepackage{lipsum}
+\newcommand{\orcidauthorA}{0000-0000-0000-000X}
+\Author{Firstname Lastname \textsuperscript{1}\orcidA{}, 
+        Firstname Lastname \textsuperscript{2} and 
+        Firstname Lastname \textsuperscript{2,}*}
+\address{%
+\textsuperscript{1} \quad Affiliation 1; e-mail@e-mail.com\\
+\textsuperscript{2} \quad Affiliation 2; e-mail@e-mail.com}
+
+\corres{Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)}
+
+\begin{document}
+\START\showoutput
+
+xxxx
+\SHOWPDFTAGS
+\end{document} 
