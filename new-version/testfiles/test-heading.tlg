@@ -129,7 +129,7 @@ Completed box being shipped out [1]
 .....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 491.55524fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 491.35526fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -810,7 +810,6 @@ Completed box being shipped out [1]
 .....\kern-0.25 (right margin)
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
-....\glue -0.2
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
@@ -1226,7 +1225,7 @@ Completed box being shipped out [2]
 .....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 435.74976fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 435.5498fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -2555,7 +2554,6 @@ Completed box being shipped out [2]
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\glue -0.2
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
@@ -2892,7 +2890,7 @@ Completed box being shipped out [3]
 .....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 430.41034fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 427.58063fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -4221,7 +4219,6 @@ Completed box being shipped out [3]
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\glue -2.83
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
@@ -4559,7 +4556,7 @@ Completed box being shipped out [4]
 .....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 416.43182fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 416.23184fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -5993,7 +5990,6 @@ Completed box being shipped out [4]
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\glue -0.2
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil

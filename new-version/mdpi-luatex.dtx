@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-05-28}
-\def\mdpiversion{v7.0b}
+\def\mdpidate{2026-05-30}
+\def\mdpiversion{v7.0c}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -766,12 +766,31 @@
   notes-sep=0pt
 }
 
-%%%%% Footnotes, for journal Laws
-%\RequirePackage{scrextend}
-%\setlength{\skip\footins}{0.6cm} % Increase space between text and footnote
-%\setlength{\footnotesep}{8pt} % Increase space between line and footnote
-%\deffootnote{1.5em}{0em}{\textsuperscript{\thefootnotemark}\quad} % Remove indent
+%    \end{macrocode}
+% \subsection{Footnotes}
+% Only journal Laws uses \cs{footnote}.
+% Increase space between line and footnote
+%    \begin{macrocode}
+\setlength{\footnotesep}{8pt}
+%    \end{macrocode}
+% Hanging footnotes:
+%    \begin{macrocode}
+\RequirePackage[hang]{footmisc}
+\setlength\footnotemargin{1.5em}
+%    \end{macrocode}
+% Get around the bug https://github.com/latex3/tagging-project/issues/1360
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \patchcmd\footmisc@hang@makefntext
+     {\leftmargin\wd\@tempboxa}
+     {\leftmargin\wd\@tempboxa\@totalleftmargin \leftmargin}
+     {}{\fail}
+   \let\@makefntext\footmisc@hang@makefntext  
+ } 
+%    \end{macrocode}
 
+%    \begin{macrocode}
 %%%% Widows & orphans
 \clubpenalty=10000
 \widowpenalty=10000
@@ -1933,7 +1952,9 @@
         top=1.35cm,
         bottom=1.08cm,
         includehead,
-        includefoot]{geometry}
+        includefoot,
+        footnotesep=0.6cm %moved from \skip\footins change for journal laws
+        ]{geometry}
       }{
 \isBookContribution{%%
   \RequirePackage[left=2.05cm,
@@ -1944,7 +1965,9 @@
           paperheight=244mm,
           footskip=20pt,
           headsep=24pt,
-          includefoot]{geometry}
+          includefoot,
+          footnotesep=0.6cm %moved from \skip\footins change for journal laws
+          ]{geometry}
   }{
   \RequirePackage[left=5.87cm, %1.27 cm + 0.51 cm + 4.1 cm = 5.87 cm (= 1.27 cm + marginparwidth + marginparsep)
         marginparwidth=4.1cm,
@@ -1955,7 +1978,9 @@
         footskip=36pt,
         headsep=24pt,
         includehead,
-        includefoot]{geometry}
+        includefoot,
+        footnotesep=0.6cm %moved from \skip\footins change for journal laws 
+        ]{geometry}
       }
 }
 
