@@ -117,7 +117,7 @@ Completed box being shipped out [1]
 .....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 438.43732fill, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 435.60733fill, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -1188,7 +1188,6 @@ Completed box being shipped out [1]
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-....\glue -2.83
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil

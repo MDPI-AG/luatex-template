@@ -953,7 +953,7 @@ Completed box being shipped out [1]
 * \marginparwidth=116.65646pt
 * \marginparsep=14.51074pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=17.07182pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1172,7 +1172,7 @@ Completed box being shipped out [2]
 .....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(458.64374+0.0)x772.77661, glue set 141.06877fil, direction TLT
+...\vbox(458.64374+0.0)x772.77661, glue set 138.23906fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -6285,7 +6285,6 @@ Completed box being shipped out [2]
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-....\glue -2.83
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
