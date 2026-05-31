@@ -101,7 +101,7 @@ Completed box being shipped out [1]
 .....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 569.47644fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 571.47626fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -678,18 +678,31 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\penalty -51
 ....\glue 2.0 plus 1.0 minus 1.0
-....\glue 10.0
-....\glue 0.0
+....\glue -2.17 plus -1.0 minus -1.0
+....\penalty -51
+....\glue 0.17
+....\glue 2.0 plus 1.0 minus 1.0
+....\glue -2.0 plus -1.0 minus -1.0
+....\glue 10.0 plus 4.0 minus 5.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.643
-....\hbox(5.672+0.16)x394.35522, glue set 178.71362fil, direction TLT
-.....\kern-0.312 (left margin)
+....\hbox(5.672+0.16)x394.35522, glue set 178.55762fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\kern0.0
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\glue 0.0
+......\glue 0.0
+......\glue -5.0
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\pdfcolorstack 0 push {0 g 0 G}
+.......\pdfcolorstack 0 pop
+......\glue 5.0
+.....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/8 A
 .....\TU/texgyrepagella(0)/m/n/8 D
 .....\discretionary (penalty 10000)
@@ -702,8 +715,8 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue 10.0
-....\glue 0.0
+....\penalty -51
+....\glue 10.0 plus 3.0 minus 5.0
 ....\glue -8.0
 ....\glue 0.0
 ....\glue 4.0

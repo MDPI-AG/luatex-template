@@ -11,7 +11,18 @@
 \textsuperscript{2} \quad Affiliation 2; e-mail@e-mail.com}
 
 \corres{Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)}
-
+\conference{Conference}
+\firstnote{First note \lipsum[1][1-2]}
+\secondnote{Second note \lipsum[1][1-2]}
+\thirdnote{Third note \lipsum[1][1-2]}
+\fourthnote{Fourth note \lipsum[1][1-2]}
+\fifthnote{Fifth note \lipsum[1][1-2]}
+\sixthnote{Sixth note \lipsum[1][1-2]}
+\seventhnote{Seventh note \lipsum[1][1-2]}
+\eighthnotes{Eighth note \lipsum[1][1-2]}
+\ninethnote{Nineth note\lipsum[1][1-2] }
+\tenthnote{Tenth note \lipsum[1][1-2]}
+\eleventhnote{Eleventh note \lipsum[1][1-2]}
 \begin{document}
 \START\showoutput
 

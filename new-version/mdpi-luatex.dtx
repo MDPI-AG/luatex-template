@@ -946,8 +946,11 @@
 \newcommand{\sixthnote}[1]{\gdef\@sixthnote{#1}}%
 \def\@seventhnote{}
 \newcommand{\seventhnote}[1]{\gdef\@seventhnote{#1}}%
-\def\@eighthnotes{}
-\newcommand{\eighthnotes}[1]{\gdef\@eighthnotes{#1}}%
+\def\@eighthnote{}
+%    \end{macrocode}
+% The user command uses plural as \cs{eighthnote} is already defined
+%    \begin{macrocode}
+\newcommand{\eighthnotes}[1]{\gdef\@eighthnote{#1}}%
 \def\@ninethnote{}
 \newcommand{\ninethnote}[1]{\gdef\@ninethnote{#1}}%
 \def\@tenthnote{}
@@ -1400,104 +1403,95 @@
 }
 
 %    \end{macrocode}
-% 
+% \subsection{Maketitle part 2}
+% We set up a counter and define symbols for the various notes:
 %    \begin{macrocode}
-%%%% Maketitle part 2
-\newcommand{\maketitlen}{%
-  \par
-  \isBookContribution{\vspace{12pt}}{%
-  \begingroup 
+\ExplSyntaxOn
+\newcounter{mdpi@notecnt}
+\def\mdpi@notesymbol
+ {
+   \ifcase\c@mdpi@notecnt
+   \or\textbf{*}     %corres
+   \or\textdagger    %conference
+   \or\textdaggerdbl % firstnote
+   \or\textsection   % secondnote etc
+   \or\textbardbl
+   \or\textparagraph
+   \or**
+   \or\textdagger\textdagger
+   \or\textdaggerdbl\textdaggerdbl
+   \or\textsection\textsection  
+   \or\textbardbl\textbardbl
+   \or\textparagraph\textparagraph
+   \or ***
+   \else
+   \@ctrerr 
+   \fi
+ }
 %    \end{macrocode}
-% \env{flushleft} doesn't work together with the \cs{hang} command,
-% so we use \cs{raggedright} and insert spaces manually.
+% We avoid the use of the \cs{tabto} command as this uses math for measuring and
+% so gives unwanted structures if tagging is enabled. Instead the label is set inside
+% a box.
+% TODO: semantic tagging should be improved. 
 %    \begin{macrocode}
-  \vspace{\dimeval{\topsep+\partopsep}}
-  \raggedright
-  \hyphenpenalty=10000
-  \tolerance=1000
-  \footnotesize
-  {%
-  \ifthenelse{\equal{\firstargument}{1}}{}{%
-  \hang}\@address
+\newcommand\mdpi@notelabel
+ {
+   \stepcounter{mdpi@notecnt}
+   \makebox[\dist][l]
+    {\UseTaggingSocket{inline/begin}{tag=Lbl}\mdpi@notesymbol\csname pdffakespace\endcsname\UseTaggingSocket{inline/end}}
+ } 
+%    \end{macrocode}
+% This builts the block of notes:
+%    \begin{macrocode}
+\newcommand{\maketitlen}
+ {
   \par
-  }%
-  {%
-  \ifthenelse{\equal{\@authornum}{author}}{}{%
-  \ifthenelse{\equal{\@corres}{\@empty}}{}{%
-  \hang\textbf{*} \tabto{\dist} \@corres}
-  \par
-  }
-  }%
-  {%
-  \ifthenelse{\equal{\@conference}{\@empty}}{}{%
-  \hang$^{\dagger}$ \tabto{\dist} This paper is an extended version of our paper published in\space \@conference.}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@firstnote}{\@empty}}{}{%
-  \hang\ifthenelse{\equal{\@conference}{\@empty}}{$^\dagger$}{$^\ddagger$} \tabto{\dist} \@firstnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@secondnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\ddagger}$}{$^{\S}$} \tabto{\dist} \@secondnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@thirdnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\S}$}{$^{\|}$} \tabto{\dist} \@thirdnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@fourthnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\|}$}{$^\P$} \tabto{\dist} \@fourthnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@fifthnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\P}$}{**} \tabto{\dist} \@fifthnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@sixthnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{**}{$^{\dagger\dagger}$} \tabto{\dist} \@sixthnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@seventhnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\dagger\dagger}$}{$^{\ddagger\ddagger}$} \tabto{\dist} \@seventhnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@eighthnotes}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\ddagger\ddagger}$}{$^{\S\S}$} \tabto{\dist} \@eighthnotes}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@ninethnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\S\S}$}{$^{\|\|}$} \tabto{\dist} \@ninethnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@tenthnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\|\|}$}{$^{\P\P}$} \tabto{\dist} \@tenthnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@eleventhnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\P\P}$}{***} \tabto{\dist} \@eleventhnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@LSID}{\@empty}}{}{%
-  \vskip12pt \@LSID}
-  \par
-  }%
-  \vspace{\dimeval{\topsep+\partopsep}}
-  \endgroup
-}
-}
+  \isBookContribution
+   {\vspace{12pt}}
+   {
+     \begin{flushleft}
+     \hyphenpenalty=10000
+     \tolerance=1000
+     \footnotesize  
+     \ifthenelse{\equal{\firstargument}{1}}{}{\hang}
+     \@address
+     \par
+%    \end{macrocode}
+% \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
+% so we set the \cs{parshape} instead.
+%    \begin{macrocode}  
+     \parshape 2~0cm \linewidth \dimeval{\dist}~\dimeval{\linewidth-\dist}
+     \tl_if_eq:NnF\@authornum{author}
+       {
+        \tl_if_empty:NF\@corres
+         {
+           \mdpi@notelabel\@corres
+           \par
+         }       
+       }    
+     \tl_if_empty:NF\@conference
+       {
+         \mdpi@notelabel
+         This~ paper~ is~ an~ extended~ version~ of~ our~ paper~ published~ in\space \@conference.
+         \par
+       }
+     \clist_map_inline:nn{first,second,third,fourth,fifth,sixth,seventh,eighth,nineth,tenth,eleventh}
+      {
+       \tl_if_empty:cF{@##1note}
+        {         
+         \mdpi@notelabel
+         \tl_use:c{@##1note}
+         \par
+        } 
+      }      
+     \tl_if_empty:NF\@LSID{\vskip12pt \@LSID \par}
+     \end{flushleft}
+   }
+ }
+\ExplSyntaxOff
+%    \end{macrocode}
 
+%    \begin{macrocode}
 %%%% Abstract, keywords, journal data, PACS, MSC, JEL
 \newcommand{\abstractkeywords}{
 \isMonograph{}{\vspace{-8pt}
