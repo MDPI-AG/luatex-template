@@ -2094,7 +2094,32 @@
 
 \captionsetup[boxenv]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
 }
-
+%    \end{macrocode}
+% A minimal, first adjustment of captions with tagging.
+% This should be replaced by templates once there are implemented in LaTeX.
+% TODO: spacing must be checked, 
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \abovecaptionskip=6pt
+   \belowcaptionskip=6pt
+   \AtBeginDocument
+    {
+      \long\def\@makecaption#1#2{%
+        \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
+        \vskip\abovecaptionskip
+        \small
+        \UseTaggingSocket{caption/begin}{\@current@float@struct}%
+        \UseTaggingSocket{caption/label/begin}%
+        \textbf{#1. }%
+        \UseTaggingSocket{caption/label/end}%
+        \UseTaggingSocket{para/begin}%
+            #2
+        \par
+        \UseTaggingSocket{caption/end}%
+        \vskip\belowcaptionskip}
+     }
+ }
 %% For table footnotes
 \newsavebox{\@justcentbox}
 \newcommand{\justifyorcenter}[1]{
