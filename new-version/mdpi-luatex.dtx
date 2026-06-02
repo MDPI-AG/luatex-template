@@ -2038,7 +2038,7 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \subsection{Figures and tables}
+% \subsection{Figures and tables and other floats}
 % New floating environments:
 %    \begin{macrocode}
 \RequirePackage{newfloat}
@@ -2068,33 +2068,59 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+
 \RequirePackage{caption}
-\isPreprints{%
-\captionsetup[figure]{position=bottom,   labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[scheme]{position=bottom,  labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[listing]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[chart]{position=bottom,   labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[table]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[boxenv]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
-}{
-\captionsetup[figure]{position=bottom,   labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[scheme]{position=bottom,  labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[listing]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[chart]{position=bottom,   labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[table]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[boxenv]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
-}
-
+\captionsetup
+  {
+   labelfont={bf, small, stretch=1.17}, 
+   labelsep=period, 
+   textfont={small, stretch=1.17}, 
+   aboveskip=6pt, 
+   justification=justified
+  }
+\captionsetup[figure] {position=bottom,belowskip=-6pt}
+\captionsetup[scheme] {position=bottom,belowskip=-6pt}
+\captionsetup[chart]  {position=bottom,belowskip=-6pt}
+\captionsetup[listing]{position=top}
+\captionsetup[table]  {position=top}
+\captionsetup[boxenv] {position=top}
+ 
+%    \end{macrocode}
+% Why this??
+%    \begin{macrocode}
+\isPreprints
+ {
+  \captionsetup{singlelinecheck=on}
+ }
+ {
+  \captionsetup{singlelinecheck=off}
+ } 
+%    \end{macrocode}
+% A minimal, first adjustment of captions with tagging.
+% This should be replaced by templates once there are implemented in LaTeX.
+% TODO: spacing (including line spacing) must be checked, 
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \abovecaptionskip=6pt
+   \belowcaptionskip=6pt
+   \AtBeginDocument
+    {
+      \long\def\@makecaption#1#2{%
+        \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
+        \vskip\abovecaptionskip
+        \small
+        \UseTaggingSocket{caption/begin}{\@current@float@struct}%
+        \UseTaggingSocket{caption/label/begin}%
+        \textbf{#1. }%
+        \UseTaggingSocket{caption/label/end}%
+        \UseTaggingSocket{para/begin}%
+            #2
+        \par
+        \UseTaggingSocket{caption/end}%
+        \vskip\belowcaptionskip}
+     }
+ }
 %% For table footnotes
 \newsavebox{\@justcentbox}
 \newcommand{\justifyorcenter}[1]{
