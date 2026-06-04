@@ -306,9 +306,6 @@
 %
 % We increase the baselineskip of \cs{scriptsize} to 12pt as previously a
 % linespread of 1.71 was used in the left column:
-%    \begin{macrocode}
- \DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{7pt}{12pt}}
-%    \end{macrocode}
 %% MORE DECLARATIONS
 %    \begin{macrocode}
 %%% Book contributions based on the article type
@@ -427,104 +424,129 @@
 \renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
 \renewcommand{\right}{\aftergroup\egroup\originalright}
 
-%%%% Chicago style journals
-\newcommand{\isChicagoStyle}{
-  \ifthenelse{\equal{\@journal}{arts}
-    \OR \equal{\@journal}{genealogy}
-    \OR \equal{\@journal}{histories}
-    \OR \equal{\@journal}{humanities}
-    \OR \equal{\@journal}{laws}
-    \OR \equal{\@journal}{literature}
-    \OR \equal{\@journal}{religions}
-    \OR \equal{\@journal}{risks}
-    \OR \equal{\@journal}{socsci}
-    \OR \equal{\@journal}{preprintschicago} %% Just use for preprints, not a real Chicago journal
-    \OR \equal{\@journal}{chicagojournal} %% Just use for chicago submission, not a real Chicago journal
+%    \end{macrocode}
+% \subsection{Journal conditionals}
+% The command \cs{@journal} used in the conditionals 
+% is defined in \texttt{journalnames.tex} and is by default 
+% \texttt{unspecified}. 
+% 
+% \subsubsection{Chicago style journals}
+% These journals use the \texttt{mdpi\_chicago} bibliography style. 
+% \begin{macro}{\isChicagoStyle}
+%    \begin{macrocode}
+\ExplSyntaxOn
+\clist_new:N  \l__mdpi_journal_chicagostyle_clist
+\clist_set:Nn \l__mdpi_journal_chicagostyle_clist
+ {
+     arts
+    ,genealogy
+    ,histories
+    ,humanities
+    ,laws
+    ,literature
+    ,religions
+    ,risks
+    ,socsci
+    ,preprintschicago  %% Just use for preprints, not a real Chicago journal
+    ,chicagojournal    %% Just use for chicago submission, not a real Chicago journal
+ }
+\prg_new_conditional:Npnn \__mdpi_is_journal_chicagostyle: {TF}
+ {
+   \clist_if_in:NoTF \l__mdpi_journal_chicagostyle_clist {\@journal}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\newcommand{\isChicagoStyle}{\__mdpi_is_journal_chicagostyle:TF} 
+%    \end{macrocode}
+% \end{macro}
+% 
+% \subsubsection{APA style journals}
+% Journals in \emph{APAstyle} use the package \pkg{mdpi_apacite} and the bibliography style
+% \texttt{mdpi\_apacite}. 
+% 
+% \begin{macro}{\isAPAStyle}
+%    \begin{macrocode}
+\clist_new:N  \l__mdpi_journal_apastyle_clist
+\clist_set:Nn \l__mdpi_journal_apastyle_clist
+ {
+     admsci        % Transfer to APA type
+    ,aieduc
+    ,behavsci      % Transfer to APA type
+    ,businesses    % Transfer to APA type
+    ,econometrics  % Transfer to APA type
+    ,economies     % Transfer to APA type
+    ,education     % Transfer to APA type
+    ,ejihpe        % Transfer to APA type
+    ,famsci        % Transfer to APA type
+    ,games         % Transfer to APA type
+    ,humans        % Transfer to APA type
+    ,ijcs          % Transfer to APA type
+    ,ijfs          % Transfer to APA type
+    ,investment    % New APA Journal
+    ,jintelligence % Transfer to APA type from 19 Dec. 2025
+    ,journalmedia  % Transfer to APA type
+    ,jrfm          % Transfer to APA type
+    ,jsam          % New APA Journal
+    ,languages     % Transfer to APA type
+    ,peacestud     % New APA Journal
+    ,projmanag     % New APA Journal
+    ,psycholint    % Transfer to APA type
+    ,publications  % Transfer to APA type
+    ,tourismhosp   % Transfer to APA type
+    ,youth         % Transfer to APA type
+    ,preprintsapa  %% Just use for preprints, not a real APA journal
+    ,apajournal    %% Just use for APA submission, not a real APA journal
+ }
+\prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF}
+ {
+  \clist_if_in:NoTF \l__mdpi_journal_apastyle_clist {\@journal}
+   {\prg_return_true:}
+   {\prg_return_false:}
+ }
+\newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
+%    \end{macrocode}
+% \end{macro}
+% \subsubsection{APA or Chicago style journals}
+% 
+% A combination of both tests: true if a journal is either APA or a Chicago style journal.
+% \begin{macro}{\ifAPAorChicago}
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
+ {
+   \__mdpi_is_journal_chicagostyle:TF
+    {
+      \prg_return_true:
     }
-}
-
-%%%% APA style journals
-\newcommand{\isAPAStyle}{
-  \ifthenelse{\equal{\@journal}{admsci}       % Transfer to APA type
-    \OR \equal{\@journal}{aieduc}
-    \OR \equal{\@journal}{behavsci}       % Transfer to APA type
-    \OR \equal{\@journal}{businesses}    % Transfer to APA type
-    \OR \equal{\@journal}{econometrics}% Transfer to APA type
-    \OR \equal{\@journal}{economies}    % Transfer to APA type
-    \OR \equal{\@journal}{education}     % Transfer to APA type
-    \OR \equal{\@journal}{ejihpe}           % Transfer to APA type
-    \OR \equal{\@journal}{famsci}           % Transfer to APA type
-    \OR \equal{\@journal}{games}           % Transfer to APA type
-    \OR \equal{\@journal}{humans}         % Transfer to APA type
-    \OR \equal{\@journal}{ijcs}               % Transfer to APA type
-    \OR \equal{\@journal}{ijfs}                % Transfer to APA type
-    \OR \equal{\@journal}{investment}     % New APA Journal
-    \OR \equal{\@journal}{jintelligence}   % Transfer to APA type from 19 Dec. 2025
-    \OR \equal{\@journal}{journalmedia} % Transfer to APA type
-    \OR \equal{\@journal}{jrfm}              % Transfer to APA type
-    \OR \equal{\@journal}{jsam}             % New APA Journal
-    \OR \equal{\@journal}{languages}      % Transfer to APA type
-    \OR \equal{\@journal}{peacestud}      % New APA Journal
-    \OR \equal{\@journal}{projmanag}      % New APA Journal
-    \OR \equal{\@journal}{psycholint}      % Transfer to APA type
-    \OR \equal{\@journal}{publications}   % Transfer to APA type
-    \OR \equal{\@journal}{tourismhosp}   % Transfer to APA type
-    \OR \equal{\@journal}{youth}             % Transfer to APA type
-    \OR \equal{\@journal}{preprintsapa} %% Just use for preprints, not a real APA journal
-    \OR \equal{\@journal}{apajournal} %% Just use for APA submission, not a real APA journal
+    {
+      \__mdpi_is_journal_apastyle:TF
+       {
+        \prg_return_true:
+       }
+       {
+         \prg_return_false:
+       }
     }
-}
-
-%%%% Chicago style journals
-\newcommand{\isAPAandChicago}{
-  \ifthenelse{\equal{\@journal}{arts}
-    \OR \equal{\@journal}{genealogy}
-    \OR \equal{\@journal}{histories}
-    \OR \equal{\@journal}{humanities}
-    \OR \equal{\@journal}{jintelligence}
-    \OR \equal{\@journal}{laws}
-    \OR \equal{\@journal}{literature}
-    \OR \equal{\@journal}{religions}
-    \OR \equal{\@journal}{risks}
-    \OR \equal{\@journal}{socsci}
-    \OR \equal{\@journal}{preprintschicago}
-    \OR \equal{\@journal}{admsci}
-    \OR \equal{\@journal}{aieduc}
-    \OR \equal{\@journal}{behavsci}
-    \OR \equal{\@journal}{businesses}
-    \OR \equal{\@journal}{econometrics}
-    \OR \equal{\@journal}{economies}
-    \OR \equal{\@journal}{education}
-    \OR \equal{\@journal}{ejihpe}
-    \OR \equal{\@journal}{famsci}
-    \OR \equal{\@journal}{games}
-    \OR \equal{\@journal}{humans}
-    \OR \equal{\@journal}{ijcs}
-    \OR \equal{\@journal}{ijfs}
-    \OR \equal{\@journal}{investment}
-    \OR \equal{\@journal}{journalmedia}
-    \OR \equal{\@journal}{jrfm}
-    \OR \equal{\@journal}{jsam}
-    \OR \equal{\@journal}{languages}
-    \OR \equal{\@journal}{peacestud}
-    \OR \equal{\@journal}{projmanag}
-    \OR \equal{\@journal}{psycholint}
-    \OR \equal{\@journal}{publications}
-    \OR \equal{\@journal}{tourismhosp}
-    \OR \equal{\@journal}{youth}
-    \OR \equal{\@journal}{preprintsapa}
-    \OR \equal{\@journal}{chicagojournal} %% Just use for chicago submission, not a real Chicago journal
-    \OR \equal{\@journal}{apajournal} %% Just use for APA submission, not a real APA journal
-    }
-}
-
-%%%% References
-\isAPAStyle{%
-\RequirePackage[natbibapa]{mdpi_apacite} % Only used for APA style journals
-          }{%
-          \RequirePackage[sort&compress,sectionbib]{natbib}
-} % Option sectionbib is for optionally organizing references using sections (author request)
-
+ }
+\newcommand{\isAPAorChicago}{\__mdpi_is_journal_chicagostyle:TF}
+\ExplSyntaxOff
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{References} 
+% The default system is natbib, APA style journals use a local version 
+% of the \pkg{apacite} package.
+%    \begin{macrocode}
+\isAPAStyle
+  {\RequirePackage[natbibapa]{mdpi_apacite}} 
+%    \end{macrocode}
+% Option sectionbib is for optionally organizing references using sections (author request).
+%    \begin{macrocode}
+  {\RequirePackage[sort&compress,sectionbib]{natbib}} 
+%    \end{macrocode}
+%
+%
+% TODO: check what this doing.
+%    \begin{macrocode}
 \renewcommand\NAT@set@cites{%
   \ifNAT@numbers
     \ifNAT@super \let\@cite\NAT@citesuper
@@ -554,19 +576,26 @@
     \renewcommand\NAT@idxtxt{\NAT@name\NAT@spacechar\NAT@open\NAT@date\NAT@close}%
     \def\natexlab##1{##1}%
   \fi}
-
-\isAPAStyle{%
-      \bibliographystyle{mdpi_apacite}
-          }{%
-      \isChicagoStyle{%
-          \bibliographystyle{mdpi_chicago}
-          \bibpunct{(}{)}{;}{x}{}{,}%
-          }{%
-              \bibliographystyle{mdpi}
-              \bibpunct{[}{]}{,}{n}{}{,}%
-       }%
-}
-
+%    \end{macrocode}
+%
+% \subsection{The bibliography styles}
+%    \begin{macrocode}
+\isAPAStyle
+  {\bibliographystyle{mdpi_apacite}}
+  {
+    \isChicagoStyle
+      {
+        \bibliographystyle{mdpi_chicago}
+        \bibpunct{(}{)}{;}{x}{}{,}
+      }
+      {
+        \bibliographystyle{mdpi}
+        \bibpunct{[}{]}{,}{n}{}{,}
+      }
+  }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 
 
 
@@ -1093,17 +1122,17 @@
 %    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
-  \linespread{1.288}%
-  \scriptsize
-  \justifying
+    \linespread{1.288}%
+    \scriptsize
+    \raggedright
     \parindent=0pt
     \parskip=2pt
-  \hyphenpenalty=10000
-  \tolerance=1000
+   \hyphenpenalty=10000
+   \tolerance=1000
  }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % The contents is split into six parts.
 %
 % \subsubsection{Part 1: Update the logo}%
@@ -1121,7 +1150,7 @@
  }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % \subsubsection{Part 2: Academic editor(s)}
 % \begin{macro}{\leftcolExternalEditor}
 %    \begin{macrocode}
@@ -1131,13 +1160,14 @@
      {}
      {%
       \IfSubStr{\@externaleditor}{ and }
-         {Academic Editors: \@externaleditor}
-         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}%
+         {Academic Editors: \@externaleditor\\[4pt]}
+         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor\\[4pt]}}%
          %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
    }%
   }
 %    \end{macrocode}
 % \end{macro}
+
 % \subsubsection{Part 3: Dates}
 % \begin{macro}{\leftcolDates}
 %    \begin{macrocode}
@@ -1169,12 +1199,12 @@
           {}{\\ Corrected: \@datecorrected}
        \ifthenelse{\equal{\@dateretracted}{\@empty}}
           {}{\\ Retracted: \@dateretracted}
-       }
+       }\\[4pt]
   }
   }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % \subsubsection{Part 4: Correction statement}
 % \begin{macro}{\leftcolCorrstatement}
 %    \begin{macrocode}
@@ -1184,7 +1214,7 @@
     {}
     {%
    \ifthenelse{\equal{\@CorrStatement}{yes}}
-       {\textcorrstatement}{}%
+       {\textcorrstatement\\[4pt]}{}%
   }%
  }
 %    \end{macrocode}
@@ -1200,7 +1230,7 @@
   }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % \subsubsection{Building the left column}
 % The content of the left column. The marginnote with this content will be placed
 % at the very top of the first page to have a fixed reference point
@@ -1229,7 +1259,7 @@
    }
 %    \end{macrocode}
 % \end{macro}
-%
+
 %    \begin{macrocode}
 \newlength{\MyLen} % For length of the left column content
 \newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
@@ -2017,35 +2047,76 @@
 %    \end{macrocode}
 % TODO: errors with tagging, needs adjustment.
 %    \begin{macrocode}
-\IfDocumentMetadataF
-{
-\def\thebibliography#1{
-\emergencystretch 2em
-\titleformat {\section} [block] {\raggedright \large\bfseries} {} {0pt} {}
-     \isBookContribution{}{% to remove the sectin from the TOC in books
-  \section{\@reftitle}
-}
-\small
-\list{{\arabic{enumi}}}{\def\makelabel##1{\hss{##1}}
-\topsep=0\p@
-\parsep=0\p@
-\partopsep=0\p@
-\itemsep=0\p@
-\labelsep=1.5mm
-\isAPAandChicago{%
-  \ifthenelse{\equal{\@externalbibliography}{\@empty}}{%
-    \itemindent=-7.7mm
-    }{%
-    \itemindent=-3.3mm}%
-    }{%
-  \itemindent=0\p@}
-\settowidth\labelwidth{\footnotesize[#1]}%
-\leftmargin\labelwidth
-\advance\leftmargin\labelsep
-\usecounter{enumi}}
-}
-\let\endthebibliography=\endlist
-}
+\IfDocumentMetadataTF
+ {
+   \renewenvironment{thebibliography}[1]
+     {%
+      \emergencystretch 2em
+      \titleformat {\section} [block] {\raggedright \large\bfseries} {} {0pt} {}
+      \isBookContribution
+        {}
+        {% to remove the sectin from the TOC in books
+          \section{\@reftitle}%
+        }
+      \small
+      \list
+       [,counter=enumi
+        ,label-align=left
+        ,begin-vspace=0pt
+        ,para-vspace=0pt
+        ,begin-extra-vspace=0pt
+        ,item-vspace=0pt
+        ]%
+       {\arabic{enumi}}
+       {% 
+        \labelsep=1.5mm      
+        \isAPAorChicago
+          {%
+           \ifthenelse{\equal{\@externalbibliography}{\@empty}}
+            {\itemindent=-7.7mm}
+            {\itemindent=-3.3mm}%
+          }
+          {\itemindent=0\p@}
+        \settowidth\labelwidth{\footnotesize[#1]}%
+        \leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+       }
+     }
+     {\endlist}
+  }
+  {
+    \renewenvironment{thebibliography}[1]
+     {%
+      \emergencystretch 2em
+      \titleformat {\section} [block] {\raggedright \large\bfseries} {} {0pt} {}
+      \isBookContribution
+        {}
+        {% to remove the sectin from the TOC in books
+          \section{\@reftitle}%
+        }
+      \small
+      \list
+       {\arabic{enumi}}
+       {\def\makelabel##1{\hss{##1}}%
+        \topsep=0\p@
+        \parsep=0\p@
+        \partopsep=0\p@
+        \itemsep=0\p@
+        \labelsep=1.5mm
+        \isAPAorChicago
+          {%
+           \ifthenelse{\equal{\@externalbibliography}{\@empty}}
+            {\itemindent=-7.7mm}
+            {\itemindent=-3.3mm}%
+          }
+          {\itemindent=0\p@}
+        \settowidth\labelwidth{\footnotesize[#1]}%
+        \leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+        \usecounter{enumi}}
+     }
+     {\endlist}
+  }
 %%%% Publisher's note
 \newcommand{\PublishersNote}{
 \null\par\noindent\small\textbf{Disclaimer/Publisher's Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
