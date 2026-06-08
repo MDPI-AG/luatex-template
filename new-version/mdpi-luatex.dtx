@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-05-13}
-\def\mdpiversion{v7.0a}
+\def\mdpidate{2026-05-30}
+\def\mdpiversion{v7.0c}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -124,9 +124,8 @@
 %\RequirePackage{amssymb} % For math environment bold format
 \RequirePackage[right,mathlines]{lineno}
 \RequirePackage{enumitem}
-\RequirePackage{titlesec}
+\IfDocumentMetadataF{\RequirePackage{titlesec}}
 \RequirePackage{etoolbox} % For \AtBeginDocument etc.
-\RequirePackage{tabto} % To use tab for alignment on first page
 \RequirePackage{xcolor} % To provide color for soul (for english editing), for adding cell color of table
 \RequirePackage{lua-ul} % To highlight text
 \newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
@@ -137,7 +136,6 @@
 \RequirePackage{attrib} % For XML2PDF use \tag{} for equation
 %\RequirePackage{upgreek} % For making greek letters not italic
 \RequirePackage{pbox} % For biography environment
-\IfDocumentMetadataF{\RequirePackage{ragged2e}} % For command \justifying
 \RequirePackage[subfigure]{tocloft} % For dots in TOC. If subfigure package is loaded, the subfigure option needs to be added here to avoid clash: \RequirePackage[subfigure]{tocloft}
 \RequirePackage{marginnote} % For left column
 \reversemarginpar % To have the left column on the left side
@@ -236,6 +234,46 @@
 \ProcessOptions\relax
 
 %    \end{macrocode}
+%
+% \subsection{Temporary patches for taggings}
+% \subsubsection{The \env{adjustwidth} environment}
+% The environment is built by the \pkg{changepage} package
+% with a list. This breaks tagging, e.g., if the environment starts with
+% a heading command. The next \LaTeX-release will provide a tagging recipe that
+% can be used. Until then we have to provide directly
+%    \begin{macrocode}
+\ExplSyntaxOn
+\cs_set_protected:Npn \__block_recipe_noop: 
+ {
+   \cs_set_eq:NN \__kernel_displayblock_beginpar_hmode:w
+                                              \prg_do_nothing:
+   \cs_set_eq:NN \__kernel_displayblock_beginpar_vmode:
+                                               \prg_do_nothing:
+   \let \__kernel_displayblock_begin:          \prg_do_nothing:
+   \let \__kernel_displayblock_end:            \prg_do_nothing:
+   \socket_assign_plug:nn{block/endpe}{noop}
+ }
+%    \end{macrocode}
+% With it we redefine the environment. Note that spacing and behaviour is not fully
+% identical yet. TODO: fine tune!
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \RenewDocumentEnvironment{adjustwidth}{mm}
+    {
+      \begin{displayblock}
+       [tagging-recipe=noop,
+        left-margin=\dimeval{#1+0pt},
+        right-margin={#2+0pt},
+        para-indent=\parindent,
+        begin-vspace=0pt,
+        end-vspace=0pt]
+    }
+    {\end{displayblock}}  
+ }
+\ExplSyntaxOff 
+%    \end{macrocode}
+%
 % \subsection{Fontsizes}
 % The following font size are inherited from article
 % \begin{tabular}{lll}
@@ -308,17 +346,6 @@
 % linespread of 1.71 was used in the left column:
 %% MORE DECLARATIONS
 %    \begin{macrocode}
-%%% Book contributions based on the article type
-\newcommand{\isBookContribution}{%
-  \ifthenelse{\equal{\@arttype}{Book}%
-  \OR \equal{\@arttype}{Monograph}%
-  }%
-}
-
-\newcommand{\isMonograph}{%
-  \ifthenelse{\equal{\@arttype}{Monograph}%
-  }%
-}
 
 \newcommand{\isPreprints}{%
   \ifthenelse{\equal{\@journal}{preprints}%
@@ -430,6 +457,33 @@
 % is defined in \texttt{journalnames.tex} and is by default 
 % \texttt{unspecified}. 
 % 
+% The command \cs{@arttype} is defined through the class options and
+% is by default \texttt{Article}.
+% 
+% \subsubsection{Books} 
+% This tests if this a Book or a Monograph
+%    \begin{macrocode}
+\ExplSyntaxOn
+\newcommand\isBookContribution
+ {
+   \str_case:onTF {\@arttype}
+    {
+      {Book}{}
+      {Monograph}{}
+    }  
+ }
+%    \end{macrocode}
+% \subsubsection{Monographs}
+% \begin{macro}{\isMonograph}
+% This tests if this is a monograph
+%    \begin{macrocode}
+\newcommand\isMonograph
+ {
+  \tl_if_eq:NnTF \@arttype{Monograph}
+ }
+%    \end{macrocode}
+% \end{macro}
+% 
 % \subsubsection{Chicago style journals}
 % These journals use the \texttt{mdpi\_chicago} bibliography style. 
 % \begin{macro}{\isChicagoStyle}
@@ -457,6 +511,7 @@
     {\prg_return_false:}
  }
 \newcommand{\isChicagoStyle}{\__mdpi_is_journal_chicagostyle:TF} 
+\newcommand\isChicagoStyle{\__mdpi_is_journal_chicagostyle:TF} 
 %    \end{macrocode}
 % \end{macro}
 % 
@@ -714,12 +769,31 @@
   notes-sep=0pt
 }
 
-%%%%% Footnotes, for journal Laws
-%\RequirePackage{scrextend}
-%\setlength{\skip\footins}{0.6cm} % Increase space between text and footnote
-%\setlength{\footnotesep}{8pt} % Increase space between line and footnote
-%\deffootnote{1.5em}{0em}{\textsuperscript{\thefootnotemark}\quad} % Remove indent
+%    \end{macrocode}
+% \subsection{Footnotes}
+% Only journal Laws uses \cs{footnote}.
+% Increase space between line and footnote
+%    \begin{macrocode}
+\setlength{\footnotesep}{8pt}
+%    \end{macrocode}
+% Hanging footnotes:
+%    \begin{macrocode}
+\RequirePackage[hang]{footmisc}
+\setlength\footnotemargin{1.5em}
+%    \end{macrocode}
+% Get around the bug https://github.com/latex3/tagging-project/issues/1360
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \patchcmd\footmisc@hang@makefntext
+     {\leftmargin\wd\@tempboxa}
+     {\leftmargin\wd\@tempboxa\@totalleftmargin \leftmargin}
+     {}{\fail}
+   \let\@makefntext\footmisc@hang@makefntext  
+ } 
+%    \end{macrocode}
 
+%    \begin{macrocode}
 %%%% Widows & orphans
 \clubpenalty=10000
 \widowpenalty=10000
@@ -875,8 +949,11 @@
 \newcommand{\sixthnote}[1]{\gdef\@sixthnote{#1}}%
 \def\@seventhnote{}
 \newcommand{\seventhnote}[1]{\gdef\@seventhnote{#1}}%
-\def\@eighthnotes{}
-\newcommand{\eighthnotes}[1]{\gdef\@eighthnotes{#1}}%
+\def\@eighthnote{}
+%    \end{macrocode}
+% The user command uses plural as \cs{eighthnote} is already defined
+%    \begin{macrocode}
+\newcommand{\eighthnotes}[1]{\gdef\@eighthnote{#1}}%
 \def\@ninethnote{}
 \newcommand{\ninethnote}[1]{\gdef\@ninethnote{#1}}%
 \def\@tenthnote{}
@@ -1118,7 +1195,7 @@
 %
 % A command for the font setup in this column:
 % \begin{macro}{\leftcolFont}
-% We increase the linespread to get a baselineskip of 12pt.
+% We increase the \cs{baselineskip} to 12pt and the \cs{parskip} to 6pt.
 %    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
@@ -1129,6 +1206,12 @@
     \parskip=2pt
    \hyphenpenalty=10000
    \tolerance=1000
+    \fontsize{7pt}{12pt}\selectfont
+    \raggedright
+    \parindent=0pt
+    \parskip=6pt
+    \hyphenpenalty=10000
+    \tolerance=1000
  }
 %    \end{macrocode}
 % \end{macro}
@@ -1201,6 +1284,8 @@
           {}{\\ Retracted: \@dateretracted}
        }\\[4pt]
   }
+       }%
+  }%
   }
 %    \end{macrocode}
 % \end{macro}
@@ -1219,9 +1304,8 @@
  }
 %    \end{macrocode}
 % \end{macro}
-%
+
 % \subsubsection{Part 5: Copyright}
-%
 % \begin{macro}{\leftcolCright}
 %    \begin{macrocode}
 \newcommand{\leftcolumnCright}
@@ -1264,7 +1348,7 @@
 \newlength{\MyLen} % For length of the left column content
 \newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
 %    \end{macrocode}
-%
+
 % \subsection{Placing of the left column}
 % The following calculation needs to be done after begin document, but before the title is typeset.
 % It is therefore executed in the \texttt{begindocument/end} hook.
@@ -1286,16 +1370,15 @@
 %    \end{macrocode}
 % \cs{Mylen} should be \cs{textheight} minus the total height of the box
 %  so that the resulting value can be used to align the left column to the bottom of \cs{textheight}.
-%  Then substract 17pt (\cs{topskip}+\cs{baselineskip} defined in \cs{leftcolFont})
+%  Then substract 23pt (\cs{topskip}+\cs{baselineskip+\cs{parskip}} defined in \cs{leftcolFont})
 %  to make the bottom alignment.
 %    \begin{macrocode}
-  \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-17pt}}%
+  \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-17pt-6pt}}%
   }
 %    \end{macrocode}
 % \end{macro}%
-%
-%    \begin{macrocode}
 
+%    \begin{macrocode}
 % Left column split options for long titles/author lists
 % Make new command for deciding for the split option
 \def\@leftcolumnsplit{}
@@ -1331,94 +1414,96 @@
   \vspace{6pt}\leftcolumnCright %3
 }
 
-%%%% Maketitle part 2
-\newcommand{\maketitlen}{%
-  \isBookContribution{\vspace{12pt}}{%
-  \begin{flushleft}
-  \hyphenpenalty=10000
-  \tolerance=1000
-  \footnotesize
-  {%
-  \ifthenelse{\equal{\firstargument}{1}}{}{%
-  \hang}\@address
+%    \end{macrocode}
+% \subsection{Maketitle part 2}
+% We set up a counter and define symbols for the various notes:
+%    \begin{macrocode}
+\ExplSyntaxOn
+\newcounter{mdpi@notecnt}
+\def\mdpi@notesymbol
+ {
+   \ifcase\c@mdpi@notecnt
+   \or\textbf{*}     %corres
+   \or\textdagger    %conference
+   \or\textdaggerdbl % firstnote
+   \or\textsection   % secondnote etc
+   \or\textbardbl
+   \or\textparagraph
+   \or**
+   \or\textdagger\textdagger
+   \or\textdaggerdbl\textdaggerdbl
+   \or\textsection\textsection  
+   \or\textbardbl\textbardbl
+   \or\textparagraph\textparagraph
+   \or ***
+   \else
+   \@ctrerr 
+   \fi
+ }
+%    \end{macrocode}
+% We avoid the use of the \cs{tabto} command as this uses math for measuring and
+% so gives unwanted structures if tagging is enabled. Instead the label is set inside
+% a box.
+% TODO: semantic tagging should be improved. 
+%    \begin{macrocode}
+\newcommand\mdpi@notelabel
+ {
+   \stepcounter{mdpi@notecnt}
+   \makebox[\dist][l]
+    {\UseTaggingSocket{inline/begin}{tag=Lbl}\mdpi@notesymbol\csname pdffakespace\endcsname\UseTaggingSocket{inline/end}}
+ } 
+%    \end{macrocode}
+% This builts the block of notes:
+%    \begin{macrocode}
+\newcommand{\maketitlen}
+ {
   \par
-  }%
-  {%
-  \ifthenelse{\equal{\@authornum}{author}}{}{%
-  \ifthenelse{\equal{\@corres}{\@empty}}{}{%
-  \hang\textbf{*} \tabto{\dist} \@corres}
-  \par
-  }
-  }%
-  {%
-  \ifthenelse{\equal{\@conference}{\@empty}}{}{%
-  \hang$^{\dagger}$ \tabto{\dist} This paper is an extended version of our paper published in\space \@conference.}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@firstnote}{\@empty}}{}{%
-  \hang\ifthenelse{\equal{\@conference}{\@empty}}{$^\dagger$}{$^\ddagger$} \tabto{\dist} \@firstnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@secondnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\ddagger}$}{$^{\S}$} \tabto{\dist} \@secondnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@thirdnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\S}$}{$^{\|}$} \tabto{\dist} \@thirdnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@fourthnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\|}$}{$^\P$} \tabto{\dist} \@fourthnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@fifthnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\P}$}{**} \tabto{\dist} \@fifthnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@sixthnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{**}{$^{\dagger\dagger}$} \tabto{\dist} \@sixthnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@seventhnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\dagger\dagger}$}{$^{\ddagger\ddagger}$} \tabto{\dist} \@seventhnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@eighthnotes}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\ddagger\ddagger}$}{$^{\S\S}$} \tabto{\dist} \@eighthnotes}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@ninethnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\S\S}$}{$^{\|\|}$} \tabto{\dist} \@ninethnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@tenthnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\|\|}$}{$^{\P\P}$} \tabto{\dist} \@tenthnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@eleventhnote}{\@empty}}{}{%
-  \hang \ifthenelse{\equal{\@conference}{\@empty}}{$^{\P\P}$}{***} \tabto{\dist} \@eleventhnote}
-  \par
-  }%
-  {%
-  \ifthenelse{\equal{\@LSID}{\@empty}}{}{%
-  \vskip12pt \@LSID}
-  \par
-  }%
-  \end{flushleft}
-}
-}
+  \isBookContribution
+   {\vspace{12pt}}
+   {
+     \begin{flushleft}
+     \hyphenpenalty=10000
+     \tolerance=1000
+     \footnotesize  
+     \ifthenelse{\equal{\firstargument}{1}}{}{\hang}
+     \@address
+     \par
+%    \end{macrocode}
+% \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
+% so we set the \cs{parshape} instead.
+%    \begin{macrocode}  
+     \parshape 2~0cm \linewidth \dimeval{\dist}~\dimeval{\linewidth-\dist}
+     \tl_if_eq:NnF\@authornum{author}
+       {
+        \tl_if_empty:NF\@corres
+         {
+           \mdpi@notelabel\@corres
+           \par
+         }       
+       }    
+     \tl_if_empty:NF\@conference
+       {
+         \mdpi@notelabel
+         This~ paper~ is~ an~ extended~ version~ of~ our~ paper~ published~ in\space \@conference.
+         \par
+       }
+     \clist_map_inline:nn{first,second,third,fourth,fifth,sixth,seventh,eighth,nineth,tenth,eleventh}
+      {
+       \tl_if_empty:cF{@##1note}
+        {         
+         \mdpi@notelabel
+         \tl_use:c{@##1note}
+         \par
+        } 
+      }      
+     \tl_if_empty:NF\@LSID{\vskip12pt \@LSID \par}
+     \end{flushleft}
+   }
+ }
+\ExplSyntaxOff
+%    \end{macrocode}
 
+%    \begin{macrocode}
 %%%% Abstract, keywords, journal data, PACS, MSC, JEL
 \newcommand{\abstractkeywords}{
 \isMonograph{}{\vspace{-8pt}
@@ -1547,25 +1632,129 @@
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots between section title and page number
 \renewcommand{\numberline}[1]{#1.~\space} % Increase space between number and title
 
-%%%% Section headings
-\setcounter{secnumdepth}{4} % Default: 3 in the article class. To get paragraphs numbered and counted, increase the default value of secnumdepth to 4
-
-\isMonograph{%
-  \titleformat {\section} [block] {\raggedright \LARGE\bfseries} {\thesection.\space} {0pt} {}
-  \titlespacing {\section} {0pt} {12pt} {8pt}
-  }{
-  \titleformat {\section} [block] {\raggedright \large\bfseries} {\thesection.\space} {0pt} {}
-  \titlespacing {\section} {0pt} {12pt} {3pt}
+%    \end{macrocode}
+% \subsection{Formatting of the heading commands}
+% By default \cs{paragraph} is not numbered.
+% To get paragraphs 
+% numbered and counted, increase the value of secnumdepth to 4
+%    \begin{macrocode}
+\setcounter{secnumdepth}{3} 
+%    \end{macrocode}
+% This command will at some time be added to the LaTeX kernel. It gives a space of
+% the width of a normal word space.
+%    \begin{macrocode}
+\providecommand\WordSpaceAmount[1]{
+  \glueexpr 
+        #1\fontdimen2\the\font
+  plus  #1\fontdimen3\the\font
+  minus #1\fontdimen4\the\font
+  \relax
 }
+%    \end{macrocode}
+% The settings for the tagged version:
+%    \begin{macrocode}
+\IfDocumentMetadataTF
+ {
+   \setcounter{secnumdepth}{3} 
+%    \end{macrocode}
+% We set up a dedicated headformat instance:
+%    \begin{macrocode}
+   \DeclareInstance    {headformat}{mdpi/std}{hang} 
+    {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
+   \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
+   \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
+   \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
+   \DeclareInstanceCopy{headformat}{paragraph}    {mdpi/std}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+%
+%    \end{macrocode}
+% The \cs{section} settings:
+%    \begin{macrocode}
+   \EditInstance{heading}{section}
+     {
+       heading-decls=\raggedright\large\bfseries,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\theheading.,
+       headformat-instance = section %until the release
+     }
+%    \end{macrocode}
+% The format of \cs{section} differs in monographs:
+%    \begin{macrocode}
+   \isMonograph
+    {
+     \EditInstance{heading}{section}
+       {
+         heading-decls=\raggedright\LARGE\bfseries,        
+         after-vspace =8pt,
+       }     
+    }
+    {}   
+%    \end{macrocode}
+% The \cs{subsection} settings.
+%    \begin{macrocode}
+   \EditInstance{heading}{subsection}
+     {
+       heading-decls=\raggedright \normalsize\itshape,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\theheading.,
+       headformat-instance = subsection
+     }
+%    \end{macrocode}
+% The \cs{subsubsection} settings.
+%    \begin{macrocode}
+   \EditInstance{heading}{subsubsection}
+     {
+       heading-decls=\raggedright \normalsize,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\theheading.,
+       headformat-instance = subsection
+     } 
+%    \end{macrocode}
+% The \cs{paragraph} settings. \cs{paragraph} is not a run-in heading in the class.
+%    \begin{macrocode}
+   \DeclareInstance{heading}{paragraph}{display}
+     {
+       , name          = paragraph
+       , parent-name   = subsubsection
+       , level         = 4
+       , before-vspace = 12pt
+       , after-vspace  = 3pt
+       , heading-decls = \raggedright\normalfont\normalsize
+       , mark-cmd      = \paragraphmark {#1}
+       , number-format=\theheading.,
+       , headformat-instance = paragraph
+     }
+%    \end{macrocode}
+%    \begin{macrocode}
+ } %end of \DocumentMetadata test
+%    \end{macrocode}
+% The settings without \cs{DocumentMetadata}:
+%    \begin{macrocode}
+ {
+   \isMonograph
+    {
+     \titleformat {\section} [block] {\raggedright \LARGE\bfseries} {\thesection.\space} {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {8pt}
+    }
+    {
+     \titleformat {\section} [block] {\raggedright \large\bfseries} {\thesection.\space} {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+    }
 
-\titleformat {\subsection} [block] {\raggedright \normalsize\itshape} {\thesubsection.\space} {0pt} {}
-\titlespacing {\subsection} {0pt} {12pt} {3pt}
+   \titleformat {\subsection} [block] {\raggedright \normalsize\itshape} {\thesubsection.\space} {0pt} {}
+   \titlespacing {\subsection} {0pt} {12pt} {3pt}
 
-\titleformat {\subsubsection} [block] {\raggedright \normalsize} {\thesubsubsection.\space} {0pt} {}
-\titlespacing {\subsubsection} {0pt} {12pt} {3pt}
+   \titleformat {\subsubsection} [block] {\raggedright \normalsize} {\thesubsubsection.\space} {0pt} {}
+   \titlespacing {\subsubsection} {0pt} {12pt} {3pt}
 
-\titleformat {\paragraph} [block] {\raggedright \normalsize} {} {0pt} {}
-\titlespacing {\paragraph} {0pt} {12pt} {3pt}
+   \titleformat {\paragraph} [block] {\raggedright \normalsize} {\theparagraph.\space} {0pt} {}
+   \titlespacing {\paragraph} {0pt} {12pt} {3pt}
+ } 
 
 %%%% Special section title style for back matter
 \newcommand{\supplementary}[1]{
@@ -1613,8 +1802,8 @@
 \newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\large\textbf{#1}}{%
 \par\vspace{3pt}\hspace{-0.85cm}{\small #2}\par}}
 
-% UF TODO correct semantic
-\renewcommand\abbreviations[2]{\section*{#1}#2\par}
+% UF TODO correct semantic, e.g.
+%\renewcommand\abbreviations[2]{\section*{#1}\small #2\par}
 
 % Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
@@ -1665,64 +1854,101 @@
 \setcounter{graph}{0}
 }
 
-\renewcommand{\appendix}{%
+%    \end{macrocode}
 %
-\gdef\thesection{\AlphAlph{\value{section}}}%
-\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
+% 
+%    \begin{macrocode}
+\ExplSyntaxOn
+\renewcommand{\appendix}
+ {%
+%
+  \gdef\thesection   {\AlphAlph{\value{section}}}%
+  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
+%    \end{macrocode}
+% \subsection{Formatting of the heading commands after \cs{appendix}}
+%    \begin{macrocode}
+%%% UF SECTIONFORMAT (after \appendix)
+    \IfDocumentMetadataTF
+     {
+%    \end{macrocode}
+% Even in monographs section should use a smaller font in the appendix.
+%    \begin{macrocode}
+      \EditInstance{heading}{section}
+        {
+         after-vspace=3pt,
+         heading-decls=\raggedright\large\bfseries,         
+        }
+      \clist_map_inline:nn {section,subsection,subsubsection}
+       {
+         \EditInstance{heading}{##1}
+          {
+            number-format=
+             \appendixname\nobreakspace\theheading
+             \tl_if_eq:NnT\@appendixtitles {yes}{.}
+          }   
+       }
+     }
+%    \end{macrocode}
+%
+%    \begin{macrocode}
+     {
+      \titleformat {\section} [block] {\raggedright\bfseries\large} {\large\bfseries%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesection.%
+         }{%
+         \appendixname\nobreakspace\thesection\nobreakspace%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+     %
+     \titleformat {\subsection} [block] {\raggedright\itshape} {%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesubsection.%
+         }{%
+         \appendixname\nobreakspace\thesubsection%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+     %
+     \titleformat {\subsubsection} [block] {\raggedright\selectfont} {%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesubsubsection.%
+         }{%
+         \appendixname\nobreakspace\thesubsubsection%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+   }
 
-\titleformat {\section} [block] {\raggedright\bfseries\large} {\large\bfseries%
-  \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    \appendixname~\thesection.%
-    }{%
-    \appendixname~\thesection~%
-    }
-  } {0pt} {}
-\titlespacing {\section} {0pt} {12pt} {3pt}
-%
-\titleformat {\subsection} [block] {\raggedright\itshape} {%
-  \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    \appendixname~\thesubsection.%
-    }{%
-    \appendixname~\thesubsection%
-    }
-  } {0pt} {}
-\titlespacing {\section} {0pt} {12pt} {3pt}
-%
-\titleformat {\subsubsection} [block] {\raggedright\selectfont} {%
-  \ifthenelse{\equal{\@appendixtitles}{yes}}{%
-    \appendixname~\thesubsubsection.%
-    }{%
-    \appendixname~\thesubsubsection%
-    }
-  } {0pt} {}
-\titlespacing {\section} {0pt} {12pt} {3pt}
-%
-\gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
-\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
-\csname appendixmore\endcsname
-\renewcommand{\thefigure}{A\arabic{figure}}
-\renewcommand{\thetable}{A\arabic{table}}
-\renewcommand{\thescheme}{A\arabic{scheme}}
-\renewcommand{\thechart}{A\arabic{chart}}
-\renewcommand{\theboxenv}{A\arabic{boxenv}}
-\renewcommand{\theequation}{A\arabic{equation}}
-\renewcommand{\thetheorem}{A\arabic{theorem}}
-\renewcommand{\thelemma}{A\arabic{lemma}}
-\renewcommand{\thecorollary}{A\arabic{corollary}}
-\renewcommand{\theproposition}{A\arabic{proposition}}
-\renewcommand{\thecharacterization}{A\arabic{characterization}}
-\renewcommand{\theproperty}{A\arabic{property}}
-\renewcommand{\theproblem}{A\arabic{problem}}
-\renewcommand{\theexample}{A\arabic{example}}
-\renewcommand{\theexamplesanddefinitions}{A\arabic{examplesanddefinitions}}
-\renewcommand{\theremark}{A\arabic{remark}}
-\renewcommand{\thedefinition}{A\arabic{definition}}
-\renewcommand{\thehypothesis}{A\arabic{hypothesis}}
-\renewcommand{\thenotation}{A\arabic{notation}}
-\renewcommand{\thealgorithm}{A\arabic{algorithm}}
-\renewcommand{\thegraph}{A\arabic{graph}}
+  %\gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
+  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
+  \csname appendixmore\endcsname
+  \renewcommand{\thefigure}{A\arabic{figure}}
+  \renewcommand{\thetable}{A\arabic{table}}
+  \renewcommand{\thescheme}{A\arabic{scheme}}
+  \renewcommand{\thechart}{A\arabic{chart}}
+  \renewcommand{\theboxenv}{A\arabic{boxenv}}
+  \renewcommand{\theequation}{A\arabic{equation}}
+  \renewcommand{\thetheorem}{A\arabic{theorem}}
+  \renewcommand{\thelemma}{A\arabic{lemma}}
+  \renewcommand{\thecorollary}{A\arabic{corollary}}
+  \renewcommand{\theproposition}{A\arabic{proposition}}
+  \renewcommand{\thecharacterization}{A\arabic{characterization}}
+  \renewcommand{\theproperty}{A\arabic{property}}
+  \renewcommand{\theproblem}{A\arabic{problem}}
+  \renewcommand{\theexample}{A\arabic{example}}
+  \renewcommand{\theexamplesanddefinitions}{A\arabic{examplesanddefinitions}}
+  \renewcommand{\theremark}{A\arabic{remark}}
+  \renewcommand{\thedefinition}{A\arabic{definition}}
+  \renewcommand{\thehypothesis}{A\arabic{hypothesis}}
+  \renewcommand{\thenotation}{A\arabic{notation}}
+  \renewcommand{\thealgorithm}{A\arabic{algorithm}}
+  \renewcommand{\thegraph}{A\arabic{graph}}
 }
+  \ExplSyntaxOff 
+%    \end{macrocode}
 
+%    \begin{macrocode}
 %%%% Dimensions
 %% Width of left column = marginparwidth
 \newlength{\leftcolumnlength}
@@ -1743,7 +1969,9 @@
         top=1.35cm,
         bottom=1.08cm,
         includehead,
-        includefoot]{geometry}
+        includefoot,
+        footnotesep=0.6cm %moved from \skip\footins change for journal laws
+        ]{geometry}
       }{
 \isBookContribution{%%
   \RequirePackage[left=2.05cm,
@@ -1754,7 +1982,9 @@
           paperheight=244mm,
           footskip=20pt,
           headsep=24pt,
-          includefoot]{geometry}
+          includefoot,
+          footnotesep=0.6cm %moved from \skip\footins change for journal laws
+          ]{geometry}
   }{
   \RequirePackage[left=5.87cm, %1.27 cm + 0.51 cm + 4.1 cm = 5.87 cm (= 1.27 cm + marginparwidth + marginparsep)
         marginparwidth=4.1cm,
@@ -1765,7 +1995,9 @@
         footskip=36pt,
         headsep=24pt,
         includehead,
-        includefoot]{geometry}
+        includefoot,
+        footnotesep=0.6cm %moved from \skip\footins change for journal laws 
+        ]{geometry}
       }
 }
 
@@ -1819,7 +2051,7 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \subsection{Figures and tables}
+% \subsection{Figures and tables and other floats}
 % New floating environments:
 %    \begin{macrocode}
 \RequirePackage{newfloat}
@@ -1849,33 +2081,59 @@
 %    \end{macrocode}
 %
 %    \begin{macrocode}
+
 \RequirePackage{caption}
-\isPreprints{%
-\captionsetup[figure]{position=bottom,   labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[scheme]{position=bottom,  labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[listing]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[chart]{position=bottom,   labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[table]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
-
-\captionsetup[boxenv]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
-}{
-\captionsetup[figure]{position=bottom,   labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[scheme]{position=bottom,  labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[listing]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[chart]{position=bottom,   labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[table]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
-
-\captionsetup[boxenv]{position=top,     labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
-}
-
+\captionsetup
+  {
+   labelfont={bf, small, stretch=1.17}, 
+   labelsep=period, 
+   textfont={small, stretch=1.17}, 
+   aboveskip=6pt, 
+   justification=justified
+  }
+\captionsetup[figure] {position=bottom,belowskip=-6pt}
+\captionsetup[scheme] {position=bottom,belowskip=-6pt}
+\captionsetup[chart]  {position=bottom,belowskip=-6pt}
+\captionsetup[listing]{position=top}
+\captionsetup[table]  {position=top}
+\captionsetup[boxenv] {position=top}
+ 
+%    \end{macrocode}
+% Why this??
+%    \begin{macrocode}
+\isPreprints
+ {
+  \captionsetup{singlelinecheck=on}
+ }
+ {
+  \captionsetup{singlelinecheck=off}
+ } 
+%    \end{macrocode}
+% A minimal, first adjustment of captions with tagging.
+% This should be replaced by templates once there are implemented in LaTeX.
+% TODO: spacing (including line spacing) must be checked, 
+%    \begin{macrocode}
+\IfDocumentMetadataT
+ {
+   \abovecaptionskip=6pt
+   \belowcaptionskip=6pt
+   \AtBeginDocument
+    {
+      \long\def\@makecaption#1#2{%
+        \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
+        \vskip\abovecaptionskip
+        \small
+        \UseTaggingSocket{caption/begin}{\@current@float@struct}%
+        \UseTaggingSocket{caption/label/begin}%
+        \textbf{#1. }%
+        \UseTaggingSocket{caption/label/end}%
+        \UseTaggingSocket{para/begin}%
+            #2
+        \par
+        \UseTaggingSocket{caption/end}%
+        \vskip\belowcaptionskip}
+     }
+ }
 %% For table footnotes
 \newsavebox{\@justcentbox}
 \newcommand{\justifyorcenter}[1]{
@@ -1890,16 +2148,36 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X} % centered text in L columns
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X} % centered text in R columns
 
-%%%%% Bullet lists
 %    \end{macrocode}
 % \subsection{List settings}
 % The tagging code doesn't support yet the star-value for \texttt{leftmargin} and
 % the value \texttt{parleft} for align, so we have to change that:
+% TODO: values should be reviewed, e.g. for second level. 
 %    \begin{macrocode}
 \IfDocumentMetadataTF
- {
-  \setlist[itemize]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=20.5pt,labelsep=5.5mm,align=left}
-  \setlist[enumerate]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=20.5pt,labelsep=5.5mm,align=left}
+ { 
+  \setlist[itemize]
+    {
+     topsep=3pt,
+     parsep=0pt,
+     itemsep=0pt,
+     leftmargin=21.25pt,
+     labelwidth=16.25pt,
+     itemindent=0pt,
+     labelsep=5pt,
+     align=left
+    }
+  \setlist[enumerate]
+    {
+     topsep=3pt,
+     parsep=0pt,
+     itemsep=0pt,
+     leftmargin=21.25pt,
+     labelwidth=16.25pt,
+     itemindent=0pt,
+     labelsep=5pt,
+     align=left,
+     }
  }
  {
   \setlist[itemize]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
@@ -2057,6 +2335,12 @@
         {}
         {% to remove the sectin from the TOC in books
           \section{\@reftitle}%
+      %%% UF SECTIONFORMAT
+      %\titleformat {\section} [block] {\raggedright \large\bfseries} {} {0pt} {}
+      \isBookContribution
+        {}
+        {% to remove the sectin from the TOC in books
+          \section[unnumbered,heading-decls=\raggedright \large\bfseries]{\@reftitle}%
         }
       \small
       \list

@@ -239,7 +239,7 @@ Completed box being shipped out [1]
 .....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 411.03879fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 416.03824fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -793,8 +793,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 6.982
-....\hbox(4.858+1.967)x394.35522, glue set 307.19116fil, direction TLT
+....\glue(\baselineskip) 4.337
+....\hbox(4.823+1.967)x394.35522, glue set 307.19116fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -820,10 +820,10 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/m/n/7 7
 .....\TU/texgyrepagella(0)/m/n/7 ,
 .....\glue(\spaceskip) 1.75 plus 1.09375 minus 0.46666
-.....\TU/texgyrepagella(0)/m/n/7 1
-.....\TU/texgyrepagella(0)/m/n/7 2
+.....\TU/texgyrepagella(0)/m/n/7 9
 .....\TU/texgyrepagella(0)/m/n/7 .
-.....\TU/texgyrepagella(0)/m/n/7 0
+.....\TU/texgyrepagella(0)/m/n/7 3
+.....\TU/texgyrepagella(0)/m/n/7 2
 .....\TU/texgyrepagella(0)/m/n/7 p
 .....\kern-0.14 (font)
 .....\TU/texgyrepagella(0)/m/n/7 t
@@ -832,7 +832,7 @@ Completed box being shipped out [1]
 .....\penalty -10000
 .....\glue(\rightskip) 0.0
 ....\penalty 20000
-....\glue(\baselineskip) 5.07
+....\glue(\baselineskip) 2.39001
 ....\hbox(4.963+0.14)x394.35522, glue set 294.6145fil, direction TLT
 .....\hbox(1.0+0.0)x28.45274, direction TLT
 ......\rule(1.0+0.0)x28.45274
@@ -1057,7 +1057,6 @@ Completed box being shipped out [1]
 .....\kern-0.558 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\glue -0.36
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
@@ -1086,7 +1085,7 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(9.78595+4.19403)x525.52245, direction TLT
-.........\hbox(9.78595+4.19403)x525.52245, glue set 261.51123fil, direction TLT
+.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -1094,7 +1093,6 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-..........\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 ..........\rule(9.78595+4.19403)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0

@@ -1,0 +1,14 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\input{regression-test}
+\DocumentMetadata{tagging=on}
+\documentclass{mdpi-luatex}
+\usepackage{lipsum}
+% avoid maketitle:
+\RemoveFromHook{begindocument/end}[mdpi-luatex]
+\begin{document}
+\START\showoutput
+\lipsum[1]
+\footnote{\lipsum[1][1-2]\begin{itemize}\item bla\end{itemize}
+\lipsum[1][1-2]}
+\SHOWPDFTAGS
+\end{document} 

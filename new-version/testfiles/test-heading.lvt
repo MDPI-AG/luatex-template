@@ -1,0 +1,40 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\input{regression-test}
+
+\documentclass{mdpi-luatex}
+\usepackage{lipsum}
+% avoid maketitle:
+\RemoveFromHook{begindocument/end}[mdpi-luatex]
+\begin{document}
+\START\showoutput
+\tableofcontents 
+\newpage
+\ExplSyntaxOn
+\clist_map_inline:nn {section,subsection,subsubsection,paragraph,subparagraph}
+ {
+   \use:c{#1}{Test~#1}
+   \lipsum[1][1-3] 
+ }
+ 
+\newpage  
+\appendix  
+\section{appendixtitles empty}
+\clist_map_inline:nn {section,subsection,subsubsection,paragraph,subparagraph}
+ {
+   \use:c{#1}{}
+   \lipsum[1][1-3] 
+ }
+
+\newpage 
+\appendixtitles{yes}
+\section{appendixtitles yes}
+\clist_map_inline:nn {section,subsection,subsubsection,paragraph,subparagraph}
+ {
+   \use:c{#1}{Test~#1}
+   \lipsum[1][1-3] 
+ }
+
+\ExplSyntaxOff
+
+
+\end{document} 
