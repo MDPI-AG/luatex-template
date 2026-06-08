@@ -979,7 +979,7 @@
 \let\orig@nat@@lbibitem\@lbibitem
 % 2026-05-14: add arguments for compatibility with tagging code which 
 % uses a cmd-hook with arguments
-\def\@lbibitem[#1]#2{\NAT@swatrue\orig@nat@@@@lbibitem[#1]#2}
+\def\@lbibitem[#1]#2{\NAT@swatrue\orig@nat@@@@lbibitem[#1]{#2}}
 \renewcommand\citetext[1]{\NAT@open\begingroup\NAT@swatrue
   #1\endgroup\NAT@close}
 \DeclareRobustCommand\citeauthort{\citeauthor}
