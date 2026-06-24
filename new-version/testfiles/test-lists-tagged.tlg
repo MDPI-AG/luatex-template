@@ -3,6 +3,8 @@ Don't change this file in any respect.
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for 'english' will be used instead.
 (lipsum)                
 (lipsum)                With LuaTeX, lipsum requires babel to get proper hyphenation (you can use \usepackage[base]{babel}).
+LaTeX Font Warning: Font shape `TU/texgyrepagellamath(0)/b/n' undefined
+(Font)              using `TU/texgyrepagellamath(0)/m/n' instead on input line ....
 ============================================================
 TEST 1: Show PDF Tags
 ============================================================
@@ -83,8 +85,7 @@ TEST 1: Show PDF Tags
            Layout:TextAlign="Justify"
            rolemaps-to="P"
           >
-         <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
-         <?MarkedContent page="1" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+         <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu-lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
         </text>
         <itemize xmlns="https://www.latex-project.org/ns/dflt"
            id="ID.025"
@@ -145,8 +146,7 @@ TEST 1: Show PDF Tags
                Layout:TextAlign="Justify"
                rolemaps-to="P"
               >
-             <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mau
-             <?MarkedContent page="1" ?>ris.
+             <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
             </text>
            </text-unit>
           </itembody>
@@ -220,8 +220,7 @@ TEST 1: Show PDF Tags
            Layout:TextAlign="Justify"
            rolemaps-to="P"
           >
-         <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
-         <?MarkedContent page="1" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+         <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu-lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
         </text>
         <enumerate xmlns="https://www.latex-project.org/ns/dflt"
            id="ID.048"
@@ -282,8 +281,7 @@ TEST 1: Show PDF Tags
                Layout:TextAlign="Justify"
                rolemaps-to="P"
               >
-             <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mau
-             <?MarkedContent page="1" ?>ris.
+             <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
             </text>
            </text-unit>
           </itembody>
@@ -309,11 +307,13 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-lists-tagged.xml (end) -----------
 ============================================================
+LaTeX Font Warning: Font shape `TU/texgyrepagellamath(0)/m/it' undefined
+(Font)              using `TU/texgyrepagellamath(0)/m/n' instead on input line ....
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 21.49452pt, for example:
-(fancyhdr)                \setlength{\headheight}{21.49452pt}.
+(fancyhdr)                Make it at least 21.45453pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.45453pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
+(fancyhdr)                \addtolength{\topmargin}{-9.45453pt}.
 (../mt-cmr.cfg
 File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
 )
@@ -386,10 +386,10 @@ Completed box being shipped out [1]
 ......\glue -131.16722
 ......\hbox(12.0+0.0)x525.52245, direction TLT
 .......\vbox(12.0+0.0)x525.52245, direction TLT
-........\hbox(18.349+3.14552)x525.52245, direction TLT
-.........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
-..........\vbox(18.349+3.14552)x525.52245, direction TLT
-...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+........\hbox(18.309+3.14552)x525.52245, direction TLT
+.........\hbox(18.309+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+..........\vbox(18.309+3.14552)x525.52245, direction TLT
+...........\hbox(5.824+2.264)x525.52245, glue set 162.6412fil, direction TLT
 ............\kern-0.288 (left margin)
 ............\localpar
 .............\localinterlinepenalty=0
@@ -397,87 +397,81 @@ Completed box being shipped out [1]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\TU/texgyrepagella(0)/m/n/8 V
-............\kern-0.72 (font)
-............\TU/texgyrepagella(0)/m/n/8 e
-............\TU/texgyrepagella(0)/m/n/8 r
+............\TU/texgyrepagellamath(0)/m/n/8 V
+............\TU/texgyrepagellamath(0)/m/n/8 e
+............\TU/texgyrepagellamath(0)/m/n/8 r
 ............\discretionary (penalty 50)
-.............< \kern-0.24 (font)
-.............< \TU/texgyrepagella(0)/m/n/8 -
-............\TU/texgyrepagella(0)/m/n/8 s
-............\TU/texgyrepagella(0)/m/n/8 i
-............\TU/texgyrepagella(0)/m/n/8 o
-............\TU/texgyrepagella(0)/m/n/8 n
-............\TU/texgyrepagella(0)/m/n/8  
+.............< \TU/texgyrepagellamath(0)/m/n/8 -
+............\TU/texgyrepagellamath(0)/m/n/8 s
+............\TU/texgyrepagellamath(0)/m/n/8 i
+............\TU/texgyrepagellamath(0)/m/n/8 o
+............\TU/texgyrepagellamath(0)/m/n/8 n
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 M
-............\TU/texgyrepagella(0)/m/n/8 a
-............\kern-0.32 (font)
-............\TU/texgyrepagella(0)/m/n/8 y
-............\TU/texgyrepagella(0)/m/n/8  
+............\TU/texgyrepagellamath(0)/m/n/8 M
+............\TU/texgyrepagellamath(0)/m/n/8 a
+............\TU/texgyrepagellamath(0)/m/n/8 y
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 2
-............\TU/texgyrepagella(0)/m/n/8 0
-............\TU/texgyrepagella(0)/m/n/8 ,
-............\TU/texgyrepagella(0)/m/n/8  
+............\TU/texgyrepagellamath(0)/m/n/8 2
+............\TU/texgyrepagellamath(0)/m/n/8 0
+............\TU/texgyrepagellamath(0)/m/n/8 ,
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.25 minus 0.53333
-............\TU/texgyrepagella(0)/m/n/8 2
-............\TU/texgyrepagella(0)/m/n/8 0
-............\TU/texgyrepagella(0)/m/n/8 1
-............\TU/texgyrepagella(0)/m/n/8 6
-............\TU/texgyrepagella(0)/m/n/8  
+............\TU/texgyrepagellamath(0)/m/n/8 2
+............\TU/texgyrepagellamath(0)/m/n/8 0
+............\TU/texgyrepagellamath(0)/m/n/8 1
+............\TU/texgyrepagellamath(0)/m/n/8 6
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 s
-............\TU/texgyrepagella(0)/m/n/8 u
-............\TU/texgyrepagella(0)/m/n/8 b
+............\TU/texgyrepagellamath(0)/m/n/8 s
+............\TU/texgyrepagellamath(0)/m/n/8 u
+............\TU/texgyrepagellamath(0)/m/n/8 b
 ............\discretionary (penalty 50)
-.............< \TU/texgyrepagella(0)/m/n/8 -
-............\TU/texgyrepagella(0)/m/n/8 m
-............\TU/texgyrepagella(0)/m/n/8 i
-............\TU/texgyrepagella(0)/m/n/8 t
+.............< \TU/texgyrepagellamath(0)/m/n/8 -
+............\TU/texgyrepagellamath(0)/m/n/8 m
+............\TU/texgyrepagellamath(0)/m/n/8 i
+............\TU/texgyrepagellamath(0)/m/n/8 t
 ............\discretionary (penalty 50)
-.............< \TU/texgyrepagella(0)/m/n/8 -
-............\TU/texgyrepagella(0)/m/n/8 t
-............\TU/texgyrepagella(0)/m/n/8 e
-............\TU/texgyrepagella(0)/m/n/8 d
-............\TU/texgyrepagella(0)/m/n/8  
+.............< \TU/texgyrepagellamath(0)/m/n/8 -
+............\TU/texgyrepagellamath(0)/m/n/8 t
+............\TU/texgyrepagellamath(0)/m/n/8 e
+............\TU/texgyrepagellamath(0)/m/n/8 d
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 t
-............\kern-0.08 (font)
-............\TU/texgyrepagella(0)/m/n/8 o
-............\TU/texgyrepagella(0)/m/n/8  
+............\TU/texgyrepagellamath(0)/m/n/8 t
+............\TU/texgyrepagellamath(0)/m/n/8 o
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/it/8 J
-............\TU/texgyrepagella(0)/m/it/8 o
-............\TU/texgyrepagella(0)/m/it/8 u
-............\TU/texgyrepagella(0)/m/it/8 r
+............\TU/texgyrepagellamath(0)/m/n/8 J
+............\TU/texgyrepagellamath(0)/m/n/8 o
+............\TU/texgyrepagellamath(0)/m/n/8 u
+............\TU/texgyrepagellamath(0)/m/n/8 r
 ............\discretionary (penalty 50)
-.............< \kern-0.4 (font)
-.............< \TU/texgyrepagella(0)/m/it/8 -
-............\TU/texgyrepagella(0)/m/it/8 n
-............\TU/texgyrepagella(0)/m/it/8 a
-............\TU/texgyrepagella(0)/m/it/8 l
-............\TU/texgyrepagella(0)/m/it/8  
+.............< \TU/texgyrepagellamath(0)/m/n/8 -
+............\TU/texgyrepagellamath(0)/m/n/8 n
+............\TU/texgyrepagellamath(0)/m/n/8 a
+............\TU/texgyrepagellamath(0)/m/n/8 l
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/it/8 N
-............\kern-0.2 (font)
-............\TU/texgyrepagella(0)/m/it/8 o
-............\kern-0.12 (font)
-............\TU/texgyrepagella(0)/m/it/8 t
-............\TU/texgyrepagella(0)/m/it/8  
+............\TU/texgyrepagellamath(0)/m/n/8 N
+............\TU/texgyrepagellamath(0)/m/n/8 o
+............\TU/texgyrepagellamath(0)/m/n/8 t
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/it/8 S
-............\TU/texgyrepagella(0)/m/it/8 p
-............\TU/texgyrepagella(0)/m/it/8 e
-............\TU/texgyrepagella(0)/m/it/8 c
+............\TU/texgyrepagellamath(0)/m/n/8 S
+............\TU/texgyrepagellamath(0)/m/n/8 p
+............\TU/texgyrepagellamath(0)/m/n/8 e
+............\TU/texgyrepagellamath(0)/m/n/8 c
 ............\discretionary (penalty 50)
-.............< \TU/texgyrepagella(0)/m/it/8 -
-............\TU/texgyrepagella(0)/m/it/8 i
+.............< \TU/texgyrepagellamath(0)/m/n/8 -
+............\TU/texgyrepagellamath(0)/m/n/8 i
 ............\discretionary (penalty 50)
-.............< \TU/texgyrepagella(0)/m/it/8 -
-............\TU/texgyrepagella(0)/m/it/8 ﬁ
-............\TU/texgyrepagella(0)/m/it/8 e
-............\TU/texgyrepagella(0)/m/it/8 d
+.............< \TU/texgyrepagellamath(0)/m/n/8 -
+............\TU/texgyrepagellamath(0)/m/n/8 f
+............\TU/texgyrepagellamath(0)/m/n/8 i
+............\TU/texgyrepagellamath(0)/m/n/8 e
+............\TU/texgyrepagellamath(0)/m/n/8 d
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
@@ -527,14 +521,14 @@ Completed box being shipped out [1]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\TU/texgyrepagella(0)/m/n/8 1
-............\TU/texgyrepagella(0)/m/n/8  
+............\TU/texgyrepagellamath(0)/m/n/8 1
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 o
-............\TU/texgyrepagella(0)/m/n/8 f
-............\TU/texgyrepagella(0)/m/n/8  
+............\TU/texgyrepagellamath(0)/m/n/8 o
+............\TU/texgyrepagellamath(0)/m/n/8 f
+............\TU/texgyrepagellamath(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 1
+............\TU/texgyrepagellamath(0)/m/n/8 1
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\penalty 10000
 ............\kern-0.2 (right margin)
@@ -582,7 +576,7 @@ Completed box being shipped out [1]
 ....\pdfdest name{Doc-Start} xyz
 ....\pdfdest name{Doc-Start} xyz
 ....\glue(\topskip) 2.74
-....\hbox(7.26+2.83)x394.35522, glue set 0.08788, direction TLT
+....\hbox(7.26+2.83)x394.35522, glue set 0.04134, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -591,1211 +585,1154 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 L
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 L
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 o
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 U
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 U
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x394.35522, glue set - 0.02028, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+....\hbox(7.28+2.83)x394.35522, glue set 0.00569, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 C
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 C
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\discretionary (penalty 50)
-......< \kern-0.3 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\kern-0.35 (font)
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 N
-.....\kern-0.3 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 N
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
 .....\kern-1.25 (right margin)
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 0.6463, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
+....\hbox(7.26+2.83)x394.35522, glue set 0.58221, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 y
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 y
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 D
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 D
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 h
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 h
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 q
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 q
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 .
 .....\kern-1.75 (right margin)
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x394.35522, glue set - 0.35384, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.5 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
+....\hbox(7.28+2.83)x394.35522, glue set - 0.46974, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 n
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 q
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 q
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 h
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 h
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 q
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 q
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\kern-0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
 .....\kern-1.75 (right margin)
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x394.35522, glue set - 0.00256, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 M
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
+....\hbox(7.28+2.83)x394.35522, glue set - 0.01808, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 M
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 C
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 C
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 h
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 h
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 N
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 N
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 0.58687, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
+....\hbox(7.26+2.83)x394.35522, glue set 0.5221, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\TU/texgyrepagella(0)/m/n/10 h
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 h
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\kern-0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\discretionary (penalty 50)
-......< \kern-0.3 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\kern-0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\kern-0.35 (font)
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 I
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 I
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 a
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 0.13728, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+....\hbox(7.26+2.83)x394.35522, glue set 0.05269, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 q
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 q
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 A
-.....\kern-0.3 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 A
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.81)x394.35522, glue set 0.00034, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\kern-0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
+....\hbox(7.28+2.81)x394.35522, glue set - 0.00261, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 M
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 M
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 o
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 v
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 v
 .....\discretionary (penalty 50)
-......< \kern-0.35 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 l
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 C
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 C
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\discretionary (penalty 50)
-......< \kern-0.3 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\kern-0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\kern-0.2 (right margin)
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\glue(\baselineskip) 3.89
-....\hbox(7.28+2.83)x394.35522, glue set 0.0106, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 m
+....\hbox(7.28+2.83)x394.35522, glue set 0.00682, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 D
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 D
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.3 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\discretionary (penalty 50)
-......< \kern-0.3 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 D
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 D
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 h
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 h
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
 .....\kern-1.25 (right margin)
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\penalty 10000
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 109.49193fil, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
+....\hbox(7.26+2.83)x394.35522, glue set 109.05185fil, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 q
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 q
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 D
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 D
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 g
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 .
 .....\penalty 10000
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1805,7 +1742,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.20999
-....\hbox(6.94+0.2)x373.10522, glue set 342.95523fil, shifted 21.25, direction TLT
+....\hbox(6.94+0.2)x373.10522, glue set 342.36523fil, shifted 21.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1824,21 +1761,20 @@ Completed box being shipped out [1]
 ..........\pdfdest name{*.1} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\TU/texgyrepagella(0)/m/n/10 •
+........\TU/texgyrepagellamath(0)/b/n/10 •
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.55 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagellamath(0)/b/n/10 1
 .....\penalty 10000
 .....\kern-0.25 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1848,7 +1784,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+2.83)x373.10522, glue set - 0.14575, shifted 21.25, direction TLT
+....\hbox(7.26+2.83)x373.10522, glue set - 0.28381, shifted 21.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1867,251 +1803,236 @@ Completed box being shipped out [1]
 ..........\pdfdest name{*.2} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\TU/texgyrepagella(0)/m/n/10 •
+........\TU/texgyrepagellamath(0)/b/n/10 •
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.55 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 2
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 2
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 L
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 L
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 o
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 U
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 U
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 -
 .....\kern-1.67 (right margin)
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\discretionary (penalty 50)
 .....\glue(\rightskip) 0.0
 ....\penalty 20100
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x373.10522, glue set 39.65198fil, shifted 21.25, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+....\hbox(7.28+2.83)x373.10522, glue set 38.49191fil, shifted 21.25, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 C
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 C
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\discretionary (penalty 50)
-......< \kern-0.3 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\kern-0.35 (font)
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
 .....\penalty 10000
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -2121,16 +2042,16 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.20999
-....\hbox(6.94+0.2)x351.85522, glue set 321.70523fil, shifted 42.5, direction TLT
+....\hbox(6.94+0.2)x351.85522, glue set 321.11523fil, shifted 42.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(2.91+0.0)x0.0, direction TLT
+.....\hbox(2.77+0.0)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(2.91+0.0)x16.25, glue set 11.25fil, direction TLT
-.......\hbox(2.91+0.0)x5.0, direction TLT
+......\hbox(2.77+0.0)x16.25, glue set 11.25fil, direction TLT
+.......\hbox(2.77+0.0)x5.0, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
@@ -2140,21 +2061,20 @@ Completed box being shipped out [1]
 ..........\pdfdest name{*.3} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\TU/texgyrepagella(0)/b/n/10 –
+........\TU/texgyrepagellamath(0)/b/n/10 –
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.55 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagellamath(0)/b/n/10 1
 .....\penalty 10000
 .....\kern-0.25 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -2164,16 +2084,16 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+2.83)x351.85522, glue set 0.06717, shifted 42.5, direction TLT
+....\hbox(7.26+2.83)x351.85522, glue set 0.02307, shifted 42.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(2.91+0.0)x0.0, direction TLT
+.....\hbox(2.77+0.0)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(2.91+0.0)x16.25, glue set 11.25fil, direction TLT
-.......\hbox(2.91+0.0)x5.0, direction TLT
+......\hbox(2.77+0.0)x16.25, glue set 11.25fil, direction TLT
+.......\hbox(2.77+0.0)x5.0, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
@@ -2183,256 +2103,239 @@ Completed box being shipped out [1]
 ..........\pdfdest name{*.4} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\TU/texgyrepagella(0)/b/n/10 –
+........\TU/texgyrepagellamath(0)/b/n/10 –
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.55 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 2
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 2
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 L
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 L
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 o
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 U
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 U
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
 .....\kern-1.25 (right margin)
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x351.85522, glue set 0.0017, shifted 42.5, direction TLT
+....\hbox(7.28+2.83)x351.85522, glue set 0.8941, shifted 42.5, direction TLT
 .....\kern-0.28 (left margin)
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 C
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 C
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\discretionary (penalty 50)
-......< \kern-0.3 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\kern-0.35 (font)
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
-.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 -
-.....\kern-1.67 (right margin)
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\discretionary (penalty 50)
-.....\glue(\rightskip) 0.0
-....\penalty 10100
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
+.....\glue(\rightskip) -2.5
+....\penalty 10000
 ....\glue(\baselineskip) 4.73
-....\hbox(6.42+0.2)x351.85522, glue set 340.04523fil, shifted 42.5, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
+....\hbox(6.42+0.2)x351.85522, glue set 320.1452fil, shifted 42.5, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
 .....\penalty 10000
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -2454,7 +2357,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.84
-....\hbox(6.94+0.2)x373.10522, glue set 342.95523fil, shifted 21.25, direction TLT
+....\hbox(6.94+0.2)x373.10522, glue set 342.36523fil, shifted 21.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -2473,22 +2376,21 @@ Completed box being shipped out [1]
 ..........\pdfdest name{enumi*.5} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\TU/texgyrepagella(0)/m/n/10 1
-........\TU/texgyrepagella(0)/m/n/10 .
+........\TU/texgyrepagellamath(0)/b/n/10 1
+........\TU/texgyrepagellamath(0)/b/n/10 .
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.55 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagellamath(0)/b/n/10 1
 .....\penalty 10000
 .....\kern-0.25 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -2498,7 +2400,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+2.83)x373.10522, glue set - 0.14575, shifted 21.25, direction TLT
+....\hbox(7.26+2.83)x373.10522, glue set - 0.28381, shifted 21.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -2517,252 +2419,237 @@ Completed box being shipped out [1]
 ..........\pdfdest name{enumi*.6} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\TU/texgyrepagella(0)/m/n/10 2
-........\TU/texgyrepagella(0)/m/n/10 .
+........\TU/texgyrepagellamath(0)/b/n/10 2
+........\TU/texgyrepagellamath(0)/b/n/10 .
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.55 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 2
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 2
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 L
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 L
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 o
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 U
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 U
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 -
 .....\kern-1.67 (right margin)
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\discretionary (penalty 50)
 .....\glue(\rightskip) 0.0
 ....\penalty 20100
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x373.10522, glue set 39.65198fil, shifted 21.25, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+....\hbox(7.28+2.83)x373.10522, glue set 38.49191fil, shifted 21.25, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 C
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 C
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\discretionary (penalty 50)
-......< \kern-0.3 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\kern-0.35 (font)
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
 .....\penalty 10000
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -2771,17 +2658,17 @@ Completed box being shipped out [1]
 ....\glue 3.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.70999
-....\hbox(7.44+2.44)x351.85522, glue set 321.70523fil, shifted 42.5, direction TLT
+....\glue(\baselineskip) 4.20999
+....\hbox(6.94+1.64)x351.85522, glue set 321.11523fil, shifted 42.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.44+2.44)x0.0, direction TLT
+.....\hbox(6.64+1.64)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(7.44+2.44)x16.25, glue set 2.13fil, direction TLT
-.......\hbox(7.44+2.44)x14.12, direction TLT
+......\hbox(6.64+1.64)x16.25, glue set 2.76999fil, direction TLT
+.......\hbox(6.64+1.64)x13.48001, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
@@ -2791,23 +2678,22 @@ Completed box being shipped out [1]
 ..........\pdfdest name{enumii*.7} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\TU/texgyrepagella(0)/m/n/10 (
-........\TU/texgyrepagella(0)/m/n/10 a
-........\TU/texgyrepagella(0)/m/n/10 )
+........\TU/texgyrepagellamath(0)/b/n/10 (
+........\TU/texgyrepagellamath(0)/b/n/10 a
+........\TU/texgyrepagellamath(0)/b/n/10 )
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.55 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagellamath(0)/b/n/10 1
 .....\penalty 10000
 .....\kern-0.25 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -2816,17 +2702,17 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 4.09999
-....\hbox(7.44+2.83)x351.85522, glue set 0.06717, shifted 42.5, direction TLT
+....\glue(\baselineskip) 5.08
+....\hbox(7.26+2.83)x351.85522, glue set 0.02307, shifted 42.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.44+2.44)x0.0, direction TLT
+.....\hbox(7.26+1.64)x0.0, direction TLT
 ......\glue -21.25
-......\hbox(7.44+2.44)x16.25, glue set 1.6fil, direction TLT
-.......\hbox(7.44+2.44)x14.65, direction TLT
+......\hbox(7.26+1.64)x16.25, glue set 2.23999fil, direction TLT
+.......\hbox(7.26+1.64)x14.01001, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
@@ -2836,258 +2722,241 @@ Completed box being shipped out [1]
 ..........\pdfdest name{enumii*.8} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\TU/texgyrepagella(0)/m/n/10 (
-........\TU/texgyrepagella(0)/m/n/10 b
-........\TU/texgyrepagella(0)/m/n/10 )
+........\TU/texgyrepagellamath(0)/b/n/10 (
+........\TU/texgyrepagellamath(0)/b/n/10 b
+........\TU/texgyrepagellamath(0)/b/n/10 )
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 5.0
 .....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 P
-.....\kern-0.55 (font)
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 P
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 2
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 2
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 L
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 L
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 o
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 o
+.....\TU/texgyrepagellamath(0)/b/n/10 n
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 U
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 U
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern0.1 (font)
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
 .....\kern-1.25 (right margin)
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\rightskip) -2.5
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x351.85522, glue set 0.0017, shifted 42.5, direction TLT
+....\hbox(7.28+2.83)x351.85522, glue set 0.8941, shifted 42.5, direction TLT
 .....\kern-0.28 (left margin)
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\kern-0.4 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 u
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 p
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 c
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 c
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 n
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 n
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 ,
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 ,
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.....\TU/texgyrepagella(0)/m/n/10 f
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagellamath(0)/b/n/10 f
+.....\TU/texgyrepagellamath(0)/b/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 l
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.83333 plus 3.75 minus 0.27777
-.....\TU/texgyrepagella(0)/m/n/10 C
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 C
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
 .....\discretionary (penalty 50)
-......< \kern-0.3 (font)
-......< \TU/texgyrepagella(0)/m/n/10 -
-......= \kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 b
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/n/10 -
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10  
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 t
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 g
-.....\kern0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\kern-0.15 (font)
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\kern-0.35 (font)
-.....\TU/texgyrepagella(0)/m/n/10 v
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 d
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10  
-.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 a
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 -
-.....\kern-1.67 (right margin)
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\discretionary (penalty 50)
-.....\glue(\rightskip) 0.0
-....\penalty 10100
+.....\TU/texgyrepagellamath(0)/b/n/10 g
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 v
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 d
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10  
+.....\glue(\rightskip) -2.5
+....\penalty 10000
 ....\glue(\baselineskip) 4.73
-....\hbox(6.42+0.2)x351.85522, glue set 340.04523fil, shifted 42.5, direction TLT
-.....\TU/texgyrepagella(0)/m/n/10 r
-.....\TU/texgyrepagella(0)/m/n/10 i
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 .
+....\hbox(6.42+0.2)x351.85522, glue set 320.1452fil, shifted 42.5, direction TLT
+.....\TU/texgyrepagellamath(0)/b/n/10 m
+.....\TU/texgyrepagellamath(0)/b/n/10 a
+.....\TU/texgyrepagellamath(0)/b/n/10 u
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagellamath(0)/b/n/10 -
+.....\TU/texgyrepagellamath(0)/b/n/10 r
+.....\TU/texgyrepagellamath(0)/b/n/10 i
+.....\TU/texgyrepagellamath(0)/b/n/10 s
+.....\TU/texgyrepagellamath(0)/b/n/10 .
 .....\penalty 10000
 .....\kern-1.75 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -3151,7 +3020,7 @@ Completed box being shipped out [1]
 ........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\vbox(7.33946+3.14552)x525.52245, direction TLT
-..........\hbox(7.33946+3.14552)x525.52245, glue set 410.37042fil, direction TLT
+..........\hbox(7.33946+3.14552)x525.52245, glue set 409.61044fil, direction TLT
 ...........\glue(\leftskip) 0.0 plus 1.0fil
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -3162,70 +3031,76 @@ Completed box being shipped out [1]
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 1/Contents (artifact)} action user{}
 ...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
-...........\TU/texgyrepagella(0)/m/n/8 h
-...........\TU/texgyrepagella(0)/m/n/8 t
-...........\TU/texgyrepagella(0)/m/n/8 t
-...........\TU/texgyrepagella(0)/m/n/8 p
-...........\TU/texgyrepagella(0)/m/n/8 s
+...........\TU/texgyrepagellamath(0)/m/n/8 h
+...........\kern0.144 (italic)
+...........\TU/texgyrepagellamath(0)/m/n/8 t
+...........\kern0.168 (italic)
+...........\TU/texgyrepagellamath(0)/m/n/8 t
+...........\kern0.168 (italic)
+...........\TU/texgyrepagellamath(0)/m/n/8 p
+...........\TU/texgyrepagellamath(0)/m/n/8 s
 ...........\glue(\thickmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 :
+...........\TU/texgyrepagellamath(0)/m/n/8 :
 ...........\penalty 500
 ...........\glue(\thickmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 /
+...........\TU/texgyrepagellamath(0)/m/n/8 /
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 /
+...........\TU/texgyrepagellamath(0)/m/n/8 /
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 d
-...........\TU/texgyrepagella(0)/m/n/8 o
-...........\TU/texgyrepagella(0)/m/n/8 i
+...........\TU/texgyrepagellamath(0)/m/n/8 d
+...........\TU/texgyrepagellamath(0)/m/n/8 o
+...........\TU/texgyrepagellamath(0)/m/n/8 i
+...........\kern0.064 (italic)
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 .
+...........\TU/texgyrepagellamath(0)/m/n/8 .
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 o
-...........\TU/texgyrepagella(0)/m/n/8 r
-...........\TU/texgyrepagella(0)/m/n/8 g
+...........\TU/texgyrepagellamath(0)/m/n/8 o
+...........\TU/texgyrepagellamath(0)/m/n/8 r
+...........\kern0.056 (italic)
+...........\TU/texgyrepagellamath(0)/m/n/8 g
+...........\kern0.128 (italic)
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 /
+...........\TU/texgyrepagellamath(0)/m/n/8 /
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 1
+...........\TU/texgyrepagellamath(0)/m/n/8 1
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 .
+...........\TU/texgyrepagellamath(0)/m/n/8 .
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 3
+...........\TU/texgyrepagellamath(0)/m/n/8 3
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 3
+...........\TU/texgyrepagellamath(0)/m/n/8 3
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 9
+...........\TU/texgyrepagellamath(0)/m/n/8 9
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 /
+...........\TU/texgyrepagellamath(0)/m/n/8 /
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagellamath(0)/m/n/8 0
 ...........\mathoff
 ...........\pdfcolorstack 0 pop
 ...........\pdfendlink
@@ -3246,6 +3121,7 @@ Completed box being shipped out [1]
 .\pdfliteral page <lua data reference ...>
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 <<latex-list-css.html>><<latex-align-css.html>> (test-lists-tagged.aux)
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 MathML statistic
 ================
 ==> 0 MathML fragments read
