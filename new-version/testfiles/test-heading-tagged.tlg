@@ -29,10 +29,10 @@ File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
 ))
 \tf@toc=\write...
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 21.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{21.97998pt}.
+(fancyhdr)                Make it at least 21.49452pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.49452pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+(fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]
@@ -78,27 +78,124 @@ Completed box being shipped out [1]
 ......\glue -131.16722
 ......\hbox(12.0+0.0)x525.52245, direction TLT
 .......\vbox(12.0+0.0)x525.52245, direction TLT
-........\hbox(21.97998+0.0)x525.52245, direction TLT
-.........\hbox(21.97998+0.0)x0.0, glue set - 525.52246fil, direction TLT
-..........\vbox(21.97998+0.0)x525.52245, direction TLT
-...........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+........\hbox(18.349+3.14552)x525.52245, direction TLT
+.........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+..........\vbox(18.349+3.14552)x525.52245, direction TLT
+...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+............\kern-0.288 (left margin)
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\hbox(0.0+0.0)x0.0, direction TLT
-............\rule(9.78595+4.19403)x0.0
+............\TU/texgyrepagella(0)/m/n/8 V
+............\kern-0.72 (font)
+............\TU/texgyrepagella(0)/m/n/8 e
+............\TU/texgyrepagella(0)/m/n/8 r
+............\discretionary (penalty 50)
+.............< \kern-0.24 (font)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 s
+............\TU/texgyrepagella(0)/m/n/8 i
+............\TU/texgyrepagella(0)/m/n/8 o
+............\TU/texgyrepagella(0)/m/n/8 n
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 M
+............\TU/texgyrepagella(0)/m/n/8 a
+............\kern-0.32 (font)
+............\TU/texgyrepagella(0)/m/n/8 y
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 2
+............\TU/texgyrepagella(0)/m/n/8 0
+............\TU/texgyrepagella(0)/m/n/8 ,
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.25 minus 0.53333
+............\TU/texgyrepagella(0)/m/n/8 2
+............\TU/texgyrepagella(0)/m/n/8 0
+............\TU/texgyrepagella(0)/m/n/8 1
+............\TU/texgyrepagella(0)/m/n/8 6
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 s
+............\TU/texgyrepagella(0)/m/n/8 u
+............\TU/texgyrepagella(0)/m/n/8 b
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 m
+............\TU/texgyrepagella(0)/m/n/8 i
+............\TU/texgyrepagella(0)/m/n/8 t
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 t
+............\TU/texgyrepagella(0)/m/n/8 e
+............\TU/texgyrepagella(0)/m/n/8 d
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 t
+............\kern-0.08 (font)
+............\TU/texgyrepagella(0)/m/n/8 o
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 J
+............\TU/texgyrepagella(0)/m/it/8 o
+............\TU/texgyrepagella(0)/m/it/8 u
+............\TU/texgyrepagella(0)/m/it/8 r
+............\discretionary (penalty 50)
+.............< \kern-0.4 (font)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 n
+............\TU/texgyrepagella(0)/m/it/8 a
+............\TU/texgyrepagella(0)/m/it/8 l
+............\TU/texgyrepagella(0)/m/it/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 N
+............\kern-0.2 (font)
+............\TU/texgyrepagella(0)/m/it/8 o
+............\kern-0.12 (font)
+............\TU/texgyrepagella(0)/m/it/8 t
+............\TU/texgyrepagella(0)/m/it/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 S
+............\TU/texgyrepagella(0)/m/it/8 p
+............\TU/texgyrepagella(0)/m/it/8 e
+............\TU/texgyrepagella(0)/m/it/8 c
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 i
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 ﬁ
+............\TU/texgyrepagella(0)/m/it/8 e
+............\TU/texgyrepagella(0)/m/it/8 d
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
-...........\glue 8.0
+...........\glue 2.0
 ...........\glue 0.0
+...........\glue 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\baselineskip) 0.88153
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.4+0.0)x525.23764, direction TLT
+.............\rule(0.4+0.0)x525.23764
+............\rule(7.33946+3.14552)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\vbox(21.97998+0.0)x525.52245, direction TLT
-..........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+.........\vbox(0.0+0.0)x525.52245, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
 ...........\glue(\leftskip) 0.0 plus 1.0fil
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -106,18 +203,40 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\rule(9.78595+4.19403)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
-..........\glue 8.0
-..........\glue 0.0
 .........\glue 0.0 plus 1.0fill
-.........\hbox(21.97998+0.0)x0.0, glue set - 525.52246fil, direction TLT
+.........\hbox(16.309+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(21.97998+0.0)x525.52245, direction TLT
-...........\hbox(9.78595+4.19403)x525.52245, glue set 525.52246fil, direction TLT
+..........\vbox(16.309+3.14552)x525.52245, direction TLT
+...........\hbox(5.824+0.16)x525.52245, glue set 506.89044fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\kern-0.2 (left margin)
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\TU/texgyrepagella(0)/m/n/8 1
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 o
+............\TU/texgyrepagella(0)/m/n/8 f
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 4
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\penalty 10000
+............\kern-0.2 (right margin)
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+...........\glue 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\baselineskip) 2.98553
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -125,13 +244,12 @@ Completed box being shipped out [1]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\hbox(0.0+0.0)x0.0, direction TLT
-............\rule(9.78595+4.19403)x0.0
+............\hbox(0.4+0.0)x525.23764, direction TLT
+.............\rule(0.4+0.0)x525.23764
+............\rule(7.33946+3.14552)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
-...........\glue 8.0
-...........\glue 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 .....\pdfcolorstack 0 pop
@@ -140,7 +258,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 543.28967fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 544.08466fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -155,36 +273,47 @@ Completed box being shipped out [1]
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
 ....\pdfdest name{Doc-Start} xyz
-....\glue(\topskip) 0.0
-....\hbox(10.008+0.2448)x394.35522, glue set 335.17126fil, direction TLT
+....\glue(\topskip) 1.66
+....\hbox(8.34+0.204)x394.35522, glue set 172.51761fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+........\pdfdest name{section*.1} xyz
+........\pdfdest name{section*.1} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/14.4 C
-.....\TU/texgyrepagella(0)/b/n/14.4 o
-.....\TU/texgyrepagella(0)/b/n/14.4 n
-.....\TU/texgyrepagella(0)/b/n/14.4 t
-.....\TU/texgyrepagella(0)/b/n/14.4 e
-.....\TU/texgyrepagella(0)/b/n/14.4 n
-.....\TU/texgyrepagella(0)/b/n/14.4 t
-.....\TU/texgyrepagella(0)/b/n/14.4 s
+.....\TU/texgyrepagella(0)/b/n/12 C
+.....\TU/texgyrepagella(0)/b/n/12 o
+.....\TU/texgyrepagella(0)/b/n/12 n
+.....\TU/texgyrepagella(0)/b/n/12 t
+.....\TU/texgyrepagella(0)/b/n/12 e
+.....\TU/texgyrepagella(0)/b/n/12 n
+.....\TU/texgyrepagella(0)/b/n/12 t
+.....\TU/texgyrepagella(0)/b/n/12 s
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 0.0
+.....\glue(\rightskip) 0.0 plus 1.0fil
 ....\marks1{\__mark_value:nn {1}{\MakeUppercase    []{Contents}}}
 ....\marks2{\__mark_value:nn {2}{\MakeUppercase    []{Contents}}}
 ....\marks3{\__mark_value:nn {3}{\MakeUppercase    []{Contents}}}
 ....\penalty 10000
-....\glue 10.78702 plus 0.93797
+....\glue 3.0
+....\glue -3.0
+....\glue 10.0 plus 1.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 6.9252
-....\hbox(6.81+0.17)x394.35522, glue set 312.60187fill, direction TLT
+....\glue(\baselineskip) 6.836
+....\hbox(6.94+0.2)x394.35522, glue set 315.13184fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -197,30 +326,38 @@ Completed box being shipped out [1]
 .....\glue -15.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/10 1
-.....\TU/texgyrepagella(0)/b/n/10 .
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 4} action struct name{section.1} goto name{section.1}
+.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagella(0)/m/n/10 .
 .....\penalty 10000
-.....\TU/texgyrepagella(0)/b/n/10  
+.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\glue(\spaceskip) 3.33333 plus 3.75 minus 0.27777
-.....\kern-0.33
-.....\TU/texgyrepagella(0)/b/n/10 T
-.....\kern-0.9 (font)
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 s
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10  
+.....\kern-0.31
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.95 (font)
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\kern-0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/b/n/10 s
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 c
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10 i
-.....\TU/texgyrepagella(0)/b/n/10 o
-.....\TU/texgyrepagella(0)/b/n/10 n
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\pdfcolorstack 0 pop
+.....\pdfendlink
 .....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.11+0.05)x7.49988, direction TLT
 .......\mathon
@@ -230,16 +367,27 @@ Completed box being shipped out [1]
 .......\kern2.49994 (italic)
 .......\mathoff
 .....\penalty 10000
-.....\hbox(6.6+0.03)x15.50003, glue set 10.50003fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\TU/texgyrepagella(0)/b/n/10 2
+.....\penalty 10000
+.....\hbox(6.89+0.03)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/texgyrepagella(0)/m/n/10 2
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
 ....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 6.55
+....\glue(\baselineskip) 6.52
 ....\hbox(7.26+0.2)x394.35522, glue set 276.83185fill, direction TLT
 .....\glue(\leftskip) 38.00003
 .....\localpar
@@ -251,6 +399,10 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -38.00003
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 5} action struct name{subsection.1.1} goto name{subsection.1.1}
+.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\TU/texgyrepagella(0)/m/n/10 1
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\TU/texgyrepagella(0)/m/n/10 1
@@ -282,7 +434,12 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/m/n/10 i
 .....\TU/texgyrepagella(0)/m/n/10 o
 .....\TU/texgyrepagella(0)/m/n/10 n
+.....\pdfcolorstack 0 pop
+.....\pdfendlink
 .....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.11+0.05)x7.49988, direction TLT
 .......\mathon
@@ -292,14 +449,25 @@ Completed box being shipped out [1]
 .......\kern2.49994 (italic)
 .......\mathoff
 .....\penalty 10000
+.....\penalty 10000
 .....\hbox(6.89+0.03)x15.50003, glue set 10.50003fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
 ......\TU/texgyrepagella(0)/m/n/10 2
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
 ....\glue 0.0 plus 0.2
-....\glue(\parskip) 0.0
+....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
 ....\hbox(7.26+0.2)x394.35522, glue set 230.53181fill, direction TLT
@@ -313,6 +481,10 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -70.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 6} action struct name{subsubsection.1.1.1} goto name{subsubsection.1.1.1}
+.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\TU/texgyrepagella(0)/m/n/10 1
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\TU/texgyrepagella(0)/m/n/10 1
@@ -351,7 +523,12 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/m/n/10 i
 .....\TU/texgyrepagella(0)/m/n/10 o
 .....\TU/texgyrepagella(0)/m/n/10 n
+.....\pdfcolorstack 0 pop
+.....\pdfendlink
 .....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.11+0.05)x7.49988, direction TLT
 .......\mathon
@@ -360,18 +537,31 @@ Completed box being shipped out [1]
 ........\TU/texgyrepagella(0)/m/n/10 .
 .......\kern2.49994 (italic)
 .......\mathoff
+.....\penalty 10000
 .....\penalty 10000
 .....\hbox(6.89+0.03)x15.50003, glue set 10.50003fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
 ......\TU/texgyrepagella(0)/m/n/10 2
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
+....\penalty -300
 ....\glue 10.0 plus 1.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 6.58
-....\hbox(7.2+2.66)x394.35522, glue set 270.5152fill, direction TLT
+....\glue(\baselineskip) 6.52
+....\hbox(7.26+2.83)x394.35522, glue set 274.09521fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -382,42 +572,52 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -15.0
-.....\TU/texgyrepagella(0)/b/n/10 B
-.....\TU/texgyrepagella(0)/b/n/10 .
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 7} action struct name{appendix.B} goto name{appendix.B}
+.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
+.....\TU/texgyrepagella(0)/m/n/10 B
+.....\TU/texgyrepagella(0)/m/n/10 .
 .....\penalty 10000
-.....\TU/texgyrepagella(0)/b/n/10  
+.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/b/n/10  
+.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/b/n/10 a
-.....\TU/texgyrepagella(0)/b/n/10 p
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 p
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 n
-.....\TU/texgyrepagella(0)/b/n/10 d
-.....\TU/texgyrepagella(0)/b/n/10 i
-.....\TU/texgyrepagella(0)/b/n/10 x
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 x
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10 i
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10 l
-.....\TU/texgyrepagella(0)/b/n/10 e
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 s
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 m
-.....\kern-0.25 (font)
-.....\TU/texgyrepagella(0)/b/n/10 p
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10 y
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 m
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 y
+.....\pdfcolorstack 0 pop
+.....\pdfendlink
 .....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.11+0.05)x7.49988, direction TLT
 .......\mathon
@@ -427,17 +627,30 @@ Completed box being shipped out [1]
 .......\kern2.49994 (italic)
 .......\mathoff
 .....\penalty 10000
-.....\hbox(6.6+0.17)x15.50003, glue set 10.50003fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\TU/texgyrepagella(0)/b/n/10 3
+.....\penalty 10000
+.....\hbox(6.89+0.2)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/texgyrepagella(0)/m/n/10 3
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
+....\penalty -300
 ....\glue 10.0 plus 1.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 4.12
-....\hbox(7.2+2.66)x394.35522, glue set 283.09518fill, direction TLT
+....\glue(\baselineskip) 3.89
+....\hbox(7.26+2.83)x394.35522, glue set 286.2752fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -448,38 +661,47 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -15.0
-.....\TU/texgyrepagella(0)/b/n/10 D
-.....\TU/texgyrepagella(0)/b/n/10 .
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 8} action struct name{appendix.D} goto name{appendix.D}
+.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 .
 .....\penalty 10000
-.....\TU/texgyrepagella(0)/b/n/10  
+.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/b/n/10  
+.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/b/n/10 a
-.....\TU/texgyrepagella(0)/b/n/10 p
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 p
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 p
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 n
-.....\TU/texgyrepagella(0)/b/n/10 d
-.....\TU/texgyrepagella(0)/b/n/10 i
-.....\TU/texgyrepagella(0)/b/n/10 x
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 x
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10 i
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10 l
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 s
-.....\TU/texgyrepagella(0)/b/n/10 y
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\TU/texgyrepagella(0)/m/n/10 y
 .....\kern-0.35 (font)
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 s
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\pdfcolorstack 0 pop
+.....\pdfendlink
 .....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.11+0.05)x7.49988, direction TLT
 .......\mathon
@@ -489,18 +711,30 @@ Completed box being shipped out [1]
 .......\kern2.49994 (italic)
 .......\mathoff
 .....\penalty 10000
-.....\hbox(6.72+0.03)x15.50003, glue set 10.50003fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\TU/texgyrepagella(0)/b/n/10 4
 .....\penalty 10000
-.....\kern-0.25 (right margin)
+.....\hbox(6.94+0.03)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/texgyrepagella(0)/m/n/10 4
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
+....\penalty -300
 ....\glue 10.0 plus 1.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 4.51
-....\hbox(6.81+0.17)x394.35522, glue set 312.5752fill, direction TLT
+....\glue(\baselineskip) 4.20999
+....\hbox(6.94+0.2)x394.35522, glue set 314.85516fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -511,30 +745,40 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -15.0
-.....\TU/texgyrepagella(0)/b/n/10 E
-.....\TU/texgyrepagella(0)/b/n/10 .
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 9} action struct name{appendix.E} goto name{appendix.E}
+.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
+.....\TU/texgyrepagella(0)/m/n/10 E
+.....\TU/texgyrepagella(0)/m/n/10 .
 .....\penalty 10000
-.....\TU/texgyrepagella(0)/b/n/10  
+.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\kern-0.33
-.....\TU/texgyrepagella(0)/b/n/10 T
-.....\kern-0.9 (font)
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 s
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10  
+.....\kern-0.31
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.95 (font)
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\kern-0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/b/n/10 s
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\TU/texgyrepagella(0)/b/n/10 c
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 c
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 t
-.....\TU/texgyrepagella(0)/b/n/10 i
-.....\TU/texgyrepagella(0)/b/n/10 o
-.....\TU/texgyrepagella(0)/b/n/10 n
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\pdfcolorstack 0 pop
+.....\pdfendlink
 .....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.11+0.05)x7.49988, direction TLT
 .......\mathon
@@ -544,18 +788,28 @@ Completed box being shipped out [1]
 .......\kern2.49994 (italic)
 .......\mathoff
 .....\penalty 10000
-.....\hbox(6.72+0.03)x15.50003, glue set 10.50003fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\TU/texgyrepagella(0)/b/n/10 4
 .....\penalty 10000
-.....\kern-0.25 (right margin)
+.....\hbox(6.94+0.03)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/texgyrepagella(0)/m/n/10 4
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
 ....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 6.55
-....\hbox(7.26+0.2)x394.35522, glue set 275.97186fill, direction TLT
+....\glue(\baselineskip) 6.52
+....\hbox(7.26+0.2)x394.35522, glue set 275.72186fill, direction TLT
 .....\glue(\leftskip) 38.00003
 .....\localpar
 ......\localinterlinepenalty=0
@@ -566,6 +820,10 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -38.00003
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 10} action struct name{subsection.E.1} goto name{subsection.E.1}
+.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\TU/texgyrepagella(0)/m/n/10 E
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\TU/texgyrepagella(0)/m/n/10 1
@@ -597,7 +855,12 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/m/n/10 i
 .....\TU/texgyrepagella(0)/m/n/10 o
 .....\TU/texgyrepagella(0)/m/n/10 n
+.....\pdfcolorstack 0 pop
+.....\pdfendlink
 .....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.11+0.05)x7.49988, direction TLT
 .......\mathon
@@ -607,18 +870,28 @@ Completed box being shipped out [1]
 .......\kern2.49994 (italic)
 .......\mathoff
 .....\penalty 10000
-.....\hbox(6.94+0.03)x15.50003, glue set 10.50003fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\TU/texgyrepagella(0)/m/n/10 4
 .....\penalty 10000
-.....\kern-0.25 (right margin)
+.....\hbox(6.94+0.03)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/texgyrepagella(0)/m/n/10 4
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
 ....\glue 0.0 plus 0.2
-....\glue(\parskip) 0.0
+....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+0.2)x394.35522, glue set 229.67181fill, direction TLT
+....\hbox(7.26+0.2)x394.35522, glue set 229.42181fill, direction TLT
 .....\glue(\leftskip) 70.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -629,6 +902,10 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -70.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 11} action struct name{subsubsection.E.1.1} goto name{subsubsection.E.1.1}
+.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\TU/texgyrepagella(0)/m/n/10 E
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\TU/texgyrepagella(0)/m/n/10 1
@@ -667,7 +944,12 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/m/n/10 i
 .....\TU/texgyrepagella(0)/m/n/10 o
 .....\TU/texgyrepagella(0)/m/n/10 n
+.....\pdfcolorstack 0 pop
+.....\pdfendlink
 .....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
 ......\hbox(1.11+0.05)x7.49988, direction TLT
 .......\mathon
@@ -677,121 +959,48 @@ Completed box being shipped out [1]
 .......\kern2.49994 (italic)
 .......\mathoff
 .....\penalty 10000
-.....\hbox(6.94+0.03)x15.50003, glue set 10.50003fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\TU/texgyrepagella(0)/m/n/10 4
 .....\penalty 10000
-.....\kern-0.25 (right margin)
+.....\hbox(6.94+0.03)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfcolorstack 0 push {0 g 0 G}
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/texgyrepagella(0)/m/n/10 4
+......\kern-1.0
+......\kern1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 pop
+.....\penalty 10000
 .....\glue(\parfillskip) -25.50003
 .....\glue(\rightskip) 25.50003
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
 ...\pdflinkstate 1
-...\glue(\baselineskip) 21.62003
-...\hbox(14.37997+4.19403)x394.35522, direction TLT
+...\glue(\baselineskip) 22.02002
+...\hbox(13.97998+4.19403)x394.35522, direction TLT
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfcolorstack 0 push {0 g 0 G}
-....\hbox(14.37997+4.19403)x394.35522, direction TLT
+....\hbox(13.97998+4.19403)x394.35522, direction TLT
 .....\glue -131.16722
-.....\hbox(14.37997+4.19403)x525.52245, direction TLT
-......\vbox(14.37997+4.19403)x525.52245, direction TLT
-.......\rule(0.4+0.0)x525.52245
+.....\hbox(13.97998+4.19403)x525.52245, direction TLT
+......\vbox(13.97998+4.19403)x525.52245, direction TLT
+.......\rule(0.0+0.0)x525.52245
 .......\glue 4.19403
 .......\hbox(9.78595+4.19403)x525.52245, direction TLT
-........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
-.........\vbox(7.33946+3.14552)x525.52245, direction TLT
-..........\hbox(7.33946+3.14552)x525.52245, glue set 167.01321fil, direction TLT
-...........\kern-0.288 (left margin)
+........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
+.........\vbox(0.0+0.0)x525.52245, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
 ...........\localpar
 ............\localinterlinepenalty=0
 ............\localbrokenpenalty=0
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\TU/texgyrepagella(0)/m/n/8 V
-...........\kern-0.72 (font)
-...........\TU/texgyrepagella(0)/m/n/8 e
-...........\TU/texgyrepagella(0)/m/n/8 r
-...........\discretionary (penalty 50)
-............< \kern-0.24 (font)
-............< \TU/texgyrepagella(0)/m/n/8 -
-...........\TU/texgyrepagella(0)/m/n/8 s
-...........\TU/texgyrepagella(0)/m/n/8 i
-...........\TU/texgyrepagella(0)/m/n/8 o
-...........\TU/texgyrepagella(0)/m/n/8 n
-...........\TU/texgyrepagella(0)/m/n/8  
-...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/n/8 M
-...........\TU/texgyrepagella(0)/m/n/8 a
-...........\kern-0.32 (font)
-...........\TU/texgyrepagella(0)/m/n/8 y
-...........\TU/texgyrepagella(0)/m/n/8  
-...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/n/8 2
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\TU/texgyrepagella(0)/m/n/8 ,
-...........\TU/texgyrepagella(0)/m/n/8  
-...........\glue(\spaceskip) 0.0 plus 1.25 minus 0.53333
-...........\TU/texgyrepagella(0)/m/n/8 2
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\TU/texgyrepagella(0)/m/n/8 1
-...........\TU/texgyrepagella(0)/m/n/8 6
-...........\TU/texgyrepagella(0)/m/n/8  
-...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/n/8 s
-...........\TU/texgyrepagella(0)/m/n/8 u
-...........\TU/texgyrepagella(0)/m/n/8 b
-...........\discretionary (penalty 50)
-............< \TU/texgyrepagella(0)/m/n/8 -
-...........\TU/texgyrepagella(0)/m/n/8 m
-...........\TU/texgyrepagella(0)/m/n/8 i
-...........\TU/texgyrepagella(0)/m/n/8 t
-...........\discretionary (penalty 50)
-............< \TU/texgyrepagella(0)/m/n/8 -
-...........\TU/texgyrepagella(0)/m/n/8 t
-...........\TU/texgyrepagella(0)/m/n/8 e
-...........\TU/texgyrepagella(0)/m/n/8 d
-...........\TU/texgyrepagella(0)/m/n/8  
-...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/n/8 t
-...........\kern-0.08 (font)
-...........\TU/texgyrepagella(0)/m/n/8 o
-...........\TU/texgyrepagella(0)/m/n/8  
-...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/it/8 J
-...........\TU/texgyrepagella(0)/m/it/8 o
-...........\TU/texgyrepagella(0)/m/it/8 u
-...........\TU/texgyrepagella(0)/m/it/8 r
-...........\discretionary (penalty 50)
-............< \kern-0.4 (font)
-............< \TU/texgyrepagella(0)/m/it/8 -
-...........\TU/texgyrepagella(0)/m/it/8 n
-...........\TU/texgyrepagella(0)/m/it/8 a
-...........\TU/texgyrepagella(0)/m/it/8 l
-...........\TU/texgyrepagella(0)/m/it/8  
-...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/it/8 N
-...........\kern-0.2 (font)
-...........\TU/texgyrepagella(0)/m/it/8 o
-...........\kern-0.12 (font)
-...........\TU/texgyrepagella(0)/m/it/8 t
-...........\TU/texgyrepagella(0)/m/it/8  
-...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/it/8 S
-...........\TU/texgyrepagella(0)/m/it/8 p
-...........\TU/texgyrepagella(0)/m/it/8 e
-...........\TU/texgyrepagella(0)/m/it/8 c
-...........\discretionary (penalty 50)
-............< \TU/texgyrepagella(0)/m/it/8 -
-...........\TU/texgyrepagella(0)/m/it/8 i
-...........\discretionary (penalty 50)
-............< \TU/texgyrepagella(0)/m/it/8 -
-...........\TU/texgyrepagella(0)/m/it/8 ﬁ
-...........\TU/texgyrepagella(0)/m/it/8 e
-...........\TU/texgyrepagella(0)/m/it/8 d
-...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0 plus 1.0fil
@@ -822,7 +1031,7 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 4/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 12/Contents (artifact)} action user{}
 ...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
 ...........\TU/texgyrepagella(0)/m/n/8 h
@@ -2057,8 +2266,8 @@ Completed box being shipped out [2]
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{paragraph*.1} xyz
-........\pdfdest name{paragraph*.1} xyz
+........\pdfdest name{paragraph*.2} xyz
+........\pdfdest name{paragraph*.2} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -2091,7 +2300,7 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{Test paragraph}{\thepage }{paragraph*.1}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{Test paragraph}{\thepage }{paragraph*.2}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -2349,8 +2558,8 @@ Completed box being shipped out [2]
 ......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\pdfdest name{subparagraph*.2} xyz
-.......\pdfdest name{subparagraph*.2} xyz
+.......\pdfdest name{subparagraph*.3} xyz
+.......\pdfdest name{subparagraph*.3} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\TU/texgyrepagella(0)/b/n/10  
@@ -2379,7 +2588,7 @@ Completed box being shipped out [2]
 .....\TU/texgyrepagella(0)/b/n/10 a
 .....\TU/texgyrepagella(0)/b/n/10 p
 .....\TU/texgyrepagella(0)/b/n/10 h
-.....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.2}\protected@file@percent }}
+.....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.3}\protected@file@percent }}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/10  
@@ -2670,7 +2879,7 @@ Completed box being shipped out [2]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 5/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 13/Contents (artifact)} action user{}
 ...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
 ...........\TU/texgyrepagella(0)/m/n/8 h
@@ -3934,8 +4143,8 @@ Completed box being shipped out [3]
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{paragraph*.3} xyz
-........\pdfdest name{paragraph*.3} xyz
+........\pdfdest name{paragraph*.4} xyz
+........\pdfdest name{paragraph*.4} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -4199,8 +4408,8 @@ Completed box being shipped out [3]
 ......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\pdfdest name{subparagraph*.4} xyz
-.......\pdfdest name{subparagraph*.4} xyz
+.......\pdfdest name{subparagraph*.5} xyz
+.......\pdfdest name{subparagraph*.5} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
@@ -4491,7 +4700,7 @@ Completed box being shipped out [3]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 6/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 14/Contents (artifact)} action user{}
 ...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
 ...........\TU/texgyrepagella(0)/m/n/8 h
@@ -4581,98 +4790,184 @@ TEST 1: Show PDF Tags
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"
     >
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+   <Sect xmlns="http://iso.org/pdf2/ssn"
       id="ID.012"
-      rolemaps-to="Part"
      >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    <section xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.013"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
+       title="Contents"
+       rolemaps-to="H1"
       >
      <?MarkedContent page="1" ?>Contents
-    </text>
-   </text-unit>
-   <TOC xmlns="http://iso.org/pdf/ssn"
-      id="ID.014"
-      title="toc"
-     >
-    <TOCI xmlns="http://iso.org/pdf/ssn"
-       id="ID.015"
-       title="Test section"
-      >
-      <?References objects="1" ?>
-    </TOCI>
+    </section>
     <TOC xmlns="http://iso.org/pdf/ssn"
-       id="ID.016"
+       id="ID.014"
+       title="toc"
       >
      <TOCI xmlns="http://iso.org/pdf/ssn"
-        id="ID.017"
-        title="Test subsection"
+        id="ID.015"
+        title="Test section"
        >
-       <?References objects="2" ?>
+       <?References objects="1" ?>
+      <Reference xmlns="http://iso.org/pdf/ssn"
+         id="ID.016"
+        >
+       <Link xmlns="http://iso.org/pdf2/ssn"
+          id="ID.017"
+         >
+        <?MarkedContent page="1" ?>1. Test section
+        <?ReferencedObject type="Annot" page="1" ?>
+       </Link>
+       <?MarkedContent page="1" ?>2
+      </Reference>
      </TOCI>
      <TOC xmlns="http://iso.org/pdf/ssn"
         id="ID.018"
        >
       <TOCI xmlns="http://iso.org/pdf/ssn"
          id="ID.019"
-         title="Test subsubsection"
+         title="Test subsection"
         >
-        <?References objects="3" ?>
+        <?References objects="2" ?>
+       <Reference xmlns="http://iso.org/pdf/ssn"
+          id="ID.020"
+         >
+        <Link xmlns="http://iso.org/pdf2/ssn"
+           id="ID.021"
+          >
+         <?MarkedContent page="1" ?>1.1. Test subsection
+         <?ReferencedObject type="Annot" page="1" ?>
+        </Link>
+        <?MarkedContent page="1" ?>2
+       </Reference>
       </TOCI>
+      <TOC xmlns="http://iso.org/pdf/ssn"
+         id="ID.022"
+        >
+       <TOCI xmlns="http://iso.org/pdf/ssn"
+          id="ID.023"
+          title="Test subsubsection"
+         >
+         <?References objects="3" ?>
+        <Reference xmlns="http://iso.org/pdf/ssn"
+           id="ID.024"
+          >
+         <Link xmlns="http://iso.org/pdf2/ssn"
+            id="ID.025"
+           >
+          <?MarkedContent page="1" ?>1.1.1. Test subsubsection
+          <?ReferencedObject type="Annot" page="1" ?>
+         </Link>
+         <?MarkedContent page="1" ?>2
+        </Reference>
+       </TOCI>
+      </TOC>
      </TOC>
-    </TOC>
-    <TOCI xmlns="http://iso.org/pdf/ssn"
-       id="ID.020"
-       title="appendixtitlesempty"
-      >
-      <?References objects="4" ?>
-    </TOCI>
-    <TOCI xmlns="http://iso.org/pdf/ssn"
-       id="ID.021"
-       title="appendixtitlesyes"
-      >
-      <?References objects="5" ?>
-    </TOCI>
-    <TOCI xmlns="http://iso.org/pdf/ssn"
-       id="ID.022"
-       title="Test section"
-      >
-      <?References objects="6" ?>
-    </TOCI>
-    <TOC xmlns="http://iso.org/pdf/ssn"
-       id="ID.023"
-      >
      <TOCI xmlns="http://iso.org/pdf/ssn"
-        id="ID.024"
-        title="Test subsection"
+        id="ID.026"
+        title="appendixtitlesempty"
        >
-       <?References objects="7" ?>
+       <?References objects="4" ?>
+      <Reference xmlns="http://iso.org/pdf/ssn"
+         id="ID.027"
+        >
+       <Link xmlns="http://iso.org/pdf2/ssn"
+          id="ID.028"
+         >
+        <?MarkedContent page="1" ?>B.  appendixtitlesempty
+        <?ReferencedObject type="Annot" page="1" ?>
+       </Link>
+       <?MarkedContent page="1" ?>3
+      </Reference>
+     </TOCI>
+     <TOCI xmlns="http://iso.org/pdf/ssn"
+        id="ID.029"
+        title="appendixtitlesyes"
+       >
+       <?References objects="5" ?>
+      <Reference xmlns="http://iso.org/pdf/ssn"
+         id="ID.030"
+        >
+       <Link xmlns="http://iso.org/pdf2/ssn"
+          id="ID.031"
+         >
+        <?MarkedContent page="1" ?>D.  appendixtitlesyes
+        <?ReferencedObject type="Annot" page="1" ?>
+       </Link>
+       <?MarkedContent page="1" ?>4
+      </Reference>
+     </TOCI>
+     <TOCI xmlns="http://iso.org/pdf/ssn"
+        id="ID.032"
+        title="Test section"
+       >
+       <?References objects="6" ?>
+      <Reference xmlns="http://iso.org/pdf/ssn"
+         id="ID.033"
+        >
+       <Link xmlns="http://iso.org/pdf2/ssn"
+          id="ID.034"
+         >
+        <?MarkedContent page="1" ?>E. Test section
+        <?ReferencedObject type="Annot" page="1" ?>
+       </Link>
+       <?MarkedContent page="1" ?>4
+      </Reference>
      </TOCI>
      <TOC xmlns="http://iso.org/pdf/ssn"
-        id="ID.025"
+        id="ID.035"
        >
       <TOCI xmlns="http://iso.org/pdf/ssn"
-         id="ID.026"
-         title="Test subsubsection"
+         id="ID.036"
+         title="Test subsection"
         >
-        <?References objects="8" ?>
+        <?References objects="7" ?>
+       <Reference xmlns="http://iso.org/pdf/ssn"
+          id="ID.037"
+         >
+        <Link xmlns="http://iso.org/pdf2/ssn"
+           id="ID.038"
+          >
+         <?MarkedContent page="1" ?>E.1. Test subsection
+         <?ReferencedObject type="Annot" page="1" ?>
+        </Link>
+        <?MarkedContent page="1" ?>4
+       </Reference>
       </TOCI>
+      <TOC xmlns="http://iso.org/pdf/ssn"
+         id="ID.039"
+        >
+       <TOCI xmlns="http://iso.org/pdf/ssn"
+          id="ID.040"
+          title="Test subsubsection"
+         >
+         <?References objects="8" ?>
+        <Reference xmlns="http://iso.org/pdf/ssn"
+           id="ID.041"
+          >
+         <Link xmlns="http://iso.org/pdf2/ssn"
+            id="ID.042"
+           >
+          <?MarkedContent page="1" ?>E.1.1. Test subsubsection
+          <?ReferencedObject type="Annot" page="1" ?>
+         </Link>
+         <?MarkedContent page="1" ?>4
+        </Reference>
+       </TOCI>
+      </TOC>
      </TOC>
     </TOC>
-   </TOC>
+   </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.027"
+      id="ID.043"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.028"
+       id="ID.044"
        title="Test section"
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.029"
+        id="ID.045"
         rolemaps-to="Span"
         referenced-as="1"
        >
@@ -4681,11 +4976,11 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="2" ?>Test section
     </section>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.030"
+       id="ID.046"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.031"
+        id="ID.047"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -4694,15 +4989,15 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <Sect xmlns="http://iso.org/pdf2/ssn"
-       id="ID.032"
+       id="ID.048"
       >
      <subsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.033"
+        id="ID.049"
         title="Test subsection"
         rolemaps-to="H2"
        >
       <section-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.034"
+         id="ID.050"
          rolemaps-to="Span"
          referenced-as="2"
         >
@@ -4711,11 +5006,11 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="2" ?>Test subsection
      </subsection>
      <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.035"
+        id="ID.051"
         rolemaps-to="Part"
        >
       <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.036"
+         id="ID.052"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -4724,15 +5019,15 @@ TEST 1: Show PDF Tags
       </text>
      </text-unit>
      <Sect xmlns="http://iso.org/pdf2/ssn"
-        id="ID.037"
+        id="ID.053"
        >
       <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.038"
+         id="ID.054"
          title="Test subsubsection"
          rolemaps-to="H3"
         >
        <section-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.039"
+          id="ID.055"
           rolemaps-to="Span"
           referenced-as="3"
          >
@@ -4741,11 +5036,11 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="2" ?>Test subsubsection
       </subsubsection>
       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.040"
+         id="ID.056"
          rolemaps-to="Part"
         >
        <text xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.041"
+          id="ID.057"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -4754,21 +5049,21 @@ TEST 1: Show PDF Tags
        </text>
       </text-unit>
       <Sect xmlns="http://iso.org/pdf2/ssn"
-         id="ID.042"
+         id="ID.058"
         >
        <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.043"
+          id="ID.059"
           title="Test paragraph"
           rolemaps-to="H4"
          >
         <?MarkedContent page="2" ?>Test paragraph
        </paragraph>
        <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.044"
+          id="ID.060"
           rolemaps-to="Part"
          >
         <text xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.045"
+           id="ID.061"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -4777,10 +5072,10 @@ TEST 1: Show PDF Tags
         </text>
        </text-unit>
        <Sect xmlns="http://iso.org/pdf2/ssn"
-          id="ID.046"
+          id="ID.062"
          >
         <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.047"
+           id="ID.063"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -4788,11 +5083,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="2" ?> Test subparagraph
         </subparagraph>
         <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.048"
+           id="ID.064"
            rolemaps-to="Part"
           >
          <text xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.049"
+            id="ID.065"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -4806,15 +5101,15 @@ TEST 1: Show PDF Tags
     </Sect>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.050"
+      id="ID.066"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.051"
+       id="ID.067"
        title="appendixtitlesempty"
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.052"
+        id="ID.068"
         rolemaps-to="Span"
         referenced-as="4"
        >
@@ -4824,26 +5119,26 @@ TEST 1: Show PDF Tags
     </section>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.053"
+      id="ID.069"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.054"
+       id="ID.070"
        title=""
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.055"
+        id="ID.071"
         rolemaps-to="Span"
        >
       <?MarkedContent page="3" ?>Appendix C 
      </section-number>
     </section>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.056"
+       id="ID.072"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.057"
+        id="ID.073"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -4852,26 +5147,26 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <Sect xmlns="http://iso.org/pdf2/ssn"
-       id="ID.058"
+       id="ID.074"
       >
      <subsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.059"
+        id="ID.075"
         title=""
         rolemaps-to="H2"
        >
       <section-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.060"
+         id="ID.076"
          rolemaps-to="Span"
         >
        <?MarkedContent page="3" ?>Appendix C.1 
       </section-number>
      </subsection>
      <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.061"
+        id="ID.077"
         rolemaps-to="Part"
        >
       <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.062"
+         id="ID.078"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -4880,26 +5175,26 @@ TEST 1: Show PDF Tags
       </text>
      </text-unit>
      <Sect xmlns="http://iso.org/pdf2/ssn"
-        id="ID.063"
+        id="ID.079"
        >
       <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.064"
+         id="ID.080"
          title=""
          rolemaps-to="H3"
         >
        <section-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.065"
+          id="ID.081"
           rolemaps-to="Span"
          >
         <?MarkedContent page="3" ?>Appendix C.1.1 
        </section-number>
       </subsubsection>
       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.066"
+         id="ID.082"
          rolemaps-to="Part"
         >
        <text xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.067"
+          id="ID.083"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -4908,20 +5203,20 @@ TEST 1: Show PDF Tags
        </text>
       </text-unit>
       <Sect xmlns="http://iso.org/pdf2/ssn"
-         id="ID.068"
+         id="ID.084"
         >
        <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.069"
+          id="ID.085"
           title=""
           rolemaps-to="H4"
          >
        </paragraph>
        <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.070"
+          id="ID.086"
           rolemaps-to="Part"
          >
         <text xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.071"
+           id="ID.087"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -4930,10 +5225,10 @@ TEST 1: Show PDF Tags
         </text>
        </text-unit>
        <Sect xmlns="http://iso.org/pdf2/ssn"
-          id="ID.072"
+          id="ID.088"
          >
         <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.073"
+           id="ID.089"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -4941,11 +5236,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="3" ?>
         </subparagraph>
         <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.074"
+           id="ID.090"
            rolemaps-to="Part"
           >
          <text xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.075"
+            id="ID.091"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -4959,15 +5254,15 @@ TEST 1: Show PDF Tags
     </Sect>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.076"
+      id="ID.092"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.077"
+       id="ID.093"
        title="appendixtitlesyes"
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.078"
+        id="ID.094"
         rolemaps-to="Span"
         referenced-as="5"
        >
@@ -4977,15 +5272,15 @@ TEST 1: Show PDF Tags
     </section>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.079"
+      id="ID.095"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.080"
+       id="ID.096"
        title="Test section"
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.081"
+        id="ID.097"
         rolemaps-to="Span"
         referenced-as="6"
        >
@@ -4994,11 +5289,11 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="4" ?>Test section
     </section>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.082"
+       id="ID.098"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.083"
+        id="ID.099"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -5007,15 +5302,15 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <Sect xmlns="http://iso.org/pdf2/ssn"
-       id="ID.084"
+       id="ID.100"
       >
      <subsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.085"
+        id="ID.101"
         title="Test subsection"
         rolemaps-to="H2"
        >
       <section-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.086"
+         id="ID.102"
          rolemaps-to="Span"
          referenced-as="7"
         >
@@ -5024,11 +5319,11 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="4" ?>Test subsection
      </subsection>
      <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.087"
+        id="ID.103"
         rolemaps-to="Part"
        >
       <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.088"
+         id="ID.104"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -5037,15 +5332,15 @@ TEST 1: Show PDF Tags
       </text>
      </text-unit>
      <Sect xmlns="http://iso.org/pdf2/ssn"
-        id="ID.089"
+        id="ID.105"
        >
       <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.090"
+         id="ID.106"
          title="Test subsubsection"
          rolemaps-to="H3"
         >
        <section-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.091"
+          id="ID.107"
           rolemaps-to="Span"
           referenced-as="8"
          >
@@ -5054,11 +5349,11 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>Test subsubsection
       </subsubsection>
       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.092"
+         id="ID.108"
          rolemaps-to="Part"
         >
        <text xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.093"
+          id="ID.109"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -5067,21 +5362,21 @@ TEST 1: Show PDF Tags
        </text>
       </text-unit>
       <Sect xmlns="http://iso.org/pdf2/ssn"
-         id="ID.094"
+         id="ID.110"
         >
        <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.095"
+          id="ID.111"
           title="Test paragraph"
           rolemaps-to="H4"
          >
         <?MarkedContent page="4" ?>Test paragraph
        </paragraph>
        <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.096"
+          id="ID.112"
           rolemaps-to="Part"
          >
         <text xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.097"
+           id="ID.113"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -5090,10 +5385,10 @@ TEST 1: Show PDF Tags
         </text>
        </text-unit>
        <Sect xmlns="http://iso.org/pdf2/ssn"
-          id="ID.098"
+          id="ID.114"
          >
         <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.099"
+           id="ID.115"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -5101,11 +5396,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="4" ?> Test subparagraph
         </subparagraph>
         <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.100"
+           id="ID.116"
            rolemaps-to="Part"
           >
          <text xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.101"
+            id="ID.117"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -5119,7 +5414,7 @@ TEST 1: Show PDF Tags
     </Sect>
    </Sect>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.102"
+      id="ID.118"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -6402,8 +6697,8 @@ Completed box being shipped out [4]
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{paragraph*.5} xyz
-........\pdfdest name{paragraph*.5} xyz
+........\pdfdest name{paragraph*.6} xyz
+........\pdfdest name{paragraph*.6} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -6436,7 +6731,7 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{Test paragraph}{\thepage }{paragraph*.5}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{Test paragraph}{\thepage }{paragraph*.6}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -6694,8 +6989,8 @@ Completed box being shipped out [4]
 ......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\pdfdest name{subparagraph*.6} xyz
-.......\pdfdest name{subparagraph*.6} xyz
+.......\pdfdest name{subparagraph*.7} xyz
+.......\pdfdest name{subparagraph*.7} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\TU/texgyrepagella(0)/b/n/10  
@@ -6724,7 +7019,7 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 a
 .....\TU/texgyrepagella(0)/b/n/10 p
 .....\TU/texgyrepagella(0)/b/n/10 h
-.....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.6}\protected@file@percent }}
+.....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{Test subparagraph}{\thepage }{subparagraph*.7}\protected@file@percent }}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/10  
@@ -7015,7 +7310,7 @@ Completed box being shipped out [4]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 7/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 15/Contents (artifact)} action user{}
 ...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
 ...........\TU/texgyrepagella(0)/m/n/8 h
@@ -7110,8 +7405,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~102 structure objects
-(tagpdf)             with ~52 'MC' leaf nodes.
+(tagpdf)             Writing out ~118 structure objects
+(tagpdf)             with ~92 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
