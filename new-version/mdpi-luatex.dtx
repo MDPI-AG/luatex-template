@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-06-24}
-\def\mdpiversion{v7.0d}
+\def\mdpiversion{v7.0e}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2011,36 +2011,40 @@
 % Commands for landscape page:
 % \begin{macro}{\startlandscape,\finishlandscape}
 %    \begin{macrocode}
+\newlength\mdpi@portrait@paperwidth
+\newlength\mdpi@portrait@paperheight
+\mdpi@portrait@paperheight= \paperheight  
+\mdpi@portrait@paperwidth = \paperwidth
 \newcommand{\startlandscape}{%
-\isPreprints{%
-  \clearpage
-    \@tempskipa=\paperwidth
-  \paperwidth=\paperheight
-  \paperheight=\@tempskipa
-    \UseName{pdf_pagesize_gset:nn}{\paperwidth}{\paperheight}%
-  \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
+\isPreprints
+  {
+   \clearpage  
+   \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
+   \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
                  right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
-  \fancyheadoffset{0pt}
-  \captionsetup{margin={0cm,0cm}}
-      }{%
-  \clearpage
-  \@tempskipa=\paperwidth
-  \paperwidth=\paperheight
-  \paperheight=\@tempskipa
-  \UseName{pdf_pagesize_gset:nn}{\paperwidth}{\paperheight}%
-  \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
+%    \end{macrocode}
+% \cs{newgeometry} resets the paper dimension so we overwrite them again:
+%    \begin{macrocode}
+   \paperwidth =\mdpi@portrait@paperheight
+   \paperheight=\mdpi@portrait@paperwidth                         
+   \fancyheadoffset{0pt}
+   \captionsetup{margin={0cm,0cm}}
+  }
+  {
+   \clearpage
+   \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
+   \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
                  right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
-  \fancyheadoffset{0pt}
-  \captionsetup{margin={4.6cm,0cm}}
+   \paperwidth=\mdpi@portrait@paperheight
+   \paperheight=\mdpi@portrait@paperwidth    
+   \fancyheadoffset{0pt}
+   \captionsetup{margin={4.6cm,0cm}}
   }
 }
 
 \newcommand{\finishlandscape}{%
   \clearpage
-  \@tempskipa=\paperwidth
-  \paperwidth=\paperheight
-  \paperheight=\@tempskipa
-  \UseName{pdf_pagesize_gset:nn}{\paperwidth}{\paperheight}%
+  \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperwidth}{\mdpi@portrait@paperheight}
   \restoregeometry
   \fancyheadoffset[L]{\extralength}
   \captionsetup{margin={0cm,0cm}}

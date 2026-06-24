@@ -9,5 +9,9 @@
 
 \startlandscape
 \kant[1-4]
+\the\paperwidth, \the\paperheight
 \finishlandscape
+
+\kant[1-3]
+\the\paperwidth, \the\paperheight
 \end{document} 
