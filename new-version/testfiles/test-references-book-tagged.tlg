@@ -55,7 +55,7 @@ Completed box being shipped out [1]
 ........\hbox(9.78595+4.19403)x498.2076, direction TLT
 .........\hbox(9.78595+4.19403)x0.0, glue set - 498.20758fil, direction TLT
 ..........\vbox(9.78595+4.19403)x498.2076, direction TLT
-...........\hbox(9.78595+4.19403)x498.2076, glue set 498.20758fil, direction TLT
+...........\hbox(9.78595+4.19403)x498.2076, glue set 249.10379fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -64,7 +64,7 @@ Completed box being shipped out [1]
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
-............\glue(\parfillskip) 0.0
+............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
@@ -136,8 +136,8 @@ Completed box being shipped out [1]
 .........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfdest name{cite.ref-journal} xyz
-..........\pdfdest name{cite.ref-journal} xyz
+..........\pdfdest name{list*.1} xyz
+..........\pdfdest name{list*.1} xyz
 ..........\penalty 10000
 ........\kern0.0
 ........\glue 0.0 plus 1.0fil
@@ -305,8 +305,8 @@ Completed box being shipped out [1]
 .........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfdest name{cite.ref-book1} xyz
-..........\pdfdest name{cite.ref-book1} xyz
+..........\pdfdest name{list*.2} xyz
+..........\pdfdest name{list*.2} xyz
 ..........\penalty 10000
 ........\kern0.0
 ........\glue 0.0 plus 1.0fil
@@ -570,8 +570,8 @@ Completed box being shipped out [1]
 .........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfdest name{cite.ref-book2} xyz
-..........\pdfdest name{cite.ref-book2} xyz
+..........\pdfdest name{list*.3} xyz
+..........\pdfdest name{list*.3} xyz
 ..........\penalty 10000
 ........\kern0.0
 ........\glue 0.0 plus 1.0fil
@@ -767,8 +767,8 @@ Completed box being shipped out [1]
 .........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfdest name{cite.ref-unpublish} xyz
-..........\pdfdest name{cite.ref-unpublish} xyz
+..........\pdfdest name{list*.4} xyz
+..........\pdfdest name{list*.4} xyz
 ..........\penalty 10000
 ........\kern0.0
 ........\glue 0.0 plus 1.0fil
@@ -1058,8 +1058,8 @@ Completed box being shipped out [1]
 .........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfdest name{cite.ref-url} xyz
-..........\pdfdest name{cite.ref-url} xyz
+..........\pdfdest name{list*.5} xyz
+..........\pdfdest name{list*.5} xyz
 ..........\penalty 10000
 ........\kern0.0
 ........\glue 0.0 plus 1.0fil
@@ -1213,8 +1213,8 @@ Completed box being shipped out [1]
 .........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfdest name{cite.ref-proceeding} xyz
-..........\pdfdest name{cite.ref-proceeding} xyz
+..........\pdfdest name{list*.6} xyz
+..........\pdfdest name{list*.6} xyz
 ..........\penalty 10000
 ........\kern0.0
 ........\glue 0.0 plus 1.0fil
@@ -1615,8 +1615,8 @@ Completed box being shipped out [1]
 .........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfdest name{cite.ref-thesis} xyz
-..........\pdfdest name{cite.ref-thesis} xyz
+..........\pdfdest name{list*.7} xyz
+..........\pdfdest name{list*.7} xyz
 ..........\penalty 10000
 ........\kern0.0
 ........\glue 0.0 plus 1.0fil
@@ -1843,7 +1843,7 @@ Completed box being shipped out [1]
 .......\hbox(7.33946+3.14552)x367.04037, direction TLT
 ........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 .........\vbox(0.0+0.0)x367.04037, direction TLT
-..........\hbox(0.0+0.0)x367.04037, glue set 367.04037fil, direction TLT
+..........\hbox(0.0+0.0)x367.04037, glue set 183.52019fil, direction TLT
 ...........\localpar
 ............\localinterlinepenalty=0
 ............\localbrokenpenalty=0
@@ -1851,7 +1851,7 @@ Completed box being shipped out [1]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 10000
-...........\glue(\parfillskip) 0.0
+...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
@@ -1898,20 +1898,6 @@ Completed box being shipped out [1]
 .\hbox(0.0+0.0)x0.0, direction TLT
 .\kern603.78322
 .\pdfliteral page <lua data reference ...>
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-journal'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-journal'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-book1'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-book1'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-book2'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-book2'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-unpublish'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-unpublish'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-url'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-url'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-proceeding'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-proceeding'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-thesis'
-warning  (pdf backend): ignoring duplicate destination with the name 'cite.ref-thesis'
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 <<latex-list-css.html>><<latex-align-css.html>> (test-references-book-tagged.aux)
 MathML statistic

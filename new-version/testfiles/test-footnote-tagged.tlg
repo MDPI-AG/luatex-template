@@ -218,7 +218,7 @@ Completed box being shipped out [1]
 ........\hbox(18.349+3.14552)x525.52245, direction TLT
 .........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 ..........\vbox(18.349+3.14552)x525.52245, direction TLT
-...........\hbox(5.864+2.264)x525.52245, glue set 334.02643fil, direction TLT
+...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
 ............\kern-0.288 (left margin)
 ............\localpar
 .............\localinterlinepenalty=0
@@ -308,7 +308,7 @@ Completed box being shipped out [1]
 ............\TU/texgyrepagella(0)/m/it/8 e
 ............\TU/texgyrepagella(0)/m/it/8 d
 ............\penalty 10000
-............\glue(\parfillskip) 0.0
+............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ...........\glue 2.0
 ...........\glue 0.0
@@ -316,7 +316,7 @@ Completed box being shipped out [1]
 ...........\glue(\parskip) 0.0
 ...........\glue(\parskip) 0.0
 ...........\glue(\baselineskip) 0.88153
-...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -327,7 +327,7 @@ Completed box being shipped out [1]
 .............\rule(0.4+0.0)x525.23764
 ............\rule(7.33946+3.14552)x0.0
 ............\penalty 10000
-............\glue(\parfillskip) 0.0
+............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
@@ -2127,7 +2127,7 @@ Completed box being shipped out [1]
 .......\hbox(9.78595+4.19403)x525.52245, direction TLT
 ........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
 .........\vbox(0.0+0.0)x525.52245, direction TLT
-..........\hbox(0.0+0.0)x525.52245, glue set 525.52246fil, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
 ...........\localpar
 ............\localinterlinepenalty=0
 ............\localbrokenpenalty=0
@@ -2135,7 +2135,7 @@ Completed box being shipped out [1]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 10000
-...........\glue(\parfillskip) 0.0
+...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
