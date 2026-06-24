@@ -372,7 +372,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -15.0
-.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[1 0 0]} action goto name{section.B}
+.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[1 0 0]} action goto name{appendix.B}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\TU/texgyrepagella(0)/b/n/10 B
 .....\TU/texgyrepagella(0)/b/n/10 .
@@ -440,7 +440,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -15.0
-.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[1 0 0]} action goto name{section.C}
+.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[1 0 0]} action goto name{appendix.C}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\TU/texgyrepagella(0)/b/n/10 C
 .....\TU/texgyrepagella(0)/b/n/10 .
@@ -566,7 +566,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -15.0
-.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[1 0 0]} action goto name{section.D}
+.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[1 0 0]} action goto name{appendix.D}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\TU/texgyrepagella(0)/b/n/10 D
 .....\TU/texgyrepagella(0)/b/n/10 .
@@ -631,7 +631,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\glue -15.0
-.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[1 0 0]} action goto name{section.E}
+.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[1 0 0]} action goto name{appendix.E}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\TU/texgyrepagella(0)/b/n/10 E
 .....\TU/texgyrepagella(0)/b/n/10 .
@@ -2901,7 +2901,7 @@ Completed box being shipped out [3]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 14.51074
-....\pdfdest name{section.B} xyz
+....\pdfdest name{appendix.B} xyz
 ....\glue(\topskip) 0.0
 ....\hbox(11.42395+4.89604)x394.35522, glue set 104.84361fil, direction TLT
 .....\localpar
@@ -2962,13 +2962,13 @@ Completed box being shipped out [3]
 ....\penalty 10000
 ....\marks1{\__mark_value:nn {8}{\MakeUppercase    []{B\hskip 1em\relax appendixtitlesempty}}}
 ....\marks2{\__mark_value:nn {9}{}}
-....\write4{\protect \BOOKMARK [1][]{section.B}{\376\377\000a\000p\000p\000e\000n\000d\000i\000x\000t\000i\000t\000l\000e\000s\000e\000m\000p\000t\000y}{}% 4}
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {B}appendixtitlesempty}{\thepage }{section.B}\protected@file@percent }}
+....\write4{\protect \BOOKMARK [1][]{appendix.B}{\376\377\000a\000p\000p\000e\000n\000d\000i\000x\000t\000i\000t\000l\000e\000s\000e\000m\000p\000t\000y}{}% 4}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {B}appendixtitlesempty}{\thepage }{appendix.B}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\glue 3.0
 ....\glue 0.0
-....\pdfdest name{section.C} xyz
+....\pdfdest name{appendix.C} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -3006,9 +3006,9 @@ Completed box being shipped out [3]
 ....\penalty 10000
 ....\marks2{\__mark_value:nn {11}{}}
 ....\penalty 10000
-....\write4{\protect \BOOKMARK [1][]{section.C}{}{}% 5}
+....\write4{\protect \BOOKMARK [1][]{appendix.C}{}{}% 5}
 ....\penalty 10000
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {C}}{\thepage }{section.C}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {C}}{\thepage }{appendix.C}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\penalty 10000
@@ -3267,7 +3267,7 @@ Completed box being shipped out [3]
 ....\penalty 10000
 ....\marks2{\__mark_value:nn {12}{C.1\hskip 1em\relax }}
 ....\marks3{\__mark_value:nn {13}{C.1\hskip 1em\relax }}
-....\write4{\protect \BOOKMARK [2][]{subsection.C.1}{}{section.C}% 6}
+....\write4{\protect \BOOKMARK [2][]{subsection.C.1}{}{appendix.C}% 6}
 ....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {C.1}}{\thepage }{subsection.C.1}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
@@ -4567,7 +4567,7 @@ Completed box being shipped out [4]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 14.51074
-....\pdfdest name{section.D} xyz
+....\pdfdest name{appendix.D} xyz
 ....\glue(\topskip) 0.0
 ....\hbox(11.42395+4.89604)x394.35522, glue set 112.24161fil, direction TLT
 .....\localpar
@@ -4623,13 +4623,13 @@ Completed box being shipped out [4]
 ....\penalty 10000
 ....\marks1{\__mark_value:nn {14}{\MakeUppercase    []{D\hskip 1em\relax appendixtitlesyes}}}
 ....\marks2{\__mark_value:nn {15}{}}
-....\write4{\protect \BOOKMARK [1][]{section.D}{\376\377\000a\000p\000p\000e\000n\000d\000i\000x\000t\000i\000t\000l\000e\000s\000y\000e\000s}{}% 8}
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {D}appendixtitlesyes}{\thepage }{section.D}\protected@file@percent }}
+....\write4{\protect \BOOKMARK [1][]{appendix.D}{\376\377\000a\000p\000p\000e\000n\000d\000i\000x\000t\000i\000t\000l\000e\000s\000y\000e\000s}{}% 8}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {D}appendixtitlesyes}{\thepage }{appendix.D}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\glue 3.0
 ....\glue 0.0
-....\pdfdest name{section.E} xyz
+....\pdfdest name{appendix.E} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -4681,9 +4681,9 @@ Completed box being shipped out [4]
 ....\penalty 10000
 ....\marks2{\__mark_value:nn {17}{}}
 ....\penalty 10000
-....\write4{\protect \BOOKMARK [1][]{section.E}{\376\377\000T\000e\000s\000t\000\040\000s\000e\000c\000t\000i\000o\000n}{}% 9}
+....\write4{\protect \BOOKMARK [1][]{appendix.E}{\376\377\000T\000e\000s\000t\000\040\000s\000e\000c\000t\000i\000o\000n}{}% 9}
 ....\penalty 10000
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {E}Test section}{\thepage }{section.E}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {E}Test section}{\thepage }{appendix.E}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\penalty 10000
@@ -4964,7 +4964,7 @@ Completed box being shipped out [4]
 ....\penalty 10000
 ....\marks2{\__mark_value:nn {18}{E.1\hskip 1em\relax Test subsection}}
 ....\marks3{\__mark_value:nn {19}{E.1\hskip 1em\relax Test subsection}}
-....\write4{\protect \BOOKMARK [2][]{subsection.E.1}{\376\377\000T\000e\000s\000t\000\040\000s\000u\000b\000s\000e\000c\000t\000i\000o\000n}{section.E}% 10}
+....\write4{\protect \BOOKMARK [2][]{subsection.E.1}{\376\377\000T\000e\000s\000t\000\040\000s\000u\000b\000s\000e\000c\000t\000i\000o\000n}{appendix.E}% 10}
 ....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {E.1}Test subsection}{\thepage }{subsection.E.1}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
@@ -6122,7 +6122,7 @@ Completed box being shipped out [4]
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-heading.aux)
 Package rerunfilecheck Info: File `test-heading.out' has not changed.
-(rerunfilecheck)             Checksum: 248413BB17F45AD4F031F2AF89940D5E;1202.
+(rerunfilecheck)             Checksum: 7E3AF5093723629FAE9DA386E2DC395E;1208.
 ***************
 Compilation 1 of test file completed with exit status 0
 Compilation 2 of test file completed with exit status 0
