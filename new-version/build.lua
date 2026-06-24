@@ -18,7 +18,7 @@ stdengine ="luatex"
 
 docfiledir = "./doc"
 
-typesetexe = "lualatex-dev"
+typesetexe = "lualatex"
 typesetfiles = {"*.dtx","template-*.tex"} 
 
 function docinit_hook() return cp("mdpi-luatex.cls", unpackdir, typesetdir) end
