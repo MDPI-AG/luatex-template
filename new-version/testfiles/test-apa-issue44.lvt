@@ -1,0 +1,10 @@
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass[apajournal,article,submit,moreauthors]{mdpi-luatex}
+\begin{document}
+text \cite{ref-journal}
+\begin{thebibliography}{99}
+\bibitem[Author(year)]{ref-journal} blub
+\end{thebibliography}
+\SHOWPDFTAGS
+\end{document} 
