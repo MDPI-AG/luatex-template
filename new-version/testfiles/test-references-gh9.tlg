@@ -250,7 +250,7 @@ Completed box being shipped out [1]
 ....\write-{}
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
-....\pdfdest name{section.A} xyz
+....\pdfdest name{appendix.A} xyz
 ....\glue(\topskip) 0.0
 ....\hbox(11.42395+4.89604)x394.35522, glue set 167.3336fil, direction TLT
 .....\localpar
@@ -284,8 +284,8 @@ Completed box being shipped out [1]
 ....\penalty 10000
 ....\marks1{\__mark_value:nn {1}{\MakeUppercase    []{A\hskip 1em\relax References}}}
 ....\marks2{\__mark_value:nn {2}{}}
-....\write4{\protect \BOOKMARK [1][]{section.A}{\376\377\000R\000e\000f\000e\000r\000e\000n\000c\000e\000s}{}% 1}
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {A}References}{\thepage }{section.A}\protected@file@percent }}
+....\write4{\protect \BOOKMARK [1][]{appendix.A}{\376\377\000R\000e\000f\000e\000r\000e\000n\000c\000e\000s}{}% 1}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {A}References}{\thepage }{appendix.A}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\glue 3.0
@@ -1916,7 +1916,7 @@ Completed box being shipped out [1]
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-references-gh9.aux)
 Package rerunfilecheck Info: File `test-references-gh9.out' has not changed.
-(rerunfilecheck)             Checksum: 197BAF2E4EF90893F37764FC499B14FB;92.
+(rerunfilecheck)             Checksum: 4B43B2364B67367ED7ED46534627AF39;93.
 ***************
 Compilation 1 of test file completed with exit status 0
 Compilation 2 of test file completed with exit status 0
