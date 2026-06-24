@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-05-30}
-\def\mdpiversion{v7.0c}
+\def\mdpidate{2026-06-24}
+\def\mdpiversion{v7.0d}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -136,7 +136,6 @@
 \RequirePackage{attrib} % For XML2PDF use \tag{} for equation
 %\RequirePackage{upgreek} % For making greek letters not italic
 \RequirePackage{pbox} % For biography environment
-\RequirePackage[subfigure]{tocloft} % For dots in TOC. If subfigure package is loaded, the subfigure option needs to be added here to avoid clash: \RequirePackage[subfigure]{tocloft}
 \RequirePackage{marginnote} % For left column
 \reversemarginpar % To have the left column on the left side
 \RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
@@ -560,7 +559,7 @@
 % \subsubsection{APA or Chicago style journals}
 % 
 % A combination of both tests: true if a journal is either APA or a Chicago style journal.
-% \begin{macro}{\ifAPAorChicago}
+% \begin{macro}{\isAPAorChicago}
 %    \begin{macrocode}
 \prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
  {
@@ -1615,8 +1614,19 @@
   \printretraction
 }
 
-%%%%% Table of contents
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots between section title and page number
+%    \end{macrocode}
+% \subsection{Table of contents}
+% The section entries should have dots. We make use of \cs{@dottedtocline} to get the
+% tagging support. 
+%    \begin{macrocode}
+\renewcommand*\l@section
+ {
+   \ifnum \c@tocdepth >\z@
+    \addpenalty\@secpenalty
+    \addvspace{1.0em \@plus\p@}
+   \fi 
+   \@dottedtocline{1}{0em}{1.5em}
+ }
 \renewcommand{\numberline}[1]{#1.~\space} % Increase space between number and title
 
 %    \end{macrocode}
