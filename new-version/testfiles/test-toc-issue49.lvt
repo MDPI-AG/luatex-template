@@ -1,0 +1,16 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass[acoustics,article,accept,moreauthors]{mdpi-luatex}
+\begin{document}
+\START\showoutput
+\tableofcontents
+
+\section{abc}
+\subsection{subsec}
+\subsection{subsec}
+\subsection{subsec}
+\section{abc}
+\section{abc}
+
+\end{document} 
