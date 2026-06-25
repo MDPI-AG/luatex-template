@@ -116,7 +116,7 @@ TEST 1: Show PDF Tags
          id="ID.029"
          alt="acoustics-logo.pdf"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 38.20705, 774.65587, 143.6539, 808.67154 }"
+         Layout:BBox="{ 35.71638, 774.65587, 141.16323, 808.67154 }"
         >
        <?MarkedContent page="1" ?>
       </Figure>
@@ -1051,7 +1051,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\lineskip) 1.0
-....\hbox(34.14322+0.0)x525.52245, glue set 369.21143fill, shifted -131.16722, direction TLT
+....\hbox(34.14322+0.0)x525.52245, glue set 376.71143fill, shifted -131.16722, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1062,7 +1062,6 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com/journal/acoustics) >>  /LTEX_position /isolated/StructParent 4} action user{}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
-.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\savepos
@@ -1086,8 +1085,6 @@ Completed box being shipped out [1]
 .....\pdfcolorstack 0 pop
 .....\pdfendlink
 .....\glue 0.0 plus 1.0fill
-.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >>  /LTEX_position /isolated/StructParent 5} action user{}

@@ -983,127 +983,186 @@
 
 
 
-
-%%%% Maketitle part 1: Logo, Arttype, Title, Author
-\renewcommand{\@maketitle}{
-  \isBookContribution{% for books we have no logos, article type and narrow column
-            }{% for journals and preprints we have logos, article type and narrow column
-    \ifthenelse{\equal{\@leftcolumnsplit}{\@empty}}{% Default option for the left column
-      \marginnote[\contentleftcolumn]{}[\MyLen] % Bottom aligned %
-      }{%
-    }
-    \isPreprints{\vspace{0.92cm}}{%
-    \begin{adjustwidth}{-\extralength}{}
-    }
-  }
+%    \end{macrocode}
+% \subsection{Maketitle}
+% \subsubsection{Part 1: Logo, Arttype, Title, Author}
+%    \begin{macrocode}
+\renewcommand{\@maketitle}
+ {
+%    \end{macrocode}
+% for books we have no logos, article type and narrow column:
+%    \begin{macrocode}
+  \isBookContribution
+   {}
+%    \end{macrocode}
+% for journals and preprints we have logos, article type and narrow column
+%    \begin{macrocode}
+   {% 
+     \ifthenelse{\equal{\@leftcolumnsplit}{\@empty}}
+%    \end{macrocode}
+%   Default option for the left column.
+%   The left column should be aligned with the bottom of the text. 
+%   For this we calculate the needed offset in \cs{\MyLen} and move it down:
+%    \begin{macrocode}
+      {\marginnote[\contentleftcolumn]{}[\MyLen]}
+      {} %empty else
+%    \end{macrocode}
+%    
+%    \begin{macrocode}
+    \isPreprints
+      {\vspace{0.92cm}}
+      {%
+        \begin{adjustwidth}{-\extralength}{}
+      }%
+   }%
   \begin{flushleft}
-  \ifthenelse{\equal{\@arttype}{Supfile}}{%
-    \LARGE
-    \raggedright
-    \hyphenpenalty=10000
-    \tolerance=1000
-    \noindent\textbf{Supplementary Materials: \@Title}%
-    \par
-    \vspace{12pt}
-    \normalsize
-    \noindent\boldmath\bfseries{\@Author}
-    }{%
-    \isBookContribution{}{%
-      \vspace*{-1.75cm}
+   \ifthenelse
+    {\equal{\@arttype}{Supfile}}
+    {%
+     \LARGE
+     \raggedright
+     \hyphenpenalty=10000
+     \tolerance=1000
+     \noindent\textbf{Supplementary Materials: \@Title}%
+     \par
+     \vspace{12pt}
+     \normalsize
+     \noindent\boldmath\bfseries{\@Author}
     }
-    {%0
-    \ifthenelse{\equal{\@journal}{preprints}
-    \OR \equal{\@journal}{preprintschicago}
-    \OR \equal{\@journal}{preprintsapa}
-      \OR \equal{\@arttype}{Book}
-      \OR \equal{\@arttype}{Monograph}}{}{
-        \vspace{-2pt}%
-        \ifthenelse{\equal{\@status}{submit}}{%
-        \vspace{5pt}%
-          \hfill \href{https://www.mdpi.com}{%
-          \includegraphics[height=1cm]{logo-mdpi}}%
-          }{
-          \href{https://www.mdpi.com/journal/\@journal}{
-          \includegraphics[height=1.2cm]{\@journal-logo}}%
-          \hfill
-          \ifthenelse{\equal{\@IsAssociation}{\@empty} \OR \isundefined{\@IsAssociation}}{%
-          \ifthenelse{\equal{\@journal}{ijom}}{%
-            \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-ijom}}
-            }{
-          \ifthenelse{\equal{\@journal}{siuj}}{%
-            \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-siuj}}
-            }{
-            \ifthenelse{\equal{\@journal}{scipharm}}{%
-              \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}%
-            }{%
-              \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi}}%
+    {%
+      \isBookContribution
+       {}
+       {\vspace*{-1.75cm}}%    
+     {%0
+      \ifthenelse
+        {
+         \equal{\@journal}{preprints} \OR 
+         \equal{\@journal}{preprintschicago} \OR 
+         \equal{\@journal}{preprintsapa} \OR 
+         \equal{\@arttype}{Book} \OR 
+         \equal{\@arttype}{Monograph}
+        }
+        {}
+        {
+         \vspace{-2pt}%
+         \ifthenelse
+          {\equal{\@status}{submit}}
+          {%
+           \vspace{5pt}%
+           \hfill  %????????
+           \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi}}%
+          }
+          {%
+            \href{https://www.mdpi.com/journal/\@journal}{\includegraphics[height=1.2cm]{\@journal-logo}}%
+            \hfill
+            \ifthenelse
+              {
+                \equal{\@IsAssociation}{\@empty} 
+                \OR \isundefined{\@IsAssociation} % can never happen, command is defined above
               }
-                         }%
+              {%
+                \ifthenelse
+                  {\equal{\@journal}{ijom}}
+                  {%
+                   \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-ijom}}%
+                  }
+                  {%
+                   \ifthenelse
+                    {\equal{\@journal}{siuj}}
+                    {%
+                     \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-siuj}}%
+                    }
+                    {%
+                      \ifthenelse{\equal
+                       {\@journal}{scipharm}}
+                       {%
+                         \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}%
+                       }
+                       {%
+                          \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi}}%
+                       }%
                     }%
-                }{
-        \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%
+                  }%
+              }
+              {%
+                \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%
               }%
-            }%
-        \par
-        \rule{\fulllength}{0.4pt}%
-      }%
-    \par
-    }%0
-    {%1
-        \vspace{14pt}
-        \normalsize
-    \isBookContribution{}{%
-      \textit{\@arttype}%
-      }%
-        \par
-        }%1
-        {%2
-        \LARGE
-    \hyphenpenalty=10000
-    \tolerance=1000
-        \isMonograph{}{%
-               \boldmath\bfseries{\@Title}%
-           }%
-        \par
-        \vspace{12pt}
-        }%2
-    \ifthenelse{\equal{\@longauthorlist}{\@empty}}{%
-      }{%
+          }% end submit/else
+         \par
+         \rule{\fulllength}{0.4pt}%
+        }% end preprint/book else
+      \par
+     }%0
+     {%1
+      \vspace{14pt}
+      \normalsize
+      \isBookContribution
+        {}
+        {\textit{\@arttype}}%
+      \par
+     }%1
+     {%2
+      \LARGE
+      \hyphenpenalty=10000
+      \tolerance=1000
+      \isMonograph
+        {}
+        {\boldmath\bfseries{\@Title}}%
+      \par
+      \vspace{12pt}
+     }%2
+    \ifthenelse
+     {\equal{\@longauthorlist}{\@empty}}
+     {}
+     {
       \end{flushleft}%
-    \isPreprints{}{%
-      \end{adjustwidth}%
-      }
+      \isPreprints
+        {}
+        {\end{adjustwidth}}
       \vspace{-2.5pt}
+     }
+     {%3
+      \hyphenpenalty=10000
+     \tolerance=1000
+     \isMonograph
+       {}
+       {%
+         \boldmath\bfseries{\@Author}
+         \ifthenelse
+           {\equal{\@arttype}{Book}}
+           {\vspace{-12pt}}
+           {}
+       }%
+     \par
+     \vspace{12pt}
+     }%3
+    }%end Supfile test
+  \ifthenelse
+    {\equal{\@longauthorlist}{\@empty}}
+    {\end{flushleft}}
+    {}%
+  \isBookContribution
+    {}
+    {%
+      \ifthenelse
+        {\equal{\@longauthorlist}{\@empty}}
+        {%
+          \isPreprints
+            {}
+            {\end{adjustwidth}}
+        }
+        {}%
     }
-       {%3
-    \hyphenpenalty=10000
-    \tolerance=1000
-        \isMonograph{}{%
-        \boldmath\bfseries{\@Author}
-             \ifthenelse{\equal{\@arttype}{Book}}{\vspace{-12pt}}{}
-           }%
-        \par
-    \vspace{12pt}
-        }%3
-    }%
-  \ifthenelse{\equal{\@longauthorlist}{\@empty}}{%
-    \end{flushleft}%
-    }{%
-  }%
-  \isBookContribution{}{%
-    \ifthenelse{\equal{\@longauthorlist}{\@empty}}{%
-    \isPreprints{}{%
-      \end{adjustwidth}%
-      }
-      }{%
+  \ifthenelse
+    {\equal{\@leftcolumnsplit}{\@empty}}
+    {% Left column split
     }
-  }
-    \ifthenelse{\equal{\@leftcolumnsplit}{\@empty}}{% Left column split
-      }{
+    {
       \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
     }
-   \isMonograph{\vspace{-2cm}}{}
-  }
+  \isMonograph{\vspace{-2cm}}{}
+ }
+
 
 %%%% Header and footer on first page
 %% The plain page style needs to be redefined because with \maketitle in the article class, LaTeX applies the the plain page style automatically to the first page.
