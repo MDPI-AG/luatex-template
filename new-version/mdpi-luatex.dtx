@@ -1047,11 +1047,14 @@
         {}
         {
          \vspace{-2pt}%
+%    \end{macrocode}
+% If the status is submit (initial/default value) there is not journal logo
+% and we fake it with a rule.
+%    \begin{macrocode}
          \ifthenelse
           {\equal{\@status}{submit}}
           {%
-           \vspace{5pt}%
-           \hfill  %????????
+           \phantom{\rule{0pt}{1.2cm}}\hfill  
            \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}%
           }
           {%
@@ -1060,31 +1063,17 @@
             \ifthenelse
               {
                 \equal{\@IsAssociation}{\@empty} 
-                \OR \isundefined{\@IsAssociation} % can never happen, command is defined above
               }
               {%
-                \ifthenelse
-                  {\equal{\@journal}{ijom}}
-                  {%
-                   \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-ijom}}%
-                  }
-                  {%
-                   \ifthenelse
-                    {\equal{\@journal}{siuj}}
-                    {%
-                     \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-siuj}}%
-                    }
-                    {%
-                      \ifthenelse{\equal
-                       {\@journal}{scipharm}}
-                       {%
-                         \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}%
-                       }
-                       {%
-                          \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}%
-                       }%
-                    }%
-                  }%
+                \str_case:onF {\@journal}
+                 {
+                   {ijom}    {\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-ijom}}}
+                   {siuj}    {\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-siuj}}}
+                   {scipharm}{\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}}
+                 }
+                 {
+                   \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}
+                 }
               }
               {%
                 \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%
