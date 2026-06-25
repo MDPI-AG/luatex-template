@@ -987,6 +987,8 @@
 % \subsection{Maketitle}
 % \subsubsection{Part 1: Logo, Arttype, Title, Author}
 %    \begin{macrocode}
+\newcommand\mdpi@url{https://www.mdpi.com}
+\ExplSyntaxOn
 \renewcommand{\@maketitle}
  {
 %    \end{macrocode}
@@ -1050,10 +1052,10 @@
           {%
            \vspace{5pt}%
            \hfill  %????????
-           \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi}}%
+           \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}%
           }
           {%
-            \href{https://www.mdpi.com/journal/\@journal}{\includegraphics[height=1.2cm]{\@journal-logo}}%
+            \href{\mdpi@url/journal/\@journal}{\includegraphics[height=1.2cm]{\@journal-logo}}%
             \hfill
             \ifthenelse
               {
@@ -1064,28 +1066,28 @@
                 \ifthenelse
                   {\equal{\@journal}{ijom}}
                   {%
-                   \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-ijom}}%
+                   \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-ijom}}%
                   }
                   {%
                    \ifthenelse
                     {\equal{\@journal}{siuj}}
                     {%
-                     \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-siuj}}%
+                     \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-siuj}}%
                     }
                     {%
                       \ifthenelse{\equal
                        {\@journal}{scipharm}}
                        {%
-                         \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}%
+                         \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}%
                        }
                        {%
-                          \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi}}%
+                          \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}%
                        }%
                     }%
                   }%
               }
               {%
-                \href{https://www.mdpi.com}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%
+                \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%
               }%
           }% end submit/else
          \par
@@ -1162,7 +1164,7 @@
     }
   \isMonograph{\vspace{-2cm}}{}
  }
-
+\ExplSyntaxOff
 
 %%%% Header and footer on first page
 %% The plain page style needs to be redefined because with \maketitle in the article class, LaTeX applies the the plain page style automatically to the first page.

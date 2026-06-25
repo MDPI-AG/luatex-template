@@ -648,7 +648,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.836
-....\hbox(7.09+0.2)x525.52245, glue set 239.43121fil, shifted -131.16722, direction TLT
+....\hbox(7.09+0.2)x525.52245, glue set 240.68121fil, shifted -131.16722, direction TLT
 .....\kern-0.39 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
@@ -664,7 +664,6 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagellamath(0)/b/n/10 H
 .....\TU/texgyrepagellamath(0)/b/n/10 O
 .....\TU/texgyrepagellamath(0)/b/n/10 R
-.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
