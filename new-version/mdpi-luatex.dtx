@@ -988,25 +988,65 @@
 
 
 %    \end{macrocode}
+%
 % \subsection{Maketitle}
-% \subsubsection{Part 1: Logo, Arttype, Title, Author}
+% \subsubsection{Helper commands}
+% Store the url:
 %    \begin{macrocode}
 \newcommand\mdpi@url{https://www.mdpi.com}
-\ExplSyntaxOn
 %    \end{macrocode}
 %
+% The logo line:
+%    \begin{macrocode}
+\ExplSyntaxOn
+\newcommand\mdpi@maketitle@logoline
+ {
+%    \end{macrocode}
+% If the status is submit (initial/default value) there is not journal logo
+% and we fake it with a rule.
+%    \begin{macrocode}
+   \tl_if_eq:enTF {\@status}{submit}
+     {
+       \phantom{\rule{0pt}{1.2cm}}\hfill  
+       \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}%
+     }
+     {
+        \href{\mdpi@url/journal/\@journal}{\includegraphics[height=1.2cm]{\@journal-logo}}%
+        \hfill
+        \tl_if_empty:NTF \@IsAssociation
+          {
+            \str_case:onF {\@journal}
+             {
+               {ijom}    {\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-ijom}}}
+               {siuj}    {\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-siuj}}}
+               {scipharm}{\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}}
+             }
+             {
+               \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}
+             }
+          }
+          {
+            \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%
+          }
+     }
+ }
+%    \end{macrocode}
+%\subsubsection{\cs{@maketitle}}
+%
+% Some variants have a different title format depending on \cs{@arttype}:
 %    \begin{macrocode}
 \str_case:onF{\@arttype}
  {
-   {Book}      {\cs_set:Npn \@maketitle {\@mdpi@maketitle@Book}}
-   {Monograph} {\cs_set:Npn \@maketitle {\@mdpi@maketitle@Monograph}}
-   {Supfile}   {\cs_set:Npn \@maketitle {\@mdpi@maketitle@Supfile}}
+   {Book}      {\cs_set:Npn \@maketitle {\mdpi@maketitle@Book}}
+   {Monograph} {\cs_set:Npn \@maketitle {\mdpi@maketitle@Monograph}}
+   {Supfile}   {\cs_set:Npn \@maketitle {\mdpi@maketitle@Supfile}}
  }
- { \cs_set:Npn \@maketitle {\@mdpi@maketitle}}
+ { \cs_set:Npn \@maketitle {\mdpi@maketitle}}
 %    \end{macrocode}
+%
 % The \cs{@maketitle} command for the case that \cs{@arttype} is a Book 
 %    \begin{macrocode}
-\newcommand\@mdpi@maketitle@Book
+\newcommand\mdpi@maketitle@Book
  {
    \begin{flushleft}   
     \LARGE\boldmath\bfseries
@@ -1020,24 +1060,22 @@
     \@Author
     \par
     % can that ever happen with Book???
-    \ifthenelse
-     {\equal{\@leftcolumnsplit}{\@empty}}
-     {}
+    \tl_if_empty:NF \@leftcolumnsplit
      {
       \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
      }
     \end{flushleft}      
  }
 %    \end{macrocode}
-% The \cs{@maketitle} command if this is a Monograph
+% The \cs{@maketitle} command if this is a Monograph:
 %    \begin{macrocode}
-\newcommand\@mdpi@maketitle@Monograph{} 
+\newcommand\mdpi@maketitle@Monograph{} 
 %    \end{macrocode}
 %
 % The \cs{@maketitle} command if \cs{@arttype} is a Supfile.
 % In this case the left column is empty so we do not have to set it.
 %    \begin{macrocode}
-\newcommand\@mdpi@maketitle@Supfile
+\newcommand\mdpi@maketitle@Supfile
  {
    \hbox{}
    \isPreprints
@@ -1064,16 +1102,15 @@
 % The \cs{@maketitle} command for the other cases.
 % For journals and preprints we have logos, article type and narrow column
 %    \begin{macrocode} 
-\newcommand{\@mdpi@maketitle}
- {
+\newcommand{\mdpi@maketitle}
+  {
 %    \end{macrocode}
 %   Default option for the left column.
 %   The left column should be aligned with the bottom of the text. 
 %   For this we calculate the needed offset in \cs{\MyLen} and move it down:
 %    \begin{macrocode}
-   \ifthenelse{\equal{\@leftcolumnsplit}{\@empty}}
+   \tl_if_empty:NT \@leftcolumnsplit
      {\marginnote[\contentleftcolumn]{}[\MyLen]}
-     {} %empty else
 %    \end{macrocode}
 %    
 %    \begin{macrocode}
@@ -1083,47 +1120,16 @@
        \begin{adjustwidth}{-\extralength}{}
      }
    \begin{flushleft}
-      \vspace*{-1.75cm}    
+    \vspace*{-1.75cm}    
      {%0
       \isPreprints
         {}
         {
          \vspace{-2pt}%
-%    \end{macrocode}
-% If the status is submit (initial/default value) there is not journal logo
-% and we fake it with a rule.
-%    \begin{macrocode}
-         \ifthenelse
-          {\equal{\@status}{submit}}
-          {%
-           \phantom{\rule{0pt}{1.2cm}}\hfill  
-           \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}%
-          }
-          {%
-            \href{\mdpi@url/journal/\@journal}{\includegraphics[height=1.2cm]{\@journal-logo}}%
-            \hfill
-            \ifthenelse
-              {
-                \equal{\@IsAssociation}{\@empty} 
-              }
-              {%
-                \str_case:onF {\@journal}
-                 {
-                   {ijom}    {\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-ijom}}}
-                   {siuj}    {\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-siuj}}}
-                   {scipharm}{\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}}
-                 }
-                 {
-                   \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}
-                 }
-              }
-              {%
-                \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%
-              }%
-          }% end submit/else
+         \mdpi@maketitle@logoline
          \par
          \rule{\fulllength}{0.4pt}%
-        }% end preprint else
+        }
       \par
      }%0
      {%1
