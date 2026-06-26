@@ -256,7 +256,7 @@
         begin-vspace=0pt,
         end-vspace=0pt]
     }
-    {\end{displayblock}}  
+    {\end{displayblock}}
  }
 %    \end{macrocode}
 %
@@ -437,14 +437,14 @@
 
 %    \end{macrocode}
 % \subsection{Journal conditionals}
-% The command \cs{@journal} used in the conditionals 
-% is defined in \texttt{journalnames.tex} and is by default 
-% \texttt{unspecified}. 
-% 
+% The command \cs{@journal} used in the conditionals
+% is defined in \texttt{journalnames.tex} and is by default
+% \texttt{unspecified}.
+%
 % The command \cs{@arttype} is defined through the class options and
 % is by default \texttt{Article}.
-% 
-% \subsubsection{Books} 
+%
+% \subsubsection{Books}
 % This tests if this a Book or a Monograph
 %    \begin{macrocode}
 \ExplSyntaxOn
@@ -454,7 +454,7 @@
     {
       {Book}{}
       {Monograph}{}
-    }  
+    }
  }
 %    \end{macrocode}
 % \subsubsection{Monographs}
@@ -467,9 +467,9 @@
  }
 %    \end{macrocode}
 % \end{macro}
-% 
+%
 % \subsubsection{Chicago style journals}
-% These journals use the \texttt{mdpi\_chicago} bibliography style. 
+% These journals use the \texttt{mdpi\_chicago} bibliography style.
 % \begin{macro}{\isChicagoStyle}
 %    \begin{macrocode}
 \clist_new:N  \l__mdpi_journal_chicagostyle_clist
@@ -493,14 +493,14 @@
     {\prg_return_true:}
     {\prg_return_false:}
  }
-\newcommand\isChicagoStyle{\__mdpi_is_journal_chicagostyle:TF} 
+\newcommand\isChicagoStyle{\__mdpi_is_journal_chicagostyle:TF}
 %    \end{macrocode}
 % \end{macro}
-% 
+%
 % \subsubsection{APA style journals}
 % Journals in \emph{APAstyle} use the package \pkg{mdpi_apacite} and the bibliography style
-% \texttt{mdpi\_apacite}. 
-% 
+% \texttt{mdpi\_apacite}.
+%
 % \begin{macro}{\isAPAStyle}
 %    \begin{macrocode}
 \clist_new:N  \l__mdpi_journal_apastyle_clist
@@ -544,7 +544,7 @@
 %    \end{macrocode}
 % \end{macro}
 % \subsubsection{APA or Chicago style journals}
-% 
+%
 % A combination of both tests: true if a journal is either APA or a Chicago style journal.
 % \begin{macro}{\isAPAorChicago,\isAPAandChicago}
 %    \begin{macrocode}
@@ -573,16 +573,16 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \subsection{References} 
-% The default system is natbib, APA style journals use a local version 
+% \subsection{References}
+% The default system is natbib, APA style journals use a local version
 % of the \pkg{apacite} package.
 %    \begin{macrocode}
 \isAPAStyle
-  {\RequirePackage[natbibapa]{mdpi_apacite}} 
+  {\RequirePackage[natbibapa]{mdpi_apacite}}
 %    \end{macrocode}
 % Option sectionbib is for optionally organizing references using sections (author request).
 %    \begin{macrocode}
-  {\RequirePackage[sort&compress,sectionbib]{natbib}} 
+  {\RequirePackage[sort&compress,sectionbib]{natbib}}
 %    \end{macrocode}
 %
 %
@@ -775,8 +775,8 @@
      {\leftmargin\wd\@tempboxa}
      {\leftmargin\wd\@tempboxa\@totalleftmargin \leftmargin}
      {}{\fail}
-   \let\@makefntext\footmisc@hang@makefntext  
- } 
+   \let\@makefntext\footmisc@hang@makefntext
+ }
 %    \end{macrocode}
 
 %    \begin{macrocode}
@@ -1007,7 +1007,7 @@
 %    \begin{macrocode}
    \tl_if_eq:enTF {\@status}{submit}
      {
-       \phantom{\rule{0pt}{1.2cm}}\hfill  
+       \phantom{\rule{0pt}{1.2cm}}\hfill
        \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}%
      }
      {
@@ -1044,19 +1044,19 @@
  { \cs_set:Npn \@maketitle {\mdpi@maketitle}}
 %    \end{macrocode}
 %
-% The \cs{@maketitle} command for the case that \cs{@arttype} is a Book 
+% The \cs{@maketitle} command for the case that \cs{@arttype} is a Book
 %    \begin{macrocode}
 \newcommand\mdpi@maketitle@Book
  {
-   \begin{flushleft}   
+   \begin{flushleft}
     \LARGE\boldmath\bfseries
     \hyphenpenalty=10000
     \tolerance=1000
-    \vspace{14pt} 
+    \vspace{14pt}
     \@Title
     \par
     \vspace{12pt}
-    \normalsize 
+    \normalsize
     \@Author
     \par
     % can that ever happen with Book???
@@ -1064,12 +1064,12 @@
      {
       \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
      }
-    \end{flushleft}      
+    \end{flushleft}
  }
 %    \end{macrocode}
 % The \cs{@maketitle} command if this is a Monograph:
 %    \begin{macrocode}
-\newcommand\mdpi@maketitle@Monograph{} 
+\newcommand\mdpi@maketitle@Monograph{}
 %    \end{macrocode}
 %
 % The \cs{@maketitle} command if \cs{@arttype} is a Supfile.
@@ -1101,18 +1101,18 @@
 %    \end{macrocode}
 % The \cs{@maketitle} command for the other cases.
 % For journals and preprints we have logos, article type and narrow column
-%    \begin{macrocode} 
+%    \begin{macrocode}
 \newcommand{\mdpi@maketitle}
   {
 %    \end{macrocode}
 %   Default option for the left column.
-%   The left column should be aligned with the bottom of the text. 
+%   The left column should be aligned with the bottom of the text.
 %   For this we calculate the needed offset in \cs{\MyLen} and move it down:
 %    \begin{macrocode}
    \tl_if_empty:NT \@leftcolumnsplit
      {\marginnote[\contentleftcolumn]{}[\MyLen]}
 %    \end{macrocode}
-%    
+%
 %    \begin{macrocode}
    \isPreprints
      {\vspace{0.92cm}}
@@ -1120,7 +1120,7 @@
        \begin{adjustwidth}{-\extralength}{}
      }
    \begin{flushleft}
-    \vspace*{-1.75cm}    
+    \vspace*{-1.75cm}
      {%0
       \isPreprints
         {}
@@ -1274,13 +1274,14 @@
 %    \begin{macrocode}
 \newcommand{\leftcolumnUpdatelogo}
  {%
-  \ifthenelse{\equal{\@status}{submit}}
+   \ifthenelse
+     {\equal{\@status}{submit}}
      {}
      {%
-    \href
-          {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\twodigits{\the\month}-\twodigits{\the\day}}
-          {\includegraphics[height=.6cm,actualtext=Check for updates]{logo-updates}}%
-   }%
+       \href
+         {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\twodigits{\the\month}-\twodigits{\the\day}}
+         {\includegraphics[height=.6cm,actualtext=Check for updates]{logo-updates}}%
+     }%
  }
 %    \end{macrocode}
 % \end{macro}
@@ -1290,14 +1291,15 @@
 %    \begin{macrocode}
 \newcommand{\leftcolExternalEditor}
   {%
-  \ifthenelse{\equal{\@externaleditor}{\@empty}}
+    \ifthenelse
+     {\equal{\@externaleditor}{\@empty}}
      {}
      {%
-      \IfSubStr{\@externaleditor}{ and }
+       \IfSubStr{\@externaleditor}{ and }
          {Academic Editors: \@externaleditor}
          {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}%
-         %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
-   }%
+       %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
+     }%
   }
 %    \end{macrocode}
 % \end{macro}
@@ -1313,28 +1315,34 @@
       \ifthenelse
        {
         \equal{\@journal}{proceedings}
-      \OR \equal{\@journal}{chemproc}
-      \OR \equal{\@journal}{engproc}
-      \OR \equal{\@journal}{eesp}
-      \OR \equal{\@journal}{materproc}
-      \OR \equal{\@journal}{blsf}
-      \OR \equal{\@journal}{msf}
-      \OR \equal{\@journal}{psf}
-      \OR \equal{\@journal}{csmf}
+        \OR \equal{\@journal}{chemproc}
+        \OR \equal{\@journal}{engproc}
+        \OR \equal{\@journal}{eesp}
+        \OR \equal{\@journal}{materproc}
+        \OR \equal{\@journal}{blsf}
+        \OR \equal{\@journal}{msf}
+        \OR \equal{\@journal}{psf}
+        \OR \equal{\@journal}{csmf}
        }
        {Published: \@datepublished}
        {%
-       Received: \@datereceived\\
-       \ifthenelse{\equal{\@daterevised}{\@empty}}
-          {}{Revised: \@daterevised\\}
-       Accepted: \@dateaccepted\\
-       Published: \@datepublished
-       \ifthenelse{\equal{\@datecorrected}{\@empty}}
-          {}{\\ Corrected: \@datecorrected}
-       \ifthenelse{\equal{\@dateretracted}{\@empty}}
-          {}{\\ Retracted: \@dateretracted}
+         Received: \@datereceived\\
+         \ifthenelse
+          {\equal{\@daterevised}{\@empty}}
+          {}
+          {Revised: \@daterevised\\}%
+         Accepted: \@dateaccepted\\
+         Published: \@datepublished
+         \ifthenelse
+          {\equal{\@datecorrected}{\@empty}}
+          {}
+          {\\ Corrected: \@datecorrected}%
+        \ifthenelse
+          {\equal{\@dateretracted}{\@empty}}
+          {}
+          {\\ Retracted: \@dateretracted}%
        }%
-  }%
+    }%
   }
 %    \end{macrocode}
 % \end{macro}
@@ -1347,9 +1355,11 @@
    \isPreprints
     {}
     {%
-   \ifthenelse{\equal{\@CorrStatement}{yes}}
-       {\textcorrstatement}{}%
-  }%
+      \ifthenelse
+        {\equal{\@CorrStatement}{yes}}
+        {\textcorrstatement}
+        {}%
+    }%
  }
 %    \end{macrocode}
 % \end{macro}
@@ -1372,22 +1382,17 @@
  \newcommand{\contentleftcolumn}
   {%
     \leftcolFont
-    \ifthenelse
-      {%
-       \equal{\@arttype}{Supfile}
-       \OR \equal{\@journal}{preprints}
-       \OR \equal{\@journal}{preprintschicago}
-       \OR \equal{\@journal}{preprintsapa}
-      }
+    \isPreprints
       {}
       {%
-      \ifthenelse{\equal{\@status}{submit}}
-         {}
-         {\leftcolumnUpdatelogo\par}%   % %1
-        \leftcolExternalEditor\par      % %2
-      \leftcolDates\par            % %3
-      \leftcolumnCorrstatement\par    % %4
-      \leftcolumnCright\par        % %5
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}%     % %1
+        \leftcolExternalEditor\par        % %2
+        \leftcolDates\par                 % %3
+        \leftcolumnCorrstatement\par      % %4
+        \leftcolumnCright\par             % %5
      }
    }
 %    \end{macrocode}
@@ -1413,8 +1418,8 @@
 % \cs{leftcolumnlength} is the width of the left column defined in section \ref{sec:dimensions}.
 % \cs{contentleftcolumn} is the content defined in section \ref{sec:leftcolumn}
 %    \begin{macrocode}
-    \parbox{\leftcolumnlength}{\contentleftcolumn}%
-  }%
+     \parbox{\leftcolumnlength}{\contentleftcolumn}%
+    }%
    \ResumeTagging{}%
 %    \end{macrocode}
 % \cs{Mylen} should be \cs{textheight} minus the total height of the box
@@ -1422,7 +1427,7 @@
 %  Then substract 23pt (\cs{topskip}+\cs{baselineskip+\cs{parskip}} defined in \cs{leftcolFont})
 %  to make the bottom alignment.
 %    \begin{macrocode}
-  \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-17pt-6pt}}%
+   \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox+1.5pt}}%
   }
 %    \end{macrocode}
 % \end{macro}%
@@ -1481,28 +1486,28 @@
    \or**
    \or\textdagger\textdagger
    \or\textdaggerdbl\textdaggerdbl
-   \or\textsection\textsection  
+   \or\textsection\textsection
    \or\textbardbl\textbardbl
    \or\textparagraph\textparagraph
    \or ***
    \else
-   \@ctrerr 
+   \@ctrerr
    \fi
  }
 %    \end{macrocode}
 % We avoid the use of the \cs{tabto} command as this uses math for measuring and
 % so gives unwanted structures if tagging is enabled. Instead the label is set inside
 % a box.
-% TODO: semantic tagging should be improved. 
+% TODO: semantic tagging should be improved.
 %    \begin{macrocode}
 \newcommand\mdpi@notelabel
  {
    \stepcounter{mdpi@notecnt}
    \makebox[\dist][l]
     {\UseTaggingSocket{inline/begin}{tag=Lbl}\mdpi@notesymbol\csname pdffakespace\endcsname\UseTaggingSocket{inline/end}}
- } 
+ }
 %    \end{macrocode}
-% This builts the block of notes:
+% This builds the block of notes:
 %    \begin{macrocode}
 \newcommand{\maketitlen}
  {
@@ -1513,14 +1518,14 @@
      \begin{flushleft}
      \hyphenpenalty=10000
      \tolerance=1000
-     \footnotesize  
+     \footnotesize
      \ifthenelse{\equal{\firstargument}{1}}{}{\hang}
      \@address
      \par
 %    \end{macrocode}
 % \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
 % so we set the \cs{parshape} instead.
-%    \begin{macrocode}  
+%    \begin{macrocode}
      \parshape 2~0cm \linewidth \dimeval{\dist}~\dimeval{\linewidth-\dist}
      \tl_if_eq:NnF\@authornum{author}
        {
@@ -1528,8 +1533,8 @@
          {
            \mdpi@notelabel\@corres
            \par
-         }       
-       }    
+         }
+       }
      \tl_if_empty:NF\@conference
        {
          \mdpi@notelabel
@@ -1539,12 +1544,12 @@
      \clist_map_inline:nn{first,second,third,fourth,fifth,sixth,seventh,eighth,nineth,tenth,eleventh}
       {
        \tl_if_empty:cF{@##1note}
-        {         
+        {
          \mdpi@notelabel
          \tl_use:c{@##1note}
          \par
-        } 
-      }      
+        }
+      }
      \tl_if_empty:NF\@LSID{\vskip12pt \@LSID \par}
      \end{flushleft}
    }
@@ -1680,14 +1685,14 @@
 %    \end{macrocode}
 % \subsection{Table of contents}
 % The section entries should have dots. We make use of \cs{@dottedtocline} to get the
-% tagging support. 
+% tagging support.
 %    \begin{macrocode}
 \renewcommand*\l@section
  {
    \ifnum \c@tocdepth >\z@
     \addpenalty\@secpenalty
     \addvspace{1.0em \@plus\p@}
-   \fi 
+   \fi
    \@dottedtocline{1}{0em}{1.5em}
  }
 \renewcommand{\numberline}[1]{#1.~\space} % Increase space between number and title
@@ -1695,16 +1700,16 @@
 %    \end{macrocode}
 % \subsection{Formatting of the heading commands}
 % By default \cs{paragraph} is not numbered.
-% To get paragraphs 
+% To get paragraphs
 % numbered and counted, increase the value of secnumdepth to 4
 %    \begin{macrocode}
-\setcounter{secnumdepth}{3} 
+\setcounter{secnumdepth}{3}
 %    \end{macrocode}
 % This command will at some time be added to the LaTeX kernel. It gives a space of
 % the width of a normal word space.
 %    \begin{macrocode}
 \providecommand\WordSpaceAmount[1]{
-  \glueexpr 
+  \glueexpr
         #1\fontdimen2\the\font
   plus  #1\fontdimen3\the\font
   minus #1\fontdimen4\the\font
@@ -1715,11 +1720,11 @@
 %    \begin{macrocode}
 \IfDocumentMetadataTF
  {
-   \setcounter{secnumdepth}{3} 
+   \setcounter{secnumdepth}{3}
 %    \end{macrocode}
 % We set up a dedicated headformat instance:
 %    \begin{macrocode}
-   \DeclareInstance    {headformat}{mdpi/std}{hang} 
+   \DeclareInstance    {headformat}{mdpi/std}{hang}
     {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
    \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
    \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
@@ -1747,11 +1752,11 @@
     {
      \EditInstance{heading}{section}
        {
-         heading-decls=\raggedright\LARGE\bfseries,        
+         heading-decls=\raggedright\LARGE\bfseries,
          after-vspace =8pt,
-       }     
+       }
     }
-    {}   
+    {}
 %    \end{macrocode}
 % The \cs{subsection} settings.
 %    \begin{macrocode}
@@ -1773,7 +1778,7 @@
        after-vspace =3pt,
        number-format=\theheading.,
        headformat-instance = subsection
-     } 
+     }
 %    \end{macrocode}
 % The \cs{paragraph} settings. \cs{paragraph} is not a run-in heading in the class.
 %    \begin{macrocode}
@@ -1814,7 +1819,7 @@
 
    \titleformat {\paragraph} [block] {\raggedright \normalsize} {\theparagraph.\space} {0pt} {}
    \titlespacing {\paragraph} {0pt} {12pt} {3pt}
- } 
+ }
 
 %%%% Special section title style for back matter
 \newcommand{\supplementary}[1]{
@@ -1916,7 +1921,7 @@
 
 %    \end{macrocode}
 %
-% 
+%
 %    \begin{macrocode}
 \ExplSyntaxOn
 \renewcommand{\appendix}
@@ -1936,7 +1941,7 @@
       \EditInstance{heading}{section}
         {
          after-vspace=3pt,
-         heading-decls=\raggedright\large\bfseries,         
+         heading-decls=\raggedright\large\bfseries,
         }
       \clist_map_inline:nn {section,subsection,subsubsection}
        {
@@ -1945,7 +1950,7 @@
             number-format=
              \appendixname\nobreakspace\theheading
              \tl_if_eq:NnT\@appendixtitles {yes}{.}
-          }   
+          }
        }
      }
 %    \end{macrocode}
@@ -2005,7 +2010,7 @@
   \renewcommand{\thealgorithm}{A\arabic{algorithm}}
   \renewcommand{\thegraph}{A\arabic{graph}}
 }
-  \ExplSyntaxOff 
+  \ExplSyntaxOff
 %    \end{macrocode}
 
 %    \begin{macrocode}
@@ -2056,7 +2061,7 @@
         headsep=24pt,
         includehead,
         includefoot,
-        footnotesep=0.6cm %moved from \skip\footins change for journal laws 
+        footnotesep=0.6cm %moved from \skip\footins change for journal laws
         ]{geometry}
       }
 }
@@ -2076,12 +2081,12 @@
 %    \begin{macrocode}
 \newlength\mdpi@portrait@paperwidth
 \newlength\mdpi@portrait@paperheight
-\mdpi@portrait@paperheight= \paperheight  
+\mdpi@portrait@paperheight= \paperheight
 \mdpi@portrait@paperwidth = \paperwidth
 \newcommand{\startlandscape}{%
 \isPreprints
   {
-   \clearpage  
+   \clearpage
    \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
    \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
                  right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
@@ -2089,7 +2094,7 @@
 % \cs{newgeometry} resets the paper dimension so we overwrite them again:
 %    \begin{macrocode}
    \paperwidth =\mdpi@portrait@paperheight
-   \paperheight=\mdpi@portrait@paperwidth                         
+   \paperheight=\mdpi@portrait@paperwidth
    \fancyheadoffset{0pt}
    \captionsetup{margin={0cm,0cm}}
   }
@@ -2099,7 +2104,7 @@
    \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
                  right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
    \paperwidth=\mdpi@portrait@paperheight
-   \paperheight=\mdpi@portrait@paperwidth    
+   \paperheight=\mdpi@portrait@paperwidth
    \fancyheadoffset{0pt}
    \captionsetup{margin={4.6cm,0cm}}
   }
@@ -2149,10 +2154,10 @@
 \RequirePackage{caption}
 \captionsetup
   {
-   labelfont={bf, small, stretch=1.17}, 
-   labelsep=period, 
-   textfont={small, stretch=1.17}, 
-   aboveskip=6pt, 
+   labelfont={bf, small, stretch=1.17},
+   labelsep=period,
+   textfont={small, stretch=1.17},
+   aboveskip=6pt,
    justification=justified
   }
 \captionsetup[figure] {position=bottom,belowskip=-6pt}
@@ -2161,7 +2166,7 @@
 \captionsetup[listing]{position=top}
 \captionsetup[table]  {position=top}
 \captionsetup[boxenv] {position=top}
- 
+
 %    \end{macrocode}
 % Why this??
 %    \begin{macrocode}
@@ -2171,11 +2176,11 @@
  }
  {
   \captionsetup{singlelinecheck=off}
- } 
+ }
 %    \end{macrocode}
 % A minimal, first adjustment of captions with tagging.
 % This should be replaced by templates once there are implemented in LaTeX.
-% TODO: spacing (including line spacing) must be checked, 
+% TODO: spacing (including line spacing) must be checked,
 %    \begin{macrocode}
 \IfDocumentMetadataT
  {
@@ -2216,10 +2221,10 @@
 % \subsection{List settings}
 % The tagging code doesn't support yet the star-value for \texttt{leftmargin} and
 % the value \texttt{parleft} for align, so we have to change that:
-% TODO: values should be reviewed, e.g. for second level. 
+% TODO: values should be reviewed, e.g. for second level.
 %    \begin{macrocode}
 \IfDocumentMetadataTF
- { 
+ {
   \setlist[itemize]
     {
      topsep=3pt,
@@ -2411,8 +2416,8 @@
         ,item-vspace=0pt
         ]%
        {\arabic{enumi}}
-       {% 
-        \labelsep=1.5mm      
+       {%
+        \labelsep=1.5mm
         \isAPAorChicago
           {%
            \ifthenelse{\equal{\@externalbibliography}{\@empty}}
@@ -2466,28 +2471,45 @@
 }
 
 %%%% Copyright info
-\newcommand{\cright}{%
-        \ifthenelse{\equal{\@arttype}{Supfile}}{%
-    }{%
-    \ifthenelse{\equal{\@status}{submit}}{%
-    \fontdimen2\font=1.2pt
-      \raggedright\textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum. %
-      Submitted to {\em\journalname} for possible open access publication under the terms and %
-                   conditions of the %
-      }{%
-      {\raggedright\textbf{Copyright:} \copyright \ {\@copyrightyear} by the \@authornum. %
-                    \ifthenelse{\equal{\@societyowner}{}}{}{%
-                    Published by MDPI on behalf of the {\@societyowner}.}
-       Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms %
-                    and conditions of the %
-        }
-       }%
-    \ifthenelse{\equal{\@journal}{ijtpp}}{%
-     \href{https://creativecommons.org/licenses/by-nc-nd/4.0/}{Creative Commons Attribution %
-     (CC BY-NC-ND) license}}{\href{https://creativecommons.org/licenses/by/4.0/}%
-     {Creative Commons Attribution (CC~BY) license}}.
-  }
-}
+\newcommand{\cright}
+  {%
+    \ifthenelse
+      {\equal{\@arttype}{Supfile}}
+      {}
+      {%
+       \ifthenelse
+         {\equal{\@status}{submit}}
+         {%
+           \fontdimen2\font=1.2pt
+           \raggedright
+           \textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum. %
+           Submitted to {\em\journalname} for possible open access publication
+           under the terms and conditions of the %
+         }
+         {%
+          {\raggedright\textbf{Copyright:} \copyright \ {\@copyrightyear} by the \@authornum. %
+            \ifthenelse
+              {\equal{\@societyowner}{}}{}
+              {Published by MDPI on behalf of the {\@societyowner}.}
+            Licensee MDPI, Basel, Switzerland.
+            This article is an open access article distributed under the terms %
+            and conditions of the %
+          }
+         }%
+       \ifthenelse
+         {\equal{\@journal}{ijtpp}}
+         {%
+           \href
+             {https://creativecommons.org/licenses/by-nc-nd/4.0/}
+             {Creative Commons Attribution %
+               (CC BY-NC-ND) license}%
+         }
+         {%
+           \href{https://creativecommons.org/licenses/by/4.0/}%
+             {Creative Commons Attribution (CC~BY) license}%
+         }.
+      }
+   }
 
 
 
