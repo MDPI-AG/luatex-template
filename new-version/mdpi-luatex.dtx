@@ -993,6 +993,44 @@
 %    \begin{macrocode}
 \newcommand\mdpi@url{https://www.mdpi.com}
 \ExplSyntaxOn
+%    \end{macrocode}
+% The \cs{maketitle} command for the case that \cs{@arttype} is a Book 
+%    \begin{macrocode}
+\newcommand\@mdpi@maketitle@Book
+ {
+   \begin{flushleft}   
+    % 0: nothing    
+    \vspace{14pt} %from 1
+    % 2
+    \LARGE\boldmath\bfseries
+    \hyphenpenalty=10000
+    \tolerance=1000
+    \@Title
+    \par
+    \vspace{12pt}
+    \normalsize 
+    \@Author
+    \par
+    \ifthenelse
+    {\equal{\@longauthorlist}{\@empty}}
+    {\end{flushleft}}
+    {}%   
+    % can that ever happen with Book???
+    \ifthenelse
+    {\equal{\@leftcolumnsplit}{\@empty}}
+    {% Left column split
+    }
+    {
+      \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
+    }     
+ }
+
+\newcommand\@mdpi@maketitle@Monograph
+ {} 
+ 
+
+%    \end{macrocode}
+%    \begin{macrocode} 
 \renewcommand{\@maketitle}
  {
 %    \end{macrocode}
