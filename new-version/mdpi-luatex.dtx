@@ -1000,6 +1000,7 @@
  {
    {Book}      {\cs_set:Npn \@maketitle {\@mdpi@maketitle@Book}}
    {Monograph} {\cs_set:Npn \@maketitle {\@mdpi@maketitle@Monograph}}
+   {Supfile}   {\cs_set:Npn \@maketitle {\@mdpi@maketitle@Supfile}}
  }
  { \cs_set:Npn \@maketitle {\@mdpi@maketitle}}
 %    \end{macrocode}
@@ -1008,12 +1009,10 @@
 \newcommand\@mdpi@maketitle@Book
  {
    \begin{flushleft}   
-    % 0: nothing    
-    \vspace{14pt} %from 1
-    % 2
     \LARGE\boldmath\bfseries
     \hyphenpenalty=10000
     \tolerance=1000
+    \vspace{14pt} 
     \@Title
     \par
     \vspace{12pt}
@@ -1022,11 +1021,11 @@
     \par
     % can that ever happen with Book???
     \ifthenelse
-    {\equal{\@leftcolumnsplit}{\@empty}}
-    {}
-    {
+     {\equal{\@leftcolumnsplit}{\@empty}}
+     {}
+     {
       \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
-    }
+     }
     \end{flushleft}      
  }
 %    \end{macrocode}
@@ -1034,36 +1033,56 @@
 %    \begin{macrocode}
 \newcommand\@mdpi@maketitle@Monograph{} 
 %    \end{macrocode}
+%
+% The \cs{@maketitle} command if \cs{@arttype} is a Supfile.
+% In this case the left column is empty so we do not have to set it.
+%    \begin{macrocode}
+\newcommand\@mdpi@maketitle@Supfile
+ {
+   \hbox{}
+   \isPreprints
+     {\vspace{0.92cm}}
+     {
+       \begin{adjustwidth}{-\extralength}{}
+     }
+   \begin{flushleft}
+     \LARGE
+     \raggedright
+     \hyphenpenalty=10000
+     \tolerance=1000
+     \noindent\textbf{Supplementary~Materials:~\@Title}%
+     \par
+     \vspace{12pt}
+     \normalsize
+     \noindent\boldmath\bfseries{\@Author}
+   \end{flushleft}
+   \isPreprints
+     {}
+     {\end{adjustwidth}}
+ }
+%    \end{macrocode}
+% The \cs{@maketitle} command for the other cases.
+% For journals and preprints we have logos, article type and narrow column
 %    \begin{macrocode} 
 \newcommand{\@mdpi@maketitle}
  {
-%    \end{macrocode}
-% for books we have no logos, article type and narrow column:
-%    \begin{macrocode}
-  \isBookContribution
-   {}
-%    \end{macrocode}
-% for journals and preprints we have logos, article type and narrow column
-%    \begin{macrocode}
-   {% 
-     \ifthenelse{\equal{\@leftcolumnsplit}{\@empty}}
 %    \end{macrocode}
 %   Default option for the left column.
 %   The left column should be aligned with the bottom of the text. 
 %   For this we calculate the needed offset in \cs{\MyLen} and move it down:
 %    \begin{macrocode}
-      {\marginnote[\contentleftcolumn]{}[\MyLen]}
-      {} %empty else
+   \ifthenelse{\equal{\@leftcolumnsplit}{\@empty}}
+     {\marginnote[\contentleftcolumn]{}[\MyLen]}
+     {} %empty else
 %    \end{macrocode}
 %    
 %    \begin{macrocode}
-    \isPreprints
-      {\vspace{0.92cm}}
-      {%
-        \begin{adjustwidth}{-\extralength}{}
-      }%
-   }%
-  \begin{flushleft}
+   \isPreprints
+     {\vspace{0.92cm}}
+     {
+       \begin{adjustwidth}{-\extralength}{}
+     }
+   \begin{flushleft}
    \ifthenelse
     {\equal{\@arttype}{Supfile}}
     {%
@@ -1071,25 +1090,16 @@
      \raggedright
      \hyphenpenalty=10000
      \tolerance=1000
-     \noindent\textbf{Supplementary Materials: \@Title}%
+     \noindent\textbf{Supplementary~Materials:~\@Title}%
      \par
      \vspace{12pt}
      \normalsize
      \noindent\boldmath\bfseries{\@Author}
     }
     {%
-      \isBookContribution
-       {}
-       {\vspace*{-1.75cm}}%    
+      \vspace*{-1.75cm}    
      {%0
-      \ifthenelse
-        {
-         \equal{\@journal}{preprints} \OR 
-         \equal{\@journal}{preprintschicago} \OR 
-         \equal{\@journal}{preprintsapa} \OR 
-         \equal{\@arttype}{Book} \OR 
-         \equal{\@arttype}{Monograph}
-        }
+      \isPreprints
         {}
         {
          \vspace{-2pt}%
@@ -1127,24 +1137,20 @@
           }% end submit/else
          \par
          \rule{\fulllength}{0.4pt}%
-        }% end preprint/book else
+        }% end preprint else
       \par
      }%0
      {%1
       \vspace{14pt}
       \normalsize
-      \isBookContribution
-        {}
-        {\textit{\@arttype}}%
+      \textit{\@arttype}
       \par
      }%1
      {%2
       \LARGE
       \hyphenpenalty=10000
       \tolerance=1000
-      \isMonograph
-        {}
-        {\boldmath\bfseries{\@Title}}%
+      \boldmath\bfseries{\@Title}
       \par
       \vspace{12pt}
      }%2
@@ -1160,36 +1166,20 @@
      }
      {%3
       \hyphenpenalty=10000
-     \tolerance=1000
-     \isMonograph
-       {}
-       {%
-         \boldmath\bfseries{\@Author}
-         \ifthenelse
-           {\equal{\@arttype}{Book}}
-           {\vspace{-12pt}}
-           {}
-       }%
-     \par
-     \vspace{12pt}
+      \tolerance=1000
+      \boldmath\bfseries{\@Author}
+      \par
+      \vspace{12pt}
      }%3
     }%end Supfile test
   \ifthenelse
     {\equal{\@longauthorlist}{\@empty}}
-    {\end{flushleft}}
-    {}%
-  \isBookContribution
-    {}
-    {%
-      \ifthenelse
-        {\equal{\@longauthorlist}{\@empty}}
-        {%
-          \isPreprints
+    {\end{flushleft}
+     \isPreprints
             {}
             {\end{adjustwidth}}
-        }
-        {}%
     }
+    {}%
   \ifthenelse
     {\equal{\@leftcolumnsplit}{\@empty}}
     {% Left column split
@@ -1197,7 +1187,6 @@
     {
       \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
     }
-  \isMonograph{\vspace{-2cm}}{}
  }
 \ExplSyntaxOff
 
