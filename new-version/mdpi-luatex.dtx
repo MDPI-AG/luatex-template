@@ -1083,20 +1083,6 @@
        \begin{adjustwidth}{-\extralength}{}
      }
    \begin{flushleft}
-   \ifthenelse
-    {\equal{\@arttype}{Supfile}}
-    {%
-     \LARGE
-     \raggedright
-     \hyphenpenalty=10000
-     \tolerance=1000
-     \noindent\textbf{Supplementary~Materials:~\@Title}%
-     \par
-     \vspace{12pt}
-     \normalsize
-     \noindent\boldmath\bfseries{\@Author}
-    }
-    {%
       \vspace*{-1.75cm}    
      {%0
       \isPreprints
@@ -1171,7 +1157,6 @@
       \par
       \vspace{12pt}
      }%3
-    }%end Supfile test
   \ifthenelse
     {\equal{\@longauthorlist}{\@empty}}
     {\end{flushleft}
