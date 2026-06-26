@@ -994,7 +994,16 @@
 \newcommand\mdpi@url{https://www.mdpi.com}
 \ExplSyntaxOn
 %    \end{macrocode}
-% The \cs{maketitle} command for the case that \cs{@arttype} is a Book 
+%
+%    \begin{macrocode}
+\str_case:onF{\@arttype}
+ {
+   {Book}      {\cs_set:Npn \@maketitle {\@mdpi@maketitle@Book}}
+   {Monograph} {\cs_set:Npn \@maketitle {\@mdpi@maketitle@Monograph}}
+ }
+ { \cs_set:Npn \@maketitle {\@mdpi@maketitle}}
+%    \end{macrocode}
+% The \cs{@maketitle} command for the case that \cs{@arttype} is a Book 
 %    \begin{macrocode}
 \newcommand\@mdpi@maketitle@Book
  {
@@ -1011,27 +1020,22 @@
     \normalsize 
     \@Author
     \par
-    \ifthenelse
-    {\equal{\@longauthorlist}{\@empty}}
-    {\end{flushleft}}
-    {}%   
     % can that ever happen with Book???
     \ifthenelse
     {\equal{\@leftcolumnsplit}{\@empty}}
-    {% Left column split
-    }
+    {}
     {
       \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
-    }     
+    }
+    \end{flushleft}      
  }
-
-\newcommand\@mdpi@maketitle@Monograph
- {} 
- 
-
+%    \end{macrocode}
+% The \cs{@maketitle} command if this is a Monograph
+%    \begin{macrocode}
+\newcommand\@mdpi@maketitle@Monograph{} 
 %    \end{macrocode}
 %    \begin{macrocode} 
-\renewcommand{\@maketitle}
+\newcommand{\@mdpi@maketitle}
  {
 %    \end{macrocode}
 % for books we have no logos, article type and narrow column:
