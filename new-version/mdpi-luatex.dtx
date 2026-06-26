@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-06-24}
-\def\mdpiversion{v7.0f}
+\def\mdpidate{2026-06-26}
+\def\mdpiversion{v7.0g}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -546,7 +546,7 @@
 % \subsubsection{APA or Chicago style journals}
 % 
 % A combination of both tests: true if a journal is either APA or a Chicago style journal.
-% \begin{macro}{\isAPAorChicago}
+% \begin{macro}{\isAPAorChicago,\isAPAandChicago}
 %    \begin{macrocode}
 \prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
  {
@@ -565,6 +565,10 @@
     }
  }
 \newcommand{\isAPAorChicago}{\__mdpi_is_journal_chicagostyle:TF}
+%    \end{macrocode}
+% For compatibility we provide an alias using \texttt{and}:
+%    \begin{macrocode}
+\let\isAPAandChicago\isAPAorChicago
 \ExplSyntaxOff
 %    \end{macrocode}
 % \end{macro}
