@@ -1423,15 +1423,16 @@
    \ResumeTagging{}%
 %    \end{macrocode}
 % \cs{Mylen} should be \cs{textheight} minus the total height of the box
-%  so that the resulting value can be used to align the left column to the bottom of \cs{textheight}.
-%  Then substract 23pt (\cs{topskip}+\cs{baselineskip+\cs{parskip}} defined in \cs{leftcolFont})
-%  to make the bottom alignment.
+%  so that the resulting value can be used to align the left column 
+%  to the bottom of \cs{textheight}. A small correction is added to account for 
+%  the depth of a strutbox. 
 %    \begin{macrocode}
    \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-2.1pt}}%
   }
 %    \end{macrocode}
 % \end{macro}%
-
+%
+% TODO: how is that used????
 %    \begin{macrocode}
 % Left column split options for long titles/author lists
 % Make new command for deciding for the split option
@@ -1469,7 +1470,7 @@
 }
 
 %    \end{macrocode}
-% \subsection{Maketitle part 2}
+% \subsection{\cs{maketitlen} for notes after the main title}
 % We set up a counter and define symbols for the various notes:
 %    \begin{macrocode}
 \ExplSyntaxOn
@@ -1507,7 +1508,9 @@
     {\UseTaggingSocket{inline/begin}{tag=Lbl}\mdpi@notesymbol\csname pdffakespace\endcsname\UseTaggingSocket{inline/end}}
  }
 %    \end{macrocode}
-% This builds the block of notes:
+%
+% \begin{macro}{\maketitlen}
+%  This builds the block of notes:
 %    \begin{macrocode}
 \newcommand{\maketitlen}
  {
@@ -1556,7 +1559,8 @@
  }
 \ExplSyntaxOff
 %    \end{macrocode}
-
+% \end{macro}
+% 
 %    \begin{macrocode}
 %%%% Abstract, keywords, journal data, PACS, MSC, JEL
 \newcommand{\abstractkeywords}{
