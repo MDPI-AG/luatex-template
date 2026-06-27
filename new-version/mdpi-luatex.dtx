@@ -1427,7 +1427,7 @@
 %  Then substract 23pt (\cs{topskip}+\cs{baselineskip+\cs{parskip}} defined in \cs{leftcolFont})
 %  to make the bottom alignment.
 %    \begin{macrocode}
-   \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox+1.5pt}}%
+   \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-2.1pt}}%
   }
 %    \end{macrocode}
 % \end{macro}%

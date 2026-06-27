@@ -73,7 +73,7 @@ TEST 1: Show PDF Tags
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
-      <?MarkedContent page="1" ?>Published: 
+      <?MarkedContent page="1" ?>Published:
      </text>
     </text-unit>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
@@ -578,9 +578,9 @@ Completed box being shipped out [1]
 ......\write1{\newmarginnote{note.1.1}{{\themn@abspage }{\number \mn@lastxpos sp}}}
 ......\hbox(0.0+0.0)x0.0, glue set - 131.1672fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\vbox(0.0+0.0)x116.65646, glue set - 544.4029fil, direction TLT
+.......\vbox(0.0+0.0)x116.65646, glue set - 565.30286fil, direction TLT
 ........\kern0.0
-........\kern544.4029
+........\kern565.30289
 ........\vbox(0.0+0.0)x116.65646, glue set - 138.77982fil, direction TLT
 .........\kern0.0
 .........\glue(\parskip) 0.0 plus 1.0
@@ -686,7 +686,7 @@ Completed box being shipped out [1]
 .........\glue(\parskip) 6.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 4.951
-.........\hbox(5.082+0.14)x116.65646, glue set 81.53514fil, direction TLT
+.........\hbox(5.082+0.14)x116.65646, glue set 84.74347fil, direction TLT
 ..........\localpar
 ...........\localinterlinepenalty=0
 ...........\localbrokenpenalty=0
@@ -707,9 +707,8 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7 d
 ..........\TU/texgyrepagella(0)/m/n/7 :
-..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) 0.58333 plus 1.75 minus 0.29166
 ..........\penalty 10000
+..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue(\parskip) 6.0

@@ -16,6 +16,7 @@
         Layout:TextAlign="End"
         rolemaps-to="P"
        >
+      <?MarkedContent page="1" ?>
      </text>
     </text-unit>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
@@ -54,7 +55,7 @@
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
-      <?MarkedContent page="1" ?>Published: 
+      <?MarkedContent page="1" ?>Published:
      </text>
     </text-unit>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
