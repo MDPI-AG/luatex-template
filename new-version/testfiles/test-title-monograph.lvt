@@ -1,0 +1,12 @@
+\DocumentMetadata{uncompress,tagging=on}
+\input{regression-test}
+\documentclass[monograph]{mdpi-luatex}
+%\longauthorlist{yes} %errors!
+\AuthorNames{Firstname Lastname, Firstname Lastname and Firstname Lastname}
+\Title{some title}
+\START\showoutput
+\begin{document}
+
+blub
+
+\end{document}

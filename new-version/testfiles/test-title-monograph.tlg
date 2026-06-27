@@ -1,0 +1,516 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+(../luamml.sty
+Package: luamml ....-..-.. v... Automatically generate presentational MathML from LuaTeX math expressions
+\l__luamml_flag_int=\count...
+\l__luamml_pretty_int=\count...
+\tracingmathml=\count...
+Custom whatsit flattened = 5
+Inserting `luamml.mathflatten' in `pre_mlist_to_hlist_filter'.
+Lua function __luamml_flatten_current_mlist: = ...
+Lua function RegisterFamilyMapping = ...
+Lua function RegisterTextFamily = ...
+Inserting `luamml.to_mathml' in `pre_mlist_to_hlist_filter'.
+Lua function luamml_get_last_mathml_stream:e = ...
+Lua function luamml_begin_single_file: = ...
+Lua function luamml_end_single_file: = ...
+Lua function __luamml_register_output_hook:N = ...
+Lua function __luamml_disable_output_hook: = ...
+Lua function __luamml_flattened_mathgroup_begin: = ...
+Lua function __luamml_flattened_mathgroup_finish: = ...
+Lua function __luamml_annotate_end:we = ...
+Lua function __luamml_annotate_end:e = ...
+Lua function __luamml_annotate_attribute_end:e = ...
+Inserting `mathml amsmath processing' in `hpack_filter'.
+Lua function __luamml_array_init_col: = ...
+Lua function __luamml_array_finalize_col:w = ...
+Lua function __luamml_array_save_array: = ...
+Lua function __luamml_array_finalize_array: = ...
+\l__luamml_amsmath_tag_struct_num_int=\count...
+(../luamml-patches-kernel.sty
+Package: luamml-patches-kernel ....-..-.. v... Feel free to add a description here
+) (../luamml-patches-amsmath.sty
+Package: luamml-patches-amsmath ....-..-.. v... Feel free to add a description here
+Lua function __luamml_amsmath_add_last_to_row: = ...
+Lua function __luamml_amsmath_add_box_to_row: = ...
+Lua function __luamml_amsmath_set_row_columnalign:n = ...
+Lua function __luamml_amsmath_save_inner_table:n = ...
+Lua function __luamml_amsmath_save_smallmatrix: = ...
+Lua function __luamml_amsmath_finalize_inner_table: = ...
+Lua function __luamml_amsmath_finalize_table:n = ...
+Lua function __luamml_amsmath_save_tag: = ...
+Lua function __luamml_amsmath_save_tag_with_struct_elem:N = ...
+Lua function __luamml_amsmath_set_tag: = ...
+Lua function __luamml_amsmath_save_intertext_with_struct_elem:N = ...))
+Package translations Info: No language package found. I am going to use `english' as default language. on input line ....
+(../hyperref.sty
+Package: hyperref ....-..-.. v... Hypertext links for LaTeX
+(../kvdefinekeys.sty
+Package: kvdefinekeys ....-..-.. v... Define keys (HO)
+) (../pdfescape.sty
+Package: pdfescape ....-..-.. v... Implements pdfTeX's escape features (HO)
+) (../hycolor.sty
+Package: hycolor ....-..-.. v... Color options for hyperref/bookmark (HO)
+) (../nameref.sty
+Package: nameref ....-..-.. v... Cross-referencing by name of section
+(../gettitlestring.sty
+Package: gettitlestring ....-..-.. v... Cleanup title references (HO)
+)
+\c@section@level=\count...
+) (../stringenc.sty
+Package: stringenc ....-..-.. v... Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen...
+\Hy@linkcounter=\count...
+\Hy@pagecounter=\count...
+(../pd1enc.def
+File: pd1enc.def ....-..-.. v... Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count...
+(../puenc.def
+File: puenc.def ....-..-.. v... Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line ....
+Package hyperref Info: Option `bookmarksopen' set `true' on input line ....
+Package hyperref Info: Option `pdffitwindow' set `true' on input line ....
+Package hyperref Info: Option `colorlinks' set `true' on input line ....
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line ....
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line ....
+Package hyperref Info: Hyper figures OFF on input line ....
+Package hyperref Info: Link nesting OFF on input line ....
+Package hyperref Info: Hyper index ON on input line ....
+Package hyperref Info: Plain pages OFF on input line ....
+Package hyperref Info: Backreferencing OFF on input line ....
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line ....
+\c@Hy@tempcnt=\count...
+(../url.sty
+\Urlmuskip=\muskip...
+Package: url ....-..-..  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line ....
+\XeTeXLinkMargin=\dimen...
+(../bitset.sty
+Package: bitset ....-..-.. v... Handle bit-vector datatype (HO)
+(../bigintcalc.sty
+Package: bigintcalc ....-..-.. v... Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count...
+\Field@Width=\dimen...
+\Fld@charsize=\dimen...
+Package hyperref Info: Hyper figures OFF on input line ....
+Package hyperref Info: Link nesting OFF on input line ....
+Package hyperref Info: Hyper index ON on input line ....
+Package hyperref Info: backreferencing OFF on input line ....
+Package hyperref Info: Link coloring ON on input line ....
+Package hyperref Info: Link coloring with OCG OFF on input line ....
+Package hyperref Info: PDF/A mode OFF on input line ....
+\Hy@abspage=\count...
+\c@Item=\count...
+)
+Package hyperref Info: Driver (custom): hgeneric-testphase.
+(../hgeneric-testphase.def
+File: hgeneric-testphase.def ....-..-.. v... generic Hyperref driver for the LaTeX PDF management bundle
+(../hyperref-colorschemes.def)
+LaTeX Info: Redefining \href on input line ....
+LaTeX Info: Redefining \url on input line ....
+(../bookmark.sty
+Package: bookmark ....-..-.. v... PDF bookmarks (HO)
+(../bkm-luatex.def
+File: bkm-luatex.def ....-..-.. v... bookmark driver for luaTeX (HO)
+\BKM@id=\count...
+))
+\l__hyp_tmpa_box=\box...
+\l__hyp_tmpa_int=\count...
+\l__hyp_dest_box=\box...
+\g__hyp_linknestlevel_int=\count...
+\HyAnn@Count=\count...
+\Fld@listcount=\count...
+\Hy@SectionHShift=\skip...
+) (../cleveref.sty
+Package: cleveref ....-..-.. v... Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line ....
+LaTeX Info: Redefining \cref on input line ....
+LaTeX Info: Redefining \Cref on input line ....
+LaTeX Info: Redefining \crefrange on input line ....
+LaTeX Info: Redefining \Crefrange on input line ....
+LaTeX Info: Redefining \cpageref on input line ....
+LaTeX Info: Redefining \Cpageref on input line ....
+LaTeX Info: Redefining \cpagerefrange on input line ....
+LaTeX Info: Redefining \Cpagerefrange on input line ....
+LaTeX Info: Redefining \labelcref on input line ....
+LaTeX Info: Redefining \labelcpageref on input line ....
+Package cleveref Info: `subfig' support loaded on input line ....
+Package cleveref Info: always capitalise cross-reference names on input line ....
+Package cleveref Info: always capitalise cross-reference names on input line ....
+Package cleveref Info: no abbreviation of names on input line ....
+)
+==> First Aid for cleveref.sty applied!
+\symAMSb=\mathgroup5
+(test-title-monograph.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line ....
+LaTeX Font Info:    ... okay on input line ....
+Inserting `tagpdf' in `pre_shipout_filter'.
+Inserting `tagpdf' in `pre_shipout_filter'.
+Info: mathml file test-title-monograph-mathml does not exist
+Info: reading mathml file test-title-monograph-luamml-mathml
+(test-title-monograph-luamml-mathml.html)
+Info: Activating mathml support
+(../supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count...
+\scratchdimen=\dimen...
+\scratchbox=\box...
+\nofMPsegments=\count...
+\nofMParguments=\count...
+\everyMPshowfont=\toks...
+\MPscratchCnt=\count...
+\MPscratchDim=\dimen...
+\MPnumerator=\count...
+\makeMPintoPDFobject=\count...
+\everyMPtoPDFconversion=\toks...
+) (../epstopdf-base.sty
+Package: epstopdf-base ....-..-.. v... Base part for package epstopdf
+(../grfext.sty
+Package: grfext ....-..-.. v... Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line ....
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line ....
+(../epstopdf-sys.cfg
+File: epstopdf-sys.cfg ....-..-.. v... Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Info: Redefining \microtypecontext on input line ....
+Package microtype Info: Applying patch `item' on input line ....
+Package microtype Info: Applying patch `toc' on input line ....
+Package microtype Info: Applying patch `eqnum' on input line ....
+Package microtype Info: Applying patch `footnote' on input line ....
+Package microtype Info: Applying patch `verbatim' on input line ....
+LaTeX Info: Redefining \microtypesetup on input line ....
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `texgyrepagella' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(../translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line ....
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includefoot 
+* h-part:(L,W,R)=(58.32823pt, 367.04037pt, 58.32823pt)
+* v-part:(T,H,B)=(51.21504pt, 621.69264pt, 21.33955pt)
+* \paperwidth=483.69684pt
+* \paperheight=694.24724pt
+* \textwidth=367.04037pt
+* \textheight=601.69264pt
+* \oddsidemargin=-13.94176pt
+* \evensidemargin=-13.94176pt
+* \topmargin=-57.05495pt
+* \headheight=12.0pt
+* \headsep=24.0pt
+* \topskip=10.0pt
+* \footskip=20.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=17.07182pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemargintrue
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+Package newfloat Info: `float' package detected.
+Package hyperref Info: Link coloring ON on input line ....
+(../mt-cmr.cfg
+File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `texgyrepagella-math' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+msb on input line ....
+File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
+)
+\g__math_luamml_iow=\write...
+Package tagpdf Info: luamml has been enabled and will create a MathML file.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Completed box being shipped out [1]
+\vbox(600.6377+3.14552)x353.09862, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
+.....\kern-72.26999
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 58.05869fil, direction TLT
+..\kern0.0
+..\kern-57.05495
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set 14.9455fil, direction TLT
+...\kern0.0
+...\kern-13.94176
+...\kern-1.00374
+...\pdfdest name{page.1} xyz
+...\pdfdest name{page.1} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(600.6377+3.14552)x353.09862, direction TLT
+..\glue -57.05495
+..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(0.0+0.0)x367.04037, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(0.0+0.0)x367.04037, direction TLT
+......\glue -131.16722
+......\hbox(0.0+0.0)x498.2076, direction TLT
+.......\vbox(0.0+0.0)x498.2076, direction TLT
+........\hbox(0.0+0.0)x498.2076, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 498.20758fil, direction TLT
+..........\vbox(0.0+0.0)x498.2076, direction TLT
+...........\hbox(0.0+0.0)x498.2076, glue set 249.10379fil, direction TLT
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\vbox(0.0+0.0)x498.2076, direction TLT
+..........\hbox(0.0+0.0)x498.2076, glue set 249.10379fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\hbox(0.0+0.0)x0.0, glue set - 498.20758fil, direction TLT
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\vbox(0.0+0.0)x498.2076, direction TLT
+...........\hbox(0.0+0.0)x498.2076, glue set 498.20758fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+........\glue 0.0
+......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfcolorstack 0 pop
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdflinkstate 0
+...\glue 24.0
+...\glue(\lineskip) 0.0
+...\vbox(601.69264+0.0)x367.04037, glue set 591.50946fil, direction TLT
+....\write1{\def\@LN@column{1}}
+....\vbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\hbox(0.0+0.0)x0.0, glue set - 11.0fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\vbox(0.0+0.0)x0.0, direction TLT
+........\glue 0.0
+........\glue 0.0
+........\glue 0.0
+.......\glue 11.0
+....\write-{}
+....\pdfcolorstack 0 push {0 g 0 G}
+....\pdfdest name{Doc-Start} xyz
+....\pdfdest name{Doc-Start} xyz
+....\glue(\topskip) 2.74
+....\hbox(7.26+0.12)x367.04037, glue set 325.7008fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-0.12
+....\hbox(0.0+0.12)x0.0, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfcolorstack 0 push {0 g 0 G}
+.....\hbox(3.385+0.0)x0.0, glue set - 387.04037fil, direction TLT
+......\glue 10.0
+......\glue 367.04037
+......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfcolorstack 0 pop
+....\penalty 10000
+....\kern-0.12
+....\hbox(0.0+0.12)x0.0, direction TLT
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
+...\glue(\baselineskip) 8.4665
+...\hbox(11.5335+3.14552)x367.04037, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfcolorstack 0 push {0 g 0 G}
+....\hbox(11.5335+3.14552)x367.04037, direction TLT
+.....\glue 0.0
+.....\hbox(11.5335+3.14552)x367.04037, direction TLT
+......\vbox(11.5335+3.14552)x367.04037, direction TLT
+.......\rule(0.0+0.0)x367.04037
+.......\glue 4.19403
+.......\hbox(7.33946+3.14552)x367.04037, direction TLT
+........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
+.........\vbox(0.0+0.0)x367.04037, direction TLT
+..........\hbox(0.0+0.0)x367.04037, glue set 183.52019fil, direction TLT
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\vbox(7.33946+3.14552)x367.04037, direction TLT
+.........\hbox(7.33946+3.14552)x367.04037, glue set 181.62018fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\kern-0.2 (left margin)
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\TU/texgyrepagella(0)/m/n/8 1
+..........\rule(7.33946+3.14552)x0.0
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\vbox(0.0+0.0)x367.04037, direction TLT
+..........\hbox(0.0+0.0)x367.04037, glue set 367.04037fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfcolorstack 0 pop
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+.\kern0.0
+.\kern0.0
+.\kern-603.78322
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern603.78322
+.\pdfliteral page <lua data reference ...>
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+<<latex-list-css.html>><<latex-align-css.html>> (test-title-monograph.aux)
+MathML statistic
+================
+==> 0 MathML fragments read
+==> 0 different MathML fragments
+==> 0 math fragments found
+==> 0 fitting MathML AF found
+==> 0 MathML AF attached
+Package tagpdf Info: Finalizing the tagging structure:
+(tagpdf)             Writing out ~13 structure objects
+(tagpdf)             with ~3 'MC' leaf nodes.
+(tagpdf)             Be patient if there are lots of objects!
+Package tagpdf Info: writing ParentTree
+Package tagpdf Info: writing IDTree
+Package tagpdf Info: writing RoleMap
+Package tagpdf Info: writing ClassMap
+Package tagpdf Info: writing NameSpaces
+Package tagpdf Info: writing StructElems
+Package tagpdf Info: writing Root
+***************
+Compilation 1 of test file completed with exit status 0
+Compilation 2 of test file completed with exit status 0
