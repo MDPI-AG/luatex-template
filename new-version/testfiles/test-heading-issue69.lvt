@@ -1,0 +1,19 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\usepackage{lipsum}
+% avoid maketitle:
+\RemoveFromHook{begindocument/end}[mdpi-luatex]
+\begin{document}
+\START\showoutput
+\ExplSyntaxOn
+\clist_map_inline:nn {section,subsection,subsubsection}
+ {
+   \use:c{#1}{\lipsum*[1][1-2]}
+ }
+\ExplSyntaxOff
+
+
+\end{document} 

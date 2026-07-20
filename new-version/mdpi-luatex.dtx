@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-07-19}
-\def\mdpiversion{v7.0h}
+\def\mdpiversion{v7.0i}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -1752,6 +1752,10 @@
        before-vspace=12pt,
        after-vspace =3pt,
        number-format=\theheading.,
+%    \end{macrocode}
+% Avoid hanging indent:
+%    \begin{macrocode}
+       title-decls = \hangindent0pt,
        headformat-instance = section %until the release
      }
 %    \end{macrocode}
@@ -1772,6 +1776,7 @@
    \EditInstance{heading}{subsection}
      {
        heading-decls=\raggedright \normalsize\itshape,
+       title-decls = \hangindent0pt,
        before-vspace=12pt,
        after-vspace =3pt,
        number-format=\theheading.,
@@ -1783,6 +1788,7 @@
    \EditInstance{heading}{subsubsection}
      {
        heading-decls=\raggedright \normalsize,
+       title-decls = \hangindent0pt,
        before-vspace=12pt,
        after-vspace =3pt,
        number-format=\theheading.,
