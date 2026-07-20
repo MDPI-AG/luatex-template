@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-06-26}
-\def\mdpiversion{v7.0g}
+\def\mdpidate{2026-07-19}
+\def\mdpiversion{v7.0h}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -793,7 +793,6 @@
 % Indents & Commands for hanging indent
 \setlength{\parindent}{0.75cm}
 \newcommand{\dist}{1.7em}
-\newcommand{\hang}{\hangafter=1\hangindent=\dist\noindent}
 
 %%%% Front matter
 % Command for checking for a question mark or exclamation mark in title
@@ -1522,14 +1521,20 @@
      \hyphenpenalty=10000
      \tolerance=1000
      \footnotesize
-     \ifthenelse{\equal{\firstargument}{1}}{}{\hang}
+%    \end{macrocode}
+% \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
+% so we set the \cs{parshape} instead.
+%    \begin{macrocode}     
+     \tl_if_eq:NnF{\firstargument}{1}
+       {\parshape 2~0cm \linewidth \dimeval{\dist}~\dimeval{\linewidth-\dist}}
      \@address
      \par
 %    \end{macrocode}
 % \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
 % so we set the \cs{parshape} instead.
 %    \begin{macrocode}
-     \parshape 2~0cm \linewidth \dimeval{\dist}~\dimeval{\linewidth-\dist}
+     \parshape 2~0cm \linewidth 
+     \dimeval{\dist}~\dimeval{\linewidth-\dist}
      \tl_if_eq:NnF\@authornum{author}
        {
         \tl_if_empty:NF\@corres
