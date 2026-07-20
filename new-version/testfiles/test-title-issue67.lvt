@@ -1,0 +1,12 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass[acoustics,article,accept,moreauthors]{mdpi-luatex} 
+
+\address{%
+\textsuperscript{1} \quad Affiliation 1; e-mail@e-mail.com; Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)\\
+\textsuperscript{2} \quad Affiliation 2; e-mail@e-mail.com}
+\begin{document}
+\START\showoutput
+xxx
+\end{document} 
