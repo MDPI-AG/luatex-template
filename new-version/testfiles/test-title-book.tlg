@@ -372,7 +372,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(601.69264+0.0)x367.04037, glue set 518.59723fil, direction TLT
+...\vbox(601.69264+0.0)x367.04037, glue set 510.59811fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -445,8 +445,6 @@ Completed box being shipped out [1]
 ....\penalty -51
 ....\glue 10.0 plus 3.0 minus 5.0
 ....\glue 12.0
-....\glue 0.0
-....\glue -8.0
 ....\glue 0.0
 ....\glue 4.0
 ....\glue 0.0

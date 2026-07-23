@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-07-23}
-\def\mdpiversion{v7.0j}
+\def\mdpiversion{v7.0k}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -1568,8 +1568,8 @@
 % 
 %    \begin{macrocode}
 %%%% Abstract, keywords, journal data, PACS, MSC, JEL
-\newcommand{\abstractkeywords}{
-\isMonograph{}{\vspace{-8pt}
+\newcommand{\abstractkeywords}{%
+\isMonograph{}{%
 % For journal Applied Sciences:
 \ifthenelse{\equal{\@featuredapplication}{\@empty}}{
   }{%
