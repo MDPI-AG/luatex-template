@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-07-23}
-\def\mdpiversion{v7.0k}
+\def\mdpidate{2026-07-24}
+\def\mdpiversion{v7.0i}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -154,8 +154,31 @@
 
 %% To choose the journal
 % All journals (website name, full name, short name, DOI abbreviation, and ISSN + choice of continuous page numbers) are defined in an extra file.
+%    \end{macrocode}
+% We predefine the commands used in \texttt{journalnames.tex} for the case that a journal has incomplete data:
+%    \begin{macrocode}
+\gdef\@journal{notspecified}
+\gdef\@journalfull{Journal Not Specified}
+\gdef\@journalshort{Journal Not Specified}
+\gdef\@doiabbr{}
+\gdef\@ISSN{}
+\gdef\@societyowner{}
+\gdef\@journaltype{ACS}
+%    \end{macrocode}
+% And now load the file
+%    \begin{macrocode}
 \input{journalnames}
-\DeclareOption{journal}{\ClassWarning{mdpi}{You used an invalid journal name or you have not specified the journal. The first option of the documentclass command specifies the journal. The word 'journal' should be replaced by one of the journal names specified in template.tex (in the comment 'Choose between the following MDPI journal').}}
+%    \end{macrocode}
+%
+% \subsection{Class options}
+%    \begin{macrocode}
+\DeclareOption{journal}
+  {\ClassWarning{mdpi}{%
+    You used an invalid journal name or you have not specified the journal. 
+    The first option of the documentclass command specifies the journal. 
+    The word 'journal' should be replaced by one of the journal names 
+    specified in template.tex (in the comment 'Choose between the following MDPI journal').}
+  }
 
 %% To choose the type of manuscript
 \DeclareOption{abstract}{\gdef\@arttype{Abstract}}
@@ -437,9 +460,10 @@
 
 %    \end{macrocode}
 % \subsection{Journal conditionals}
-% The command \cs{@journal} used in the conditionals
-% is defined in \texttt{journalnames.tex} and is by default
-% \texttt{unspecified}.
+% The command \cs{@journaltype} used in the conditionals
+% is defined in \texttt{journalnames.tex} and is by default 
+% (if no journal is specified and the journal name is \texttt{notspecified})
+% \texttt{ACS}.
 %
 % The command \cs{@arttype} is defined through the class options and
 % is by default \texttt{Article}.
@@ -463,33 +487,18 @@
 %    \begin{macrocode}
 \newcommand\isMonograph
  {
-  \tl_if_eq:NnTF \@arttype{Monograph}
+  \str_if_eq:onTF {\@arttype} {Monograph}
  }
 %    \end{macrocode}
 % \end{macro}
 %
 % \subsubsection{Chicago style journals}
-% These journals use the \texttt{mdpi\_chicago} bibliography style.
+% A test for journals that use the \texttt{mdpi\_chicago} bibliography style.
 % \begin{macro}{\isChicagoStyle}
 %    \begin{macrocode}
-\clist_new:N  \l__mdpi_journal_chicagostyle_clist
-\clist_set:Nn \l__mdpi_journal_chicagostyle_clist
+\prg_new_conditional:Npnn \__mdpi_is_journal_chicagostyle: {TF,p}
  {
-     arts
-    ,genealogy
-    ,histories
-    ,humanities
-    ,laws
-    ,literature
-    ,religions
-    ,risks
-    ,socsci
-    ,preprintschicago  %% Just use for preprints, not a real Chicago journal
-    ,chicagojournal    %% Just use for chicago submission, not a real Chicago journal
- }
-\prg_new_protected_conditional:Npnn \__mdpi_is_journal_chicagostyle: {TF}
- {
-   \clist_if_in:NoTF \l__mdpi_journal_chicagostyle_clist {\@journal}
+   \str_if_eq:onTF {\@journaltype} {Chicago}
     {\prg_return_true:}
     {\prg_return_false:}
  }
@@ -503,40 +512,9 @@
 %
 % \begin{macro}{\isAPAStyle}
 %    \begin{macrocode}
-\clist_new:N  \l__mdpi_journal_apastyle_clist
-\clist_set:Nn \l__mdpi_journal_apastyle_clist
+\prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF,p}
  {
-     admsci        % Transfer to APA type
-    ,aieduc
-    ,behavsci      % Transfer to APA type
-    ,businesses    % Transfer to APA type
-    ,econometrics  % Transfer to APA type
-    ,economies     % Transfer to APA type
-    ,education     % Transfer to APA type
-    ,ejihpe        % Transfer to APA type
-    ,famsci        % Transfer to APA type
-    ,games         % Transfer to APA type
-    ,humans        % Transfer to APA type
-    ,ijcs          % Transfer to APA type
-    ,ijfs          % Transfer to APA type
-    ,investment    % New APA Journal
-    ,jintelligence % Transfer to APA type from 19 Dec. 2025
-    ,journalmedia  % Transfer to APA type
-    ,jrfm          % Transfer to APA type
-    ,jsam          % New APA Journal
-    ,languages     % Transfer to APA type
-    ,peacestud     % New APA Journal
-    ,projmanag     % New APA Journal
-    ,psycholint    % Transfer to APA type
-    ,publications  % Transfer to APA type
-    ,tourismhosp   % Transfer to APA type
-    ,youth         % Transfer to APA type
-    ,preprintsapa  %% Just use for preprints, not a real APA journal
-    ,apajournal    %% Just use for APA submission, not a real APA journal
- }
-\prg_new_protected_conditional:Npnn \__mdpi_is_journal_apastyle: {TF}
- {
-  \clist_if_in:NoTF \l__mdpi_journal_apastyle_clist {\@journal}
+  \str_if_eq:onTF {\@journaltype} {APA}
    {\prg_return_true:}
    {\prg_return_false:}
  }
@@ -548,20 +526,16 @@
 % A combination of both tests: true if a journal is either APA or a Chicago style journal.
 % \begin{macro}{\isAPAorChicago,\isAPAandChicago}
 %    \begin{macrocode}
-\prg_new_protected_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
+\prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
  {
-   \__mdpi_is_journal_chicagostyle:TF
+   \bool_lazy_or:nnTF 
+    { \__mdpi_is_journal_apastyle_p: }
+    { \__mdpi_is_journal_chicagostyle_p: }
     {
       \prg_return_true:
     }
     {
-      \__mdpi_is_journal_apastyle:TF
-       {
-        \prg_return_true:
-       }
-       {
-         \prg_return_false:
-       }
+      \prg_return_false:
     }
  }
 \newcommand{\isAPAorChicago}{\__mdpi_is_journal_apa_or_chicago_style:TF}
