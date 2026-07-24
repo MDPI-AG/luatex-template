@@ -68,7 +68,7 @@
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
-      <?MarkedContent page="1" ?>Copyright: © 2016 by the authors. Submitted to Journal for possible open access publication under the terms and conditions of the 
+      <?MarkedContent page="1" ?>Copyright: © 2016 by the authors. Submitted to Journal Not Specified for possible open access publication under the terms and conditions of the 
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.023"
         >
