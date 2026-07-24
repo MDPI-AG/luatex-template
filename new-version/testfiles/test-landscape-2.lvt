@@ -1,0 +1,31 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\usepackage{kantlipsum}
+\makeatother
+\begin{document}
+\START\showoutput
+
+\startlandscape
+\kant[1-4]
+\begin{table}
+\caption{\lipsum[1-2]}
+\begin{tabular}{ll}
+table & table
+\end{tabular}
+\end{table}
+\the\paperwidth, \the\paperheight
+\finishlandscape
+
+\kant[1-3]
+\begin{table}
+\caption{\lipsum[1-2]}
+\begin{tabular}{ll}
+table & table
+\end{tabular}
+\end{table}
+\the\paperwidth, \the\paperheight
+
+\SHOWPDFTAGS
+\end{document} 
