@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-07-24}
-\def\mdpiversion{v7.0i}
+\def\mdpiversion{v7.0k}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2181,6 +2181,13 @@
         \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
         \vskip\abovecaptionskip
         \small
+%    \end{macrocode}
+% We set the margin to the values from the caption package, so that e.g. landscape
+% can change them with \cs{captionsetup}
+%    \begin{macrocode}
+        \leftskip \caption@leftmargin
+        \rightskip\caption@rightmargin
+        \parfillskip=\z@ plus 1fil
         \UseTaggingSocket{caption/begin}{\@current@float@struct}%
         \UseTaggingSocket{caption/label/begin}%
         \textbf{#1. }%
