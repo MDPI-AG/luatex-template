@@ -152,15 +152,19 @@
 \renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} % Change subfigure label format
 \RequirePackage{alphalph} % Provide double letters numbers
 
-
-%% OPTIONS
+%    \end{macrocode}
+% TODO: check if this is still in use.
 % For transition period to change back to continuous page numbers
+%    \begin{macrocode}
 \def\@continuouspages{}
 \newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
-
-%% To choose the journal
-% All journals (website name, full name, short name, DOI abbreviation, and ISSN + choice of continuous page numbers) are defined in an extra file.
 %    \end{macrocode}
+
+% \subsection{Journal class options}
+% All journals (website name, full name, short name, DOI abbreviation, 
+% and ISSN + choice of continuous page numbers) are defined in an extra file
+% which sets up various class options.
+% 
 % We predefine the commands used in \texttt{journalnames.tex} for the case that a journal has incomplete data:
 %    \begin{macrocode}
 \gdef\@journal{notspecified}
@@ -171,12 +175,13 @@
 \gdef\@societyowner{}
 \gdef\@journaltype{ACS}
 %    \end{macrocode}
-% And now load the file
+% And now load the file. 
 %    \begin{macrocode}
 \input{journalnames}
 %    \end{macrocode}
 %
-% \subsection{Class options}
+% This option issues a warning.
+% TODO: is this actually used somewhere? The default option is \texttt{unspecified}.
 %    \begin{macrocode}
 \DeclareOption{journal}
   {\ClassWarning{mdpi}{%
@@ -185,93 +190,102 @@
     The word 'journal' should be replaced by one of the journal names 
     specified in template.tex (in the comment 'Choose between the following MDPI journal').}
   }
-
-%% To choose the type of manuscript
-\DeclareOption{abstract}{\gdef\@arttype{Abstract}}
-\DeclareOption{addendum}{\gdef\@arttype{Addendum}}
-\DeclareOption{article}{\gdef\@arttype{Article}}
-\DeclareOption{benchmark}{\gdef\@arttype{Benchmark}}
-\DeclareOption{book}{\gdef\@arttype{Book}}
-\DeclareOption{bookreview}{\gdef\@arttype{Book Review}}
+%    \end{macrocode}
+%
+% \subsection{Other class options}
+% Options to choose the type of manuscript (alphabetical):
+%    \begin{macrocode}
+\DeclareOption{abstract}    {\gdef\@arttype{Abstract}}
+\DeclareOption{addendum}    {\gdef\@arttype{Addendum}}
+\DeclareOption{article}     {\gdef\@arttype{Article}}
+\DeclareOption{benchmark}   {\gdef\@arttype{Benchmark}}
+\DeclareOption{book}        {\gdef\@arttype{Book}}
+\DeclareOption{bookreview}  {\gdef\@arttype{Book Review}}
 \DeclareOption{briefcommunication}{\gdef\@arttype{Brief Communication}}
-\DeclareOption{briefreport}{\gdef\@arttype{Brief Report}}
-\DeclareOption{casereport}{\gdef\@arttype{Case Report}}
-\DeclareOption{changes}{\gdef\@arttype{Changes}}
+\DeclareOption{briefreport} {\gdef\@arttype{Brief Report}}
+\DeclareOption{casereport}  {\gdef\@arttype{Case Report}}
+\DeclareOption{changes}     {\gdef\@arttype{Changes}}
 \DeclareOption{clinicopathologicalchallenge}{\gdef\@arttype{Clinicopathological Challenge}}
-\DeclareOption{comment}{\gdef\@arttype{Comment}}
-\DeclareOption{commentary}{\gdef\@arttype{Commentary}}
+\DeclareOption{comment}     {\gdef\@arttype{Comment}}
+\DeclareOption{commentary}  {\gdef\@arttype{Commentary}}
 \DeclareOption{communication}{\gdef\@arttype{Communication}}
 \DeclareOption{conceptpaper}{\gdef\@arttype{Concept Paper}}
 \DeclareOption{conferenceproceedings}{\gdef\@arttype{Proceedings}}
-\DeclareOption{correction}{\gdef\@arttype{Correction}}
+\DeclareOption{correction}  {\gdef\@arttype{Correction}}
 \DeclareOption{conferencereport}{\gdef\@arttype{Conference Report}}
-\DeclareOption{creative}{\gdef\@arttype{Creative}}
+\DeclareOption{creative}    {\gdef\@arttype{Creative}}
 \DeclareOption{datadescriptor}{\gdef\@arttype{Data Descriptor}}
-\DeclareOption{discussion}{\gdef\@arttype{Discussion}}
-\DeclareOption{entry}{\gdef\@arttype{Entry}}
+\DeclareOption{discussion}  {\gdef\@arttype{Discussion}}
+\DeclareOption{entry}       {\gdef\@arttype{Entry}}
 \DeclareOption{expressionofconcern}{\gdef\@arttype{Expression of Concern}}
 \DeclareOption{extendedabstract}{\gdef\@arttype{Extended Abstract}}
-\DeclareOption{editorial}{\gdef\@arttype{Editorial}}
-\DeclareOption{essay}{\gdef\@arttype{Essay}}
-\DeclareOption{erratum}{\gdef\@arttype{Erratum}}
-\DeclareOption{fieldguide}{\gdef\@arttype{Field Guide}}
-\DeclareOption{hypothesis}{\gdef\@arttype{Hypothesis}}
+\DeclareOption{editorial}   {\gdef\@arttype{Editorial}}
+\DeclareOption{essay}       {\gdef\@arttype{Essay}}
+\DeclareOption{erratum}     {\gdef\@arttype{Erratum}}
+\DeclareOption{fieldguide}  {\gdef\@arttype{Field Guide}}
+\DeclareOption{giantsinurology}{\gdef\@arttype{Giants in Urology}}
+\DeclareOption{guidelines}  {\gdef\@arttype{Guidelines}}
+\DeclareOption{hypothesis}  {\gdef\@arttype{Hypothesis}}
 \DeclareOption{interestingimages}{\gdef\@arttype{Interesting Images}}
-\DeclareOption{letter}{\gdef\@arttype{Letter}}
+\DeclareOption{letter}      {\gdef\@arttype{Letter}}
 \DeclareOption{meetingreport}{\gdef\@arttype{Meeting Report}}
-\DeclareOption{monograph}{\gdef\@arttype{Monograph}}
+\DeclareOption{monograph}   {\gdef\@arttype{Monograph}}
 \DeclareOption{newbookreceived}{\gdef\@arttype{New Book Received}}
-\DeclareOption{obituary}{\gdef\@arttype{Obituary}}
-\DeclareOption{opinion}{\gdef\@arttype{Opinion}}
+\DeclareOption{obituary}    {\gdef\@arttype{Obituary}}
+\DeclareOption{opinion}     {\gdef\@arttype{Opinion}}
+\DeclareOption{patentsummary}{\gdef\@arttype{Patent Summary}}
+\DeclareOption{perspective} {\gdef\@arttype{Perspective}}
 \DeclareOption{proceedingpaper}{\gdef\@arttype{Proceeding Paper}}
 \DeclareOption{projectreport}{\gdef\@arttype{Project Report}}
-\DeclareOption{reply}{\gdef\@arttype{Reply}}
-\DeclareOption{retraction}{\gdef\@arttype{Retraction}}
-\DeclareOption{review}{\gdef\@arttype{Review}}
-\DeclareOption{perspective}{\gdef\@arttype{Perspective}}
-\DeclareOption{protocol}{\gdef\@arttype{Protocol}}
-\DeclareOption{shortnote}{\gdef\@arttype{Short Note}}
+\DeclareOption{protocol}    {\gdef\@arttype{Protocol}}
+\DeclareOption{registeredreport}{\gdef\@arttype{Registered Report}}
+\DeclareOption{reply}       {\gdef\@arttype{Reply}}
+\DeclareOption{retraction}  {\gdef\@arttype{Retraction}}
+\DeclareOption{review}      {\gdef\@arttype{Review}}
+\DeclareOption{shortnote}   {\gdef\@arttype{Short Note}}
 \DeclareOption{studyprotocol}{\gdef\@arttype{Study Protocol}}
-\DeclareOption{supfile}{\gdef\@arttype{Supfile}}
+\DeclareOption{supfile}     {\gdef\@arttype{Supfile}}
 \DeclareOption{systematicreview}{\gdef\@arttype{Systematic Review}}
 \DeclareOption{technicalnote}{\gdef\@arttype{Technical Note}}
-\DeclareOption{viewpoint}{\gdef\@arttype{Viewpoint}}
-\DeclareOption{guidelines}{\gdef\@arttype{Guidelines}}
-\DeclareOption{registeredreport}{\gdef\@arttype{Registered Report}}
-\DeclareOption{tutorial}{\gdef\@arttype{Tutorial}}
-% Urology article types
-\DeclareOption{giantsinurology}{\gdef\@arttype{Giants in Urology}}
+\DeclareOption{tutorial}    {\gdef\@arttype{Tutorial}}
 \DeclareOption{urologyaroundtheworld}{\gdef\@arttype{Urology around the World}}
-\DeclareOption{patentsummary}{\gdef\@arttype{Patent Summary}}
-
-%% To choose the status of the manuscript
+\DeclareOption{viewpoint}   {\gdef\@arttype{Viewpoint}}
+%    \end{macrocode}
+% 
+% Options to choose the status of the manuscript
+%    \begin{macrocode}
 \DeclareOption{submit}{\gdef\@status{submit}}
 \DeclareOption{accept}{\gdef\@status{accept}}
-
-%% To choose the whether there is one or more authors
-\DeclareOption{oneauthor}{\gdef\@authornum{author}}
+%    \end{macrocode}
+% To choose the whether there is one or more authors.
+% TODO: the code should count the authors. 
+%    \begin{macrocode}
+\DeclareOption{oneauthor}  {\gdef\@authornum{author}}
 \DeclareOption{moreauthors}{\gdef\@authornum{authors}}
-
-%% Add the chosen options to the class
+%    \end{macrocode}
+% Pass the unknown options to the article class:
+%    \begin{macrocode}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-
-
-%% Defaults
+%    \end{macrocode}
+% Default options:
+%    \begin{macrocode}
 \ExecuteOptions{notspecified,10pt,a4paper,article,submit,oneauthor}
-
-%% Process options
+%    \end{macrocode}
+% Process the class options:
+%    \begin{macrocode}
 \ProcessOptions\relax
-
 %    \end{macrocode}
 %
 % \subsection{Temporary patches for taggings}
+% 
 % \subsubsection{The \env{adjustwidth} environment}
 % The environment is built by the \pkg{changepage} package
 % with a list. This breaks tagging, e.g., if the environment starts with
 % a heading command. \LaTeX-release 2026-06-01 provides a tagging recipe that
 % can be used
 % With it we redefine the environment. Note that spacing and behaviour is not fully
-% identical yet. TODO: fine tune!
+% identical yet. 
+% TODO: fine tune!
 %    \begin{macrocode}
 \IfDocumentMetadataT
  {
