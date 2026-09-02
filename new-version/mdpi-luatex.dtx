@@ -374,12 +374,7 @@
 %% MORE DECLARATIONS
 %    \begin{macrocode}
 
-\newcommand{\isPreprints}{%
-  \ifthenelse{\equal{\@journal}{preprints}%
-  \OR \equal{\@journal}{preprintschicago}%
-  \OR \equal{\@journal}{preprintsapa}%
-  }%
-}
+
 
 %%%%% Maths environments
 \RequirePackage{amsthm}
@@ -488,10 +483,27 @@
 % The command \cs{@arttype} is defined through the class options and
 % is by default \texttt{Article}.
 %
-% \subsubsection{Books}
-% This tests if this a Book or a Monograph
+% \subsubsection{Preprints}
+% This tests if the journal is a preprint type.
+% \begin{macro}{\isPreprints}
 %    \begin{macrocode}
 \ExplSyntaxOn
+\newcommand{\isPreprints}
+ {
+  \str_case:onTF {\@journal}
+   {
+    {preprints}{}
+    {preprintschicago}{}
+    {preprintsapa}{}
+   }
+ }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsubsection{Books}
+% This tests if this a Book or a Monograph
+% \begin{macro}{\isBookContribution}
+%    \begin{macrocode}
 \newcommand\isBookContribution
  {
    \str_case:onTF {\@arttype}
@@ -501,6 +513,8 @@
     }
  }
 %    \end{macrocode}
+% \end{macro}
+%
 % \subsubsection{Monographs}
 % \begin{macro}{\isMonograph}
 % This tests if this is a monograph
@@ -541,6 +555,7 @@
 \newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
 %    \end{macrocode}
 % \end{macro}
+% 
 % \subsubsection{APA or Chicago style journals}
 %
 % A combination of both tests: true if a journal is either APA or a Chicago style journal.
