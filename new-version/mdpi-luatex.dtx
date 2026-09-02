@@ -623,6 +623,7 @@
 %%%%% Hyperlinks
 %% Define color for citations
 \definecolor{bluecite}{HTML}{0875b7}
+\colorlet{mdpi@hypcolor}{bluecite}
 
 %% crefname definitions
 \newcommand{\crefnameDefinitions}{
@@ -636,59 +637,42 @@
   \crefname{graph}{Graph}{Graphs}
 }
 
-% After TeXLive 2021, \AddToHook{begindocument} is needed to make sure that hyperref is loaded last. \ifdef{\AddToHook{begindocument}}{ is needed for backwards-compatibility because \AddToHook{begindocument} did not yet exist in 2020.
-% After TeXLive 2022, \AddToHook{begindocument/before}{} is needed and  \DeclareHookRule{begindocument}{hyperref}{before}{mdpi} needs to be added because of the new version of hyperref.
-\newcommand{\hyperrefpackage}{
-      \isBookContribution{%
-  \RequirePackage[unicode=true,
-  bookmarksopen={true},
-  pdffitwindow=true,
-  colorlinks=true,
-  linkcolor=black,
-  citecolor=black,
-  urlcolor=black,
-  hyperfootnotes=false,
-  pdfstartview={FitH},
-  pdfpagemode=UseNone,
-  pdfpagelabels]{hyperref}
-  }{
-  \ifthenelse{\equal{\@journal}{laws}}{
-  \RequirePackage[unicode=true,
-  bookmarksopen={true},
-  pdffitwindow=true,
-  colorlinks=true,
-  linkcolor=bluecite,
-  citecolor=bluecite,
-  urlcolor=bluecite,
-  hyperfootnotes=false,
-  pdfstartview={FitH},
-  pdfpagemode= UseNone]{hyperref}
-  }{
-  \RequirePackage[unicode=true,
-  bookmarksopen={true},
-  pdffitwindow=true,
-  colorlinks=true,
-  linkcolor=bluecite,
-  citecolor=bluecite,
-  urlcolor=bluecite,
-  hyperfootnotes=true,
-  pdfstartview={FitH},
-  pdfpagemode= UseNone]{hyperref}
-  }
-}
-\RequirePackage[capitalise,noabbrev]{cleveref}
-}
-\ifdef{\AddToHook}{
-\DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
-  \AddToHook{begindocument/before}{
-    \hyperrefpackage
-             \crefnameDefinitions
+%    \end{macrocode}
+% Note about hyperref options: \texttt{unicode=true}, \texttt{pdfpagelabels} are set by default.
+%    \begin{macrocode}
+\ExplSyntaxOn
+\newcommand{\mdpi@load@hyperref@cleveref}
+ {
+   \isBookContribution
+    {
+      \colorlet{mdpi@hypcolor}{black}
+      \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+    }{}
+   \tl_if_eq:NnT \@journal {laws}
+    { 
+      \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
     }
-  }{
-       \hyperrefpackage
-           \crefnameDefinitions
-}
-
+   \RequirePackage
+    [bookmarksopen= true,
+     pdffitwindow = true,
+     pdfstartview = FitH,
+     pdfpagemode  = UseNone,
+     colorlinks   = true,
+     allcolors    = mdpi@hypcolor,
+    ] 
+    {hyperref}
+   \RequirePackage[capitalise,noabbrev]{cleveref}
+ }
+%    \end{macrocode}
+% TODO: Is the rule still needed?
+%    \begin{macrocode}
+\DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
+\AddToHook{begindocument/before}
+  {
+    \mdpi@load@hyperref@cleveref
+    \crefnameDefinitions
+  } 
+\ExplSyntaxOff
 %% To have the possibility to change the urlcolor
 \newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
 
