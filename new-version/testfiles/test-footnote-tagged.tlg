@@ -1619,7 +1619,7 @@ Completed box being shipped out [1]
 ......\hbox(4.858+0.021)x3.5, shifted -3.54, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\pdfcolorstack 0 push {0 g 0 G}
+.......\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .......\TU/texgyrepagella(0)/m/n/7 1
 .......\pdfcolorstack 0 pop
 ......\penalty 10000
