@@ -370,25 +370,25 @@
 %    \begin{macrocode}
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
 %    \end{macrocode}
-%
-%% MORE DECLARATIONS
+% 
+% \subsection{Math environments}
 %    \begin{macrocode}
-
-
-
-%%%%% Maths environments
 \RequirePackage{amsthm}
+%    \end{macrocode}
+% The theoremstyle declaration:
+%    \begin{macrocode}
 \newtheoremstyle{mdpi}% name
-{12pt}% space above
-{12pt}% space below
-{\itshape}% body font
-{}% indent amount 1
-{\bfseries}% theorem head font
-{.}% punctuation after theorem head
-{.5em}% space after theorem head
-{}% theorem head spec (can be left empty, meaning `normal')
-
-%\renewcommand{\qed}{\unskip\nobreak\quad\qedsymbol} %% This places the symbol right after the text instead of placing it at the end on the line.
+                {12pt}% space above
+                {12pt}% space below
+                {\itshape}% body font
+                {}% indent amount 1
+                {\bfseries}% theorem head font
+                {.}% punctuation after theorem head
+                {.5em}% space after theorem head
+                {}% theorem head spec (can be left empty, meaning `normal')
+%    \end{macrocode}
+% The proof environment:
+%    \begin{macrocode}
 \IfDocumentMetadataTF
  {
    \EditInstance{captionedtext}{proof}{caption-decls = \bfseries}
@@ -406,74 +406,65 @@
     }
  }
 
- \theoremstyle{mdpi}
- \newcounter{theorem}
- \setcounter{theorem}{0}
- \newtheorem{Theorem}[theorem]{Theorem}
+%    \end{macrocode}
+% Theoremlike environments in style \texttt{mdpi}
+%    \begin{macrocode}
+\theoremstyle{mdpi}
+\newcounter{theorem}
+\newtheorem{Theorem}[theorem]{Theorem}
 
- \newcounter{lemma}
- \setcounter{lemma}{0}
- \newtheorem{Lemma}[lemma]{Lemma}
+\newcounter{lemma}
+\newtheorem{Lemma}[lemma]{Lemma}
 
- \newcounter{corollary}
- \setcounter{corollary}{0}
- \newtheorem{Corollary}[corollary]{Corollary}
+\newcounter{corollary}
+\newtheorem{Corollary}[corollary]{Corollary}
 
- \newcounter{proposition}
- \setcounter{proposition}{0}
- \newtheorem{Proposition}[proposition]{Proposition}
+\newcounter{proposition}
+\newtheorem{Proposition}[proposition]{Proposition}
 
- \newcounter{characterization}
- \setcounter{characterization}{0}
- \newtheorem{Characterization}[characterization]{Characterization}
+\newcounter{characterization}
+\newtheorem{Characterization}[characterization]{Characterization}
 
- \newcounter{property}
- \setcounter{property}{0}
- \newtheorem{Property}[property]{Property}
+\newcounter{property}
+\newtheorem{Property}[property]{Property}
 
- \newcounter{problem}
- \setcounter{problem}{0}
- \newtheorem{Problem}[problem]{Problem}
+\newcounter{problem}
+\newtheorem{Problem}[problem]{Problem}
 
- \newcounter{example}
- \setcounter{example}{0}
- \newtheorem{Example}[example]{Example}
+\newcounter{example}
+\newtheorem{Example}[example]{Example}
 
- \newcounter{examplesanddefinitions}
- \setcounter{examplesanddefinitions}{0}
- \newtheorem{ExamplesandDefinitions}[examplesanddefinitions]{Examples and Definitions}
+\newcounter{examplesanddefinitions}
+\newtheorem{ExamplesandDefinitions}[examplesanddefinitions]{Examples and Definitions}
 
- \newcounter{remark}
- \setcounter{remark}{0}
- \newtheorem{Remark}[remark]{Remark}
+\newcounter{remark}
+\newtheorem{Remark}[remark]{Remark}
 
- \newcounter{definition}
- \setcounter{definition}{0}
- \newtheorem{Definition}[definition]{Definition}
+\newcounter{definition}
+\newtheorem{Definition}[definition]{Definition}
 
- \newcounter{hypothesis}
- \setcounter{hypothesis}{0}
- \newtheorem{Hypothesis}[hypothesis]{Hypothesis}
+\newcounter{hypothesis}
+\newtheorem{Hypothesis}[hypothesis]{Hypothesis}
 
- \newcounter{notation}
- \setcounter{notation}{0}
- \newtheorem{Notation}[notation]{Notation}
+\newcounter{notation}
+\newtheorem{Notation}[notation]{Notation}
 
- \newcounter{assumption}
- \setcounter{assumption}{0}
- \newtheorem{Assumption}[assumption]{Assumption}
+\newcounter{assumption}
+\newtheorem{Assumption}[assumption]{Assumption}
 
- \newcounter{algorithm}
- \setcounter{algorithm}{0}
- \newtheorem{Algorithm}[algorithm]{Algorithm}
-
+\newcounter{algorithm}
+\newtheorem{Algorithm}[algorithm]{Algorithm}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
  % Define left/right mark in math environment
 \let\originalleft\left
 \let\originalright\right
 \renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
 \renewcommand{\right}{\aftergroup\egroup\originalright}
-
 %    \end{macrocode}
+%
+%
 % \subsection{Journal conditionals}
 % The command \cs{@journaltype} used in the conditionals
 % is defined in \texttt{journalnames.tex} and is by default 
