@@ -623,10 +623,20 @@
 %%%%% Hyperlinks
 %% Define color for citations
 \definecolor{bluecite}{HTML}{0875b7}
-\colorlet{mdpi@hypcolor}{bluecite}
 
-%% crefname definitions
-\newcommand{\crefnameDefinitions}{
+
+%    \end{macrocode}
+%
+% \subsection{Loading \pkg{hyperref} and \pkg{cleveref}}
+% \pkg{cleveref} want to be loaded rather late. For \pkg{hyperref} it is no longer
+% very important but the class delays the loading nevertheless to the 
+% \texttt{begindocument/before} hook.
+% 
+% \pkg{cleveref} needs various setups. We store that in one command which is called
+% after the package is loaded.
+%    \begin{macrocode}
+\newcommand\mdpi@cleveref@setup
+ {
   \crefname{figure}{Figure}{Figures}
   \crefname{table}{Table}{Tables}
   \crefname{section}{Section}{Sections}
@@ -635,14 +645,24 @@
   \crefname{chart}{Chart}{Charts}
   \crefname{paragraph}{Section}{Sections}
   \crefname{graph}{Graph}{Graphs}
-}
+  \crefrangelabelformat{figure}{##3##1##4--##5##2##6} % double # for nesting inside \newcommand
+  \crefrangelabelformat{table}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{section}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{appendix}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{scheme}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{chart}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{graph}{##3##1##4--##5##2##6}
+  \newcommand{\crefrangeconjunction}{--}
+ }
 
 %    \end{macrocode}
-% Note about hyperref options: \texttt{unicode=true}, \texttt{pdfpagelabels} are set by default.
+% The \pkg{hyperref} options \texttt{unicode=true}, \texttt{pdfpagelabels} are set by default,
+% so they are not set explicitly. 
 %    \begin{macrocode}
 \ExplSyntaxOn
 \newcommand{\mdpi@load@hyperref@cleveref}
  {
+   \colorlet{mdpi@hypcolor}{bluecite}
    \isBookContribution
     {
       \colorlet{mdpi@hypcolor}{black}
@@ -662,6 +682,7 @@
     ] 
     {hyperref}
    \RequirePackage[capitalise,noabbrev]{cleveref}
+   \mdpi@cleveref@setup
  }
 %    \end{macrocode}
 % TODO: Is the rule still needed?
@@ -669,25 +690,29 @@
 \DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
 \AddToHook{begindocument/before}
   {
-    \mdpi@load@hyperref@cleveref
-    \crefnameDefinitions
+    \mdpi@load@hyperref@cleveref    
   } 
+%    \end{macrocode}
+% This sets the PDF metadata:
+%    \begin{macrocode}
+\AddToHook{begindocument/end}[mdpi/metadata]
+ {
+   \hypersetup
+    {
+     pdftitle   ={\@Title},
+     pdfsubject ={\@abstract},
+     pdfkeywords={\@keyword},
+     pdfauthor  ={\@AuthorNames}
+   }%
+ }  
 \ExplSyntaxOff
+%    \end{macrocode}
+%
+% TODO: check if these commands are used and make sense (names are not very good):
+%    \begin{macrocode}
 %% To have the possibility to change the urlcolor
 \newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
 
-%% Cleveref definitions
-\newcommand{\cleverefDefinitions}{
-  \crefrangelabelformat{figure}{##3##1##4--##5##2##6} % double # for nesting inside \newcommand
-  \crefrangelabelformat{table}{##3##1##4--##5##2##6}
-  \crefrangelabelformat{section}{##3##1##4--##5##2##6}
-  \crefrangelabelformat{appendix}{##3##1##4--##5##2##6}
-  \crefrangelabelformat{scheme}{##3##1##4--##5##2##6}
-  \crefrangelabelformat{chart}{##3##1##4--##5##2##6}
-  \crefrangelabelformat{graph}{##3##1##4--##5##2##6}
-}
-
-\newcommand{\crefrangeconjunction}{--}
 \newcommand{\fig}[1]{Figure~\ref{#1}}
 \newcommand{\tabref}[1]{Table~\ref{#1}}
 \newcommand{\sect}[1]{Section~\ref{#1}}
@@ -697,19 +722,6 @@
 \newcommand{\equ}[1]{\ref{#1}}
 \newcommand{\boxref}[1]{Box~\ref{#1}}
 \newcommand{\cgraph}[1]{Graph~\ref{#1}}
-
-%%%% Metadata
-\newcommand{\org@maketitle}{}% LATEX-Check
-\let\org@maketitle\maketitle
-\def\maketitle{%
-  \hypersetup{
-    pdftitle={\@Title},
-    pdfsubject={\@abstract},
-    pdfkeywords={\@keyword},
-    pdfauthor={\@AuthorNames}
-  }%
-  \org@maketitle
-}
 
 %%%%% Endnotes
 \setenotez{backref=true}
@@ -1637,7 +1649,6 @@
  {
   \DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
   \DeclareSymbolFontAlphabet{\mathbb}{AMSb}
-  \cleverefDefinitions
       %%%% URL
     \urlstyle{same}
      % Line breaks in URL
