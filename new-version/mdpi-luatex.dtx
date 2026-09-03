@@ -743,13 +743,18 @@
 \newcommand{\boxref}[1]{Box~\ref{#1}}
 \newcommand{\cgraph}[1]{Graph~\ref{#1}}
 
-%%%%% Endnotes
+%    \end{macrocode}
+% \subsection{Endnotes}
+% TODO: why does it declare a custom instance instead of changing the default?
+% TODO: perhaps better use a list template type for better tagging
+%    \begin{macrocode}
 \setenotez{backref=true}
-\DeclareInstance{enotez-list}{custom}{paragraph}{
-  format=\small\leftskip0.76cm,
-      number=\textsuperscript{\makebox[6mm][l]{#1}},
-  notes-sep=0pt
-}
+\DeclareInstance{enotez-list}{custom}{paragraph}
+ {
+   format   =\small\leftskip0.76cm,
+   number   =\textsuperscript{\makebox[6mm][l]{#1}},
+   notes-sep=0pt
+ }
 
 %    \end{macrocode}
 % \subsection{Footnotes}
