@@ -492,7 +492,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\glue(\baselineskip) 6.764
-.........\hbox(5.096+0.14)x116.65646, glue set 1.58344fil, direction TLT
+.........\hbox(5.096+0.14)x116.65646, glue set 3.33344fil, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 c
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7 n
@@ -519,10 +519,9 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfstartlink(*+*)x61.24445 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 2} action user{}
+..........\pdfstartlink(*+*)x62.99445 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 2} action user{}
 ..........\pdfendlink
 ..........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ..........\TU/texgyrepagella(0)/m/n/7 C

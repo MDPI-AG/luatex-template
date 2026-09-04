@@ -252,7 +252,7 @@ Completed box being shipped out [1]
 .........\glue(\parskip) 6.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 6.778
-.........\hbox(5.082+1.981)x116.65646, glue set 17.49419fil, direction TLT
+.........\hbox(5.082+1.981)x116.65646, glue set 15.29417fil, direction TLT
 ..........\localpar
 ...........\localinterlinepenalty=0
 ...........\localbrokenpenalty=0
@@ -282,24 +282,24 @@ Completed box being shipped out [1]
 ..........\glue(\spaceskip) 0.58333 plus 1.75 minus 0.29166
 ..........\TU/texgyrepagella(0)/m/n/7 ^^a9
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 2
 ..........\TU/texgyrepagella(0)/m/n/7 0
 ..........\TU/texgyrepagella(0)/m/n/7 1
 ..........\TU/texgyrepagella(0)/m/n/7 6
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 b
 ..........\kern-0.21 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 y
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 h
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 a
 ..........\TU/texgyrepagella(0)/m/n/7 u
 ..........\discretionary (penalty 10000)
@@ -316,7 +316,7 @@ Completed box being shipped out [1]
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\penalty 10000
 .........\glue(\baselineskip) 4.888
-.........\hbox(5.131+1.932)x116.65646, glue set 6.26448fil, direction TLT
+.........\hbox(5.131+1.932)x116.65646, glue set 4.61447fil, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 S
 ..........\TU/texgyrepagella(0)/m/n/7 u
 ..........\TU/texgyrepagella(0)/m/n/7 b
@@ -331,12 +331,12 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7 d
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 t
 ..........\kern-0.07 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/it/7 J
 ..........\TU/texgyrepagella(0)/m/it/7 o
 ..........\TU/texgyrepagella(0)/m/it/7 u
@@ -369,7 +369,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/it/7 e
 ..........\TU/texgyrepagella(0)/m/it/7 d
 ..........\TU/texgyrepagella(0)/m/it/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 f
 ..........\kern-0.105 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 o
@@ -378,7 +378,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\glue(\baselineskip) 4.986
-.........\hbox(5.082+1.967)x116.65646, glue set - 0.02301, direction TLT
+.........\hbox(5.082+1.967)x116.65646, glue set 16.57042fil, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 p
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7 s
@@ -392,13 +392,13 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 l
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7 p
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 a
 ..........\TU/texgyrepagella(0)/m/n/7 c
 ..........\discretionary (penalty 10000)
@@ -408,7 +408,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 s
 ..........\TU/texgyrepagella(0)/m/n/7 s
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 p
 ..........\TU/texgyrepagella(0)/m/n/7 u
 ..........\TU/texgyrepagella(0)/m/n/7 b
@@ -427,7 +427,9 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\rightskip) -1.75 plus 1.0fil
+.........\glue(\baselineskip) 4.93701
+.........\hbox(5.096+0.14)x116.65646, glue set - 0.00656, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 u
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\discretionary (penalty 10000)
@@ -435,17 +437,14 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 d
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7 r
-..........\kern-0.14 (right margin)
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\rightskip) -1.75 plus 1.0fil
-.........\glue(\baselineskip) 4.93701
-.........\hbox(5.096+0.14)x116.65646, glue set 22.96046fil, direction TLT
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 h
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 t
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7 r
@@ -453,12 +452,12 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 m
 ..........\TU/texgyrepagella(0)/m/n/7 s
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 a
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\TU/texgyrepagella(0)/m/n/7 d
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 c
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7 n
@@ -474,11 +473,11 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\TU/texgyrepagella(0)/m/n/7 s
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7 f
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 h
@@ -486,7 +485,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\glue(\baselineskip) 6.778
-.........\hbox(5.082+0.14)x116.65646, glue set 21.56245fil, direction TLT
+.........\hbox(5.082+0.14)x116.65646, glue set 20.46245fil, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfstartlink(*+*)x116.65646 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 3} action user{}
@@ -504,7 +503,7 @@ Completed box being shipped out [1]
 ..........\kern-0.28 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 C
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7 m
@@ -515,7 +514,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\TU/texgyrepagella(0)/m/n/7 s
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 A
 ..........\kern-0.28 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 t
@@ -538,7 +537,7 @@ Completed box being shipped out [1]
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\penalty 10000
 .........\glue(\baselineskip) 6.65201
-.........\hbox(5.208+1.708)x116.65646, glue set 68.14047fil, direction TLT
+.........\hbox(5.208+1.708)x116.65646, glue set 67.04047fil, direction TLT
 ..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /final/StructParent 4} action user{}
 ..........\kern-0.322 (left margin)
 ..........\TU/texgyrepagella(0)/m/n/7 (
@@ -546,13 +545,13 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 C
 ..........\penalty 10000
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.875 minus 0.58333
+..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
 ..........\TU/texgyrepagella(0)/m/n/7 B
 ..........\kern-0.245 (font)
 ..........\TU/texgyrepagella(0)/m/n/7 Y
 ..........\TU/texgyrepagella(0)/m/n/7 )
 ..........\TU/texgyrepagella(0)/m/n/7  
-..........\glue(\spaceskip) -0.55 plus 0.87411 minus 0.58391
+..........\glue(\spaceskip) 0.0 plus 0.87411 minus 0.58391
 ..........\TU/texgyrepagella(0)/m/n/7 l
 ..........\TU/texgyrepagella(0)/m/n/7 i
 ..........\discretionary (penalty 10000)

@@ -1369,7 +1369,7 @@
 %    \begin{macrocode}
 \newcommand{\leftcolumnCright}
   {%
-    \isPreprints{}{\cright}%
+    \isPreprints{}{\mdpi@text@copyright}%
   }
 %    \end{macrocode}
 % \end{macro}
@@ -2510,50 +2510,80 @@
    MDPI and/or the editor(s) disclaim responsibility for any injury to people or 
    property resulting from any ideas, methods, instructions or products referred to in the 
    content.\par
-}
-
-%%%% Copyright info
-\newcommand{\cright}
-  {%
-    \ifthenelse
-      {\equal{\@arttype}{Supfile}}
-      {}
-      {%
-       \ifthenelse
-         {\equal{\@status}{submit}}
-         {%
-           \fontdimen2\font=1.2pt
-           \raggedright
-           \textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum. %
+ }
+%    \end{macrocode}
+% \subsubsection{Copyright info}
+% A text snippet used for submitted articles:
+%    \begin{macrocode}
+\newcommand\mdpi@cright@text@submit
+ {%
+   \textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum. 
            Submitted to {\em\journalname} for possible open access publication
            under the terms and conditions of the %
+ }
+%    \end{macrocode}
+% A similar snipped for published articles:
+%    \begin{macrocode}
+\newcommand\mdpi@cright@text@published
+ {%
+   \textbf{Copyright:} \copyright \ {\@copyrightyear} by the \@authornum.
+          \UseName{tl_if_empty:NF}
+             {\@societyowner}
+             {Published by MDPI on behalf of the {\@societyowner}.}
+           Licensee MDPI, Basel, Switzerland.
+           This article is an open access article distributed under the terms 
+           and conditions of the 
+ } 
+%    \end{macrocode}
+% Text snipped for license info:
+%    \begin{macrocode}
+\newcommand\mdpi@cright@text@ccbyncnd
+ {%
+   \href
+      {https://creativecommons.org/licenses/by-nc-nd/4.0/}
+      {Creative Commons Attribution (CC BY-NC-ND) license}.%
+ } 
+ 
+\newcommand\mdpi@cright@text@ccby
+  {%
+    \href
+      {https://creativecommons.org/licenses/by/4.0/}
+      {Creative Commons Attribution (CC~BY) license}.%
+  }
+%    \end{macrocode}
+% 
+% Now we build the whole text. The text is used at the end of a box in its own paragraph
+% so there is no need for grouping. 
+% 
+% TODO: \verb+\fontdimen2\font=1.2pt+ has been removed as this setting is not local and
+% affects the font in whole document.
+% Spacing must be checked and if needed be adapted in some other way. 
+% 
+%    \begin{macrocode}
+\ExplSyntaxOn
+\newcommand{\mdpi@text@copyright}
+  {
+    \raggedright 
+    \tl_if_eq:NnF\@arttype{Supfile}
+     {
+      \tl_if_eq:NnTF\@status{submit}
+         {
+           %\fontdimen2\font=1.2pt % not local!!
+           \mdpi@cright@text@submit           
          }
-         {%
-          {\raggedright\textbf{Copyright:} \copyright \ {\@copyrightyear} by the \@authornum. %
-            \ifthenelse
-              {\equal{\@societyowner}{}}{}
-              {Published by MDPI on behalf of the {\@societyowner}.}
-            Licensee MDPI, Basel, Switzerland.
-            This article is an open access article distributed under the terms %
-            and conditions of the %
-          }
-         }%
-       \ifthenelse
-         {\equal{\@journal}{ijtpp}}
-         {%
-           \href
-             {https://creativecommons.org/licenses/by-nc-nd/4.0/}
-             {Creative Commons Attribution %
-               (CC BY-NC-ND) license}%
+         {
+          \mdpi@cright@text@published          
          }
-         {%
-           \href{https://creativecommons.org/licenses/by/4.0/}%
-             {Creative Commons Attribution (CC~BY) license}%
-         }.%
-      }%
+      \tl_if_eq:NnTF\@journal{ijtpp}
+         {
+           \mdpi@cright@text@ccbyncnd
+         }
+         {
+           \mdpi@cright@text@ccby
+         }
+      }
    }
-
-
+\ExplSyntaxOff
 %    \end{macrocode}
 %
 %\subsection{XML2PDF support}
