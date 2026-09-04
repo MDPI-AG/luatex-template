@@ -973,20 +973,28 @@
 \def\@IsAssociation{}
 \newcommand{\IsAssociation}[1]{\gdef\@IsAssociation{#1}}
 
-%% ORCID
-% Make Orcid icon
-\newcommand{\orcidicon}{\includegraphics[width=0.32cm]{logo-orcid.pdf}}
-
-% Define link and button for each author
-\foreach \x in {A, ..., Z}{%
-\expandafter\xdef\csname orcid\x\endcsname{\noexpand\href{https://orcid.org/\csname orcidauthor\x\endcsname}{\noexpand\orcidicon}}
-}
-
 %%%% Journal name for the header
 \newcommand{\journalname}{\@journalshort}
 
-
-
+%    \end{macrocode}
+%
+% \subsubsection{Orcid}
+%    \begin{macrocode}
+\newcommand{\orcidicon}{\includegraphics[width=0.32cm,actualtext=ORCID]{logo-orcid.pdf}}
+%    \end{macrocode}
+% Define link and button for author A--Z. Before these commands can be used, the
+% author has to define \verb+orcidauthorA+ etc.
+%    \begin{macrocode}
+\ExplSyntaxOn
+\int_step_inline:nn{26}
+ {
+   \tl_new:c{orcid\int_to_Alph:n{#1}}
+   \tl_set:cn{orcid\int_to_Alph:n{#1}}
+     {
+       \href{https://orcid.org/\use:c{orcidauthor\int_to_Alph:n{#1}}}{\orcidicon}
+     }  
+ }  
+\ExplSyntaxOff
 %    \end{macrocode}
 %
 % \subsection{Maketitle}

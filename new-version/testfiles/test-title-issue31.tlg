@@ -732,7 +732,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://orcid.org/0000-0000-0000-000X)>>}
+.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 .5 .5]} action user{/Subtype/Link/A<</F(https://orcid.org/0000-0000-0000-000X.pdf)/S/GoToR/D[0/Fit]>>}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\hbox(9.10466+0.0)x9.10509, direction TLT
 ......\hbox(9.10469+0.0)x9.10469, direction TLT
