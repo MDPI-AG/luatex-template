@@ -1111,7 +1111,7 @@
      \raggedright
      \hyphenpenalty=10000
      \tolerance=1000
-     \noindent\textbf{Supplementary~Materials:~\@Title}%
+     \noindent\boldmath\textbf{Supplementary~Materials:~\@Title}%
      \par
      \vspace{12pt}
      \normalsize
@@ -1771,7 +1771,7 @@
 %    \begin{macrocode}
    \EditInstance{heading}{section}
      {
-       heading-decls=\raggedright\large\bfseries,
+       heading-decls=\raggedright\large\bfseries\boldmath,
        before-vspace=12pt,
        after-vspace =3pt,
        number-format=\theheading.,
@@ -1841,11 +1841,11 @@
  {
    \isMonograph
     {
-     \titleformat {\section} [block] {\raggedright \LARGE\bfseries} {\thesection.\space} {0pt} {}
+     \titleformat {\section} [block] {\raggedright \LARGE\bfseries\boldmath} {\thesection.\space} {0pt} {}
      \titlespacing {\section} {0pt} {12pt} {8pt}
     }
     {
-     \titleformat {\section} [block] {\raggedright \large\bfseries} {\thesection.\space} {0pt} {}
+     \titleformat {\section} [block] {\raggedright \large\bfseries\boldmath} {\thesection.\space} {0pt} {}
      \titlespacing {\section} {0pt} {12pt} {3pt}
     }
 
@@ -1979,7 +1979,7 @@
       \EditInstance{heading}{section}
         {
          after-vspace=3pt,
-         heading-decls=\raggedright\large\bfseries,
+         heading-decls=\raggedright\large\bfseries\boldmath,
         }
       \clist_map_inline:nn {section,subsection,subsubsection}
        {
@@ -1995,7 +1995,7 @@
 %
 %    \begin{macrocode}
      {
-      \titleformat {\section} [block] {\raggedright\bfseries\large} {\large\bfseries%
+      \titleformat {\section} [block] {\raggedright\bfseries\boldmath\large} {\large\bfseries%
        \ifthenelse{\equal{\@appendixtitles}{yes}}{%
          \appendixname\nobreakspace\thesection.%
          }{%
