@@ -58,6 +58,9 @@
 % landscape and back again.
 % \end{function}
 %
+% \subsection{Graphic path setting}
+% Graphics can be stored in folders \texttt{figures}, \texttt{Figures}, 
+% \texttt{figure} and \texttt{Figure}. 
 %
 % \section{Implementation}
 % \subsection{Declaration}
@@ -124,6 +127,13 @@
 \RequirePackage{indentfirst}
 \RequirePackage{fancyhdr}
 \RequirePackage{graphicx}
+%    \end{macrocode}
+% Special graphic pathes:
+%    \begin{macrocode}
+\graphicspath{{./Definitions/}{./Figures/}{./Figure/}{./figures/}{./figure/}}
+%    \end{macrocode}
+%
+%    \begin{macrocode}
 \RequirePackage{lastpage}
 \RequirePackage{ifthen}
 \RequirePackage{float}
