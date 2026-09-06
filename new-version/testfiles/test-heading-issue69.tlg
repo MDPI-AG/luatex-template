@@ -3,6 +3,16 @@ Don't change this file in any respect.
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for 'english' will be used instead.
 (lipsum)                
 (lipsum)                With LuaTeX, lipsum requires babel to get proper hyphenation (you can use \usepackage[base]{babel}).
+(../mt-cmr.cfg
+File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `texgyrepagella-math' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+msb on input line ....
+File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
+)
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\lipsum' on input line ....
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -14,16 +24,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \setlength{\headheight}{21.49452pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
-(../mt-cmr.cfg
-File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `texgyrepagella-math' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for U+msb on input line ....
-File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
-)
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]
