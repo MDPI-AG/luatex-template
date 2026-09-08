@@ -94,14 +94,12 @@
         id="ID.026"
        >
       <?MarkedContent page="1" ?>
-      <Figure xmlns="http://iso.org/pdf2/ssn"
+      <Span xmlns="http://iso.org/pdf2/ssn"
          id="ID.027"
-         alt="logo-mdpi.pdf"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 516.46725, 774.65587, 559.27549, 803.00232 }"
+         actualtext="MDPI logo"
         >
        <?MarkedContent page="1" ?>
-      </Figure>
+      </Span>
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>

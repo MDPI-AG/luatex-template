@@ -112,14 +112,12 @@ TEST 1: Show PDF Tags
         id="ID.028"
        >
       <?MarkedContent page="1" ?>
-      <Figure xmlns="http://iso.org/pdf2/ssn"
+      <Span xmlns="http://iso.org/pdf2/ssn"
          id="ID.029"
-         alt="acoustics-logo.pdf"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 35.71638, 774.65587, 141.16323, 808.67154 }"
+         actualtext="Logo of Acoustics"
         >
        <?MarkedContent page="1" ?>
-      </Figure>
+      </Span>
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
@@ -127,14 +125,12 @@ TEST 1: Show PDF Tags
         id="ID.030"
        >
       <?MarkedContent page="1" ?>
-      <Figure xmlns="http://iso.org/pdf2/ssn"
+      <Span xmlns="http://iso.org/pdf2/ssn"
          id="ID.031"
-         alt="logo-mdpi.pdf"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 516.46727, 774.65587, 559.27551, 803.00232 }"
+         actualtext="MDPI logo"
         >
        <?MarkedContent page="1" ?>
-      </Figure>
+      </Span>
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
@@ -1080,15 +1076,12 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com/journal/acoustics) >>  /LTEX_position /isolated/StructParent 4} action user{}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\savepos
-.....\write1{\new@label@record{__tag_graphic.1}{{xpos}{\__property_code_xpos: }{ypos}{\__property_code_ypos: }{abspage}{\__property_code_abspage: }}}
-.....\savepos
 .....\hbox(34.14322+0.0)x105.84227, direction TLT
 ......\hbox(34.14275+0.0)x105.84253, direction TLT
 .......\hbox(34.14275+0.0)x105.84253, direction TLT
 ........\hbox(34.14275+0.0)x0.0, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.24297 0 0 .24297}
 .........\hbox(140.525+0.0)x0.0, glue set - 435.6275fil, direction TLT
@@ -1107,15 +1100,12 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >>  /LTEX_position /isolated/StructParent 5} action user{}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\savepos
-.....\write1{\new@label@record{__tag_graphic.2}{{xpos}{\__property_code_xpos: }{ypos}{\__property_code_ypos: }{abspage}{\__property_code_abspage: }}}
-.....\savepos
 .....\hbox(28.45274+0.0)x42.96877, direction TLT
 ......\hbox(28.45236+0.0)x42.96887, direction TLT
 .......\hbox(28.45236+0.0)x42.96887, direction TLT
 ........\hbox(28.45236+0.0)x0.0, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.57849 0 0 .57849}
 .........\hbox(49.18375+0.0)x0.0, glue set - 74.2775fil, direction TLT
@@ -1258,7 +1248,7 @@ Completed box being shipped out [1]
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.444706 0.456472 0.680002] /A 69 0 R  /LTEX_position /isolated/StructParent 6} action user{}
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.444706 0.456472 0.680002] /A 67 0 R  /LTEX_position /isolated/StructParent 6} action user{}
 .....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\hbox(9.10466+0.0)x9.10509, direction TLT
 ......\hbox(9.10469+0.0)x9.10469, direction TLT

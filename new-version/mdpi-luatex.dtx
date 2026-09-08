@@ -1046,25 +1046,25 @@
    \tl_if_eq:enTF {\@status}{submit}
      {
        \phantom{\rule{0pt}{1.2cm}}\hfill
-       \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}%
+       \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{logo-mdpi}}%
      }
      {
-        \href{\mdpi@url/journal/\@journal}{\includegraphics[height=1.2cm]{\@journal-logo}}%
+        \href{\mdpi@url/journal/\@journal}{\includegraphics[height=1.2cm,actualtext={Logo~of~\@journalfull}]{\@journal-logo}}%
         \hfill
         \tl_if_empty:NTF \@IsAssociation
           {
             \str_case:onF {\@journal}
              {
-               {ijom}    {\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-ijom}}}
-               {siuj}    {\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-siuj}}}
-               {scipharm}{\href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-scipharm}}}
+               {ijom}    {\href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{logo-mdpi-ijom}}}
+               {siuj}    {\href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{logo-mdpi-siuj}}}
+               {scipharm}{\href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{logo-mdpi-scipharm}}}
              }
              {
-               \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi}}
+               \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{logo-mdpi}}
              }
           }
           {
-            \href{\mdpi@url}{\includegraphics[height=1cm]{logo-mdpi-\@journal}}%
+            \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{logo-mdpi-\@journal}}%
           }
      }
  }
@@ -2195,7 +2195,7 @@
        float/new=chart,
        float/new=scheme,
        float/new=figurewide,
-       float/new=graph,
+       float/new=graph,              
      }
  }
 %    \end{macrocode}
