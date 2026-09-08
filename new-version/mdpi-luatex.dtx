@@ -444,9 +444,6 @@
 \newcounter{example}
 \newtheorem{Example}[example]{Example}
 
-\newcounter{examplesanddefinitions}
-\newtheorem{ExamplesandDefinitions}[examplesanddefinitions]{Examples and Definitions}
-
 \newcounter{remark}
 \newtheorem{Remark}[remark]{Remark}
 
@@ -667,13 +664,22 @@
 %    \begin{macrocode}
 \newcommand\mdpi@cleveref@setup
  {
+%    \end{macrocode}
+%  Floats
+%    \begin{macrocode}
   \crefname{figure}{Figure}{Figures}
   \crefname{table}{Table}{Tables}
+%    \end{macrocode}
+% headings
+%    \begin{macrocode}
   \crefname{section}{Section}{Sections}
-  \crefname{appendix}{Appendix}{Appendices}
-  \crefname{scheme}{Scheme}{Schemes}
-  \crefname{chart}{Chart}{Charts}
   \crefname{paragraph}{Section}{Sections}
+  \crefname{appendix}{Appendix}{Appendices}
+%    \end{macrocode}
+% theorems
+%    \begin{macrocode}
+  \crefname{scheme}{Scheme}{Schemes}
+  \crefname{chart}{Chart}{Charts}  
   \crefname{graph}{Graph}{Graphs}
   \crefname{Theorem}{Theorem}{Theorems}
   \crefname{Lemma}{Lemma}{Lemmas}
@@ -683,7 +689,6 @@
   \crefname{Property}{Property}{Properties}
   \crefname{Problem}{Problem}{Problems}
   \crefname{Example}{Example}{Examples}
-  \crefname{ExamplesandDefinitions}{Examplesanddefinitions}{Examplesanddefinitionss}
   \crefname{Remark}{Remark}{Remarks}
   \crefname{Definition}{Definition}{Definitions}
   \crefname{Hypothesis}{Hypothesis}{Hypotheses}
@@ -1958,7 +1963,6 @@
 \setcounter{property}{0}
 \setcounter{problem}{0}
 \setcounter{example}{0}
-\setcounter{examplesanddefinitions}{0}
 \setcounter{remark}{0}
 \setcounter{definition}{0}
 \setcounter{hypothesis}{0}
@@ -2050,7 +2054,6 @@
   \renewcommand{\theproperty}{A\arabic{property}}
   \renewcommand{\theproblem}{A\arabic{problem}}
   \renewcommand{\theexample}{A\arabic{example}}
-  \renewcommand{\theexamplesanddefinitions}{A\arabic{examplesanddefinitions}}
   \renewcommand{\theremark}{A\arabic{remark}}
   \renewcommand{\thedefinition}{A\arabic{definition}}
   \renewcommand{\thehypothesis}{A\arabic{hypothesis}}
