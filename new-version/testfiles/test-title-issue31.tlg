@@ -3603,7 +3603,6 @@ Completed box being shipped out [1]
 <./logo-updates.pdf><./acoustics-logo.pdf><./logo-mdpi.pdf><./logo-orcid.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-title-issue31.aux)
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package rerunfilecheck Info: File `test-title-issue31.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 ***************

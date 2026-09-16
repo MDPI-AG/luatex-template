@@ -6,5 +6,6 @@ text \cite{ref-journal}
 \begin{thebibliography}{99}
 \bibitem[Author(year)]{ref-journal} blub
 \end{thebibliography}
+\START
 \SHOWPDFTAGS
 \end{document} 
