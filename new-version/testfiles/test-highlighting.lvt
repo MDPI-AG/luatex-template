@@ -1,0 +1,21 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\usepackage{lipsum}
+% avoid maketitle:
+\RemoveFromHook{begindocument/end}[mdpi-luatex]
+\begin{document}
+\START\showoutput
+some \highlighting{highlighted} box
+
+some  \uline{underlined text \lipsum*[1][1-2]} and more 
+
+some  \sout{strikethrough text \lipsum*[1][1-2]} and more 
+
+some  \uuline{underlined text \lipsum*[1][1-2]} and more 
+
+some  \uwave{waved text \lipsum*[1][1-2]} and more 
+
+\SHOWPDFTAGS
+\end{document} 

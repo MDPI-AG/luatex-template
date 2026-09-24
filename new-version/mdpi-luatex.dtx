@@ -95,6 +95,10 @@
 \LoadClass[10pt,a4paper]{article}
 %    \end{macrocode}
 % \subsection{Packages}
+% Ensure that tagging commands are defined
+%    \begin{macrocode}
+\RequirePackage{tagpdf-base}
+%    \end{macrocode}
 % \subsubsection{Font setup}
 % TODO: sans serif, typewriter, math fonts?
 %    \begin{macrocode}
@@ -102,6 +106,14 @@
 \setmainfont{texgyrepagella}
 \RequirePackage{lua-unicode-math}
 \setmathfont[AutoFakeBold=1.125]{texgyrepagella-math}
+%    \end{macrocode}
+%
+% \subsubsection{Symbol fonts}
+% Note that wasysym doesn't provide correct ToUnicode values for every char.
+% Every use must be check. https://github.com/latex3/tagging-project/issues/1140
+%    \begin{macrocode}
+\RequirePackage{wasysym} 
+\RequirePackage{pifont} 
 %    \end{macrocode}
 %
 % \subsubsection{Tables}
@@ -146,8 +158,7 @@
 \RequirePackage{etoolbox} % For \AtBeginDocument etc.
 \RequirePackage{xcolor} % To provide color for soul (for english editing), for adding cell color of table
 \RequirePackage{luacolor}%
-\RequirePackage{lua-ul} % To highlight text
-\newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
+\RequirePackage[soul]{lua-ul} % To highlight text
 \RequirePackage{microtype} % For command \textls[]{}
 \RequirePackage{tikz} % For \foreach used for Orcid icon
 \RequirePackage{refcount} % To enable extracting the value of the counter "LastPage"
@@ -382,7 +393,39 @@
 %    \begin{macrocode}
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
 %    \end{macrocode}
-% 
+% \subsection{Highlighting}
+% A simple command to put something in a yellow box:
+%    \begin{macrocode}
+\newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
+%    \end{macrocode}
+% Map the lua-ul/soul names to ulem names. Note: these commands are 
+% not yet properly tagged, the pathes appear in the tag tree.
+%    \begin{macrocode}
+\let\sout\st
+\let\uline\ul
+%    \end{macrocode}
+% Define \cs{uuline} and \cs{uwave} with luamml. We make the decorations
+% artifacts for now. Adding structure is not trivial as they can go over
+% a paragraph break. 
+%    \begin{macrocode}
+\newunderlinetype \mdpi@UulineRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%
+  \unitlength=0.2em\relax
+  \begin{picture}[artifact](1,2)(0,0)
+    \put(0,1){\line(1,0){1}}
+    \put(0,0){\line(1,0){1}}
+  \end{picture}%  
+}}
+\newunderlinetype \mdpi@UwaveRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%  
+  \unitlength=0.3ex\relax
+  \begin{picture}[artifact](4,0)(0,1)
+    \thicklines
+    \qbezier(0,0)(1,1)(2,0)
+    \qbezier(2,0)(3,-1)(4,0)
+  \end{picture}%
+}}
+\NewDocumentCommand\uuline{m}{{\mdpi@UulineRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
+\NewDocumentCommand\uwave {m}{{\mdpi@UwaveRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
+%    \end{macrocode}
 % \subsection{Math environments}
 %    \begin{macrocode}
 \RequirePackage{amsthm}
@@ -404,6 +447,10 @@
 \IfDocumentMetadataTF
  {
    \EditInstance{captionedtext}{proof}{caption-decls = \bfseries}
+%    \end{macrocode}
+%  Redefine \cs{qed}, see https://github.com/MDPI-AG/luatex-template/issues/83 
+%    \begin{macrocode}
+   \renewcommand{\qed}{\unskip\nobreak\quad\qedsymbol}
  }
  {
     \renewenvironment{proof}[1][\proofname]{\par %% \proofname allows to have "Proof of my theorem"
