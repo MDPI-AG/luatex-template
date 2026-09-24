@@ -5,13 +5,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \setlength{\headheight}{21.49452pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
-(../mt-cmr.cfg
-File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
+LaTeX Font Info:    Trying to load font information for TU+lmr-base on input line ....
+(../tulmr-base.fd
+File: tulmr-base.fd ....-..-.. v... LaTeX font definitions for Latin Modern in base mode
 )
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmr-base' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `texgyrepagella-math' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line ....
 LaTeX Font Info:    Trying to load font information for U+msb on input line ....
 File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
 )
@@ -47,7 +53,6 @@ Completed box being shipped out [1]
 ...\vbox(12.0+0.0)x394.35522, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\hbox(12.0+0.0)x394.35522, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(12.0+0.0)x394.35522, direction TLT
 ......\glue -131.16722
 ......\hbox(12.0+0.0)x525.52245, direction TLT
@@ -63,6 +68,7 @@ Completed box being shipped out [1]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
 ............\TU/texgyrepagella(0)/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/texgyrepagella(0)/m/n/8 e
@@ -216,7 +222,6 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 522.57892fil, direction TLT
@@ -241,6 +246,7 @@ Completed box being shipped out [1]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\pdfliteral direct <lua data reference ...>
 .....\rule(11.42395+4.89604)x0.0
 .....\TU/texgyrepagella(0)/b/n/12 R
 .....\kern-0.12 (font)
@@ -288,7 +294,6 @@ Completed box being shipped out [1]
 ......\glue -18.84799
 ......\glue -4.2679
 ......\hbox(6.246+0.045)x18.84799, glue set 12.09799fill, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\glue 0.0 plus 1.0fil
 .......\penalty 10000
@@ -299,7 +304,6 @@ Completed box being shipped out [1]
 .......\TU/texgyrepagella(0)/m/n/9 1
 .......\TU/texgyrepagella(0)/m/n/9 .
 .......\glue 0.0 plus 1.0fill
-.......\pdfcolorstack 0 pop
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -433,7 +437,6 @@ Completed box being shipped out [1]
 ......\glue -18.84799
 ......\glue -4.2679
 ......\hbox(6.201+0.045)x18.84799, glue set 12.09799fill, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\glue 0.0 plus 1.0fil
 .......\penalty 10000
@@ -444,7 +447,6 @@ Completed box being shipped out [1]
 .......\TU/texgyrepagella(0)/m/n/9 2
 .......\TU/texgyrepagella(0)/m/n/9 .
 .......\glue 0.0 plus 1.0fill
-.......\pdfcolorstack 0 pop
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -661,7 +663,6 @@ Completed box being shipped out [1]
 ......\glue -18.84799
 ......\glue -4.2679
 ......\hbox(6.201+0.18)x18.84799, glue set 12.09799fill, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\glue 0.0 plus 1.0fil
 .......\penalty 10000
@@ -672,7 +673,6 @@ Completed box being shipped out [1]
 .......\TU/texgyrepagella(0)/m/n/9 3
 .......\TU/texgyrepagella(0)/m/n/9 .
 .......\glue 0.0 plus 1.0fill
-.......\pdfcolorstack 0 pop
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -832,7 +832,6 @@ Completed box being shipped out [1]
 ......\glue -18.84799
 ......\glue -4.2679
 ......\hbox(6.246+0.045)x18.84799, glue set 12.09799fill, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\glue 0.0 plus 1.0fil
 .......\penalty 10000
@@ -843,7 +842,6 @@ Completed box being shipped out [1]
 .......\TU/texgyrepagella(0)/m/n/9 4
 .......\TU/texgyrepagella(0)/m/n/9 .
 .......\glue 0.0 plus 1.0fill
-.......\pdfcolorstack 0 pop
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -1089,7 +1087,6 @@ Completed box being shipped out [1]
 ......\glue -18.84799
 ......\glue -4.2679
 ......\hbox(6.201+0.18)x18.84799, glue set 12.09799fill, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\glue 0.0 plus 1.0fil
 .......\penalty 10000
@@ -1100,7 +1097,6 @@ Completed box being shipped out [1]
 .......\TU/texgyrepagella(0)/m/n/9 5
 .......\TU/texgyrepagella(0)/m/n/9 .
 .......\glue 0.0 plus 1.0fill
-.......\pdfcolorstack 0 pop
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 T
@@ -1221,7 +1217,6 @@ Completed box being shipped out [1]
 ......\glue -18.84799
 ......\glue -4.2679
 ......\hbox(6.201+0.18)x18.84799, glue set 12.09799fill, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\glue 0.0 plus 1.0fil
 .......\penalty 10000
@@ -1232,7 +1227,6 @@ Completed box being shipped out [1]
 .......\TU/texgyrepagella(0)/m/n/9 6
 .......\TU/texgyrepagella(0)/m/n/9 .
 .......\glue 0.0 plus 1.0fill
-.......\pdfcolorstack 0 pop
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -1579,7 +1573,6 @@ Completed box being shipped out [1]
 ......\glue -18.84799
 ......\glue -4.2679
 ......\hbox(6.201+0.045)x18.84799, glue set 12.09799fill, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\glue 0.0 plus 1.0fil
 .......\penalty 10000
@@ -1590,7 +1583,6 @@ Completed box being shipped out [1]
 .......\TU/texgyrepagella(0)/m/n/9 7
 .......\TU/texgyrepagella(0)/m/n/9 .
 .......\glue 0.0 plus 1.0fill
-.......\pdfcolorstack 0 pop
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -1771,7 +1763,6 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 0.0001fil
 ...\glue(\baselineskip) 22.02002
 ...\hbox(13.97998+4.19403)x394.35522, direction TLT
-....\pdfcolorstack 0 push {0 g 0 G}
 ....\hbox(13.97998+4.19403)x394.35522, direction TLT
 .....\glue -131.16722
 .....\hbox(13.97998+4.19403)x525.52245, direction TLT
@@ -1819,8 +1810,8 @@ Completed box being shipped out [1]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://doi.org/10.3390/0000000)>>}
-...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
+...........\pdfliteral direct <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
 ...........\TU/texgyrepagella(0)/m/n/8 t
 ...........\TU/texgyrepagella(0)/m/n/8 t
@@ -1886,14 +1877,13 @@ Completed box being shipped out [1]
 ...........\glue(\medmuskip) 0.0
 ...........\TU/texgyrepagella(0)/m/n/8 0
 ...........\mathoff
-...........\pdfcolorstack 0 pop
 ...........\pdfendlink
+...........\pdfliteral direct <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfcolorstack 0 pop
 .\kern0.0
 .\kern0.0
 enddocument/afterlastpage (AED): lastpage setting LastPage.

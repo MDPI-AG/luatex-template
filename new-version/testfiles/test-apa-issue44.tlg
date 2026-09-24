@@ -78,6 +78,7 @@ TEST 1: Show PDF Tags
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.023"
         >
+       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
        <?ReferencedObject type="Annot" page="1" ?>
        <?ReferencedObject type="Annot" page="1" ?>
@@ -169,13 +170,16 @@ TEST 1: Show PDF Tags
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.036"
         >
+       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Author
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-      <?MarkedContent page="1" ?> (
+      <?MarkedContent page="1" ?> 
+      <?MarkedContent page="1" ?>(
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.037"
         >
+       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>year
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>

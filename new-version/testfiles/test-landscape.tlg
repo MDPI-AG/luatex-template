@@ -37,7 +37,6 @@ Completed box being shipped out [1]
 ...\vbox(12.0+0.0)x394.35522, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\hbox(12.0+0.0)x394.35522, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(12.0+0.0)x394.35522, direction TLT
 ......\glue -131.16722
 ......\hbox(12.0+0.0)x525.52245, direction TLT
@@ -53,6 +52,7 @@ Completed box being shipped out [1]
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
 ............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
@@ -98,7 +98,6 @@ Completed box being shipped out [1]
 ...........\glue 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 562.78668fil, direction TLT
@@ -137,6 +136,7 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\pdfliteral direct <lua data reference ...>
 ..........\rule(9.78595+4.19403)x0.0
 ..........\glue 0.0
 ..........\hbox(17.07182+0.0)x0.0, direction TLT
@@ -440,7 +440,7 @@ Completed box being shipped out [1]
 .........\glue(\baselineskip) 6.778
 .........\hbox(5.082+0.14)x116.65646, glue set 20.46245fil, direction TLT
 ..........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://creativecommons.org/licenses/by/4.0/)>>}
-..........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
+..........\pdfliteral direct <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 C
 ..........\TU/texgyrepagella(0)/m/n/7 r
 ..........\TU/texgyrepagella(0)/m/n/7 e
@@ -505,8 +505,8 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\TU/texgyrepagella(0)/m/n/7 s
 ..........\TU/texgyrepagella(0)/m/n/7 e
-..........\pdfcolorstack 0 pop
 ..........\pdfendlink
+..........\pdfliteral direct <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 .
 ..........\penalty 10000
 ..........\kern-1.225 (right margin)
@@ -548,27 +548,23 @@ Completed box being shipped out [1]
 ......\glue -20.0
 ......\glue -5.0
 ......\hbox(0.0+0.0)x20.0, glue set 20.0fil, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
 .......\glue 0.0 plus 1.0fil
-.......\pdfcolorstack 0 pop
 ......\glue 5.0
 ......\glue 0.0
 ......\glue 0.0
 ......\glue 0.0
 ......\glue -5.0
 ......\hbox(0.0+0.0)x0.0, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
-.......\pdfcolorstack 0 pop
 ......\glue 5.0
 .....\penalty 0
 .....\hbox(34.14322+0.0)x0.0, direction TLT
 .....\glue 0.0 plus 1.0fill
 .....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://www.mdpi.com)>>}
-.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\hbox(28.45274+0.0)x42.96877, direction TLT
 ......\hbox(28.45236+0.0)x42.96887, direction TLT
 .......\hbox(28.45236+0.0)x42.96887, direction TLT
 ........\hbox(28.45236+0.0)x0.0, direction TLT
+.........\pdfliteral direct <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.57849 0 0 .57849}
 .........\hbox(49.18375+0.0)x0.0, glue set - 74.2775fil, direction TLT
@@ -578,7 +574,6 @@ Completed box being shipped out [1]
 .........\pdfrestore
 ........\kern42.96887
 ........\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 .....\pdfendlink
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -594,6 +589,7 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.4+0.0)x525.23764, direction TLT
+......\pdfliteral direct <lua data reference ...>
 ......\rule(0.4+0.0)x525.23764
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -697,8 +693,6 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\glue -5.0
 ......\hbox(0.0+0.0)x0.0, direction TLT
-.......\pdfcolorstack 0 push {0 g 0 G}
-.......\pdfcolorstack 0 pop
 ......\glue 5.0
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/8 A
@@ -725,7 +719,6 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 0.0001fil
 ...\glue(\baselineskip) 21.62003
 ...\hbox(14.37997+4.19403)x394.35522, direction TLT
-....\pdfcolorstack 0 push {0 g 0 G}
 ....\hbox(14.37997+4.19403)x394.35522, direction TLT
 .....\glue -131.16722
 .....\hbox(14.37997+4.19403)x525.52245, direction TLT
@@ -848,8 +841,8 @@ Completed box being shipped out [1]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://doi.org/10.3390/0000000)>>}
-...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
+...........\pdfliteral direct <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
 ...........\TU/texgyrepagella(0)/m/n/8 t
 ...........\TU/texgyrepagella(0)/m/n/8 t
@@ -915,14 +908,13 @@ Completed box being shipped out [1]
 ...........\glue(\medmuskip) 0.0
 ...........\TU/texgyrepagella(0)/m/n/8 0
 ...........\mathoff
-...........\pdfcolorstack 0 pop
 ...........\pdfendlink
+...........\pdfliteral direct <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfcolorstack 0 pop
 .\kern0.0
 .\kern0.0
 <./logo-mdpi.pdf>
@@ -998,7 +990,6 @@ Completed box being shipped out [2]
 ...\vbox(12.0+0.0)x772.77661, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\hbox(12.0+0.0)x772.77661, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(12.0+0.0)x772.77661, direction TLT
 ......\glue 0.0
 ......\hbox(12.0+0.0)x772.77661, direction TLT
@@ -1014,6 +1005,7 @@ Completed box being shipped out [2]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
 ............\TU/texgyrepagella(0)/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/texgyrepagella(0)/m/n/8 e
@@ -1165,7 +1157,6 @@ Completed box being shipped out [2]
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(458.64374+0.0)x772.77661, glue set 124.28056fil, direction TLT
@@ -1415,7 +1406,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -1423,7 +1413,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -1658,7 +1647,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -1666,7 +1654,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -1894,7 +1881,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -1902,7 +1888,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 3
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -2134,7 +2119,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.28+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -2142,7 +2126,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -2315,7 +2298,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.28+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -2323,7 +2305,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 5
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
@@ -2547,7 +2528,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -2555,7 +2535,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 6
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -2808,7 +2787,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.28+0.05)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -2816,7 +2794,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 7
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -3047,7 +3024,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -3055,7 +3031,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 8
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -3288,7 +3263,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -3296,7 +3270,6 @@ Completed box being shipped out [2]
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\TU/lmss/m/n/5 9
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -3454,7 +3427,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -3463,7 +3435,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
@@ -3703,7 +3674,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -3712,7 +3682,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -3967,7 +3936,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -3976,7 +3944,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.70999
@@ -4215,7 +4182,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -4224,7 +4190,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 3
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.70999
@@ -4457,7 +4422,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -4466,7 +4430,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -4683,7 +4646,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -4692,7 +4654,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 5
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -4790,7 +4751,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -4799,7 +4759,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 6
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
@@ -5011,7 +4970,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.05)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -5020,7 +4978,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 7
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -5233,7 +5190,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -5242,7 +5198,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 8
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -5463,7 +5418,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -5472,7 +5426,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 9
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -5706,7 +5659,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -5715,7 +5667,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.70999
@@ -5960,7 +5911,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -5969,7 +5919,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.70999
@@ -6209,7 +6158,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -6218,7 +6166,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -6268,7 +6215,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -6277,7 +6223,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 3
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
@@ -6322,7 +6267,6 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 792.77661fil, direction TLT
 ......\glue 10.0
 ......\glue 772.77661
@@ -6331,7 +6275,6 @@ Completed box being shipped out [2]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
@@ -6340,7 +6283,6 @@ Completed box being shipped out [2]
 ....\glue 0.0 plus 0.0001fil
 ...\glue(\baselineskip) 22.02002
 ...\hbox(13.97998+4.19403)x772.77661, direction TLT
-....\pdfcolorstack 0 push {0 g 0 G}
 ....\hbox(13.97998+4.19403)x772.77661, direction TLT
 .....\glue -131.16722
 .....\hbox(13.97998+4.19403)x903.94383, direction TLT
@@ -6388,8 +6330,8 @@ Completed box being shipped out [2]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://doi.org/10.3390/0000000)>>}
-...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
+...........\pdfliteral direct <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
 ...........\TU/texgyrepagella(0)/m/n/8 t
 ...........\TU/texgyrepagella(0)/m/n/8 t
@@ -6455,14 +6397,13 @@ Completed box being shipped out [2]
 ...........\glue(\medmuskip) 0.0
 ...........\TU/texgyrepagella(0)/m/n/8 0
 ...........\mathoff
-...........\pdfcolorstack 0 pop
 ...........\pdfendlink
+...........\pdfliteral direct <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfcolorstack 0 pop
 .\kern0.0
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 21.49452pt, for example:
@@ -6500,7 +6441,6 @@ Completed box being shipped out [3]
 ...\vbox(12.0+0.0)x394.35522, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\hbox(12.0+0.0)x394.35522, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(12.0+0.0)x394.35522, direction TLT
 ......\glue -131.16722
 ......\hbox(12.0+0.0)x525.52245, direction TLT
@@ -6516,6 +6456,7 @@ Completed box being shipped out [3]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
 ............\TU/texgyrepagella(0)/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/texgyrepagella(0)/m/n/8 e
@@ -6667,7 +6608,6 @@ Completed box being shipped out [3]
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 259.96509fil, direction TLT
@@ -6807,7 +6747,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -6816,7 +6755,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 5
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -6933,7 +6871,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -6942,7 +6879,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 6
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -7064,7 +7000,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.05)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -7073,7 +7008,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 7
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -7201,7 +7135,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -7210,7 +7143,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 8
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -7334,7 +7266,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -7343,7 +7274,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 2
 .......\TU/lmss/m/n/5 9
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -7462,7 +7392,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -7471,7 +7400,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -7591,7 +7519,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -7600,7 +7527,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -7724,7 +7650,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -7733,7 +7658,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.89
@@ -7840,7 +7764,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -7849,7 +7772,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 3
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -7904,7 +7826,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -7913,7 +7834,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
@@ -8034,7 +7954,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -8043,7 +7962,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 5
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -8174,7 +8092,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -8183,7 +8100,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 6
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -8305,7 +8221,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -8314,7 +8229,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 7
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -8454,7 +8368,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -8463,7 +8376,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 8
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -8577,7 +8489,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -8586,7 +8497,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 9
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.89
@@ -8701,7 +8611,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -8710,7 +8619,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -8828,7 +8736,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -8837,7 +8744,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -8961,7 +8867,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -8970,7 +8875,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -9085,7 +8989,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -9094,7 +8997,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 3
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.89
@@ -9129,7 +9031,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.28+0.0)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -9138,7 +9039,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
@@ -9259,7 +9159,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.28+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -9268,7 +9167,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 5
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.70999
@@ -9394,7 +9292,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -9403,7 +9300,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 6
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -9534,7 +9430,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.28+0.05)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -9543,7 +9438,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 7
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -9674,7 +9568,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -9683,7 +9576,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 8
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -9806,7 +9698,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -9815,7 +9706,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 4
 .......\TU/lmss/m/n/5 9
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.70999
@@ -9938,7 +9828,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -9947,7 +9836,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 5
 .......\TU/lmss/m/n/5 0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -10075,7 +9963,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -10084,7 +9971,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 5
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.70999
@@ -10207,7 +10093,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -10216,7 +10101,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 5
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -10333,7 +10217,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -10342,7 +10225,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 5
 .......\TU/lmss/m/n/5 3
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -10460,7 +10342,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.28+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -10469,7 +10350,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 5
 .......\TU/lmss/m/n/5 4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
@@ -10546,7 +10426,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.28+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -10555,7 +10434,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 5
 .......\TU/lmss/m/n/5 5
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
@@ -10600,7 +10478,6 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -10609,7 +10486,6 @@ Completed box being shipped out [3]
 .......\TU/lmss/m/n/5 5
 .......\TU/lmss/m/n/5 6
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
@@ -10618,7 +10494,6 @@ Completed box being shipped out [3]
 ....\glue 0.0 plus 0.0001fil
 ...\glue(\baselineskip) 22.02002
 ...\hbox(13.97998+4.19403)x394.35522, direction TLT
-....\pdfcolorstack 0 push {0 g 0 G}
 ....\hbox(13.97998+4.19403)x394.35522, direction TLT
 .....\glue -131.16722
 .....\hbox(13.97998+4.19403)x525.52245, direction TLT
@@ -10666,8 +10541,8 @@ Completed box being shipped out [3]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://doi.org/10.3390/0000000)>>}
-...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
+...........\pdfliteral direct <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
 ...........\TU/texgyrepagella(0)/m/n/8 t
 ...........\TU/texgyrepagella(0)/m/n/8 t
@@ -10733,14 +10608,13 @@ Completed box being shipped out [3]
 ...........\glue(\medmuskip) 0.0
 ...........\TU/texgyrepagella(0)/m/n/8 0
 ...........\mathoff
-...........\pdfcolorstack 0 pop
 ...........\pdfendlink
+...........\pdfliteral direct <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfcolorstack 0 pop
 .\kern0.0
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-landscape.aux)

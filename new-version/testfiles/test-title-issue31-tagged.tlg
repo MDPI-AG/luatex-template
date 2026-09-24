@@ -90,6 +90,7 @@ TEST 1: Show PDF Tags
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.025"
         >
+       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
        <?ReferencedObject type="Annot" page="1" ?>
        <?ReferencedObject type="Annot" page="1" ?>
@@ -480,9 +481,6 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
 ....\hbox(12.0+0.0)x394.35522, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(12.0+0.0)x394.35522, direction TLT
 ......\glue -131.16722
 ......\hbox(12.0+0.0)x525.52245, direction TLT
@@ -498,6 +496,9 @@ Completed box being shipped out [1]
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
 ............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
@@ -543,13 +544,12 @@ Completed box being shipped out [1]
 ...........\glue 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 283.38254fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 285.38232fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -586,16 +586,19 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\pdfliteral direct <lua data reference ...>
 ..........\rule(9.78595+4.19403)x0.0
 ..........\glue 0.0
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://crossmark.crossref.org/dialog?doi=10.3390/acoustics0000000\046domain=pdf\046date_stamp=....-..-..) >>  /LTEX_position /isolated/StructParent 1} action user{}
-..........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ..........\hbox(17.07182+0.0)x88.53558, direction TLT
 ...........\hbox(17.07193+0.0)x88.53581, direction TLT
 ............\hbox(17.07193+0.0)x88.53581, direction TLT
 .............\hbox(17.07193+0.0)x0.0, direction TLT
+..............\pdfliteral page <lua data reference ...>
+..............\pdfliteral page <lua data reference ...>
+..............\pdfliteral direct <lua data reference ...>
 ..............\pdfliteral page <lua data reference ...>
 ..............\pdfliteral page <lua data reference ...>
 ..............\pdfsave
@@ -609,7 +612,6 @@ Completed box being shipped out [1]
 .............\glue 0.0 plus 1.0fil minus 1.0fil
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfcolorstack 0 pop
 ..........\pdfendlink
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
@@ -624,6 +626,9 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 R
@@ -958,7 +963,11 @@ Completed box being shipped out [1]
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfstartlink(*+*)x62.99445 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 2} action user{}
 ..........\pdfendlink
-..........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral direct <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 C
 ..........\TU/texgyrepagella(0)/m/n/7 r
 ..........\TU/texgyrepagella(0)/m/n/7 e
@@ -1029,8 +1038,10 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\TU/texgyrepagella(0)/m/n/7 s
 ..........\TU/texgyrepagella(0)/m/n/7 e
-..........\pdfcolorstack 0 pop
 ..........\pdfendlink
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 .
@@ -1050,10 +1061,11 @@ Completed box being shipped out [1]
 ....\penalty -51
 ....\glue -13.98
 ....\glue 13.98
-....\glue 2.0 plus 2.0 minus 1.0
-....\glue -2.0 plus -2.0 minus -1.0
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
 ....\penalty -51
-....\glue 2.0 plus 2.0 minus 1.0
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\rule(0.0+0.0)x*
@@ -1075,11 +1087,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com/journal/acoustics) >>  /LTEX_position /isolated/StructParent 4} action user{}
-.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\hbox(34.14322+0.0)x105.84227, direction TLT
 ......\hbox(34.14275+0.0)x105.84253, direction TLT
 .......\hbox(34.14275+0.0)x105.84253, direction TLT
 ........\hbox(34.14275+0.0)x0.0, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral direct <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\pdfsave
@@ -1093,13 +1107,11 @@ Completed box being shipped out [1]
 ........\glue 0.0 plus 1.0fil minus 1.0fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 pop
 .....\pdfendlink
 .....\glue 0.0 plus 1.0fill
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >>  /LTEX_position /isolated/StructParent 5} action user{}
-.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\hbox(28.45274+0.0)x42.96877, direction TLT
 ......\hbox(28.45236+0.0)x42.96887, direction TLT
 .......\hbox(28.45236+0.0)x42.96887, direction TLT
@@ -1117,7 +1129,6 @@ Completed box being shipped out [1]
 ........\glue 0.0 plus 1.0fil minus 1.0fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 pop
 .....\pdfendlink
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1133,6 +1144,9 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.4+0.0)x525.23764, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral direct <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\rule(0.4+0.0)x525.23764
@@ -1240,20 +1254,20 @@ Completed box being shipped out [1]
 .....\hbox(4.69+0.021)x3.5, shifted -3.54, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/b/n/7 1
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.444706 0.456472 0.680002] /A 67 0 R  /LTEX_position /isolated/StructParent 6} action user{}
-.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 .....\hbox(9.10466+0.0)x9.10509, direction TLT
 ......\hbox(9.10469+0.0)x9.10469, direction TLT
 .......\hbox(9.10469+0.0)x9.10469, direction TLT
 ........\hbox(9.10469+0.0)x0.0, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral direct <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\pdfsave
@@ -1267,8 +1281,10 @@ Completed box being shipped out [1]
 ........\glue 0.0 plus 1.0fil minus 1.0fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 pop
 .....\pdfendlink
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 ,
@@ -1303,9 +1319,7 @@ Completed box being shipped out [1]
 .....\hbox(4.62+0.021)x3.5, shifted -3.54, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/b/n/7 2
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
@@ -1347,10 +1361,8 @@ Completed box being shipped out [1]
 .....\hbox(4.62+1.162)x5.25, shifted -3.54, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/b/n/7 2
 ......\TU/texgyrepagella(0)/b/n/7 ,
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
@@ -1364,18 +1376,10 @@ Completed box being shipped out [1]
 ....\glue 12.0
 ....\glue 0.0
 ....\penalty -51
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -2.0 plus -1.0 minus -1.0
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -3.66 plus -1.0 minus -1.0
+....\glue 0.0
 ....\penalty -51
-....\glue 1.66
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -3.66 plus -1.0 minus -1.0
+....\glue 0.0
 ....\penalty -51
-....\glue 1.66
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -2.0 plus -1.0 minus -1.0
 ....\glue 10.0 plus 4.0 minus 5.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -1393,9 +1397,7 @@ Completed box being shipped out [1]
 .....\hbox(4.164+0.018)x3.0, shifted -2.832, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/m/n/6 1
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
@@ -1467,9 +1469,7 @@ Completed box being shipped out [1]
 .....\hbox(4.134+0.018)x3.0, shifted -2.832, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/m/n/6 2
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
@@ -4319,13 +4319,12 @@ Completed box being shipped out [1]
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 21.62003
 ...\hbox(14.37997+4.19403)x394.35522, direction TLT
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
-....\pdfcolorstack 0 push {0 g 0 G}
 ....\hbox(14.37997+4.19403)x394.35522, direction TLT
 .....\glue -131.16722
 .....\hbox(14.37997+4.19403)x525.52245, direction TLT
 ......\vbox(14.37997+4.19403)x525.52245, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\rule(0.4+0.0)x525.52245
 .......\glue 4.19403
 .......\hbox(9.78595+4.19403)x525.52245, direction TLT
@@ -4398,8 +4397,12 @@ Completed box being shipped out [1]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/acoustics0000000) >>  /LTEX_position /isolated/StructParent 7/Contents (artifact)} action user{}
-...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral direct <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
 ...........\TU/texgyrepagella(0)/m/n/8 t
 ...........\TU/texgyrepagella(0)/m/n/8 t
@@ -4474,14 +4477,17 @@ Completed box being shipped out [1]
 ...........\TU/texgyrepagella(0)/m/n/8 0
 ...........\TU/texgyrepagella(0)/m/n/8 0
 ...........\mathoff
-...........\pdfcolorstack 0 pop
 ...........\pdfendlink
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral direct <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfcolorstack 0 pop
 ...\pdfliteral page <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 0
