@@ -103,6 +103,7 @@
 \RequirePackage{lua-unicode-math}
 \setmathfont[AutoFakeBold=1.125]{texgyrepagella-math}
 %    \end{macrocode}
+%
 % \subsubsection{Tables}
 % Tagging compatible packages:
 %    \begin{macrocode}
@@ -144,6 +145,7 @@
 \IfDocumentMetadataF{\RequirePackage{titlesec}}
 \RequirePackage{etoolbox} % For \AtBeginDocument etc.
 \RequirePackage{xcolor} % To provide color for soul (for english editing), for adding cell color of table
+\RequirePackage{luacolor}%
 \RequirePackage{lua-ul} % To highlight text
 \newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
 \RequirePackage{microtype} % For command \textls[]{}
