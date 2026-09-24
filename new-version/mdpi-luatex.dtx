@@ -301,31 +301,6 @@
 %
 % \subsection{Temporary patches for taggings}
 % 
-% \subsubsection{The \env{adjustwidth} environment}
-% The environment is built by the \pkg{changepage} package
-% with a list. This breaks tagging, e.g., if the environment starts with
-% a heading command. \LaTeX-release 2026-06-01 provides a tagging recipe that
-% can be used
-% With it we redefine the environment. Note that spacing and behaviour is not fully
-% identical yet. 
-% TODO: fine tune!
-%    \begin{macrocode}
-\IfDocumentMetadataT
- {
-   \RenewDocumentEnvironment{adjustwidth}{mm}
-    {%
-      \begin{displayblock}%
-       [tagging-recipe=noop,
-        left-margin=\dimeval{#1+0pt},
-        right-margin={#2+0pt},
-        para-indent=\parindent,
-        begin-vspace=0pt,
-        end-vspace=0pt]
-    }
-    {\end{displayblock}}
- }
-%    \end{macrocode}
-% 
 % \subsection{Fontsizes}
 % The following font size are inherited from article
 % \begin{tabular}{lll}
