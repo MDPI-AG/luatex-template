@@ -848,6 +848,9 @@
 % Indents & Commands for hanging indent
 \setlength{\parindent}{0.75cm}
 \newcommand{\dist}{1.7em}
+\newcommand\mdpi@len@dist{1.7em}
+\newcommand\mdpi@len@distshift{0.85em}
+\newdimen\mdpi@len@tmpa
 
 %%%% Front matter
 % Command for checking for a question mark or exclamation mark in title
@@ -1566,7 +1569,7 @@
 \newcommand\mdpi@notelabel
  {
    \stepcounter{mdpi@notecnt}
-   \makebox[\dist][l]
+   \makebox[\mdpi@len@dist][l]
     {\UseTaggingSocket{inline/begin}{tag=Lbl}\mdpi@notesymbol\csname pdffakespace\endcsname\UseTaggingSocket{inline/end}}
  }
 %    \end{macrocode}
@@ -1596,8 +1599,12 @@
 % \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
 % so we set the \cs{parshape} instead.
 %    \begin{macrocode}
+     % Scheme B: single affiliation (\address[1]) -> tighter note indent
+     \tl_if_eq:NnTF{\firstargument}{1}
+       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist-\mdpi@len@distshift\relax}
+       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}     
      \parshape 2~0cm \linewidth 
-     \dimeval{\dist}~\dimeval{\linewidth-\dist}
+     \dimeval{\mdpi@len@tmpa}~\dimeval{\linewidth-\mdpi@len@tmpa}
      \tl_if_eq:NnF\@authornum{author}
        {
         \tl_if_empty:NF\@corres
