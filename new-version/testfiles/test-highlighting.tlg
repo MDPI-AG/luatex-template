@@ -8,7 +8,7 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for 'engl
 TEST 1: Show PDF Tags
 ============================================================
 -------- test-highlighting.xml (start) ---------
-<PDF>
+<PDF version="2.0">
  <StructTreeRoot>
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"

@@ -10189,7 +10189,7 @@ Floatstructure:62
 TEST 1: Show PDF Tags
 ============================================================
 -------- test-landscape-2.xml (start) ---------
-<PDF>
+<PDF version="2.0">
  <StructTreeRoot>
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"

@@ -23,7 +23,7 @@ File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
 TEST 1: Show PDF Tags
 ============================================================
 -------- test-footnote-tagged.xml (start) ---------
-<PDF>
+<PDF version="2.0">
  <StructTreeRoot>
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"
