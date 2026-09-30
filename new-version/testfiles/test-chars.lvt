@@ -1,0 +1,24 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\input{regression-test}
+
+\documentclass{mdpi-luatex}
+\begin{document}
+\START\showoutput
+ȧ %\.{a}
+
+Ȯ %\.{O}
+
+Ǟ %\={Ä}
+
+Ǖ %\={Ü}
+
+ǋ  %Nj
+
+Ǉ %LJ
+
+ǡ %\.{\={a}}
+
+Ǣ %\={\AE}
+
+ǣ %\={\ae}
+\end{document} 

@@ -99,8 +99,14 @@
 %    \begin{macrocode}
 \RequirePackage{tagpdf-base}
 %    \end{macrocode}
-% \subsubsection{Font setup}
-% TODO: sans serif, typewriter, math fonts?
+% \subsubsection{Text font setup}
+% We normalize the input to NFD to get more chars with accent working
+%    \begin{macrocode}
+\RequirePackage{inputnormalization}
+\Uinputnormalization=0
+\AddToHook{begindocument/end}{\Uinputnormalization=2}
+%    \end{macrocode}
+% TODO: sans serif, typewriter?
 %    \begin{macrocode}
 \RequirePackage{fontspec}
 \setmainfont{texgyrepagella}
@@ -159,7 +165,7 @@
 \RequirePackage{ifthen}
 \RequirePackage{float}
 \RequirePackage{amsmath}
-%\RequirePackage{amssymb} % For math environment bold format
+% % For math environment bold format
 \RequirePackage[right,mathlines]{lineno}
 \RequirePackage{enumitem}
 \IfDocumentMetadataF{\RequirePackage{titlesec}}
