@@ -25,4 +25,6 @@ $ a = \int f(x) = \symbf{a} $
 
 {\mathversion{bold} $ a = \int f(x) = \symbf{a} $}
 
+
+$ \square \blacksquare 𝛻 $
 \end{document} 

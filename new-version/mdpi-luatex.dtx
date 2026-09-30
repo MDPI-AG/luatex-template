@@ -104,6 +104,14 @@
 %    \begin{macrocode}
 \RequirePackage{fontspec}
 \setmainfont{texgyrepagella}
+%    \end{macrocode}
+% \subsection{Math font setup}
+% We load amssymb for e.g. \cs{square}
+%    \begin{macrocode}
+\RequirePackage{amssymb} 
+%    \end{macrocode}
+% And lua-unicode-math for the rest
+%    \begin{macrocode}
 \RequirePackage{lua-unicode-math}
 \setmathfont[AutoFakeBold=1.125]{texgyrepagella-math}
 %    \end{macrocode}

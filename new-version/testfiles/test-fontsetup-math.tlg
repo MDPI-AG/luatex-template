@@ -25,10 +25,6 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <18> not available
 (Font)              size <17.28> substituted on input line ....
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <12.59995> not available
 (Font)              size <12> substituted on input line ....
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18> not available
-(Font)              size <17.28> substituted on input line ....
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <12.59995> not available
-(Font)              size <12> substituted on input line ....
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <18> not available
 (Font)              size <17.28> substituted on input line ....
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <12.59995> not available
@@ -147,7 +143,7 @@ Completed box being shipped out [1]
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 391.13312fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 375.22882fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -1195,6 +1191,38 @@ Completed box being shipped out [1]
 ....\penalty 10000
 ....\kern-5.328
 ....\hbox(0.0+5.328)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.252
+....\hbox(12.42+0.234)x394.35522, glue set 332.19958fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\mathon
+.....\U/msa/m/n/18 ^^C
+.....\U/msa/m/n/18 ^^D
+.....\TU/texgyrepagella-math(0)/m/n/18 𝛻
+.....\kern1.728 (italic)
+.....\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-0.234
+....\hbox(0.0+0.234)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 0
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-0.234
+....\hbox(0.0+0.234)x0.0, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
