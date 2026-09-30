@@ -1802,8 +1802,15 @@
 %    \end{macrocode}
 % We set up a dedicated headformat instance:
 %    \begin{macrocode}
-   \DeclareInstance    {headformat}{mdpi/std}{hang}
-    {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
+   \IfFormatAtLeastTF{2026-11-01}
+    {
+      \DeclareInstance    {headformat}{mdpi/std}{hang}
+      {heading-indent = 0pt,separator-b=\hspace{\WordSpaceAmount{1}}}
+    }
+    {
+     \DeclareInstance    {headformat}{mdpi/std}{hang}
+      {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
+    }  
    \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
    \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
    \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
