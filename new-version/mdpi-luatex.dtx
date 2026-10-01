@@ -195,7 +195,6 @@
 \RequirePackage{lastpage}
 \RequirePackage{ifthen}
 \RequirePackage{float}
-% % For math environment bold format
 \RequirePackage[right,mathlines]{lineno}
 \RequirePackage{enumitem}
 \IfDocumentMetadataF{\RequirePackage{titlesec}}
@@ -214,7 +213,6 @@
 \reversemarginpar % To have the left column on the left side
 \RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
 \RequirePackage{enotez} % For endnotes
-\RequirePackage{xstring} % For citation in left column
 \RequirePackage[labelformat=simple]{subfig} % Support to add subfigures
 \renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} % Change subfigure label format
 \RequirePackage{alphalph} % Provide double letters numbers
@@ -1398,18 +1396,18 @@
 % \subsubsection{Part 2: Academic editor(s)}
 % \begin{macro}{\leftcolExternalEditor}
 %    \begin{macrocode}
+\ExplSyntaxOn
 \newcommand{\leftcolExternalEditor}
-  {%
-    \ifthenelse
-     {\equal{\@externaleditor}{\@empty}}
-     {}
-     {%
-       \IfSubStr{\@externaleditor}{ and }
-         {Academic Editors: \@externaleditor}
-         {{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}%
+  {
+    \tl_if_empty:NF\@externaleditor
+    {
+       \tl_if_in:NnTF \@externaleditor{~and~}
+         {Academic~Editors:~\@externaleditor}
+         {Academic~Editor:~\@externaleditor}
        %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
      }%
   }
+\ExplSyntaxOff  
 %    \end{macrocode}
 % \end{macro}
 
