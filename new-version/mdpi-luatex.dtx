@@ -99,6 +99,34 @@
 %    \begin{macrocode}
 \RequirePackage{tagpdf-base}
 %    \end{macrocode}
+%
+% \subsubsection{Tools}
+%    \begin{macrocode}
+\RequirePackage{calc}
+\RequirePackage{lastpage}
+\RequirePackage{ifthen}
+\RequirePackage{etoolbox} 
+\RequirePackage{refcount} 
+\RequirePackage{alphalph}
+%    \end{macrocode}
+% TODO: replace by lualineno
+%    \begin{macrocode}
+\RequirePackage[right,mathlines]{lineno}
+%    \end{macrocode}
+% Use in the biography environment. TODO: check if a proper list or display environment
+% can be used. 
+%    \begin{macrocode}
+\RequirePackage{pbox}
+%    \end{macrocode}
+%  To adjust the width of the column for the title part and figures/tables (adjustwidth environment)
+%    \begin{macrocode}
+\RequirePackage{changepage} % 
+%    \end{macrocode}
+% For XML2PDF use \tag{} for equation (??)
+%    \begin{macrocode}
+\RequirePackage{attrib} 
+%    \end{macrocode}
+%
 % \subsubsection{Text font setup}
 % We normalize the input to NFD to get more chars with accent working
 %    \begin{macrocode}
@@ -110,7 +138,9 @@
 %    \begin{macrocode}
 \RequirePackage{fontspec}
 \setmainfont{texgyrepagella}
+\RequirePackage{microtype} % provides also \textls[]{}
 %    \end{macrocode}
+%
 % \subsection{Math font setup}
 % We load amssymb for e.g. \cs{square}
 %    \begin{macrocode}
@@ -175,56 +205,66 @@
 %    \begin{macrocode}
 \RequirePackage{colortbl}
 %    \end{macrocode}
-% Currently tagging incompatible:
+% Currently tagging incompatible: TODO
 %    \begin{macrocode}
 \RequirePackage{multirow}
 %    \end{macrocode}
 %
+% \subsubsection{Graphics and color}
+% 
 %    \begin{macrocode}
-\RequirePackage{calc}
-\RequirePackage{indentfirst}
-\RequirePackage{fancyhdr}
+\RequirePackage{xcolor}  
+\RequirePackage{luacolor}
 \RequirePackage{graphicx}
 %    \end{macrocode}
 % Special graphic pathes:
 %    \begin{macrocode}
 \graphicspath{{./Definitions/}{./Figures/}{./Figure/}{./figures/}{./figure/}}
 %    \end{macrocode}
-%
+% TODO: should tikz be loaded by default? It is not needed.
 %    \begin{macrocode}
-\RequirePackage{lastpage}
-\RequirePackage{ifthen}
-\RequirePackage{float}
-\RequirePackage[right,mathlines]{lineno}
-\RequirePackage{enumitem}
+\RequirePackage{tikz}
+%    \end{macrocode}
+% To highlight text:
+%    \begin{macrocode}
+\RequirePackage[soul]{lua-ul}
+%    \end{macrocode}
+%
+% \subsubsection{Page style}
+%    \begin{macrocode}
+\RequirePackage{fancyhdr}
+%    \end{macrocode}
+% \subsubsection{Headings}
+%    \begin{macrocode}
+\RequirePackage{indentfirst}
 \IfDocumentMetadataF{\RequirePackage{titlesec}}
-\RequirePackage{etoolbox} % For \AtBeginDocument etc.
-\RequirePackage{xcolor} % To provide color for soul (for english editing), for adding cell color of table
-\RequirePackage{luacolor}%
-\RequirePackage[soul]{lua-ul} % To highlight text
-\RequirePackage{microtype} % For command \textls[]{}
-\RequirePackage{tikz} % For \foreach used for Orcid icon
-\RequirePackage{refcount} % To enable extracting the value of the counter "LastPage"
-\RequirePackage{changepage} % To adjust the width of the column for the title part and figures/tables (adjustwidth environment)
-\RequirePackage{attrib} % For XML2PDF use \tag{} for equation
-%\RequirePackage{upgreek} % For making greek letters not italic
-\RequirePackage{pbox} % For biography environment
-\RequirePackage{marginnote} % For left column
+%    \end{macrocode}
+% \subsubsection{Lists}
+%    \begin{macrocode}
+\RequirePackage{enumitem}
+%    \end{macrocode}
+%
+% \subsubsection{Endnotes}
+% Partially compatible with tagging.
+%    \begin{macrocode}
+\RequirePackage{enotez} 
+%    \end{macrocode}
+%
+%  \subsubsection{Floats}
+%  Note: float is only partly compatible with tagging. subfig is incompatible!
+%  marginnote is used for the left column on the title page.
+%    \begin{macrocode}
+\RequirePackage{marginnote} 
 \reversemarginpar % To have the left column on the left side
 \RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
-\RequirePackage{enotez} % For endnotes
-\RequirePackage[labelformat=simple]{subfig} % Support to add subfigures
-\renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} % Change subfigure label format
-\RequirePackage{alphalph} % Provide double letters numbers
-
+\RequirePackage{float}
+\RequirePackage[labelformat=simple]{subfig} 
 %    \end{macrocode}
-% TODO: check if this is still in use.
-% For transition period to change back to continuous page numbers
+% Change subfigure label format:
 %    \begin{macrocode}
-\def\@continuouspages{}
-\newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
+\renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} %
 %    \end{macrocode}
-
+%
 % \subsection{Journal class options}
 % All journals (website name, full name, short name, DOI abbreviation, 
 % and ISSN + choice of continuous page numbers) are defined in an extra file
@@ -1826,17 +1866,6 @@
 %    \begin{macrocode}
 \setcounter{secnumdepth}{3}
 %    \end{macrocode}
-% This command will at some time be added to the LaTeX kernel. It gives a space of
-% the width of a normal word space.
-%    \begin{macrocode}
-\providecommand\WordSpaceAmount[1]{
-  \glueexpr
-        #1\fontdimen2\the\font
-  plus  #1\fontdimen3\the\font
-  minus #1\fontdimen4\the\font
-  \relax
-}
-%    \end{macrocode}
 % The settings for the tagged version:
 %    \begin{macrocode}
 \IfDocumentMetadataTF
@@ -1848,7 +1877,7 @@
    \IfFormatAtLeastTF{2026-11-01}
     {
       \DeclareInstance    {headformat}{mdpi/std}{hang}
-      {heading-indent = 0pt,separator-b=\hspace{\WordSpaceAmount{1}}}
+      {heading-indent = 0pt,separator-b=\ }
     }
     {
      \DeclareInstance    {headformat}{mdpi/std}{hang}
@@ -2703,6 +2732,13 @@
       }
    }
 \ExplSyntaxOff
+%    \end{macrocode}
+%\subsection{Obsolete commands}
+%TODO: check if this is still in use.
+% For transition period to change back to continuous page numbers
+%    \begin{macrocode}
+\def\@continuouspages{}
+\newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
 %    \end{macrocode}
 %
 %\subsection{XML2PDF support}
