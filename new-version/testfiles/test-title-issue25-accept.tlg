@@ -1349,18 +1349,24 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.39699
-....\hbox(5.824+2.248)x394.35522, glue set 63.44557fil, direction TLT
+....\glue(\baselineskip) 1.22499
+....\hbox(6.996+2.248)x394.35522, glue set 63.44557fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.552+0.04)x13.59998, glue set 9.59998fil, direction TLT
+.....\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
+......\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 †
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 †
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -1739,8 +1745,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~53 structure objects
-(tagpdf)             with ~50 'MC' leaf nodes.
+(tagpdf)             Writing out ~54 structure objects
+(tagpdf)             with ~52 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

@@ -1558,17 +1558,17 @@
  {
    \ifcase\c@mdpi@notecnt
    \or\textbf{*}     %corres
-   \or\textdagger    %conference
-   \or\textdaggerdbl % firstnote
-   \or\textsection   % secondnote etc
-   \or\textbardbl
-   \or\textparagraph
+   \or\textsuperscript{\textdagger}   %conference
+   \or\textsuperscript{\textdaggerdbl}% firstnote
+   \or\textsuperscript{\textsection}  % secondnote etc
+   \or\textsuperscript{\textbardbl}
+   \or\textsuperscript{\textparagraph}
    \or**
-   \or\textdagger\textdagger
-   \or\textdaggerdbl\textdaggerdbl
-   \or\textsection\textsection
-   \or\textbardbl\textbardbl
-   \or\textparagraph\textparagraph
+   \or\textsuperscript{\textdagger\textdagger}
+   \or\textsuperscript{\textdaggerdbl\textdaggerdbl}
+   \or\textsuperscript{\textsection\textsection}
+   \or\textsuperscript{\textbardbl\textbardbl}
+   \or\textsuperscript{\textparagraph\textparagraph}
    \or ***
    \else
    \@ctrerr
@@ -1579,6 +1579,7 @@
 % so gives unwanted structures if tagging is enabled. Instead the label is set inside
 % a box.
 % TODO: semantic tagging should be improved.
+% TODO: the fake space is perhaps not needed, see pdfa discussion.
 %    \begin{macrocode}
 \newcommand\mdpi@notelabel
  {
