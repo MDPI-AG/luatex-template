@@ -279,8 +279,28 @@ File: mt-msa.cfg ....-..-.. v... microtype config. file: AMS symbols (a) (RS)
 LaTeX Font Info:    Trying to load font information for U+msb on input line ....
 File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
 )
+LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math on input line ....
+(../tutg-pagella-math.fd
+File: tutg-pagella-math.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math
+)
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `texgyrepagella-math' (encoding: TU).
+(microtype)             `tg-pagella-math' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math-sf on input line ....
+(../tutg-pagella-math-sf.fd
+File: tutg-pagella-math-sf.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math Script
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `tg-pagella-math-sf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math-ssf on input line ....
+(../tutg-pagella-math-ssf.fd
+File: tutg-pagella-math-ssf.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math Subscript
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `tg-pagella-math-ssf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for U+wasy on input line ....

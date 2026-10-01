@@ -781,13 +781,13 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/12 t
 .....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
 .....\mathon
-.....\TU/texgyrepagella-math(0)/b/n/12 𝑡
+.....\TU/tg-pagella-math/b/n/12 𝑡
 .....\kern0.06 (italic)
 .....\glue(\thickmuskip) 3.33328 plus 3.33328
-.....\TU/texgyrepagella-math(0)/b/n/12 =
+.....\TU/tg-pagella-math/b/n/12 =
 .....\penalty 500
 .....\glue(\thickmuskip) 3.33328 plus 3.33328
-.....\TU/texgyrepagella-math(0)/b/n/12 1
+.....\TU/tg-pagella-math/b/n/12 1
 .....\mathoff
 .....\kern0.0
 .....\rule(11.42395+4.89604)x0.0
@@ -826,25 +826,25 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
-.....\TU/texgyrepagella-math(0)/m/n/10 𝑎
+.....\TU/tg-pagella-math/m/n/10 𝑎
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/m/n/10 =
+.....\TU/tg-pagella-math/m/n/10 =
 .....\penalty 500
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
 .....\hbox(7.96+2.96)x6.34, direction TLT
-......\TU/texgyrepagella-math(0)/m/n/10 ∫
+......\TU/tg-pagella-math/m/n/10 ∫
 .....\glue(\thinmuskip) 1.66663
-.....\TU/texgyrepagella-math(0)/m/n/10 𝑓
+.....\TU/tg-pagella-math/m/n/10 𝑓
 .....\kern1.63 (italic)
-.....\TU/texgyrepagella-math(0)/m/n/10 (
-.....\TU/texgyrepagella-math(0)/m/n/10 𝑥
+.....\TU/tg-pagella-math/m/n/10 (
+.....\TU/tg-pagella-math/m/n/10 𝑥
 .....\kern0.12 (italic)
-.....\TU/texgyrepagella-math(0)/m/n/10 )
+.....\TU/tg-pagella-math/m/n/10 )
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/m/n/10 =
+.....\TU/tg-pagella-math/m/n/10 =
 .....\penalty 500
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/m/n/10 𝐚
+.....\TU/tg-pagella-math/m/n/10 𝐚
 .....\kern0.06 (italic)
 .....\mathoff
 .....\penalty 10000
@@ -873,25 +873,25 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
-.....\TU/texgyrepagella-math(0)/b/n/10 𝑎
+.....\TU/tg-pagella-math/b/n/10 𝑎
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/b/n/10 =
+.....\TU/tg-pagella-math/b/n/10 =
 .....\penalty 500
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
 .....\hbox(7.96+2.96)x6.34, direction TLT
-......\TU/texgyrepagella-math(0)/b/n/10 ∫
+......\TU/tg-pagella-math/b/n/10 ∫
 .....\glue(\thinmuskip) 1.66663
-.....\TU/texgyrepagella-math(0)/b/n/10 𝑓
+.....\TU/tg-pagella-math/b/n/10 𝑓
 .....\kern1.63 (italic)
-.....\TU/texgyrepagella-math(0)/b/n/10 (
-.....\TU/texgyrepagella-math(0)/b/n/10 𝑥
+.....\TU/tg-pagella-math/b/n/10 (
+.....\TU/tg-pagella-math/b/n/10 𝑥
 .....\kern0.12 (italic)
-.....\TU/texgyrepagella-math(0)/b/n/10 )
+.....\TU/tg-pagella-math/b/n/10 )
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/b/n/10 =
+.....\TU/tg-pagella-math/b/n/10 =
 .....\penalty 500
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/b/n/10 𝐚
+.....\TU/tg-pagella-math/b/n/10 𝐚
 .....\kern0.06 (italic)
 .....\mathoff
 .....\penalty 10000
@@ -920,25 +920,25 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
-.....\TU/texgyrepagella-math(0)/m/n/10 𝑎
+.....\TU/tg-pagella-math/m/n/10 𝑎
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/m/n/10 =
+.....\TU/tg-pagella-math/m/n/10 =
 .....\penalty 500
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
 .....\hbox(7.96+2.96)x6.34, direction TLT
-......\TU/texgyrepagella-math(0)/m/n/10 ∫
+......\TU/tg-pagella-math/m/n/10 ∫
 .....\glue(\thinmuskip) 1.66663
-.....\TU/texgyrepagella-math(0)/m/n/10 𝑓
+.....\TU/tg-pagella-math/m/n/10 𝑓
 .....\kern1.63 (italic)
-.....\TU/texgyrepagella-math(0)/m/n/10 (
-.....\TU/texgyrepagella-math(0)/m/n/10 𝑥
+.....\TU/tg-pagella-math/m/n/10 (
+.....\TU/tg-pagella-math/m/n/10 𝑥
 .....\kern0.12 (italic)
-.....\TU/texgyrepagella-math(0)/m/n/10 )
+.....\TU/tg-pagella-math/m/n/10 )
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/m/n/10 =
+.....\TU/tg-pagella-math/m/n/10 =
 .....\penalty 500
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/m/n/10 𝐚
+.....\TU/tg-pagella-math/m/n/10 𝐚
 .....\kern0.06 (italic)
 .....\mathoff
 .....\penalty 10000
@@ -967,25 +967,25 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
-.....\TU/texgyrepagella-math(0)/b/n/10 𝑎
+.....\TU/tg-pagella-math/b/n/10 𝑎
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/b/n/10 =
+.....\TU/tg-pagella-math/b/n/10 =
 .....\penalty 500
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
 .....\hbox(7.96+2.96)x6.34, direction TLT
-......\TU/texgyrepagella-math(0)/b/n/10 ∫
+......\TU/tg-pagella-math/b/n/10 ∫
 .....\glue(\thinmuskip) 1.66663
-.....\TU/texgyrepagella-math(0)/b/n/10 𝑓
+.....\TU/tg-pagella-math/b/n/10 𝑓
 .....\kern1.63 (italic)
-.....\TU/texgyrepagella-math(0)/b/n/10 (
-.....\TU/texgyrepagella-math(0)/b/n/10 𝑥
+.....\TU/tg-pagella-math/b/n/10 (
+.....\TU/tg-pagella-math/b/n/10 𝑥
 .....\kern0.12 (italic)
-.....\TU/texgyrepagella-math(0)/b/n/10 )
+.....\TU/tg-pagella-math/b/n/10 )
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/b/n/10 =
+.....\TU/tg-pagella-math/b/n/10 =
 .....\penalty 500
 .....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\TU/texgyrepagella-math(0)/b/n/10 𝐚
+.....\TU/tg-pagella-math/b/n/10 𝐚
 .....\kern0.06 (italic)
 .....\mathoff
 .....\penalty 10000
@@ -1014,25 +1014,25 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
-.....\TU/texgyrepagella-math(0)/m/n/18 𝑎
+.....\TU/tg-pagella-math/m/n/18 𝑎
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/m/n/18 =
+.....\TU/tg-pagella-math/m/n/18 =
 .....\penalty 500
 .....\glue(\thickmuskip) 5.0 plus 5.0
 .....\hbox(14.328+5.328)x11.412, direction TLT
-......\TU/texgyrepagella-math(0)/m/n/18 ∫
+......\TU/tg-pagella-math/m/n/18 ∫
 .....\glue(\thinmuskip) 3.0
-.....\TU/texgyrepagella-math(0)/m/n/18 𝑓
+.....\TU/tg-pagella-math/m/n/18 𝑓
 .....\kern2.934 (italic)
-.....\TU/texgyrepagella-math(0)/m/n/18 (
-.....\TU/texgyrepagella-math(0)/m/n/18 𝑥
+.....\TU/tg-pagella-math/m/n/18 (
+.....\TU/tg-pagella-math/m/n/18 𝑥
 .....\kern0.216 (italic)
-.....\TU/texgyrepagella-math(0)/m/n/18 )
+.....\TU/tg-pagella-math/m/n/18 )
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/m/n/18 =
+.....\TU/tg-pagella-math/m/n/18 =
 .....\penalty 500
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/m/n/18 𝐚
+.....\TU/tg-pagella-math/m/n/18 𝐚
 .....\kern0.108 (italic)
 .....\mathoff
 .....\penalty 10000
@@ -1061,25 +1061,25 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
-.....\TU/texgyrepagella-math(0)/b/n/18 𝑎
+.....\TU/tg-pagella-math/b/n/18 𝑎
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/b/n/18 =
+.....\TU/tg-pagella-math/b/n/18 =
 .....\penalty 500
 .....\glue(\thickmuskip) 5.0 plus 5.0
 .....\hbox(14.328+5.328)x11.412, direction TLT
-......\TU/texgyrepagella-math(0)/b/n/18 ∫
+......\TU/tg-pagella-math/b/n/18 ∫
 .....\glue(\thinmuskip) 3.0
-.....\TU/texgyrepagella-math(0)/b/n/18 𝑓
+.....\TU/tg-pagella-math/b/n/18 𝑓
 .....\kern2.934 (italic)
-.....\TU/texgyrepagella-math(0)/b/n/18 (
-.....\TU/texgyrepagella-math(0)/b/n/18 𝑥
+.....\TU/tg-pagella-math/b/n/18 (
+.....\TU/tg-pagella-math/b/n/18 𝑥
 .....\kern0.216 (italic)
-.....\TU/texgyrepagella-math(0)/b/n/18 )
+.....\TU/tg-pagella-math/b/n/18 )
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/b/n/18 =
+.....\TU/tg-pagella-math/b/n/18 =
 .....\penalty 500
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/b/n/18 𝐚
+.....\TU/tg-pagella-math/b/n/18 𝐚
 .....\kern0.108 (italic)
 .....\mathoff
 .....\penalty 10000
@@ -1108,25 +1108,25 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
-.....\TU/texgyrepagella-math(0)/m/n/18 𝑎
+.....\TU/tg-pagella-math/m/n/18 𝑎
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/m/n/18 =
+.....\TU/tg-pagella-math/m/n/18 =
 .....\penalty 500
 .....\glue(\thickmuskip) 5.0 plus 5.0
 .....\hbox(14.328+5.328)x11.412, direction TLT
-......\TU/texgyrepagella-math(0)/m/n/18 ∫
+......\TU/tg-pagella-math/m/n/18 ∫
 .....\glue(\thinmuskip) 3.0
-.....\TU/texgyrepagella-math(0)/m/n/18 𝑓
+.....\TU/tg-pagella-math/m/n/18 𝑓
 .....\kern2.934 (italic)
-.....\TU/texgyrepagella-math(0)/m/n/18 (
-.....\TU/texgyrepagella-math(0)/m/n/18 𝑥
+.....\TU/tg-pagella-math/m/n/18 (
+.....\TU/tg-pagella-math/m/n/18 𝑥
 .....\kern0.216 (italic)
-.....\TU/texgyrepagella-math(0)/m/n/18 )
+.....\TU/tg-pagella-math/m/n/18 )
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/m/n/18 =
+.....\TU/tg-pagella-math/m/n/18 =
 .....\penalty 500
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/m/n/18 𝐚
+.....\TU/tg-pagella-math/m/n/18 𝐚
 .....\kern0.108 (italic)
 .....\mathoff
 .....\penalty 10000
@@ -1155,25 +1155,25 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
-.....\TU/texgyrepagella-math(0)/b/n/18 𝑎
+.....\TU/tg-pagella-math/b/n/18 𝑎
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/b/n/18 =
+.....\TU/tg-pagella-math/b/n/18 =
 .....\penalty 500
 .....\glue(\thickmuskip) 5.0 plus 5.0
 .....\hbox(14.328+5.328)x11.412, direction TLT
-......\TU/texgyrepagella-math(0)/b/n/18 ∫
+......\TU/tg-pagella-math/b/n/18 ∫
 .....\glue(\thinmuskip) 3.0
-.....\TU/texgyrepagella-math(0)/b/n/18 𝑓
+.....\TU/tg-pagella-math/b/n/18 𝑓
 .....\kern2.934 (italic)
-.....\TU/texgyrepagella-math(0)/b/n/18 (
-.....\TU/texgyrepagella-math(0)/b/n/18 𝑥
+.....\TU/tg-pagella-math/b/n/18 (
+.....\TU/tg-pagella-math/b/n/18 𝑥
 .....\kern0.216 (italic)
-.....\TU/texgyrepagella-math(0)/b/n/18 )
+.....\TU/tg-pagella-math/b/n/18 )
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/b/n/18 =
+.....\TU/tg-pagella-math/b/n/18 =
 .....\penalty 500
 .....\glue(\thickmuskip) 5.0 plus 5.0
-.....\TU/texgyrepagella-math(0)/b/n/18 𝐚
+.....\TU/tg-pagella-math/b/n/18 𝐚
 .....\kern0.108 (italic)
 .....\mathoff
 .....\penalty 10000
@@ -1204,7 +1204,7 @@ Completed box being shipped out [1]
 .....\mathon
 .....\U/msa/m/n/18 ^^C
 .....\U/msa/m/n/18 ^^D
-.....\TU/texgyrepagella-math(0)/m/n/18 𝛻
+.....\TU/tg-pagella-math/m/n/18 𝛻
 .....\kern1.728 (italic)
 .....\mathoff
 .....\penalty 10000

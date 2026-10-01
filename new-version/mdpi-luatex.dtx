@@ -114,14 +114,45 @@
 % \subsection{Math font setup}
 % We load amssymb for e.g. \cs{square}
 %    \begin{macrocode}
+\RequirePackage{amsmath}
 \RequirePackage{amssymb} 
 %    \end{macrocode}
 % And lua-unicode-math for the rest
 %    \begin{macrocode}
 \RequirePackage{lua-unicode-math}
-\setmathfont[AutoFakeBold=1.125]{texgyrepagella-math}
+\RequirePackage{lum-pagella}
 %    \end{macrocode}
-%
+% Now define greek commands as replacement for the upgreek package: issue \#92
+% Various \cs{up}+lowercase greek:
+%    \begin{macrocode}
+\ExplSyntaxOn
+\clist_map_inline:nn
+ {alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,
+  mu,nu,xi,omicron,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega}
+ {\cs_new:cpn{up#1}{\symup{\use:c{#1}}}}
+%    \end{macrocode}
+% Various \cs{var}+uppercase greek:
+%    \begin{macrocode}
+\clist_map_inline:nn
+ {Gamma,Delta,Theta,Lambda,Xi,Pi,Sigma,Upsilon,Phi,Psi,Omega}
+ {\cs_set:cpn{var#1}{\use:c{mit#1}}}
+%    \end{macrocode}
+% and a few \cs{Up} commands
+%    \begin{macrocode}
+\providecommand\Upgamma{\symup{\Gamma}}
+\providecommand\Updelta{\symup{\Delta}}
+\providecommand\Uptheta{\symup{\Theta}}
+\providecommand\Uplambda{\symup{\Lambda}}
+\providecommand\Upxi{\symup{\Xi}}
+\providecommand\Uppi{\symup{\Pi}}
+\providecommand\Upsigma{\symup{\Sigma}}
+\providecommand\Upupsilon{\symup{\Upsilon}}
+\providecommand\Upphi{\symup{\Phi}}
+\providecommand\Uppsi{\symup{\Psi}}
+\providecommand\Upomega{\symup{\Omega}}
+\ExplSyntaxOff
+%    \end{macrocode}
+
 % \subsubsection{Symbol fonts}
 % Note that wasysym doesn't provide correct ToUnicode values for every char.
 % Every use must be check. https://github.com/latex3/tagging-project/issues/1140
@@ -164,7 +195,6 @@
 \RequirePackage{lastpage}
 \RequirePackage{ifthen}
 \RequirePackage{float}
-\RequirePackage{amsmath}
 % % For math environment bold format
 \RequirePackage[right,mathlines]{lineno}
 \RequirePackage{enumitem}
