@@ -900,20 +900,34 @@
    \let\@makefntext\footmisc@hang@makefntext
  }
 %    \end{macrocode}
-
+% \subsection{Widows and penalities}
+% Widows \& orphans are prohibited
 %    \begin{macrocode}
-%%%% Widows & orphans
 \clubpenalty=10000
 \widowpenalty=10000
 \displaywidowpenalty=10000
-\tolerance=1000 % slopiness / badness of the line breaking
-
-%%%% To avoid "Output-loop.." compile bug
+%    \end{macrocode}
+% Slopiness / badness of the line breaking
+%    \begin{macrocode}
+\tolerance=1000 
+%    \end{macrocode}
+% To avoid "Output-loop.." compile bug
+%    \begin{macrocode}
 \maxdeadcycles=10000
 
-
-% Indents & Commands for hanging indent
+%    \end{macrocode}
+%
+% \subsection{Paragraph indentation}
+%    \begin{macrocode}
 \setlength{\parindent}{0.75cm}
+
+%    \end{macrocode}
+% \subsection{Frontmatter}
+% TODO: improve tagging!
+% 
+% At first some length used in the frontmatter. \cs{dist} is no longer
+% used but kept for compatibility. 
+%    \begin{macrocode}
 \newcommand{\dist}{1.7em}
 \newcommand\mdpi@len@dist{1.7em}
 \newcommand\mdpi@len@distshift{0.85em}
@@ -1660,7 +1674,7 @@
 % so we set the \cs{parshape} instead.
 %    \begin{macrocode}     
      \tl_if_eq:NnF{\firstargument}{1}
-       {\parshape 2~0cm \linewidth \dimeval{\dist}~\dimeval{\linewidth-\dist}}
+       {\parshape 2~0cm \linewidth \dimeval{\mdpi@len@dist}~\dimeval{\linewidth-\mdpi@len@dist}}
      \@address
      \par
 %    \end{macrocode}
