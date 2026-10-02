@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-07-24}
-\def\mdpiversion{v7.0k}
+\def\mdpidate{2026-10-02}
+\def\mdpiversion{v7.0l}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -122,7 +122,7 @@
 %    \begin{macrocode}
 \RequirePackage{changepage} % 
 %    \end{macrocode}
-% For XML2PDF use \tag{} for equation (??)
+% For XML2PDF use \cs{tag} for equation (??)
 %    \begin{macrocode}
 \RequirePackage{attrib} 
 %    \end{macrocode}
@@ -391,6 +391,46 @@
 % Process the class options:
 %    \begin{macrocode}
 \ProcessOptions\relax
+%    \end{macrocode}
+%
+% \subsection{Extend journal data}
+% These data should better be set in journalnames, but for now we set them here.
+%    \begin{macrocode}
+\ExplSyntaxOn
+%    \end{macrocode}
+% Some journals have a longer DOI
+%    \begin{macrocode}
+\newcommand\@journaldoinum{long}
+\clist_map_inline:nn{molbank,chemproc,engproc,eesp,materproc,blsf,msf,psf,csmf}
+ {\tl_if_eq:NnT\@journal{#1}{\def\@journaldoinum{short}}}
+%    \end{macrocode}
+% Some journals have a different licence
+%    \begin{macrocode}
+\newcommand\@journallicence{ccby}
+\clist_map_inline:nn{ijtpp}
+ {\tl_if_eq:NnT\@journal{#1}{\def\@journallicence{ccbyncnd}}} 
+%    \end{macrocode}
+% Some journals have a different MDPI logo if \cs{IsAssociation} has not been set.
+%    \begin{macrocode}
+\newcommand\@journalmdpilogo{logo-mdpi} 
+\newcommand\@journallogo{\@journal-logo} 
+\clist_map_inline:nn{ijom,siuj,scipharm}
+ {
+   \tl_if_eq:NnT\@journal{#1}
+     {
+       \gdef\@journalmdpilogo{logo-mdpi-#1}       
+     }
+ } 
+%    \end{macrocode}
+% Some journal set only a short publishing date in \cs{leftcolDates}
+%    \begin{macrocode}
+\newcommand\@journaldatesblock{long}
+\clist_map_inline:nn{proceedings,chemproc,engproc,eesp,materproc,blsf,msf,psf,csmf}
+ {
+  \tl_if_eq:NnT\@journal{#1}
+   { \def\@journaldatesblock{short} }
+ }
+\ExplSyntaxOff
 %    \end{macrocode}
 %
 % \subsection{Temporary patches for taggings}
@@ -925,6 +965,7 @@
 % \subsection{Frontmatter}
 % TODO: improve tagging!
 % 
+% \subsubsection{Helper commands}
 % At first some length used in the frontmatter. \cs{dist} is no longer
 % used but kept for compatibility. 
 %    \begin{macrocode}
@@ -932,33 +973,22 @@
 \newcommand\mdpi@len@dist{1.7em}
 \newcommand\mdpi@len@distshift{0.85em}
 \newdimen\mdpi@len@tmpa
-
-%%%% Front matter
-% Command for checking for a question mark or exclamation mark in title
-\def\instring#1#2{TT\fi\begingroup\edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
-
-\newcommand{\firstargument}{}
-\def\@Title{TITLE}
-\newcommand{\Title}[1]{\gdef\@Title{#1}}%
-\def\@Author{AUTHOR}
-\newcommand{\Author}[1]{\gdef\@Author{#1}}%
-\def\@AuthorNames{}
-\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
-\newcommand{\firstpage}[1]{\gdef\@firstpage{#1}}
-\newcommand{\doinum}[1]{\gdef\@doinum{#1}}
-
-% DOI number
-% Create command to add a leading zero if 1 digit
-\newcommand\twodigits[1]{%
+%    \end{macrocode}
+%
+% A command to add a leading zero to the DOI or a month if 1 digit
+%    \begin{macrocode}
+\newcommand\mdpi@mintwodigits[1]{%
   \ifnum#1<10 %
     0\number#1
      \else
     \number#1
   \fi
 }
-
-% Create command to add a leading zero if less then 5 digits
-\newcommand\fivedigits[1]{%
+%    \end{macrocode}
+% This adds leading zeros to create at least four digits, it prints (?) error
+% if there are more than five digits. 
+%    \begin{macrocode}
+\newcommand\mdpi@minfourdigits[1]{%
   \ifnum#1<10 %
     000\number#1
   \else
@@ -982,40 +1012,28 @@
   \fi
 }
 
-\ifthenelse{\equal{\@journal}{molbank}
-  \OR \equal{\@journal}{chemproc}
-  \OR \equal{\@journal}{engproc}
-  \OR \equal{\@journal}{eesp}
-  \OR \equal{\@journal}{materproc}
-  \OR \equal{\@journal}{blsf}
-  \OR \equal{\@journal}{msf}
-  \OR \equal{\@journal}{psf}
-  \OR \equal{\@journal}{csmf}
-  }{
-  \doinum{10.3390/\@articlenumber}
-  }{
-  \doinum{10.3390/\@doiabbr\@pubvolume\twodigits\@issuenum\fivedigits\@articlenumber}
-}
-
-% For \@pubvolume, \@issuenum, and \@articlenumber: create command to cut leading zeros
-\newcommand\cutdigits[1]{%
-  \ifnum#1>0 %
-    \number#1
-  \else
-    \ifnum#1<10000 %
-      \number#1
-    \else
-      error
-    \fi
-  \fi
-}
+%    \end{macrocode}
+% \subsubsection{Data commands for the front matter}
+%    \begin{macrocode}
+\def\@Title{TITLE}
+\newcommand{\Title}[1]{\gdef\@Title{#1}}%
+\def\@Author{AUTHOR}
+\newcommand{\Author}[1]{\gdef\@Author{#1}}%
+\def\@AuthorNames{}
+\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
+\newcommand{\firstpage}[1]{\gdef\@firstpage{#1}}
+\newcommand{\doinum}[1]{\gdef\@doinum{#1}}
+\newcommand\mdpi@doinum@short{10.3390/\@articlenumber}
+\newcommand\mdpi@doinum@long {10.3390/\@doiabbr\@pubvolume\mdpi@mintwodigits\@issuenum\mdpi@minfourdigits\@articlenumber}
+\gdef\@doinum{\UseName{mdpi@doinum@\@journaldoinum}}
 \def\@pubvolume{0}
-\newcommand{\pubvolume}[1]{\gdef\@pubvolume{\cutdigits{#1}}}
+\newcommand{\pubvolume}[1]{\gdef\@pubvolume{\inteval{#1}}}
 \def\@pubyear{0000}
 \newcommand{\pubyear}[1]{\gdef\@pubyear{#1}}
 \def\@copyrightyear{0000}
 \newcommand{\copyrightyear}[1]{\gdef\@copyrightyear{#1}}
 \def\@address{ADDRESS}
+\newcommand{\firstargument}{}
 \newcommand{\address}[2][]{\renewcommand{\firstargument}{#1}\gdef\@address{#2}}
 \newcommand{\corresfirstargument}{}
 \def\@corres{}
@@ -1058,7 +1076,7 @@
 \newcommand{\keycontribution}[1]{\gdef\@keycontribution{#1}}
 % this is the wrong default: it should be a number
 \def\@issuenum{0}
-\newcommand{\issuenum}[1]{\gdef\@issuenum{\cutdigits{#1}}}
+\newcommand{\issuenum}[1]{\gdef\@issuenum{\inteval{#1}}}
 \def\@firstnote{}
 \newcommand{\firstnote}[1]{\gdef\@firstnote{#1}}
 \def\@secondnote{}
@@ -1091,7 +1109,7 @@
   \ifthenelse{\equal{\@journal}{molbank}}{
     \gdef\@articlenumber{#1}%
     }{
-    \gdef\@articlenumber{\cutdigits{#1}}%
+    \gdef\@articlenumber{\inteval{#1}}%
     }
   }
 
@@ -1109,7 +1127,11 @@
 \newcommand{\CorrStatement}[1]{\gdef\@CorrStatement{#1}}
 \newcommand{\textcorrstatement}{\textbf{Correction Statement:} This article has been republished with a minor change. The change does not affect the scientific content of the article and further details are available within the backmatter of the website version of this article.}
 \def\@IsAssociation{}
-\newcommand{\IsAssociation}[1]{\gdef\@IsAssociation{#1}}
+\newcommand{\IsAssociation}[1]
+ {%
+  \gdef\@IsAssociation{#1}%
+  \gdef\mdpi@logo@right{\@journalmdpilogo}%
+ }
 
 %%%% Journal name for the header
 \newcommand{\journalname}{\@journalshort}
@@ -1145,6 +1167,7 @@
 % The logo line:
 %    \begin{macrocode}
 \ExplSyntaxOn
+\newcommand\mdpi@logo@right{logo-mdpi}
 \newcommand\mdpi@maketitle@logoline
  {
 %    \end{macrocode}
@@ -1154,26 +1177,14 @@
    \tl_if_eq:enTF {\@status}{submit}
      {
        \phantom{\rule{0pt}{1.2cm}}\hfill
-       \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{logo-mdpi}}%
+       \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{\mdpi@logo@right}}%
      }
      {
-        \href{\mdpi@url/journal/\@journal}{\includegraphics[height=1.2cm,actualtext={Logo~of~\@journalfull}]{\@journal-logo}}%
+        \href{\mdpi@url/journal/\@journal}
+             {\includegraphics[height=1.2cm,actualtext={Logo~of~\@journalfull}]{\@journallogo}}%
         \hfill
-        \tl_if_empty:NTF \@IsAssociation
-          {
-            \str_case:onF {\@journal}
-             {
-               {ijom}    {\href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{logo-mdpi-ijom}}}
-               {siuj}    {\href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{logo-mdpi-siuj}}}
-               {scipharm}{\href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{logo-mdpi-scipharm}}}
-             }
-             {
-               \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{logo-mdpi}}
-             }
-          }
-          {
-            \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{logo-mdpi-\@journal}}%
-          }
+        \href{\mdpi@url}
+             {\includegraphics[height=1cm,actualtext={MDPI~logo}]{\mdpi@logo@right}}
      }
  }
 %    \end{macrocode}
@@ -1425,7 +1436,7 @@
      {}
      {%
        \href
-         {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\twodigits{\the\month}-\twodigits{\the\day}}
+         {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\mdpi@mintwodigits{\the\month}-\mdpi@mintwodigits{\the\day}}
          {\includegraphics[height=.6cm,actualtext=Check for updates]{logo-updates}}%
      }%
  }
@@ -1453,26 +1464,10 @@
 % \subsubsection{Part 3: Dates}
 % \begin{macro}{\leftcolDates}
 %    \begin{macrocode}
-\newcommand{\leftcolDates}
+\newcommand\mdpi@datesblock@short{Published: \@datepublished}
+\newcommand\mdpi@datesblock@long
  {%
-   \isPreprints
-    {}
-    {%
-      \ifthenelse
-       {
-        \equal{\@journal}{proceedings}
-        \OR \equal{\@journal}{chemproc}
-        \OR \equal{\@journal}{engproc}
-        \OR \equal{\@journal}{eesp}
-        \OR \equal{\@journal}{materproc}
-        \OR \equal{\@journal}{blsf}
-        \OR \equal{\@journal}{msf}
-        \OR \equal{\@journal}{psf}
-        \OR \equal{\@journal}{csmf}
-       }
-       {Published: \@datepublished}
-       {%
-         Received: \@datereceived\\
+  Received: \@datereceived\\
          \ifthenelse
           {\equal{\@daterevised}{\@empty}}
           {}
@@ -1487,9 +1482,14 @@
           {\equal{\@dateretracted}{\@empty}}
           {}
           {\\ Retracted: \@dateretracted}%
-       }%
-    }%
-  }
+ }
+
+\newcommand{\leftcolDates}
+ {%
+   \isPreprints
+    {}
+    {\UseName{mdpi@datesblock@\@journaldatesblock}}%
+ }
 %    \end{macrocode}
 % \end{macro}
 
@@ -2721,13 +2721,7 @@
          {
           \mdpi@cright@text@published          
          }
-      \tl_if_eq:NnTF\@journal{ijtpp}
-         {
-           \mdpi@cright@text@ccbyncnd
-         }
-         {
-           \mdpi@cright@text@ccby
-         }
+      \use:c{ mdpi@cright@text@\@journallicence }   
       }
    }
 \ExplSyntaxOff
@@ -2740,7 +2734,32 @@
 \def\@continuouspages{}
 \newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
 %    \end{macrocode}
-%
+% Command for checking for a question mark or exclamation mark in title
+%    \begin{macrocode}
+\def\instring#1#2{TT\fi\begingroup\edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
+%    \end{macrocode}
+% Copies of commands that have now an internal prefix
+%    \begin{macrocode}
+\let\twodigits\mdpi@mintwodigits
+\let\fivedigits\mdpi@minfourdigits
+%    \end{macrocode}
+% For \cs{@pubvolume}, \cs{@issuenum}, and \cs{@articlenumber}: 
+% A command to cut leading zeros. Doesn't make sense, the 
+% error case is never reached, so simply using \cs{number} or \cs{inteval} is quite 
+% enough. 
+%    \begin{macrocode}
+\newcommand\cutdigits[1]{%
+  \ifnum#1>0 %
+    \number#1
+  \else
+    \ifnum#1<10000 %
+      \number#1
+    \else
+      error
+    \fi
+  \fi
+}
+
 % TODO: check if these commands are used and make sense (names are not very good):
 % To have the possibility to change the urlcolor
 %    \begin{macrocode}
