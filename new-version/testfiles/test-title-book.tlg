@@ -176,6 +176,27 @@ Info: mathml file test-title-book-mathml does not exist
 Info: reading mathml file test-title-book-luamml-mathml
 (test-title-book-luamml-mathml.html)
 Info: Activating mathml support
+LaTeX Info: Redefining \microtypecontext on input line ....
+Package microtype Info: Applying patch `item' on input line ....
+Package microtype Info: Applying patch `toc' on input line ....
+Package microtype Info: Applying patch `eqnum' on input line ....
+Package microtype Info: Applying patch `footnote' on input line ....
+Package microtype Info: Applying patch `verbatim' on input line ....
+LaTeX Info: Redefining \microtypesetup on input line ....
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `texgyrepagella' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 (../supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count...
@@ -200,29 +221,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line ....
 (../epstopdf-sys.cfg
 File: epstopdf-sys.cfg ....-..-.. v... Configuration of (r)epstopdf for TeX Live
-))
-LaTeX Info: Redefining \microtypecontext on input line ....
-Package microtype Info: Applying patch `item' on input line ....
-Package microtype Info: Applying patch `toc' on input line ....
-Package microtype Info: Applying patch `eqnum' on input line ....
-Package microtype Info: Applying patch `footnote' on input line ....
-Package microtype Info: Applying patch `verbatim' on input line ....
-LaTeX Info: Redefining \microtypesetup on input line ....
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `alltext-nott'.
-Package microtype Info: Patching command `\showhyphens'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of spacing.
-Package microtype Info: No adjustment of kerning.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `texgyrepagella' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-(../translations-basic-dictionary-english.trsl
+)) (../translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line ....

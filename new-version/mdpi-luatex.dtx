@@ -210,11 +210,19 @@
 \RequirePackage{multirow}
 %    \end{macrocode}
 %
+% \subsubsection{Math environments}
+%    \begin{macrocode}
+\RequirePackage{amsthm}
+%    \end{macrocode}
+%
 % \subsubsection{Graphics and color}
-% 
 %    \begin{macrocode}
 \RequirePackage{xcolor}  
 \RequirePackage{luacolor}
+%    \end{macrocode}
+% Define color for citations
+%    \begin{macrocode}
+\definecolor{bluecite}{HTML}{0875b7}
 \RequirePackage{graphicx}
 %    \end{macrocode}
 % Special graphic pathes:
@@ -265,6 +273,10 @@
 \renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} %
 %    \end{macrocode}
 %
+% \subsubsection{Bibliography}
+% \pkg{natbib} or \pkg{mdpi_apacite} are loaded 
+% below as they and their options depend on the journal type.
+% 
 % \subsection{Journal class options}
 % All journals (website name, full name, short name, DOI abbreviation, 
 % and ISSN + choice of continuous page numbers) are defined in an extra file
@@ -450,6 +462,7 @@
 %    \begin{macrocode}
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
 %    \end{macrocode}
+%
 % \subsection{Highlighting}
 % A simple command to put something in a yellow box:
 %    \begin{macrocode}
@@ -483,10 +496,8 @@
 \NewDocumentCommand\uuline{m}{{\mdpi@UulineRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
 \NewDocumentCommand\uwave {m}{{\mdpi@UwaveRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
 %    \end{macrocode}
+%
 % \subsection{Math environments}
-%    \begin{macrocode}
-\RequirePackage{amsthm}
-%    \end{macrocode}
 % The theoremstyle declaration:
 %    \begin{macrocode}
 \newtheoremstyle{mdpi}% name
@@ -523,6 +534,7 @@
  }
 
 %    \end{macrocode}
+%
 % Theoremlike environments in style \texttt{mdpi}
 %    \begin{macrocode}
 \theoremstyle{mdpi}
@@ -569,8 +581,8 @@
 \newtheorem{Algorithm}[algorithm]{Algorithm}
 %    \end{macrocode}
 %
+% Define left/right mark in math environment
 %    \begin{macrocode}
- % Define left/right mark in math environment
 \let\originalleft\left
 \let\originalright\right
 \renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
@@ -697,9 +709,7 @@
 %    \begin{macrocode}
   {\RequirePackage[sort&compress,sectionbib]{natbib}}
 %    \end{macrocode}
-%
-%
-% TODO: check what this doing.
+% 
 %    \begin{macrocode}
 \renewcommand\NAT@set@cites{%
   \ifNAT@numbers
@@ -711,6 +721,9 @@
     \else
        \let\NAT@mbox=\mbox
        \let\@cite\NAT@citenum
+%    \end{macrocode}
+% Replaces \verb+\let\NAT@space\NAT@spacechar+ by \verb+\let\NAT@space\relax+
+%    \begin{macrocode}
        \let\NAT@space\relax
        \let\NAT@super@kern\relax
     \fi
@@ -732,7 +745,7 @@
   \fi}
 %    \end{macrocode}
 %
-% \subsection{The bibliography styles}
+% The bibliography styles:
 %    \begin{macrocode}
 \isAPAStyle
   {\bibliographystyle{mdpi_apacite}}
@@ -749,19 +762,8 @@
   }
 %    \end{macrocode}
 %
-%    \begin{macrocode}
-
-
-
-%%%%% Hyperlinks
-%% Define color for citations
-\definecolor{bluecite}{HTML}{0875b7}
-
-
-%    \end{macrocode}
-%
 % \subsection{Loading \pkg{hyperref} and \pkg{cleveref}}
-% \pkg{cleveref} want to be loaded rather late. For \pkg{hyperref} it is no longer
+% \pkg{cleveref} wants to be loaded rather late. For \pkg{hyperref} it is no longer
 % very important but the class delays the loading nevertheless to the 
 % \texttt{begindocument/before} hook.
 % 
@@ -841,9 +843,7 @@
    \mdpi@cleveref@setup
  }
 %    \end{macrocode}
-% TODO: Is the rule still needed?
 %    \begin{macrocode}
-\DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
 \AddToHook{begindocument/before}
   {
     \mdpi@load@hyperref@cleveref    
@@ -864,22 +864,7 @@
 \ExplSyntaxOff
 %    \end{macrocode}
 %
-% TODO: check if these commands are used and make sense (names are not very good):
-%    \begin{macrocode}
-%% To have the possibility to change the urlcolor
-\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
 
-\newcommand{\fig}[1]{Figure~\ref{#1}}
-\newcommand{\tabref}[1]{Table~\ref{#1}}
-\newcommand{\sect}[1]{Section~\ref{#1}}
-\newcommand{\app}[1]{Appendix~\ref{#1}}
-\newcommand{\sche}[1]{Scheme~\ref{#1}}
-\newcommand{\cchart}[1]{Chart~\ref{#1}}
-\newcommand{\equ}[1]{\ref{#1}}
-\newcommand{\boxref}[1]{Box~\ref{#1}}
-\newcommand{\cgraph}[1]{Graph~\ref{#1}}
-
-%    \end{macrocode}
 % \subsection{Endnotes}
 % TODO: why does it declare a custom instance instead of changing the default?
 % TODO: perhaps better use a list template type for better tagging
@@ -2733,12 +2718,30 @@
    }
 \ExplSyntaxOff
 %    \end{macrocode}
-%\subsection{Obsolete commands}
+%
+%\subsection{Perhaps obsolete commands}
 %TODO: check if this is still in use.
 % For transition period to change back to continuous page numbers
 %    \begin{macrocode}
 \def\@continuouspages{}
 \newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
+%    \end{macrocode}
+%
+% TODO: check if these commands are used and make sense (names are not very good):
+% To have the possibility to change the urlcolor
+%    \begin{macrocode}
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
+
+\newcommand{\fig}[1]{Figure~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\sect}[1]{Section~\ref{#1}}
+\newcommand{\app}[1]{Appendix~\ref{#1}}
+\newcommand{\sche}[1]{Scheme~\ref{#1}}
+\newcommand{\cchart}[1]{Chart~\ref{#1}}
+\newcommand{\equ}[1]{\ref{#1}}
+\newcommand{\boxref}[1]{Box~\ref{#1}}
+\newcommand{\cgraph}[1]{Graph~\ref{#1}}
+
 %    \end{macrocode}
 %
 %\subsection{XML2PDF support}
