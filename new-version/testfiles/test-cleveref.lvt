@@ -1,0 +1,87 @@
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+
+\begin{document}\START\showoutput
+\section{section} \label{sec:label1}
+\section{section} \label{sec:label2}
+\paragraph{para}\label{paragraph}
+
+section: \cref{sec:label1}\quad \cref{sec:label1,sec:label2}
+
+paragraph: \cref{paragraph}
+
+appendix: \cref{app}, \cref{secapp}, \cref{subsecapp}, \cref{subsubsecapp}
+
+
+\ExplSyntaxOn
+\section{References~ to~ floats}
+\clist_map_inline:nn
+ {
+  figure,
+  table,
+  listing,
+  scheme,
+  chart,
+  graph,
+  figurewide,
+  boxenv
+ }
+ {#1: ~ \cref{#1:label1}\quad \cref{#1:label1,#1:label2}\par}
+ 
+\clist_map_inline:nn
+ {
+  figure,
+  table,
+  listing,
+  scheme,
+  chart,
+  graph,
+  figurewide,
+  boxenv
+ }
+ {
+   \begin{#1}
+   \caption{a~#1}\label{#1:label1}
+   \end{#1}
+   \begin{#1}
+   \caption{a~#1}\label{#1:label2}
+   \end{#1} 
+ } 
+\clearpage 
+\section{References~ to~ theorems} 
+\clist_map_inline:nn
+{
+   Theorem,
+   Lemma,
+   Corollary,
+   Proposition,
+   Characterization,
+   Property,
+   Problem,
+   Example,
+   Remark,
+   Definition,
+   Hypothesis,
+   Notation,
+   Assumption,
+   Algorithm
+}
+{
+  \begin{#1}\label{#1:label1} test~#1 \end{#1}
+  \begin{#1}\label{#1:label2} test~#1 \end{#1}
+  \cref{#1:label1}\quad \cref{#1:label1,#1:label2}
+}
+
+
+\ExplSyntaxOff
+
+\clearpage
+\appendix \label{app}
+\section{section} \label{secapp}
+\subsection{subsection}\label{subsecapp}
+\subsubsection{subsubsection}\label{subsubsecapp}
+
+\SHOWPDFTAGS
+
+\end{document}

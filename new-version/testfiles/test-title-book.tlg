@@ -70,12 +70,10 @@ File: pd1enc.def ....-..-.. v... Hyperref: PDFDocEncoding definition (HO)
 (../puenc.def
 File: puenc.def ....-..-.. v... Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `unicode' set `true' on input line ....
+Package hyperref Info: Option `hyperfootnotes' set `false' on input line ....
 Package hyperref Info: Option `bookmarksopen' set `true' on input line ....
 Package hyperref Info: Option `pdffitwindow' set `true' on input line ....
 Package hyperref Info: Option `colorlinks' set `true' on input line ....
-Package hyperref Info: Option `hyperfootnotes' set `false' on input line ....
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line ....
 Package hyperref Info: Hyper figures OFF on input line ....
 Package hyperref Info: Link nesting OFF on input line ....
 Package hyperref Info: Hyper index ON on input line ....
@@ -146,7 +144,11 @@ Package cleveref Info: always capitalise cross-reference names on input line ...
 Package cleveref Info: no abbreviation of names on input line ....
 )
 ==> First Aid for cleveref.sty applied!
-\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line ....
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/msb/m/n --> U/msb/m/n on input line ....
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/msb/m/n --> U/msb/m/n on input line ....
 (test-title-book.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line ....
 LaTeX Font Info:    ... okay on input line ....
@@ -174,6 +176,27 @@ Info: mathml file test-title-book-mathml does not exist
 Info: reading mathml file test-title-book-luamml-mathml
 (test-title-book-luamml-mathml.html)
 Info: Activating mathml support
+LaTeX Info: Redefining \microtypecontext on input line ....
+Package microtype Info: Applying patch `item' on input line ....
+Package microtype Info: Applying patch `toc' on input line ....
+Package microtype Info: Applying patch `eqnum' on input line ....
+Package microtype Info: Applying patch `footnote' on input line ....
+Package microtype Info: Applying patch `verbatim' on input line ....
+LaTeX Info: Redefining \microtypesetup on input line ....
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+Package microtype Info: Patching command `\showhyphens'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `texgyrepagella' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 (../supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count...
@@ -198,29 +221,7 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line ....
 (../epstopdf-sys.cfg
 File: epstopdf-sys.cfg ....-..-.. v... Configuration of (r)epstopdf for TeX Live
-))
-LaTeX Info: Redefining \microtypecontext on input line ....
-Package microtype Info: Applying patch `item' on input line ....
-Package microtype Info: Applying patch `toc' on input line ....
-Package microtype Info: Applying patch `eqnum' on input line ....
-Package microtype Info: Applying patch `footnote' on input line ....
-Package microtype Info: Applying patch `verbatim' on input line ....
-LaTeX Info: Redefining \microtypesetup on input line ....
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `alltext-nott'.
-Package microtype Info: Patching command `\showhyphens'.
-Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of spacing.
-Package microtype Info: No adjustment of kerning.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `texgyrepagella' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-(../translations-basic-dictionary-english.trsl
+)) (../translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line ....
@@ -263,16 +264,45 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 Package newfloat Info: `float' package detected.
 Package hyperref Info: Link coloring ON on input line ....
-(../mt-cmr.cfg
-File: mt-cmr.cfg ....-..-.. v... microtype config. file: Computer Modern Roman (RS)
+LaTeX Font Info:    Trying to load font information for TU+lmr-base on input line ....
+(../tulmr-base.fd
+File: tulmr-base.fd ....-..-.. v... LaTeX font definitions for Latin Modern in base mode
 )
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `texgyrepagella-math' (encoding: TU).
+(microtype)             `lmr-base' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+msa on input line ....
+File: mt-msa.cfg ....-..-.. v... microtype config. file: AMS symbols (a) (RS)
+)
 LaTeX Font Info:    Trying to load font information for U+msb on input line ....
 File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
 )
+LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math on input line ....
+(../tutg-pagella-math.fd
+File: tutg-pagella-math.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `tg-pagella-math' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math-sf on input line ....
+(../tutg-pagella-math-sf.fd
+File: tutg-pagella-math-sf.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math Script
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `tg-pagella-math-sf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math-ssf on input line ....
+(../tutg-pagella-math-ssf.fd
+File: tutg-pagella-math-ssf.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math Subscript
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `tg-pagella-math-ssf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line ....
 \g__math_luamml_iow=\write...
 Package tagpdf Info: luamml has been enabled and will create a MathML file.
 Package microtype Info: Loading generic protrusion settings for font family
@@ -315,9 +345,6 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
 ....\hbox(0.0+0.0)x367.04037, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(0.0+0.0)x367.04037, direction TLT
 ......\glue -131.16722
 ......\hbox(0.0+0.0)x498.2076, direction TLT
@@ -366,9 +393,6 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
@@ -395,6 +419,7 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
+.....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/18 s
@@ -471,17 +496,15 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\kern-0.12
 ....\hbox(0.0+0.12)x0.0, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(3.385+0.0)x0.0, glue set - 387.04037fil, direction TLT
 ......\glue 10.0
 ......\glue 367.04037
 ......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\penalty 10000
 ....\kern-0.12
 ....\hbox(0.0+0.12)x0.0, direction TLT
@@ -491,13 +514,12 @@ Completed box being shipped out [1]
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 8.4665
 ...\hbox(11.5335+3.14552)x367.04037, direction TLT
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
-....\pdfcolorstack 0 push {0 g 0 G}
 ....\hbox(11.5335+3.14552)x367.04037, direction TLT
 .....\glue 0.0
 .....\hbox(11.5335+3.14552)x367.04037, direction TLT
 ......\vbox(11.5335+3.14552)x367.04037, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\rule(0.0+0.0)x367.04037
 .......\glue 4.19403
 .......\hbox(7.33946+3.14552)x367.04037, direction TLT
@@ -546,7 +568,6 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfcolorstack 0 pop
 ...\pdfliteral page <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 0

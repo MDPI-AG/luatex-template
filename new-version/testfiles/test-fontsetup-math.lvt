@@ -1,0 +1,30 @@
+% regression-test should be before the class as microtype defines \pdfoutput!
+\input{regression-test}
+
+\documentclass{mdpi-luatex}
+\begin{document}
+\START\showoutput
+
+\section{ Text $t=1$}
+
+$ a = \int f(x) = \symbf{a} $
+
+{\boldmath $ a = \int f(x) = \symbf{a} $}
+
+$ a = \int f(x) = \symbf{a} $
+
+{\mathversion{bold} $ a = \int f(x) = \symbf{a} $}
+
+\LARGE 
+
+$ a = \int f(x) = \symbf{a} $
+
+{\boldmath $ a = \int f(x) = \symbf{a} $}
+
+$ a = \int f(x) = \symbf{a} $
+
+{\mathversion{bold} $ a = \int f(x) = \symbf{a} $}
+
+
+$ \square \blacksquare 𝛻 $
+\end{document} 

@@ -4,7 +4,7 @@ Don't change this file in any respect.
 TEST 1: Show PDF Tags
 ============================================================
 -------- test-title-issue31-tagged.xml (start) ---------
-<PDF>
+<PDF version="2.0">
  <StructTreeRoot>
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"
@@ -90,6 +90,7 @@ TEST 1: Show PDF Tags
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.025"
         >
+       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
        <?ReferencedObject type="Annot" page="1" ?>
        <?ReferencedObject type="Annot" page="1" ?>
@@ -112,14 +113,12 @@ TEST 1: Show PDF Tags
         id="ID.028"
        >
       <?MarkedContent page="1" ?>
-      <Figure xmlns="http://iso.org/pdf2/ssn"
+      <Span xmlns="http://iso.org/pdf2/ssn"
          id="ID.029"
-         alt="acoustics-logo.pdf"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 35.71638, 774.65587, 141.16323, 808.67154 }"
+         actualtext="Logo of Acoustics"
         >
        <?MarkedContent page="1" ?>
-      </Figure>
+      </Span>
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
@@ -127,14 +126,12 @@ TEST 1: Show PDF Tags
         id="ID.030"
        >
       <?MarkedContent page="1" ?>
-      <Figure xmlns="http://iso.org/pdf2/ssn"
+      <Span xmlns="http://iso.org/pdf2/ssn"
          id="ID.031"
-         alt="logo-mdpi.pdf"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 516.46727, 774.65587, 559.27551, 803.00232 }"
+         actualtext="MDPI logo"
         >
        <?MarkedContent page="1" ?>
-      </Figure>
+      </Span>
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
@@ -181,14 +178,12 @@ TEST 1: Show PDF Tags
         id="ID.037"
        >
       <?MarkedContent page="1" ?>
-      <Figure xmlns="http://iso.org/pdf2/ssn"
+      <Span xmlns="http://iso.org/pdf2/ssn"
          id="ID.038"
-         alt="logo-orcid.pdf"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 133.92809, 686.04816, 142.99917, 695.11881 }"
+         actualtext="ORCID"
         >
        <?MarkedContent page="1" ?>
-      </Figure>
+      </Span>
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
@@ -267,35 +262,36 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.049"
        >
-      <?MarkedContent page="1" ?>† 
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.050"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>†
+      </Span>
+      <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>This paper is an extended version of our paper published in Conference.
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.050"
+       id="ID.051"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.051"
+        id="ID.052"
        >
-      <?MarkedContent page="1" ?>‡ 
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.053"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>‡
+      </Span>
+      <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>First note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.052"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.053"
-       >
-      <?MarkedContent page="1" ?>§ 
-     </Lbl>
-     <?MarkedContent page="1" ?>Second note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.054"
@@ -306,35 +302,36 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.055"
        >
-      <?MarkedContent page="1" ?>‖ 
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.056"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>§
+      </Span>
+      <?MarkedContent page="1" ?> 
+     </Lbl>
+     <?MarkedContent page="1" ?>Second note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.057"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <Lbl xmlns="http://iso.org/pdf2/ssn"
+        id="ID.058"
+       >
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.059"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>‖
+      </Span>
+      <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Third note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.056"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.057"
-       >
-      <?MarkedContent page="1" ?>¶ 
-     </Lbl>
-     <?MarkedContent page="1" ?>Fourth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.058"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.059"
-       >
-      <?MarkedContent page="1" ?>** 
-     </Lbl>
-     <?MarkedContent page="1" ?>Fifth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.060"
@@ -345,48 +342,49 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.061"
        >
-      <?MarkedContent page="1" ?>†† 
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.062"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>¶
+      </Span>
+      <?MarkedContent page="1" ?> 
+     </Lbl>
+     <?MarkedContent page="1" ?>Fourth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.063"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <Lbl xmlns="http://iso.org/pdf2/ssn"
+        id="ID.064"
+       >
+      <?MarkedContent page="1" ?>** 
+     </Lbl>
+     <?MarkedContent page="1" ?>Fifth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.065"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <Lbl xmlns="http://iso.org/pdf2/ssn"
+        id="ID.066"
+       >
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.067"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>††
+      </Span>
+      <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Sixth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.062"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.063"
-       >
-      <?MarkedContent page="1" ?>‡‡ 
-     </Lbl>
-     <?MarkedContent page="1" ?>Seventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.064"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.065"
-       >
-      <?MarkedContent page="1" ?>§§ 
-     </Lbl>
-     <?MarkedContent page="1" ?>Eighth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.066"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.067"
-       >
-      <?MarkedContent page="1" ?>‖‖ 
-     </Lbl>
-     <?MarkedContent page="1" ?>Nineth noteLorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.068"
@@ -397,18 +395,85 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.069"
        >
-      <?MarkedContent page="1" ?>¶¶ 
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.070"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>‡‡
+      </Span>
+      <?MarkedContent page="1" ?> 
      </Lbl>
-     <?MarkedContent page="1" ?>Tenth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+     <?MarkedContent page="1" ?>Seventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.070"
+       id="ID.071"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.071"
+        id="ID.072"
+       >
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.073"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>§§
+      </Span>
+      <?MarkedContent page="1" ?> 
+     </Lbl>
+     <?MarkedContent page="1" ?>Eighth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.074"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <Lbl xmlns="http://iso.org/pdf2/ssn"
+        id="ID.075"
+       >
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.076"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>‖‖
+      </Span>
+      <?MarkedContent page="1" ?> 
+     </Lbl>
+     <?MarkedContent page="1" ?>Nineth noteLorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.077"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <Lbl xmlns="http://iso.org/pdf2/ssn"
+        id="ID.078"
+       >
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.079"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+        >
+       <?MarkedContent page="1" ?>¶¶
+      </Span>
+      <?MarkedContent page="1" ?> 
+     </Lbl>
+     <?MarkedContent page="1" ?>Tenth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.080"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <Lbl xmlns="http://iso.org/pdf2/ssn"
+        id="ID.081"
        >
       <?MarkedContent page="1" ?>*** 
      </Lbl>
@@ -416,11 +481,11 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.072"
+      id="ID.082"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.073"
+       id="ID.083"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -429,7 +494,7 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.074"
+      id="ID.084"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -486,9 +551,6 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
 ....\hbox(12.0+0.0)x394.35522, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 push {0 g 0 G}
 .....\hbox(12.0+0.0)x394.35522, direction TLT
 ......\glue -131.16722
 ......\hbox(12.0+0.0)x525.52245, direction TLT
@@ -504,6 +566,9 @@ Completed box being shipped out [1]
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
 ............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
@@ -549,13 +614,12 @@ Completed box being shipped out [1]
 ...........\glue 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-.....\pdfcolorstack 0 pop
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 283.38254fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 285.38232fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -592,16 +656,19 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\pdfliteral direct <lua data reference ...>
 ..........\rule(9.78595+4.19403)x0.0
 ..........\glue 0.0
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://crossmark.crossref.org/dialog?doi=10.3390/acoustics0000000\046domain=pdf\046date_stamp=....-..-..) >>  /LTEX_position /isolated/StructParent 1} action user{}
-..........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ..........\hbox(17.07182+0.0)x88.53558, direction TLT
 ...........\hbox(17.07193+0.0)x88.53581, direction TLT
 ............\hbox(17.07193+0.0)x88.53581, direction TLT
 .............\hbox(17.07193+0.0)x0.0, direction TLT
+..............\pdfliteral page <lua data reference ...>
+..............\pdfliteral page <lua data reference ...>
+..............\pdfliteral direct <lua data reference ...>
 ..............\pdfliteral page <lua data reference ...>
 ..............\pdfliteral page <lua data reference ...>
 ..............\pdfsave
@@ -615,7 +682,6 @@ Completed box being shipped out [1]
 .............\glue 0.0 plus 1.0fil minus 1.0fil
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfcolorstack 0 pop
 ..........\pdfendlink
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
@@ -630,6 +696,9 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 R
@@ -933,7 +1002,7 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\glue(\baselineskip) 6.764
-.........\hbox(5.096+0.14)x116.65646, glue set 1.58344fil, direction TLT
+.........\hbox(5.096+0.14)x116.65646, glue set 3.33344fil, direction TLT
 ..........\TU/texgyrepagella(0)/m/n/7 c
 ..........\TU/texgyrepagella(0)/m/n/7 o
 ..........\TU/texgyrepagella(0)/m/n/7 n
@@ -960,12 +1029,15 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 e
 ..........\TU/texgyrepagella(0)/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfstartlink(*+*)x61.24445 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 2} action user{}
+..........\pdfstartlink(*+*)x62.99445 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 2} action user{}
 ..........\pdfendlink
-..........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral direct <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 C
 ..........\TU/texgyrepagella(0)/m/n/7 r
 ..........\TU/texgyrepagella(0)/m/n/7 e
@@ -1036,8 +1108,10 @@ Completed box being shipped out [1]
 ..........\TU/texgyrepagella(0)/m/n/7 n
 ..........\TU/texgyrepagella(0)/m/n/7 s
 ..........\TU/texgyrepagella(0)/m/n/7 e
-..........\pdfcolorstack 0 pop
 ..........\pdfendlink
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 .
@@ -1057,10 +1131,11 @@ Completed box being shipped out [1]
 ....\penalty -51
 ....\glue -13.98
 ....\glue 13.98
-....\glue 2.0 plus 2.0 minus 1.0
-....\glue -2.0 plus -2.0 minus -1.0
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
 ....\penalty -51
-....\glue 2.0 plus 2.0 minus 1.0
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\rule(0.0+0.0)x*
@@ -1082,16 +1157,15 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com/journal/acoustics) >>  /LTEX_position /isolated/StructParent 4} action user{}
-.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\savepos
-.....\write1{\new@label@record{__tag_graphic.1}{{xpos}{\__property_code_xpos: }{ypos}{\__property_code_ypos: }{abspage}{\__property_code_abspage: }}}
-.....\savepos
 .....\hbox(34.14322+0.0)x105.84227, direction TLT
 ......\hbox(34.14275+0.0)x105.84253, direction TLT
 .......\hbox(34.14275+0.0)x105.84253, direction TLT
 ........\hbox(34.14275+0.0)x0.0, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral direct <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.24297 0 0 .24297}
 .........\hbox(140.525+0.0)x0.0, glue set - 435.6275fil, direction TLT
@@ -1103,22 +1177,17 @@ Completed box being shipped out [1]
 ........\glue 0.0 plus 1.0fil minus 1.0fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 pop
 .....\pdfendlink
 .....\glue 0.0 plus 1.0fill
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >>  /LTEX_position /isolated/StructParent 5} action user{}
-.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\savepos
-.....\write1{\new@label@record{__tag_graphic.2}{{xpos}{\__property_code_xpos: }{ypos}{\__property_code_ypos: }{abspage}{\__property_code_abspage: }}}
-.....\savepos
 .....\hbox(28.45274+0.0)x42.96877, direction TLT
 ......\hbox(28.45236+0.0)x42.96887, direction TLT
 .......\hbox(28.45236+0.0)x42.96887, direction TLT
 ........\hbox(28.45236+0.0)x0.0, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.57849 0 0 .57849}
 .........\hbox(49.18375+0.0)x0.0, glue set - 74.2775fil, direction TLT
@@ -1130,7 +1199,6 @@ Completed box being shipped out [1]
 ........\glue 0.0 plus 1.0fil minus 1.0fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 pop
 .....\pdfendlink
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1146,6 +1214,9 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.4+0.0)x525.23764, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral direct <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\rule(0.4+0.0)x525.23764
@@ -1253,25 +1324,22 @@ Completed box being shipped out [1]
 .....\hbox(4.69+0.021)x3.5, shifted -3.54, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/b/n/7 1
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://orcid.org/0000-0000-0000-000X) >>  /LTEX_position /isolated/StructParent 6} action user{}
-.....\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\savepos
-.....\write1{\new@label@record{__tag_graphic.3}{{xpos}{\__property_code_xpos: }{ypos}{\__property_code_ypos: }{abspage}{\__property_code_abspage: }}}
-.....\savepos
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.444706 0.456472 0.680002] /A 67 0 R  /LTEX_position /isolated/StructParent 6} action user{}
 .....\hbox(9.10466+0.0)x9.10509, direction TLT
 ......\hbox(9.10469+0.0)x9.10469, direction TLT
 .......\hbox(9.10469+0.0)x9.10469, direction TLT
 ........\hbox(9.10469+0.0)x0.0, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral direct <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.08893 0 0 .08893}
 .........\hbox(102.3825+0.0)x0.0, glue set - 102.3825fil, direction TLT
@@ -1283,8 +1351,10 @@ Completed box being shipped out [1]
 ........\glue 0.0 plus 1.0fil minus 1.0fil
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfcolorstack 0 pop
 .....\pdfendlink
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 ,
@@ -1319,9 +1389,7 @@ Completed box being shipped out [1]
 .....\hbox(4.62+0.021)x3.5, shifted -3.54, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/b/n/7 2
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
@@ -1363,10 +1431,8 @@ Completed box being shipped out [1]
 .....\hbox(4.62+1.162)x5.25, shifted -3.54, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/b/n/7 2
 ......\TU/texgyrepagella(0)/b/n/7 ,
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
@@ -1380,18 +1446,10 @@ Completed box being shipped out [1]
 ....\glue 12.0
 ....\glue 0.0
 ....\penalty -51
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -2.0 plus -1.0 minus -1.0
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -3.66 plus -1.0 minus -1.0
+....\glue 0.0
 ....\penalty -51
-....\glue 1.66
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -3.66 plus -1.0 minus -1.0
+....\glue 0.0
 ....\penalty -51
-....\glue 1.66
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -2.0 plus -1.0 minus -1.0
 ....\glue 10.0 plus 4.0 minus 5.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
@@ -1409,9 +1467,7 @@ Completed box being shipped out [1]
 .....\hbox(4.164+0.018)x3.0, shifted -2.832, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/m/n/6 1
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
@@ -1483,9 +1539,7 @@ Completed box being shipped out [1]
 .....\hbox(4.134+0.018)x3.0, shifted -2.832, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfcolorstack 0 push {0 g 0 G}
 ......\TU/texgyrepagella(0)/m/n/6 2
-......\pdfcolorstack 0 pop
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
@@ -1803,18 +1857,24 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.39699
-....\hbox(5.824+2.248)x394.35522, glue set 63.44557fil, direction TLT
+....\glue(\baselineskip) 1.22499
+....\hbox(6.996+2.248)x394.35522, glue set 63.44557fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.552+0.04)x13.59998, glue set 9.59998fil, direction TLT
+.....\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
+......\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 †
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 †
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -1926,18 +1986,24 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.429
-....\hbox(5.808+2.264)x394.35522, glue set 1.79245fil, direction TLT
+....\glue(\baselineskip) 1.075
+....\hbox(7.162+2.264)x394.35522, glue set 1.79245fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.552+1.992)x13.59998, glue set 9.59998fil, direction TLT
+.....\hbox(7.162+0.0)x13.59998, glue set 10.09998fil, direction TLT
+......\hbox(4.164+1.494)x3.0, shifted -2.998, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 ‡
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 ‡
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -2140,18 +2206,24 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set - 0.09288, direction TLT
+....\glue(\baselineskip) 1.135
+....\hbox(7.086+2.264)x394.35522, glue set - 0.09288, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.672+1.752)x13.59998, glue set 9.59998fil, direction TLT
+.....\hbox(7.086+0.0)x13.59998, glue set 10.09998fil, direction TLT
+......\hbox(4.254+1.314)x3.0, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 ^^a7
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 ^^a7
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -2355,18 +2427,24 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set 0.11201fil, direction TLT
+....\glue(\baselineskip) 1.489
+....\hbox(6.732+2.264)x394.35522, glue set 0.11201fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.2+1.2)x13.59998, glue set 10.59198fil, direction TLT
+.....\hbox(6.732+0.0)x13.59998, glue set 10.84398fil, direction TLT
+......\hbox(3.9+0.9)x2.256, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 ‖
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 ‖
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -2568,18 +2646,24 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set - 0.01425, direction TLT
+....\glue(\baselineskip) 1.19499
+....\hbox(7.026+2.264)x394.35522, glue set - 0.01425, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.592+1.2)x13.59998, glue set 8.57597fil, direction TLT
+.....\hbox(7.026+0.0)x13.59998, glue set 9.33197fil, direction TLT
+......\hbox(4.194+0.9)x3.768, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 ^^b6
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 ^^b6
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -3002,19 +3086,25 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set 0.11836fil, direction TLT
+....\glue(\baselineskip) 1.22499
+....\hbox(6.996+2.264)x394.35522, glue set 0.11836fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.552+0.04)x13.59998, glue set 5.59998fil, direction TLT
+.....\hbox(6.996+0.0)x13.59998, glue set 7.09998fil, direction TLT
+......\hbox(4.164+0.03)x6.0, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 †
+.......\TU/texgyrepagella(0)/m/n/6 †
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 †
-......\TU/texgyrepagella(0)/m/n/8 †
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -3216,19 +3306,25 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set - 0.00485, direction TLT
+....\glue(\baselineskip) 1.05899
+....\hbox(7.162+2.264)x394.35522, glue set - 0.00485, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.552+1.992)x13.59998, glue set 5.59998fil, direction TLT
+.....\hbox(7.162+0.0)x13.59998, glue set 7.09998fil, direction TLT
+......\hbox(4.164+1.494)x6.0, shifted -2.998, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 ‡
+.......\TU/texgyrepagella(0)/m/n/6 ‡
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 ‡
-......\TU/texgyrepagella(0)/m/n/8 ‡
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -3436,19 +3532,25 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set 0.15883fil, direction TLT
+....\glue(\baselineskip) 1.135
+....\hbox(7.086+2.264)x394.35522, glue set 0.15883fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.672+1.752)x13.59998, glue set 5.59998fil, direction TLT
+.....\hbox(7.086+0.0)x13.59998, glue set 7.09998fil, direction TLT
+......\hbox(4.254+1.314)x6.0, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 ^^a7
+.......\TU/texgyrepagella(0)/m/n/6 ^^a7
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 ^^a7
-......\TU/texgyrepagella(0)/m/n/8 ^^a7
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -3651,19 +3753,25 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set - 0.00388, direction TLT
+....\glue(\baselineskip) 1.489
+....\hbox(6.732+2.264)x394.35522, glue set - 0.00388, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.2+1.2)x13.59998, glue set 7.58398fil, direction TLT
+.....\hbox(6.732+0.0)x13.59998, glue set 8.58798fil, direction TLT
+......\hbox(3.9+0.9)x4.512, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 ‖
+.......\TU/texgyrepagella(0)/m/n/6 ‖
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 ‖
-......\TU/texgyrepagella(0)/m/n/8 ‖
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -3864,19 +3972,25 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set - 0.01062, direction TLT
+....\glue(\baselineskip) 1.19499
+....\hbox(7.026+2.264)x394.35522, glue set - 0.01062, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.592+1.2)x13.59998, glue set 3.55197fil, direction TLT
+.....\hbox(7.026+0.0)x13.59998, glue set 5.56396fil, direction TLT
+......\hbox(4.194+0.9)x7.53601, shifted -2.832, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/6 ^^b6
+.......\TU/texgyrepagella(0)/m/n/6 ^^b6
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 ^^b6
-......\TU/texgyrepagella(0)/m/n/8 ^^b6
 ......\TU/texgyrepagella(0)/m/n/8  
 ......\glue -2.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
@@ -4335,13 +4449,12 @@ Completed box being shipped out [1]
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 21.62003
 ...\hbox(14.37997+4.19403)x394.35522, direction TLT
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
-....\pdfcolorstack 0 push {0 g 0 G}
 ....\hbox(14.37997+4.19403)x394.35522, direction TLT
 .....\glue -131.16722
 .....\hbox(14.37997+4.19403)x525.52245, direction TLT
 ......\vbox(14.37997+4.19403)x525.52245, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\rule(0.4+0.0)x525.52245
 .......\glue 4.19403
 .......\hbox(9.78595+4.19403)x525.52245, direction TLT
@@ -4414,8 +4527,12 @@ Completed box being shipped out [1]
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/acoustics0000000) >>  /LTEX_position /isolated/StructParent 7/Contents (artifact)} action user{}
-...........\pdfcolorstack 0 push {0.03137 0.45882 0.71765 rg 0.03137 0.45882 0.71765 RG}
 ...........\mathon
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral direct <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
 ...........\TU/texgyrepagella(0)/m/n/8 t
 ...........\TU/texgyrepagella(0)/m/n/8 t
@@ -4490,14 +4607,17 @@ Completed box being shipped out [1]
 ...........\TU/texgyrepagella(0)/m/n/8 0
 ...........\TU/texgyrepagella(0)/m/n/8 0
 ...........\mathoff
-...........\pdfcolorstack 0 pop
 ...........\pdfendlink
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral direct <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfcolorstack 0 pop
 ...\pdfliteral page <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 0
@@ -4510,7 +4630,6 @@ Completed box being shipped out [1]
 <./logo-updates.pdf><./acoustics-logo.pdf><./logo-mdpi.pdf><./logo-orcid.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 <<latex-list-css.html>><<latex-align-css.html>> (test-title-issue31-tagged.aux)
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 MathML statistic
 ================
 ==> 0 MathML fragments read
@@ -4519,8 +4638,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~74 structure objects
-(tagpdf)             with ~82 'MC' leaf nodes.
+(tagpdf)             Writing out ~84 structure objects
+(tagpdf)             with ~102 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

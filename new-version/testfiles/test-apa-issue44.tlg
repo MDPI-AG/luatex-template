@@ -1,4 +1,10 @@
-<PDF>
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+============================================================
+TEST 1: Show PDF Tags
+============================================================
+-------- test-apa-issue44.xml (start) ---------
+<PDF version="2.0">
  <StructTreeRoot>
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"
@@ -72,6 +78,7 @@
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.023"
         >
+       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
        <?ReferencedObject type="Annot" page="1" ?>
        <?ReferencedObject type="Annot" page="1" ?>
@@ -94,14 +101,12 @@
         id="ID.026"
        >
       <?MarkedContent page="1" ?>
-      <Figure xmlns="http://iso.org/pdf2/ssn"
+      <Span xmlns="http://iso.org/pdf2/ssn"
          id="ID.027"
-         alt="logo-mdpi.pdf"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 516.46725, 774.65587, 559.27549, 803.00232 }"
+         actualtext="MDPI logo"
         >
        <?MarkedContent page="1" ?>
-      </Figure>
+      </Span>
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
@@ -165,13 +170,16 @@
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.036"
         >
+       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Author
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-      <?MarkedContent page="1" ?> (
+      <?MarkedContent page="1" ?> 
+      <?MarkedContent page="1" ?>(
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.037"
         >
+       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>year
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
@@ -244,6 +252,42 @@
   </Document>
  </StructTreeRoot>
 </PDF>
+-------- test-apa-issue44.xml (end) -----------
+============================================================
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.97998pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.97998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
+tagpdf:       moved into a container at the end of the structure tree
+[1
+<./logo-mdpi.pdf>] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+<<latex-list-css.html>><<latex-align-css.html>> (test-apa-issue44.aux)
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+MathML statistic
+================
+==> 0 MathML fragments read
+==> 0 different MathML fragments
+==> 0 math fragments found
+==> 0 fitting MathML AF found
+==> 0 MathML AF attached
+Package tagpdf Info: Finalizing the tagging structure:
+(tagpdf)             Writing out ~47 structure objects
+(tagpdf)             with ~29 'MC' leaf nodes.
+(tagpdf)             Be patient if there are lots of objects!
+Package tagpdf Info: writing ParentTree
+Package tagpdf Info: writing IDTree
+Package tagpdf Info: writing RoleMap
+Package tagpdf Info: writing ClassMap
+Package tagpdf Info: writing NameSpaces
+Package tagpdf Info: writing StructElems
+Package tagpdf Info: writing Root
 ***************
 Compilation 1 of test file completed with exit status 0
 Compilation 2 of test file completed with exit status 0
