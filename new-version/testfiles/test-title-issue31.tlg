@@ -3620,7 +3620,7 @@ Completed box being shipped out [1]
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 .\kern0.0
 .\kern0.0
-<./logo-updates.pdf><./acoustics-logo.pdf><./logo-mdpi.pdf><./logo-orcid.pdf> 
+<../logo-updates.pdf><./Definitions/acoustics-logo.pdf><./Definitions/logo-mdpi.pdf><./Definitions/logo-orcid.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-title-issue31.aux)
 Package rerunfilecheck Info: File `test-title-issue31.out' has not changed.

@@ -294,7 +294,7 @@
 %    \end{macrocode}
 % And now load the file. 
 %    \begin{macrocode}
-\input{journalnames}
+\input{Definitions/journalnames}
 %    \end{macrocode}
 %
 % This option issues a warning.
@@ -743,7 +743,7 @@
 % of the \pkg{apacite} package.
 %    \begin{macrocode}
 \isAPAStyle
-  {\RequirePackage[natbibapa]{mdpi_apacite}}
+  {\RequirePackage[natbibapa]{Definitions/mdpi_apacite}}
 %    \end{macrocode}
 % Option sectionbib is for optionally organizing references using sections (author request).
 %    \begin{macrocode}
@@ -788,15 +788,15 @@
 % The bibliography styles:
 %    \begin{macrocode}
 \isAPAStyle
-  {\bibliographystyle{mdpi_apacite}}
+  {\bibliographystyle{Definitions/mdpi_apacite}}
   {
     \isChicagoStyle
       {
-        \bibliographystyle{mdpi_chicago}
+        \bibliographystyle{Definitions/mdpi_chicago}
         \bibpunct{(}{)}{;}{x}{}{,}
       }
       {
-        \bibliographystyle{mdpi}
+        \bibliographystyle{Definitions/mdpi}
         \bibpunct{[}{]}{,}{n}{}{,}
       }
   }
@@ -1140,7 +1140,7 @@
 %
 % \subsubsection{Orcid}
 %    \begin{macrocode}
-\newcommand{\orcidicon}{\includegraphics[width=0.32cm,actualtext=ORCID]{logo-orcid.pdf}}
+\newcommand{\orcidicon}{\includegraphics[width=0.32cm,actualtext=ORCID]{Definitions/logo-orcid.pdf}}
 %    \end{macrocode}
 % Define link and button for author A--Z. Before these commands can be used, the
 % author has to define \verb+orcidauthorA+ etc.
@@ -1177,14 +1177,14 @@
    \tl_if_eq:enTF {\@status}{submit}
      {
        \phantom{\rule{0pt}{1.2cm}}\hfill
-       \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{\mdpi@logo@right}}%
+       \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{Definitions/\mdpi@logo@right}}%
      }
      {
         \href{\mdpi@url/journal/\@journal}
-             {\includegraphics[height=1.2cm,actualtext={Logo~of~\@journalfull}]{\@journallogo}}%
+             {\includegraphics[height=1.2cm,actualtext={Logo~of~\@journalfull}]{Definitions/\@journallogo}}%
         \hfill
         \href{\mdpi@url}
-             {\includegraphics[height=1cm,actualtext={MDPI~logo}]{\mdpi@logo@right}}
+             {\includegraphics[height=1cm,actualtext={MDPI~logo}]{Definitions/\mdpi@logo@right}}
      }
  }
 %    \end{macrocode}
