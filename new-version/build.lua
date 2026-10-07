@@ -58,6 +58,9 @@ tdslocations = {
 "tex/latex/mdpi/Definitions/logo-updates.pdf",
 "tex/latex/mdpi/Definitions/logo-mdpi.pdf",
 "tex/latex/mdpi/Definitions/logo-orcid.pdf",
+"tex/latex/mdpi/Definitions/acoustics-logo.eps",
+"tex/latex/mdpi/Definitions/logo-updates.eps",
+"tex/latex/mdpi/Definitions/logo-mdpi.eps",
 "bibtex/bst/mdpi/Definitions/mdpi.bst",
 "bibtex/bst/mdpi/Definitions/mdpi_apacite.bst",
 "bibtex/bst/mdpi/Definitions/mdpi_chicago.bst",
@@ -84,6 +87,7 @@ sourcefiles = {
                 "support/Definitions/mdpi-pdftex.cls",               
                 "support/Definitions/*.pdf",               
                 "support/Definitions/*.bst",
+                "support/Definitions/*.eps",
                 "support/Definitions/journalnames.tex"             
               }
 
