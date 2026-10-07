@@ -2597,7 +2597,7 @@ Completed box being shipped out [1]
 .\kern0.0
 .\kern0.0
 .\pdfliteral page <lua data reference ...>
-<./logo-mdpi.pdf>
+<./Definitions/logo-mdpi.pdf>
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 21.49452pt, for example:
 (fancyhdr)                \setlength{\headheight}{21.49452pt}.

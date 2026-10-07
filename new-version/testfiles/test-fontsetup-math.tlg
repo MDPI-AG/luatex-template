@@ -1426,7 +1426,7 @@ Completed box being shipped out [1]
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 .\kern0.0
 .\kern0.0
-<./logo-mdpi.pdf> 
+<./Definitions/logo-mdpi.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-fontsetup-math.aux)
 LaTeX Font Warning: Size substitutions with differences

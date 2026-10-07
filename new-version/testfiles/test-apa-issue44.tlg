@@ -266,7 +266,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 [1
-<./logo-mdpi.pdf>] 
+<./Definitions/logo-mdpi.pdf>] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 <<latex-list-css.html>><<latex-align-css.html>> (test-apa-issue44.aux)
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.

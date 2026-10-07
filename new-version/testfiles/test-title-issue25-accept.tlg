@@ -1734,7 +1734,7 @@ Completed box being shipped out [1]
 .\hbox(0.0+0.0)x0.0, direction TLT
 .\kern746.24187
 .\pdfliteral page <lua data reference ...>
-<./logo-updates.pdf><./acoustics-logo.pdf><./logo-mdpi.pdf><./logo-orcid.pdf> 
+<../logo-updates.pdf><./Definitions/acoustics-logo.pdf><./Definitions/logo-mdpi.pdf><./Definitions/logo-orcid.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 <<latex-list-css.html>><<latex-align-css.html>> (test-title-issue25-accept.aux)
 MathML statistic

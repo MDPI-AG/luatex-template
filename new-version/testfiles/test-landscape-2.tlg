@@ -1017,7 +1017,7 @@ Completed box being shipped out [1]
 .\kern0.0
 .\kern0.0
 .\pdfliteral page <lua data reference ...>
-<./logo-mdpi.pdf>
+<./Definitions/logo-mdpi.pdf>
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
 * paper: <default>
