@@ -70,14 +70,14 @@
 \ProvidesClass{mdpi-luatex}[\mdpidate\ \mdpiversion\ MDPI paper class for lualatex]
 %    \end{macrocode}
 % If lualatex is not used we fall back to a (not tagging aware)
-% version of the older class under the name  mdpi-pdftex. This allows to compare
+% version of the older class under the name  mdpi. This allows to compare
 % the lualatex output with the pdflatex output.
 %    \begin{macrocode}
 \@ifundefined{directlua}
  {
   \ClassWarning{mdpi-luatex}{This class requires lualatex, loading the class
-  mpdi-pdftex instead}
-  \LoadClassWithOptions{mdpi-pdftex}
+  mpd instead}
+  \LoadClassWithOptions{mdpi}
   \providecommand\@datepublished{}
   \providecommand\@Title{TITLE}
   \providecommand\@address{ADDRESS}

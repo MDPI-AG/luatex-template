@@ -26,12 +26,13 @@ typesetfiles = {"*.dtx","template-*.tex"}
 
 local mdpiduplicates = 
  {
-  "acoustics-logo.pdf", 
-  "mdpi-pdftex.cls", 
+  "acoustics-logo.pdf",
+  "mdpi.cls", 
   "logo-updates.pdf", 
   "logo-mdpi.pdf", 
   "logo-orcid.pdf", 
   "journalnames.tex", 
+  "unicode.tex", 
   "mdpi_apacite.sty",   
   "mdpi.bst",   
   "mdpi_apacite.bst",   
@@ -54,6 +55,7 @@ tdslocations = {
 "tex/latex/mdpi/Definitions/*.sty",
 "tex/latex/mdpi/Definitions/*.cls",
 "tex/latex/mdpi/Definitions/journalnames.tex",
+"tex/latex/mdpi/Definitions/unicode.tex",
 "tex/latex/mdpi/Definitions/acoustics-logo.pdf",
 "tex/latex/mdpi/Definitions/logo-updates.pdf",
 "tex/latex/mdpi/Definitions/logo-mdpi.pdf",
@@ -76,7 +78,8 @@ installfiles = {
                 "logo-updates.eps",
                 "logo-mdpi.eps",                
                 "logo-orcid.pdf",
-                "journalnames.tex"
+                "journalnames.tex",
+                "unicode.tex"
                }
 
 sourcefiles = {
@@ -84,11 +87,12 @@ sourcefiles = {
                 "*.ins",
                 "*.sty",
                 "support/Definitions/mdpi_apacite.sty",               
-                "support/Definitions/mdpi-pdftex.cls",               
+                "support/Definitions/mdpi.cls",               
                 "support/Definitions/*.pdf",               
                 "support/Definitions/*.bst",
                 "support/Definitions/*.eps",
-                "support/Definitions/journalnames.tex"             
+                "support/Definitions/journalnames.tex",    
+                "support/Definitions/unicode.tex"            
               }
 
 checksuppfiles   = {"Definitions"}
