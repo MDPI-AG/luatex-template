@@ -26,7 +26,7 @@
 \def\mdpidate{2026-10-10}
 \def\mdpiversion{v6.5c}
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{Definitions/mdpi-pdftex}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
+\ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
 
  %% PRELIMINARY DECLARATIONS
 \LoadClass[10pt,a4paper]{article}
@@ -119,7 +119,7 @@
 %% To choose the journal
 % All journals (website name, full name, short name, DOI abbreviation, and ISSN + choice of continuous page numbers) are defined in an extra file. 
 \input{Definitions/journalnames}
-\DeclareOption{journal}{\ClassWarning{mdpi-pdftex}{You used an invalid journal name or you have not specified the journal. The first option of the documentclass command specifies the journal. The word 'journal' should be replaced by one of the journal names specified in template.tex (in the comment 'Choose between the following MDPI journal').}} 
+\DeclareOption{journal}{\ClassWarning{mdpi}{You used an invalid journal name or you have not specified the journal. The first option of the documentclass command specifies the journal. The word 'journal' should be replaced by one of the journal names specified in template.tex (in the comment 'Choose between the following MDPI journal').}} 
 
 %% To choose the type of manuscript
 \DeclareOption{abstract}{\gdef\@arttype{Abstract}}
@@ -424,7 +424,7 @@
 }
 
 % After TeXLive 2021, \AddToHook{begindocument} is needed to make sure that hyperref is loaded last. \ifdef{\AddToHook{begindocument}}{ is needed for backwards-compatibility because \AddToHook{begindocument} did not yet exist in 2020.
-% After TeXLive 2022, \AddToHook{begindocument/before}{} is needed and  \DeclareHookRule{begindocument}{hyperref}{before}{mdpi-pdftex} needs to be added because of the new version of hyperref.
+% After TeXLive 2022, \AddToHook{begindocument/before}{} is needed and  \DeclareHookRule{begindocument}{hyperref}{before}{mdpi} needs to be added because of the new version of hyperref.
 \newcommand{\hyperrefpackage}{
       \isBookContribution{%
 	\RequirePackage[unicode=true,
@@ -467,7 +467,7 @@
 \RequirePackage[capitalise,noabbrev]{cleveref}
 }
 \ifdef{\AddToHook}{
-\DeclareHookRule{begindocument}{hyperref}{before}{mdpi-pdftex}
+\DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
 	\AddToHook{begindocument/before}{ 
 		\hyperrefpackage
              \crefnameDefinitions
@@ -1876,7 +1876,7 @@
 
 \ifmdpiunicodemaps
   \InputIfFileExists{Definitions/unicode.tex}{}{%
-    \PackageError{mdpi-pdftex}{Missing Definitions/unicode.tex}{%
+    \PackageError{mdpi}{Missing Definitions/unicode.tex}{%
       Install the MDPI Definitions bundle beside the main .tex file.}%
   }%
 \fi
