@@ -95,27 +95,6 @@
 \RequirePackage{lum-pagella}
 \setmathfont[AutoFakeBold=1.125]{texgyrepagella-math}
 
-\ExplSyntaxOn
-\clist_map_inline:nn
- {alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,
-  mu,nu,xi,omicron,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega}
- {\cs_new:cpn{up#1}{\symup{\use:c{#1}}}}
-\clist_map_inline:nn
- {Gamma,Delta,Theta,Lambda,Xi,Pi,Sigma,Upsilon,Phi,Psi,Omega}
- {\cs_set:cpn{var#1}{\use:c{mit#1}}}
-\providecommand\Upgamma{\symup{\Gamma}}
-\providecommand\Updelta{\symup{\Delta}}
-\providecommand\Uptheta{\symup{\Theta}}
-\providecommand\Uplambda{\symup{\Lambda}}
-\providecommand\Upxi{\symup{\Xi}}
-\providecommand\Uppi{\symup{\Pi}}
-\providecommand\Upsigma{\symup{\Sigma}}
-\providecommand\Upupsilon{\symup{\Upsilon}}
-\providecommand\Upphi{\symup{\Phi}}
-\providecommand\Uppsi{\symup{\Psi}}
-\providecommand\Upomega{\symup{\Omega}}
-\ExplSyntaxOff
-
 \RequirePackage{wasysym} % Provide some special symbols male \male, female \female; math $\male$ $\female$
 \RequirePackage{pifont} % Provide some special symbols
 \RequirePackage{array} % For table array
@@ -301,6 +280,47 @@
       { \symbfup {#1} }
       { \symup {#1} }
   }
+%% Upright Greek: upgreek.sty-compatible set via \symup/\symbfup.
+%% Includes \upvarepsilon, \upvartheta, \upvarpi, \upvarphi; \upvarrho/\upvarsigma alias \uprho/\upsigma.
+\clist_map_inline:nn
+  {
+    alpha, beta, gamma, delta, epsilon, zeta, eta, theta,
+    iota, kappa, lambda, mu, nu, xi, omicron, pi, rho, sigma, tau,
+    upsilon, phi, chi, psi, omega, varepsilon, vartheta,
+    varpi, varphi
+  }
+  { \cs_gset_protected:cpn { up #1 } { \__mdpi_upgreek_letter:n { \use:c {#1} } } }
+\cs_gset_eq:NN \upvarrho \uprho
+\cs_gset_eq:NN \upvarsigma \upsigma
+\cs_gset_protected:Npn \Upgamma { \__mdpi_upgreek_letter:n { \Gamma } }
+\cs_gset_protected:Npn \Updelta { \__mdpi_upgreek_letter:n { \Delta } }
+\cs_gset_protected:Npn \Uptheta { \__mdpi_upgreek_letter:n { \Theta } }
+\cs_gset_protected:Npn \Uplambda { \__mdpi_upgreek_letter:n { \Lambda } }
+\cs_gset_protected:Npn \Upxi { \__mdpi_upgreek_letter:n { \Xi } }
+\cs_gset_protected:Npn \Uppi { \__mdpi_upgreek_letter:n { \Pi } }
+\cs_gset_protected:Npn \Upsigma { \__mdpi_upgreek_letter:n { \Sigma } }
+\cs_gset_protected:Npn \Upupsilon { \__mdpi_upgreek_letter:n { \Upsilon } }
+\cs_gset_protected:Npn \Upphi { \__mdpi_upgreek_letter:n { \Phi } }
+\cs_gset_protected:Npn \Uppsi { \__mdpi_upgreek_letter:n { \Psi } }
+\cs_gset_protected:Npn \Upomega { \__mdpi_upgreek_letter:n { \Omega } }
+%% amsmath \varGamma … \varOmega: italic capitals (\symit/\symbfit under boldmath).
+\cs_new_protected:Npn \__mdpi_vargreek_letter:n #1
+  {
+    \bool_lazy_or:nnTF
+      {
+        \int_compare_p:nNn
+          { \int_use:N \mathfamattr } =
+          { \c__l_uni_math_attribute_symbf_int }
+      }
+      { \bool_if_p:N \l__mdpi_boldmath_bool }
+      { \symbfit {#1} }
+      { \symit {#1} }
+  }
+\cs_if_exist:NT \varTheta
+  { \cs_new_eq:NN \varthetasymbol \varTheta }
+\clist_map_inline:nn
+  { Gamma, Delta, Theta, Lambda, Xi, Pi, Sigma, Upsilon, Phi, Psi, Omega }
+  { \cs_gset_protected:cpn { var #1 } { \__mdpi_vargreek_letter:n { \use:c {#1} } } }
 \cs_new_protected:Npn \__mdpi_mathbm:n #1
   {
     \text { \boldmath $ \mathsurround \z@ #1 $ }
