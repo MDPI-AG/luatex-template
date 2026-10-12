@@ -47,6 +47,7 @@ end
 function docinit_hook() 
   cp("mdpi-luatex.cls", unpackdir, typesetdir)
   cp("mdpi-luatex.cls", unpackdir, typesetdir.."/Definitions")
+  cp("mdpi-extra-langs.tex", unpackdir, typesetdir.."/Definitions")
   mdpiremoveduplicates(typesetdir)
   return  0
 end
@@ -56,6 +57,7 @@ tdslocations = {
 "tex/latex/mdpi/Definitions/*.cls",
 "tex/latex/mdpi/Definitions/journalnames.tex",
 "tex/latex/mdpi/Definitions/unicode.tex",
+"tex/latex/mdpi/Definitions/mdpi-extra-langs.tex",
 "tex/latex/mdpi/Definitions/acoustics-logo.pdf",
 "tex/latex/mdpi/Definitions/logo-updates.pdf",
 "tex/latex/mdpi/Definitions/logo-mdpi.pdf",
@@ -79,7 +81,8 @@ installfiles = {
                 "logo-mdpi.eps",                
                 "logo-orcid.pdf",
                 "journalnames.tex",
-                "unicode.tex"
+                "unicode.tex",
+                "mdpi-extra-langs.tex"
                }
 
 sourcefiles = {
@@ -92,7 +95,8 @@ sourcefiles = {
                 "support/Definitions/*.bst",
                 "support/Definitions/*.eps",
                 "support/Definitions/journalnames.tex",    
-                "support/Definitions/unicode.tex"            
+                "support/Definitions/unicode.tex",
+                "support/Definitions/mdpi-extra-langs.tex"
               }
 
 checksuppfiles   = {"Definitions"}
@@ -100,6 +104,7 @@ typesetsuppfiles = {"Definitions"}
 
 function checkinit_hook()   
   cp("mdpi-luatex.cls",testdir,testdir.."/Definitions") -- so that using Definitions/mdpi-luatex works too
+  cp("mdpi-extra-langs.tex", testdir, testdir.."/Definitions")
   mdpiremoveduplicates (testdir) 
   return 0 
 end

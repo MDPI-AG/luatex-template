@@ -1,0 +1,59 @@
+%% mdpi-extra-langs.tex — babel/fonts bundle (mdpi-luatex.cls option extralangs or \MDPIextralangs)
+
+\ExplSyntaxOn
+\cs_new_protected:Npn \mdpi_setup_hebrew:
+ {
+  \babelprovide[onchar=ids fonts]{hebrew}
+  \babelfont[hebrew]{rm}[
+    Renderer=HarfBuzz,
+    ItalicFont={Times New Roman},
+    BoldFont={Times New Roman Bold},
+  ]{Times New Roman}
+  \providecommand\texthebrew{\foreignlanguage{hebrew}}
+  \newfontfamily\hebrewfont{Times New Roman}[
+    Script=Hebrew,
+    Renderer=HarfBuzz,
+    ItalicFont={Times New Roman},
+    BoldFont={Times New Roman Bold},
+  ]
+ }
+\cs_new_protected:Npn \mdpi_setup_arabic:
+ {
+  \babelprovide[onchar=ids fonts]{arabic}
+  \babelfont[arabic]{rm}[
+    Renderer=HarfBuzz,
+    ItalicFont={Times New Roman},
+    BoldFont={Times New Roman Bold},
+  ]{Times New Roman}
+  \providecommand\textarabic{\foreignlanguage{arabic}}
+  \newfontfamily\arabicfont{Times New Roman}[
+    Script=Arabic,
+    Renderer=HarfBuzz,
+    ItalicFont={Times New Roman},
+    BoldFont={Times New Roman Bold},
+  ]
+ }
+\cs_new_protected:Npn \mdpi_setup_russian:
+ {
+  \babelprovide[onchar=ids fonts]{russian}
+  \babelfont[russian]{rm}[Renderer=HarfBuzz]{Times New Roman}
+  \newfontfamily\rufont{Palatino Linotype}[Script=Cyrillic]
+ }
+\cs_new_protected:Npn \mdpi_setup_cjk:
+ {
+  \babelprovide[onchar=ids fonts]{chinese-simplified}
+  \babelfont[chinese-simplified]{rm}[Renderer=HarfBuzz]{SimSun}
+  \newfontfamily\simsun{SimSun}
+  \newfontfamily\koreanfont{Malgun Gothic}
+ }
+\cs_new_protected:Npn \mdpi_setup_extralangs:
+ {
+  \RequirePackage[bidi=basic,layout=tabular,english]{babel}
+  \mdpi_setup_hebrew:
+  \mdpi_setup_arabic:
+  \mdpi_setup_russian:
+  \mdpi_setup_cjk:
+  \newfontfamily\rmfont{Times New Roman}
+  \newfontfamily\cambria{Cambria Math} % Cambria Math font letters
+ }
+\ExplSyntaxOff

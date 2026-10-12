@@ -1,0 +1,2939 @@
+%%
+%% This is file `mdpi-luatex.cls',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% mdpi-luatex.dtx  (with options: `class')
+%% 
+%% 
+%% It may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License (LPPL), either version 1.3c of
+%% this license or (at your option) any later version.  The latest
+%% version of this license is in the file:
+%% 
+%%    https://www.latex-project.org/lppl.txt
+%% 
+%% This file is part of the "mdpi bundle" (The Work in LPPL)
+%% and all files in that bundle must be distributed together.
+%% 
+%% File: mdpi-luatex.dtx (C)
+%%
+%%%%  MDPI class for LaTeX files
+%%   For any information please send an e-mail to:
+%%     latex@mdpi.com
+%%
+%%   Initial class provided by:
+%%     Stefano Mariani
+%%      Modified by:
+%%     Dietrich Rordorf
+%%     Peter Harremoes
+%%     Zeno Schumacher
+%%     Maddalena Giulini
+%%     Andres Gartmann
+%%     Dr. Janine Daum
+%%     Xiu Li
+%%      Versions:
+%%     v1.0 before Dr. Janine Daum
+%%     v2.0 when Dr. Janine Daum started (March 2013)
+%%     v3.0 layout change September 2015
+%%     v4.0 layout change December 2020
+%%     v5.0 layout change December 2024
+%%     v6.0 layout change December 2025
+%%     v7.0: switch to lualatex
+\def\mdpidate{2026-10-12}
+\def\mdpiversion{v7.0m}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{mdpi-luatex}[\mdpidate\ \mdpiversion\ MDPI paper class for lualatex]
+\@ifundefined{directlua}
+ {
+  \ClassWarning{mdpi-luatex}{This class requires lualatex, loading the class mdpi-luatex instead}
+  \LoadClassWithOptions{Definitions/mdpi}
+  \providecommand\@datepublished{}
+  \providecommand\@Title{TITLE}
+  \providecommand\@address{ADDRESS}
+  \providecommand\@pubvolume{0}
+  \def\@issuenum{0}
+  \providecommand\@articlenumber{0}
+ }
+ {}
+\@ifundefined{directlua}
+ {\endinput}
+ {}
+\LoadClass[10pt,a4paper]{article}
+\RequirePackage{tagpdf-base}
+\RequirePackage{calc}
+\RequirePackage{lastpage}
+\RequirePackage{ifthen}
+\RequirePackage{etoolbox} % For \AtBeginDocument etc.
+\RequirePackage{refcount} % To enable extracting the value of the counter "LastPage"
+\RequirePackage{alphalph} % Provide double letters numbers
+\RequirePackage[right,mathlines]{lineno}
+\RequirePackage{pbox} % For biography environment
+\RequirePackage{changepage} % To adjust the width of the column for the title part and figures/tables (adjustwidth environment)
+\RequirePackage{attrib} % For XML2PDF use \tag{} for equation
+\RequirePackage{inputnormalization} % Compatible with various Unicode characters
+\Uinputnormalization=0
+\AddToHook{begindocument/end}{\Uinputnormalization=2}
+\RequirePackage{fontspec}
+\setmainfont{texgyrepagella}[
+  Ligatures = TeX,
+  ItalicFont = texgyrepagella-italic.otf,
+  BoldItalicFont = texgyrepagella-bolditalic.otf,
+]
+%% FakeSlant fonts used only for upright punctuation inside \textit/\emph/\itshape.
+\newfontfamily\mdpi@slantfont{texgyrepagella-regular.otf}[
+  FakeSlant = 0.176,
+]
+\newfontfamily\mdpi@slantboldfont{texgyrepagella-bold.otf}[
+  FakeSlant = 0.176,
+]
+\RequirePackage{microtype} % For \textls; negative tracking shrinks spaces inside the argument — use \mbox{}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{lua-unicode-math}
+\RequirePackage{lum-pagella}
+\setmathfont[AutoFakeBold=1.125]{texgyrepagella-math}
+
+\ExplSyntaxOn
+\clist_map_inline:nn
+ {alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,
+  mu,nu,xi,omicron,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega}
+ {\cs_new:cpn{up#1}{\symup{\use:c{#1}}}}
+\clist_map_inline:nn
+ {Gamma,Delta,Theta,Lambda,Xi,Pi,Sigma,Upsilon,Phi,Psi,Omega}
+ {\cs_set:cpn{var#1}{\use:c{mit#1}}}
+\providecommand\Upgamma{\symup{\Gamma}}
+\providecommand\Updelta{\symup{\Delta}}
+\providecommand\Uptheta{\symup{\Theta}}
+\providecommand\Uplambda{\symup{\Lambda}}
+\providecommand\Upxi{\symup{\Xi}}
+\providecommand\Uppi{\symup{\Pi}}
+\providecommand\Upsigma{\symup{\Sigma}}
+\providecommand\Upupsilon{\symup{\Upsilon}}
+\providecommand\Upphi{\symup{\Phi}}
+\providecommand\Uppsi{\symup{\Psi}}
+\providecommand\Upomega{\symup{\Omega}}
+\ExplSyntaxOff
+
+\RequirePackage{wasysym} % Provide some special symbols male \male, female \female; math $\male$ $\female$
+\RequirePackage{pifont} % Provide some special symbols
+\RequirePackage{array} % For table array
+\RequirePackage{tabularx}
+\RequirePackage{booktabs} % For \toprule etc. in tables
+\RequirePackage{colortbl}
+\RequirePackage{multirow}
+\RequirePackage{amsthm}
+\RequirePackage{xcolor} % To provide color for soul (for english editing), for adding cell color of table
+\RequirePackage{luacolor} % To support highlight color
+\definecolor{bluecite}{HTML}{0875b7} % Define color for citations
+\RequirePackage{graphicx}
+\graphicspath{{./Definitions/}{./Figures/}{./Figure/}{./figures/}{./figure/}}
+\RequirePackage{tikz} % For \foreach used for Orcid icon
+\RequirePackage[soul]{lua-ul} % To highlight text and provide \hl
+\newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
+\let\sout\st
+\let\uline\ul
+\newunderlinetype \mdpi@UulineRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%
+  \unitlength=0.2em\relax
+  \begin{picture}[artifact](1,2)(0,0)
+    \put(0,1){\line(1,0){1}}
+    \put(0,0){\line(1,0){1}}
+  \end{picture}%
+}}
+\newunderlinetype \mdpi@UwaveRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%
+  \unitlength=0.3ex\relax
+  \begin{picture}[artifact](4,0)(0,1)
+    \thicklines
+    \qbezier(0,0)(1,1)(2,0)
+    \qbezier(2,0)(3,-1)(4,0)
+  \end{picture}%
+}}
+\NewDocumentCommand\uuline{m}{{\mdpi@UulineRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
+\NewDocumentCommand\uwave {m}{{\mdpi@UwaveRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
+\newcommand{\highlighted}[2][yellow]{\mathchoice%
+  {\colorbox{#1}{$\displaystyle#2$}}%
+  {\colorbox{#1}{$\textstyle#2$}}%
+  {\colorbox{#1}{$\scriptstyle#2$}}%
+  {\colorbox{#1}{$\scriptscriptstyle#2$}}}%
+\DeclareRobustCommand{\sout}[1]{\st{#1}}
+\DeclareRobustCommand{\uline}[1]{\ul{#1}}
+\RequirePackage{fancyhdr}
+\RequirePackage{indentfirst}
+\IfDocumentMetadataF{\RequirePackage{titlesec}}
+\RequirePackage{enumitem}
+\RequirePackage{enotez} % For endnotes
+\RequirePackage{xstring}
+\RequirePackage{marginnote} % For left column
+\reversemarginpar % To have the left column on the left side
+\RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
+\RequirePackage{float}
+\RequirePackage[labelformat=simple]{subfig}
+\renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} %
+
+\directlua{
+  mdpi = mdpi or {}
+  mdpi.slant = mdpi.slant or {}
+  local S = mdpi.slant
+  S.it_id = S.it_id or nil
+  S.bi_id = S.bi_id or nil
+  local glyph_id = node.id("glyph")
+  local hlist_id = node.id("hlist")
+  local vlist_id = node.id("vlist")
+  local disc_id  = node.id("disc")
+  local function needs_slant(c)
+    if c >= 0x21 and c <= 0x2F then return true end
+    if c >= 0x3A and c <= 0x40 then return true end
+    if c >= 0x5B and c <= 0x60 then return true end
+    if c >= 0x7B and c <= 0x7E then return true end
+    if c >= 0x2000 and c <= 0x206F then return true end
+    if c >= 0x2E00 and c <= 0x2E7F then return true end
+    return false
+  end
+  local function italic_kind(fid)
+    local f = font.getfont(fid)
+    if not f then return nil end
+    local n = string.lower(table.concat({
+      tostring(f.filename or ""), "/",
+      tostring(f.fullpath or ""), "/",
+      tostring(f.name or ""), "/",
+      tostring(f.psname or ""), "/",
+      tostring(f.fullname or ""),
+    }))
+    if n:find("math", 1, true) then return nil end
+    if n:find("bolditalic", 1, true)
+        or (n:find("bold", 1, true) and n:find("italic", 1, true)) then
+      return "bi"
+    end
+    if n:find("italic", 1, true) then return "it" end
+    return nil
+  end
+  local function process_list(head)
+    for n in node.traverse(head) do
+      local id = n.id
+      if id == glyph_id then
+        if needs_slant(n.char) then
+          local kind = italic_kind(n.font)
+          if kind == "it" and S.it_id then
+            n.font = S.it_id
+          elseif kind == "bi" and S.bi_id then
+            n.font = S.bi_id
+          end
+        end
+      elseif id == hlist_id or id == vlist_id then
+        if n.head then process_list(n.head) end
+      elseif id == disc_id then
+        if n.pre then process_list(n.pre) end
+        if n.post then process_list(n.post) end
+        if n.replace then process_list(n.replace) end
+      end
+    end
+    return head
+  end
+  S.process = function(head)
+    return process_list(head)
+  end
+  luatexbase.add_to_callback("pre_linebreak_filter", S.process, "mdpi.slant.punct")
+  luatexbase.add_to_callback("hpack_filter", S.process, "mdpi.slant.punct.hpack")
+}
+\AtBeginDocument{%
+  \begingroup\mdpi@slantfont\directlua{mdpi.slant.it_id = font.current()}\endgroup
+  \begingroup\mdpi@slantboldfont\directlua{mdpi.slant.bi_id = font.current()}\endgroup
+}
+
+%% Matches Definitions/mdpi.cls \slantbox; used e.g. for italic-looking \nabla (Pagella Math upright).
+\protected\def\pdfsave{\pdfextension save\relax}
+\protected\def\pdfrestore{\pdfextension restore\relax}
+\protected\def\pdfsetmatrix{\pdfextension setmatrix}
+\newsavebox\foobox
+\newcommand{\slantbox}[2][.2]{\mbox{%
+  \sbox{\foobox}{#2}%
+  \hskip\wd\foobox
+  \pdfsave
+  \pdfsetmatrix{1 0 #1 1}%
+  \llap{\usebox{\foobox}}%
+  \pdfrestore
+}}
+
+%%% Bold math + digit font (lua-unicode-math / Pagella Math)
+\ExplSyntaxOn
+\__l_uni_math_provide_mathstyle_id:n { mdpibm }
+\__l_uni_math_set_mathstyle_mappings:cccccc
+  { c__l_uni_math_attribute_symmdpibm_int }
+  { c__l_uni_math_attribute_symbfit_int }
+  { c__l_uni_math_attribute_symbfit_int }
+  { c__l_uni_math_attribute_symbfup_int }
+  { c__l_uni_math_attribute_symbfit_int }
+  { c__l_uni_math_attribute_symup_int }
+\bool_new:N \l__mdpi_boldmath_bool
+\tl_new:N \g__mdpi_mathversion_before_bold_tl
+\tl_new:N \l__mdpi_mathversion_save_tl
+\int_new:N \g__mdpi_boldmath_depth_int
+\cs_new_protected:Npn \__mdpi_boldmath_group_end:
+  {
+    \int_compare:nNnT { \g__mdpi_boldmath_depth_int } > { 0 }
+      { \int_gdecr:N \g__mdpi_boldmath_depth_int }
+    \int_compare:nNnT { \g__mdpi_boldmath_depth_int } = { 0 }
+      {
+        \bool_gset_false:N \l__mdpi_boldmath_bool
+        \tl_if_empty:NTF \g__mdpi_mathversion_before_bold_tl
+          { \mathversion { normal } }
+          {
+            \exp_args:NV \mathversion \g__mdpi_mathversion_before_bold_tl
+            \tl_gclear:N \g__mdpi_mathversion_before_bold_tl
+          }
+      }
+  }
+\cs_new_protected:Npn \__mdpi_boldmath_apply:
+  {
+    \bool_if:NT \l__mdpi_boldmath_bool
+      { \mathfamattr = \c__l_uni_math_attribute_symmdpibm_int \scan_stop: }
+  }
+\cs_new_protected:Npn \__mdpi_upgreek_letter:n #1
+  {
+    \bool_lazy_or:nnTF
+      {
+        \int_compare_p:nNn
+          { \int_use:N \mathfamattr } =
+          { \c__l_uni_math_attribute_symbf_int }
+      }
+      { \bool_if_p:N \l__mdpi_boldmath_bool }
+      { \symbfup {#1} }
+      { \symup {#1} }
+  }
+\cs_new_protected:Npn \__mdpi_mathbm:n #1
+  {
+    \text { \boldmath $ \mathsurround \z@ #1 $ }
+  }
+\cs_new_protected:Npn \__mdpi_mathbf:n #1
+  {
+    \text
+      {
+        \tl_set:Nx \l__mdpi_mathversion_save_tl { \use:c { math@version } }
+        \mathversion { bold }
+        $ \symbf { \mathsurround \z@ #1 } $
+        \exp_args:NV \mathversion \l__mdpi_mathversion_save_tl
+      }
+  }
+\tl_new:N \g__mdpi_digit_family_tl
+\newfontfamily \mdpi@digitfont { texgyrepagella }
+\AtBeginDocument
+  {
+    %% Pagella Math missing symbols: luatex-core.tex; MUST run before \pm / \boldmath below.
+    \__mdpi_install_mathsym_fallbacks:
+    \NewCommandCopy { \mdpi@origpm } { \pm }
+    \renewcommand { \pm } { \mathbin { \raisebox { 1.125pt } { \hbox { $ \mathsurround \z@ \mdpi@origpm $ } } } }
+    % \boldsymbol/\bm: same stack as \boldmath (mdpibm + mathversion bold), not \symbfit alone.
+    \RenewDocumentCommand { \boldsymbol } { m } { \__mdpi_mathbm:n {#1} }
+    \DeclareDocumentCommand { \bm } { m } { \__mdpi_mathbm:n {#1} }
+    % \mathcal/\mathscr set mathfamattr=cal and override mdpibm; under \boldmath use bold script.
+    \NewCommandCopy { \mdpi@orig@mathcal } { \mathcal }
+    \RenewDocumentCommand { \mathcal } { m }
+      {
+        \bool_if:NTF \l__mdpi_boldmath_bool
+          { \symbfcal {#1} }
+          { \mdpi@orig@mathcal {#1} }
+      }
+    \cs_if_exist:NT \mathscr
+      {
+        \NewCommandCopy { \mdpi@orig@mathscr } { \mathscr }
+        \RenewDocumentCommand { \mathscr } { m }
+          {
+            \bool_if:NTF \l__mdpi_boldmath_bool
+              { \symbfcal {#1} }
+              { \mdpi@orig@mathscr {#1} }
+          }
+      }
+    \DeclareRobustCommand { \boldmath }
+      {
+        \@nomath \boldmath
+        \bool_gset_true:N \l__mdpi_boldmath_bool
+        \int_compare:nNnT { \g__mdpi_boldmath_depth_int } = { 0 }
+          {
+            \tl_gset:Nx \g__mdpi_mathversion_before_bold_tl { \use:c { math@version } }
+            \mathversion { bold }
+          }
+        \int_gincr:N \g__mdpi_boldmath_depth_int
+        \group_insert_after:N \__mdpi_boldmath_group_end:
+      }
+    \DeclareRobustCommand { \unboldmath }
+      {
+        \@nomath \unboldmath
+        \int_gzero:N \g__mdpi_boldmath_depth_int
+        \bool_gset_false:N \l__mdpi_boldmath_bool
+        \tl_if_empty:NTF \g__mdpi_mathversion_before_bold_tl
+          { \mathversion { normal } }
+          {
+            \exp_args:NV \mathversion \g__mdpi_mathversion_before_bold_tl
+            \tl_gclear:N \g__mdpi_mathversion_before_bold_tl
+          }
+      }
+    \everymath \exp_after:wN
+      { \exp_after:wN \__mdpi_boldmath_apply: \the \everymath }
+    \everydisplay \exp_after:wN
+      { \exp_after:wN \__mdpi_boldmath_apply: \the \everydisplay }
+    \begingroup \mdpi@digitfont
+      \tl_gset:Nx \g__mdpi_digit_family_tl { \f@family }
+    \endgroup
+    \DeclareSymbolFont { mdpidigits } { TU } { \g__mdpi_digit_family_tl } { m } { n }
+    \SetSymbolFont { mdpidigits } { bold } { TU } { \g__mdpi_digit_family_tl } { b } { n }
+    \DeclareMathSymbol { 0 } { \mathord } { mdpidigits } { `0 }
+    \DeclareMathSymbol { 1 } { \mathord } { mdpidigits } { `1 }
+    \DeclareMathSymbol { 2 } { \mathord } { mdpidigits } { `2 }
+    \DeclareMathSymbol { 3 } { \mathord } { mdpidigits } { `3 }
+    \DeclareMathSymbol { 4 } { \mathord } { mdpidigits } { `4 }
+    \DeclareMathSymbol { 5 } { \mathord } { mdpidigits } { `5 }
+    \DeclareMathSymbol { 6 } { \mathord } { mdpidigits } { `6 }
+    \DeclareMathSymbol { 7 } { \mathord } { mdpidigits } { `7 }
+    \DeclareMathSymbol { 8 } { \mathord } { mdpidigits } { `8 }
+    \DeclareMathSymbol { 9 } { \mathord } { mdpidigits } { `9 }
+    % \mathbf: \symbf for upright bold symbols; digits 0–9 need \mathversion{bold}
+    % (mdpidigits b/n) inside the \text{…} wrapper (cannot call \mathversion in math mode).
+    \RenewDocumentCommand { \mathbf } { m } { \__mdpi_mathbf:n {#1} }
+  }
+\ExplSyntaxOff
+
+%% OPTIONS
+\def\@continuouspages{}
+\newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
+
+%% To choose the journal
+\gdef\@journal{notspecified}
+\gdef\@journalfull{Journal Not Specified}
+\gdef\@journalshort{Journal Not Specified}
+\gdef\@doiabbr{}
+\gdef\@ISSN{}
+\gdef\@societyowner{}
+\gdef\@journaltype{ACS}
+\input{Definitions/journalnames}
+\DeclareOption{journal}{\ClassWarning{mdpi}{You used an invalid journal name or you have not specified the journal. The first option of the documentclass command specifies the journal. The word 'journal' should be replaced by one of the journal names specified in template.tex (in the comment 'Choose between the following MDPI journal').}}
+
+%% To choose the type of manuscript
+\DeclareOption{abstract}{\gdef\@arttype{Abstract}}
+\DeclareOption{addendum}{\gdef\@arttype{Addendum}}
+\DeclareOption{article}{\gdef\@arttype{Article}}
+\DeclareOption{benchmark}{\gdef\@arttype{Benchmark}}
+\DeclareOption{book}{\gdef\@arttype{Book}}
+\DeclareOption{bookreview}{\gdef\@arttype{Book Review}}
+\DeclareOption{briefcommunication}{\gdef\@arttype{Brief Communication}}
+\DeclareOption{briefreport}{\gdef\@arttype{Brief Report}}
+\DeclareOption{casereport}{\gdef\@arttype{Case Report}}
+\DeclareOption{changes}{\gdef\@arttype{Changes}}
+\DeclareOption{clinicopathologicalchallenge}{\gdef\@arttype{Clinicopathological Challenge}}
+\DeclareOption{comment}{\gdef\@arttype{Comment}}
+\DeclareOption{commentary}{\gdef\@arttype{Commentary}}
+\DeclareOption{communication}{\gdef\@arttype{Communication}}
+\DeclareOption{conceptpaper}{\gdef\@arttype{Concept Paper}}
+\DeclareOption{conferenceproceedings}{\gdef\@arttype{Proceedings}}
+\DeclareOption{conferencereport}{\gdef\@arttype{Conference Report}}
+\DeclareOption{correction}{\gdef\@arttype{Correction}}
+\DeclareOption{creative}{\gdef\@arttype{Creative}}
+\DeclareOption{datadescriptor}{\gdef\@arttype{Data Descriptor}}
+\DeclareOption{discussion}{\gdef\@arttype{Discussion}}
+\DeclareOption{editorial}{\gdef\@arttype{Editorial}}
+\DeclareOption{entry}{\gdef\@arttype{Entry}}
+\DeclareOption{erratum}{\gdef\@arttype{Erratum}}
+\DeclareOption{essay}{\gdef\@arttype{Essay}}
+\DeclareOption{expressionofconcern}{\gdef\@arttype{Expression of Concern}}
+\DeclareOption{extendedabstract}{\gdef\@arttype{Extended Abstract}}
+\DeclareOption{fieldguide}{\gdef\@arttype{Field Guide}}
+\DeclareOption{giantsinurology}{\gdef\@arttype{Giants in Urology}}
+\DeclareOption{guidelines}{\gdef\@arttype{Guidelines}}
+\DeclareOption{hypothesis}{\gdef\@arttype{Hypothesis}}
+\DeclareOption{interestingimages}{\gdef\@arttype{Interesting Images}}
+\DeclareOption{letter}{\gdef\@arttype{Letter}}
+\DeclareOption{meetingreport}{\gdef\@arttype{Meeting Report}}
+\DeclareOption{monograph}{\gdef\@arttype{Monograph}}
+\DeclareOption{newbookreceived}{\gdef\@arttype{New Book Received}}
+\DeclareOption{obituary}{\gdef\@arttype{Obituary}}
+\DeclareOption{opinion}{\gdef\@arttype{Opinion}}
+\DeclareOption{patentsummary}{\gdef\@arttype{Patent Summary}}
+\DeclareOption{perspective}{\gdef\@arttype{Perspective}}
+\DeclareOption{proceedingpaper}{\gdef\@arttype{Proceeding Paper}}
+\DeclareOption{projectreport}{\gdef\@arttype{Project Report}}
+\DeclareOption{protocol}{\gdef\@arttype{Protocol}}
+\DeclareOption{registeredreport}{\gdef\@arttype{Registered Report}}
+\DeclareOption{reply}{\gdef\@arttype{Reply}}
+\DeclareOption{retraction}{\gdef\@arttype{Retraction}}
+\DeclareOption{review}{\gdef\@arttype{Review}}
+\DeclareOption{shortnote}{\gdef\@arttype{Short Note}}
+\DeclareOption{studyprotocol}{\gdef\@arttype{Study Protocol}}
+\DeclareOption{supfile}{\gdef\@arttype{Supfile}}
+\DeclareOption{systematicreview}{\gdef\@arttype{Systematic Review}}
+\DeclareOption{technicalnote}{\gdef\@arttype{Technical Note}}
+\DeclareOption{tutorial}{\gdef\@arttype{Tutorial}}
+\DeclareOption{urologyaroundtheworld}{\gdef\@arttype{Urology around the World}}
+\DeclareOption{viewpoint}{\gdef\@arttype{Viewpoint}}
+
+%% To choose the status of the manuscript
+\DeclareOption{submit}{\gdef\@status{submit}}
+\DeclareOption{accept}{\gdef\@status{accept}}
+
+%% To choose the whether there is one or more authors
+\DeclareOption{oneauthor}{\gdef\@authornum{author}}
+\DeclareOption{moreauthors}{\gdef\@authornum{authors}}
+\newif\ifmdpiunicodemaps
+\mdpiunicodemapsfalse
+\DeclareOption{unicode}{\mdpiunicodemapstrue}
+
+%% Optional babel/fonts for Hebrew, Arabic, Russian, CJK (off by default)
+%%   \documentclass[...,extralangs]{Definitions/mdpi-luatex}
+%% or in the preamble before \begin{document}: \MDPIextralangs
+\newif\ifmdpiextralangs
+\mdpiextralangsfalse
+\DeclareOption{extralangs}{\mdpiextralangstrue}
+\ExplSyntaxOn
+\cs_new_protected:Npn \mdpi_load_extralangs:
+ {
+  \ifmdpiextralangs
+    \InputIfFileExists { Definitions/mdpi-extra-langs.tex } { } {
+      \PackageError { mdpi-luatex } { Missing~Definitions/mdpi-extra-langs.tex }
+       { Install~the~MDPI~Definitions~bundle~beside~the~main~.tex~file. }
+    }
+    \mdpi_setup_extralangs:
+  \fi
+ }
+\newcommand \mdpiLoadExtralangs
+ { \ExplSyntaxOn \mdpi_load_extralangs: \ExplSyntaxOff }
+\ExplSyntaxOff
+\newcommand{\MDPIextralangs}{\mdpiextralangstrue}
+
+%% Add the chosen options to the class
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+
+%% Defaults
+\ExecuteOptions{notspecified,10pt,a4paper,article,submit,oneauthor}
+
+%% Process options
+\ProcessOptions\relax
+
+\ExplSyntaxOn
+\newcommand\@journaldoinum{long}
+\clist_map_inline:nn{molbank,chemproc,engproc,eesp,materproc,blsf,msf,psf,csmf}
+ {\tl_if_eq:NnT\@journal{#1}{\def\@journaldoinum{short}}}
+\newcommand\@journallicence{ccby}
+\clist_map_inline:nn{ijtpp}
+ {\tl_if_eq:NnT\@journal{#1}{\def\@journallicence{ccbyncnd}}}
+\newcommand\@journalmdpilogo{logo-mdpi}
+\newcommand\@journallogo{\@journal-logo}
+\clist_map_inline:nn{ijom,siuj,scipharm}
+ {
+   \tl_if_eq:NnT\@journal{#1}
+     {
+       \gdef\@journalmdpilogo{logo-mdpi-#1}
+     }
+ }
+\newcommand\@journaldatesblock{long}
+\clist_map_inline:nn{proceedings,chemproc,engproc,eesp,materproc,blsf,msf,psf,csmf}
+ {
+  \tl_if_eq:NnT\@journal{#1}
+   { \def\@journaldatesblock{short} }
+ }
+\ExplSyntaxOff
+
+\DeclareRobustCommand\normalsize{%
+   \@setfontsize\normalsize{10pt}{13.98pt}%
+   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
+   \abovedisplayshortskip \z@ \@plus3\p@
+   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
+   \belowdisplayskip \abovedisplayskip
+   \let\@listi\@listI}
+\normalsize
+\DeclareRobustCommand\small{%
+   \@setfontsize\small{9pt}{12.815pt}%
+   \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus2\p@
+   \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 4\p@ \@plus2\p@ \@minus2\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+\DeclareRobustCommand\footnotesize{%
+   \@setfontsize\footnotesize\@viiipt{10.485pt}%
+   \abovedisplayskip 6\p@ \@plus2\p@ \@minus4\p@
+   \abovedisplayshortskip \z@ \@plus\p@
+   \belowdisplayshortskip 3\p@ \@plus\p@ \@minus2\p@
+   \def\@listi{\leftmargin\leftmargini
+               \topsep 3\p@ \@plus\p@ \@minus\p@
+               \parsep 2\p@ \@plus\p@ \@minus\p@
+               \itemsep \parsep}%
+   \belowdisplayskip \abovedisplayskip
+}
+\DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{7pt}{9.32pt}}
+\DeclareRobustCommand\tiny{\@setfontsize\tiny\@vpt\@viipt}
+\DeclareRobustCommand\large{\@setfontsize\large\@xiipt{16.32pt}}
+\DeclareRobustCommand\Large{\@setfontsize\Large\@xivpt{20.97pt}}
+\DeclareRobustCommand\huge{\@setfontsize\huge\@xxpt{29.125pt}}
+\DeclareRobustCommand\Huge{\@setfontsize\Huge\@xxvpt{34.95}}
+\DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
+%% MORE DECLARATIONS
+
+\newcommand{\isPreprints}{%
+  \ifthenelse{\equal{\@journal}{preprints}%
+  \OR \equal{\@journal}{preprintschicago}%
+  \OR \equal{\@journal}{preprintsapa}%
+  }%
+}
+
+%%%%% Maths environments
+\newtheoremstyle{mdpi}% name
+{12pt}% space above
+{12pt}% space below
+{\itshape}% body font
+{}% indent amount 1
+{\bfseries}% theorem head font
+{.}% punctuation after theorem head
+{.5em}% space after theorem head
+{}% theorem head spec (can be left empty, meaning `normal')
+
+\IfDocumentMetadataTF
+ {
+   \EditInstance{captionedtext}{proof}{caption-decls = \bfseries}
+   \renewcommand{\qed}{\unskip\nobreak\quad\qedsymbol} %% This places the symbol right after the text.
+ }
+ {
+    \renewenvironment{proof}[1][\proofname]{\par %% \proofname allows to have "Proof of my theorem"
+      \pushQED{\qed}%
+      \normalfont \topsep6\p@\@plus6\p@\relax
+      \trivlist
+      \item[\hskip\labelsep
+            \bfseries %% "Proof" is bold
+        #1\@addpunct{.}]\ignorespaces %% Period instead of colon
+    }{%
+      \popQED\endtrivlist\@endpefalse
+    }
+ }
+
+ \theoremstyle{mdpi}
+ \newcounter{theorem}
+ \setcounter{theorem}{0}
+ \newtheorem{Theorem}[theorem]{Theorem}
+
+ \newcounter{lemma}
+ \setcounter{lemma}{0}
+ \newtheorem{Lemma}[lemma]{Lemma}
+
+ \newcounter{corollary}
+ \setcounter{corollary}{0}
+ \newtheorem{Corollary}[corollary]{Corollary}
+
+ \newcounter{proposition}
+ \setcounter{proposition}{0}
+ \newtheorem{Proposition}[proposition]{Proposition}
+
+ \newcounter{characterization}
+ \setcounter{characterization}{0}
+ \newtheorem{Characterization}[characterization]{Characterization}
+
+ \newcounter{property}
+ \setcounter{property}{0}
+ \newtheorem{Property}[property]{Property}
+
+ \newcounter{problem}
+ \setcounter{problem}{0}
+ \newtheorem{Problem}[problem]{Problem}
+
+ \newcounter{example}
+ \setcounter{example}{0}
+ \newtheorem{Example}[example]{Example}
+
+ \newcounter{remark}
+ \setcounter{remark}{0}
+ \newtheorem{Remark}[remark]{Remark}
+
+ \newcounter{definition}
+ \setcounter{definition}{0}
+ \newtheorem{Definition}[definition]{Definition}
+
+ \newcounter{hypothesis}
+ \setcounter{hypothesis}{0}
+ \newtheorem{Hypothesis}[hypothesis]{Hypothesis}
+
+ \newcounter{notation}
+ \setcounter{notation}{0}
+ \newtheorem{Notation}[notation]{Notation}
+
+ \newcounter{assumption}
+ \setcounter{assumption}{0}
+ \newtheorem{Assumption}[assumption]{Assumption}
+
+ \newcounter{algorithm}
+ \setcounter{algorithm}{0}
+ \newtheorem{Algorithm}[algorithm]{Algorithm}
+
+ % Define left/right mark in math environment
+\let\originalleft\left
+\let\originalright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
+\renewcommand{\right}{\aftergroup\egroup\originalright}
+
+\ExplSyntaxOn
+\newcommand\isBookContribution
+ {
+   \str_case:onTF {\@arttype}
+    {
+      {Book}{}
+      {Monograph}{}
+    }
+ }
+\newcommand\isMonograph
+ {
+  \str_if_eq:onTF {\@arttype} {Monograph}
+ }
+\prg_new_conditional:Npnn \__mdpi_is_journal_chicagostyle: {TF,p}
+ {
+   \str_if_eq:onTF {\@journaltype} {Chicago}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\newcommand\isChicagoStyle{\__mdpi_is_journal_chicagostyle:TF}
+\prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF,p}
+ {
+  \str_if_eq:onTF {\@journaltype} {APA}
+   {\prg_return_true:}
+   {\prg_return_false:}
+ }
+\newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
+\prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
+ {
+   \bool_lazy_or:nnTF
+    { \__mdpi_is_journal_apastyle_p: }
+    { \__mdpi_is_journal_chicagostyle_p: }
+    {
+      \prg_return_true:
+    }
+    {
+      \prg_return_false:
+    }
+ }
+\newcommand{\isAPAorChicago}{\__mdpi_is_journal_apa_or_chicago_style:TF}
+\let\isAPAandChicago\isAPAorChicago
+\ExplSyntaxOff
+\isAPAStyle
+  {\RequirePackage[natbibapa]{Definitions/mdpi_apacite}}
+  {\RequirePackage[sort&compress,sectionbib]{natbib}}
+\renewcommand\NAT@set@cites{%
+  \ifNAT@numbers
+    \ifNAT@super \let\@cite\NAT@citesuper
+       \def\NAT@mbox##1{\unskip\nobreak\textsuperscript{##1}}%
+       \let\citeyearpar=\citeyear
+       \let\NAT@space\relax
+       \def\NAT@super@kern{\kern\p@}%
+    \else
+       \let\NAT@mbox=\mbox
+       \let\@cite\NAT@citenum
+       \let\NAT@space\relax
+       \let\NAT@super@kern\relax
+    \fi
+    \let\@citex\NAT@citexnum
+    \let\@biblabel\NAT@biblabelnum
+    \let\@bibsetup\NAT@bibsetnum
+    \renewcommand\NAT@idxtxt{\NAT@name\NAT@spacechar\NAT@open\NAT@num\NAT@close}%
+    \def\natexlab##1{}%
+    \def\NAT@penalty{\penalty\@m}%
+  \else
+    \let\@cite\NAT@cite
+    \let\@citex\NAT@citex
+    \let\@biblabel\NAT@biblabel
+    \let\@bibsetup\NAT@bibsetup
+    \let\NAT@space\NAT@spacechar
+    \let\NAT@penalty\@empty
+    \renewcommand\NAT@idxtxt{\NAT@name\NAT@spacechar\NAT@open\NAT@date\NAT@close}%
+    \def\natexlab##1{##1}%
+  \fi}
+\isAPAStyle
+  {\bibliographystyle{Definitions/mdpi_apacite}}
+  {
+    \isChicagoStyle
+      {
+        \bibliographystyle{Definitions/mdpi_chicago}
+        \bibpunct{(}{)}{;}{x}{}{,}
+      }
+      {
+        \bibliographystyle{Definitions/mdpi}
+        \bibpunct{[}{]}{,}{n}{}{,}
+      }
+  }
+
+%% crefname definitions
+\newcommand\mdpi@cleveref@setup
+ {
+  \crefname{figure}{Figure}{Figures}
+  \crefname{table}{Table}{Tables}
+  \crefname{section}{Section}{Sections}
+  \crefname{paragraph}{Section}{Sections}
+  \crefname{appendix}{Appendix}{Appendices}
+  \crefname{scheme}{Scheme}{Schemes}
+  \crefname{chart}{Chart}{Charts}
+  \crefname{graph}{Graph}{Graphs}
+  \crefname{theorem}{Theorem}{Theorems}
+  \crefname{lemma}{Lemma}{Lemmas}
+  \crefname{corollary}{Corollary}{Corollaries}
+  \crefname{proposition}{Proposition}{Propositions}
+  \crefname{characterization}{Characterization}{Characterizations}
+  \crefname{property}{Property}{Properties}
+  \crefname{problem}{Problem}{Problems}
+  \crefname{example}{Example}{Examples}
+  \crefname{remark}{Remark}{Remarks}
+  \crefname{definition}{Definition}{Definitions}
+  \crefname{hypothesis}{Hypothesis}{Hypotheses}
+  \crefname{notation}{Notation}{Notations}
+  \crefname{assumption}{Assumption}{Assumptions}
+  \crefname{algorithm}{Algorithm}{Algorithms}
+  % amsthm writes the environment name (Theorem, Lemma, ...) into @cref labels;
+  % alias capitalized environments to the lowercase types defined above.
+  % Required for TeX Live 2023 and 2026 (cleveref + First Aid).
+  \crefalias{Theorem}{theorem}%
+  \crefalias{Lemma}{lemma}%
+  \crefalias{Corollary}{corollary}%
+  \crefalias{Proposition}{proposition}%
+  \crefalias{Characterization}{characterization}%
+  \crefalias{Property}{property}%
+  \crefalias{Problem}{problem}%
+  \crefalias{Example}{example}%
+  \crefalias{Remark}{remark}%
+  \crefalias{Definition}{definition}%
+  \crefalias{Hypothesis}{hypothesis}%
+  \crefalias{Notation}{notation}%
+  \crefalias{Assumption}{assumption}%
+  \crefalias{Algorithm}{algorithm}%
+  \crefrangelabelformat{figure}{##3##1##4--##5##2##6} % double # for nesting inside \newcommand
+  \crefrangelabelformat{table}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{section}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{appendix}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{scheme}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{chart}{##3##1##4--##5##2##6}
+  \crefrangelabelformat{graph}{##3##1##4--##5##2##6}
+  \newcommand{\crefrangeconjunction}{--}
+ }
+
+\newcommand{\hyperrefpackage}{
+      \isBookContribution{%
+  \RequirePackage[unicode=true,
+  bookmarksopen={true},
+  pdffitwindow=true,
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  hyperfootnotes=false,
+  pdfstartview={FitH},
+  pdfpagemode=UseNone,
+  pdfpagelabels]{hyperref}
+  }{
+  \ifthenelse{\equal{\@journal}{laws}}{
+  \RequirePackage[unicode=true,
+  bookmarksopen={true},
+  pdffitwindow=true,
+  colorlinks=true,
+  linkcolor=bluecite,
+  citecolor=bluecite,
+  urlcolor=bluecite,
+  hyperfootnotes=false,
+  pdfstartview={FitH},
+  pdfpagemode= UseNone]{hyperref}
+  }{
+  \RequirePackage[unicode=true,
+  bookmarksopen={true},
+  pdffitwindow=true,
+  colorlinks=true,
+  linkcolor=bluecite,
+  citecolor=bluecite,
+  urlcolor=bluecite,
+  hyperfootnotes=true,
+  pdfstartview={FitH},
+  pdfpagemode= UseNone]{hyperref}
+  }
+}
+\RequirePackage[capitalise,noabbrev]{cleveref}
+\mdpi@cleveref@setup
+}
+\ifdef{\AddToHook}{
+\DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
+  \AddToHook{begindocument/before}{
+    \hyperrefpackage
+    \pdfstringdefDisableCommands{\let\hl\@firstofone\let\texthl\@firstofone}
+     \mdpiLoadExtralangs
+    }
+  }{
+       \hyperrefpackage
+         \pdfstringdefDisableCommands{\let\hl\@firstofone\let\texthl\@firstofone}
+}
+
+%% To have the possibility to change the urlcolor
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
+
+%%%% Metadata
+\newcommand{\org@maketitle}{}% LATEX-Check
+\let\org@maketitle\maketitle
+\def\maketitle{%
+  \hypersetup{
+    pdftitle={\@Title},
+    pdfsubject={\@abstract},
+    pdfkeywords={\@keyword},
+    pdfauthor={\@AuthorNames}
+  }%
+  \org@maketitle
+}
+
+%%%%% Endnotes
+\setenotez{backref=true}
+\DeclareInstance{enotez-list}{custom}{paragraph}{
+  format=\small\leftskip0.76cm,
+      number=\textsuperscript{\makebox[6mm][l]{#1}},
+  notes-sep=0pt
+}
+
+%%%% Footnotes: match mdpi.cls (scrextend + deffootnote).
+\RequirePackage{scrextend}
+\setlength{\skip\footins}{0.6cm}
+\setlength{\footnotesep}{8pt}
+\deffootnote{1.5em}{0em}{\textsuperscript{\thefootnotemark}\quad}
+\newcommand{\mdpi@footnote@pdf@leading}{%
+  \fontsize{8}{9.5pt}\selectfont
+}
+
+\AddToHook{begindocument/end}{%
+  \NewCommandCopy\mdpi@orig@makefntext\@makefntext
+  \RenewDocumentCommand\@makefntext{m}{%
+    \mdpi@orig@makefntext{\mdpi@footnote@pdf@leading #1}%
+  }%
+}
+
+%%%% Widows & orphans
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\tolerance=1000 % slopiness / badness of the line breaking
+
+%%% Italic correction after \emph/\textit: default \nocorrlist is only {,.}.
+\AddToHook{begindocument/end}{%
+  \renewcommand{\nocorrlist}{,.:;!?)'']}%
+  \makeatletter
+  \DeclareRobustCommand\textsubscript[1]{\@textsubscript{#1}}%
+  \protected\def\@textsubscript#1{%
+    \check@mathfonts
+    \leavevmode
+    \begingroup
+      \edef\mdpi@sub@series{\f@series}%
+      \edef\mdpi@sub@shape{\f@shape}%
+      \sbox\z@{%
+        \fontsize\sf@size\sf@size
+        \fontseries{\mdpi@sub@series}%
+        \fontshape{\mdpi@sub@shape}%
+        \selectfont
+        #1}%
+      \lower\dimexpr\textsubscript@offset\relax\box\z@
+      \textsubscript@space
+    \endgroup
+  }%
+  \DeclareRobustCommand\textsuperscript[1]{\@textsuperscript{#1}}%
+  \protected\def\@textsuperscript#1{%
+    \check@mathfonts
+    \leavevmode
+    \begingroup
+      \edef\mdpi@sup@series{\f@series}%
+      \edef\mdpi@sup@shape{\f@shape}%
+      \sbox\z@{%
+        \fontsize\sf@size\sf@size
+        \fontseries{\mdpi@sup@series}%
+        \fontshape{\mdpi@sup@shape}%
+        \selectfont
+        #1}%
+      \raise\dimexpr\textsuperscript@offset\relax\box\z@
+      \textsuperscript@space
+    \endgroup
+  }%
+}
+
+%%%% To avoid "Output-loop.." compile bug
+\maxdeadcycles=10000
+
+\setlength{\parindent}{0.75cm}
+\newcommand{\dist}{1.7em}
+\newcommand{\notedistshift}{0.85em}
+\newdimen\mdpi@notedist
+\mdpi@notedist=\dist
+
+%%%% Front matter
+\def\instring#1#2{TT\fi\begingroup\edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
+
+\newcommand{\firstargument}{}
+\def\@Title{Title}
+\newcommand{\Title}[1]{\gdef\@Title{#1}}%
+\def\@Author{Author}
+\newcommand{\Author}[1]{\gdef\@Author{#1}}%
+\def\@AuthorNames{}
+\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
+\newcommand{\firstpage}[1]{\gdef\@firstpage{#1}}
+\newcommand{\doinum}[1]{\gdef\@doinum{#1}}
+
+\newcommand\mdpi@mintwodigits[1]{%
+  \ifnum#1<10 %
+    0\number#1
+     \else
+    \number#1
+  \fi
+}
+
+\newcommand\mdpi@minfourdigits[1]{%
+  \ifnum#1<10 %
+    000\number#1
+  \else
+    \ifnum#1<100 %
+      00\number#1
+    \else
+      \ifnum#1<1000 %
+        0\number#1
+      \else
+        \ifnum#1<10000 %
+          \number#1
+        \else
+          \ifnum#1<100000 %
+            \number#1
+          \else
+            error
+          \fi
+        \fi
+      \fi
+    \fi
+  \fi
+}
+
+\newcommand\mdpi@doinum@short{10.3390/\@articlenumber}
+\newcommand\mdpi@doinum@long {10.3390/\@doiabbr\@pubvolume\mdpi@mintwodigits\@issuenum\mdpi@minfourdigits\@articlenumber}
+\gdef\@doinum{\UseName{mdpi@doinum@\@journaldoinum}}
+
+\newcommand\cutdigits[1]{\inteval{#1}}
+
+\def\@pubvolume{0}
+\newcommand{\pubvolume}[1]{\gdef\@pubvolume{\inteval{#1}}}
+\def\@pubyear{0000}
+\newcommand{\pubyear}[1]{\gdef\@pubyear{#1}}
+\def\@copyrightyear{0000}
+\newcommand{\copyrightyear}[1]{\gdef\@copyrightyear{#1}}
+\def\@address{Address}
+\newcommand{\address}[2][]{\renewcommand{\firstargument}{#1}\gdef\@address{#2}}
+\newcommand{\corresfirstargument}{}
+\def\@corres{}
+\newcommand{\corres}[2][]{\renewcommand{\corresfirstargument}{#1}\gdef\@corres{#2}}
+\def\@conference{}
+\newcommand{\conference}[1]{\gdef\@conference{#1}}%
+\def\@abstract{}
+\renewcommand{\abstract}[1]{\gdef\@abstract{#1}}
+\def\@externaleditor{}
+\newcommand{\externaleditor}[1]{\gdef\@externaleditor{#1}}
+\def\@LSID{}
+\newcommand{\LSID}[1]{\gdef\@LSID{#1}}
+\def\@datereceived{}
+\newcommand{\datereceived}[1]{\gdef\@datereceived{#1}}
+\def\@daterevised{}
+\newcommand{\daterevised}[1]{\gdef\@daterevised{#1}}
+\def\@dateaccepted{}
+\newcommand{\dateaccepted}[1]{\gdef\@dateaccepted{#1}}
+\def\@datepublished{}
+\newcommand{\datepublished}[1]{\gdef\@datepublished{#1}}
+\def\@datecorrected{}
+\newcommand{\datecorrected}[1]{\gdef\@datecorrected{#1}}
+\def\@dateretracted{}
+\newcommand{\dateretracted}[1]{\gdef\@dateretracted{#1}}
+\def\@pacs{}
+\newcommand{\PACS}[1]{\gdef\@pacs{#1}}
+\def\@msc{}
+\newcommand{\MSC}[1]{\gdef\@msc{#1}}
+\def\@jel{}
+\newcommand{\JEL}[1]{\gdef\@jel{#1}}
+\def\@keyword{}
+\newcommand{\keyword}[1]{\gdef\@keyword{#1}}
+\def\@dataset{}
+\newcommand{\dataset}[1]{\gdef\@dataset{#1}}
+\def\@datasetlicense{}
+\newcommand{\datasetlicense}[1]{\gdef\@datasetlicense{#1}}
+\def\@featuredapplication{}
+\newcommand{\featuredapplication}[1]{\gdef\@featuredapplication{#1}}
+\def\@keycontribution{}
+\newcommand{\keycontribution}[1]{\gdef\@keycontribution{#1}}
+\def\@issuenum{0}
+\newcommand{\issuenum}[1]{\gdef\@issuenum{\inteval{#1}}}
+\def\@firstnote{}
+\newcommand{\firstnote}[1]{\gdef\@firstnote{#1}}
+\def\@secondnote{}
+\newcommand{\secondnote}[1]{\gdef\@secondnote{#1}}%
+\def\@thirdnote{}
+\newcommand{\thirdnote}[1]{\gdef\@thirdnote{#1}}%
+\def\@fourthnote{}
+\newcommand{\fourthnote}[1]{\gdef\@fourthnote{#1}}%
+\def\@fifthnote{}
+\newcommand{\fifthnote}[1]{\gdef\@fifthnote{#1}}%
+\def\@sixthnote{}
+\newcommand{\sixthnote}[1]{\gdef\@sixthnote{#1}}%
+\def\@seventhnote{}
+\newcommand{\seventhnote}[1]{\gdef\@seventhnote{#1}}%
+\def\@eighthnote{}
+\newcommand{\eighthnotes}[1]{\gdef\@eighthnote{#1}}%
+\def\@ninethnote{}
+\newcommand{\ninethnote}[1]{\gdef\@ninethnote{#1}}%
+\def\@tenthnote{}
+\newcommand{\tenthnote}[1]{\gdef\@tenthnote{#1}}%
+\def\@eleventhnote{}
+\newcommand{\eleventhnote}[1]{\gdef\@eleventhnote{#1}}%
+\def\@simplesumm{}
+\newcommand{\simplesumm}[1]{\gdef\@simplesumm{#1}}
+\def\@articlenumber{0}
+\newcommand{\articlenumber}[1]{
+  \ifthenelse{\equal{\@journal}{molbank}}{
+    \gdef\@articlenumber{#1}%
+    }{
+    \gdef\@articlenumber{\inteval{#1}}%
+    }
+  }
+
+\def\@externalbibliography{}
+\newcommand{\externalbibliography}[1]{\gdef\@externalbibliography{#1}}
+\def\@reftitle{}
+\newcommand{\reftitle}[1]{\gdef\@reftitle{#1}}
+\def\@longauthorlist{}
+\newcommand{\longauthorlist}[1]{\gdef\@longauthorlist{#1}}
+\def\@encyclopediadef{}
+\newcommand{\encyclopediadef}[1]{\gdef\@encyclopediadef{#1}}
+\def\@addhighlights{}
+\newcommand{\addhighlights}[1]{\gdef\@addhighlights{#1}}
+\def\@CorrStatement{}
+\newcommand{\CorrStatement}[1]{\gdef\@CorrStatement{#1}}
+\newcommand{\textcorrstatement}{\textbf{Correction Statement:} This article has been republished with a minor change. The change does not affect the scientific content of the article and further details are available within the backmatter of the website version of this article.}
+\def\@IsAssociation{}
+\newcommand{\IsAssociation}[1]{\gdef\@IsAssociation{#1}}
+
+%% ORCID
+\newcommand{\orcidicon}{\includegraphics[width=0.32cm]{Definitions/logo-orcid.pdf}}
+
+\foreach \x in {A, ..., Z}{%
+\expandafter\xdef\csname orcid\x\endcsname{\noexpand\href{https://orcid.org/\csname orcidauthor\x\endcsname}{\noexpand\orcidicon}}
+}
+
+%%%% Journal name for the header
+\newcommand{\journalname}{\@journalshort}
+
+\newcommand\mdpi@url{https://www.mdpi.com}
+\ExplSyntaxOn
+\newcommand\mdpi@maketitle@logoline
+ {
+   \tl_if_eq:enTF {\@status}{submit}
+     {
+       \phantom{\rule{0pt}{1.2cm}}\hfill
+       \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{Definitions/logo-mdpi}}%
+     }
+     {
+        \href{\mdpi@url/journal/\@journal}{\includegraphics[height=1.2cm,actualtext={Logo~of~\@journalfull}]{Definitions/\@journal-logo}}%
+        \hfill
+        \tl_if_empty:NTF \@IsAssociation
+          {
+            \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{Definitions/\@journalmdpilogo}}%
+          }
+          {
+            \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{Definitions/logo-mdpi-\@journal}}%
+          }
+     }
+ }
+\str_case:onF{\@arttype}
+ {
+   {Book}      {\cs_set:Npn \@maketitle {\mdpi@maketitle@Book}}
+   {Monograph} {\cs_set:Npn \@maketitle {\mdpi@maketitle@Monograph}}
+   {Supfile}   {\cs_set:Npn \@maketitle {\mdpi@maketitle@Supfile}}
+ }
+ { \cs_set:Npn \@maketitle {\mdpi@maketitle}}
+\newcommand\mdpi@maketitle@Book
+ {
+   \begin{flushleft}
+    \LARGE\boldmath\bfseries
+    \hyphenpenalty=10000
+    \tolerance=1000
+    \vspace{14pt}
+    \@Title
+    \par
+    \vspace{12pt}
+    \normalsize
+    \@Author
+    \par
+    % can that ever happen with Book???
+    \tl_if_empty:NF \@leftcolumnsplit
+     {
+      \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
+     }
+    \end{flushleft}
+ }
+\newcommand\mdpi@maketitle@Monograph{}
+\newcommand\mdpi@maketitle@Supfile
+ {
+   \hbox{}
+   \isPreprints
+     {\vspace{0.92cm}}
+     {
+       \begin{adjustwidth}{-\extralength}{}
+     }
+   \begin{flushleft}
+     \LARGE
+     \raggedright
+     \hyphenpenalty=10000
+     \tolerance=1000
+     \noindent\boldmath\bfseries\textbf{Supplementary~Materials:~\@Title}%
+     \par
+     \vspace{12pt}
+     \normalsize
+     \noindent\boldmath\bfseries{\@Author}
+   \end{flushleft}
+   \isPreprints
+     {}
+     {\end{adjustwidth}}
+ }
+\newcommand{\mdpi@maketitle}
+  {
+   \tl_if_empty:NT \@leftcolumnsplit
+     {\marginnote[\contentleftcolumn]{}[\MyLen]}
+   \isPreprints
+     {\vspace{0.92cm}}
+     {
+       \begin{adjustwidth}{-\extralength}{}
+     }
+   \begin{flushleft}
+    \vspace*{-1.75cm}
+     {%0
+      \isPreprints
+        {}
+        {
+         \vspace{-2pt}%
+         \mdpi@maketitle@logoline
+         \par
+         \rule{\fulllength}{0.4pt}%
+        }
+      \par
+     }%0
+     {%1
+      \vspace{14pt}
+      \normalsize
+      \textit{\@arttype}
+      \par
+     }%1
+     {%2
+      \LARGE
+      \hyphenpenalty=10000
+      \tolerance=1000
+      \boldmath\bfseries{\@Title}
+      \par
+      \vspace{12pt}
+     }%2
+    \ifthenelse
+     {\equal{\@longauthorlist}{\@empty}}
+     {}
+     {
+      \end{flushleft}%
+      \isPreprints
+        {}
+        {\end{adjustwidth}}
+      \vspace{-2.5pt}
+     }
+     {%3
+      \hyphenpenalty=10000
+      \tolerance=1000
+      \boldmath\bfseries{\@Author}
+      \par
+      \vspace{12pt}
+     }%3
+  \ifthenelse
+    {\equal{\@longauthorlist}{\@empty}}
+    {\end{flushleft}
+     \isPreprints
+            {}
+            {\end{adjustwidth}}
+    }
+    {}%
+  \ifthenelse
+    {\equal{\@leftcolumnsplit}{\@empty}}
+    {% Left column split
+    }
+    {
+      \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
+    }
+ }
+\ExplSyntaxOff
+
+%%%% Header and footer on first page
+%% The plain page style needs to be redefined because with \maketitle in the article class, LaTeX applies the the plain page style automatically to the first page.
+\ifthenelse{\equal{\@journal}{preprints} %
+    \OR \equal{\@journal}{preprintschicago}
+    \OR \equal{\@journal}{preprintsapa}
+    \OR \equal{\@arttype}{Book}
+    \OR \equal{\@arttype}{Monograph}}{%
+  \fancypagestyle{plain}{%
+    \fancyhf{}
+    \isPreprints{}{%
+            \fancyfoot[C]{\footnotesize\thepage}
+            }%
+    }%
+  }{%
+  \ifthenelse{\equal{\@arttype}{Supfile}}{
+    % page header and footer styles for supplementary files
+    \fancypagestyle{plain}{
+      \fancyhf{}
+      \fancyhead[R]{
+        \footnotesize %
+        S\thepage{} of S\pageref*{LastPage}%
+        \\\rule{\fulllength}{0.4pt}%
+        }%
+      \fancyhead[L]{
+        \footnotesize %
+        \ifthenelse{\equal{\@status}{submit}}{%
+          Version {\@ \today} submitted to {\em \journalname}%
+          }{%
+          {\em \journalname} %
+          {\bfseries \@pubyear}, %
+          {\em \@pubvolume}, %
+          \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
+            \@articlenumber%
+            }{%
+            S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}%
+            }%
+          . {\url{https://doi.org/\@doinum}}%
+          }%
+          \\\vspace{-2pt}\rule{\fulllength}{0.4pt}%
+        }%
+      }%
+    }{
+    \fancypagestyle{plain}{
+    \renewcommand{\footrulewidth}{0.4pt}
+      \fancyhead{\null\vspace{8pt}}
+      \fancyfoot[L]{
+      \footnotesize
+      \ifthenelse{\equal{\@status}{submit}}{%
+        Version {\@ \today} submitted to {\em \journalname}%
+        }{%
+        {\em\journalname\ }{\bfseries\@pubyear}, {\em \@pubvolume}, %
+        \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
+          \@articlenumber %
+          }{%
+          \@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--\pageref*{LastPage}} %
+          }%
+        }%
+      }
+      \fancyfoot[R]{
+      \footnotesize
+      {%
+      }{\url{https://doi.org/\@doinum}}}%
+    }
+  }
+}
+
+\newcommand{\leftcolFont}
+ {%
+    \fontsize{7pt}{12pt}\selectfont
+    \raggedright
+    \parindent=0pt
+    \parskip=6pt
+    \hyphenpenalty=10000
+    \tolerance=1000
+ }
+
+\newcommand{\leftcolumnUpdatelogo}
+ {%
+   \ifthenelse
+     {\equal{\@status}{submit}}
+     {}
+     {%
+       \href
+         {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\mdpi@mintwodigits{\the\month}-\mdpi@mintwodigits{\the\day}}
+         {\includegraphics[height=.6cm,actualtext=Check for updates]{Definitions/logo-updates}}%
+     }%
+ }
+
+\ExplSyntaxOn
+\newcommand{\leftcolExternalEditor}
+  {
+    \tl_if_empty:NF\@externaleditor
+    {
+       \tl_if_in:NnTF \@externaleditor{~and~}
+         {Academic~Editors:~\@externaleditor}
+         {Academic~Editor:~\@externaleditor}
+       %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
+     }%
+  }
+\ExplSyntaxOff
+
+\newcommand\mdpi@datesblock@short{Published: \@datepublished}
+\newcommand\mdpi@datesblock@long
+ {%
+  Received: \@datereceived\\
+         \ifthenelse
+          {\equal{\@daterevised}{\@empty}}
+          {}
+          {Revised: \@daterevised\\}%
+         Accepted: \@dateaccepted\\
+         Published: \@datepublished
+         \ifthenelse
+          {\equal{\@datecorrected}{\@empty}}
+          {}
+          {\\ Corrected: \@datecorrected}%
+        \ifthenelse
+          {\equal{\@dateretracted}{\@empty}}
+          {}
+          {\\ Retracted: \@dateretracted}%
+ }
+
+\newcommand{\leftcolDates}
+ {%
+   \isPreprints
+    {}
+    {\UseName{mdpi@datesblock@\@journaldatesblock}}%
+ }
+
+\newcommand{\leftcolumnCorrstatement}
+ {%
+   \isPreprints
+    {}
+    {%
+      \ifthenelse
+        {\equal{\@CorrStatement}{yes}}
+        {%
+          \begingroup
+            \spaceskip=0.18em plus 0.02em minus 0.08em
+            \xspaceskip=\spaceskip
+            \textcorrstatement
+          \endgroup
+        }
+        {}%
+    }%
+ }
+
+\newcommand{\leftcolumnCright}
+  {%
+    \isPreprints{}{\mdpi@text@copyright}%
+  }
+
+ \newcommand{\contentleftcolumn}
+  {%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}%     % %1
+        \leftcolExternalEditor\par        % %2
+        \leftcolDates\par                 % %3
+        \leftcolumnCorrstatement\par      % %4
+        \leftcolumnCright\par             % %5
+     }
+   }
+
+\newlength{\MyLen} % For length of the left column content
+\newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
+
+\newcommand{\calculateMyLen}
+  {%
+   \SuspendTagging{}%
+   \savebox{\MyBox}
+    {%
+     \parbox{\leftcolumnlength}{\contentleftcolumn}%
+    }%
+   \ResumeTagging{}%
+   \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-2.1pt}}%
+  }
+\def\@leftcolumnsplit{}
+\newcommand{\leftcolumnsplit}[1]{\gdef\@leftcolumnsplit{#1}}
+
+\newcommand{\OptionOneA}{
+  \leftcolExternalEditor %1
+  \leftcolDates\vspace{-2pt} %2
+}
+
+\newcommand{\OptionOneB}{
+  \leftcolumnCright %3
+}
+
+\newcommand{\OptionTwoA}{
+  \leftcolExternalEditor\vspace{-10pt} %1
+}
+
+\newcommand{\OptionTwoB}{
+  \leftcolDates\vspace{-2pt} %2
+  \vspace{6pt}\leftcolumnCright %3
+}
+
+\newcommand{\OptionThreeA}{
+}
+
+\newcommand{\OptionThreeB}{
+  \leftcolExternalEditor %1
+  \leftcolDates\vspace{-2pt} %2
+  \vspace{6pt}\leftcolumnCright %3
+}
+
+\ExplSyntaxOn
+\newcounter{mdpi@notecnt}
+\def\mdpi@notesymbol
+ {
+   \ifcase\c@mdpi@notecnt
+   \or\textbf{*}     %corres
+   \or\textsuperscript{\textdagger}   %conference
+   \or\textsuperscript{\textdaggerdbl}% firstnote
+   \or\textsuperscript{\textsection}  % secondnote etc
+   \or\textsuperscript{\textbardbl}
+   \or\textsuperscript{\textparagraph}
+   \or**
+   \or\textsuperscript{\textdagger\textdagger}
+   \or\textsuperscript{\textdaggerdbl\textdaggerdbl}
+   \or\textsuperscript{\textsection\textsection}
+   \or\textsuperscript{\textbardbl\textbardbl}
+   \or\textsuperscript{\textparagraph\textparagraph}
+   \or ***
+   \else
+   \@ctrerr
+   \fi
+ }
+\newcommand\mdpi@notelabel
+ {
+   \stepcounter{mdpi@notecnt}
+   \makebox[\mdpi@notedist][l]
+    {\UseTaggingSocket{inline/begin}{tag=Lbl}\mdpi@notesymbol\csname pdffakespace\endcsname\UseTaggingSocket{inline/end}}
+ }
+\newcommand{\maketitlen}
+ {
+  \par
+  \isBookContribution
+   {\vspace{12pt}}
+   {
+     \begin{flushleft}
+     \hyphenpenalty=10000
+     \tolerance=1000
+     \footnotesize
+     \tl_if_eq:NnF{\firstargument}{1}
+       {\parshape 2~0cm \linewidth \dimeval{\dist}~\dimeval{\linewidth-\dist}}
+     \@address
+     \par
+     % Scheme B: single affiliation (\address[1]) -> tighter note indent
+     \tl_if_eq:NnTF{\firstargument}{1}
+       {\mdpi@notedist=\dimexpr\dist-\notedistshift\relax}
+       {\mdpi@notedist=\dist}
+     \parshape 2~0cm \linewidth
+     \dimeval{\mdpi@notedist}~\dimeval{\linewidth-\mdpi@notedist}
+     \tl_if_eq:NnF\@authornum{author}
+       {
+        \tl_if_empty:NF\@corres
+         {
+           \mdpi@notelabel\@corres
+           \par
+         }
+       }
+     \tl_if_empty:NF\@conference
+       {
+         \mdpi@notelabel
+         This~ paper~ is~ an~ extended~ version~ of~ our~ paper~ published~ in\space \@conference.
+         \par
+       }
+     \clist_map_inline:nn{first,second,third,fourth,fifth,sixth,seventh,eighth,nineth,tenth,eleventh}
+      {
+       \tl_if_empty:cF{@##1note}
+        {
+         \mdpi@notelabel
+         \tl_use:c{@##1note}
+         \par
+        }
+      }
+     \tl_if_empty:NF\@LSID{\vskip12pt \@LSID \par}
+     \end{flushleft}
+   }
+ }
+\ExplSyntaxOff
+%%%% Abstract, keywords, journal data, PACS, MSC, JEL
+\newcommand{\abstractkeywords}{%
+\isMonograph{}{%
+\ifthenelse{\equal{\@featuredapplication}{\@empty}}{
+  }{%
+  \noindent\textbf{Featured Application\vspace{6pt}\\}\@featuredapplication
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@addhighlights}{\@empty}}{}{
+  \noindent\textbf{Highlights\vspace{-6pt}\\}\addhighlights % redefined in .tex to use itemize
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@simplesumm}{\@empty}}{}{
+  \noindent\textbf{Simple Summary\vspace{6pt}\\}\@simplesumm
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@abstract}{\@empty}}{}{
+  \noindent\textbf{Abstract\vspace{6pt}\\}\@abstract
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@encyclopediadef}{\@empty}}{}{
+  \noindent\textbf{Definition\vspace{6pt}\\}\@encyclopediadef
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@dataset}{\@empty}}{}{
+  \noindent\textbf{Dataset:\space}\@dataset
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@datasetlicense}{\@empty}}{}{
+  \noindent\textbf{Dataset License:\space}\@datasetlicense
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@keyword}{\@empty}}{}{
+  \noindent\textbf{Keywords:\space}\@keyword
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@keycontribution}{\@empty}}{}{
+  \noindent\textbf{Key Contribution:\space}\@keycontribution
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@pacs}{\@empty}}{}{
+  \noindent\textbf{PACS:\space}\@pacs
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@msc}{\@empty}}{}{
+  \noindent\textbf{MSC:\space}\@msc
+  \vspace{12pt}
+  \par
+}
+\ifthenelse{\equal{\@jel}{\@empty}}{}{
+  \noindent\textbf{JEL Classification:\space}\@jel
+  \vspace{12pt}
+  \par
+}
+\vspace{4pt}
+\isBookContribution{}{\hrule}
+\vspace{12pt}
+\normalsize
+}
+} % For Monograph, remove front part
+
+%%%%% Print maketitle and abstractkeywords
+\AddToHook{begindocument/end}{\calculateMyLen}
+\ifthenelse{\equal{\@arttype}{Supfile}}{
+  \AfterEndPreamble{
+    \maketitle
+    \let\maketitle\relax
+    \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
+    }%
+  }{
+  \AfterEndPreamble{
+    \maketitle
+    \let\maketitle\relax
+    \maketitlen
+    \let\maketitlen\relax
+    \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
+    \abstractkeywords
+  }%
+}
+
+\AddToHook{begindocument/before}
+ {
+  \DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
+  \DeclareSymbolFontAlphabet{\mathbb}{AMSb}
+      %%%% URL
+    \urlstyle{rm}
+    \def\UrlFont{\rmfamily}
+     % Line breaks in URL
+     \def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+     \g@addto@macro{\UrlBreaks}{\UrlOrds}
+     \g@addto@macro{\UrlBreaks}{\UrlDigits}
+ }
+
+\AddToHook{begindocument}{\urlstyle{rm}\def\UrlFont{\rmfamily}}
+
+%%%% Font size in Tables and watermark in arttype retraction
+\AtEndPreamble{
+  \def\@tablesize{}
+  \newcommand{\tablesize}[1]{\gdef\@tablesize{#1}}
+  \let\oldtabularx\tabularx
+  \renewcommand{\tabularx}{\ifthenelse{\equal{\@tablesize}{\@empty}}{}{\@tablesize}\oldtabularx}
+  \printretraction
+}
+
+\renewcommand*\l@section
+ {
+   \ifnum \c@tocdepth >\z@
+    \addpenalty\@secpenalty
+    \addvspace{1.0em \@plus\p@}
+   \fi
+   \@dottedtocline{1}{0em}{1.5em}
+ }
+\renewcommand{\numberline}[1]{#1.~\space} % Increase space between number and title
+
+\setcounter{secnumdepth}{3}
+\providecommand\WordSpaceAmount[1]{
+  \glueexpr
+        #1\fontdimen2\the\font
+  plus  #1\fontdimen3\the\font
+  minus #1\fontdimen4\the\font
+  \relax
+}
+\IfDocumentMetadataTF
+ {
+   \setcounter{secnumdepth}{3}
+   \DeclareInstance    {headformat}{mdpi/std}{hang}
+    {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
+   \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
+   \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
+   \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
+   \DeclareInstanceCopy{headformat}{paragraph}    {mdpi/std}
+   \EditInstance{heading}{section}
+     {
+       heading-decls=\raggedright\large\bfseries\boldmath,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\theheading.,
+       title-decls = \hangindent0pt,
+       headformat-instance = section %until the release
+     }
+   \isMonograph
+    {
+     \EditInstance{heading}{section}
+       {
+         heading-decls=\raggedright\LARGE\bfseries,
+         after-vspace =8pt,
+       }
+    }
+    {}
+   \EditInstance{heading}{subsection}
+     {
+       heading-decls=\raggedright\normalsize\itshape,
+       title-decls = \hangindent0pt,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\itshape\theheading.,
+       headformat-instance = subsection
+     }
+   \EditInstance{heading}{subsubsection}
+     {
+       heading-decls=\raggedright \normalsize,
+       title-decls = \hangindent0pt,
+       before-vspace=12pt,
+       after-vspace =3pt,
+       number-format=\theheading.,
+       headformat-instance = subsection
+     }
+   \DeclareInstance{heading}{paragraph}{display}
+     {
+       , name          = paragraph
+       , parent-name   = subsubsection
+       , level         = 4
+       , before-vspace = 12pt
+       , after-vspace  = 3pt
+       , heading-decls = \raggedright\normalfont\normalsize
+       , mark-cmd      = \paragraphmark {#1}
+       , number-format=\theheading.,
+       , headformat-instance = paragraph
+     }
+ } %end of \DocumentMetadata test
+ {
+   \isMonograph
+    {
+     \titleformat {\section} [block] {\raggedright \LARGE\bfseries\boldmath} {\thesection.\space} {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {8pt}
+    }
+    {
+     \titleformat {\section} [block] {\raggedright \large\bfseries\boldmath} {\thesection.\space} {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+    }
+
+   \titleformat {\subsection} [block] {\raggedright \normalsize\itshape} {\thesubsection.\space} {0pt} {}
+   \titlespacing {\subsection} {0pt} {12pt} {3pt}
+
+   \titleformat {\subsubsection} [block] {\raggedright \normalsize} {\thesubsubsection.\space} {0pt} {}
+   \titlespacing {\subsubsection} {0pt} {12pt} {3pt}
+
+   \titleformat {\paragraph} [block] {\raggedright \normalsize} {\theparagraph.\space} {0pt} {}
+   \titlespacing {\paragraph} {0pt} {12pt} {3pt}
+ }
+
+%%%% Special section title style for back matter
+\newcommand{\supplementary}[1]{%
+\par\vspace{6pt}\noindent{\small\textbf{Supplementary Materials:} {#1}\par}}
+
+\newcommand{\authorcontributions}[1]{%
+\vspace{6pt}\noindent{\small\textbf{Author Contributions:} {#1}\par}}
+
+\newcommand{\funding}[1]{%
+\vspace{6pt}\noindent{\small\textbf{Funding:} {#1}\par}}
+
+\newcommand{\institutionalreview}[1]{%
+\vspace{6pt}\noindent{\small\textbf{Institutional Review Board Statement:} {#1}\par}}
+
+\newcommand{\informedconsent}[1]{%
+\vspace{6pt}\noindent{\small\textbf{Informed Consent Statement:} {#1}\par}}
+
+\newcommand{\dataavailability}[1]{%
+\vspace{6pt}\noindent{\small\textbf{Data Availability Statement:} {#1}\par}}
+
+\newcommand{\durcstatement}[1]{% For journal Drones
+\vspace{6pt}\noindent{\small\textbf{DURC Statement:} {#1}\par}}
+
+\newcommand{\publicinvolvement}[1]{% For journal Nursing Reports
+\vspace{6pt}\noindent{\small\textbf{Public Involvement Statement:} {#1}\par}}
+
+\newcommand{\guidelinesstandards}[1]{% For journal Nursing Reports
+\vspace{6pt}\noindent{\small\textbf{Guidelines and Standards Statement:} {#1}\par}}
+
+\newcommand{\acknowledgments}[1]{%
+\vspace{6pt}\noindent{\small\textbf{Acknowledgments:} {#1}\par}}
+
+\newcommand{\conflictsofinterest}[1]{%
+\vspace{6pt}\noindent{\small\textbf{Conflicts of Interest:} {#1}\par}}
+
+\newcommand{\entrylink}[1]{% For journal Encyclopedia
+\vspace{6pt}\noindent{\small\textbf{Entry Link:} {#1}\par}}
+
+\newcommand{\useofartificialintelligence}[1]{% For journal Nursing Reports
+\vspace{6pt}\noindent{\small\textbf{Use of Artificial Intelligence:} {#1}\par}}
+
+\newcommand{\reviewreports}[1]{%
+\vspace{6pt}\noindent{\small\textbf{Review Reports:} {#1}\par}}
+
+\newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\large\textbf{#1}}{%
+\par\vspace{3pt}\hspace{-0.85cm}{\small #2}\par}}
+
+\newcommand{\specialsection}[2]{%
+\vspace{12pt}\noindent{\selectfont\textbf{#1}\par\vspace{6pt}\noindent {\small #2}\par}}
+
+\newcommand{\bio}[2]{%
+\noindent{#1}\hspace{1.1cm}\noindent {\small \pbox[b]{13.86cm}{#2}}\par\vspace{6pt}}
+
+\newcommand{\listofcontribution}[2]{\vspace{6pt}\noindent{\small \textbf{#1}}{%
+\par\vspace{-12pt}\hspace{-0.85cm}{\small #2}\par}}
+
+\newcommand{\backnotes}[2]{%
+\vspace{6pt}\noindent{\small\textbf{#1:} {#2}\par}}
+
+%%%%% Defines the appendix
+\def\@appendixtitles{}
+\newcommand{\appendixtitles}[1]{\gdef\@appendixtitles{#1}}
+
+\def\@appendixsections{}
+\newcommand{\appendixsections}[1]{\gdef\@appendixsections{#1}}
+
+\def\@appendixstart{}
+\newcommand{\appendixstart}[1]{\gdef\@appendixstart{#1}}
+
+\renewcommand{\appendixstart}{%
+\setcounter{section}{0}%
+\setcounter{subsection}{0}%
+\setcounter{subsubsection}{0}%
+\setcounter{figure}{0}
+\setcounter{table}{0}
+\setcounter{scheme}{0}
+\setcounter{chart}{0}
+\setcounter{boxenv}{0}
+\setcounter{equation}{0}
+\setcounter{theorem}{0}
+\setcounter{lemma}{0}
+\setcounter{corollary}{0}
+\setcounter{proposition}{0}
+\setcounter{characterization}{0}
+\setcounter{property}{0}
+\setcounter{problem}{0}
+\setcounter{example}{0}
+\setcounter{remark}{0}
+\setcounter{definition}{0}
+\setcounter{hypothesis}{0}
+\setcounter{notation}{0}
+\setcounter{algorithm}{0}
+\setcounter{graph}{0}
+\crefname{appendix}{Appendix}{Appendixes}
+\crefalias{section}{appendix}%
+\crefalias{subsection}{appendix}%
+\crefalias{subsubsection}{appendix}%
+}
+
+\ExplSyntaxOn
+\renewcommand{\appendix}
+ {%
+  \gdef\thesection   {\AlphAlph{\value{section}}}%
+  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
+%%% UF SECTIONFORMAT (after \appendix)
+    \IfDocumentMetadataTF
+     {
+      \EditInstance{heading}{section}
+        {
+         after-vspace=3pt,
+         heading-decls=\raggedright\large\bfseries,
+        }
+      \clist_map_inline:nn {section,subsection,subsubsection}
+       {
+         \EditInstance{heading}{##1}
+          {
+            number-format=
+             \appendixname\nobreakspace\theheading
+             \tl_if_eq:NnT\@appendixtitles {yes}{.}
+          }
+       }
+     }
+     {
+      \titleformat {\section} [block] {\raggedright\bfseries\boldmath\large} {\large\boldmath\bfseries%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesection.%
+         }{%
+         \appendixname\nobreakspace\thesection\nobreakspace%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+     %
+     \titleformat {\subsection} [block] {\raggedright\itshape} {%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesubsection.%
+         }{%
+         \appendixname\nobreakspace\thesubsection%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+     %
+     \titleformat {\subsubsection} [block] {\raggedright\selectfont} {%
+       \ifthenelse{\equal{\@appendixtitles}{yes}}{%
+         \appendixname\nobreakspace\thesubsubsection.%
+         }{%
+         \appendixname\nobreakspace\thesubsubsection%
+         }~
+       } {0pt} {}
+     \titlespacing {\section} {0pt} {12pt} {3pt}
+   }
+
+  %\gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
+  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
+  \csname appendixmore\endcsname
+  \renewcommand{\thefigure}{A\arabic{figure}}
+  \renewcommand{\thetable}{A\arabic{table}}
+  \renewcommand{\thescheme}{A\arabic{scheme}}
+  \renewcommand{\thechart}{A\arabic{chart}}
+  \renewcommand{\theboxenv}{A\arabic{boxenv}}
+  \renewcommand{\theequation}{A\arabic{equation}}
+  \renewcommand{\thetheorem}{A\arabic{theorem}}
+  \renewcommand{\thelemma}{A\arabic{lemma}}
+  \renewcommand{\thecorollary}{A\arabic{corollary}}
+  \renewcommand{\theproposition}{A\arabic{proposition}}
+  \renewcommand{\thecharacterization}{A\arabic{characterization}}
+  \renewcommand{\theproperty}{A\arabic{property}}
+  \renewcommand{\theproblem}{A\arabic{problem}}
+  \renewcommand{\theexample}{A\arabic{example}}
+  \renewcommand{\theremark}{A\arabic{remark}}
+  \renewcommand{\thedefinition}{A\arabic{definition}}
+  \renewcommand{\thehypothesis}{A\arabic{hypothesis}}
+  \renewcommand{\thenotation}{A\arabic{notation}}
+  \renewcommand{\thealgorithm}{A\arabic{algorithm}}
+  \renewcommand{\thegraph}{A\arabic{graph}}
+}
+\ExplSyntaxOff
+
+%%%% Dimensions
+%% Width of left column = marginparwidth
+\newlength{\leftcolumnlength}
+\setlength{\leftcolumnlength}{4.1cm}
+
+%% Width of left column plus marginsep
+\newlength{\extralength}
+\setlength{\extralength}{4.61cm} % = 0.51 cm + 4.1 cm (= marginparwidth + marginparsep)
+
+%% Width of the page minus the margins
+\newlength{\fulllength}
+\setlength{\fulllength}{21 cm - 1.27 cm - 1.27 cm}
+
+%%% Layout
+\isPreprints{%
+  \RequirePackage[left=2.7cm,
+        right=2.7cm,
+        top=1.35cm,
+        bottom=1.08cm,
+        includehead,
+        includefoot,
+        footnotesep=0.6cm %moved from \skip\footins change for journal laws
+        ]{geometry}
+      }{
+\isBookContribution{%%
+  \RequirePackage[left=2.05cm,
+          right=2.05cm,
+          top=1.8cm,
+          bottom=0.75cm,
+          paperwidth=170mm,
+          paperheight=244mm,
+          footskip=20pt,
+          headsep=24pt,
+          includefoot,
+          footnotesep=0.6cm %moved from \skip\footins change for journal laws
+          ]{geometry}
+  }{
+  \RequirePackage[left=5.87cm, %1.27 cm + 0.51 cm + 4.1 cm = 5.87 cm (= 1.27 cm + marginparwidth + marginparsep)
+        marginparwidth=4.1cm,
+        marginparsep=0.51cm,
+        right=1.27cm,
+        top=1.27cm,
+        bottom=1.08cm,
+        footskip=36pt,
+        headsep=24pt,
+        includehead,
+        includefoot,
+        footnotesep=0.6cm %moved from \skip\footins change for journal laws
+        ]{geometry}
+      }
+}
+
+\isPreprints{}{%
+\fancyheadoffset[L]{\extralength} % Header into the margin
+\isBookContribution{%
+  }{%
+  \fancyfootoffset[L]{\extralength}%
+    }
+} % Footer into the margin
+
+\newlength\mdpi@portrait@paperwidth
+\newlength\mdpi@portrait@paperheight
+\mdpi@portrait@paperheight= \paperheight
+\mdpi@portrait@paperwidth = \paperwidth
+\newcommand{\startlandscape}{%
+\isPreprints
+  {
+   \clearpage
+   \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
+   \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
+                 right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
+   \paperwidth =\mdpi@portrait@paperheight
+   \paperheight=\mdpi@portrait@paperwidth
+   \fancyheadoffset{0pt}
+   \captionsetup{margin={0cm,0cm}}
+  }
+  {
+   \clearpage
+   \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
+   \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
+                 right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
+   \paperwidth=\mdpi@portrait@paperheight
+   \paperheight=\mdpi@portrait@paperwidth
+   \fancyheadoffset{0pt}
+   \captionsetup{margin={4.6cm,0cm}}
+  }
+}
+
+\newcommand{\finishlandscape}{%
+  \clearpage
+  \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperwidth}{\mdpi@portrait@paperheight}
+  \restoregeometry
+  \fancyheadoffset[L]{\extralength}
+  \captionsetup{margin={0cm,0cm}}
+}
+\RequirePackage{newfloat}
+\DeclareFloatingEnvironment[]{listing}
+\DeclareFloatingEnvironment[name=Box]{boxenv}
+\DeclareFloatingEnvironment[]{chart}
+\DeclareFloatingEnvironment[]{scheme}
+\DeclareFloatingEnvironment[]{figurewide}
+\DeclareFloatingEnvironment[]{graph}
+\IfDocumentMetadataT
+ {
+   \tagpdfsetup
+     {
+       float/new=listing,
+       float/new=boxenv,
+       float/new=chart,
+       float/new=scheme,
+       float/new=figurewide,
+       float/new=graph,
+       float/new=algorithm,
+     }
+   \AddToHook{begindocument}{\mdpi@install@float@H@tag}
+ }
+%% [H] firstaid (latex-lab) only closes one para level in hmode, so the
+%% float nests under text-unit. End the full paragraph first; hang Table/
+%% Figure under Sect (reading order). Do not reopen text-unit after H.
+\ExplSyntaxOn
+\cs_new_protected:Npn \mdpi_install_float_H_tag:
+  {
+    \NewTaggingSocketPlug { float/H/begin } { mdpi }
+      {
+        \mode_if_horizontal:T { \par }
+        \tag_struct_begin:n { tag = \UseStructureName { float / ##1 } }
+        \tl_set:Ne \@current@float@struct { \tag_get:n { struct_num } }
+      }
+    \AssignTaggingSocketPlug { float/H/begin } { mdpi }
+    \NewTaggingSocketPlug { float/H/end } { mdpi }
+      {
+        \tag_struct_end:
+      }
+    \AssignTaggingSocketPlug { float/H/end } { mdpi }
+  }
+\cs_set_eq:NN \mdpi@install@float@H@tag \mdpi_install_float_H_tag:
+\box_new:N \l_mdpi_diagbox_visual_box
+\dim_new:N \l_mdpi_diagbox_wd_dim
+\dim_new:N \l_mdpi_diagbox_ht_dim
+\dim_new:N \l_mdpi_diagbox_dp_dim
+\tl_new:N \l_mdpi_diagbox_dir_tl
+\tl_new:N \l_mdpi_diagbox_plain_tl
+\cs_new_protected:Npn \mdpi_diagbox_plain:n #1
+  {
+    \group_begin:
+      \cs_set:Npn \multicolumn ##1##2##3 { ##3 }
+      \cs_set:Npn \\ { ~ }
+      \cs_set:Npn \linebreak { ~ }
+      \cs_set:Npn \newline { ~ }
+      \cs_set:Npn \textbf ##1 { ##1 }
+      \cs_set:Npn \textit ##1 { ##1 }
+      \cs_set:Npn \textrm ##1 { ##1 }
+      \cs_set:Npn \boldmath ##1 { ##1 }
+      \cs_set:Npn \bfseries { }
+      \cs_set:Npn \normalfont { }
+      \cs_set:Npn \protect { }
+      \protected@edef \mdpi@diagbox@atext { #1 }
+      \tl_set_eq:NN \l_tmpa_tl \mdpi@diagbox@atext
+      \regex_replace_all:nnN { \{ | \} } { } \l_tmpa_tl
+      \tl_gset:Ne \l_mdpi_diagbox_plain_tl { \tl_to_str:N \l_tmpa_tl }
+    \group_end:
+  }
+\cs_new_protected:Npn \mdpi_diagbox_span_at:n #1
+  {
+    \mdpi_diagbox_plain:n { #1 }
+    \exp_args:Ne \tag_struct_begin:n
+      { tag = Span , alt = { \l_mdpi_diagbox_plain_tl } }
+    \exp_args:Ne \tag_mc_begin:n
+      { actualtext = { \l_mdpi_diagbox_plain_tl } }
+      \pdfextension ~ literal ~ { 3 ~ Tr }
+      \normalfont \normalsize
+      \tl_use:N \l_mdpi_diagbox_plain_tl
+      \pdfextension ~ literal ~ { 0 ~ Tr }
+    \tag_mc_end:
+    \tag_struct_end:
+  }
+\cs_new_protected:Npn \mdpi_diagbox_place_SE:nn #1#2
+  {
+    \raisebox { -\l_mdpi_diagbox_dp_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ bl ] { \mdpi_diagbox_span_at:n { #1 } } }
+    \hss
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tr ] { \mdpi_diagbox_span_at:n { #2 } } }
+  }
+%% NE/SW: #1 top-left, #2 bottom-right
+\cs_new_protected:Npn \mdpi_diagbox_place_NE:nn #1#2
+  {
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tl ] { \mdpi_diagbox_span_at:n { #1 } } }
+    \hss
+    \raisebox { -\l_mdpi_diagbox_dp_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ br ] { \mdpi_diagbox_span_at:n { #2 } } }
+  }
+%% Triple NW: a BL, m TL, b TR
+\cs_new_protected:Npn \mdpi_diagbox_place_triple_NW:nnn #1#2#3
+  {
+    \raisebox { -\l_mdpi_diagbox_dp_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ bl ] { \mdpi_diagbox_span_at:n { #1 } } }
+    \hss
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tl ] { \mdpi_diagbox_span_at:n { #2 } } }
+    \hss
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tr ] { \mdpi_diagbox_span_at:n { #3 } } }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_place_triple_NE:nnn #1#2#3
+  {
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tl ] { \mdpi_diagbox_span_at:n { #1 } } }
+    \hss
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tr ] { \mdpi_diagbox_span_at:n { #2 } } }
+    \hss
+    \raisebox { -\l_mdpi_diagbox_dp_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ br ] { \mdpi_diagbox_span_at:n { #3 } } }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_read_dir:n #1
+  {
+    \tl_set:Nn \l_mdpi_diagbox_dir_tl { NW }
+    \group_begin:
+      \diagbox@clear
+      \setkeys { diagbox } { dir = NW , #1 }
+      \tl_gset_eq:NN \l_mdpi_diagbox_dir_tl \diagbox@dir
+    \group_end:
+  }
+\cs_new_protected:Npn \mdpi_diagbox_access_overlay:n #1
+  {
+    \rlap
+      {
+        \smash
+          {
+            \hbox_to_wd:nn { \l_mdpi_diagbox_wd_dim } { #1 }
+          }
+      }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_access:nnn #1#2#3
+  {
+    \mdpi_diagbox_read_dir:n { #1 }
+    \mdpi_diagbox_access_overlay:n
+      {
+        \str_case:NnF \l_mdpi_diagbox_dir_tl
+          {
+            { NW } { \mdpi_diagbox_place_SE:nn { #2 } { #3 } }
+            { SE } { \mdpi_diagbox_place_SE:nn { #2 } { #3 } }
+            { NE } { \mdpi_diagbox_place_NE:nn { #2 } { #3 } }
+            { SW } { \mdpi_diagbox_place_NE:nn { #2 } { #3 } }
+          }
+          { \mdpi_diagbox_place_SE:nn { #2 } { #3 } }
+      }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_access:nnnn #1#2#3#4
+  {
+    \mdpi_diagbox_read_dir:n { #1 }
+    \mdpi_diagbox_access_overlay:n
+      {
+        \str_case:NnF \l_mdpi_diagbox_dir_tl
+          {
+            { NW } { \mdpi_diagbox_place_triple_NW:nnn { #2 } { #3 } { #4 } }
+            { SE } { \mdpi_diagbox_place_triple_NW:nnn { #2 } { #3 } { #4 } }
+            { NE } { \mdpi_diagbox_place_triple_NE:nnn { #2 } { #3 } { #4 } }
+            { SW } { \mdpi_diagbox_place_triple_NE:nnn { #2 } { #3 } { #4 } }
+          }
+          { \mdpi_diagbox_place_triple_NW:nnn { #2 } { #3 } { #4 } }
+      }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_visual_box:nnn #1#2#3
+  {
+    \tag_suspend:n { diagbox }
+      \hbox_set:Nn \l_mdpi_diagbox_visual_box
+        { \mdpi@orig@diagbox [ #1 ] { #2 } { #3 } }
+    \tag_resume:n { diagbox }
+    \dim_set:Nn \l_mdpi_diagbox_wd_dim
+      { \box_wd:N \l_mdpi_diagbox_visual_box }
+    \dim_set:Nn \l_mdpi_diagbox_ht_dim
+      { \box_ht:N \l_mdpi_diagbox_visual_box }
+    \dim_set:Nn \l_mdpi_diagbox_dp_dim
+      { \box_dp:N \l_mdpi_diagbox_visual_box }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_visual_box:nnnn #1#2#3#4
+  {
+    \tag_suspend:n { diagbox }
+      \hbox_set:Nn \l_mdpi_diagbox_visual_box
+        { \mdpi@orig@diagbox [ #1 ] { #2 } { #3 } { #4 } }
+    \tag_resume:n { diagbox }
+    \dim_set:Nn \l_mdpi_diagbox_wd_dim
+      { \box_wd:N \l_mdpi_diagbox_visual_box }
+    \dim_set:Nn \l_mdpi_diagbox_ht_dim
+      { \box_ht:N \l_mdpi_diagbox_visual_box }
+    \dim_set:Nn \l_mdpi_diagbox_dp_dim
+      { \box_dp:N \l_mdpi_diagbox_visual_box }
+  }
+\cs_new_protected:Npn \mdpi_install_diagbox_tag:
+  {
+    \cs_set_eq:NN \mdpi@orig@diagbox \diagbox
+    \RenewDocumentCommand \diagbox { O{} m m g }
+      {
+        \leavevmode
+        \ifx \@footnotetext \TX@trial@ftn
+          \IfNoValueTF { ##4 }
+            { \mdpi@orig@diagbox [ ##1 ] { ##2 } { ##3 } }
+            { \mdpi@orig@diagbox [ ##1 ] { ##2 } { ##3 } { ##4 } }
+        \else
+          \IfNoValueTF { ##4 }
+            {
+              \mdpi_diagbox_visual_box:nnn { ##1 } { ##2 } { ##3 }
+              \leavevmode
+              \hbox:n
+                {
+                  \mdpi_diagbox_access:nnn { ##1 } { ##2 } { ##3 }
+                  \box_use_drop:N \l_mdpi_diagbox_visual_box
+                }
+              \baselineskip \dp \@arstrutbox
+            }
+            {
+              \mdpi_diagbox_visual_box:nnnn { ##1 } { ##2 } { ##3 } { ##4 }
+              \leavevmode
+              \hbox:n
+                {
+                  \mdpi_diagbox_access:nnnn { ##1 } { ##2 } { ##3 } { ##4 }
+                  \box_use_drop:N \l_mdpi_diagbox_visual_box
+                }
+              \baselineskip \dp \@arstrutbox
+            }
+        \fi
+      }
+  }
+\cs_set_eq:NN \mdpi@install@diagbox@tag \mdpi_install_diagbox_tag:
+\ExplSyntaxOff
+\AddToHook{package/diagbox/after}{\IfDocumentMetadataT{\mdpi@install@diagbox@tag}}
+
+\RequirePackage{caption}
+\captionsetup
+  {
+   labelfont={bf, small, stretch=1.1},
+   labelsep=period,
+   textfont={small, stretch=1.1},
+   aboveskip=6pt,
+   justification=justified
+  }
+\captionsetup[figure] {position=bottom,belowskip=-6pt}
+\captionsetup[scheme] {position=bottom,belowskip=-6pt}
+\captionsetup[chart]  {position=bottom,belowskip=-6pt}
+\captionsetup[listing]{position=top}
+\captionsetup[table]  {position=top}
+\captionsetup[boxenv] {position=top}
+
+%% Non-floating figure block with long caption (\captionof{figure}{...}).
+%% TL2026 + \DocumentMetadata: use float tagging sockets (PDF/UA-2).
+%% TL2023 / no tagging: \UseTaggingSocket may be undefined -- skip safely.
+\NewDocumentEnvironment{longfigurecaption}{}
+ {%
+  \par
+  \vspace{12pt}%
+  \begingroup
+  \parindent\z@
+  \def\@captype{figure}%
+  \UseTaggingSocket{struct/begin}{tag=float}
+  \ignorespaces
+ }
+ {%
+  \par
+  \UseTaggingSocket{struct/end}
+  \endgroup
+  \vspace{18pt}%
+ }
+
+\isPreprints
+ {
+  \captionsetup{singlelinecheck=on}
+ }
+ {
+  \captionsetup{singlelinecheck=off}
+ }
+\IfDocumentMetadataT
+ {
+   \abovecaptionskip=6pt
+   \belowcaptionskip=6pt
+   \AtBeginDocument
+    {
+      \long\def\@makecaption#1#2{%
+        \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
+        \vskip\abovecaptionskip
+        \small
+        \begingroup
+          \leftskip\caption@leftmargin\relax
+          \rightskip\caption@rightmargin\relax
+          \parfillskip=\z@ plus 1fil\relax
+          \ifcaption@star
+            #2\par
+          \else
+            \UseTaggingSocket{caption/begin}{\@current@float@struct}%
+            \UseTaggingSocket{caption/label/begin}%
+            \textbf{#1. }%
+            \UseTaggingSocket{caption/label/end}%
+            \UseTaggingSocket{para/begin}%
+                #2
+            \par
+            \UseTaggingSocket{caption/end}%
+          \fi
+        \endgroup
+        \vskip\belowcaptionskip
+        \global\caption@starfalse}
+     }
+   % Keep \parbox usable for cell wrapping, but suppress parbox/para structure
+   % sockets inside tables so nested \parbox+\multirow do not emit illegal
+   % Div/P nesting under TR (ISO 32005). Cell text remains tagged via tbl/* .
+   \AddToHook{env/tabular/begin}{%
+     \AssignTaggingSocketPlug{parbox/before}{noop}%
+     \AssignTaggingSocketPlug{parbox/after}{noop}%
+     \AssignTaggingSocketPlug{para/restore}{noop}}
+   \AddToHook{env/tabularx/begin}{%
+     \AssignTaggingSocketPlug{parbox/before}{noop}%
+     \AssignTaggingSocketPlug{parbox/after}{noop}%
+     \AssignTaggingSocketPlug{para/restore}{noop}}
+   %% Per-cell X/m flag for multirow * -> = (count assigned later).
+   \AddToHook{cmd/insert@column/before}{\mdpi@mr@xcol\z@}
+ }
+%% pdfTeX table[H]: \@floatboxreset + stretch→1 yields size10.clo nominal
+%% leading (\small 9/11 ≈ 10.96pt). Lua keeps baked 9/12.815 in cells and
+%% in table notes (\noindent\small{Note...} after tabular, still inside table).
+%% Apply only inside table/tabular — do not change global size definitions.
+\newcommand{\mdpi@table@pdf@leading}{%
+  \def\baselinestretch{1}%
+  \fontsize{\f@size}{%
+    \ifdim\f@size pt=5pt 6pt
+    \else\ifdim\f@size pt=7pt 8pt
+    \else\ifdim\f@size pt=8pt 9.5pt
+    \else\ifdim\f@size pt=9pt 11pt
+    \else\ifdim\f@size pt=10pt 12pt
+    \else\ifdim\f@size pt=12pt 14pt
+    \else\ifdim\f@size pt=14.4pt 18pt
+    \else\ifdim\f@size pt=17.28pt 22pt
+    \else\ifdim\f@size pt=20.74pt 25pt
+    \else\ifdim\f@size pt=24.88pt 30pt
+    \else\f@baselineskip
+    \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+  }\selectfont
+}
+\newif\ifmdpi@intable
+\AddToHook{env/table/begin}{\mdpi@intabletrue}
+\AddToHook{env/table/end}{\mdpi@intablefalse}
+%% Re-apply after size switches used for cells/notes inside the float.
+\AddToHook{cmd/small/after}{\ifmdpi@intable\mdpi@table@pdf@leading\fi}
+\AddToHook{cmd/footnotesize/after}{\ifmdpi@intable\mdpi@table@pdf@leading\fi}
+\AddToHook{cmd/normalsize/after}{\ifmdpi@intable\mdpi@table@pdf@leading\fi}
+\AddToHook{env/tabular/begin}{\mdpi@table@pdf@leading}
+\AddToHook{env/tabularx/begin}{\mdpi@table@pdf@leading}
+%% For table footnotes
+\newsavebox{\@justcentbox}
+\newcommand{\justifyorcenter}[1]{
+\sbox \@justcentbox{#1}
+\ifdim \wd \@justcentbox >\hsize #1
+\else \centerline{#1} \fi
+}
+%% For text alignment in tables
+%% C/L/R set \multirowsetup so tagged multirow (*= rewritten to =) keeps
+%% the same horizontal alignment as the column. [m] still vertical-middle.
+\newcount\mdpi@mr@xcol
+\newcommand{\mdpi@mr@setup@C}{\renewcommand{\multirowsetup}{\centering}}
+\newcommand{\mdpi@mr@setup@L}{\renewcommand{\multirowsetup}{\raggedright}}
+\newcommand{\mdpi@mr@setup@R}{\renewcommand{\multirowsetup}{\raggedleft}}
+\IfDocumentMetadataTF
+  {\renewcommand\tabularxcolumn[1]{>{\mdpi@mr@xcol\@ne}m{#1}}}
+  {\renewcommand\tabularxcolumn[1]{m{#1}}}
+\newcolumntype{C}{>{\centering\arraybackslash\mdpi@mr@setup@C}X} % centered text in C columns
+\newcolumntype{L}{>{\raggedright\arraybackslash\mdpi@mr@setup@L}X} % left text in L columns
+\newcolumntype{R}{>{\raggedleft\arraybackslash\mdpi@mr@setup@R}X} % right text in R columns
+
+%% Transparent \multirow tagging: authors keep \multirow[m]{n}{*}{...}.
+%% In X/m (C/L/R): * -> = (avoid Artifact) + /RowSpan; skip tabularx trials.
+%% Install via parameterless macro so # doubling stays correct.
+\ExplSyntaxOn
+\int_new:N \g_mdpi_mr_tbl_int
+\seq_new:N \g_mdpi_mr_notes_seq
+\prop_new:N \g_mdpi_mr_logical_prop
+\cs_new_protected:Npn \mdpi_mr_tbl_begin:
+  {
+    \int_gincr:N \g_mdpi_mr_tbl_int
+    \seq_gclear:N \g_mdpi_mr_notes_seq
+  }
+\cs_new_protected:Npn \mdpi_mr_note:n #1
+  {
+    \cs_if_exist:NT \g__tbl_row_int
+      {
+        \seq_gput_right:Ne \g_mdpi_mr_notes_seq
+          {
+            { \int_use:N \g__tbl_row_int }
+            { \int_use:N \g__tbl_col_int }
+            { \int_eval:n {#1} }
+          }
+      }
+  }
+\cs_new_protected:Npn \mdpi_mr_write_span:nnnn #1#2#3#4
+  {
+    \iow_now:Ne \@auxout
+      {
+        \token_to_str:N \mdpi@mr@span
+        {#1}{#2}{#3}{#4}
+      }
+  }
+\tl_new:N \l_mdpi_mr_row_tl
+\tl_new:N \l_mdpi_mr_col_tl
+\tl_new:N \l_mdpi_mr_vis_tl
+\int_new:N \l_mdpi_mr_next_int
+\int_new:N \l_mdpi_mr_span_int
+\cs_new_protected:Npn \mdpi_mr_tbl_end:
+  {
+    \cs_if_exist:NT \g__tbl_row_int
+      {
+        \int_set:Nn \l_mdpi_mr_next_int { \g__tbl_row_int + 1 }
+        \seq_map_indexed_inline:Nn \g_mdpi_mr_notes_seq
+          {
+            \tl_set:Ne \l_mdpi_mr_row_tl { \tl_item:nn {##2} {1} }
+            \tl_set:Ne \l_mdpi_mr_col_tl { \tl_item:nn {##2} {2} }
+            \int_set_eq:NN \l_tmpb_int \l_mdpi_mr_next_int
+            \seq_map_indexed_inline:Nn \g_mdpi_mr_notes_seq
+              {
+                \int_compare:nNnT {####1} > {##1}
+                  {
+                    \tl_set:Ne \l_tmpa_tl { \tl_item:nn {####2} {2} }
+                    \tl_if_eq:NNT \l_tmpa_tl \l_mdpi_mr_col_tl
+                      {
+                        \tl_set:Ne \l_tmpa_tl { \tl_item:nn {####2} {1} }
+                        \int_set:Nn \l_tmpb_int { \l_tmpa_tl }
+                        \seq_map_break:
+                      }
+                  }
+              }
+            \int_set:Nn \l_mdpi_mr_span_int
+              { \l_tmpb_int - \l_mdpi_mr_row_tl }
+            \int_compare:nNnT \l_mdpi_mr_span_int < { 1 }
+              { \int_set:Nn \l_mdpi_mr_span_int { 1 } }
+            \mdpi_mr_write_span:nnnn
+              { \int_use:N \g_mdpi_mr_tbl_int }
+              { \l_mdpi_mr_row_tl }
+              { \l_mdpi_mr_col_tl }
+              { \int_use:N \l_mdpi_mr_span_int }
+          }
+      }
+    \seq_gclear:N \g_mdpi_mr_notes_seq
+  }
+\cs_new_protected:Npn \mdpi_mr_attr_only:n #1
+  {
+    \cs_if_exist:NT \__tag_attr_new_entry:ee
+      {
+        \prop_get:NeNF \g__tag_attr_entries_prop
+          { rowspan-\int_eval:n {#1} }
+          \l_tmpa_tl
+          {
+            \__tag_attr_new_entry:ee
+              { rowspan-\int_eval:n {#1} }
+              { /O~/Table~/RowSpan~\int_eval:n {#1} }
+          }
+        \seq_get_right:NNT \g__tbl_struct_cur_seq \l_tmpb_tl
+          {
+            \tl_set:Ne \l_tmpb_tl { \int_abs:n { \l_tmpb_tl } }
+            \cs_if_exist:NT \__tag_struct_prop_gput:one
+              {
+                \__tag_struct_prop_gput:one { \l_tmpb_tl }
+                  { C }
+                  { [/rowspan-\int_eval:n {#1}] }
+              }
+          }
+      }
+  }
+\cs_new_protected:Npn \mdpi_multirow_set_rowspan:n #1
+  {
+    \fp_set:Nn \l_tmpa_fp { abs(#1) }
+    \int_set:Nn \l_tmpa_int { \fp_to_int:n { floor( \l_tmpa_fp + 0.5 ) } }
+    \mdpi_mr_note:n { \l_tmpa_int }
+    \cs_if_exist:NTF \g__tbl_row_int
+      {
+        \prop_get:NeNTF \g_mdpi_mr_logical_prop
+          {
+            \int_use:N \g_mdpi_mr_tbl_int ,
+            \int_use:N \g__tbl_row_int ,
+            \int_use:N \g__tbl_col_int
+          }
+          \l_tmpa_tl
+          {
+            \int_compare:nNnT { \l_tmpa_tl } > { 1 }
+              {
+                \tagpdfsetup { table/multirow = { \l_tmpa_tl } }
+              }
+          }
+          {
+            \int_compare:nNnT \l_tmpa_int > { 1 }
+              { \mdpi_mr_attr_only:n { \l_tmpa_int } }
+          }
+      }
+      {
+        \int_compare:nNnT \l_tmpa_int > { 1 }
+          { \mdpi_mr_attr_only:n { \l_tmpa_int } }
+      }
+  }
+\cs_new_protected:Npn \mdpi_mr_span:nnnn #1#2#3#4
+  {
+    \prop_gput:Nee \g_mdpi_mr_logical_prop { #1 , #2 , #3 } {#4}
+  }
+\cs_set_eq:NN \mdpi@multirow@setrowspan \mdpi_multirow_set_rowspan:n
+\cs_set_eq:NN \mdpi@mr@tbl@begin \mdpi_mr_tbl_begin:
+\cs_set_eq:NN \mdpi@mr@tbl@end \mdpi_mr_tbl_end:
+\cs_set_eq:NN \mdpi@mr@span \mdpi_mr_span:nnnn
+\ExplSyntaxOff
+\newcommand{\mdpi@install@multirow@tag}{%
+  \let\mdpi@orig@xmultirow\@xmultirow
+  \long\def\@xmultirow[##1]##2[##3]##4[##5]##6{%
+    \ifx\@footnotetext\TX@trial@ftn
+    \else
+      \mdpi@multirow@setrowspan{##2}%
+    \fi
+    \ifnum\mdpi@mr@xcol>\z@
+      \if*##4%
+        \mdpi@orig@xmultirow[##1]{##2}[##3]{=}[##5]{##6}%
+      \else
+        \mdpi@orig@xmultirow[##1]{##2}[##3]{##4}[##5]{##6}%
+      \fi
+    \else
+      \mdpi@orig@xmultirow[##1]{##2}[##3]{##4}[##5]{##6}%
+    \fi
+  }%
+  \AddToHook{env/tabular/begin}{\mdpi@mr@tbl@begin}%
+  \AddToHook{env/tabularx/begin}{\mdpi@mr@tbl@begin}%
+  \AddToHook{env/tabular/end}{\mdpi@mr@tbl@end}%
+  \AddToHook{env/tabularx/end}{\mdpi@mr@tbl@end}%
+}
+\AddToHook{begindocument/before}{\IfDocumentMetadataT{\mdpi@install@multirow@tag}}
+
+\IfDocumentMetadataTF
+ {
+  \setlist[itemize]
+    {
+     topsep=3pt,
+     parsep=0pt,
+     itemsep=0pt,
+     leftmargin=21.25pt,
+     labelwidth=16.25pt,
+     itemindent=0pt,
+     labelsep=5pt,
+     align=left,
+     end-vspace=3pt,
+     end-extra-vspace=1pt
+    }
+  \setlist[enumerate]
+    {
+     topsep=3pt,
+     parsep=0pt,
+     itemsep=0pt,
+     leftmargin=21.25pt,
+     labelwidth=16.25pt,
+     itemindent=0pt,
+     labelsep=5pt,
+     align=left,
+     end-vspace=3pt,
+     end-extra-vspace=1pt
+     }
+ }
+ {
+  \setlist[itemize]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
+  \setlist[enumerate]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
+ }
+\setlist[description]{itemsep=0mm}
+
+%%%% Quote environment
+\renewenvironment{quote}{
+  \list{}{
+    \listparindent=0pt
+    \leftmargin=0.75cm
+    \rightmargin=0.75cm
+    \topsep=3pt
+    \parsep=3pt
+  }%
+  \item\relax
+  }
+  {\endlist}
+
+%%%% Supplementary file
+\ifthenelse{\equal{\@arttype}{Supfile}}{
+  \renewcommand{\thefigure}{S\arabic{figure}}%
+  \renewcommand{\thetable}{S\arabic{table}}%
+  }{}%
+
+%% Link to supplementary material: www.mdpi.com/ISSN-number/volume-number/issue-number/article-number
+\newcommand{\linksupplementary}[1]{\url{https://www.mdpi.com/article/\@doinum/#1}}
+
+%%%% Header and footer (all pages except the first)
+\renewcommand\headrule{} %% set line (from fancyhdr) in header to nothing
+
+\pagestyle{fancy}
+\lhead{
+  \ifthenelse{\equal{\@journal}{preprints}%
+  \OR \equal{\@journal}{preprintschicago}
+  \OR \equal{\@journal}{preprintsapa}
+  \OR \equal{\@arttype}{Book}
+  \OR \equal{\@arttype}{Monograph}}{%
+    }{%
+    \footnotesize%
+    \ifthenelse{\equal{\@status}{submit}}{%
+          \vspace{2pt}Version {\@ \today} submitted to {\em \journalname}%
+      }{%
+      \ifthenelse{\equal{\@arttype}{Supfile}}{%
+      {\em \journalname} {\bfseries \@pubyear}, {\em \@pubvolume}, %
+      \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
+        \@articlenumber. %
+        }{%
+        S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}. %
+        }%
+      {\url{https://doi.org/\@doinum}}%
+      }{%
+      {\null\vspace{2pt}\em\journalname\ }{\bfseries\@pubyear}, {\em \@pubvolume}%
+      \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
+        , \@articlenumber%
+        }{}%
+      }%
+      }\\%
+      \isPreprints{}{%
+      \rule{\fulllength}{0.4pt}%
+      }%
+    }%
+  }
+
+\rhead{%
+    \isBookContribution{}{%
+  \ifthenelse{\equal{\@arttype}{Supfile}}{%
+    \footnotesize S\thepage{} of S\pageref*{LastPage}%
+    }{%
+    \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
+      \footnotesize\thepage{} of \pageref*{LastPage}%
+      }{%
+      \footnotesize\thepage%
+    }%
+    }\\%
+    \isPreprints{}{%
+    \rule{\fulllength}{0.4pt}%
+            }%
+  }%
+}
+
+\cfoot{%
+  \isBookContribution{%
+    \footnotesize\thepage
+    }{%
+  }
+}
+
+\isBookContribution{%
+    }{%
+      \isPreprints{}{%
+        \rfoot{%
+     \footnotesize%
+    {\url{https://doi.org/\@doinum}}%
+     }
+  }
+}
+
+%%%% Article type "Retraction"
+\def\@retractiondate{}% Date that the retraction notice was published
+\newcommand{\retractiondate}[1]{\gdef\@retractiondate{#1}}
+\def\@retractionnoticeyear{}% Year in which the retraction notice was published
+\newcommand{\retractionnoticeyear}[1]{\gdef\@retractionnoticeyear{#1}}
+\def\@retractionnoticevolume{} % Volume in which the retraction notice was published
+\newcommand{\retractionnoticevolume}[1]{\gdef\@retractionnoticevolume{#1}}
+\def\@retractionnoticeidnumber{}% Article Number in which the retraction notice was published
+\newcommand{\retractionnoticeidnumber}[1]{\gdef\@retractionnoticeidnumber{#1}}
+\def\@retractionnoticedoi{}  % DOI published retraction notice
+\newcommand{\retractionnoticedoi}[1]{\gdef\@retractionnoticedoi{#1}}
+\newcommand{\printretraction}{
+\ifthenelse{\equal{\@retractiondate}{\@empty}}{}{%
+  \RequirePackage{draftwatermark}
+  \SetWatermarkText{RETRACTED}
+  \SetWatermarkScale{0.8}
+  \fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[L]{
+    \footnotesize%
+    \st{\mbox{\textit{\journalname} \textbf{\@pubyear}, \textit\@pubvolume, }}%
+    \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
+      \st{\@articlenumber}%
+      }{%
+      \st{\@firstpage}\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{\st{--\mbox{\pageref*{LastPage}}}}%
+      }%
+    \\This paper has been retracted. A retraction notice was published on \@retractiondate{} %
+    in \textit{\@journalfull} \textbf{\@retractionnoticeyear}, \textit{\@retractionnoticevolume}, \@retractionnoticeidnumber. https://doi.org/\@retractionnoticedoi
+  }%
+  \fancyfoot[R]{
+    \footnotesize%
+    \st{{%
+    \href{https://doi.org/\@doinum}%
+    {https://doi.org/\@doinum}}}%
+  }%
+  \renewcommand{\footrulewidth}{0.4pt}%
+  }
+   }
+}
+
+%%%% Bibliography
+\renewcommand\bibname{References} % Backwards compatibility for book production
+\renewcommand\@biblabel[1]{#1.\hfill}
+\ExplSyntaxOn
+\IfDocumentMetadataTF
+ {
+   \renewenvironment{thebibliography}[1]
+     {%
+      \emergencystretch 2em
+      \isBookContribution
+        {}
+        {
+          \section[unnumbered,heading-decls=\raggedright \large\bfseries]{\@reftitle}%
+        }
+      \small
+      \list
+       [,counter=enumi
+        ,label-align=left
+        ,begin-vspace=0pt
+        ,para-vspace=0pt
+        ,begin-extra-vspace=0pt
+        ,item-vspace=0pt
+        ]%
+       {\arabic{enumi}}
+       {%
+        \labelsep=1.5mm
+        \isAPAorChicago
+          {%
+           \tl_if_empty:NTF\@externalbibliography
+            {\itemindent=-7.7mm}
+            {\itemindent=-3.3mm}%
+          }
+          {\itemindent=0\p@}
+        \settowidth\labelwidth{\footnotesize[#1]}%
+        \leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+       }
+     }
+     {\endlist}
+  }
+  {
+    \renewenvironment{thebibliography}[1]
+     {%
+      \emergencystretch 2em
+      \titleformat {\section} [block] {\raggedright \large\bfseries} {} {0pt} {}
+      \isBookContribution
+        {}
+        {% to remove the sectin from the TOC in books
+          \section{\@reftitle}%
+        }
+      \small
+      \list
+       {\arabic{enumi}}
+       {\def\makelabel##1{\hss{##1}}%
+        \topsep=0\p@
+        \parsep=0\p@
+        \partopsep=0\p@
+        \itemsep=0\p@
+        \labelsep=1.5mm
+        \isAPAorChicago
+          {%
+           \tl_if_empty:NTF\@externalbibliography
+             {\itemindent=-7.7mm}
+             {\itemindent=-3.3mm}%
+          }
+          {\itemindent=0\p@}
+        \settowidth\labelwidth{\footnotesize[#1]}%
+        \leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+        \usecounter{enumi}}
+     }
+     {\endlist}
+  }
+\ExplSyntaxOff
+%%%% Publisher's note
+\newcommand{\PublishersNote}{
+\null\par\noindent\small\textbf{Disclaimer/Publisher's Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+}
+
+%%%% Copyright info
+\newcommand\mdpi@cright@text@submit
+ {%
+   \textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum.
+           Submitted to {\em\journalname} for possible open access publication
+           under the terms and conditions of the %
+ }
+\newcommand\mdpi@cright@text@published
+ {%
+   \textbf{Copyright:} \copyright \ {\@copyrightyear} by the \@authornum.
+          \UseName{tl_if_empty:NF}
+             {\@societyowner}
+             {Published by MDPI on behalf of the {\@societyowner}.}
+           Licensee MDPI, Basel, Switzerland.
+           This article is an open access article distributed under the terms
+           and conditions of the
+ }
+\newcommand\mdpi@cright@text@ccbyncnd
+ {%
+   \href
+      {https://creativecommons.org/licenses/by-nc-nd/4.0/}
+      {Creative Commons Attribution (CC BY-NC-ND) license}.%
+ }
+
+\newcommand\mdpi@cright@text@ccby
+  {%
+    \href
+      {https://creativecommons.org/licenses/by/4.0/}
+      {Creative Commons Attribution (CC~BY) license}.%
+  }
+\ExplSyntaxOn
+\newcommand{\mdpi@text@copyright}
+  {
+    \raggedright
+    \tl_if_eq:NnF\@arttype{Supfile}
+     {
+      \tl_if_eq:NnTF\@status{submit}
+         {
+           \fontdimen2\font=1.2pt
+           \mdpi@cright@text@submit
+         }
+         {
+          \mdpi@cright@text@published
+         }
+      \use:c{ mdpi@cright@text@\@journallicence }
+      }
+   }
+\ExplSyntaxOff
+\let\twodigits\mdpi@mintwodigits
+\let\fivedigits\mdpi@minfourdigits
+
+\newcommand{\fig}[1]{Figure~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\sect}[1]{Section~\ref{#1}}
+\newcommand{\app}[1]{Appendix~\ref{#1}}
+\newcommand{\sche}[1]{Scheme~\ref{#1}}
+\newcommand{\cchart}[1]{Chart~\ref{#1}}
+\newcommand{\equ}[1]{\ref{#1}}
+\newcommand{\boxref}[1]{Box~\ref{#1}}
+\newcommand{\cgraph}[1]{Graph~\ref{#1}}
+
+%%%% For tables XML2PDF
+\RequirePackage{seqsplit} % Use for split table column
+  \newlength{\cellWidtha}
+  \newlength{\cellWidthb}
+  \newlength{\cellWidthc}
+  \newlength{\cellWidthd}
+  \newlength{\cellWidthe}
+  \newlength{\cellWidthf}
+  \newlength{\cellWidthg}
+  \newlength{\cellWidthh}
+  \newlength{\cellWidthi}
+  \newlength{\cellWidthj}
+  \newlength{\cellWidthk}
+  \newlength{\cellWidthl}
+  \newlength{\cellWidthm}
+  \newlength{\cellWidthn}
+  \newlength{\cellWidtho}
+  \newlength{\cellWidthp}
+  \newlength{\cellWidthq}
+  \newlength{\cellWidthr}
+  \newlength{\cellWidths}
+  \newlength{\cellWidtht}
+  \newlength{\cellWidthu}
+  \newlength{\cellWidthv}
+  \newlength{\cellWidthw}
+  \newlength{\cellWidthx}
+  \newlength{\cellWidthy}
+  \newlength{\cellWidthz}
+  \newlength{\cellWidthA}
+  \newlength{\cellWidthB}
+  \newlength{\cellWidthC}
+  \newlength{\cellWidthD}
+  \newlength{\cellWidthE}
+  \newlength{\cellWidthF}
+  \newlength{\cellWidthG}
+  \newlength{\cellWidthH}
+  \newlength{\cellWidthI}
+  \newlength{\cellWidthJ}
+  \newlength{\cellWidthK}
+  \newlength{\cellWidthL}
+  \newlength{\cellWidthM}
+  \newlength{\cellWidthN}
+  \newlength{\cellWidthO}
+  \newlength{\cellWidthP}
+  \newlength{\cellWidthQ}
+  \newlength{\cellWidthR}
+  \newlength{\cellWidthS}
+  \newlength{\cellWidthT}
+  \newlength{\cellWidthU}
+  \newlength{\cellWidthV}
+  \newlength{\cellWidthW}
+  \newlength{\cellWidthX}
+  \newlength{\cellWidthY}
+  \newlength{\cellWidthZ}
+ \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp} % For table column setting in XML2PDF
+
+\InputIfFileExists{Definitions/luatex-core.tex}{}{%
+  \PackageError{mdpi-luatex}{Missing Definitions/luatex-core.tex}{%
+    Install the MDPI Definitions bundle beside the main .tex file.}%
+}
+\ifmdpiunicodemaps
+  \InputIfFileExists{Definitions/unicode-luatex.tex}{}{%
+    \PackageError{mdpi-luatex}{Missing Definitions/unicode-luatex.tex}{%
+      Install the MDPI Definitions bundle beside the main .tex file.}%
+  }%
+\fi
+%% 
+%%
+%% End of file `mdpi-luatex.cls'.

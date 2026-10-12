@@ -20,13 +20,13 @@
 %%     v1.0 before Dr. Janine Daum
 %%     v2.0 when Dr. Janine Daum started (March 2013)
 %%     v3.0 layout change September 2015
-%%    v4.0 layout change December 2020
-%%      v5.0 layout change December 2024
-%%      v6.0 layout change December 2025
-%%      v7.0: switch to lualatex
+%%     v4.0 layout change December 2020
+%%     v5.0 layout change December 2024
+%%     v6.0 layout change December 2025
+%%     v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-02}
-\def\mdpiversion{v7.0l}
+\def\mdpidate{2026-10-12}
+\def\mdpiversion{v7.0m}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -68,16 +68,10 @@
 %<*class>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mdpi-luatex}[\mdpidate\ \mdpiversion\ MDPI paper class for lualatex]
-%    \end{macrocode}
-% If lualatex is not used we fall back to a (not tagging aware)
-% version of the older class under the name  mdpi. This allows to compare
-% the lualatex output with the pdflatex output.
-%    \begin{macrocode}
 \@ifundefined{directlua}
  {
-  \ClassWarning{mdpi-luatex}{This class requires lualatex, loading the class
-  mpd instead}
-  \LoadClassWithOptions{mdpi}
+  \ClassWarning{mdpi-luatex}{This class requires lualatex, loading the class mdpi-luatex instead}
+  \LoadClassWithOptions{Definitions/mdpi}
   \providecommand\@datepublished{}
   \providecommand\@Title{TITLE}
   \providecommand\@address{ADDRESS}
@@ -89,86 +83,49 @@
 \@ifundefined{directlua}
  {\endinput}
  {}
-%    \end{macrocode}
-% \subsection{Class loading}
-%    \begin{macrocode}
 \LoadClass[10pt,a4paper]{article}
-%    \end{macrocode}
-% \subsection{Packages}
-% Ensure that tagging commands are defined
-%    \begin{macrocode}
 \RequirePackage{tagpdf-base}
-%    \end{macrocode}
-%
-% \subsubsection{Tools}
-%    \begin{macrocode}
 \RequirePackage{calc}
 \RequirePackage{lastpage}
 \RequirePackage{ifthen}
-\RequirePackage{etoolbox} 
-\RequirePackage{refcount} 
-\RequirePackage{alphalph}
-%    \end{macrocode}
-% TODO: replace by lualineno
-%    \begin{macrocode}
+\RequirePackage{etoolbox} % For \AtBeginDocument etc.
+\RequirePackage{refcount} % To enable extracting the value of the counter "LastPage"
+\RequirePackage{alphalph} % Provide double letters numbers
 \RequirePackage[right,mathlines]{lineno}
-%    \end{macrocode}
-% Use in the biography environment. TODO: check if a proper list or display environment
-% can be used. 
-%    \begin{macrocode}
-\RequirePackage{pbox}
-%    \end{macrocode}
-%  To adjust the width of the column for the title part and figures/tables (adjustwidth environment)
-%    \begin{macrocode}
-\RequirePackage{changepage} % 
-%    \end{macrocode}
-% For XML2PDF use \cs{tag} for equation (??)
-%    \begin{macrocode}
-\RequirePackage{attrib} 
-%    \end{macrocode}
-%
-% \subsubsection{Text font setup}
-% We normalize the input to NFD to get more chars with accent working
-%    \begin{macrocode}
-\RequirePackage{inputnormalization}
+\RequirePackage{pbox} % For biography environment
+\RequirePackage{changepage} % To adjust the width of the column for the title part and figures/tables (adjustwidth environment)
+\RequirePackage{attrib} % For XML2PDF use \tag{} for equation
+\RequirePackage{inputnormalization} % Compatible with various Unicode characters
 \Uinputnormalization=0
 \AddToHook{begindocument/end}{\Uinputnormalization=2}
-%    \end{macrocode}
-% TODO: sans serif, typewriter?
-%    \begin{macrocode}
 \RequirePackage{fontspec}
-\setmainfont{texgyrepagella}
-\RequirePackage{microtype} % provides also \textls[]{}
-%    \end{macrocode}
-%
-% \subsection{Math font setup}
-% We load amssymb for e.g. \cs{square}
-%    \begin{macrocode}
+\setmainfont{texgyrepagella}[
+  Ligatures = TeX,
+  ItalicFont = texgyrepagella-italic.otf,
+  BoldItalicFont = texgyrepagella-bolditalic.otf,
+]
+%% FakeSlant fonts used only for upright punctuation inside \textit/\emph/\itshape.
+\newfontfamily\mdpi@slantfont{texgyrepagella-regular.otf}[
+  FakeSlant = 0.176,
+]
+\newfontfamily\mdpi@slantboldfont{texgyrepagella-bold.otf}[
+  FakeSlant = 0.176,
+]
+\RequirePackage{microtype} % For \textls; negative tracking shrinks spaces inside the argument — use \mbox{}
 \RequirePackage{amsmath}
-\RequirePackage{amssymb} 
-%    \end{macrocode}
-% And lua-unicode-math for the rest
-%    \begin{macrocode}
+\RequirePackage{amssymb}
 \RequirePackage{lua-unicode-math}
 \RequirePackage{lum-pagella}
-%    \end{macrocode}
-% Now define greek commands as replacement for the upgreek package: issue \#92
-% Various \cs{up}+lowercase greek:
-%    \begin{macrocode}
+\setmathfont[AutoFakeBold=1.125]{texgyrepagella-math}
+
 \ExplSyntaxOn
 \clist_map_inline:nn
  {alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,
   mu,nu,xi,omicron,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega}
  {\cs_new:cpn{up#1}{\symup{\use:c{#1}}}}
-%    \end{macrocode}
-% Various \cs{var}+uppercase greek:
-%    \begin{macrocode}
 \clist_map_inline:nn
  {Gamma,Delta,Theta,Lambda,Xi,Pi,Sigma,Upsilon,Phi,Psi,Omega}
  {\cs_set:cpn{var#1}{\use:c{mit#1}}}
-%    \end{macrocode}
-% and a few \cs{Up} commands
-%    \begin{macrocode}
 \providecommand\Upgamma{\symup{\Gamma}}
 \providecommand\Updelta{\symup{\Delta}}
 \providecommand\Uptheta{\symup{\Theta}}
@@ -181,109 +138,289 @@
 \providecommand\Uppsi{\symup{\Psi}}
 \providecommand\Upomega{\symup{\Omega}}
 \ExplSyntaxOff
-%    \end{macrocode}
 
-% \subsubsection{Symbol fonts}
-% Note that wasysym doesn't provide correct ToUnicode values for every char.
-% Every use must be check. https://github.com/latex3/tagging-project/issues/1140
-%    \begin{macrocode}
-\RequirePackage{wasysym} 
-\RequirePackage{pifont} 
-%    \end{macrocode}
-%
-% \subsubsection{Tables}
-% Tagging compatible packages:
-%    \begin{macrocode}
-\RequirePackage{array}
+\RequirePackage{wasysym} % Provide some special symbols male \male, female \female; math $\male$ $\female$
+\RequirePackage{pifont} % Provide some special symbols 
+\RequirePackage{array} % For table array
 \RequirePackage{tabularx}
-%    \end{macrocode}
-% For \cs{toprule} etc. in tables.
-%    \begin{macrocode}
-\RequirePackage{booktabs}
-%    \end{macrocode}
-% Partially tagging compatible:
-%    \begin{macrocode}
+\RequirePackage{booktabs} % For \toprule etc. in tables
 \RequirePackage{colortbl}
-%    \end{macrocode}
-% Currently tagging incompatible: TODO
-%    \begin{macrocode}
 \RequirePackage{multirow}
-%    \end{macrocode}
-%
-% \subsubsection{Math environments}
-%    \begin{macrocode}
 \RequirePackage{amsthm}
-%    \end{macrocode}
-%
-% \subsubsection{Graphics and color}
-%    \begin{macrocode}
-\RequirePackage{xcolor}  
-\RequirePackage{luacolor}
-%    \end{macrocode}
-% Define color for citations
-%    \begin{macrocode}
-\definecolor{bluecite}{HTML}{0875b7}
+\RequirePackage{xcolor} % To provide color for soul (for english editing), for adding cell color of table
+\RequirePackage{luacolor} % To support highlight color
+\definecolor{bluecite}{HTML}{0875b7} % Define color for citations
 \RequirePackage{graphicx}
-%    \end{macrocode}
-% Special graphic pathes:
-%    \begin{macrocode}
 \graphicspath{{./Definitions/}{./Figures/}{./Figure/}{./figures/}{./figure/}}
-%    \end{macrocode}
-% TODO: should tikz be loaded by default? It is not needed.
-%    \begin{macrocode}
-\RequirePackage{tikz}
-%    \end{macrocode}
-% To highlight text:
-%    \begin{macrocode}
-\RequirePackage[soul]{lua-ul}
-%    \end{macrocode}
-%
-% \subsubsection{Page style}
-%    \begin{macrocode}
+\RequirePackage{tikz} % For \foreach used for Orcid icon
+\RequirePackage[soul]{lua-ul} % To highlight text and provide \hl
+\newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
+\let\sout\st
+\let\uline\ul
+\newunderlinetype \mdpi@UulineRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%
+  \unitlength=0.2em\relax
+  \begin{picture}[artifact](1,2)(0,0)
+    \put(0,1){\line(1,0){1}}
+    \put(0,0){\line(1,0){1}}
+  \end{picture}%
+}}
+\newunderlinetype \mdpi@UwaveRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%
+  \unitlength=0.3ex\relax
+  \begin{picture}[artifact](4,0)(0,1)
+    \thicklines
+    \qbezier(0,0)(1,1)(2,0)
+    \qbezier(2,0)(3,-1)(4,0)
+  \end{picture}%
+}}
+\NewDocumentCommand\uuline{m}{{\mdpi@UulineRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
+\NewDocumentCommand\uwave {m}{{\mdpi@UwaveRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
+\newcommand{\highlighted}[2][yellow]{\mathchoice%
+  {\colorbox{#1}{$\displaystyle#2$}}%
+  {\colorbox{#1}{$\textstyle#2$}}%
+  {\colorbox{#1}{$\scriptstyle#2$}}%
+  {\colorbox{#1}{$\scriptscriptstyle#2$}}}%
+\DeclareRobustCommand{\sout}[1]{\st{#1}}
+\DeclareRobustCommand{\uline}[1]{\ul{#1}}
 \RequirePackage{fancyhdr}
-%    \end{macrocode}
-% \subsubsection{Headings}
-%    \begin{macrocode}
 \RequirePackage{indentfirst}
 \IfDocumentMetadataF{\RequirePackage{titlesec}}
-%    \end{macrocode}
-% \subsubsection{Lists}
-%    \begin{macrocode}
 \RequirePackage{enumitem}
-%    \end{macrocode}
-%
-% \subsubsection{Endnotes}
-% Partially compatible with tagging.
-%    \begin{macrocode}
-\RequirePackage{enotez} 
-%    \end{macrocode}
-%
-%  \subsubsection{Floats}
-%  Note: float is only partly compatible with tagging. subfig is incompatible!
-%  marginnote is used for the left column on the title page.
-%    \begin{macrocode}
-\RequirePackage{marginnote} 
+\RequirePackage{enotez} % For endnotes
+\RequirePackage{xstring}
+\RequirePackage{marginnote} % For left column
 \reversemarginpar % To have the left column on the left side
 \RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
 \RequirePackage{float}
-\RequirePackage[labelformat=simple]{subfig} 
-%    \end{macrocode}
-% Change subfigure label format:
-%    \begin{macrocode}
+\RequirePackage[labelformat=simple]{subfig}
 \renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} %
-%    \end{macrocode}
-%
-% \subsubsection{Bibliography}
-% \pkg{natbib} or \pkg{mdpi_apacite} are loaded 
-% below as they and their options depend on the journal type.
-% 
-% \subsection{Journal class options}
-% All journals (website name, full name, short name, DOI abbreviation, 
-% and ISSN + choice of continuous page numbers) are defined in an extra file
-% which sets up various class options.
-% 
-% We predefine the commands used in \texttt{journalnames.tex} for the case that a journal has incomplete data:
-%    \begin{macrocode}
+
+\directlua{
+  mdpi = mdpi or {}
+  mdpi.slant = mdpi.slant or {}
+  local S = mdpi.slant
+  S.it_id = S.it_id or nil
+  S.bi_id = S.bi_id or nil
+  local glyph_id = node.id("glyph")
+  local hlist_id = node.id("hlist")
+  local vlist_id = node.id("vlist")
+  local disc_id  = node.id("disc")
+  local function needs_slant(c)
+    if c >= 0x21 and c <= 0x2F then return true end
+    if c >= 0x3A and c <= 0x40 then return true end
+    if c >= 0x5B and c <= 0x60 then return true end
+    if c >= 0x7B and c <= 0x7E then return true end
+    if c >= 0x2000 and c <= 0x206F then return true end
+    if c >= 0x2E00 and c <= 0x2E7F then return true end
+    return false
+  end
+  local function italic_kind(fid)
+    local f = font.getfont(fid)
+    if not f then return nil end
+    local n = string.lower(table.concat({
+      tostring(f.filename or ""), "/",
+      tostring(f.fullpath or ""), "/",
+      tostring(f.name or ""), "/",
+      tostring(f.psname or ""), "/",
+      tostring(f.fullname or ""),
+    }))
+    if n:find("math", 1, true) then return nil end
+    if n:find("bolditalic", 1, true)
+        or (n:find("bold", 1, true) and n:find("italic", 1, true)) then
+      return "bi"
+    end
+    if n:find("italic", 1, true) then return "it" end
+    return nil
+  end
+  local function process_list(head)
+    for n in node.traverse(head) do
+      local id = n.id
+      if id == glyph_id then
+        if needs_slant(n.char) then
+          local kind = italic_kind(n.font)
+          if kind == "it" and S.it_id then
+            n.font = S.it_id
+          elseif kind == "bi" and S.bi_id then
+            n.font = S.bi_id
+          end
+        end
+      elseif id == hlist_id or id == vlist_id then
+        if n.head then process_list(n.head) end
+      elseif id == disc_id then
+        if n.pre then process_list(n.pre) end
+        if n.post then process_list(n.post) end
+        if n.replace then process_list(n.replace) end
+      end
+    end
+    return head
+  end
+  S.process = function(head)
+    return process_list(head)
+  end
+  luatexbase.add_to_callback("pre_linebreak_filter", S.process, "mdpi.slant.punct")
+  luatexbase.add_to_callback("hpack_filter", S.process, "mdpi.slant.punct.hpack")
+}
+\AtBeginDocument{%
+  \begingroup\mdpi@slantfont\directlua{mdpi.slant.it_id = font.current()}\endgroup
+  \begingroup\mdpi@slantboldfont\directlua{mdpi.slant.bi_id = font.current()}\endgroup
+}
+
+%% Matches Definitions/mdpi.cls \slantbox; used e.g. for italic-looking \nabla (Pagella Math upright).
+\protected\def\pdfsave{\pdfextension save\relax}
+\protected\def\pdfrestore{\pdfextension restore\relax}
+\protected\def\pdfsetmatrix{\pdfextension setmatrix}
+\newsavebox\foobox
+\newcommand{\slantbox}[2][.2]{\mbox{%
+  \sbox{\foobox}{#2}%
+  \hskip\wd\foobox
+  \pdfsave
+  \pdfsetmatrix{1 0 #1 1}%
+  \llap{\usebox{\foobox}}%
+  \pdfrestore
+}}
+
+%%% Bold math + digit font (lua-unicode-math / Pagella Math)
+\ExplSyntaxOn
+\__l_uni_math_provide_mathstyle_id:n { mdpibm }
+\__l_uni_math_set_mathstyle_mappings:cccccc
+  { c__l_uni_math_attribute_symmdpibm_int }
+  { c__l_uni_math_attribute_symbfit_int }
+  { c__l_uni_math_attribute_symbfit_int }
+  { c__l_uni_math_attribute_symbfup_int }
+  { c__l_uni_math_attribute_symbfit_int }
+  { c__l_uni_math_attribute_symup_int }
+\bool_new:N \l__mdpi_boldmath_bool
+\tl_new:N \g__mdpi_mathversion_before_bold_tl
+\tl_new:N \l__mdpi_mathversion_save_tl
+\int_new:N \g__mdpi_boldmath_depth_int
+\cs_new_protected:Npn \__mdpi_boldmath_group_end:
+  {
+    \int_compare:nNnT { \g__mdpi_boldmath_depth_int } > { 0 }
+      { \int_gdecr:N \g__mdpi_boldmath_depth_int }
+    \int_compare:nNnT { \g__mdpi_boldmath_depth_int } = { 0 }
+      {
+        \bool_gset_false:N \l__mdpi_boldmath_bool
+        \tl_if_empty:NTF \g__mdpi_mathversion_before_bold_tl
+          { \mathversion { normal } }
+          {
+            \exp_args:NV \mathversion \g__mdpi_mathversion_before_bold_tl
+            \tl_gclear:N \g__mdpi_mathversion_before_bold_tl
+          }
+      }
+  }
+\cs_new_protected:Npn \__mdpi_boldmath_apply:
+  {
+    \bool_if:NT \l__mdpi_boldmath_bool
+      { \mathfamattr = \c__l_uni_math_attribute_symmdpibm_int \scan_stop: }
+  }
+\cs_new_protected:Npn \__mdpi_upgreek_letter:n #1
+  {
+    \bool_lazy_or:nnTF
+      {
+        \int_compare_p:nNn
+          { \int_use:N \mathfamattr } =
+          { \c__l_uni_math_attribute_symbf_int }
+      }
+      { \bool_if_p:N \l__mdpi_boldmath_bool }
+      { \symbfup {#1} }
+      { \symup {#1} }
+  }
+\cs_new_protected:Npn \__mdpi_mathbm:n #1
+  {
+    \text { \boldmath $ \mathsurround \z@ #1 $ }
+  }
+\cs_new_protected:Npn \__mdpi_mathbf:n #1
+  {
+    \text
+      {
+        \tl_set:Nx \l__mdpi_mathversion_save_tl { \use:c { math@version } }
+        \mathversion { bold }
+        $ \symbf { \mathsurround \z@ #1 } $
+        \exp_args:NV \mathversion \l__mdpi_mathversion_save_tl
+      }
+  }
+\tl_new:N \g__mdpi_digit_family_tl
+\newfontfamily \mdpi@digitfont { texgyrepagella }
+\AtBeginDocument
+  {
+    %% Pagella Math missing symbols: luatex-core.tex; MUST run before \pm / \boldmath below.
+    \__mdpi_install_mathsym_fallbacks:
+    \NewCommandCopy { \mdpi@origpm } { \pm }
+    \renewcommand { \pm } { \mathbin { \raisebox { 1.125pt } { \hbox { $ \mathsurround \z@ \mdpi@origpm $ } } } }
+    % \boldsymbol/\bm: same stack as \boldmath (mdpibm + mathversion bold), not \symbfit alone.
+    \RenewDocumentCommand { \boldsymbol } { m } { \__mdpi_mathbm:n {#1} }
+    \DeclareDocumentCommand { \bm } { m } { \__mdpi_mathbm:n {#1} }
+    % \mathcal/\mathscr set mathfamattr=cal and override mdpibm; under \boldmath use bold script.
+    \NewCommandCopy { \mdpi@orig@mathcal } { \mathcal }
+    \RenewDocumentCommand { \mathcal } { m }
+      {
+        \bool_if:NTF \l__mdpi_boldmath_bool
+          { \symbfcal {#1} }
+          { \mdpi@orig@mathcal {#1} }
+      }
+    \cs_if_exist:NT \mathscr
+      {
+        \NewCommandCopy { \mdpi@orig@mathscr } { \mathscr }
+        \RenewDocumentCommand { \mathscr } { m }
+          {
+            \bool_if:NTF \l__mdpi_boldmath_bool
+              { \symbfcal {#1} }
+              { \mdpi@orig@mathscr {#1} }
+          }
+      }
+    \DeclareRobustCommand { \boldmath }
+      {
+        \@nomath \boldmath
+        \bool_gset_true:N \l__mdpi_boldmath_bool
+        \int_compare:nNnT { \g__mdpi_boldmath_depth_int } = { 0 }
+          {
+            \tl_gset:Nx \g__mdpi_mathversion_before_bold_tl { \use:c { math@version } }
+            \mathversion { bold }
+          }
+        \int_gincr:N \g__mdpi_boldmath_depth_int
+        \group_insert_after:N \__mdpi_boldmath_group_end:
+      }
+    \DeclareRobustCommand { \unboldmath }
+      {
+        \@nomath \unboldmath
+        \int_gzero:N \g__mdpi_boldmath_depth_int
+        \bool_gset_false:N \l__mdpi_boldmath_bool
+        \tl_if_empty:NTF \g__mdpi_mathversion_before_bold_tl
+          { \mathversion { normal } }
+          {
+            \exp_args:NV \mathversion \g__mdpi_mathversion_before_bold_tl
+            \tl_gclear:N \g__mdpi_mathversion_before_bold_tl
+          }
+      }
+    \everymath \exp_after:wN
+      { \exp_after:wN \__mdpi_boldmath_apply: \the \everymath }
+    \everydisplay \exp_after:wN
+      { \exp_after:wN \__mdpi_boldmath_apply: \the \everydisplay }
+    \begingroup \mdpi@digitfont
+      \tl_gset:Nx \g__mdpi_digit_family_tl { \f@family }
+    \endgroup
+    \DeclareSymbolFont { mdpidigits } { TU } { \g__mdpi_digit_family_tl } { m } { n }
+    \SetSymbolFont { mdpidigits } { bold } { TU } { \g__mdpi_digit_family_tl } { b } { n }
+    \DeclareMathSymbol { 0 } { \mathord } { mdpidigits } { `0 }
+    \DeclareMathSymbol { 1 } { \mathord } { mdpidigits } { `1 }
+    \DeclareMathSymbol { 2 } { \mathord } { mdpidigits } { `2 }
+    \DeclareMathSymbol { 3 } { \mathord } { mdpidigits } { `3 }
+    \DeclareMathSymbol { 4 } { \mathord } { mdpidigits } { `4 }
+    \DeclareMathSymbol { 5 } { \mathord } { mdpidigits } { `5 }
+    \DeclareMathSymbol { 6 } { \mathord } { mdpidigits } { `6 }
+    \DeclareMathSymbol { 7 } { \mathord } { mdpidigits } { `7 }
+    \DeclareMathSymbol { 8 } { \mathord } { mdpidigits } { `8 }
+    \DeclareMathSymbol { 9 } { \mathord } { mdpidigits } { `9 }
+    % \mathbf: \symbf for upright bold symbols; digits 0–9 need \mathversion{bold}
+    % (mdpidigits b/n) inside the \text{…} wrapper (cannot call \mathversion in math mode).
+    \RenewDocumentCommand { \mathbf } { m } { \__mdpi_mathbf:n {#1} }
+  }
+\ExplSyntaxOff
+
+%% OPTIONS
+\def\@continuouspages{}
+\newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
+
+%% To choose the journal
 \gdef\@journal{notspecified}
 \gdef\@journalfull{Journal Not Specified}
 \gdef\@journalshort{Journal Not Specified}
@@ -291,139 +428,124 @@
 \gdef\@ISSN{}
 \gdef\@societyowner{}
 \gdef\@journaltype{ACS}
-%    \end{macrocode}
-% And now load the file. 
-%    \begin{macrocode}
 \input{Definitions/journalnames}
-%    \end{macrocode}
-%
-% This option issues a warning.
-% TODO: is this actually used somewhere? The default option is \texttt{unspecified}.
-%    \begin{macrocode}
-\DeclareOption{journal}
-  {\ClassWarning{mdpi}{%
-    You used an invalid journal name or you have not specified the journal. 
-    The first option of the documentclass command specifies the journal. 
-    The word 'journal' should be replaced by one of the journal names 
-    specified in template.tex (in the comment 'Choose between the following MDPI journal').}
-  }
-%    \end{macrocode}
-%
-% \subsection{Other class options}
-% Options to choose the type of manuscript (alphabetical):
-%    \begin{macrocode}
-\DeclareOption{abstract}    {\gdef\@arttype{Abstract}}
-\DeclareOption{addendum}    {\gdef\@arttype{Addendum}}
-\DeclareOption{article}     {\gdef\@arttype{Article}}
-\DeclareOption{benchmark}   {\gdef\@arttype{Benchmark}}
-\DeclareOption{book}        {\gdef\@arttype{Book}}
-\DeclareOption{bookreview}  {\gdef\@arttype{Book Review}}
+\DeclareOption{journal}{\ClassWarning{mdpi}{You used an invalid journal name or you have not specified the journal. The first option of the documentclass command specifies the journal. The word 'journal' should be replaced by one of the journal names specified in template.tex (in the comment 'Choose between the following MDPI journal').}}
+
+%% To choose the type of manuscript
+\DeclareOption{abstract}{\gdef\@arttype{Abstract}}
+\DeclareOption{addendum}{\gdef\@arttype{Addendum}}
+\DeclareOption{article}{\gdef\@arttype{Article}}
+\DeclareOption{benchmark}{\gdef\@arttype{Benchmark}}
+\DeclareOption{book}{\gdef\@arttype{Book}}
+\DeclareOption{bookreview}{\gdef\@arttype{Book Review}}
 \DeclareOption{briefcommunication}{\gdef\@arttype{Brief Communication}}
-\DeclareOption{briefreport} {\gdef\@arttype{Brief Report}}
-\DeclareOption{casereport}  {\gdef\@arttype{Case Report}}
-\DeclareOption{changes}     {\gdef\@arttype{Changes}}
+\DeclareOption{briefreport}{\gdef\@arttype{Brief Report}}
+\DeclareOption{casereport}{\gdef\@arttype{Case Report}}
+\DeclareOption{changes}{\gdef\@arttype{Changes}}
 \DeclareOption{clinicopathologicalchallenge}{\gdef\@arttype{Clinicopathological Challenge}}
-\DeclareOption{comment}     {\gdef\@arttype{Comment}}
-\DeclareOption{commentary}  {\gdef\@arttype{Commentary}}
+\DeclareOption{comment}{\gdef\@arttype{Comment}}
+\DeclareOption{commentary}{\gdef\@arttype{Commentary}}
 \DeclareOption{communication}{\gdef\@arttype{Communication}}
 \DeclareOption{conceptpaper}{\gdef\@arttype{Concept Paper}}
 \DeclareOption{conferenceproceedings}{\gdef\@arttype{Proceedings}}
-\DeclareOption{correction}  {\gdef\@arttype{Correction}}
 \DeclareOption{conferencereport}{\gdef\@arttype{Conference Report}}
-\DeclareOption{creative}    {\gdef\@arttype{Creative}}
+\DeclareOption{correction}{\gdef\@arttype{Correction}}
+\DeclareOption{creative}{\gdef\@arttype{Creative}}
 \DeclareOption{datadescriptor}{\gdef\@arttype{Data Descriptor}}
-\DeclareOption{discussion}  {\gdef\@arttype{Discussion}}
-\DeclareOption{entry}       {\gdef\@arttype{Entry}}
+\DeclareOption{discussion}{\gdef\@arttype{Discussion}}
+\DeclareOption{editorial}{\gdef\@arttype{Editorial}}
+\DeclareOption{entry}{\gdef\@arttype{Entry}}
+\DeclareOption{erratum}{\gdef\@arttype{Erratum}}
+\DeclareOption{essay}{\gdef\@arttype{Essay}}
 \DeclareOption{expressionofconcern}{\gdef\@arttype{Expression of Concern}}
 \DeclareOption{extendedabstract}{\gdef\@arttype{Extended Abstract}}
-\DeclareOption{editorial}   {\gdef\@arttype{Editorial}}
-\DeclareOption{essay}       {\gdef\@arttype{Essay}}
-\DeclareOption{erratum}     {\gdef\@arttype{Erratum}}
-\DeclareOption{fieldguide}  {\gdef\@arttype{Field Guide}}
+\DeclareOption{fieldguide}{\gdef\@arttype{Field Guide}}
 \DeclareOption{giantsinurology}{\gdef\@arttype{Giants in Urology}}
-\DeclareOption{guidelines}  {\gdef\@arttype{Guidelines}}
-\DeclareOption{hypothesis}  {\gdef\@arttype{Hypothesis}}
+\DeclareOption{guidelines}{\gdef\@arttype{Guidelines}}
+\DeclareOption{hypothesis}{\gdef\@arttype{Hypothesis}}
 \DeclareOption{interestingimages}{\gdef\@arttype{Interesting Images}}
-\DeclareOption{letter}      {\gdef\@arttype{Letter}}
+\DeclareOption{letter}{\gdef\@arttype{Letter}}
 \DeclareOption{meetingreport}{\gdef\@arttype{Meeting Report}}
-\DeclareOption{monograph}   {\gdef\@arttype{Monograph}}
+\DeclareOption{monograph}{\gdef\@arttype{Monograph}}
 \DeclareOption{newbookreceived}{\gdef\@arttype{New Book Received}}
-\DeclareOption{obituary}    {\gdef\@arttype{Obituary}}
-\DeclareOption{opinion}     {\gdef\@arttype{Opinion}}
+\DeclareOption{obituary}{\gdef\@arttype{Obituary}}
+\DeclareOption{opinion}{\gdef\@arttype{Opinion}}
 \DeclareOption{patentsummary}{\gdef\@arttype{Patent Summary}}
-\DeclareOption{perspective} {\gdef\@arttype{Perspective}}
+\DeclareOption{perspective}{\gdef\@arttype{Perspective}}
 \DeclareOption{proceedingpaper}{\gdef\@arttype{Proceeding Paper}}
 \DeclareOption{projectreport}{\gdef\@arttype{Project Report}}
-\DeclareOption{protocol}    {\gdef\@arttype{Protocol}}
+\DeclareOption{protocol}{\gdef\@arttype{Protocol}}
 \DeclareOption{registeredreport}{\gdef\@arttype{Registered Report}}
-\DeclareOption{reply}       {\gdef\@arttype{Reply}}
-\DeclareOption{retraction}  {\gdef\@arttype{Retraction}}
-\DeclareOption{review}      {\gdef\@arttype{Review}}
-\DeclareOption{shortnote}   {\gdef\@arttype{Short Note}}
+\DeclareOption{reply}{\gdef\@arttype{Reply}}
+\DeclareOption{retraction}{\gdef\@arttype{Retraction}}
+\DeclareOption{review}{\gdef\@arttype{Review}}
+\DeclareOption{shortnote}{\gdef\@arttype{Short Note}}
 \DeclareOption{studyprotocol}{\gdef\@arttype{Study Protocol}}
-\DeclareOption{supfile}     {\gdef\@arttype{Supfile}}
+\DeclareOption{supfile}{\gdef\@arttype{Supfile}}
 \DeclareOption{systematicreview}{\gdef\@arttype{Systematic Review}}
 \DeclareOption{technicalnote}{\gdef\@arttype{Technical Note}}
-\DeclareOption{tutorial}    {\gdef\@arttype{Tutorial}}
+\DeclareOption{tutorial}{\gdef\@arttype{Tutorial}}
 \DeclareOption{urologyaroundtheworld}{\gdef\@arttype{Urology around the World}}
-\DeclareOption{viewpoint}   {\gdef\@arttype{Viewpoint}}
-%    \end{macrocode}
-% 
-% Options to choose the status of the manuscript
-%    \begin{macrocode}
+\DeclareOption{viewpoint}{\gdef\@arttype{Viewpoint}}
+
+%% To choose the status of the manuscript
 \DeclareOption{submit}{\gdef\@status{submit}}
 \DeclareOption{accept}{\gdef\@status{accept}}
-%    \end{macrocode}
-% To choose the whether there is one or more authors.
-% TODO: the code should count the authors. 
-%    \begin{macrocode}
-\DeclareOption{oneauthor}  {\gdef\@authornum{author}}
+
+%% To choose the whether there is one or more authors
+\DeclareOption{oneauthor}{\gdef\@authornum{author}}
 \DeclareOption{moreauthors}{\gdef\@authornum{authors}}
-%    \end{macrocode}
-% Pass the unknown options to the article class:
-%    \begin{macrocode}
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-%    \end{macrocode}
-% Default options:
-%    \begin{macrocode}
-\ExecuteOptions{notspecified,10pt,a4paper,article,submit,oneauthor}
-%    \end{macrocode}
-% Process the class options:
-%    \begin{macrocode}
-\ProcessOptions\relax
-%    \end{macrocode}
-%
-% \subsection{Extend journal data}
-% These data should better be set in journalnames, but for now we set them here.
-%    \begin{macrocode}
+\newif\ifmdpiunicodemaps
+\mdpiunicodemapsfalse
+\DeclareOption{unicode}{\mdpiunicodemapstrue}
+
+%% Optional babel/fonts for Hebrew, Arabic, Russian, CJK (off by default)
+%%   \documentclass[...,extralangs]{Definitions/mdpi-luatex}
+%% or in the preamble before \begin{document}: \MDPIextralangs
+\newif\ifmdpiextralangs
+\mdpiextralangsfalse
+\DeclareOption{extralangs}{\mdpiextralangstrue}
 \ExplSyntaxOn
-%    \end{macrocode}
-% Some journals have a longer DOI
-%    \begin{macrocode}
+\cs_new_protected:Npn \mdpi_load_extralangs:
+ {
+  \ifmdpiextralangs
+    \InputIfFileExists { Definitions/mdpi-extra-langs.tex } { } {
+      \PackageError { mdpi-luatex } { Missing~Definitions/mdpi-extra-langs.tex }
+       { Install~the~MDPI~Definitions~bundle~beside~the~main~.tex~file. }
+    }
+    \mdpi_setup_extralangs:
+  \fi
+ }
+\newcommand \mdpiLoadExtralangs
+ { \ExplSyntaxOn \mdpi_load_extralangs: \ExplSyntaxOff }
+\ExplSyntaxOff
+\newcommand{\MDPIextralangs}{\mdpiextralangstrue}
+
+%% Add the chosen options to the class
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+
+%% Defaults
+\ExecuteOptions{notspecified,10pt,a4paper,article,submit,oneauthor}
+
+%% Process options
+\ProcessOptions\relax
+
+\ExplSyntaxOn
 \newcommand\@journaldoinum{long}
 \clist_map_inline:nn{molbank,chemproc,engproc,eesp,materproc,blsf,msf,psf,csmf}
  {\tl_if_eq:NnT\@journal{#1}{\def\@journaldoinum{short}}}
-%    \end{macrocode}
-% Some journals have a different licence
-%    \begin{macrocode}
 \newcommand\@journallicence{ccby}
 \clist_map_inline:nn{ijtpp}
- {\tl_if_eq:NnT\@journal{#1}{\def\@journallicence{ccbyncnd}}} 
-%    \end{macrocode}
-% Some journals have a different MDPI logo if \cs{IsAssociation} has not been set.
-%    \begin{macrocode}
-\newcommand\@journalmdpilogo{logo-mdpi} 
-\newcommand\@journallogo{\@journal-logo} 
+ {\tl_if_eq:NnT\@journal{#1}{\def\@journallicence{ccbyncnd}}}
+\newcommand\@journalmdpilogo{logo-mdpi}
+\newcommand\@journallogo{\@journal-logo}
 \clist_map_inline:nn{ijom,siuj,scipharm}
  {
    \tl_if_eq:NnT\@journal{#1}
      {
-       \gdef\@journalmdpilogo{logo-mdpi-#1}       
+       \gdef\@journalmdpilogo{logo-mdpi-#1}
      }
- } 
-%    \end{macrocode}
-% Some journal set only a short publishing date in \cs{leftcolDates}
-%    \begin{macrocode}
+ }
 \newcommand\@journaldatesblock{long}
 \clist_map_inline:nn{proceedings,chemproc,engproc,eesp,materproc,blsf,msf,psf,csmf}
  {
@@ -431,26 +553,7 @@
    { \def\@journaldatesblock{short} }
  }
 \ExplSyntaxOff
-%    \end{macrocode}
-%
-% \subsection{Temporary patches for taggings}
-% 
-% \subsection{Fontsizes}
-% The following font size are inherited from article
-% \begin{tabular}{lll}
-% normalsize   & 10pt & 12pt \\
-% small        & 9pt  & 11pt \\
-% footnotesize & 8pt  & 9.5pt\\
-% scriptsize   & 7pt  & 8pt\\
-% large        & 12pt & 14pt \\
-% Large        & 14pt & 18pt \\
-% LARGE        & 17pt & 22pt
-% \end{tabular}
-%
-% We increase the \cs{baselineskip} of the font sizes to compensate the
-% \cs{linespread} of 1.165 was used previously:
-%
-%    \begin{macrocode}
+
 \DeclareRobustCommand\normalsize{%
    \@setfontsize\normalsize{10pt}{13.98pt}%
    \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
@@ -459,9 +562,6 @@
    \belowdisplayskip \abovedisplayskip
    \let\@listi\@listI}
 \normalsize
-%    \end{macrocode}
-%
-%    \begin{macrocode}
 \DeclareRobustCommand\small{%
    \@setfontsize\small{9pt}{12.815pt}%
    \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
@@ -473,9 +573,6 @@
                \itemsep \parsep}%
    \belowdisplayskip \abovedisplayskip
 }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
 \DeclareRobustCommand\footnotesize{%
    \@setfontsize\footnotesize\@viiipt{10.485pt}%
    \abovedisplayskip 6\p@ \@plus2\p@ \@minus4\p@
@@ -487,78 +584,37 @@
                \itemsep \parsep}%
    \belowdisplayskip \abovedisplayskip
 }
-%    \end{macrocode}
-%    \begin{macrocode}
 \DeclareRobustCommand\scriptsize{\@setfontsize\scriptsize{7pt}{9.32pt}}
 \DeclareRobustCommand\tiny{\@setfontsize\tiny\@vpt\@viipt}
 \DeclareRobustCommand\large{\@setfontsize\large\@xiipt{16.32pt}}
 \DeclareRobustCommand\Large{\@setfontsize\Large\@xivpt{20.97pt}}
 \DeclareRobustCommand\huge{\@setfontsize\huge\@xxpt{29.125pt}}
 \DeclareRobustCommand\Huge{\@setfontsize\Huge\@xxvpt{34.95}}
-%    \end{macrocode}
-%
-% The exception is  \cs{LARGE} where an 18pt font was use.
-% The baselineskip is rather small. TODO: check.
-%    \begin{macrocode}
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
-%    \end{macrocode}
-%
-% \subsection{Highlighting}
-% A simple command to put something in a yellow box:
-%    \begin{macrocode}
-\newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
-%    \end{macrocode}
-% Map the lua-ul/soul names to ulem names. Note: these commands are 
-% not yet properly tagged, the pathes appear in the tag tree.
-%    \begin{macrocode}
-\let\sout\st
-\let\uline\ul
-%    \end{macrocode}
-% Define \cs{uuline} and \cs{uwave} with luamml. We make the decorations
-% artifacts for now. Adding structure is not trivial as they can go over
-% a paragraph break. 
-%    \begin{macrocode}
-\newunderlinetype \mdpi@UulineRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%
-  \unitlength=0.2em\relax
-  \begin{picture}[artifact](1,2)(0,0)
-    \put(0,1){\line(1,0){1}}
-    \put(0,0){\line(1,0){1}}
-  \end{picture}%  
-}}
-\newunderlinetype \mdpi@UwaveRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%  
-  \unitlength=0.3ex\relax
-  \begin{picture}[artifact](4,0)(0,1)
-    \thicklines
-    \qbezier(0,0)(1,1)(2,0)
-    \qbezier(2,0)(3,-1)(4,0)
-  \end{picture}%
-}}
-\NewDocumentCommand\uuline{m}{{\mdpi@UulineRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
-\NewDocumentCommand\uwave {m}{{\mdpi@UwaveRule\ResumeTagging{\leaders}\tagmcbegin{}#1}}
-%    \end{macrocode}
-%
-% \subsection{Math environments}
-% The theoremstyle declaration:
-%    \begin{macrocode}
+%% MORE DECLARATIONS
+
+\newcommand{\isPreprints}{%
+  \ifthenelse{\equal{\@journal}{preprints}%
+  \OR \equal{\@journal}{preprintschicago}%
+  \OR \equal{\@journal}{preprintsapa}%
+  }%
+}
+
+%%%%% Maths environments
 \newtheoremstyle{mdpi}% name
-                {12pt}% space above
-                {12pt}% space below
-                {\itshape}% body font
-                {}% indent amount 1
-                {\bfseries}% theorem head font
-                {.}% punctuation after theorem head
-                {.5em}% space after theorem head
-                {}% theorem head spec (can be left empty, meaning `normal')
-%    \end{macrocode}
-% The proof environment:
-%    \begin{macrocode}
+{12pt}% space above
+{12pt}% space below
+{\itshape}% body font
+{}% indent amount 1
+{\bfseries}% theorem head font
+{.}% punctuation after theorem head
+{.5em}% space after theorem head
+{}% theorem head spec (can be left empty, meaning `normal')
+
 \IfDocumentMetadataTF
  {
    \EditInstance{captionedtext}{proof}{caption-decls = \bfseries}
-%    \end{macrocode}
-%  Redefine \cs{qed}, see https://github.com/MDPI-AG/luatex-template/issues/83 
-%    \begin{macrocode}
-   \renewcommand{\qed}{\unskip\nobreak\quad\qedsymbol}
+   \renewcommand{\qed}{\unskip\nobreak\quad\qedsymbol} %% This places the symbol right after the text.
  }
  {
     \renewenvironment{proof}[1][\proofname]{\par %% \proofname allows to have "Proof of my theorem"
@@ -573,93 +629,70 @@
     }
  }
 
-%    \end{macrocode}
-%
-% Theoremlike environments in style \texttt{mdpi}
-%    \begin{macrocode}
-\theoremstyle{mdpi}
-\newcounter{theorem}
-\newtheorem{Theorem}[theorem]{Theorem}
+ \theoremstyle{mdpi}
+ \newcounter{theorem}
+ \setcounter{theorem}{0}
+ \newtheorem{Theorem}[theorem]{Theorem}
 
-\newcounter{lemma}
-\newtheorem{Lemma}[lemma]{Lemma}
+ \newcounter{lemma}
+ \setcounter{lemma}{0}
+ \newtheorem{Lemma}[lemma]{Lemma}
 
-\newcounter{corollary}
-\newtheorem{Corollary}[corollary]{Corollary}
+ \newcounter{corollary}
+ \setcounter{corollary}{0}
+ \newtheorem{Corollary}[corollary]{Corollary}
 
-\newcounter{proposition}
-\newtheorem{Proposition}[proposition]{Proposition}
+ \newcounter{proposition}
+ \setcounter{proposition}{0}
+ \newtheorem{Proposition}[proposition]{Proposition}
 
-\newcounter{characterization}
-\newtheorem{Characterization}[characterization]{Characterization}
+ \newcounter{characterization}
+ \setcounter{characterization}{0}
+ \newtheorem{Characterization}[characterization]{Characterization}
 
-\newcounter{property}
-\newtheorem{Property}[property]{Property}
+ \newcounter{property}
+ \setcounter{property}{0}
+ \newtheorem{Property}[property]{Property}
 
-\newcounter{problem}
-\newtheorem{Problem}[problem]{Problem}
+ \newcounter{problem}
+ \setcounter{problem}{0}
+ \newtheorem{Problem}[problem]{Problem}
 
-\newcounter{example}
-\newtheorem{Example}[example]{Example}
+ \newcounter{example}
+ \setcounter{example}{0}
+ \newtheorem{Example}[example]{Example}
 
-\newcounter{remark}
-\newtheorem{Remark}[remark]{Remark}
+ \newcounter{remark}
+ \setcounter{remark}{0}
+ \newtheorem{Remark}[remark]{Remark}
 
-\newcounter{definition}
-\newtheorem{Definition}[definition]{Definition}
+ \newcounter{definition}
+ \setcounter{definition}{0}
+ \newtheorem{Definition}[definition]{Definition}
 
-\newcounter{hypothesis}
-\newtheorem{Hypothesis}[hypothesis]{Hypothesis}
+ \newcounter{hypothesis}
+ \setcounter{hypothesis}{0}
+ \newtheorem{Hypothesis}[hypothesis]{Hypothesis}
 
-\newcounter{notation}
-\newtheorem{Notation}[notation]{Notation}
+ \newcounter{notation}
+ \setcounter{notation}{0}
+ \newtheorem{Notation}[notation]{Notation}
 
-\newcounter{assumption}
-\newtheorem{Assumption}[assumption]{Assumption}
+ \newcounter{assumption}
+ \setcounter{assumption}{0}
+ \newtheorem{Assumption}[assumption]{Assumption}
 
-\newcounter{algorithm}
-\newtheorem{Algorithm}[algorithm]{Algorithm}
-%    \end{macrocode}
-%
-% Define left/right mark in math environment
-%    \begin{macrocode}
+ \newcounter{algorithm}
+ \setcounter{algorithm}{0}
+ \newtheorem{Algorithm}[algorithm]{Algorithm}
+
+ % Define left/right mark in math environment
 \let\originalleft\left
 \let\originalright\right
 \renewcommand{\left}{\mathopen{}\mathclose\bgroup\originalleft}
 \renewcommand{\right}{\aftergroup\egroup\originalright}
-%    \end{macrocode}
-%
-%
-% \subsection{Journal conditionals}
-% The command \cs{@journaltype} used in the conditionals
-% is defined in \texttt{journalnames.tex} and is by default 
-% (if no journal is specified and the journal name is \texttt{notspecified})
-% \texttt{ACS}.
-%
-% The command \cs{@arttype} is defined through the class options and
-% is by default \texttt{Article}.
-%
-% \subsubsection{Preprints}
-% This tests if the journal is a preprint type.
-% \begin{macro}{\isPreprints}
-%    \begin{macrocode}
+
 \ExplSyntaxOn
-\newcommand{\isPreprints}
- {
-  \str_case:onTF {\@journal}
-   {
-    {preprints}{}
-    {preprintschicago}{}
-    {preprintsapa}{}
-   }
- }
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsubsection{Books}
-% This tests if this a Book or a Monograph
-% \begin{macro}{\isBookContribution}
-%    \begin{macrocode}
 \newcommand\isBookContribution
  {
    \str_case:onTF {\@arttype}
@@ -668,24 +701,10 @@
       {Monograph}{}
     }
  }
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsubsection{Monographs}
-% \begin{macro}{\isMonograph}
-% This tests if this is a monograph
-%    \begin{macrocode}
 \newcommand\isMonograph
  {
   \str_if_eq:onTF {\@arttype} {Monograph}
  }
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsubsection{Chicago style journals}
-% A test for journals that use the \texttt{mdpi\_chicago} bibliography style.
-% \begin{macro}{\isChicagoStyle}
-%    \begin{macrocode}
 \prg_new_conditional:Npnn \__mdpi_is_journal_chicagostyle: {TF,p}
  {
    \str_if_eq:onTF {\@journaltype} {Chicago}
@@ -693,15 +712,6 @@
     {\prg_return_false:}
  }
 \newcommand\isChicagoStyle{\__mdpi_is_journal_chicagostyle:TF}
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsubsection{APA style journals}
-% Journals in \emph{APAstyle} use the package \pkg{mdpi_apacite} and the bibliography style
-% \texttt{mdpi\_apacite}.
-%
-% \begin{macro}{\isAPAStyle}
-%    \begin{macrocode}
 \prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF,p}
  {
   \str_if_eq:onTF {\@journaltype} {APA}
@@ -709,17 +719,9 @@
    {\prg_return_false:}
  }
 \newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
-%    \end{macrocode}
-% \end{macro}
-% 
-% \subsubsection{APA or Chicago style journals}
-%
-% A combination of both tests: true if a journal is either APA or a Chicago style journal.
-% \begin{macro}{\isAPAorChicago,\isAPAandChicago}
-%    \begin{macrocode}
 \prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
  {
-   \bool_lazy_or:nnTF 
+   \bool_lazy_or:nnTF
     { \__mdpi_is_journal_apastyle_p: }
     { \__mdpi_is_journal_chicagostyle_p: }
     {
@@ -730,27 +732,11 @@
     }
  }
 \newcommand{\isAPAorChicago}{\__mdpi_is_journal_apa_or_chicago_style:TF}
-%    \end{macrocode}
-% For compatibility we provide an alias using \texttt{and}:
-%    \begin{macrocode}
 \let\isAPAandChicago\isAPAorChicago
 \ExplSyntaxOff
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsection{References}
-% The default system is natbib, APA style journals use a local version
-% of the \pkg{apacite} package.
-%    \begin{macrocode}
 \isAPAStyle
   {\RequirePackage[natbibapa]{Definitions/mdpi_apacite}}
-%    \end{macrocode}
-% Option sectionbib is for optionally organizing references using sections (author request).
-%    \begin{macrocode}
   {\RequirePackage[sort&compress,sectionbib]{natbib}}
-%    \end{macrocode}
-% 
-%    \begin{macrocode}
 \renewcommand\NAT@set@cites{%
   \ifNAT@numbers
     \ifNAT@super \let\@cite\NAT@citesuper
@@ -761,9 +747,6 @@
     \else
        \let\NAT@mbox=\mbox
        \let\@cite\NAT@citenum
-%    \end{macrocode}
-% Replaces \verb+\let\NAT@space\NAT@spacechar+ by \verb+\let\NAT@space\relax+
-%    \begin{macrocode}
        \let\NAT@space\relax
        \let\NAT@super@kern\relax
     \fi
@@ -783,10 +766,6 @@
     \renewcommand\NAT@idxtxt{\NAT@name\NAT@spacechar\NAT@open\NAT@date\NAT@close}%
     \def\natexlab##1{##1}%
   \fi}
-%    \end{macrocode}
-%
-% The bibliography styles:
-%    \begin{macrocode}
 \isAPAStyle
   {\bibliographystyle{Definitions/mdpi_apacite}}
   {
@@ -800,49 +779,49 @@
         \bibpunct{[}{]}{,}{n}{}{,}
       }
   }
-%    \end{macrocode}
-%
-% \subsection{Loading \pkg{hyperref} and \pkg{cleveref}}
-% \pkg{cleveref} wants to be loaded rather late. For \pkg{hyperref} it is no longer
-% very important but the class delays the loading nevertheless to the 
-% \texttt{begindocument/before} hook.
-% 
-% \pkg{cleveref} needs various setups. We store that in one command which is called
-% after the package is loaded.
-%    \begin{macrocode}
+
+%% crefname definitions
 \newcommand\mdpi@cleveref@setup
  {
-%    \end{macrocode}
-%  Floats
-%    \begin{macrocode}
   \crefname{figure}{Figure}{Figures}
   \crefname{table}{Table}{Tables}
-%    \end{macrocode}
-% headings
-%    \begin{macrocode}
   \crefname{section}{Section}{Sections}
   \crefname{paragraph}{Section}{Sections}
   \crefname{appendix}{Appendix}{Appendices}
-%    \end{macrocode}
-% theorems
-%    \begin{macrocode}
   \crefname{scheme}{Scheme}{Schemes}
-  \crefname{chart}{Chart}{Charts}  
+  \crefname{chart}{Chart}{Charts}
   \crefname{graph}{Graph}{Graphs}
-  \crefname{Theorem}{Theorem}{Theorems}
-  \crefname{Lemma}{Lemma}{Lemmas}
-  \crefname{Corollary}{Corollary}{Corollaries}
-  \crefname{Proposition}{Proposition}{Propositions}
-  \crefname{Characterization}{Characterization}{Characterizations}
-  \crefname{Property}{Property}{Properties}
-  \crefname{Problem}{Problem}{Problems}
-  \crefname{Example}{Example}{Examples}
-  \crefname{Remark}{Remark}{Remarks}
-  \crefname{Definition}{Definition}{Definitions}
-  \crefname{Hypothesis}{Hypothesis}{Hypotheses}
-  \crefname{Notation}{Notation}{Notations}
-  \crefname{Assumption}{Assumption}{Assumptions}
-  \crefname{Algorithm}{Algorithm}{Algorithms}
+  \crefname{theorem}{Theorem}{Theorems}
+  \crefname{lemma}{Lemma}{Lemmas}
+  \crefname{corollary}{Corollary}{Corollaries}
+  \crefname{proposition}{Proposition}{Propositions}
+  \crefname{characterization}{Characterization}{Characterizations}
+  \crefname{property}{Property}{Properties}
+  \crefname{problem}{Problem}{Problems}
+  \crefname{example}{Example}{Examples}
+  \crefname{remark}{Remark}{Remarks}
+  \crefname{definition}{Definition}{Definitions}
+  \crefname{hypothesis}{Hypothesis}{Hypotheses}
+  \crefname{notation}{Notation}{Notations}
+  \crefname{assumption}{Assumption}{Assumptions}
+  \crefname{algorithm}{Algorithm}{Algorithms}
+  % amsthm writes the environment name (Theorem, Lemma, ...) into @cref labels;
+  % alias capitalized environments to the lowercase types defined above.
+  % Required for TeX Live 2023 and 2026 (cleveref + First Aid).
+  \crefalias{Theorem}{theorem}%
+  \crefalias{Lemma}{lemma}%
+  \crefalias{Corollary}{corollary}%
+  \crefalias{Proposition}{proposition}%
+  \crefalias{Characterization}{characterization}%
+  \crefalias{Property}{property}%
+  \crefalias{Problem}{problem}%
+  \crefalias{Example}{example}%
+  \crefalias{Remark}{remark}%
+  \crefalias{Definition}{definition}%
+  \crefalias{Hypothesis}{hypothesis}%
+  \crefalias{Notation}{notation}%
+  \crefalias{Assumption}{assumption}%
+  \crefalias{Algorithm}{algorithm}%
   \crefrangelabelformat{figure}{##3##1##4--##5##2##6} % double # for nesting inside \newcommand
   \crefrangelabelformat{table}{##3##1##4--##5##2##6}
   \crefrangelabelformat{section}{##3##1##4--##5##2##6}
@@ -853,130 +832,168 @@
   \newcommand{\crefrangeconjunction}{--}
  }
 
-%    \end{macrocode}
-% The \pkg{hyperref} options \texttt{unicode=true}, \texttt{pdfpagelabels} are set by default,
-% so they are not set explicitly. 
-%    \begin{macrocode}
-\ExplSyntaxOn
-\newcommand{\mdpi@load@hyperref@cleveref}
- {
-   \colorlet{mdpi@hypcolor}{bluecite}
-   \isBookContribution
-    {
-      \colorlet{mdpi@hypcolor}{black}
-      \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
-    }{}
-   \tl_if_eq:NnT \@journal {laws}
-    { 
-      \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
+\newcommand{\hyperrefpackage}{
+      \isBookContribution{%
+  \RequirePackage[unicode=true,
+  bookmarksopen={true},
+  pdffitwindow=true,
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  hyperfootnotes=false,
+  pdfstartview={FitH},
+  pdfpagemode=UseNone,
+  pdfpagelabels]{hyperref}
+  }{
+  \ifthenelse{\equal{\@journal}{laws}}{
+  \RequirePackage[unicode=true,
+  bookmarksopen={true},
+  pdffitwindow=true,
+  colorlinks=true,
+  linkcolor=bluecite,
+  citecolor=bluecite,
+  urlcolor=bluecite,
+  hyperfootnotes=false,
+  pdfstartview={FitH},
+  pdfpagemode= UseNone]{hyperref}
+  }{
+  \RequirePackage[unicode=true,
+  bookmarksopen={true},
+  pdffitwindow=true,
+  colorlinks=true,
+  linkcolor=bluecite,
+  citecolor=bluecite,
+  urlcolor=bluecite,
+  hyperfootnotes=true,
+  pdfstartview={FitH},
+  pdfpagemode= UseNone]{hyperref}
+  }
+}
+\RequirePackage[capitalise,noabbrev]{cleveref}
+\mdpi@cleveref@setup
+}
+\ifdef{\AddToHook}{
+\DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
+  \AddToHook{begindocument/before}{
+    \hyperrefpackage
+    \pdfstringdefDisableCommands{\let\hl\@firstofone\let\texthl\@firstofone}
+     \mdpiLoadExtralangs
     }
-   \RequirePackage
-    [bookmarksopen= true,
-     pdffitwindow = true,
-     pdfstartview = FitH,
-     pdfpagemode  = UseNone,
-     colorlinks   = true,
-     allcolors    = mdpi@hypcolor,
-    ] 
-    {hyperref}
-   \RequirePackage[capitalise,noabbrev]{cleveref}
-   \mdpi@cleveref@setup
- }
-%    \end{macrocode}
-%    \begin{macrocode}
-\AddToHook{begindocument/before}
-  {
-    \mdpi@load@hyperref@cleveref    
-  } 
-%    \end{macrocode}
-% This sets the PDF metadata:
-%    \begin{macrocode}
-\AddToHook{begindocument/end}[mdpi/metadata]
- {
-   \hypersetup
-    {
-     pdftitle   ={\@Title},
-     pdfsubject ={\@abstract},
-     pdfkeywords={\@keyword},
-     pdfauthor  ={\@AuthorNames}
-   }%
- }  
-\ExplSyntaxOff
-%    \end{macrocode}
-%
+  }{
+       \hyperrefpackage
+         \pdfstringdefDisableCommands{\let\hl\@firstofone\let\texthl\@firstofone}
+}
 
-% \subsection{Endnotes}
-% TODO: why does it declare a custom instance instead of changing the default?
-% TODO: perhaps better use a list template type for better tagging
-%    \begin{macrocode}
+%% To have the possibility to change the urlcolor
+\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
+
+%%%% Metadata
+\newcommand{\org@maketitle}{}% LATEX-Check
+\let\org@maketitle\maketitle
+\def\maketitle{%
+  \hypersetup{
+    pdftitle={\@Title},
+    pdfsubject={\@abstract},
+    pdfkeywords={\@keyword},
+    pdfauthor={\@AuthorNames}
+  }%
+  \org@maketitle
+}
+
+%%%%% Endnotes
 \setenotez{backref=true}
-\DeclareInstance{enotez-list}{custom}{paragraph}
- {
-   format   =\small\leftskip0.76cm,
-   number   =\textsuperscript{\makebox[6mm][l]{#1}},
-   notes-sep=0pt
- }
+\DeclareInstance{enotez-list}{custom}{paragraph}{
+  format=\small\leftskip0.76cm,
+      number=\textsuperscript{\makebox[6mm][l]{#1}},
+  notes-sep=0pt
+}
 
-%    \end{macrocode}
-% \subsection{Footnotes}
-% Only journal Laws uses \cs{footnote}.
-% Increase space between line and footnote
-%    \begin{macrocode}
+%%%% Footnotes: match mdpi.cls (scrextend + deffootnote). 
+\RequirePackage{scrextend}
+\setlength{\skip\footins}{0.6cm}
 \setlength{\footnotesep}{8pt}
-%    \end{macrocode}
-% Hanging footnotes:
-%    \begin{macrocode}
-\RequirePackage[hang]{footmisc}
-\setlength\footnotemargin{1.5em}
-%    \end{macrocode}
-% Get around the bug https://github.com/latex3/tagging-project/issues/1360
-%    \begin{macrocode}
-\IfDocumentMetadataT
- {
-   \patchcmd\footmisc@hang@makefntext
-     {\leftmargin\wd\@tempboxa}
-     {\leftmargin\wd\@tempboxa\@totalleftmargin \leftmargin}
-     {}{\fail}
-   \let\@makefntext\footmisc@hang@makefntext
- }
-%    \end{macrocode}
-% \subsection{Widows and penalities}
-% Widows \& orphans are prohibited
-%    \begin{macrocode}
+\deffootnote{1.5em}{0em}{\textsuperscript{\thefootnotemark}\quad}
+\newcommand{\mdpi@footnote@pdf@leading}{%
+  \fontsize{8}{9.5pt}\selectfont
+}
+
+\AddToHook{begindocument/end}{%
+  \NewCommandCopy\mdpi@orig@makefntext\@makefntext
+  \RenewDocumentCommand\@makefntext{m}{%
+    \mdpi@orig@makefntext{\mdpi@footnote@pdf@leading #1}%
+  }%
+}
+
+%%%% Widows & orphans
 \clubpenalty=10000
 \widowpenalty=10000
 \displaywidowpenalty=10000
-%    \end{macrocode}
-% Slopiness / badness of the line breaking
-%    \begin{macrocode}
-\tolerance=1000 
-%    \end{macrocode}
-% To avoid "Output-loop.." compile bug
-%    \begin{macrocode}
+\tolerance=1000 % slopiness / badness of the line breaking
+
+%%% Italic correction after \emph/\textit: default \nocorrlist is only {,.}.
+\AddToHook{begindocument/end}{%
+  \renewcommand{\nocorrlist}{,.:;!?)'']}%
+  \makeatletter
+  \DeclareRobustCommand\textsubscript[1]{\@textsubscript{#1}}%
+  \protected\def\@textsubscript#1{%
+    \check@mathfonts
+    \leavevmode
+    \begingroup
+      \edef\mdpi@sub@series{\f@series}%
+      \edef\mdpi@sub@shape{\f@shape}%
+      \sbox\z@{%
+        \fontsize\sf@size\sf@size
+        \fontseries{\mdpi@sub@series}%
+        \fontshape{\mdpi@sub@shape}%
+        \selectfont
+        #1}%
+      \lower\dimexpr\textsubscript@offset\relax\box\z@
+      \textsubscript@space
+    \endgroup
+  }%
+  \DeclareRobustCommand\textsuperscript[1]{\@textsuperscript{#1}}%
+  \protected\def\@textsuperscript#1{%
+    \check@mathfonts
+    \leavevmode
+    \begingroup
+      \edef\mdpi@sup@series{\f@series}%
+      \edef\mdpi@sup@shape{\f@shape}%
+      \sbox\z@{%
+        \fontsize\sf@size\sf@size
+        \fontseries{\mdpi@sup@series}%
+        \fontshape{\mdpi@sup@shape}%
+        \selectfont
+        #1}%
+      \raise\dimexpr\textsuperscript@offset\relax\box\z@
+      \textsuperscript@space
+    \endgroup
+  }%
+}
+
+%%%% To avoid "Output-loop.." compile bug
 \maxdeadcycles=10000
 
-%    \end{macrocode}
-%
-% \subsection{Paragraph indentation}
-%    \begin{macrocode}
 \setlength{\parindent}{0.75cm}
-
-%    \end{macrocode}
-% \subsection{Frontmatter}
-% TODO: improve tagging!
-% 
-% \subsubsection{Helper commands}
-% At first some length used in the frontmatter. \cs{dist} is no longer
-% used but kept for compatibility. 
-%    \begin{macrocode}
 \newcommand{\dist}{1.7em}
-\newcommand\mdpi@len@dist{1.7em}
-\newcommand\mdpi@len@distshift{0.85em}
-\newdimen\mdpi@len@tmpa
-%    \end{macrocode}
-%
-% A command to add a leading zero to the DOI or a month if 1 digit
-%    \begin{macrocode}
+% Note hanging indent: normally \dist; with \address[1] use \dist minus this shift
+\newcommand{\notedistshift}{0.85em}
+\newdimen\mdpi@notedist
+\mdpi@notedist=\dist
+
+%%%% Front matter
+\def\instring#1#2{TT\fi\begingroup\edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
+
+\newcommand{\firstargument}{}
+\def\@Title{Title}
+\newcommand{\Title}[1]{\gdef\@Title{#1}}%
+\def\@Author{Author}
+\newcommand{\Author}[1]{\gdef\@Author{#1}}%
+\def\@AuthorNames{}
+\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
+\newcommand{\firstpage}[1]{\gdef\@firstpage{#1}}
+\newcommand{\doinum}[1]{\gdef\@doinum{#1}}
+
 \newcommand\mdpi@mintwodigits[1]{%
   \ifnum#1<10 %
     0\number#1
@@ -984,10 +1001,7 @@
     \number#1
   \fi
 }
-%    \end{macrocode}
-% This adds leading zeros to create at least four digits, it prints (?) error
-% if there are more than five digits. 
-%    \begin{macrocode}
+
 \newcommand\mdpi@minfourdigits[1]{%
   \ifnum#1<10 %
     000\number#1
@@ -1012,28 +1026,19 @@
   \fi
 }
 
-%    \end{macrocode}
-% \subsubsection{Data commands for the front matter}
-%    \begin{macrocode}
-\def\@Title{TITLE}
-\newcommand{\Title}[1]{\gdef\@Title{#1}}%
-\def\@Author{AUTHOR}
-\newcommand{\Author}[1]{\gdef\@Author{#1}}%
-\def\@AuthorNames{}
-\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
-\newcommand{\firstpage}[1]{\gdef\@firstpage{#1}}
-\newcommand{\doinum}[1]{\gdef\@doinum{#1}}
 \newcommand\mdpi@doinum@short{10.3390/\@articlenumber}
 \newcommand\mdpi@doinum@long {10.3390/\@doiabbr\@pubvolume\mdpi@mintwodigits\@issuenum\mdpi@minfourdigits\@articlenumber}
 \gdef\@doinum{\UseName{mdpi@doinum@\@journaldoinum}}
+
+\newcommand\cutdigits[1]{\inteval{#1}}
+
 \def\@pubvolume{0}
 \newcommand{\pubvolume}[1]{\gdef\@pubvolume{\inteval{#1}}}
 \def\@pubyear{0000}
 \newcommand{\pubyear}[1]{\gdef\@pubyear{#1}}
 \def\@copyrightyear{0000}
 \newcommand{\copyrightyear}[1]{\gdef\@copyrightyear{#1}}
-\def\@address{ADDRESS}
-\newcommand{\firstargument}{}
+\def\@address{Address}
 \newcommand{\address}[2][]{\renewcommand{\firstargument}{#1}\gdef\@address{#2}}
 \newcommand{\corresfirstargument}{}
 \def\@corres{}
@@ -1074,7 +1079,6 @@
 \newcommand{\featuredapplication}[1]{\gdef\@featuredapplication{#1}}
 \def\@keycontribution{}
 \newcommand{\keycontribution}[1]{\gdef\@keycontribution{#1}}
-% this is the wrong default: it should be a number
 \def\@issuenum{0}
 \newcommand{\issuenum}[1]{\gdef\@issuenum{\inteval{#1}}}
 \def\@firstnote{}
@@ -1092,9 +1096,6 @@
 \def\@seventhnote{}
 \newcommand{\seventhnote}[1]{\gdef\@seventhnote{#1}}%
 \def\@eighthnote{}
-%    \end{macrocode}
-% The user command uses plural as \cs{eighthnote} is already defined
-%    \begin{macrocode}
 \newcommand{\eighthnotes}[1]{\gdef\@eighthnote{#1}}%
 \def\@ninethnote{}
 \newcommand{\ninethnote}[1]{\gdef\@ninethnote{#1}}%
@@ -1127,71 +1128,39 @@
 \newcommand{\CorrStatement}[1]{\gdef\@CorrStatement{#1}}
 \newcommand{\textcorrstatement}{\textbf{Correction Statement:} This article has been republished with a minor change. The change does not affect the scientific content of the article and further details are available within the backmatter of the website version of this article.}
 \def\@IsAssociation{}
-\newcommand{\IsAssociation}[1]
- {%
-  \gdef\@IsAssociation{#1}%
-  \gdef\mdpi@logo@right{\@journalmdpilogo}%
- }
+\newcommand{\IsAssociation}[1]{\gdef\@IsAssociation{#1}}
+
+%% ORCID
+\newcommand{\orcidicon}{\includegraphics[width=0.32cm]{Definitions/logo-orcid.pdf}}
+
+\foreach \x in {A, ..., Z}{%
+\expandafter\xdef\csname orcid\x\endcsname{\noexpand\href{https://orcid.org/\csname orcidauthor\x\endcsname}{\noexpand\orcidicon}}
+}
 
 %%%% Journal name for the header
 \newcommand{\journalname}{\@journalshort}
 
-%    \end{macrocode}
-%
-% \subsubsection{Orcid}
-%    \begin{macrocode}
-\newcommand{\orcidicon}{\includegraphics[width=0.32cm,actualtext=ORCID]{Definitions/logo-orcid.pdf}}
-%    \end{macrocode}
-% Define link and button for author A--Z. Before these commands can be used, the
-% author has to define \verb+orcidauthorA+ etc.
-%    \begin{macrocode}
-\ExplSyntaxOn
-\int_step_inline:nn{26}
- {
-   \tl_new:c{orcid\int_to_Alph:n{#1}}
-   \tl_set:cn{orcid\int_to_Alph:n{#1}}
-     {
-       \href{https://orcid.org/\use:c{orcidauthor\int_to_Alph:n{#1}}}{\orcidicon}
-     }  
- }  
-\ExplSyntaxOff
-%    \end{macrocode}
-%
-% \subsection{Maketitle}
-% \subsubsection{Helper commands}
-% Store the url:
-%    \begin{macrocode}
 \newcommand\mdpi@url{https://www.mdpi.com}
-%    \end{macrocode}
-%
-% The logo line:
-%    \begin{macrocode}
 \ExplSyntaxOn
-\newcommand\mdpi@logo@right{logo-mdpi}
 \newcommand\mdpi@maketitle@logoline
  {
-%    \end{macrocode}
-% If the status is submit (initial/default value) there is not journal logo
-% and we fake it with a rule.
-%    \begin{macrocode}
    \tl_if_eq:enTF {\@status}{submit}
      {
        \phantom{\rule{0pt}{1.2cm}}\hfill
-       \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{Definitions/\mdpi@logo@right}}%
+       \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{Definitions/logo-mdpi}}%
      }
      {
-        \href{\mdpi@url/journal/\@journal}
-             {\includegraphics[height=1.2cm,actualtext={Logo~of~\@journalfull}]{Definitions/\@journallogo}}%
+        \href{\mdpi@url/journal/\@journal}{\includegraphics[height=1.2cm,actualtext={Logo~of~\@journalfull}]{Definitions/\@journal-logo}}%
         \hfill
-        \href{\mdpi@url}
-             {\includegraphics[height=1cm,actualtext={MDPI~logo}]{Definitions/\mdpi@logo@right}}
+        \tl_if_empty:NTF \@IsAssociation
+          {
+            \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{Definitions/\@journalmdpilogo}}%
+          }
+          {
+            \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={Logo~of~\@journalfull}]{Definitions/logo-mdpi-\@journal}}%
+          }
      }
  }
-%    \end{macrocode}
-%\subsubsection{\cs{@maketitle}}
-%
-% Some variants have a different title format depending on \cs{@arttype}:
-%    \begin{macrocode}
 \str_case:onF{\@arttype}
  {
    {Book}      {\cs_set:Npn \@maketitle {\mdpi@maketitle@Book}}
@@ -1199,10 +1168,6 @@
    {Supfile}   {\cs_set:Npn \@maketitle {\mdpi@maketitle@Supfile}}
  }
  { \cs_set:Npn \@maketitle {\mdpi@maketitle}}
-%    \end{macrocode}
-%
-% The \cs{@maketitle} command for the case that \cs{@arttype} is a Book
-%    \begin{macrocode}
 \newcommand\mdpi@maketitle@Book
  {
    \begin{flushleft}
@@ -1223,15 +1188,7 @@
      }
     \end{flushleft}
  }
-%    \end{macrocode}
-% The \cs{@maketitle} command if this is a Monograph:
-%    \begin{macrocode}
 \newcommand\mdpi@maketitle@Monograph{}
-%    \end{macrocode}
-%
-% The \cs{@maketitle} command if \cs{@arttype} is a Supfile.
-% In this case the left column is empty so we do not have to set it.
-%    \begin{macrocode}
 \newcommand\mdpi@maketitle@Supfile
  {
    \hbox{}
@@ -1245,7 +1202,7 @@
      \raggedright
      \hyphenpenalty=10000
      \tolerance=1000
-     \noindent\boldmath\textbf{Supplementary~Materials:~\@Title}%
+     \noindent\boldmath\bfseries\textbf{Supplementary~Materials:~\@Title}%
      \par
      \vspace{12pt}
      \normalsize
@@ -1255,22 +1212,10 @@
      {}
      {\end{adjustwidth}}
  }
-%    \end{macrocode}
-% The \cs{@maketitle} command for the other cases.
-% For journals and preprints we have logos, article type and narrow column
-%    \begin{macrocode}
 \newcommand{\mdpi@maketitle}
   {
-%    \end{macrocode}
-%   Default option for the left column.
-%   The left column should be aligned with the bottom of the text.
-%   For this we calculate the needed offset in \cs{MyLen} and move it down:
-%    \begin{macrocode}
    \tl_if_empty:NT \@leftcolumnsplit
      {\marginnote[\contentleftcolumn]{}[\MyLen]}
-%    \end{macrocode}
-%
-%    \begin{macrocode}
    \isPreprints
      {\vspace{0.92cm}}
      {
@@ -1404,14 +1349,6 @@
   }
 }
 
-%    \end{macrocode}
-% \subsection[label=sec:leftcolumn]{Left Column}
-% Left column on first page (= \enquote{left column} = \enquote{leftcol})
-%
-% A command for the font setup in this column:
-% \begin{macro}{\leftcolFont}
-% We increase the \cs{baselineskip} to 12pt and the \cs{parskip} to 6pt.
-%    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
     \fontsize{7pt}{12pt}\selectfont
@@ -1421,14 +1358,7 @@
     \hyphenpenalty=10000
     \tolerance=1000
  }
-%    \end{macrocode}
-% \end{macro}
 
-% The contents is split into six parts.
-%
-% \subsubsection{Part 1: Update the logo}%
-% \begin{macro}{\leftcolumnUpdatelogo}
-%    \begin{macrocode}
 \newcommand{\leftcolumnUpdatelogo}
  {%
    \ifthenelse
@@ -1437,15 +1367,10 @@
      {%
        \href
          {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\mdpi@mintwodigits{\the\month}-\mdpi@mintwodigits{\the\day}}
-         {\includegraphics[height=.6cm,actualtext=Check for updates]{logo-updates}}%
+         {\includegraphics[height=.6cm,actualtext=Check for updates]{Definitions/logo-updates}}%
      }%
  }
-%    \end{macrocode}
-% \end{macro}
 
-% \subsubsection{Part 2: Academic editor(s)}
-% \begin{macro}{\leftcolExternalEditor}
-%    \begin{macrocode}
 \ExplSyntaxOn
 \newcommand{\leftcolExternalEditor}
   {
@@ -1457,13 +1382,8 @@
        %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
      }%
   }
-\ExplSyntaxOff  
-%    \end{macrocode}
-% \end{macro}
+\ExplSyntaxOff
 
-% \subsubsection{Part 3: Dates}
-% \begin{macro}{\leftcolDates}
-%    \begin{macrocode}
 \newcommand\mdpi@datesblock@short{Published: \@datepublished}
 \newcommand\mdpi@datesblock@long
  {%
@@ -1490,12 +1410,7 @@
     {}
     {\UseName{mdpi@datesblock@\@journaldatesblock}}%
  }
-%    \end{macrocode}
-% \end{macro}
 
-% \subsubsection{Part 4: Correction statement}
-% \begin{macro}{\leftcolCorrstatement}
-%    \begin{macrocode}
 \newcommand{\leftcolumnCorrstatement}
  {%
    \isPreprints
@@ -1503,28 +1418,22 @@
     {%
       \ifthenelse
         {\equal{\@CorrStatement}{yes}}
-        {\textcorrstatement}
+        {%
+          \begingroup
+            \spaceskip=0.18em plus 0.02em minus 0.08em
+            \xspaceskip=\spaceskip
+            \textcorrstatement
+          \endgroup
+        }
         {}%
     }%
  }
-%    \end{macrocode}
-% \end{macro}
 
-% \subsubsection{Part 5: Copyright}
-% \begin{macro}{\leftcolCright}
-%    \begin{macrocode}
 \newcommand{\leftcolumnCright}
   {%
     \isPreprints{}{\mdpi@text@copyright}%
   }
-%    \end{macrocode}
-% \end{macro}
 
-% \subsubsection{Building the left column}
-% The content of the left column. The marginnote with this content will be placed
-% at the very top of the first page to have a fixed reference point
-% \begin{macro}{\contentleftcolumn}
-%    \begin{macrocode}
  \newcommand{\contentleftcolumn}
   {%
     \leftcolFont
@@ -1541,51 +1450,23 @@
         \leftcolumnCright\par             % %5
      }
    }
-%    \end{macrocode}
-% \end{macro}
 
-%    \begin{macrocode}
 \newlength{\MyLen} % For length of the left column content
 \newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
-%    \end{macrocode}
 
-% \subsection{Placing of the left column}
-% The following calculation needs to be done after begin document, but before the title is typeset.
-% It is therefore executed in the \texttt{begindocument/end} hook.
-% It is only for measuring, so tagging should be suspended.
-% \begin{macro}{\calculateMyLen}
-%    \begin{macrocode}
 \newcommand{\calculateMyLen}
   {%
    \SuspendTagging{}%
    \savebox{\MyBox}
     {%
-%    \end{macrocode}
-% \cs{leftcolumnlength} is the width of the left column defined in section \ref{sec:dimensions}.
-% \cs{contentleftcolumn} is the content defined in section \ref{sec:leftcolumn}
-%    \begin{macrocode}
      \parbox{\leftcolumnlength}{\contentleftcolumn}%
     }%
    \ResumeTagging{}%
-%    \end{macrocode}
-% \cs{Mylen} should be \cs{textheight} minus the total height of the box
-%  so that the resulting value can be used to align the left column 
-%  to the bottom of \cs{textheight}. A small correction is added to account for 
-%  the depth of a strutbox. 
-%    \begin{macrocode}
    \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-2.1pt}}%
   }
-%    \end{macrocode}
-% \end{macro}%
-%
-% TODO: how is that used????
-%    \begin{macrocode}
-% Left column split options for long titles/author lists
-% Make new command for deciding for the split option
 \def\@leftcolumnsplit{}
 \newcommand{\leftcolumnsplit}[1]{\gdef\@leftcolumnsplit{#1}}
 
-% Split option 1
 \newcommand{\OptionOneA}{
   \leftcolExternalEditor %1
   \leftcolDates\vspace{-2pt} %2
@@ -1595,7 +1476,6 @@
   \leftcolumnCright %3
 }
 
-% Split option 2
 \newcommand{\OptionTwoA}{
   \leftcolExternalEditor\vspace{-10pt} %1
 }
@@ -1605,7 +1485,6 @@
   \vspace{6pt}\leftcolumnCright %3
 }
 
-% Split option 3
 \newcommand{\OptionThreeA}{
 }
 
@@ -1615,10 +1494,6 @@
   \vspace{6pt}\leftcolumnCright %3
 }
 
-%    \end{macrocode}
-% \subsection{\cs{maketitlen} for notes after the main title}
-% We set up a counter and define symbols for the various notes:
-%    \begin{macrocode}
 \ExplSyntaxOn
 \newcounter{mdpi@notecnt}
 \def\mdpi@notesymbol
@@ -1641,24 +1516,12 @@
    \@ctrerr
    \fi
  }
-%    \end{macrocode}
-% We avoid the use of the \cs{tabto} command as this uses math for measuring and
-% so gives unwanted structures if tagging is enabled. Instead the label is set inside
-% a box.
-% TODO: semantic tagging should be improved.
-% TODO: the fake space is perhaps not needed, see pdfa discussion.
-%    \begin{macrocode}
 \newcommand\mdpi@notelabel
  {
    \stepcounter{mdpi@notecnt}
-   \makebox[\mdpi@len@dist][l]
+   \makebox[\mdpi@notedist][l]
     {\UseTaggingSocket{inline/begin}{tag=Lbl}\mdpi@notesymbol\csname pdffakespace\endcsname\UseTaggingSocket{inline/end}}
  }
-%    \end{macrocode}
-%
-% \begin{macro}{\maketitlen}
-%  This builds the block of notes:
-%    \begin{macrocode}
 \newcommand{\maketitlen}
  {
   \par
@@ -1669,24 +1532,16 @@
      \hyphenpenalty=10000
      \tolerance=1000
      \footnotesize
-%    \end{macrocode}
-% \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
-% so we set the \cs{parshape} instead.
-%    \begin{macrocode}     
      \tl_if_eq:NnF{\firstargument}{1}
-       {\parshape 2~0cm \linewidth \dimeval{\mdpi@len@dist}~\dimeval{\linewidth-\mdpi@len@dist}}
+       {\parshape 2~0cm \linewidth \dimeval{\dist}~\dimeval{\linewidth-\dist}}
      \@address
      \par
-%    \end{macrocode}
-% \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
-% so we set the \cs{parshape} instead.
-%    \begin{macrocode}
      % Scheme B: single affiliation (\address[1]) -> tighter note indent
      \tl_if_eq:NnTF{\firstargument}{1}
-       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist-\mdpi@len@distshift\relax}
-       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}     
-     \parshape 2~0cm \linewidth 
-     \dimeval{\mdpi@len@tmpa}~\dimeval{\linewidth-\mdpi@len@tmpa}
+       {\mdpi@notedist=\dimexpr\dist-\notedistshift\relax}
+       {\mdpi@notedist=\dist}
+     \parshape 2~0cm \linewidth
+     \dimeval{\mdpi@notedist}~\dimeval{\linewidth-\mdpi@notedist}
      \tl_if_eq:NnF\@authornum{author}
        {
         \tl_if_empty:NF\@corres
@@ -1715,21 +1570,15 @@
    }
  }
 \ExplSyntaxOff
-%    \end{macrocode}
-% \end{macro}
-% 
-%    \begin{macrocode}
 %%%% Abstract, keywords, journal data, PACS, MSC, JEL
 \newcommand{\abstractkeywords}{%
 \isMonograph{}{%
-% For journal Applied Sciences:
 \ifthenelse{\equal{\@featuredapplication}{\@empty}}{
   }{%
   \noindent\textbf{Featured Application\vspace{6pt}\\}\@featuredapplication
   \vspace{12pt}
   \par
 }
-%6
 \ifthenelse{\equal{\@addhighlights}{\@empty}}{}{
   \noindent\textbf{Highlights\vspace{-6pt}\\}\addhighlights % redefined in .tex to use itemize
   \vspace{12pt}
@@ -1750,51 +1599,41 @@
   \vspace{12pt}
   \par
 }
-%7
-% For journal Data:
 \ifthenelse{\equal{\@dataset}{\@empty}}{}{
   \noindent\textbf{Dataset:\space}\@dataset
   \vspace{12pt}
   \par
 }
-%For journal Data:
 \ifthenelse{\equal{\@datasetlicense}{\@empty}}{}{
   \noindent\textbf{Dataset License:\space}\@datasetlicense
   \vspace{12pt}
   \par
 }
-%8
 \ifthenelse{\equal{\@keyword}{\@empty}}{}{
   \noindent\textbf{Keywords:\space}\@keyword
   \vspace{12pt}
   \par
 }
-%9
-%For journal Toxins:
 \ifthenelse{\equal{\@keycontribution}{\@empty}}{}{
   \noindent\textbf{Key Contribution:\space}\@keycontribution
   \vspace{12pt}
   \par
 }
-%10
 \ifthenelse{\equal{\@pacs}{\@empty}}{}{
   \noindent\textbf{PACS:\space}\@pacs
   \vspace{12pt}
   \par
 }
-%11
 \ifthenelse{\equal{\@msc}{\@empty}}{}{
   \noindent\textbf{MSC:\space}\@msc
   \vspace{12pt}
   \par
 }
-%12
 \ifthenelse{\equal{\@jel}{\@empty}}{}{
   \noindent\textbf{JEL Classification:\space}\@jel
   \vspace{12pt}
   \par
 }
-%13
 \vspace{4pt}
 \isBookContribution{}{\hrule}
 \vspace{12pt}
@@ -1826,12 +1665,15 @@
   \DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
   \DeclareSymbolFontAlphabet{\mathbb}{AMSb}
       %%%% URL
-    \urlstyle{same}
+    \urlstyle{rm}
+    \def\UrlFont{\rmfamily}
      % Line breaks in URL
      \def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
      \g@addto@macro{\UrlBreaks}{\UrlOrds}
      \g@addto@macro{\UrlBreaks}{\UrlDigits}
  }
+ 
+\AddToHook{begindocument}{\urlstyle{rm}\def\UrlFont{\rmfamily}}
 
 %%%% Font size in Tables and watermark in arttype retraction
 \AtEndPreamble{
@@ -1842,11 +1684,6 @@
   \printretraction
 }
 
-%    \end{macrocode}
-% \subsection{Table of contents}
-% The section entries should have dots. We make use of \cs{@dottedtocline} to get the
-% tagging support.
-%    \begin{macrocode}
 \renewcommand*\l@section
  {
    \ifnum \c@tocdepth >\z@
@@ -1857,57 +1694,32 @@
  }
 \renewcommand{\numberline}[1]{#1.~\space} % Increase space between number and title
 
-%    \end{macrocode}
-% \subsection{Formatting of the heading commands}
-% By default \cs{paragraph} is not numbered.
-% To get paragraphs
-% numbered and counted, increase the value of secnumdepth to 4
-%    \begin{macrocode}
 \setcounter{secnumdepth}{3}
-%    \end{macrocode}
-% The settings for the tagged version:
-%    \begin{macrocode}
+\providecommand\WordSpaceAmount[1]{
+  \glueexpr
+        #1\fontdimen2\the\font
+  plus  #1\fontdimen3\the\font
+  minus #1\fontdimen4\the\font
+  \relax
+}
 \IfDocumentMetadataTF
  {
    \setcounter{secnumdepth}{3}
-%    \end{macrocode}
-% We set up a dedicated headformat instance:
-%    \begin{macrocode}
-   \IfFormatAtLeastTF{2026-11-01}
-    {
-      \DeclareInstance    {headformat}{mdpi/std}{hang}
-      {heading-indent = 0pt,separator-b=\ }
-    }
-    {
-     \DeclareInstance    {headformat}{mdpi/std}{hang}
-      {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
-    }  
+   \DeclareInstance    {headformat}{mdpi/std}{hang}
+    {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
    \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
    \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
    \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
    \DeclareInstanceCopy{headformat}{paragraph}    {mdpi/std}
-%    \end{macrocode}
-%
-%    \begin{macrocode}
-%
-%    \end{macrocode}
-% The \cs{section} settings:
-%    \begin{macrocode}
    \EditInstance{heading}{section}
      {
        heading-decls=\raggedright\large\bfseries\boldmath,
        before-vspace=12pt,
        after-vspace =3pt,
        number-format=\theheading.,
-%    \end{macrocode}
-% Avoid hanging indent:
-%    \begin{macrocode}
        title-decls = \hangindent0pt,
        headformat-instance = section %until the release
      }
-%    \end{macrocode}
-% The format of \cs{section} differs in monographs:
-%    \begin{macrocode}
    \isMonograph
     {
      \EditInstance{heading}{section}
@@ -1917,21 +1729,15 @@
        }
     }
     {}
-%    \end{macrocode}
-% The \cs{subsection} settings.
-%    \begin{macrocode}
    \EditInstance{heading}{subsection}
      {
-       heading-decls=\raggedright \normalsize\itshape,
+       heading-decls=\raggedright\normalsize\itshape,
        title-decls = \hangindent0pt,
        before-vspace=12pt,
        after-vspace =3pt,
-       number-format=\theheading.,
+       number-format=\itshape\theheading.,
        headformat-instance = subsection
      }
-%    \end{macrocode}
-% The \cs{subsubsection} settings.
-%    \begin{macrocode}
    \EditInstance{heading}{subsubsection}
      {
        heading-decls=\raggedright \normalsize,
@@ -1941,9 +1747,6 @@
        number-format=\theheading.,
        headformat-instance = subsection
      }
-%    \end{macrocode}
-% The \cs{paragraph} settings. \cs{paragraph} is not a run-in heading in the class.
-%    \begin{macrocode}
    \DeclareInstance{heading}{paragraph}{display}
      {
        , name          = paragraph
@@ -1956,12 +1759,7 @@
        , number-format=\theheading.,
        , headformat-instance = paragraph
      }
-%    \end{macrocode}
-%    \begin{macrocode}
  } %end of \DocumentMetadata test
-%    \end{macrocode}
-% The settings without \cs{DocumentMetadata}:
-%    \begin{macrocode}
  {
    \isMonograph
     {
@@ -1984,22 +1782,22 @@
  }
 
 %%%% Special section title style for back matter
-\newcommand{\supplementary}[1]{
+\newcommand{\supplementary}[1]{%
 \par\vspace{6pt}\noindent{\small\textbf{Supplementary Materials:} {#1}\par}}
 
 \newcommand{\authorcontributions}[1]{%
 \vspace{6pt}\noindent{\small\textbf{Author Contributions:} {#1}\par}}
 
-\newcommand{\funding}[1]{
+\newcommand{\funding}[1]{%
 \vspace{6pt}\noindent{\small\textbf{Funding:} {#1}\par}}
 
-\newcommand{\institutionalreview}[1]{
+\newcommand{\institutionalreview}[1]{%
 \vspace{6pt}\noindent{\small\textbf{Institutional Review Board Statement:} {#1}\par}}
 
-\newcommand{\informedconsent}[1]{
+\newcommand{\informedconsent}[1]{%
 \vspace{6pt}\noindent{\small\textbf{Informed Consent Statement:} {#1}\par}}
 
-\newcommand{\dataavailability}[1]{
+\newcommand{\dataavailability}[1]{%
 \vspace{6pt}\noindent{\small\textbf{Data Availability Statement:} {#1}\par}}
 
 \newcommand{\durcstatement}[1]{% For journal Drones
@@ -2011,7 +1809,7 @@
 \newcommand{\guidelinesstandards}[1]{% For journal Nursing Reports
 \vspace{6pt}\noindent{\small\textbf{Guidelines and Standards Statement:} {#1}\par}}
 
-\newcommand{\acknowledgments}[1]{
+\newcommand{\acknowledgments}[1]{%
 \vspace{6pt}\noindent{\small\textbf{Acknowledgments:} {#1}\par}}
 
 \newcommand{\conflictsofinterest}[1]{%
@@ -2029,19 +1827,16 @@
 \newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\large\textbf{#1}}{%
 \par\vspace{3pt}\hspace{-0.85cm}{\small #2}\par}}
 
-% UF TODO correct semantic, e.g.
-%\renewcommand\abbreviations[2]{\section*{#1}\small #2\par}
-
-% Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
 \vspace{12pt}\noindent{\selectfont\textbf{#1}\par\vspace{6pt}\noindent {\small #2}\par}}
 
-% Command for author's biography
 \newcommand{\bio}[2]{%
 \noindent{#1}\hspace{1.1cm}\noindent {\small \pbox[b]{13.86cm}{#2}}\par\vspace{6pt}}
 
-% Use for special paragraph requirement in back matter
-\newcommand{\backnotes}[2]{
+\newcommand{\listofcontribution}[2]{\vspace{6pt}\noindent{\small \textbf{#1}}{%
+\par\vspace{-12pt}\hspace{-0.85cm}{\small #2}\par}}
+
+\newcommand{\backnotes}[2]{%
 \vspace{6pt}\noindent{\small\textbf{#1:} {#2}\par}}
 
 %%%%% Defines the appendix
@@ -2078,31 +1873,24 @@
 \setcounter{notation}{0}
 \setcounter{algorithm}{0}
 \setcounter{graph}{0}
+\crefname{appendix}{Appendix}{Appendixes}
+\crefalias{section}{appendix}%
+\crefalias{subsection}{appendix}%
+\crefalias{subsubsection}{appendix}%
 }
 
-%    \end{macrocode}
-%
-%
-%    \begin{macrocode}
 \ExplSyntaxOn
 \renewcommand{\appendix}
  {%
-%
   \gdef\thesection   {\AlphAlph{\value{section}}}%
   %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
-%    \end{macrocode}
-% \subsection{Formatting of the heading commands after \cs{appendix}}
-%    \begin{macrocode}
 %%% UF SECTIONFORMAT (after \appendix)
     \IfDocumentMetadataTF
      {
-%    \end{macrocode}
-% Even in monographs section should use a smaller font in the appendix.
-%    \begin{macrocode}
       \EditInstance{heading}{section}
         {
          after-vspace=3pt,
-         heading-decls=\raggedright\large\bfseries\boldmath,
+         heading-decls=\raggedright\large\bfseries,
         }
       \clist_map_inline:nn {section,subsection,subsubsection}
        {
@@ -2114,11 +1902,8 @@
           }
        }
      }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
      {
-      \titleformat {\section} [block] {\raggedright\bfseries\boldmath\large} {\large\bfseries%
+      \titleformat {\section} [block] {\raggedright\bfseries\boldmath\large} {\large\boldmath\bfseries%
        \ifthenelse{\equal{\@appendixtitles}{yes}}{%
          \appendixname\nobreakspace\thesection.%
          }{%
@@ -2170,10 +1955,8 @@
   \renewcommand{\thealgorithm}{A\arabic{algorithm}}
   \renewcommand{\thegraph}{A\arabic{graph}}
 }
-  \ExplSyntaxOff
-%    \end{macrocode}
+\ExplSyntaxOff
 
-%    \begin{macrocode}
 %%%% Dimensions
 %% Width of left column = marginparwidth
 \newlength{\leftcolumnlength}
@@ -2234,11 +2017,6 @@
     }
 } % Footer into the margin
 
-%    \end{macrocode}
-%
-% Commands for landscape page:
-% \begin{macro}{\startlandscape,\finishlandscape}
-%    \begin{macrocode}
 \newlength\mdpi@portrait@paperwidth
 \newlength\mdpi@portrait@paperheight
 \mdpi@portrait@paperheight= \paperheight
@@ -2250,9 +2028,6 @@
    \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
    \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
                  right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
-%    \end{macrocode}
-% \cs{newgeometry} resets the paper dimension so we overwrite them again:
-%    \begin{macrocode}
    \paperwidth =\mdpi@portrait@paperheight
    \paperheight=\mdpi@portrait@paperwidth
    \fancyheadoffset{0pt}
@@ -2277,12 +2052,6 @@
   \fancyheadoffset[L]{\extralength}
   \captionsetup{margin={0cm,0cm}}
 }
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsection{Figures and tables and other floats}
-% New floating environments:
-%    \begin{macrocode}
 \RequirePackage{newfloat}
 \DeclareFloatingEnvironment[]{listing}
 \DeclareFloatingEnvironment[name=Box]{boxenv}
@@ -2290,11 +2059,6 @@
 \DeclareFloatingEnvironment[]{scheme}
 \DeclareFloatingEnvironment[]{figurewide}
 \DeclareFloatingEnvironment[]{graph}
-%    \end{macrocode}
-%
-% Setup the tagging code. This will error if \pkg{newfloat}
-% does the tagging setup too!
-%    \begin{macrocode}
 \IfDocumentMetadataT
  {
    \tagpdfsetup
@@ -2304,19 +2068,231 @@
        float/new=chart,
        float/new=scheme,
        float/new=figurewide,
-       float/new=graph,              
+       float/new=graph,
+       float/new=algorithm,
      }
+   \AddToHook{begindocument}{\mdpi@install@float@H@tag}
  }
-%    \end{macrocode}
-%
-%    \begin{macrocode}
+%% [H] firstaid (latex-lab) only closes one para level in hmode, so the
+%% float nests under text-unit. End the full paragraph first; hang Table/
+%% Figure under Sect (reading order). Do not reopen text-unit after H.
+\ExplSyntaxOn
+\cs_new_protected:Npn \mdpi_install_float_H_tag:
+  {
+    \NewTaggingSocketPlug { float/H/begin } { mdpi }
+      {
+        \mode_if_horizontal:T { \par }
+        \tag_struct_begin:n { tag = \UseStructureName { float / ##1 } }
+        \tl_set:Ne \@current@float@struct { \tag_get:n { struct_num } }
+      }
+    \AssignTaggingSocketPlug { float/H/begin } { mdpi }
+    \NewTaggingSocketPlug { float/H/end } { mdpi }
+      {
+        \tag_struct_end:
+      }
+    \AssignTaggingSocketPlug { float/H/end } { mdpi }
+  }
+\cs_set_eq:NN \mdpi@install@float@H@tag \mdpi_install_float_H_tag:
+\box_new:N \l_mdpi_diagbox_visual_box
+\dim_new:N \l_mdpi_diagbox_wd_dim
+\dim_new:N \l_mdpi_diagbox_ht_dim
+\dim_new:N \l_mdpi_diagbox_dp_dim
+\tl_new:N \l_mdpi_diagbox_dir_tl
+\tl_new:N \l_mdpi_diagbox_plain_tl
+\cs_new_protected:Npn \mdpi_diagbox_plain:n #1
+  {
+    \group_begin:
+      \cs_set:Npn \multicolumn ##1##2##3 { ##3 }
+      \cs_set:Npn \\ { ~ }
+      \cs_set:Npn \linebreak { ~ }
+      \cs_set:Npn \newline { ~ }
+      \cs_set:Npn \textbf ##1 { ##1 }
+      \cs_set:Npn \textit ##1 { ##1 }
+      \cs_set:Npn \textrm ##1 { ##1 }
+      \cs_set:Npn \boldmath ##1 { ##1 }
+      \cs_set:Npn \bfseries { }
+      \cs_set:Npn \normalfont { }
+      \cs_set:Npn \protect { }
+      \protected@edef \mdpi@diagbox@atext { #1 }
+      \tl_set_eq:NN \l_tmpa_tl \mdpi@diagbox@atext
+      \regex_replace_all:nnN { \{ | \} } { } \l_tmpa_tl
+      \tl_gset:Ne \l_mdpi_diagbox_plain_tl { \tl_to_str:N \l_tmpa_tl }
+    \group_end:
+  }
+\cs_new_protected:Npn \mdpi_diagbox_span_at:n #1
+  {
+    \mdpi_diagbox_plain:n { #1 }
+    \exp_args:Ne \tag_struct_begin:n
+      { tag = Span , alt = { \l_mdpi_diagbox_plain_tl } }
+    \exp_args:Ne \tag_mc_begin:n
+      { actualtext = { \l_mdpi_diagbox_plain_tl } }
+      \pdfextension ~ literal ~ { 3 ~ Tr }
+      \normalfont \normalsize
+      \tl_use:N \l_mdpi_diagbox_plain_tl
+      \pdfextension ~ literal ~ { 0 ~ Tr }
+    \tag_mc_end:
+    \tag_struct_end:
+  }
+\cs_new_protected:Npn \mdpi_diagbox_place_SE:nn #1#2
+  {
+    \raisebox { -\l_mdpi_diagbox_dp_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ bl ] { \mdpi_diagbox_span_at:n { #1 } } }
+    \hss
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tr ] { \mdpi_diagbox_span_at:n { #2 } } }
+  }
+%% NE/SW: #1 top-left, #2 bottom-right
+\cs_new_protected:Npn \mdpi_diagbox_place_NE:nn #1#2
+  {
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tl ] { \mdpi_diagbox_span_at:n { #1 } } }
+    \hss
+    \raisebox { -\l_mdpi_diagbox_dp_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ br ] { \mdpi_diagbox_span_at:n { #2 } } }
+  }
+%% Triple NW: a BL, m TL, b TR
+\cs_new_protected:Npn \mdpi_diagbox_place_triple_NW:nnn #1#2#3
+  {
+    \raisebox { -\l_mdpi_diagbox_dp_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ bl ] { \mdpi_diagbox_span_at:n { #1 } } }
+    \hss
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tl ] { \mdpi_diagbox_span_at:n { #2 } } }
+    \hss
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tr ] { \mdpi_diagbox_span_at:n { #3 } } }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_place_triple_NE:nnn #1#2#3
+  {
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tl ] { \mdpi_diagbox_span_at:n { #1 } } }
+    \hss
+    \raisebox { \l_mdpi_diagbox_ht_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ tr ] { \mdpi_diagbox_span_at:n { #2 } } }
+    \hss
+    \raisebox { -\l_mdpi_diagbox_dp_dim } [ 0pt ] [ 0pt ]
+      { \makebox [ 0pt ] [ br ] { \mdpi_diagbox_span_at:n { #3 } } }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_read_dir:n #1
+  {
+    \tl_set:Nn \l_mdpi_diagbox_dir_tl { NW }
+    \group_begin:
+      \diagbox@clear
+      \setkeys { diagbox } { dir = NW , #1 }
+      \tl_gset_eq:NN \l_mdpi_diagbox_dir_tl \diagbox@dir
+    \group_end:
+  }
+\cs_new_protected:Npn \mdpi_diagbox_access_overlay:n #1
+  {
+    \rlap
+      {
+        \smash
+          {
+            \hbox_to_wd:nn { \l_mdpi_diagbox_wd_dim } { #1 }
+          }
+      }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_access:nnn #1#2#3
+  {
+    \mdpi_diagbox_read_dir:n { #1 }
+    \mdpi_diagbox_access_overlay:n
+      {
+        \str_case:NnF \l_mdpi_diagbox_dir_tl
+          {
+            { NW } { \mdpi_diagbox_place_SE:nn { #2 } { #3 } }
+            { SE } { \mdpi_diagbox_place_SE:nn { #2 } { #3 } }
+            { NE } { \mdpi_diagbox_place_NE:nn { #2 } { #3 } }
+            { SW } { \mdpi_diagbox_place_NE:nn { #2 } { #3 } }
+          }
+          { \mdpi_diagbox_place_SE:nn { #2 } { #3 } }
+      }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_access:nnnn #1#2#3#4
+  {
+    \mdpi_diagbox_read_dir:n { #1 }
+    \mdpi_diagbox_access_overlay:n
+      {
+        \str_case:NnF \l_mdpi_diagbox_dir_tl
+          {
+            { NW } { \mdpi_diagbox_place_triple_NW:nnn { #2 } { #3 } { #4 } }
+            { SE } { \mdpi_diagbox_place_triple_NW:nnn { #2 } { #3 } { #4 } }
+            { NE } { \mdpi_diagbox_place_triple_NE:nnn { #2 } { #3 } { #4 } }
+            { SW } { \mdpi_diagbox_place_triple_NE:nnn { #2 } { #3 } { #4 } }
+          }
+          { \mdpi_diagbox_place_triple_NW:nnn { #2 } { #3 } { #4 } }
+      }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_visual_box:nnn #1#2#3
+  {
+    \tag_suspend:n { diagbox }
+      \hbox_set:Nn \l_mdpi_diagbox_visual_box
+        { \mdpi@orig@diagbox [ #1 ] { #2 } { #3 } }
+    \tag_resume:n { diagbox }
+    \dim_set:Nn \l_mdpi_diagbox_wd_dim
+      { \box_wd:N \l_mdpi_diagbox_visual_box }
+    \dim_set:Nn \l_mdpi_diagbox_ht_dim
+      { \box_ht:N \l_mdpi_diagbox_visual_box }
+    \dim_set:Nn \l_mdpi_diagbox_dp_dim
+      { \box_dp:N \l_mdpi_diagbox_visual_box }
+  }
+\cs_new_protected:Npn \mdpi_diagbox_visual_box:nnnn #1#2#3#4
+  {
+    \tag_suspend:n { diagbox }
+      \hbox_set:Nn \l_mdpi_diagbox_visual_box
+        { \mdpi@orig@diagbox [ #1 ] { #2 } { #3 } { #4 } }
+    \tag_resume:n { diagbox }
+    \dim_set:Nn \l_mdpi_diagbox_wd_dim
+      { \box_wd:N \l_mdpi_diagbox_visual_box }
+    \dim_set:Nn \l_mdpi_diagbox_ht_dim
+      { \box_ht:N \l_mdpi_diagbox_visual_box }
+    \dim_set:Nn \l_mdpi_diagbox_dp_dim
+      { \box_dp:N \l_mdpi_diagbox_visual_box }
+  }
+\cs_new_protected:Npn \mdpi_install_diagbox_tag:
+  {
+    \cs_set_eq:NN \mdpi@orig@diagbox \diagbox
+    \RenewDocumentCommand \diagbox { O{} m m g }
+      {
+        \leavevmode
+        \ifx \@footnotetext \TX@trial@ftn
+          \IfNoValueTF { ##4 }
+            { \mdpi@orig@diagbox [ ##1 ] { ##2 } { ##3 } }
+            { \mdpi@orig@diagbox [ ##1 ] { ##2 } { ##3 } { ##4 } }
+        \else
+          \IfNoValueTF { ##4 }
+            {
+              \mdpi_diagbox_visual_box:nnn { ##1 } { ##2 } { ##3 }
+              \leavevmode
+              \hbox:n
+                {
+                  \mdpi_diagbox_access:nnn { ##1 } { ##2 } { ##3 }
+                  \box_use_drop:N \l_mdpi_diagbox_visual_box
+                }
+              \baselineskip \dp \@arstrutbox
+            }
+            {
+              \mdpi_diagbox_visual_box:nnnn { ##1 } { ##2 } { ##3 } { ##4 }
+              \leavevmode
+              \hbox:n
+                {
+                  \mdpi_diagbox_access:nnnn { ##1 } { ##2 } { ##3 } { ##4 }
+                  \box_use_drop:N \l_mdpi_diagbox_visual_box
+                }
+              \baselineskip \dp \@arstrutbox
+            }
+        \fi
+      }
+  }
+\cs_set_eq:NN \mdpi@install@diagbox@tag \mdpi_install_diagbox_tag:
+\ExplSyntaxOff
+\AddToHook{package/diagbox/after}{\IfDocumentMetadataT{\mdpi@install@diagbox@tag}}
 
 \RequirePackage{caption}
 \captionsetup
   {
-   labelfont={bf, small, stretch=1.17},
+   labelfont={bf, small, stretch=1.1},
    labelsep=period,
-   textfont={small, stretch=1.17},
+   textfont={small, stretch=1.1},
    aboveskip=6pt,
    justification=justified
   }
@@ -2327,9 +2303,26 @@
 \captionsetup[table]  {position=top}
 \captionsetup[boxenv] {position=top}
 
-%    \end{macrocode}
-% Why this??
-%    \begin{macrocode}
+%% Non-floating figure block with long caption (\captionof{figure}{...}).
+%% TL2026 + \DocumentMetadata: use float tagging sockets (PDF/UA-2).
+%% TL2023 / no tagging: \UseTaggingSocket may be undefined -- skip safely.
+\NewDocumentEnvironment{longfigurecaption}{}
+ {%
+  \par
+  \vspace{12pt}%
+  \begingroup
+  \parindent\z@
+  \def\@captype{figure}%
+  \UseTaggingSocket{struct/begin}{tag=float}
+  \ignorespaces
+ }
+ {%
+  \par
+  \UseTaggingSocket{struct/end}
+  \endgroup
+  \vspace{18pt}%
+ }
+
 \isPreprints
  {
   \captionsetup{singlelinecheck=on}
@@ -2337,11 +2330,6 @@
  {
   \captionsetup{singlelinecheck=off}
  }
-%    \end{macrocode}
-% A minimal, first adjustment of captions with tagging.
-% This should be replaced by templates once there are implemented in LaTeX.
-% TODO: spacing (including line spacing) must be checked,
-%    \begin{macrocode}
 \IfDocumentMetadataT
  {
    \abovecaptionskip=6pt
@@ -2352,24 +2340,70 @@
         \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
         \vskip\abovecaptionskip
         \small
-%    \end{macrocode}
-% We set the margin to the values from the caption package, so that e.g. landscape
-% can change them with \cs{captionsetup}
-%    \begin{macrocode}
-        \leftskip \caption@leftmargin
-        \rightskip\caption@rightmargin
-        \parfillskip=\z@ plus 1fil
-        \UseTaggingSocket{caption/begin}{\@current@float@struct}%
-        \UseTaggingSocket{caption/label/begin}%
-        \textbf{#1. }%
-        \UseTaggingSocket{caption/label/end}%
-        \UseTaggingSocket{para/begin}%
-            #2
-        \par
-        \UseTaggingSocket{caption/end}%
-        \vskip\belowcaptionskip}
+        \begingroup
+          \leftskip\caption@leftmargin\relax
+          \rightskip\caption@rightmargin\relax
+          \parfillskip=\z@ plus 1fil\relax
+          \ifcaption@star
+            #2\par
+          \else
+            \UseTaggingSocket{caption/begin}{\@current@float@struct}%
+            \UseTaggingSocket{caption/label/begin}%
+            \textbf{#1. }%
+            \UseTaggingSocket{caption/label/end}%
+            \UseTaggingSocket{para/begin}%
+                #2
+            \par
+            \UseTaggingSocket{caption/end}%
+          \fi
+        \endgroup
+        \vskip\belowcaptionskip
+        \global\caption@starfalse}
      }
+   % Keep \parbox usable for cell wrapping, but suppress parbox/para structure
+   % sockets inside tables so nested \parbox+\multirow do not emit illegal
+   % Div/P nesting under TR (ISO 32005). Cell text remains tagged via tbl/* .
+   \AddToHook{env/tabular/begin}{%
+     \AssignTaggingSocketPlug{parbox/before}{noop}%
+     \AssignTaggingSocketPlug{parbox/after}{noop}%
+     \AssignTaggingSocketPlug{para/restore}{noop}}
+   \AddToHook{env/tabularx/begin}{%
+     \AssignTaggingSocketPlug{parbox/before}{noop}%
+     \AssignTaggingSocketPlug{parbox/after}{noop}%
+     \AssignTaggingSocketPlug{para/restore}{noop}}
+   %% Per-cell X/m flag for multirow * -> = (count assigned later).
+   \AddToHook{cmd/insert@column/before}{\mdpi@mr@xcol\z@}
  }
+%% pdfTeX table[H]: \@floatboxreset + stretch→1 yields size10.clo nominal
+%% leading (\small 9/11 ≈ 10.96pt). Lua keeps baked 9/12.815 in cells and
+%% in table notes (\noindent\small{Note...} after tabular, still inside table).
+%% Apply only inside table/tabular — do not change global size definitions.
+\newcommand{\mdpi@table@pdf@leading}{%
+  \def\baselinestretch{1}%
+  \fontsize{\f@size}{%
+    \ifdim\f@size pt=5pt 6pt
+    \else\ifdim\f@size pt=7pt 8pt
+    \else\ifdim\f@size pt=8pt 9.5pt
+    \else\ifdim\f@size pt=9pt 11pt
+    \else\ifdim\f@size pt=10pt 12pt
+    \else\ifdim\f@size pt=12pt 14pt
+    \else\ifdim\f@size pt=14.4pt 18pt
+    \else\ifdim\f@size pt=17.28pt 22pt
+    \else\ifdim\f@size pt=20.74pt 25pt
+    \else\ifdim\f@size pt=24.88pt 30pt
+    \else\f@baselineskip
+    \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+  }\selectfont
+}
+\newif\ifmdpi@intable
+\AddToHook{env/table/begin}{\mdpi@intabletrue}
+\AddToHook{env/table/end}{\mdpi@intablefalse}
+%% Re-apply after size switches used for cells/notes inside the float.
+\AddToHook{cmd/small/after}{\ifmdpi@intable\mdpi@table@pdf@leading\fi}
+\AddToHook{cmd/footnotesize/after}{\ifmdpi@intable\mdpi@table@pdf@leading\fi}
+\AddToHook{cmd/normalsize/after}{\ifmdpi@intable\mdpi@table@pdf@leading\fi}
+\AddToHook{env/tabular/begin}{\mdpi@table@pdf@leading}
+\AddToHook{env/tabularx/begin}{\mdpi@table@pdf@leading}
 %% For table footnotes
 \newsavebox{\@justcentbox}
 \newcommand{\justifyorcenter}[1]{
@@ -2377,37 +2411,185 @@
 \ifdim \wd \@justcentbox >\hsize #1
 \else \centerline{#1} \fi
 }
-
 %% For text alignment in tables
-\renewcommand\tabularxcolumn[1]{m{#1}} % vertical centering
-\newcolumntype{C}{>{\centering\arraybackslash}X} % centered text in C columns
-\newcolumntype{L}{>{\raggedright\arraybackslash}X} % centered text in L columns
-\newcolumntype{R}{>{\raggedleft\arraybackslash}X} % centered text in R columns
+%% C/L/R set \multirowsetup so tagged multirow (*= rewritten to =) keeps
+%% the same horizontal alignment as the column. [m] still vertical-middle.
+\newcount\mdpi@mr@xcol
+\newcommand{\mdpi@mr@setup@C}{\renewcommand{\multirowsetup}{\centering}}
+\newcommand{\mdpi@mr@setup@L}{\renewcommand{\multirowsetup}{\raggedright}}
+\newcommand{\mdpi@mr@setup@R}{\renewcommand{\multirowsetup}{\raggedleft}}
+\IfDocumentMetadataTF
+  {\renewcommand\tabularxcolumn[1]{>{\mdpi@mr@xcol\@ne}m{#1}}}
+  {\renewcommand\tabularxcolumn[1]{m{#1}}}
+\newcolumntype{C}{>{\centering\arraybackslash\mdpi@mr@setup@C}X} % centered text in C columns
+\newcolumntype{L}{>{\raggedright\arraybackslash\mdpi@mr@setup@L}X} % left text in L columns
+\newcolumntype{R}{>{\raggedleft\arraybackslash\mdpi@mr@setup@R}X} % right text in R columns
 
-%    \end{macrocode}
-% \subsection{List settings}
-% The tagging code doesn't support yet the star-value for \texttt{leftmargin} and
-% the value \texttt{parleft} for align, so we have to change that:
-% TODO: values should be reviewed, e.g. for second level.
-%    \begin{macrocode}
+%% Transparent \multirow tagging: authors keep \multirow[m]{n}{*}{...}.
+%% In X/m (C/L/R): * -> = (avoid Artifact) + /RowSpan; skip tabularx trials.
+%% Install via parameterless macro so # doubling stays correct.
+\ExplSyntaxOn
+\int_new:N \g_mdpi_mr_tbl_int
+\seq_new:N \g_mdpi_mr_notes_seq
+\prop_new:N \g_mdpi_mr_logical_prop
+\cs_new_protected:Npn \mdpi_mr_tbl_begin:
+  {
+    \int_gincr:N \g_mdpi_mr_tbl_int
+    \seq_gclear:N \g_mdpi_mr_notes_seq
+  }
+\cs_new_protected:Npn \mdpi_mr_note:n #1
+  {
+    \cs_if_exist:NT \g__tbl_row_int
+      {
+        \seq_gput_right:Ne \g_mdpi_mr_notes_seq
+          {
+            { \int_use:N \g__tbl_row_int }
+            { \int_use:N \g__tbl_col_int }
+            { \int_eval:n {#1} }
+          }
+      }
+  }
+\cs_new_protected:Npn \mdpi_mr_write_span:nnnn #1#2#3#4
+  {
+    \iow_now:Ne \@auxout
+      {
+        \token_to_str:N \mdpi@mr@span
+        {#1}{#2}{#3}{#4}
+      }
+  }
+\tl_new:N \l_mdpi_mr_row_tl
+\tl_new:N \l_mdpi_mr_col_tl
+\tl_new:N \l_mdpi_mr_vis_tl
+\int_new:N \l_mdpi_mr_next_int
+\int_new:N \l_mdpi_mr_span_int
+\cs_new_protected:Npn \mdpi_mr_tbl_end:
+  {
+    \cs_if_exist:NT \g__tbl_row_int
+      {
+        \int_set:Nn \l_mdpi_mr_next_int { \g__tbl_row_int + 1 }
+        \seq_map_indexed_inline:Nn \g_mdpi_mr_notes_seq
+          {
+            \tl_set:Ne \l_mdpi_mr_row_tl { \tl_item:nn {##2} {1} }
+            \tl_set:Ne \l_mdpi_mr_col_tl { \tl_item:nn {##2} {2} }
+            \int_set_eq:NN \l_tmpb_int \l_mdpi_mr_next_int
+            \seq_map_indexed_inline:Nn \g_mdpi_mr_notes_seq
+              {
+                \int_compare:nNnT {####1} > {##1}
+                  {
+                    \tl_set:Ne \l_tmpa_tl { \tl_item:nn {####2} {2} }
+                    \tl_if_eq:NNT \l_tmpa_tl \l_mdpi_mr_col_tl
+                      {
+                        \tl_set:Ne \l_tmpa_tl { \tl_item:nn {####2} {1} }
+                        \int_set:Nn \l_tmpb_int { \l_tmpa_tl }
+                        \seq_map_break:
+                      }
+                  }
+              }
+            \int_set:Nn \l_mdpi_mr_span_int
+              { \l_tmpb_int - \l_mdpi_mr_row_tl }
+            \int_compare:nNnT \l_mdpi_mr_span_int < { 1 }
+              { \int_set:Nn \l_mdpi_mr_span_int { 1 } }
+            \mdpi_mr_write_span:nnnn
+              { \int_use:N \g_mdpi_mr_tbl_int }
+              { \l_mdpi_mr_row_tl }
+              { \l_mdpi_mr_col_tl }
+              { \int_use:N \l_mdpi_mr_span_int }
+          }
+      }
+    \seq_gclear:N \g_mdpi_mr_notes_seq
+  }
+\cs_new_protected:Npn \mdpi_mr_attr_only:n #1
+  {
+    \cs_if_exist:NT \__tag_attr_new_entry:ee
+      {
+        \prop_get:NeNF \g__tag_attr_entries_prop
+          { rowspan-\int_eval:n {#1} }
+          \l_tmpa_tl
+          {
+            \__tag_attr_new_entry:ee
+              { rowspan-\int_eval:n {#1} }
+              { /O~/Table~/RowSpan~\int_eval:n {#1} }
+          }
+        \seq_get_right:NNT \g__tbl_struct_cur_seq \l_tmpb_tl
+          {
+            \tl_set:Ne \l_tmpb_tl { \int_abs:n { \l_tmpb_tl } }
+            \cs_if_exist:NT \__tag_struct_prop_gput:one
+              {
+                \__tag_struct_prop_gput:one { \l_tmpb_tl }
+                  { C }
+                  { [/rowspan-\int_eval:n {#1}] }
+              }
+          }
+      }
+  }
+\cs_new_protected:Npn \mdpi_multirow_set_rowspan:n #1
+  {
+    \fp_set:Nn \l_tmpa_fp { abs(#1) }
+    \int_set:Nn \l_tmpa_int { \fp_to_int:n { floor( \l_tmpa_fp + 0.5 ) } }
+    \mdpi_mr_note:n { \l_tmpa_int }
+    \cs_if_exist:NTF \g__tbl_row_int
+      {
+        \prop_get:NeNTF \g_mdpi_mr_logical_prop
+          {
+            \int_use:N \g_mdpi_mr_tbl_int ,
+            \int_use:N \g__tbl_row_int ,
+            \int_use:N \g__tbl_col_int
+          }
+          \l_tmpa_tl
+          {
+            \int_compare:nNnT { \l_tmpa_tl } > { 1 }
+              {
+                \tagpdfsetup { table/multirow = { \l_tmpa_tl } }
+              }
+          }
+          {
+            \int_compare:nNnT \l_tmpa_int > { 1 }
+              { \mdpi_mr_attr_only:n { \l_tmpa_int } }
+          }
+      }
+      {
+        \int_compare:nNnT \l_tmpa_int > { 1 }
+          { \mdpi_mr_attr_only:n { \l_tmpa_int } }
+      }
+  }
+\cs_new_protected:Npn \mdpi_mr_span:nnnn #1#2#3#4
+  {
+    \prop_gput:Nee \g_mdpi_mr_logical_prop { #1 , #2 , #3 } {#4}
+  }
+\cs_set_eq:NN \mdpi@multirow@setrowspan \mdpi_multirow_set_rowspan:n
+\cs_set_eq:NN \mdpi@mr@tbl@begin \mdpi_mr_tbl_begin:
+\cs_set_eq:NN \mdpi@mr@tbl@end \mdpi_mr_tbl_end:
+\cs_set_eq:NN \mdpi@mr@span \mdpi_mr_span:nnnn
+\ExplSyntaxOff
+\newcommand{\mdpi@install@multirow@tag}{%
+  \let\mdpi@orig@xmultirow\@xmultirow
+  \long\def\@xmultirow[##1]##2[##3]##4[##5]##6{%
+    \ifx\@footnotetext\TX@trial@ftn
+    \else
+      \mdpi@multirow@setrowspan{##2}%
+    \fi
+    \ifnum\mdpi@mr@xcol>\z@
+      \if*##4%
+        \mdpi@orig@xmultirow[##1]{##2}[##3]{=}[##5]{##6}%
+      \else
+        \mdpi@orig@xmultirow[##1]{##2}[##3]{##4}[##5]{##6}%
+      \fi
+    \else
+      \mdpi@orig@xmultirow[##1]{##2}[##3]{##4}[##5]{##6}%
+    \fi
+  }%
+  \AddToHook{env/tabular/begin}{\mdpi@mr@tbl@begin}%
+  \AddToHook{env/tabularx/begin}{\mdpi@mr@tbl@begin}%
+  \AddToHook{env/tabular/end}{\mdpi@mr@tbl@end}%
+  \AddToHook{env/tabularx/end}{\mdpi@mr@tbl@end}%
+}
+\AddToHook{begindocument/before}{\IfDocumentMetadataT{\mdpi@install@multirow@tag}}
+
 \IfDocumentMetadataTF
  {
   \setlist[itemize]
     {
-     begin-vspace=3pt,
-     end-vspace=3pt,
-     parsep=0pt,
-     itemsep=0pt,
-     leftmargin=21.25pt,
-     labelwidth=16.25pt,
-     itemindent=0pt,
-     labelsep=5pt,
-     align=left
-    }
-  \setlist[enumerate]
-    {
-     begin-vspace=3pt,
-     end-vspace=3pt,
+     topsep=3pt,
      parsep=0pt,
      itemsep=0pt,
      leftmargin=21.25pt,
@@ -2415,6 +2597,21 @@
      itemindent=0pt,
      labelsep=5pt,
      align=left,
+     end-vspace=3pt,
+     end-extra-vspace=1pt
+    }
+  \setlist[enumerate]
+    {
+     topsep=3pt,
+     parsep=0pt,
+     itemsep=0pt,
+     leftmargin=21.25pt,
+     labelwidth=16.25pt,
+     itemindent=0pt,
+     labelsep=5pt,
+     align=left,
+     end-vspace=3pt,
+     end-extra-vspace=1pt
      }
  }
  {
@@ -2422,9 +2619,7 @@
   \setlist[enumerate]{topsep=3pt,parsep=0pt,itemsep=0pt,leftmargin=*,labelsep=5.5mm,align=parleft}
  }
 \setlist[description]{itemsep=0mm}
-%    \end{macrocode}
 
-%    \begin{macrocode}
 %%%% Quote environment
 \renewenvironment{quote}{
   \list{}{
@@ -2557,24 +2752,15 @@
    }
 }
 
-%    \end{macrocode}
-% \subsection{Bibliography support}
-% TODO: Check handling of the heading in books 
-%    \begin{macrocode}
+%%%% Bibliography
 \renewcommand\bibname{References} % Backwards compatibility for book production
 \renewcommand\@biblabel[1]{#1.\hfill}
-%    \end{macrocode}
-
-%    \begin{macrocode}
 \ExplSyntaxOn
 \IfDocumentMetadataTF
  {
    \renewenvironment{thebibliography}[1]
      {%
       \emergencystretch 2em
-%    \end{macrocode}
-%    to remove the section from the TOC in books: (TODO)
-%    \begin{macrocode}
       \isBookContribution
         {}
         {
@@ -2639,38 +2825,19 @@
      }
      {\endlist}
   }
-\ExplSyntaxOff  
+\ExplSyntaxOff
+%%%% Publisher's note
+\newcommand{\PublishersNote}{
+\null\par\noindent\small\textbf{Disclaimer/Publisher's Note:} The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+}
 
-%    \end{macrocode}
-%
-% \subsection{Textsnippets}
-% \subsection{Publisher's note}
-% This is used in the template after the bibliography. 
-% TODO: should it be inserted automatically?
-% TODO: why the null?
-%    \begin{macrocode}
-\newcommand{\PublishersNote}
- {%
-   \null\par\noindent\small\textbf{Disclaimer/Publisher's Note:} 
-   The statements, opinions and data contained in all publications are solely 
-   those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). 
-   MDPI and/or the editor(s) disclaim responsibility for any injury to people or 
-   property resulting from any ideas, methods, instructions or products referred to in the 
-   content.\par
- }
-%    \end{macrocode}
-% \subsubsection{Copyright info}
-% A text snippet used for submitted articles:
-%    \begin{macrocode}
+%%%% Copyright info
 \newcommand\mdpi@cright@text@submit
  {%
-   \textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum. 
+   \textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum.
            Submitted to {\em\journalname} for possible open access publication
            under the terms and conditions of the %
  }
-%    \end{macrocode}
-% A similar snipped for published articles:
-%    \begin{macrocode}
 \newcommand\mdpi@cright@text@published
  {%
    \textbf{Copyright:} \copyright \ {\@copyrightyear} by the \@authornum.
@@ -2678,92 +2845,42 @@
              {\@societyowner}
              {Published by MDPI on behalf of the {\@societyowner}.}
            Licensee MDPI, Basel, Switzerland.
-           This article is an open access article distributed under the terms 
-           and conditions of the 
- } 
-%    \end{macrocode}
-% Text snipped for license info:
-%    \begin{macrocode}
+           This article is an open access article distributed under the terms
+           and conditions of the
+ }
 \newcommand\mdpi@cright@text@ccbyncnd
  {%
    \href
       {https://creativecommons.org/licenses/by-nc-nd/4.0/}
       {Creative Commons Attribution (CC BY-NC-ND) license}.%
- } 
- 
+ }
+
 \newcommand\mdpi@cright@text@ccby
   {%
     \href
       {https://creativecommons.org/licenses/by/4.0/}
       {Creative Commons Attribution (CC~BY) license}.%
   }
-%    \end{macrocode}
-% 
-% Now we build the whole text. The text is used at the end of a box in its own paragraph
-% so there is no need for grouping. 
-% 
-% TODO: \verb+\fontdimen2\font=1.2pt+ has been removed as this setting is not local and
-% affects the font in whole document.
-% Spacing must be checked and if needed be adapted in some other way. 
-% 
-%    \begin{macrocode}
 \ExplSyntaxOn
 \newcommand{\mdpi@text@copyright}
   {
-    \raggedright 
+    \raggedright
     \tl_if_eq:NnF\@arttype{Supfile}
      {
       \tl_if_eq:NnTF\@status{submit}
          {
-           %\fontdimen2\font=1.2pt % not local!!
-           \mdpi@cright@text@submit           
+           \fontdimen2\font=1.2pt
+           \mdpi@cright@text@submit
          }
          {
-          \mdpi@cright@text@published          
+          \mdpi@cright@text@published
          }
-      \use:c{ mdpi@cright@text@\@journallicence }   
+      \use:c{ mdpi@cright@text@\@journallicence }
       }
    }
 \ExplSyntaxOff
-%    \end{macrocode}
-%
-%\subsection{Perhaps obsolete commands}
-%TODO: check if this is still in use.
-% For transition period to change back to continuous page numbers
-%    \begin{macrocode}
-\def\@continuouspages{}
-\newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
-%    \end{macrocode}
-% Command for checking for a question mark or exclamation mark in title
-%    \begin{macrocode}
-\def\instring#1#2{TT\fi\begingroup\edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
-%    \end{macrocode}
-% Copies of commands that have now an internal prefix
-%    \begin{macrocode}
 \let\twodigits\mdpi@mintwodigits
 \let\fivedigits\mdpi@minfourdigits
-%    \end{macrocode}
-% For \cs{@pubvolume}, \cs{@issuenum}, and \cs{@articlenumber}: 
-% A command to cut leading zeros. Doesn't make sense, the 
-% error case is never reached, so simply using \cs{number} or \cs{inteval} is quite 
-% enough. 
-%    \begin{macrocode}
-\newcommand\cutdigits[1]{%
-  \ifnum#1>0 %
-    \number#1
-  \else
-    \ifnum#1<10000 %
-      \number#1
-    \else
-      error
-    \fi
-  \fi
-}
-
-% TODO: check if these commands are used and make sense (names are not very good):
-% To have the possibility to change the urlcolor
-%    \begin{macrocode}
-\newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
 
 \newcommand{\fig}[1]{Figure~\ref{#1}}
 \newcommand{\tabref}[1]{Table~\ref{#1}}
@@ -2775,12 +2892,7 @@
 \newcommand{\boxref}[1]{Box~\ref{#1}}
 \newcommand{\cgraph}[1]{Graph~\ref{#1}}
 
-%    \end{macrocode}
-%
-%\subsection{XML2PDF support}
-% For tables XML2PDF
-% TODO: is that used? When?
-%    \begin{macrocode}
+%%%% For tables XML2PDF
 \RequirePackage{seqsplit} % Use for split table column
   \newlength{\cellWidtha}
   \newlength{\cellWidthb}
@@ -2835,5 +2947,16 @@
   \newlength{\cellWidthY}
   \newlength{\cellWidthZ}
  \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp} % For table column setting in XML2PDF
+
+\InputIfFileExists{Definitions/luatex-core.tex}{}{%
+  \PackageError{mdpi-luatex}{Missing Definitions/luatex-core.tex}{%
+    Install the MDPI Definitions bundle beside the main .tex file.}%
+}
+\ifmdpiunicodemaps
+  \InputIfFileExists{Definitions/unicode-luatex.tex}{}{%
+    \PackageError{mdpi-luatex}{Missing Definitions/unicode-luatex.tex}{%
+      Install the MDPI Definitions bundle beside the main .tex file.}%
+  }%
+\fi
 %</class>
 %    \end{macrocode}
