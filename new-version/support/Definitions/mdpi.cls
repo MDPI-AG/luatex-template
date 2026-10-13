@@ -118,6 +118,13 @@
 
 %% To choose the journal
 % All journals (website name, full name, short name, DOI abbreviation, and ISSN + choice of continuous page numbers) are defined in an extra file. 
+\gdef\@journal{notspecified}
+\gdef\@journalfull{Journal Not Specified}
+\gdef\@journalshort{Journal Not Specified}
+\gdef\@doiabbr{}
+\gdef\@ISSN{}
+\gdef\@societyowner{}
+\gdef\@journaltype{ACS}
 \input{Definitions/journalnames}
 \DeclareOption{journal}{\ClassWarning{mdpi}{You used an invalid journal name or you have not specified the journal. The first option of the documentclass command specifies the journal. The word 'journal' should be replaced by one of the journal names specified in template.tex (in the comment 'Choose between the following MDPI journal').}} 
 
