@@ -1,0 +1,17 @@
+
+% regression-test should be before the class as microtype defines \pdfoutput!
+% https://github.com/MDPI-AG/luatex-template/issues/116
+\DocumentMetadata{tagging=on}
+\makeatletter
+\let\@@@end\@@end %regressiontest is not good to bm ...
+\makeatother
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\begin{document}
+\START\showoutput
+
+{\makeatletter \let\@@end\@@@end\makeatother
+$\bm \alpha$}
+
+\SHOWPDFTAGS
+\end{document} 

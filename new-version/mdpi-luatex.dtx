@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-02}
-\def\mdpiversion{v7.0l}
+\def\mdpidate{2026-10-13}
+\def\mdpiversion{v7.0m}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -886,6 +886,7 @@
 %    \begin{macrocode}
 \AddToHook{begindocument/before}
   {
+    \RequirePackage{bm}
     \mdpi@load@hyperref@cleveref    
   } 
 %    \end{macrocode}
