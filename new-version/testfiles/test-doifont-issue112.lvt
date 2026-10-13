@@ -1,0 +1,11 @@
+
+% regression-test should be before the class as microtype defines \pdfoutput!
+% https://github.com/MDPI-AG/luatex-template/issues/112
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass[apajournal,article,submit,moreauthors]{mdpi-luatex} 
+\begin{document}
+\START\showoutput
+some text 
+\SHOWPDFTAGS
+\end{document} 

@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-10-13}
-\def\mdpiversion{v7.0m}
+\def\mdpiversion{v7.0n}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -879,6 +879,9 @@
      allcolors    = mdpi@hypcolor,
     ] 
     {hyperref}
+%    \end{macrocode}
+% Now load cleveref
+%    \begin{macrocode}
    \RequirePackage[capitalise,noabbrev]{cleveref}
    \mdpi@cleveref@setup
  }
@@ -889,6 +892,22 @@
     \RequirePackage{bm}
     \mdpi@load@hyperref@cleveref    
   } 
+%    \end{macrocode}
+%
+% The urlsetup must be done at begin document to overwrite
+% the apacite settings.
+% Urls should be always in roman family
+%    \begin{macrocode}
+\AtBeginDocument
+  {
+     \urlstyle{rm}
+%    \end{macrocode}
+% Adjust url breaks
+%    \begin{macrocode}
+     \def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
+     \g@addto@macro{\UrlBreaks}{\UrlOrds}
+     \g@addto@macro{\UrlBreaks}{\UrlDigits}
+  }   
 %    \end{macrocode}
 % This sets the PDF metadata:
 %    \begin{macrocode}
@@ -1826,15 +1845,10 @@
  {
   \DeclareSymbolFont{AMSb}{U}{msb}{m}{n}
   \DeclareSymbolFontAlphabet{\mathbb}{AMSb}
-      %%%% URL
-    \urlstyle{same}
-     % Line breaks in URL
-     \def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
-     \g@addto@macro{\UrlBreaks}{\UrlOrds}
-     \g@addto@macro{\UrlBreaks}{\UrlDigits}
  }
-
-%%%% Font size in Tables and watermark in arttype retraction
+%    \end{macrocode}
+% Font size in Tables and watermark in arttype retraction
+%    \begin{macrocode}
 \AtEndPreamble{
   \def\@tablesize{}
   \newcommand{\tablesize}[1]{\gdef\@tablesize{#1}}
@@ -1842,7 +1856,6 @@
   \renewcommand{\tabularx}{\ifthenelse{\equal{\@tablesize}{\@empty}}{}{\@tablesize}\oldtabularx}
   \printretraction
 }
-
 %    \end{macrocode}
 % \subsection{Table of contents}
 % The section entries should have dots. We make use of \cs{@dottedtocline} to get the

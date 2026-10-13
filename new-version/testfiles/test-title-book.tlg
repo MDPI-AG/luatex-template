@@ -43,7 +43,17 @@ Lua function __luamml_amsmath_save_tag_with_struct_elem:N = ...
 Lua function __luamml_amsmath_set_tag: = ...
 Lua function __luamml_amsmath_save_intertext_with_struct_elem:N = ...))
 Package translations Info: No language package found. I am going to use `english' as default language. on input line ....
-(../hyperref.sty
+(../bm.sty
+Package: bm ....-..-.. v... Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup8
+\symboldletters=\mathgroup9
+\symboldsymbols=\mathgroup10
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+\symboldlummain=\mathgroup11
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line ....
+) (../hyperref.sty
 Package: hyperref ....-..-.. v... Hypertext links for LaTeX
 (../kvdefinekeys.sty
 Package: kvdefinekeys ....-..-.. v... Define keys (HO)
