@@ -145,18 +145,20 @@
 \DeclareOption{communication}{\gdef\@arttype{Communication}}
 \DeclareOption{conceptpaper}{\gdef\@arttype{Concept Paper}}
 \DeclareOption{conferenceproceedings}{\gdef\@arttype{Proceedings}}
-\DeclareOption{correction}{\gdef\@arttype{Correction}}
 \DeclareOption{conferencereport}{\gdef\@arttype{Conference Report}}
+\DeclareOption{correction}{\gdef\@arttype{Correction}}
 \DeclareOption{creative}{\gdef\@arttype{Creative}}
 \DeclareOption{datadescriptor}{\gdef\@arttype{Data Descriptor}}
 \DeclareOption{discussion}{\gdef\@arttype{Discussion}}
+\DeclareOption{editorial}{\gdef\@arttype{Editorial}}
 \DeclareOption{entry}{\gdef\@arttype{Entry}}
+\DeclareOption{erratum}{\gdef\@arttype{Erratum}}
+\DeclareOption{essay}{\gdef\@arttype{Essay}}
 \DeclareOption{expressionofconcern}{\gdef\@arttype{Expression of Concern}}
 \DeclareOption{extendedabstract}{\gdef\@arttype{Extended Abstract}}
-\DeclareOption{editorial}{\gdef\@arttype{Editorial}}
-\DeclareOption{essay}{\gdef\@arttype{Essay}}
-\DeclareOption{erratum}{\gdef\@arttype{Erratum}}
 \DeclareOption{fieldguide}{\gdef\@arttype{Field Guide}}
+\DeclareOption{giantsinurology}{\gdef\@arttype{Giants in Urology}}
+\DeclareOption{guidelines}{\gdef\@arttype{Guidelines}}
 \DeclareOption{hypothesis}{\gdef\@arttype{Hypothesis}}
 \DeclareOption{interestingimages}{\gdef\@arttype{Interesting Images}}
 \DeclareOption{letter}{\gdef\@arttype{Letter}}
@@ -165,26 +167,23 @@
 \DeclareOption{newbookreceived}{\gdef\@arttype{New Book Received}}
 \DeclareOption{obituary}{\gdef\@arttype{Obituary}}
 \DeclareOption{opinion}{\gdef\@arttype{Opinion}}
+\DeclareOption{patentsummary}{\gdef\@arttype{Patent Summary}}
+\DeclareOption{perspective}{\gdef\@arttype{Perspective}}
 \DeclareOption{proceedingpaper}{\gdef\@arttype{Proceeding Paper}}
 \DeclareOption{projectreport}{\gdef\@arttype{Project Report}}
+\DeclareOption{protocol}{\gdef\@arttype{Protocol}}
+\DeclareOption{registeredreport}{\gdef\@arttype{Registered Report}}
 \DeclareOption{reply}{\gdef\@arttype{Reply}}
 \DeclareOption{retraction}{\gdef\@arttype{Retraction}}
 \DeclareOption{review}{\gdef\@arttype{Review}}
-\DeclareOption{perspective}{\gdef\@arttype{Perspective}}
-\DeclareOption{protocol}{\gdef\@arttype{Protocol}}
 \DeclareOption{shortnote}{\gdef\@arttype{Short Note}}
 \DeclareOption{studyprotocol}{\gdef\@arttype{Study Protocol}}
 \DeclareOption{supfile}{\gdef\@arttype{Supfile}}
 \DeclareOption{systematicreview}{\gdef\@arttype{Systematic Review}}
 \DeclareOption{technicalnote}{\gdef\@arttype{Technical Note}}
-\DeclareOption{viewpoint}{\gdef\@arttype{Viewpoint}}
-\DeclareOption{guidelines}{\gdef\@arttype{Guidelines}}
-\DeclareOption{registeredreport}{\gdef\@arttype{Registered Report}}
 \DeclareOption{tutorial}{\gdef\@arttype{Tutorial}}
-% Urology article types
-\DeclareOption{giantsinurology}{\gdef\@arttype{Giants in Urology}}
 \DeclareOption{urologyaroundtheworld}{\gdef\@arttype{Urology around the World}}
-\DeclareOption{patentsummary}{\gdef\@arttype{Patent Summary}}
+\DeclareOption{viewpoint}{\gdef\@arttype{Viewpoint}}
 
 %% To choose the status of the manuscript
 \DeclareOption{submit}{\gdef\@status{submit}}
