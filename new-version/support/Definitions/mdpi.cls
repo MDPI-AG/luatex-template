@@ -23,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-10-10}
+\def\mdpidate{2026-10-13}
 \def\mdpiversion{v6.5c}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
@@ -557,6 +557,7 @@
 \def\instring#1#2{TT\fi\begingroup\edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
 
 \newcommand{\firstargument}{}
+\def\@Title{TITLE}
 \newcommand{\Title}[1]{\gdef\@Title{#1}}%
 \def\@Author{}
 \newcommand{\Author}[1]{\gdef\@Author{#1}}%
@@ -564,6 +565,8 @@
 \newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
 \newcommand{\firstpage}[1]{\gdef\@firstpage{#1}}
 \newcommand{\doinum}[1]{\gdef\@doinum{#1}}
+\providecommand\@pubvolume{0}
+\providecommand\@articlenumber{0}
 
 % DOI number
 % Create command to add a leading zero if 1 digit
@@ -631,6 +634,7 @@
 \newcommand{\pubvolume}[1]{\gdef\@pubvolume{\cutdigits{#1}}}
 \newcommand{\pubyear}[1]{\gdef\@pubyear{#1}}
 \newcommand{\copyrightyear}[1]{\gdef\@copyrightyear{#1}}
+\def\@address{ADDRESS}
 \newcommand{\address}[2][]{\renewcommand{\firstargument}{#1}\gdef\@address{#2}}
 \newcommand{\corresfirstargument}{}
 \def\@corres{}
@@ -649,6 +653,7 @@
 \newcommand{\daterevised}[1]{\gdef\@daterevised{#1}} 
 \def\@dateaccepted{}
 \newcommand{\dateaccepted}[1]{\gdef\@dateaccepted{#1}} 
+\def\@datepublished{}
 \newcommand{\datepublished}[1]{\gdef\@datepublished{#1}} 
 \def\@datecorrected{}
 \newcommand{\datecorrected}[1]{\gdef\@datecorrected{#1}}
@@ -670,7 +675,7 @@
 \newcommand{\featuredapplication}[1]{\gdef\@featuredapplication{#1}}
 \def\@keycontribution{}
 \newcommand{\keycontribution}[1]{\gdef\@keycontribution{#1}}
-\def\@issuenum{}
+\def\@issuenum{0}
 \newcommand{\issuenum}[1]{\gdef\@issuenum{\cutdigits{#1}}}
 \def\@firstnote{}
 \newcommand{\firstnote}[1]{\gdef\@firstnote{#1}}
