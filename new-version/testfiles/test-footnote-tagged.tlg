@@ -410,7 +410,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 483.98425fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 488.90656fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -1682,7 +1682,7 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+......\hbox(0.0+0.0)x0.0, shifted -9.50043, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
 .......\pdfdest name{footnote*.1} xyz
@@ -1691,7 +1691,7 @@ Completed box being shipped out [1]
 .....\kern0.0
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+......\hbox(0.0+0.0)x0.0, shifted -9.50043, direction TLT
 .......\pdfdest name{footnote*.2} xyz
 .......\pdfdest name{footnote*.2} xyz
 .......\penalty 10000
@@ -1865,7 +1865,7 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/m/n/8  
 .....\glue(\rightskip) -2.0
 ....\penalty 20100
-....\glue(\baselineskip) 2.39699
+....\glue(\baselineskip) 1.41241
 ....\hbox(5.824+1.24)x379.35522, glue set 343.33118fil, shifted 15.0, direction TLT
 .....\kern-0.224 (left margin)
 .....\TU/texgyrepagella(0)/m/n/8 v
@@ -1892,10 +1892,10 @@ Completed box being shipped out [1]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 8.2425
+....\glue 7.75021
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.437
+....\glue(\baselineskip) 2.45242
 ....\hbox(5.808+0.096)x358.10522, glue set 347.35321fil, shifted 36.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1908,7 +1908,7 @@ Completed box being shipped out [1]
 .......\hbox(3.6+0.0)x4.48, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
-.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -9.50043, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfdest name{*.1} xyz
@@ -1929,9 +1929,9 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty -51
 ....\glue 3.0
-....\glue(\parskip) 5.2425
+....\glue(\parskip) 4.75021
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 4.58101
+....\glue(\baselineskip) 3.59644
 ....\hbox(5.808+2.264)x379.35522, glue set - 0.00227, shifted 15.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
@@ -2093,8 +2093,8 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/m/n/8  
 .....\glue(\rightskip) -2.0
 ....\penalty 20100
-....\glue(\baselineskip) 2.39699
-....\hbox(5.824+3.14552)x379.35522, glue set 341.93121fil, shifted 15.0, direction TLT
+....\glue(\baselineskip) 1.41241
+....\hbox(5.824+2.85014)x379.35522, glue set 341.93121fil, shifted 15.0, direction TLT
 .....\kern-0.224 (left margin)
 .....\TU/texgyrepagella(0)/m/n/8 v
 .....\TU/texgyrepagella(0)/m/n/8 i
@@ -2116,11 +2116,11 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/m/n/8 s
 .....\TU/texgyrepagella(0)/m/n/8 .
 .....\penalty 10000
-.....\rule(0.0+3.14552)x0.0
+.....\rule(0.0+2.85014)x0.0
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\glue -3.14552
+....\glue -2.85014
 ....\glue 0.0 plus 0.0001fil
 ...\pdfliteral page <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>

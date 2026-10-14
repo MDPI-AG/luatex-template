@@ -1,0 +1,20 @@
+\DocumentMetadata{tagging = on}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\usepackage{lipsum}
+\begin{document}
+\START\showoutput
+some text \footnote{\the\baselineskip}
+
+\begin{table}[H]
+    
+\caption{a caption}\label{tabref:xxx}
+
+\the\baselineskip
+
+\begin{tabular}{p{1cm}}
+\the\normalbaselineskip
+\end{tabular}
+
+\end{table}    
+\end{document}
