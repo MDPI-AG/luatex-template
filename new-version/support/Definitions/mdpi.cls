@@ -23,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-10-13}
+\def\mdpidate{2026-10-14}
 \def\mdpiversion{v6.5c}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
@@ -428,6 +428,12 @@
 	\crefalias{Assumption}{assumption}%
 	\crefalias{Algorithm}{algorithm}%
 }
+
+% TeX Live 2023 / 2026 compatibility--for ArabTeX (package arabtex can't be used in 2026).
+\let\mdpi@document@orig\document
+\def\document{%
+  \ifnum\currentgrouplevel>\z@ \endgroup \fi
+  \mdpi@document@orig}
 
 % After TeXLive 2021, \AddToHook{begindocument} is needed to make sure that hyperref is loaded last. \ifdef{\AddToHook{begindocument}}{ is needed for backwards-compatibility because \AddToHook{begindocument} did not yet exist in 2020.
 % After TeXLive 2022, \AddToHook{begindocument/before}{} is needed and  \DeclareHookRule{begindocument}{hyperref}{before}{mdpi} needs to be added because of the new version of hyperref.
