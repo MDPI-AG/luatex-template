@@ -2410,14 +2410,14 @@ Completed box being shipped out [1]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{figure.caption.2} xyz
 ......\pdfdest name{figure.caption.2} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces a figure}}{\thepage }{figure.caption.2}\protected@file@percent }}
 ......\glue 6.0
@@ -2937,14 +2937,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{figure.caption.3} xyz
 ......\pdfdest name{figure.caption.3} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {2}{\ignorespaces a figure}}{\thepage }{figure.caption.3}\protected@file@percent }}
 ......\glue 6.0
@@ -3004,14 +3004,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{table.caption.4} xyz
 ......\pdfdest name{table.caption.4} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces a table}}{\thepage }{table.caption.4}\protected@file@percent }}
 ......\glue 6.0
@@ -3072,14 +3072,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{table.caption.5} xyz
 ......\pdfdest name{table.caption.5} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {2}{\ignorespaces a table}}{\thepage }{table.caption.5}\protected@file@percent }}
 ......\glue 6.0
@@ -3140,14 +3140,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{listing.caption.6} xyz
 ......\pdfdest name{listing.caption.6} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lolisting}{\protect \contentsline {listing}{\protect \numberline {1}{\ignorespaces a listing}}{\thepage }{listing.caption.6}\protected@file@percent }}
 ......\glue 6.0
@@ -3211,14 +3211,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{listing.caption.7} xyz
 ......\pdfdest name{listing.caption.7} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lolisting}{\protect \contentsline {listing}{\protect \numberline {2}{\ignorespaces a listing}}{\thepage }{listing.caption.7}\protected@file@percent }}
 ......\glue 6.0
@@ -3282,14 +3282,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{scheme.caption.8} xyz
 ......\pdfdest name{scheme.caption.8} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{loscheme}{\protect \contentsline {scheme}{\protect \numberline {1}{\ignorespaces a scheme}}{\thepage }{scheme.caption.8}\protected@file@percent }}
 ......\glue 6.0
@@ -3346,14 +3346,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{scheme.caption.9} xyz
 ......\pdfdest name{scheme.caption.9} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{loscheme}{\protect \contentsline {scheme}{\protect \numberline {2}{\ignorespaces a scheme}}{\thepage }{scheme.caption.9}\protected@file@percent }}
 ......\glue 6.0
@@ -3410,14 +3410,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{chart.caption.10} xyz
 ......\pdfdest name{chart.caption.10} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lochart}{\protect \contentsline {chart}{\protect \numberline {1}{\ignorespaces a chart}}{\thepage }{chart.caption.10}\protected@file@percent }}
 ......\glue 6.0
@@ -3473,14 +3473,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{chart.caption.11} xyz
 ......\pdfdest name{chart.caption.11} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lochart}{\protect \contentsline {chart}{\protect \numberline {2}{\ignorespaces a chart}}{\thepage }{chart.caption.11}\protected@file@percent }}
 ......\glue 6.0
@@ -3536,14 +3536,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{graph.caption.12} xyz
 ......\pdfdest name{graph.caption.12} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lograph}{\protect \contentsline {graph}{\protect \numberline {1}{\ignorespaces a graph}}{\thepage }{graph.caption.12}\protected@file@percent }}
 ......\glue 6.0
@@ -3600,14 +3600,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{graph.caption.13} xyz
 ......\pdfdest name{graph.caption.13} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lograph}{\protect \contentsline {graph}{\protect \numberline {2}{\ignorespaces a graph}}{\thepage }{graph.caption.13}\protected@file@percent }}
 ......\glue 6.0
@@ -3664,14 +3664,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{figurewide.caption.14} xyz
 ......\pdfdest name{figurewide.caption.14} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lofigurewide}{\protect \contentsline {figurewide}{\protect \numberline {1}{\ignorespaces a figurewide}}{\thepage }{figurewide.caption.14}\protected@file@percent }}
 ......\glue 6.0
@@ -3736,14 +3736,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{figurewide.caption.15} xyz
 ......\pdfdest name{figurewide.caption.15} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{lofigurewide}{\protect \contentsline {figurewide}{\protect \numberline {2}{\ignorespaces a figurewide}}{\thepage }{figurewide.caption.15}\protected@file@percent }}
 ......\glue 6.0
@@ -3808,14 +3808,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{boxenv.caption.16} xyz
 ......\pdfdest name{boxenv.caption.16} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{loboxenv}{\protect \contentsline {boxenv}{\protect \numberline {1}{\ignorespaces a boxenv}}{\thepage }{boxenv.caption.16}\protected@file@percent }}
 ......\glue 6.0
@@ -3876,14 +3876,14 @@ Completed box being shipped out [2]
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue -6.98999
+......\glue -6.0002
 ......\glue 0.0
 ......\pdfdest name{boxenv.caption.17} xyz
 ......\pdfdest name{boxenv.caption.17} xyz
 ......\penalty 10000
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
-......\glue 6.98999
+......\glue 6.0002
 ......\glue 0.0
 ......\write1{\@writefile{loboxenv}{\protect \contentsline {boxenv}{\protect \numberline {2}{\ignorespaces a boxenv}}{\thepage }{boxenv.caption.17}\protected@file@percent }}
 ......\glue 6.0

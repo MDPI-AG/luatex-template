@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-13}
-\def\mdpiversion{v7.0o}
+\def\mdpidate{2026-10-14}
+\def\mdpiversion{v7.0p}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -501,6 +501,14 @@
 % The baselineskip is rather small. TODO: check.
 %    \begin{macrocode}
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
+%    \end{macrocode}
+%
+% In floats and footnotes \pkg{setspace} did reset the linespread to 
+% single spacing again. We have to compensate for that (gh/100):
+% This give 12pt for normalsize and 9.5pt for footnote size. 
+%    \begin{macrocode}
+\AddToHook{cmd/@floatboxreset/before}{\linespread{0.8584}}
+\AddToHook{fntext}{\linespread{0.9061}}
 %    \end{macrocode}
 %
 % \subsection{Highlighting}
