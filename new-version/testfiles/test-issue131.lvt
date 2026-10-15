@@ -1,0 +1,15 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\begin{document}
+\START
+\begin{figure}
+\typeout{\the\baselineskip}
+\caption{\typeout{\the\baselineskip}}
+\end{figure}
+
+\begin{table}
+\typeout{\the\baselineskip}
+\caption{\typeout{\the\baselineskip}}
+\end{table}
+\end{document} 

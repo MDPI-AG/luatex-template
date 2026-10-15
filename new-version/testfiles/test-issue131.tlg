@@ -1,0 +1,24 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+12.0004pt
+12.815pt
+12.0004pt
+12.815pt
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.97998pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.97998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+[1
+<./Definitions/logo-mdpi.pdf>]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.49452pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.49452pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
+[2] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(test-issue131.aux)
+***************
+Compilation 1 of test file completed with exit status 0
+Compilation 2 of test file completed with exit status 0

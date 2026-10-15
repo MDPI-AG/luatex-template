@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-10-15}
-\def\mdpiversion{v7.0q}
+\def\mdpiversion{v7.0r}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2274,7 +2274,8 @@
 %    \end{macrocode}
 % A minimal, first adjustment of captions with tagging.
 % This should be replaced by templates once there are implemented in LaTeX.
-% TODO: spacing (including line spacing) must be checked,
+% Captions use the normal linespacing so have to reset the reduced 
+% \cs{baselinestretch} (gh/131).
 %    \begin{macrocode}
 \abovecaptionskip=6pt
 \belowcaptionskip=6pt
@@ -2282,7 +2283,8 @@
  {
    \long\def\@makecaption#1#2{%
      \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
-     \vskip\abovecaptionskip
+     \vskip\abovecaptionskip     
+     \renewcommand\baselinestretch{1}%
      \small
 %    \end{macrocode}
 % We set the margin to the values from the caption package, so that e.g. landscape
