@@ -4841,29 +4841,29 @@ TEST 1: Show PDF Tags
      id="ID.002"
     >
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.012"
+      id="ID.011"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.013"
+       id="ID.012"
        title="Contents"
        rolemaps-to="H1"
       >
      <?MarkedContent page="1" ?>Contents
     </section>
     <TOC xmlns="http://iso.org/pdf/ssn"
-       id="ID.014"
+       id="ID.013"
        title="toc"
       >
      <TOCI xmlns="http://iso.org/pdf/ssn"
-        id="ID.015"
+        id="ID.014"
         title="Test section"
        >
        <?References objects="1" ?>
       <Reference xmlns="http://iso.org/pdf/ssn"
-         id="ID.016"
+         id="ID.015"
         >
        <Link xmlns="http://iso.org/pdf2/ssn"
-          id="ID.017"
+          id="ID.016"
          >
         <?MarkedContent page="1" ?>
         <?MarkedContent page="1" ?>1. Test section
@@ -4873,18 +4873,18 @@ TEST 1: Show PDF Tags
       </Reference>
      </TOCI>
      <TOC xmlns="http://iso.org/pdf/ssn"
-        id="ID.018"
+        id="ID.017"
        >
       <TOCI xmlns="http://iso.org/pdf/ssn"
-         id="ID.019"
+         id="ID.018"
          title="Test subsection"
         >
         <?References objects="2" ?>
        <Reference xmlns="http://iso.org/pdf/ssn"
-          id="ID.020"
+          id="ID.019"
          >
         <Link xmlns="http://iso.org/pdf2/ssn"
-           id="ID.021"
+           id="ID.020"
           >
          <?MarkedContent page="1" ?>
          <?MarkedContent page="1" ?>1.1. Test subsection
@@ -4894,18 +4894,18 @@ TEST 1: Show PDF Tags
        </Reference>
       </TOCI>
       <TOC xmlns="http://iso.org/pdf/ssn"
-         id="ID.022"
+         id="ID.021"
         >
        <TOCI xmlns="http://iso.org/pdf/ssn"
-          id="ID.023"
+          id="ID.022"
           title="Test subsubsection"
          >
          <?References objects="3" ?>
         <Reference xmlns="http://iso.org/pdf/ssn"
-           id="ID.024"
+           id="ID.023"
           >
          <Link xmlns="http://iso.org/pdf2/ssn"
-            id="ID.025"
+            id="ID.024"
            >
           <?MarkedContent page="1" ?>
           <?MarkedContent page="1" ?>1.1.1. Test subsubsection
@@ -4917,15 +4917,15 @@ TEST 1: Show PDF Tags
       </TOC>
      </TOC>
      <TOCI xmlns="http://iso.org/pdf/ssn"
-        id="ID.026"
+        id="ID.025"
         title="appendixtitlesempty"
        >
        <?References objects="4" ?>
       <Reference xmlns="http://iso.org/pdf/ssn"
-         id="ID.027"
+         id="ID.026"
         >
        <Link xmlns="http://iso.org/pdf2/ssn"
-          id="ID.028"
+          id="ID.027"
          >
         <?MarkedContent page="1" ?>
         <?MarkedContent page="1" ?>B.  appendixtitlesempty
@@ -4935,15 +4935,15 @@ TEST 1: Show PDF Tags
       </Reference>
      </TOCI>
      <TOCI xmlns="http://iso.org/pdf/ssn"
-        id="ID.029"
+        id="ID.028"
         title="appendixtitlesyes"
        >
        <?References objects="5" ?>
       <Reference xmlns="http://iso.org/pdf/ssn"
-         id="ID.030"
+         id="ID.029"
         >
        <Link xmlns="http://iso.org/pdf2/ssn"
-          id="ID.031"
+          id="ID.030"
          >
         <?MarkedContent page="1" ?>
         <?MarkedContent page="1" ?>D.  appendixtitlesyes
@@ -4953,15 +4953,15 @@ TEST 1: Show PDF Tags
       </Reference>
      </TOCI>
      <TOCI xmlns="http://iso.org/pdf/ssn"
-        id="ID.032"
+        id="ID.031"
         title="Test section"
        >
        <?References objects="6" ?>
       <Reference xmlns="http://iso.org/pdf/ssn"
-         id="ID.033"
+         id="ID.032"
         >
        <Link xmlns="http://iso.org/pdf2/ssn"
-          id="ID.034"
+          id="ID.033"
          >
         <?MarkedContent page="1" ?>
         <?MarkedContent page="1" ?>E. Test section
@@ -4971,18 +4971,18 @@ TEST 1: Show PDF Tags
       </Reference>
      </TOCI>
      <TOC xmlns="http://iso.org/pdf/ssn"
-        id="ID.035"
+        id="ID.034"
        >
       <TOCI xmlns="http://iso.org/pdf/ssn"
-         id="ID.036"
+         id="ID.035"
          title="Test subsection"
         >
         <?References objects="7" ?>
        <Reference xmlns="http://iso.org/pdf/ssn"
-          id="ID.037"
+          id="ID.036"
          >
         <Link xmlns="http://iso.org/pdf2/ssn"
-           id="ID.038"
+           id="ID.037"
           >
          <?MarkedContent page="1" ?>
          <?MarkedContent page="1" ?>E.1. Test subsection
@@ -4992,18 +4992,18 @@ TEST 1: Show PDF Tags
        </Reference>
       </TOCI>
       <TOC xmlns="http://iso.org/pdf/ssn"
-         id="ID.039"
+         id="ID.038"
         >
        <TOCI xmlns="http://iso.org/pdf/ssn"
-          id="ID.040"
+          id="ID.039"
           title="Test subsubsection"
          >
          <?References objects="8" ?>
         <Reference xmlns="http://iso.org/pdf/ssn"
-           id="ID.041"
+           id="ID.040"
           >
          <Link xmlns="http://iso.org/pdf2/ssn"
-            id="ID.042"
+            id="ID.041"
            >
           <?MarkedContent page="1" ?>
           <?MarkedContent page="1" ?>E.1.1. Test subsubsection
@@ -5017,15 +5017,15 @@ TEST 1: Show PDF Tags
     </TOC>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.043"
+      id="ID.042"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.044"
+       id="ID.043"
        title="Test section"
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.045"
+        id="ID.044"
         rolemaps-to="Span"
         referenced-as="1"
        >
@@ -5034,11 +5034,11 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="2" ?>Test section
     </section>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.046"
+       id="ID.045"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.047"
+        id="ID.046"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -5047,15 +5047,15 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <Sect xmlns="http://iso.org/pdf2/ssn"
-       id="ID.048"
+       id="ID.047"
       >
      <subsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.049"
+        id="ID.048"
         title="Test subsection"
         rolemaps-to="H2"
        >
       <section-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.050"
+         id="ID.049"
          rolemaps-to="Span"
          referenced-as="2"
         >
@@ -5064,11 +5064,11 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="2" ?>Test subsection
      </subsection>
      <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.051"
+        id="ID.050"
         rolemaps-to="Part"
        >
       <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.052"
+         id="ID.051"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -5077,15 +5077,15 @@ TEST 1: Show PDF Tags
       </text>
      </text-unit>
      <Sect xmlns="http://iso.org/pdf2/ssn"
-        id="ID.053"
+        id="ID.052"
        >
       <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.054"
+         id="ID.053"
          title="Test subsubsection"
          rolemaps-to="H3"
         >
        <section-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.055"
+          id="ID.054"
           rolemaps-to="Span"
           referenced-as="3"
          >
@@ -5094,11 +5094,11 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="2" ?>Test subsubsection
       </subsubsection>
       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.056"
+         id="ID.055"
          rolemaps-to="Part"
         >
        <text xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.057"
+          id="ID.056"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -5107,21 +5107,21 @@ TEST 1: Show PDF Tags
        </text>
       </text-unit>
       <Sect xmlns="http://iso.org/pdf2/ssn"
-         id="ID.058"
+         id="ID.057"
         >
        <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.059"
+          id="ID.058"
           title="Test paragraph"
           rolemaps-to="H4"
          >
         <?MarkedContent page="2" ?>Test paragraph
        </paragraph>
        <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.060"
+          id="ID.059"
           rolemaps-to="Part"
          >
         <text xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.061"
+           id="ID.060"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -5130,10 +5130,10 @@ TEST 1: Show PDF Tags
         </text>
        </text-unit>
        <Sect xmlns="http://iso.org/pdf2/ssn"
-          id="ID.062"
+          id="ID.061"
          >
         <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.063"
+           id="ID.062"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -5141,11 +5141,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="2" ?> Test subparagraph
         </subparagraph>
         <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.064"
+           id="ID.063"
            rolemaps-to="Part"
           >
          <text xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.065"
+            id="ID.064"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -5159,15 +5159,15 @@ TEST 1: Show PDF Tags
     </Sect>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.066"
+      id="ID.065"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.067"
+       id="ID.066"
        title="appendixtitlesempty"
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.068"
+        id="ID.067"
         rolemaps-to="Span"
         referenced-as="4"
        >
@@ -5177,26 +5177,26 @@ TEST 1: Show PDF Tags
     </section>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.069"
+      id="ID.068"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.070"
+       id="ID.069"
        title=""
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.071"
+        id="ID.070"
         rolemaps-to="Span"
        >
       <?MarkedContent page="3" ?>Appendix C 
      </section-number>
     </section>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.072"
+       id="ID.071"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.073"
+        id="ID.072"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -5205,26 +5205,26 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <Sect xmlns="http://iso.org/pdf2/ssn"
-       id="ID.074"
+       id="ID.073"
       >
      <subsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.075"
+        id="ID.074"
         title=""
         rolemaps-to="H2"
        >
       <section-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.076"
+         id="ID.075"
          rolemaps-to="Span"
         >
        <?MarkedContent page="3" ?>Appendix C.1 
       </section-number>
      </subsection>
      <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.077"
+        id="ID.076"
         rolemaps-to="Part"
        >
       <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.078"
+         id="ID.077"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -5233,26 +5233,26 @@ TEST 1: Show PDF Tags
       </text>
      </text-unit>
      <Sect xmlns="http://iso.org/pdf2/ssn"
-        id="ID.079"
+        id="ID.078"
        >
       <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.080"
+         id="ID.079"
          title=""
          rolemaps-to="H3"
         >
        <section-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.081"
+          id="ID.080"
           rolemaps-to="Span"
          >
         <?MarkedContent page="3" ?>Appendix C.1.1 
        </section-number>
       </subsubsection>
       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.082"
+         id="ID.081"
          rolemaps-to="Part"
         >
        <text xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.083"
+          id="ID.082"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -5261,20 +5261,20 @@ TEST 1: Show PDF Tags
        </text>
       </text-unit>
       <Sect xmlns="http://iso.org/pdf2/ssn"
-         id="ID.084"
+         id="ID.083"
         >
        <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.085"
+          id="ID.084"
           title=""
           rolemaps-to="H4"
          >
        </paragraph>
        <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.086"
+          id="ID.085"
           rolemaps-to="Part"
          >
         <text xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.087"
+           id="ID.086"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -5283,10 +5283,10 @@ TEST 1: Show PDF Tags
         </text>
        </text-unit>
        <Sect xmlns="http://iso.org/pdf2/ssn"
-          id="ID.088"
+          id="ID.087"
          >
         <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.089"
+           id="ID.088"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -5294,11 +5294,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="3" ?>
         </subparagraph>
         <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.090"
+           id="ID.089"
            rolemaps-to="Part"
           >
          <text xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.091"
+            id="ID.090"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -5312,15 +5312,15 @@ TEST 1: Show PDF Tags
     </Sect>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.092"
+      id="ID.091"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.093"
+       id="ID.092"
        title="appendixtitlesyes"
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.094"
+        id="ID.093"
         rolemaps-to="Span"
         referenced-as="5"
        >
@@ -5330,15 +5330,15 @@ TEST 1: Show PDF Tags
     </section>
    </Sect>
    <Sect xmlns="http://iso.org/pdf2/ssn"
-      id="ID.095"
+      id="ID.094"
      >
     <section xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.096"
+       id="ID.095"
        title="Test section"
        rolemaps-to="H1"
       >
      <section-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.097"
+        id="ID.096"
         rolemaps-to="Span"
         referenced-as="6"
        >
@@ -5347,11 +5347,11 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="4" ?>Test section
     </section>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.098"
+       id="ID.097"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.099"
+        id="ID.098"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -5360,15 +5360,15 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <Sect xmlns="http://iso.org/pdf2/ssn"
-       id="ID.100"
+       id="ID.099"
       >
      <subsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.101"
+        id="ID.100"
         title="Test subsection"
         rolemaps-to="H2"
        >
       <section-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.102"
+         id="ID.101"
          rolemaps-to="Span"
          referenced-as="7"
         >
@@ -5377,11 +5377,11 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="4" ?>Test subsection
      </subsection>
      <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.103"
+        id="ID.102"
         rolemaps-to="Part"
        >
       <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.104"
+         id="ID.103"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -5390,15 +5390,15 @@ TEST 1: Show PDF Tags
       </text>
      </text-unit>
      <Sect xmlns="http://iso.org/pdf2/ssn"
-        id="ID.105"
+        id="ID.104"
        >
       <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.106"
+         id="ID.105"
          title="Test subsubsection"
          rolemaps-to="H3"
         >
        <section-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.107"
+          id="ID.106"
           rolemaps-to="Span"
           referenced-as="8"
          >
@@ -5407,11 +5407,11 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>Test subsubsection
       </subsubsection>
       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.108"
+         id="ID.107"
          rolemaps-to="Part"
         >
        <text xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.109"
+          id="ID.108"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -5420,21 +5420,21 @@ TEST 1: Show PDF Tags
        </text>
       </text-unit>
       <Sect xmlns="http://iso.org/pdf2/ssn"
-         id="ID.110"
+         id="ID.109"
         >
        <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.111"
+          id="ID.110"
           title="Test paragraph"
           rolemaps-to="H4"
          >
         <?MarkedContent page="4" ?>Test paragraph
        </paragraph>
        <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.112"
+          id="ID.111"
           rolemaps-to="Part"
          >
         <text xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.113"
+           id="ID.112"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -5443,10 +5443,10 @@ TEST 1: Show PDF Tags
         </text>
        </text-unit>
        <Sect xmlns="http://iso.org/pdf2/ssn"
-          id="ID.114"
+          id="ID.113"
          >
         <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.115"
+           id="ID.114"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -5454,11 +5454,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="4" ?> Test subparagraph
         </subparagraph>
         <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.116"
+           id="ID.115"
            rolemaps-to="Part"
           >
          <text xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.117"
+            id="ID.116"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -5472,7 +5472,7 @@ TEST 1: Show PDF Tags
     </Sect>
    </Sect>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.118"
+      id="ID.117"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -7472,7 +7472,7 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~118 structure objects
+(tagpdf)             Writing out ~117 structure objects
 (tagpdf)             with ~92 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree

@@ -14,11 +14,11 @@ TEST 1: Show PDF Tags
      id="ID.002"
     >
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.012"
+      id="ID.011"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.013"
+       id="ID.012"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -29,11 +29,11 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.014"
+      id="ID.013"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.015"
+       id="ID.014"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -42,11 +42,11 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.016"
+      id="ID.015"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.017"
+       id="ID.016"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -55,11 +55,11 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.018"
+      id="ID.017"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.019"
+       id="ID.018"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -70,11 +70,11 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.020"
+      id="ID.019"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.021"
+       id="ID.020"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -85,7 +85,7 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.022"
+      id="ID.021"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -1760,7 +1760,7 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~22 structure objects
+(tagpdf)             Writing out ~21 structure objects
 (tagpdf)             with ~11 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree

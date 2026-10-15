@@ -754,7 +754,7 @@ Completed box being shipped out [1]
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.444706 0.456472 0.680002] /A 58 0 R  /LTEX_position /isolated/StructParent 5} action user{}
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.444706 0.456472 0.680002] /A 57 0 R  /LTEX_position /isolated/StructParent 5} action user{}
 .....\hbox(9.10466+0.0)x9.10509, direction TLT
 ......\hbox(9.10469+0.0)x9.10469, direction TLT
 .......\hbox(9.10469+0.0)x9.10469, direction TLT
@@ -1739,7 +1739,7 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~50 structure objects
+(tagpdf)             Writing out ~49 structure objects
 (tagpdf)             with ~44 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
