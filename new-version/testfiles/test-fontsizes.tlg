@@ -58,6 +58,7 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 .\vbox(0.0+0.0)x0.0, glue set 37.13861fil, direction TLT
@@ -78,6 +79,7 @@ Completed box being shipped out [1]
 ..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
 ...\vbox(12.0+0.0)x394.35522, direction TLT
 ....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
 ....\hbox(12.0+0.0)x394.35522, direction TLT
 .....\hbox(12.0+0.0)x394.35522, direction TLT
 ......\glue -131.16722
@@ -248,6 +250,7 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 416.03824fil, direction TLT
@@ -1072,6 +1075,7 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
 ...\glue(\baselineskip) 22.02002
 ...\hbox(13.97998+4.19403)x394.35522, direction TLT
 ....\hbox(13.97998+4.19403)x394.35522, direction TLT
@@ -1120,7 +1124,7 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://doi.org/10.3390/0000000)>>}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >> } action user{}
 ...........\mathon
 ...........\pdfliteral direct <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
@@ -1195,12 +1199,14 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdflinkstate 0
 .\kern0.0
 .\kern0.0
+.\kern-746.24187
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern746.24187
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-fontsizes.aux)
-Package rerunfilecheck Info: File `test-fontsizes.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 ***************
 Compilation 1 of test file completed with exit status 0
 Compilation 2 of test file completed with exit status 0
