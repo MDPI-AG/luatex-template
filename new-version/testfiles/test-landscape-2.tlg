@@ -488,7 +488,7 @@ Completed box being shipped out [1]
 .........\hbox(5.082+0.14)x116.65646, glue set 20.46245fil, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\pdfstartlink(*+*)x116.65646 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 4} action user{}
+..........\pdfstartlink(*+*)x116.65646 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 5} action user{}
 ..........\pdfendlink
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
@@ -542,7 +542,7 @@ Completed box being shipped out [1]
 .........\penalty 10000
 .........\glue(\baselineskip) 6.65201
 .........\hbox(5.208+1.708)x116.65646, glue set 67.04047fil, direction TLT
-..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /final/StructParent 5} action user{}
+..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /final/StructParent 6} action user{}
 ..........\kern-0.322 (left margin)
 ..........\TU/texgyrepagella(0)/m/n/7 (
 ..........\TU/texgyrepagella(0)/m/n/7 C
@@ -615,7 +615,7 @@ Completed box being shipped out [1]
 .....\glue 0.0 plus 1.0fill
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >>  /LTEX_position /isolated/StructParent 6} action user{}
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >>  /LTEX_position /isolated/StructParent 7} action user{}
 .....\hbox(28.45274+0.0)x42.96877, direction TLT
 ......\hbox(28.45236+0.0)x42.96887, direction TLT
 .......\hbox(28.45236+0.0)x42.96887, direction TLT
@@ -928,7 +928,7 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 7/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 8/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
@@ -1238,7 +1238,7 @@ Completed box being shipped out [2]
 .........\hbox(16.309+3.14552)x0.0, glue set - 772.77661fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 ..........\vbox(16.309+3.14552)x772.77661, direction TLT
-...........\hbox(5.824+0.16)x772.77661, glue set 753.94458fil, direction TLT
+...........\hbox(5.824+0.16)x772.77661, glue set 753.74463fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -1253,10 +1253,9 @@ Completed box being shipped out [2]
 ............\TU/texgyrepagella(0)/m/n/8 f
 ............\TU/texgyrepagella(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 4
+............\TU/texgyrepagella(0)/m/n/8 5
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\penalty 10000
-............\kern-0.2 (right margin)
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
 ...........\glue 0.0
@@ -7176,7 +7175,7 @@ Completed box being shipped out [2]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 8/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 9/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
@@ -7447,7 +7446,7 @@ Completed box being shipped out [3]
 .........\hbox(16.309+3.14552)x0.0, glue set - 772.77661fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 ..........\vbox(16.309+3.14552)x772.77661, direction TLT
-...........\hbox(5.824+0.16)x772.77661, glue set 753.94458fil, direction TLT
+...........\hbox(5.824+0.16)x772.77661, glue set 753.74463fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -7462,10 +7461,9 @@ Completed box being shipped out [3]
 ............\TU/texgyrepagella(0)/m/n/8 f
 ............\TU/texgyrepagella(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 4
+............\TU/texgyrepagella(0)/m/n/8 5
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\penalty 10000
-............\kern-0.2 (right margin)
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
 ...........\glue 0.0
@@ -7493,12 +7491,12 @@ Completed box being shipped out [3]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(458.64374+0.0)x772.77661, glue set 157.29375fil, direction TLT
+...\vbox(458.64374+0.0)x772.77661, glue set 148.22057fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\glue -8.0 plus -2.0fil
 ....\glue 8.0 plus 2.0fil
-....\vbox(144.05624+0.0)x772.77661, direction TLT
-.....\vbox(144.05624+0.0)x772.77661, direction TLT
+....\vbox(162.2026+0.0)x772.77661, direction TLT
+.....\vbox(162.2026+0.0)x772.77661, direction TLT
 ......\pdfdest name{table.struct.41} xyz
 ......\pdfdest name{table.struct.41} xyz
 ......\penalty 10000
@@ -7767,7 +7765,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
 ......\penalty 10000
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set - 0.00012, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\TU/texgyrepagella(0)/m/n/9 e
@@ -8005,7 +8003,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9 f
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set 0.07904, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\TU/texgyrepagella(0)/m/n/9 p
@@ -8241,7 +8239,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9 l
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set - 0.00938, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\TU/texgyrepagella(0)/m/n/9 r
@@ -8478,7 +8476,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9 s
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set 0.00117, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\TU/texgyrepagella(0)/m/n/9 o
@@ -8708,7 +8706,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
 ......\penalty 10000
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set 483.97974fil, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\TU/texgyrepagella(0)/m/n/9 a
@@ -8771,7 +8769,7 @@ Completed box being shipped out [3]
 .......\glue(\rightskip) 0.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set - 0.01068, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\localpar
@@ -9016,7 +9014,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
 ......\penalty 10000
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set 0.23724, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\TU/texgyrepagella(0)/m/n/9 o
@@ -9262,7 +9260,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9 t
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set 0.00551, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\TU/texgyrepagella(0)/m/n/9 t
@@ -9494,7 +9492,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9 e
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set - 0.20416, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\TU/texgyrepagella(0)/m/n/9 C
@@ -9739,7 +9737,7 @@ Completed box being shipped out [3]
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
 ......\penalty 10000
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x772.77661, glue set - 0.09213, direction TLT
 .......\glue(\leftskip) 130.88284
 .......\kern-0.351 (left margin)
@@ -10098,7 +10096,7 @@ Completed box being shipped out [3]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 9/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 10/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
@@ -10187,480 +10185,6 @@ Completed box being shipped out [3]
 .\kern0.0
 .\pdfliteral page <lua data reference ...>
 Floatstructure:61
-============================================================
-TEST 1: Show PDF Tags
-============================================================
--------- test-landscape-2.xml (start) ---------
-<PDF version="2.0">
- <StructTreeRoot>
-  <Document xmlns="http://iso.org/pdf2/ssn"
-     id="ID.002"
-    >
-   <Aside xmlns="http://iso.org/pdf2/ssn"
-      id="ID.011"
-     >
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.012"
-       rolemaps-to="Part"
-      >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.013"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="End"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.014"
-       rolemaps-to="Part"
-      >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.015"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="Start"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>Received:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.016"
-       rolemaps-to="Part"
-      >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.017"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="Start"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>Accepted:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.018"
-       rolemaps-to="Part"
-      >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.019"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="Start"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>Published:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.020"
-       rolemaps-to="Part"
-      >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.021"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="Start"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>Copyright: © 2016 by the author. Submitted to Journal Not Specified for possible open access publication under the terms and conditions of the 
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.022"
-        >
-       <?MarkedContent page="1" ?>
-       <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
-       <?ReferencedObject type="Annot" page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
-      <?MarkedContent page="1" ?>.
-     </text>
-    </text-unit>
-   </Aside>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.023"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.024"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Link xmlns="http://iso.org/pdf2/ssn"
-        id="ID.025"
-       >
-      <?MarkedContent page="1" ?>
-      <Span xmlns="http://iso.org/pdf2/ssn"
-         id="ID.026"
-         actualtext="MDPI logo"
-        >
-       <?MarkedContent page="1" ?>
-      </Span>
-      <?MarkedContent page="1" ?>
-      <?ReferencedObject type="Annot" page="1" ?>
-     </Link>
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.027"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.028"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>Article
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.029"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>TITLE
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.030"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>AUTHOR
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.031"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.032"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>ADDRESS
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.033"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.034"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="2" ?>As any dedicated reader can clearly see, the Ideal of practical reason is a representation of, as far as I know, the things in themselves; as I have shown elsewhere, the phenomena 
-     <?MarkedContent page="2" ?>should only be used as a canon for our understanding. The paralogisms of practical reason are what first give rise to the architectonic of practical reason. As will easily be shown 
-     <?MarkedContent page="2" ?>in the next section, reason would thereby be made to contradict, in view of these considerations, the Ideal of practical reason, yet the manifold depends on the phenomena. 
-     <?MarkedContent page="2" ?>Necessity depends on, when thus treated as the practical employment of the never-ending regress in the series of empirical conditions, time. Human reason depends on our sense 
-     <?MarkedContent page="2" ?>perceptions, by means of analytic unity. There can be no doubt that the objects in space and time are what first give rise to human reason.
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.035"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.036"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="2" ?>Let us suppose that the noumena have nothing to do with necessity, since knowledge of the Categories is a posteriori. Hume tells us that the transcendental unity of 
-     <?MarkedContent page="2" ?>apperception can not take account of the discipline of natural reason, by means of analytic unity. As is proven in the ontological manuals, it is obvious that the transcendental unity 
-     <?MarkedContent page="2" ?>of apperception proves the validity of the Antinomies; what we have alone been able to show is that, our understanding depends on the Categories. It remains a mystery why the 
-     <?MarkedContent page="2" ?>Ideal stands in need of reason. It must not be supposed that our faculties have lying before them, in the case of the Ideal, the Antinomies; so, the transcendental aesthetic is just as 
-     <?MarkedContent page="2" ?>necessary as our experience. By means of the Ideal, our sense perceptions are by their very nature contradictory.
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.037"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.038"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="2" ?>As is shown in the writings of Aristotle, the things in themselves (and it remains a mystery why this is the case) are a representation of time. Our concepts have lying before 
-     <?MarkedContent page="2" ?>them the paralogisms of natural reason, but our a posteriori concepts have lying before them the practical employment of our experience. Because of our necessary ignorance of the 
-     <?MarkedContent page="2" ?>conditions, the paralogisms would thereby be made to contradict, indeed, space; for these reasons, the Transcendental Deduction has lying before it our sense perceptions. (Our a 
-     <?MarkedContent page="2" ?>posteriori knowledge can never furnish a true and demonstrated science, because, like time, it depends on analytic principles.) So, it must not be supposed that our experience 
-     <?MarkedContent page="2" ?>depends on, so, our sense perceptions, by means of analysis. Space constitutes the whole content for our sense perceptions, and time occupies part of the sphere of the Ideal 
-     <?MarkedContent page="2" ?>concerning the existence of the objects in space and time in general.
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.039"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.040"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="2" ?>As we have already seen, what we have alone been able to show is that the objects in space and time would be falsified; what we have alone been able to show is that, our 
-     <?MarkedContent page="2" ?>judgements are what first give rise to metaphysics. As I have shown elsewhere, Aristotle tells us that the objects in space and time, in the full sense of these terms, would be 
-     <?MarkedContent page="2" ?>falsified. Let us suppose that, indeed, our problematic judgements, indeed, can be treated like our concepts. As any dedicated reader can clearly see, our knowledge can be treated 
-     <?MarkedContent page="2" ?>like the transcendental unity of apperception, but the phenomena occupy part of the sphere of the manifold concerning the existence of natural causes in general. Whence comes 
-     <?MarkedContent page="2" ?>the architectonic of natural reason, the solution of which involves the relation between necessity and the Categories? Natural causes (and it is not at all certain that this is the 
-     <?MarkedContent page="2" ?>case) constitute the whole content for the paralogisms. This could not be passed over in a complete system of transcendental philosophy, but in a merely critical essay the simple 
-     <?MarkedContent page="2" ?>mention of the fact may suffice.
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.053"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.054"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="2" ?>845.04684pt, 597.50787pt
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.055"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.056"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="4" ?>As any dedicated reader can clearly see, the Ideal of practical reason is a representation 
-     <?MarkedContent page="4" ?>of, as far as I know, the things in themselves; as I have shown elsewhere, the phenomena 
-     <?MarkedContent page="4" ?>should only be used as a canon for our understanding. The paralogisms of practical reason 
-     <?MarkedContent page="4" ?>are what first give rise to the architectonic of practical reason. As will easily be shown in the 
-     <?MarkedContent page="4" ?>next section, reason would thereby be made to contradict, in view of these considerations, 
-     <?MarkedContent page="4" ?>the Ideal of practical reason, yet the manifold depends on the phenomena. Necessity 
-     <?MarkedContent page="4" ?>depends on, when thus treated as the practical employment of the never-ending regress in 
-     <?MarkedContent page="4" ?>the series of empirical conditions, time. Human reason depends on our sense perceptions, 
-     <?MarkedContent page="4" ?>by means of analytic unity. There can be no doubt that the objects in space and time are 
-     <?MarkedContent page="4" ?>what first give rise to human reason.
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.057"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.058"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="4" ?>Let us suppose that the noumena have nothing to do with necessity, since knowledge 
-     <?MarkedContent page="4" ?>of the Categories is a posteriori. Hume tells us that the transcendental unity of apperception 
-     <?MarkedContent page="4" ?>can not take account of the discipline of natural reason, by means of analytic unity. As is 
-     <?MarkedContent page="4" ?>proven in the ontological manuals, it is obvious that the transcendental unity of apperception 
-     <?MarkedContent page="4" ?>proves the validity of the Antinomies; what we have alone been able to show is that, our 
-     <?MarkedContent page="4" ?>understanding depends on the Categories. It remains a mystery why the Ideal stands 
-     <?MarkedContent page="4" ?>in need of reason. It must not be supposed that our faculties have lying before them, in 
-     <?MarkedContent page="4" ?>the case of the Ideal, the Antinomies; so, the transcendental aesthetic is just as necessary 
-     <?MarkedContent page="4" ?>as our experience. By means of the Ideal, our sense perceptions are by their very nature 
-     <?MarkedContent page="4" ?>contradictory.
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.059"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.060"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="4" ?>As is shown in the writings of Aristotle, the things in themselves (and it remains a 
-     <?MarkedContent page="4" ?>mystery why this is the case) are a representation of time. Our concepts have lying before 
-     <?MarkedContent page="4" ?>them the paralogisms of natural reason, but our a posteriori concepts have lying before 
-     <?MarkedContent page="4" ?>them the practical employment of our experience. Because of our necessary ignorance of the 
-     <?MarkedContent page="4" ?>conditions, the paralogisms would thereby be made to contradict, indeed, space; for these 
-     <?MarkedContent page="4" ?>reasons, the Transcendental Deduction has lying before it our sense perceptions. (Our a 
-     <?MarkedContent page="4" ?>posteriori knowledge can never furnish a true and demonstrated science, because, like time, 
-     <?MarkedContent page="4" ?>it depends on analytic principles.) So, it must not be supposed that our experience depends 
-     <?MarkedContent page="4" ?>on, so, our sense perceptions, by means of analysis. Space constitutes the whole content 
-     <?MarkedContent page="4" ?>for our sense perceptions, and time occupies part of the sphere of the Ideal concerning the 
-     <?MarkedContent page="4" ?>existence of the objects in space and time in general.
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.073"
-      rolemaps-to="Part"
-     >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.074"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Justify"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="4" ?>597.50787pt, 845.04684pt
-    </text>
-   </text-unit>
-   <tables xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.005"
-      rolemaps-to="Sect"
-     >
-    <float xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.041"
-       rolemaps-to="Aside"
-      >
-     <Caption xmlns="http://iso.org/pdf2/ssn"
-        id="ID.042"
-       >
-      <Lbl xmlns="http://iso.org/pdf2/ssn"
-         id="ID.043"
-        >
-       <?MarkedContent page="3" ?>Table 1. 
-      </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.044"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextAlign="Justify"
-         rolemaps-to="P"
-        >
-       <?MarkedContent page="3" ?>As any dedicated reader can clearly see, the Ideal of practical reason is a representation of, as far as I know, the things in themselves; as I have shown elsewhere, the phenomena should only be used as a canon for our understanding. The paralogisms of practical reason are what first give rise to the architectonic of practical reason. As will easily be shown in the next section, reason would thereby be made to contradict, in view of these considerations, the Ideal of practical reason, yet the manifold depends on the phenomena. Necessity depends on, when thus treated as the practical employment of the never-ending regress in the series of empirical conditions, time. Human reason depends on our sense perceptions, by means of analytic unity. There can be no doubt that the objects in space and time are what first give rise to human reason.
-      </text>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.045"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextAlign="Justify"
-         rolemaps-to="P"
-        >
-       <?MarkedContent page="3" ?>Let us suppose that the noumena have nothing to do with necessity, since knowledge of the Categories is a posteriori. Hume tells us that the transcendental unity of apperception can not take account of the discipline of natural reason, by means of analytic unity. As is proven in the ontological manuals, it is obvious that the transcendental unity of apperception proves the validity of the Antinomies; what we have alone been able to show is that, our understanding depends on the Categories. It remains a mystery why the Ideal stands in need of reason. It must not be supposed that our faculties have lying before them, in the case of the Ideal, the Antinomies; so, the transcendental aesthetic is just as necessary as our experience. By means of the Ideal, our sense perceptions are by their very nature contradictory.
-      </text>
-     </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.046"
-        rolemaps-to="Part"
-       >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.047"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextAlign="Justify"
-         rolemaps-to="P"
-        >
-      </text>
-      <Table xmlns="http://iso.org/pdf2/ssn"
-         id="ID.048"
-        >
-       <TR xmlns="http://iso.org/pdf2/ssn"
-          id="ID.049"
-         >
-        <TD xmlns="http://iso.org/pdf2/ssn"
-           id="ID.050"
-          >
-         <?MarkedContent page="3" ?>table
-        </TD>
-        <TD xmlns="http://iso.org/pdf2/ssn"
-           id="ID.051"
-          >
-         <?MarkedContent page="3" ?>table
-        </TD>
-       </TR>
-      </Table>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.052"
-         rolemaps-to="P"
-        >
-      </text>
-     </text-unit>
-    </float>
-    <float xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.061"
-       rolemaps-to="Aside"
-      >
-     <Caption xmlns="http://iso.org/pdf2/ssn"
-        id="ID.062"
-       >
-      <Lbl xmlns="http://iso.org/pdf2/ssn"
-         id="ID.063"
-        >
-       <?MarkedContent page="4" ?>Table 2. 
-      </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.064"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextAlign="Justify"
-         rolemaps-to="P"
-        >
-       <?MarkedContent page="4" ?>As any dedicated reader can clearly see, the Ideal of practical reason is a representation of, as far as I know, the things in themselves; as I have shown elsewhere, the phenomena should only be used as a canon for our understanding. The paralogisms of practical reason are what first give rise to the architectonic of practical reason. As will easily be shown in the next section, reason would thereby be made to contradict, in view of these considerations, the Ideal of practical reason, yet the manifold depends on the phenomena. Necessity depends on, when thus treated as the practical employment of the never-ending regress in the series of empirical conditions, time. Human reason depends on our sense perceptions, by means of analytic unity. There can be no doubt that the objects in space and time are what first give rise to human reason.
-      </text>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.065"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextAlign="Justify"
-         rolemaps-to="P"
-        >
-       <?MarkedContent page="4" ?>Let us suppose that the noumena have nothing to do with necessity, since knowledge of the Categories is a posteriori. Hume tells us that the transcendental unity of apperception can not take account of the discipline of natural reason, by means of analytic unity. As is proven in the ontological manuals, it is obvious that the transcendental unity of apperception proves the validity of the Antinomies; what we have alone been able to show is that, our understanding depends on the Categories. It remains a mystery why the Ideal stands in need of reason. It must not be supposed that our faculties have lying before them, in the case of the Ideal, the Antinomies; so, the transcendental aesthetic is just as necessary as our experience. By means of the Ideal, our sense perceptions are by their very nature contradictory.
-      </text>
-     </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.066"
-        rolemaps-to="Part"
-       >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.067"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextAlign="Justify"
-         rolemaps-to="P"
-        >
-      </text>
-      <Table xmlns="http://iso.org/pdf2/ssn"
-         id="ID.068"
-        >
-       <TR xmlns="http://iso.org/pdf2/ssn"
-          id="ID.069"
-         >
-        <TD xmlns="http://iso.org/pdf2/ssn"
-           id="ID.070"
-          >
-         <?MarkedContent page="4" ?>table
-        </TD>
-        <TD xmlns="http://iso.org/pdf2/ssn"
-           id="ID.071"
-          >
-         <?MarkedContent page="4" ?>table
-        </TD>
-       </TR>
-      </Table>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.072"
-         rolemaps-to="P"
-        >
-      </text>
-     </text-unit>
-    </float>
-   </tables>
-   <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.075"
-      title="Ignored link annotations"
-     >
-    <Link xmlns="http://iso.org/pdf2/ssn"
-       id="ID.003"
-      >
-     <?ReferencedObject type="Annot" page="1" ?>
-     <?ReferencedObject type="Annot" page="2" ?>
-     <?ReferencedObject type="Annot" page="3" ?>
-     <?ReferencedObject type="Annot" page="4" ?>
-    </Link>
-   </Artifact>
-  </Document>
- </StructTreeRoot>
-</PDF>
--------- test-landscape-2.xml (end) -----------
-============================================================
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 21.49452pt, for example:
 (fancyhdr)                \setlength{\headheight}{21.49452pt}.
@@ -10844,7 +10368,7 @@ Completed box being shipped out [4]
 .........\hbox(16.309+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 ..........\vbox(16.309+3.14552)x525.52245, direction TLT
-...........\hbox(5.824+0.16)x525.52245, glue set 506.89044fil, direction TLT
+...........\hbox(5.824+0.16)x525.52245, glue set 506.69043fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\kern-0.2 (left margin)
 ............\localpar
@@ -10860,10 +10384,9 @@ Completed box being shipped out [4]
 ............\TU/texgyrepagella(0)/m/n/8 f
 ............\TU/texgyrepagella(0)/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-............\TU/texgyrepagella(0)/m/n/8 4
+............\TU/texgyrepagella(0)/m/n/8 5
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\penalty 10000
-............\kern-0.2 (right margin)
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
 ...........\glue 0.0
@@ -10891,10 +10414,11 @@ Completed box being shipped out [4]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 18.93202fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set >20000.0fil, direction TLT
 ....\write1{\def\@LN@column{1}}
-....\vbox(221.0588+0.0)x394.35522, direction TLT
-.....\vbox(221.0588+0.0)x394.35522, direction TLT
+....\penalty 10000
+....\vbox(251.90762+0.0)x394.35522, direction TLT
+.....\vbox(251.90762+0.0)x394.35522, direction TLT
 ......\pdfdest name{table.struct.61} xyz
 ......\pdfdest name{table.struct.61} xyz
 ......\penalty 10000
@@ -11080,7 +10604,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
 ......\penalty 10000
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.00192, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 f
 .......\kern-0.09 (font)
@@ -11219,7 +10743,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 e
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.0083, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 u
 .......\TU/texgyrepagella(0)/m/n/9 s
@@ -11368,7 +10892,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 o
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.2444, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 t
 .......\kern0.135 (font)
@@ -11521,7 +11045,7 @@ Completed box being shipped out [4]
 .......\kern-0.252 (right margin)
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set 0.00331, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 b
 .......\TU/texgyrepagella(0)/m/n/9 e
@@ -11677,7 +11201,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 d
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.91937
+......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.547)x394.35522, glue set - 0.00546, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 d
 .......\TU/texgyrepagella(0)/m/n/9 e
@@ -11815,7 +11339,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 t
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.13016, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 o
 .......\TU/texgyrepagella(0)/m/n/9 f
@@ -11964,7 +11488,7 @@ Completed box being shipped out [4]
 .......\kern-0.18 (right margin)
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set 0.03658, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 s
 .......\TU/texgyrepagella(0)/m/n/9 e
@@ -12101,7 +11625,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
 ......\penalty 10000
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set 216.41618fil, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 t
 .......\TU/texgyrepagella(0)/m/n/9 i
@@ -12169,7 +11693,7 @@ Completed box being shipped out [4]
 .......\glue(\rightskip) 0.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.43285, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
@@ -12325,7 +11849,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
 ......\penalty 10000
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.23743, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 i
 .......\TU/texgyrepagella(0)/m/n/9 s
@@ -12479,7 +12003,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 e
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set 0.00381, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 d
 .......\TU/texgyrepagella(0)/m/n/9 i
@@ -12638,7 +12162,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 s
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.00345, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 o
 .......\TU/texgyrepagella(0)/m/n/9 b
@@ -12785,7 +12309,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 t
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.91937
+......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.547)x394.35522, glue set - 0.00612, direction TLT
 .......\kern-0.378 (left margin)
 .......\TU/texgyrepagella(0)/m/n/9 w
@@ -12925,7 +12449,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 s
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set 0.0964, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 a
 .......\TU/texgyrepagella(0)/m/n/9  
@@ -13066,7 +12590,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 e
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.01334, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 l
 .......\kern-0.225 (font)
@@ -13217,7 +12741,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9 s
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
-......\glue(\baselineskip) 1.90137
+......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.35522, glue set - 0.01318, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 n
 .......\TU/texgyrepagella(0)/m/n/9 e
@@ -13360,7 +12884,7 @@ Completed box being shipped out [4]
 .......\TU/texgyrepagella(0)/m/n/9  
 .......\glue(\rightskip) -2.25
 ......\penalty 10000
-......\glue(\baselineskip) 1.91937
+......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.547)x394.35522, glue set 340.95822fil, direction TLT
 .......\TU/texgyrepagella(0)/m/n/9 c
 .......\TU/texgyrepagella(0)/m/n/9 o
@@ -17832,11 +17356,862 @@ Completed box being shipped out [4]
 ....\penalty 10000
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
-....\penalty 0
-....\penalty 10000
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 4.20999
+....\glue -2.83
+....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
+...\glue(\baselineskip) 22.02002
+...\hbox(13.97998+4.19403)x394.35522, direction TLT
+....\hbox(13.97998+4.19403)x394.35522, direction TLT
+.....\glue -131.16722
+.....\hbox(13.97998+4.19403)x525.52245, direction TLT
+......\vbox(13.97998+4.19403)x525.52245, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\rule(0.0+0.0)x525.52245
+.......\glue 4.19403
+.......\hbox(9.78595+4.19403)x525.52245, direction TLT
+........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
+.........\vbox(0.0+0.0)x525.52245, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\vbox(9.78595+4.19403)x525.52245, direction TLT
+.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\rule(9.78595+4.19403)x0.0
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\vbox(7.33946+3.14552)x525.52245, direction TLT
+..........\hbox(7.33946+3.14552)x525.52245, glue set 410.37042fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 11/Contents (artifact)} action user{}
+...........\mathon
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral direct <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\TU/texgyrepagella(0)/m/n/8 h
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\TU/texgyrepagella(0)/m/n/8 p
+...........\TU/texgyrepagella(0)/m/n/8 s
+...........\glue(\thickmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 :
+...........\penalty 500
+...........\glue(\thickmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 d
+...........\TU/texgyrepagella(0)/m/n/8 o
+...........\TU/texgyrepagella(0)/m/n/8 i
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 .
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 o
+...........\TU/texgyrepagella(0)/m/n/8 r
+...........\TU/texgyrepagella(0)/m/n/8 g
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 1
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 .
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 3
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 3
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 9
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\mathoff
+...........\pdfendlink
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral direct <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\pdfliteral page <lua data reference ...>
+...........\rule(7.33946+3.14552)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdfliteral page <lua data reference ...>
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate 0
+.\kern0.0
+.\pdfliteral page <lua data reference ...>
+============================================================
+TEST 1: Show PDF Tags
+============================================================
+-------- test-landscape-2.xml (start) ---------
+<PDF version="2.0">
+ <StructTreeRoot>
+  <Document xmlns="http://iso.org/pdf2/ssn"
+     id="ID.002"
+    >
+   <Aside xmlns="http://iso.org/pdf2/ssn"
+      id="ID.011"
+     >
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.012"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.013"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="End"
+        rolemaps-to="P"
+       >
+      <?MarkedContent page="1" ?>
+     </text>
+    </text-unit>
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.014"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.015"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <?MarkedContent page="1" ?>Received:
+     </text>
+    </text-unit>
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.016"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.017"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <?MarkedContent page="1" ?>Accepted:
+     </text>
+    </text-unit>
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.018"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.019"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <?MarkedContent page="1" ?>Published:
+     </text>
+    </text-unit>
+    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.020"
+       rolemaps-to="Part"
+      >
+     <text xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.021"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <?MarkedContent page="1" ?>Copyright: © 2016 by the author. Submitted to Journal Not Specified for possible open access publication under the terms and conditions of the 
+      <Link xmlns="http://iso.org/pdf2/ssn"
+         id="ID.022"
+        >
+       <?MarkedContent page="1" ?>
+       <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
+       <?ReferencedObject type="Annot" page="1" ?>
+       <?ReferencedObject type="Annot" page="1" ?>
+      </Link>
+      <?MarkedContent page="1" ?>.
+     </text>
+    </text-unit>
+   </Aside>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.023"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.024"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <Link xmlns="http://iso.org/pdf2/ssn"
+        id="ID.025"
+       >
+      <?MarkedContent page="1" ?>
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.026"
+         actualtext="MDPI logo"
+        >
+       <?MarkedContent page="1" ?>
+      </Span>
+      <?MarkedContent page="1" ?>
+      <?ReferencedObject type="Annot" page="1" ?>
+     </Link>
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.027"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.028"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>Article
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.029"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>TITLE
+    </text>
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.030"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>AUTHOR
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.031"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.032"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>ADDRESS
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.033"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.034"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="2" ?>As any dedicated reader can clearly see, the Ideal of practical reason is a representation of, as far as I know, the things in themselves; as I have shown elsewhere, the phenomena 
+     <?MarkedContent page="2" ?>should only be used as a canon for our understanding. The paralogisms of practical reason are what first give rise to the architectonic of practical reason. As will easily be shown 
+     <?MarkedContent page="2" ?>in the next section, reason would thereby be made to contradict, in view of these considerations, the Ideal of practical reason, yet the manifold depends on the phenomena. 
+     <?MarkedContent page="2" ?>Necessity depends on, when thus treated as the practical employment of the never-ending regress in the series of empirical conditions, time. Human reason depends on our sense 
+     <?MarkedContent page="2" ?>perceptions, by means of analytic unity. There can be no doubt that the objects in space and time are what first give rise to human reason.
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.035"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.036"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="2" ?>Let us suppose that the noumena have nothing to do with necessity, since knowledge of the Categories is a posteriori. Hume tells us that the transcendental unity of 
+     <?MarkedContent page="2" ?>apperception can not take account of the discipline of natural reason, by means of analytic unity. As is proven in the ontological manuals, it is obvious that the transcendental unity 
+     <?MarkedContent page="2" ?>of apperception proves the validity of the Antinomies; what we have alone been able to show is that, our understanding depends on the Categories. It remains a mystery why the 
+     <?MarkedContent page="2" ?>Ideal stands in need of reason. It must not be supposed that our faculties have lying before them, in the case of the Ideal, the Antinomies; so, the transcendental aesthetic is just as 
+     <?MarkedContent page="2" ?>necessary as our experience. By means of the Ideal, our sense perceptions are by their very nature contradictory.
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.037"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.038"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="2" ?>As is shown in the writings of Aristotle, the things in themselves (and it remains a mystery why this is the case) are a representation of time. Our concepts have lying before 
+     <?MarkedContent page="2" ?>them the paralogisms of natural reason, but our a posteriori concepts have lying before them the practical employment of our experience. Because of our necessary ignorance of the 
+     <?MarkedContent page="2" ?>conditions, the paralogisms would thereby be made to contradict, indeed, space; for these reasons, the Transcendental Deduction has lying before it our sense perceptions. (Our a 
+     <?MarkedContent page="2" ?>posteriori knowledge can never furnish a true and demonstrated science, because, like time, it depends on analytic principles.) So, it must not be supposed that our experience 
+     <?MarkedContent page="2" ?>depends on, so, our sense perceptions, by means of analysis. Space constitutes the whole content for our sense perceptions, and time occupies part of the sphere of the Ideal 
+     <?MarkedContent page="2" ?>concerning the existence of the objects in space and time in general.
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.039"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.040"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="2" ?>As we have already seen, what we have alone been able to show is that the objects in space and time would be falsified; what we have alone been able to show is that, our 
+     <?MarkedContent page="2" ?>judgements are what first give rise to metaphysics. As I have shown elsewhere, Aristotle tells us that the objects in space and time, in the full sense of these terms, would be 
+     <?MarkedContent page="2" ?>falsified. Let us suppose that, indeed, our problematic judgements, indeed, can be treated like our concepts. As any dedicated reader can clearly see, our knowledge can be treated 
+     <?MarkedContent page="2" ?>like the transcendental unity of apperception, but the phenomena occupy part of the sphere of the manifold concerning the existence of natural causes in general. Whence comes 
+     <?MarkedContent page="2" ?>the architectonic of natural reason, the solution of which involves the relation between necessity and the Categories? Natural causes (and it is not at all certain that this is the 
+     <?MarkedContent page="2" ?>case) constitute the whole content for the paralogisms. This could not be passed over in a complete system of transcendental philosophy, but in a merely critical essay the simple 
+     <?MarkedContent page="2" ?>mention of the fact may suffice.
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.053"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.054"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="2" ?>845.04684pt, 597.50787pt
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.055"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.056"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="4" ?>As any dedicated reader can clearly see, the Ideal of practical reason is a representation 
+     <?MarkedContent page="4" ?>of, as far as I know, the things in themselves; as I have shown elsewhere, the phenomena 
+     <?MarkedContent page="4" ?>should only be used as a canon for our understanding. The paralogisms of practical reason 
+     <?MarkedContent page="4" ?>are what first give rise to the architectonic of practical reason. As will easily be shown in the 
+     <?MarkedContent page="4" ?>next section, reason would thereby be made to contradict, in view of these considerations, 
+     <?MarkedContent page="4" ?>the Ideal of practical reason, yet the manifold depends on the phenomena. Necessity 
+     <?MarkedContent page="4" ?>depends on, when thus treated as the practical employment of the never-ending regress in 
+     <?MarkedContent page="4" ?>the series of empirical conditions, time. Human reason depends on our sense perceptions, 
+     <?MarkedContent page="4" ?>by means of analytic unity. There can be no doubt that the objects in space and time are 
+     <?MarkedContent page="4" ?>what first give rise to human reason.
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.057"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.058"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="4" ?>Let us suppose that the noumena have nothing to do with necessity, since knowledge 
+     <?MarkedContent page="4" ?>of the Categories is a posteriori. Hume tells us that the transcendental unity of apperception 
+     <?MarkedContent page="4" ?>can not take account of the discipline of natural reason, by means of analytic unity. As is 
+     <?MarkedContent page="4" ?>proven in the ontological manuals, it is obvious that the transcendental unity of apperception 
+     <?MarkedContent page="4" ?>proves the validity of the Antinomies; what we have alone been able to show is that, our 
+     <?MarkedContent page="4" ?>understanding depends on the Categories. It remains a mystery why the Ideal stands 
+     <?MarkedContent page="4" ?>in need of reason. It must not be supposed that our faculties have lying before them, in 
+     <?MarkedContent page="4" ?>the case of the Ideal, the Antinomies; so, the transcendental aesthetic is just as necessary 
+     <?MarkedContent page="4" ?>as our experience. By means of the Ideal, our sense perceptions are by their very nature 
+     <?MarkedContent page="4" ?>contradictory.
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.059"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.060"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="4" ?>As is shown in the writings of Aristotle, the things in themselves (and it remains a 
+     <?MarkedContent page="4" ?>mystery why this is the case) are a representation of time. Our concepts have lying before 
+     <?MarkedContent page="4" ?>them the paralogisms of natural reason, but our a posteriori concepts have lying before 
+     <?MarkedContent page="4" ?>them the practical employment of our experience. Because of our necessary ignorance of the 
+     <?MarkedContent page="4" ?>conditions, the paralogisms would thereby be made to contradict, indeed, space; for these 
+     <?MarkedContent page="4" ?>reasons, the Transcendental Deduction has lying before it our sense perceptions. (Our a 
+     <?MarkedContent page="4" ?>posteriori knowledge can never furnish a true and demonstrated science, because, like time, 
+     <?MarkedContent page="4" ?>it depends on analytic principles.) So, it must not be supposed that our experience depends 
+     <?MarkedContent page="4" ?>on, so, our sense perceptions, by means of analysis. Space constitutes the whole content 
+     <?MarkedContent page="4" ?>for our sense perceptions, and time occupies part of the sphere of the Ideal concerning the 
+     <?MarkedContent page="4" ?>existence of the objects in space and time in general.
+    </text>
+   </text-unit>
+   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.073"
+      rolemaps-to="Part"
+     >
+    <text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.074"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="5" ?>597.50787pt, 845.04684pt
+    </text>
+   </text-unit>
+   <tables xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.005"
+      rolemaps-to="Sect"
+     >
+    <float xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.041"
+       rolemaps-to="Aside"
+      >
+     <Caption xmlns="http://iso.org/pdf2/ssn"
+        id="ID.042"
+       >
+      <Lbl xmlns="http://iso.org/pdf2/ssn"
+         id="ID.043"
+        >
+       <?MarkedContent page="3" ?>Table 1. 
+      </Lbl>
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.044"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Justify"
+         rolemaps-to="P"
+        >
+       <?MarkedContent page="3" ?>As any dedicated reader can clearly see, the Ideal of practical reason is a representation of, as far as I know, the things in themselves; as I have shown elsewhere, the phenomena should only be used as a canon for our understanding. The paralogisms of practical reason are what first give rise to the architectonic of practical reason. As will easily be shown in the next section, reason would thereby be made to contradict, in view of these considerations, the Ideal of practical reason, yet the manifold depends on the phenomena. Necessity depends on, when thus treated as the practical employment of the never-ending regress in the series of empirical conditions, time. Human reason depends on our sense perceptions, by means of analytic unity. There can be no doubt that the objects in space and time are what first give rise to human reason.
+      </text>
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.045"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Justify"
+         rolemaps-to="P"
+        >
+       <?MarkedContent page="3" ?>Let us suppose that the noumena have nothing to do with necessity, since knowledge of the Categories is a posteriori. Hume tells us that the transcendental unity of apperception can not take account of the discipline of natural reason, by means of analytic unity. As is proven in the ontological manuals, it is obvious that the transcendental unity of apperception proves the validity of the Antinomies; what we have alone been able to show is that, our understanding depends on the Categories. It remains a mystery why the Ideal stands in need of reason. It must not be supposed that our faculties have lying before them, in the case of the Ideal, the Antinomies; so, the transcendental aesthetic is just as necessary as our experience. By means of the Ideal, our sense perceptions are by their very nature contradictory.
+      </text>
+     </Caption>
+     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.046"
+        rolemaps-to="Part"
+       >
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.047"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Justify"
+         rolemaps-to="P"
+        >
+      </text>
+      <Table xmlns="http://iso.org/pdf2/ssn"
+         id="ID.048"
+        >
+       <TR xmlns="http://iso.org/pdf2/ssn"
+          id="ID.049"
+         >
+        <TD xmlns="http://iso.org/pdf2/ssn"
+           id="ID.050"
+          >
+         <?MarkedContent page="3" ?>table
+        </TD>
+        <TD xmlns="http://iso.org/pdf2/ssn"
+           id="ID.051"
+          >
+         <?MarkedContent page="3" ?>table
+        </TD>
+       </TR>
+      </Table>
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.052"
+         rolemaps-to="P"
+        >
+      </text>
+     </text-unit>
+    </float>
+    <float xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.061"
+       rolemaps-to="Aside"
+      >
+     <Caption xmlns="http://iso.org/pdf2/ssn"
+        id="ID.062"
+       >
+      <Lbl xmlns="http://iso.org/pdf2/ssn"
+         id="ID.063"
+        >
+       <?MarkedContent page="4" ?>Table 2. 
+      </Lbl>
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.064"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Justify"
+         rolemaps-to="P"
+        >
+       <?MarkedContent page="4" ?>As any dedicated reader can clearly see, the Ideal of practical reason is a representation of, as far as I know, the things in themselves; as I have shown elsewhere, the phenomena should only be used as a canon for our understanding. The paralogisms of practical reason are what first give rise to the architectonic of practical reason. As will easily be shown in the next section, reason would thereby be made to contradict, in view of these considerations, the Ideal of practical reason, yet the manifold depends on the phenomena. Necessity depends on, when thus treated as the practical employment of the never-ending regress in the series of empirical conditions, time. Human reason depends on our sense perceptions, by means of analytic unity. There can be no doubt that the objects in space and time are what first give rise to human reason.
+      </text>
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.065"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Justify"
+         rolemaps-to="P"
+        >
+       <?MarkedContent page="4" ?>Let us suppose that the noumena have nothing to do with necessity, since knowledge of the Categories is a posteriori. Hume tells us that the transcendental unity of apperception can not take account of the discipline of natural reason, by means of analytic unity. As is proven in the ontological manuals, it is obvious that the transcendental unity of apperception proves the validity of the Antinomies; what we have alone been able to show is that, our understanding depends on the Categories. It remains a mystery why the Ideal stands in need of reason. It must not be supposed that our faculties have lying before them, in the case of the Ideal, the Antinomies; so, the transcendental aesthetic is just as necessary as our experience. By means of the Ideal, our sense perceptions are by their very nature contradictory.
+      </text>
+     </Caption>
+     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.066"
+        rolemaps-to="Part"
+       >
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.067"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextAlign="Justify"
+         rolemaps-to="P"
+        >
+      </text>
+      <Table xmlns="http://iso.org/pdf2/ssn"
+         id="ID.068"
+        >
+       <TR xmlns="http://iso.org/pdf2/ssn"
+          id="ID.069"
+         >
+        <TD xmlns="http://iso.org/pdf2/ssn"
+           id="ID.070"
+          >
+         <?MarkedContent page="4" ?>table
+        </TD>
+        <TD xmlns="http://iso.org/pdf2/ssn"
+           id="ID.071"
+          >
+         <?MarkedContent page="4" ?>table
+        </TD>
+       </TR>
+      </Table>
+      <text xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.072"
+         rolemaps-to="P"
+        >
+      </text>
+     </text-unit>
+    </float>
+   </tables>
+   <Artifact xmlns="http://iso.org/pdf2/ssn"
+      id="ID.075"
+      title="Ignored link annotations"
+     >
+    <Link xmlns="http://iso.org/pdf2/ssn"
+       id="ID.003"
+      >
+     <?ReferencedObject type="Annot" page="1" ?>
+     <?ReferencedObject type="Annot" page="2" ?>
+     <?ReferencedObject type="Annot" page="3" ?>
+     <?ReferencedObject type="Annot" page="4" ?>
+     <?ReferencedObject type="Annot" page="5" ?>
+    </Link>
+   </Artifact>
+  </Document>
+ </StructTreeRoot>
+</PDF>
+-------- test-landscape-2.xml (end) -----------
+============================================================
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.49452pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.49452pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
+Completed box being shipped out [5]
+\vbox(742.04784+4.19403)x489.10277, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
+.....\kern-72.26999
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 37.13861fil, direction TLT
+..\kern0.0
+..\kern-36.13487
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 93.7438fil, direction TLT
+...\kern0.0
+...\kern94.74754
+...\kern-1.00374
+...\pdfdest name{page.5} xyz
+...\pdfdest name{page.5} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(742.04784+4.19403)x489.10277, direction TLT
+..\glue -36.13487
+..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
+...\vbox(12.0+0.0)x394.35522, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(12.0+0.0)x394.35522, direction TLT
+.....\hbox(12.0+0.0)x394.35522, direction TLT
+......\glue -131.16722
+......\hbox(12.0+0.0)x525.52245, direction TLT
+.......\vbox(12.0+0.0)x525.52245, direction TLT
+........\hbox(18.349+3.14552)x525.52245, direction TLT
+.........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+..........\vbox(18.349+3.14552)x525.52245, direction TLT
+...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\kern-0.288 (left margin)
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral direct <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\TU/texgyrepagella(0)/m/n/8 V
+............\kern-0.72 (font)
+............\TU/texgyrepagella(0)/m/n/8 e
+............\TU/texgyrepagella(0)/m/n/8 r
+............\discretionary (penalty 50)
+.............< \kern-0.24 (font)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 s
+............\TU/texgyrepagella(0)/m/n/8 i
+............\TU/texgyrepagella(0)/m/n/8 o
+............\TU/texgyrepagella(0)/m/n/8 n
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 M
+............\TU/texgyrepagella(0)/m/n/8 a
+............\kern-0.32 (font)
+............\TU/texgyrepagella(0)/m/n/8 y
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 2
+............\TU/texgyrepagella(0)/m/n/8 0
+............\TU/texgyrepagella(0)/m/n/8 ,
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.25 minus 0.53333
+............\TU/texgyrepagella(0)/m/n/8 2
+............\TU/texgyrepagella(0)/m/n/8 0
+............\TU/texgyrepagella(0)/m/n/8 1
+............\TU/texgyrepagella(0)/m/n/8 6
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 s
+............\TU/texgyrepagella(0)/m/n/8 u
+............\TU/texgyrepagella(0)/m/n/8 b
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 m
+............\TU/texgyrepagella(0)/m/n/8 i
+............\TU/texgyrepagella(0)/m/n/8 t
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 t
+............\TU/texgyrepagella(0)/m/n/8 e
+............\TU/texgyrepagella(0)/m/n/8 d
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 t
+............\kern-0.08 (font)
+............\TU/texgyrepagella(0)/m/n/8 o
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 J
+............\TU/texgyrepagella(0)/m/it/8 o
+............\TU/texgyrepagella(0)/m/it/8 u
+............\TU/texgyrepagella(0)/m/it/8 r
+............\discretionary (penalty 50)
+.............< \kern-0.4 (font)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 n
+............\TU/texgyrepagella(0)/m/it/8 a
+............\TU/texgyrepagella(0)/m/it/8 l
+............\TU/texgyrepagella(0)/m/it/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 N
+............\kern-0.2 (font)
+............\TU/texgyrepagella(0)/m/it/8 o
+............\kern-0.12 (font)
+............\TU/texgyrepagella(0)/m/it/8 t
+............\TU/texgyrepagella(0)/m/it/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 S
+............\TU/texgyrepagella(0)/m/it/8 p
+............\TU/texgyrepagella(0)/m/it/8 e
+............\TU/texgyrepagella(0)/m/it/8 c
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 i
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 ﬁ
+............\TU/texgyrepagella(0)/m/it/8 e
+............\TU/texgyrepagella(0)/m/it/8 d
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 2.0
+...........\glue 0.0
+...........\glue 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\baselineskip) 0.88153
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.4+0.0)x525.23764, direction TLT
+.............\rule(0.4+0.0)x525.23764
+............\rule(7.33946+3.14552)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\vbox(0.0+0.0)x525.52245, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\hbox(16.309+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\vbox(16.309+3.14552)x525.52245, direction TLT
+...........\hbox(5.824+0.16)x525.52245, glue set 506.49045fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\TU/texgyrepagella(0)/m/n/8 5
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 o
+............\TU/texgyrepagella(0)/m/n/8 f
+............\TU/texgyrepagella(0)/m/n/8  
+............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 5
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+...........\glue 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\baselineskip) 2.98553
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.4+0.0)x525.23764, direction TLT
+.............\rule(0.4+0.0)x525.23764
+............\rule(7.33946+3.14552)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+........\glue 0.0
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdflinkstate 0
+...\glue 24.0
+...\glue(\lineskip) 0.0
+...\vbox(706.18271+0.0)x394.35522, glue set 693.29865fil, direction TLT
+....\write1{\def\@LN@column{1}}
+....\vbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\vbox(0.0+0.0)x0.0, direction TLT
+........\glue 0.0
+........\glue 0.0
+........\glue 0.0
+.......\glue 14.51074
+....\glue(\topskip) 3.06
 ....\hbox(6.94+2.81)x394.35522, glue set 264.87567fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
@@ -17945,7 +18320,7 @@ Completed box being shipped out [4]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 10/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 12/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
@@ -18047,7 +18422,7 @@ MathML statistic
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
 (tagpdf)             Writing out ~75 structure objects
-(tagpdf)             with ~48 'MC' leaf nodes.
+(tagpdf)             with ~50 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
