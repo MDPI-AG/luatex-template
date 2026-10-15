@@ -14,14 +14,14 @@ TEST 1: Show PDF Tags
      id="ID.002"
     >
    <Aside xmlns="http://iso.org/pdf2/ssn"
-      id="ID.012"
+      id="ID.011"
      >
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.013"
+       id="ID.012"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.014"
+        id="ID.013"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="End"
         rolemaps-to="P"
@@ -30,11 +30,11 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.015"
+       id="ID.014"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.016"
+        id="ID.015"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
@@ -43,11 +43,11 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.017"
+       id="ID.016"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.018"
+        id="ID.017"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
@@ -56,11 +56,11 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.019"
+       id="ID.018"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.020"
+        id="ID.019"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
@@ -69,18 +69,18 @@ TEST 1: Show PDF Tags
      </text>
     </text-unit>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.021"
+       id="ID.020"
        rolemaps-to="Part"
       >
      <text xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.022"
+        id="ID.021"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>Copyright: © 2016 by the author. Submitted to Journal Not Specified for possible open access publication under the terms and conditions of the 
       <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.023"
+         id="ID.022"
         >
        <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
@@ -92,21 +92,21 @@ TEST 1: Show PDF Tags
     </text-unit>
    </Aside>
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.024"
+      id="ID.023"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.025"
+       id="ID.024"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <Link xmlns="http://iso.org/pdf2/ssn"
-        id="ID.026"
+        id="ID.025"
        >
       <?MarkedContent page="1" ?>
       <Span xmlns="http://iso.org/pdf2/ssn"
-         id="ID.027"
+         id="ID.026"
          actualtext="MDPI logo"
         >
        <?MarkedContent page="1" ?>
@@ -116,7 +116,7 @@ TEST 1: Show PDF Tags
      </Link>
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.028"
+       id="ID.027"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
@@ -124,7 +124,7 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?>
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.029"
+       id="ID.028"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
@@ -132,7 +132,7 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?>Article
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.030"
+       id="ID.029"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
@@ -140,7 +140,7 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?>TITLE
     </text>
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.031"
+       id="ID.030"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
@@ -149,11 +149,11 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.032"
+      id="ID.031"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.033"
+       id="ID.032"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
@@ -162,17 +162,17 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.034"
+      id="ID.033"
       rolemaps-to="Part"
      >
     <text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.035"
+       id="ID.034"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.036"
+        id="ID.035"
         title="math"
         af="mathml-1.xml tag-AFfile1.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -189,7 +189,7 @@ TEST 1: Show PDF Tags
     </text>
    </text-unit>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.037"
+      id="ID.036"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -1266,7 +1266,7 @@ MathML statistic
 ==> 1 fitting MathML AF found
 ==> 1 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~37 structure objects
+(tagpdf)             Writing out ~36 structure objects
 (tagpdf)             with ~22 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree

@@ -59,6 +59,7 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 .\vbox(0.0+0.0)x0.0, glue set 37.13861fil, direction TLT
@@ -79,6 +80,7 @@ Completed box being shipped out [1]
 ..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
 ...\vbox(12.0+0.0)x394.35522, direction TLT
 ....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
 ....\hbox(12.0+0.0)x394.35522, direction TLT
 .....\hbox(12.0+0.0)x394.35522, direction TLT
 ......\glue -131.16722
@@ -141,9 +143,10 @@ Completed box being shipped out [1]
 ...........\glue 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 375.22882fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 380.32422fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -482,7 +485,8 @@ Completed box being shipped out [1]
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue(\baselineskip) 6.778
 .........\hbox(5.082+0.14)x116.65646, glue set 20.46245fil, direction TLT
-..........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://creativecommons.org/licenses/by/4.0/)>>}
+..........\pdfstartlink(*+*)x116.65646 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >> } action user{}
+..........\pdfendlink
 ..........\pdfliteral direct <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 C
 ..........\TU/texgyrepagella(0)/m/n/7 r
@@ -528,6 +532,7 @@ Completed box being shipped out [1]
 .........\penalty 10000
 .........\glue(\baselineskip) 6.65201
 .........\hbox(5.208+1.708)x116.65646, glue set 67.04047fil, direction TLT
+..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >> } action user{}
 ..........\kern-0.322 (left margin)
 ..........\TU/texgyrepagella(0)/m/n/7 (
 ..........\TU/texgyrepagella(0)/m/n/7 C
@@ -567,9 +572,11 @@ Completed box being shipped out [1]
 ....\penalty -51
 ....\glue -13.98
 ....\glue 13.98
-....\glue 2.0 plus 2.0 minus 1.0
-....\glue -2.0 plus -2.0 minus -1.0
-....\glue 2.0 plus 2.0 minus 1.0
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
+....\penalty -51
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
 ....\rule(0.0+0.0)x*
 ....\penalty 10000
 ....\glue -49.79231
@@ -586,23 +593,9 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0
-......\glue 0.0
-......\glue -20.0
-......\glue -5.0
-......\hbox(0.0+0.0)x20.0, glue set 20.0fil, direction TLT
-.......\glue 0.0 plus 1.0fil
-......\glue 5.0
-......\glue 0.0
-......\glue 0.0
-......\glue 0.0
-......\glue -5.0
-......\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 5.0
-.....\penalty 0
 .....\hbox(34.14322+0.0)x0.0, direction TLT
 .....\glue 0.0 plus 1.0fill
-.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://www.mdpi.com)>>}
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >> } action user{}
 .....\hbox(28.45274+0.0)x42.96877, direction TLT
 ......\hbox(28.45236+0.0)x42.96887, direction TLT
 .......\hbox(28.45236+0.0)x42.96887, direction TLT
@@ -715,29 +708,22 @@ Completed box being shipped out [1]
 ....\glue 12.0
 ....\glue 0.0
 ....\penalty -51
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -2.17 plus -1.0 minus -1.0
+....\glue 0.0
 ....\penalty -51
-....\glue 0.17
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -2.0 plus -1.0 minus -1.0
+....\glue 0.0
+....\penalty -51
 ....\glue 10.0 plus 4.0 minus 5.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.643
-....\hbox(5.672+0.16)x394.35522, glue set 178.55762fil, direction TLT
+....\hbox(5.672+0.16)x394.35522, glue set 178.71362fil, direction TLT
+.....\kern-0.312 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0
-......\glue 0.0
-......\glue -5.0
-......\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 5.0
-.....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/8 A
 .....\TU/texgyrepagella(0)/m/n/8 D
 .....\discretionary (penalty 10000)
@@ -757,23 +743,27 @@ Completed box being shipped out [1]
 ....\rule(0.4+0.0)x*
 ....\glue 12.0
 ....\glue 0.0
-....\pdfdest name{section.1} xyz
-....\penalty 10000
 ....\penalty -300
 ....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(11.42395+4.89604)x394.35522, glue set 162.79633fil, direction TLT
+....\hbox(8.328+0.204)x394.35522, glue set 165.44633fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\rule(11.42395+4.89604)x0.0
-.....\TU/texgyrepagella(0)/b/n/12 1
-.....\TU/texgyrepagella(0)/b/n/12 .
-.....\glue(\spaceskip) 4.0 plus 4.5 minus 0.33333
-.....\glue(\spaceskip) 4.0 plus 4.5 minus 0.33333
+.....\hbox(8.04+0.144)x12.0, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+........\pdfdest name{section.1} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
+......\TU/texgyrepagella(0)/b/n/12 1
+......\TU/texgyrepagella(0)/b/n/12 .
+......\glue 3.0 plus 1.5 minus 1.0
 .....\TU/texgyrepagella(0)/b/n/12 T
 .....\kern-1.08 (font)
 .....\TU/texgyrepagella(0)/b/n/12 e
@@ -789,13 +779,12 @@ Completed box being shipped out [1]
 .....\glue(\thickmuskip) 3.33328 plus 3.33328
 .....\TU/tg-pagella-math/b/n/12 1
 .....\mathoff
-.....\kern0.0
-.....\rule(11.42395+4.89604)x0.0
 .....\penalty 10000
+.....\kern-0.3 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\kern-4.89604
-....\hbox(0.0+4.89604)x0.0, direction TLT
+....\kern-0.204
+....\hbox(0.0+0.204)x0.0, direction TLT
 .....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -804,20 +793,16 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-4.89604
-....\hbox(0.0+4.89604)x0.0, direction TLT
-....\penalty 10000
+....\kern-0.204
+....\hbox(0.0+0.204)x0.0, direction TLT
 ....\marks1{\__mark_value:nn {1}{\MakeUppercase    []{1\hskip 1em\relax  Text $t=1$}}}
 ....\marks2{\__mark_value:nn {2}{}}
-....\write4{\protect \BOOKMARK [1][]{section.1}{\376\377\000\040\000T\000e\000x\000t\000\040\000t\000=\0001}{}% 1}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {1} Text $t=1$}{\thepage }{section.1}\protected@file@percent }}
 ....\penalty 10000
-....\penalty 10000
 ....\glue 3.0
-....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.12395
+....\glue(\baselineskip) 5.816
 ....\hbox(7.96+2.96)x394.35522, glue set 311.18817fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1226,6 +1211,7 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
 ...\glue(\baselineskip) 21.62003
 ...\hbox(14.37997+4.19403)x394.35522, direction TLT
 ....\hbox(14.37997+4.19403)x394.35522, direction TLT
@@ -1349,7 +1335,7 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://doi.org/10.3390/0000000)>>}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >> } action user{}
 ...........\mathon
 ...........\pdfliteral direct <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
@@ -1424,15 +1410,17 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdflinkstate 0
 .\kern0.0
 .\kern0.0
+.\kern-746.24187
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern746.24187
 <./Definitions/logo-mdpi.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-fontsetup-math.aux)
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.72pt have occurred.
-Package rerunfilecheck Info: File `test-fontsetup-math.out' has not changed.
-(rerunfilecheck)             Checksum: 2A20D7DEB3BD180BDF861345A8C85905;93.
 ***************
 Compilation 1 of test file completed with exit status 0
 Compilation 2 of test file completed with exit status 0

@@ -1,6 +1,6 @@
 % regression-test should be before the class as microtype defines \pdfoutput!
-\input{regression-test}
 \DocumentMetadata{tagging=on}
+\input{regression-test}
 \documentclass[monograph]{mdpi-luatex}
 \usepackage{lipsum}
 % avoid maketitle:

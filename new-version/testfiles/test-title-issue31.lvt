@@ -1,4 +1,5 @@
 % regression-test should be before the class as microtype defines \pdfoutput!
+\DocumentMetadata{}
 \input{regression-test}
 \documentclass[acoustics,article,accept,moreauthors]{mdpi-luatex}
 \usepackage{lipsum}

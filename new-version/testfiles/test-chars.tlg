@@ -24,6 +24,7 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 .\vbox(0.0+0.0)x0.0, glue set 37.13861fil, direction TLT
@@ -44,6 +45,7 @@ Completed box being shipped out [1]
 ..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
 ...\vbox(12.0+0.0)x394.35522, direction TLT
 ....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
 ....\hbox(12.0+0.0)x394.35522, direction TLT
 .....\hbox(12.0+0.0)x394.35522, direction TLT
 ......\glue -131.16722
@@ -106,9 +108,10 @@ Completed box being shipped out [1]
 ...........\glue 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 444.33939fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 446.33917fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -447,7 +450,8 @@ Completed box being shipped out [1]
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue(\baselineskip) 6.778
 .........\hbox(5.082+0.14)x116.65646, glue set 20.46245fil, direction TLT
-..........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://creativecommons.org/licenses/by/4.0/)>>}
+..........\pdfstartlink(*+*)x116.65646 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >> } action user{}
+..........\pdfendlink
 ..........\pdfliteral direct <lua data reference ...>
 ..........\TU/texgyrepagella(0)/m/n/7 C
 ..........\TU/texgyrepagella(0)/m/n/7 r
@@ -493,6 +497,7 @@ Completed box being shipped out [1]
 .........\penalty 10000
 .........\glue(\baselineskip) 6.65201
 .........\hbox(5.208+1.708)x116.65646, glue set 67.04047fil, direction TLT
+..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >> } action user{}
 ..........\kern-0.322 (left margin)
 ..........\TU/texgyrepagella(0)/m/n/7 (
 ..........\TU/texgyrepagella(0)/m/n/7 C
@@ -532,9 +537,11 @@ Completed box being shipped out [1]
 ....\penalty -51
 ....\glue -13.98
 ....\glue 13.98
-....\glue 2.0 plus 2.0 minus 1.0
-....\glue -2.0 plus -2.0 minus -1.0
-....\glue 2.0 plus 2.0 minus 1.0
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
+....\penalty -51
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
 ....\rule(0.0+0.0)x*
 ....\penalty 10000
 ....\glue -49.79231
@@ -551,23 +558,9 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0
-......\glue 0.0
-......\glue -20.0
-......\glue -5.0
-......\hbox(0.0+0.0)x20.0, glue set 20.0fil, direction TLT
-.......\glue 0.0 plus 1.0fil
-......\glue 5.0
-......\glue 0.0
-......\glue 0.0
-......\glue 0.0
-......\glue -5.0
-......\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 5.0
-.....\penalty 0
 .....\hbox(34.14322+0.0)x0.0, direction TLT
 .....\glue 0.0 plus 1.0fill
-.....\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://www.mdpi.com)>>}
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >> } action user{}
 .....\hbox(28.45274+0.0)x42.96877, direction TLT
 ......\hbox(28.45236+0.0)x42.96887, direction TLT
 .......\hbox(28.45236+0.0)x42.96887, direction TLT
@@ -680,29 +673,22 @@ Completed box being shipped out [1]
 ....\glue 12.0
 ....\glue 0.0
 ....\penalty -51
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -2.17 plus -1.0 minus -1.0
+....\glue 0.0
 ....\penalty -51
-....\glue 0.17
-....\glue 2.0 plus 1.0 minus 1.0
-....\glue -2.0 plus -1.0 minus -1.0
+....\glue 0.0
+....\penalty -51
 ....\glue 10.0 plus 4.0 minus 5.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.643
-....\hbox(5.672+0.16)x394.35522, glue set 178.55762fil, direction TLT
+....\hbox(5.672+0.16)x394.35522, glue set 178.71362fil, direction TLT
+.....\kern-0.312 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0
-......\glue 0.0
-......\glue -5.0
-......\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 5.0
-.....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/8 A
 .....\TU/texgyrepagella(0)/m/n/8 D
 .....\discretionary (penalty 10000)
@@ -969,6 +955,7 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
 ...\glue(\baselineskip) 21.62003
 ...\hbox(14.37997+4.19403)x394.35522, direction TLT
 ....\hbox(14.37997+4.19403)x394.35522, direction TLT
@@ -1092,7 +1079,7 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Border[0 0 0]/H/I/C[0 1 1]} action user{/Subtype/Link/A<</Type/Action/S/URI/URI(https://doi.org/10.3390/0000000)>>}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >> } action user{}
 ...........\mathon
 ...........\pdfliteral direct <lua data reference ...>
 ...........\TU/texgyrepagella(0)/m/n/8 h
@@ -1167,15 +1154,17 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdflinkstate 0
 .\kern0.0
 .\kern0.0
+.\kern-746.24187
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern746.24187
 Missing character: There is no ǋ (U+01CB) in font name:texgyrepagella:mode=node;script=latn;language=dflt;+tlig;!
 Missing character: There is no Ǉ (U+01C7) in font name:texgyrepagella:mode=node;script=latn;language=dflt;+tlig;!
 <./Definitions/logo-mdpi.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-chars.aux)
-Package rerunfilecheck Info: File `test-chars.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 ***************
 Compilation 1 of test file completed with exit status 0
 Compilation 2 of test file completed with exit status 0

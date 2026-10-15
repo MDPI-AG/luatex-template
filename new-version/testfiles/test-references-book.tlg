@@ -1,5 +1,9 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+LaTeX template Info: Declaring instance 'section' of type heading on line ....
+LaTeX template Info: Declaring instance 'section' of type heading on line ....
+LaTeX template Info: Declaring instance 'subsection' of type heading on line ....
+LaTeX template Info: Declaring instance 'subsubsection' of type heading on line ....
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.97998pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.97998pt}.
@@ -16,6 +20,7 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 .\vbox(0.0+0.0)x0.0, glue set 58.05869fil, direction TLT
@@ -36,6 +41,7 @@ Completed box being shipped out [1]
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
 ...\vbox(12.0+0.0)x367.04037, direction TLT
 ....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
 ....\hbox(12.0+0.0)x367.04037, direction TLT
 .....\hbox(12.0+0.0)x367.04037, direction TLT
 ......\glue -131.16722
@@ -88,9 +94,10 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(601.69264+0.0)x367.04037, glue set 435.31912fil, direction TLT
+...\vbox(601.69264+0.0)x367.04037, glue set 429.31976fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -112,21 +119,28 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(6.246+0.045)x0.0, direction TLT
-......\glue 0.0
-......\glue -18.84799
-......\glue -4.2679
-......\hbox(6.246+0.045)x18.84799, glue set 12.09799fill, direction TLT
+......\glue -23.11589
+......\hbox(6.246+0.045)x18.84799, glue set 12.09799fil, direction TLT
+.......\hbox(6.246+0.045)x6.75, direction TLT
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{list*.1} xyz
+..........\penalty 10000
+........\kern0.0
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{cite.ref-journal} xyz
+..........\penalty 10000
+........\kern0.0
+........\pdfliteral direct <lua data reference ...>
+........\TU/texgyrepagella(0)/m/n/9 1
+........\TU/texgyrepagella(0)/m/n/9 .
+........\glue 0.0 plus 1.0fill
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue 0.0 plus 1.0fil
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
-.........\pdfdest name{cite.ref-journal} xyz
-.........\penalty 10000
-.......\pdfliteral direct <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/9 1
-.......\TU/texgyrepagella(0)/m/n/9 .
-.......\glue 0.0 plus 1.0fill
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -256,20 +270,27 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(6.201+0.045)x0.0, direction TLT
-......\glue 0.0
-......\glue -18.84799
-......\glue -4.2679
-......\hbox(6.201+0.045)x18.84799, glue set 12.09799fill, direction TLT
+......\glue -23.11589
+......\hbox(6.201+0.045)x18.84799, glue set 12.09799fil, direction TLT
+.......\hbox(6.201+0.045)x6.75, direction TLT
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{list*.2} xyz
+..........\penalty 10000
+........\kern0.0
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{cite.ref-book1} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/m/n/9 2
+........\TU/texgyrepagella(0)/m/n/9 .
+........\glue 0.0 plus 1.0fill
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue 0.0 plus 1.0fil
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
-.........\pdfdest name{cite.ref-book1} xyz
-.........\penalty 10000
-.......\TU/texgyrepagella(0)/m/n/9 2
-.......\TU/texgyrepagella(0)/m/n/9 .
-.......\glue 0.0 plus 1.0fill
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -482,20 +503,27 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(6.201+0.18)x0.0, direction TLT
-......\glue 0.0
-......\glue -18.84799
-......\glue -4.2679
-......\hbox(6.201+0.18)x18.84799, glue set 12.09799fill, direction TLT
+......\glue -23.11589
+......\hbox(6.201+0.18)x18.84799, glue set 12.09799fil, direction TLT
+.......\hbox(6.201+0.18)x6.75, direction TLT
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{list*.3} xyz
+..........\penalty 10000
+........\kern0.0
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{cite.ref-book2} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/m/n/9 3
+........\TU/texgyrepagella(0)/m/n/9 .
+........\glue 0.0 plus 1.0fill
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue 0.0 plus 1.0fil
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
-.........\pdfdest name{cite.ref-book2} xyz
-.........\penalty 10000
-.......\TU/texgyrepagella(0)/m/n/9 3
-.......\TU/texgyrepagella(0)/m/n/9 .
-.......\glue 0.0 plus 1.0fill
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -650,20 +678,27 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(6.246+0.045)x0.0, direction TLT
-......\glue 0.0
-......\glue -18.84799
-......\glue -4.2679
-......\hbox(6.246+0.045)x18.84799, glue set 12.09799fill, direction TLT
+......\glue -23.11589
+......\hbox(6.246+0.045)x18.84799, glue set 12.09799fil, direction TLT
+.......\hbox(6.246+0.045)x6.75, direction TLT
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{list*.4} xyz
+..........\penalty 10000
+........\kern0.0
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{cite.ref-unpublish} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/m/n/9 4
+........\TU/texgyrepagella(0)/m/n/9 .
+........\glue 0.0 plus 1.0fill
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue 0.0 plus 1.0fil
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
-.........\pdfdest name{cite.ref-unpublish} xyz
-.........\penalty 10000
-.......\TU/texgyrepagella(0)/m/n/9 4
-.......\TU/texgyrepagella(0)/m/n/9 .
-.......\glue 0.0 plus 1.0fill
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -906,20 +941,27 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(6.201+0.18)x0.0, direction TLT
-......\glue 0.0
-......\glue -18.84799
-......\glue -4.2679
-......\hbox(6.201+0.18)x18.84799, glue set 12.09799fill, direction TLT
+......\glue -23.11589
+......\hbox(6.201+0.18)x18.84799, glue set 12.09799fil, direction TLT
+.......\hbox(6.201+0.18)x6.75, direction TLT
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{list*.5} xyz
+..........\penalty 10000
+........\kern0.0
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{cite.ref-url} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/m/n/9 5
+........\TU/texgyrepagella(0)/m/n/9 .
+........\glue 0.0 plus 1.0fill
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue 0.0 plus 1.0fil
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
-.........\pdfdest name{cite.ref-url} xyz
-.........\penalty 10000
-.......\TU/texgyrepagella(0)/m/n/9 5
-.......\TU/texgyrepagella(0)/m/n/9 .
-.......\glue 0.0 plus 1.0fill
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 T
@@ -1036,20 +1078,27 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(6.201+0.18)x0.0, direction TLT
-......\glue 0.0
-......\glue -18.84799
-......\glue -4.2679
-......\hbox(6.201+0.18)x18.84799, glue set 12.09799fill, direction TLT
+......\glue -23.11589
+......\hbox(6.201+0.18)x18.84799, glue set 12.09799fil, direction TLT
+.......\hbox(6.201+0.18)x6.75, direction TLT
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{list*.6} xyz
+..........\penalty 10000
+........\kern0.0
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{cite.ref-proceeding} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/m/n/9 6
+........\TU/texgyrepagella(0)/m/n/9 .
+........\glue 0.0 plus 1.0fill
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue 0.0 plus 1.0fil
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
-.........\pdfdest name{cite.ref-proceeding} xyz
-.........\penalty 10000
-.......\TU/texgyrepagella(0)/m/n/9 6
-.......\TU/texgyrepagella(0)/m/n/9 .
-.......\glue 0.0 plus 1.0fill
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -1391,20 +1440,27 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(6.201+0.045)x0.0, direction TLT
-......\glue 0.0
-......\glue -18.84799
-......\glue -4.2679
-......\hbox(6.201+0.045)x18.84799, glue set 12.09799fill, direction TLT
+......\glue -23.11589
+......\hbox(6.201+0.045)x18.84799, glue set 12.09799fil, direction TLT
+.......\hbox(6.201+0.045)x6.75, direction TLT
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{list*.7} xyz
+..........\penalty 10000
+........\kern0.0
+........\glue 0.0 plus 1.0fil
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfdest name{cite.ref-thesis} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/m/n/9 7
+........\TU/texgyrepagella(0)/m/n/9 .
+........\glue 0.0 plus 1.0fill
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue 0.0 plus 1.0fil
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
-.........\pdfdest name{cite.ref-thesis} xyz
-.........\penalty 10000
-.......\TU/texgyrepagella(0)/m/n/9 7
-.......\TU/texgyrepagella(0)/m/n/9 .
-.......\glue 0.0 plus 1.0fill
 ......\glue 4.2679
 .....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/9 A
@@ -1578,10 +1634,11 @@ Completed box being shipped out [1]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 0.0
+....\glue 6.0 plus 3.0 minus 3.0
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
 ...\glue(\baselineskip) 8.4665
 ...\hbox(11.5335+3.14552)x367.04037, direction TLT
 ....\hbox(11.5335+3.14552)x367.04037, direction TLT
@@ -1637,12 +1694,14 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0
 .....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdflinkstate 0
 .\kern0.0
 .\kern0.0
+.\kern-603.78322
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern603.78322
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-references-book.aux)
-Package rerunfilecheck Info: File `test-references-book.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 ***************
 Compilation 1 of test file completed with exit status 0
 Compilation 2 of test file completed with exit status 0
