@@ -24,7 +24,6 @@ appendix: \cref{app}, \cref{secapp}, \cref{subsecapp}, \cref{subsubsecapp}
   scheme,
   chart,
   graph,
-  figurewide,
   boxenv
  }
  {#1: ~ \cref{#1:label1}\quad \cref{#1:label1,#1:label2}\par}
@@ -37,7 +36,6 @@ appendix: \cref{app}, \cref{secapp}, \cref{subsecapp}, \cref{subsubsecapp}
   scheme,
   chart,
   graph,
-  figurewide,
   boxenv
  }
  {

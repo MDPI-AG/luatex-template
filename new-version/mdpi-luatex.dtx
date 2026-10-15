@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-14}
-\def\mdpiversion{v7.0p}
+\def\mdpidate{2026-10-15}
+\def\mdpiversion{v7.0o}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -824,7 +824,6 @@
 %  Floats
 %    \begin{macrocode}
   \crefname{figure}{Figure}{Figures}
-  \crefname{figurewide}{Figure}{Figures}
   \crefname{table}{Table}{Tables}
   \crefname{boxenv}{Box}{Boxes}
   \crefname{listing}{Listing}{Listings}
@@ -2313,7 +2312,6 @@
 \DeclareFloatingEnvironment[name=Box]{boxenv}
 \DeclareFloatingEnvironment[]{chart}
 \DeclareFloatingEnvironment[]{scheme}
-\DeclareFloatingEnvironment[name=Figure]{figurewide}
 \DeclareFloatingEnvironment[]{graph}
 %    \end{macrocode}
 %
@@ -2328,7 +2326,6 @@
        float/new=boxenv,
        float/new=chart,
        float/new=scheme,
-       float/new=figurewide,
        float/new=graph,              
      }
  }
