@@ -68,7 +68,6 @@
 %<*class>
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{mdpi-luatex}[\mdpidate\ \mdpiversion\ MDPI paper class for lualatex]
-\NeedsDocumentMetadata
 %    \end{macrocode}
 % If lualatex is not used we fall back to a (not tagging aware)
 % version of the older class under the name  mdpi. This allows to compare
@@ -90,6 +89,7 @@
 \@ifundefined{directlua}
  {\endinput}
  {}
+\NeedsDocumentMetadata 
 %    \end{macrocode}
 % \subsection{Class loading}
 %    \begin{macrocode}
