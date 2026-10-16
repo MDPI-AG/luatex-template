@@ -23,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-10-15}
+\def\mdpidate{2026-10-16}
 \def\mdpiversion{v6.5d}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
@@ -1617,7 +1617,6 @@
 \DeclareFloatingEnvironment[name=Box]{boxenv}	
 \DeclareFloatingEnvironment[]{chart}
 \DeclareFloatingEnvironment[]{scheme}
-\DeclareFloatingEnvironment[]{figurewide}
 \DeclareFloatingEnvironment[]{graph}
 
 \RequirePackage{caption}
