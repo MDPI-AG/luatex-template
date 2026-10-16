@@ -40,6 +40,7 @@ collection-latex
         sillypage
         tcolorbox
         tocloft
+        translations
 
 collection-latexrecommended
 collection-luatex
