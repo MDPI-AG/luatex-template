@@ -37,7 +37,8 @@ jobs:
         if: ${{ always() }}
         uses: zauguin/l3build-failure-artifacts@v1
         with:
-          name: testfiles-mdpu
+          name: testfiles-mdpi
+          path: newversion/build
           # Decide how long to keep the test output artifact:
-          retention-days: 3        
+          retention-days: 3
       
