@@ -1,13 +1,60 @@
 collection-basic
 collection-latex
-collection-latexextra
+#collection-latexextra
+        accsupp
+        acro
+        acronym
+        adjustbox
+        alphalph
+        bearwear
+        changepage
+        cleveref
+        collcell
+        csquotes
+        ducksay
+        endfloat
+        endnotes
+        enotez
+        enumitem
+        eqparbox
+        fewerfloatpages
+        kantlipsum
+        l3build
+        l3kernel-dev
+        lastpage
+        latex-amsmath-dev
+        latex-base-dev
+        latex-bin-dev
+        latex-context-ppchtex
+        latex-firstaid-dev
+        latex-graphics-dev
+        latex-lab-dev
+        latex-tagging-status
+        latex-tools-dev
+        lipsum
+        marginfix
+        marginnote
+        multirow
+        pbox
+        sillypage
+        tcolorbox
+        tocloft
+
 collection-latexrecommended
 collection-luatex
 collection-langenglish
-collection-fontsextra
+#collection-fontsextra
 collection-fontsrecommended
 collection-langenglish
-collection-pictures
+# collection-pictures
+        chemfig
+        circuitikz
+        hawkdraw
+        pgf
+        pgfplots
+        tikzducks
+        tikzlings
+# collection-plaingeneric
 inputnormalization
 ulem
 show-pdf-tags
