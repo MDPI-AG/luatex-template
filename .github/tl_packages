@@ -18,6 +18,7 @@ collection-latex
         enumitem
         eqparbox
         fewerfloatpages
+        frankenstein
         kantlipsum
         l3build
         l3kernel-dev
