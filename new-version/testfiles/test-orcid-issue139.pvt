@@ -1,0 +1,11 @@
+
+\DocumentMetadata{tagging-setup={role/user-NS=user}}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\neworcid{doe-john}{0000-0000-0000-000X}
+\newcommand\orcidauthorAB{0000-0000-0000-000X}
+\begin{document}
+\START
+\orcidAB, \useorcid{doe-john}
+\SHOWPDFTAGS
+\end{document}

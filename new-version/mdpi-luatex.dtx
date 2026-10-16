@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-16}
-\def\mdpiversion{v7.0t}
+\def\mdpidate{2026-10-17}
+\def\mdpiversion{v7.0u}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -59,8 +59,25 @@
 % \end{function}
 %
 % \subsection{Graphic path setting}
-% Graphics can be stored in folders \texttt{figures}, \texttt{Figures}, 
-% \texttt{figure} and \texttt{Figure}. 
+% Graphics can be stored in folders \texttt{figures}, \texttt{Figures},
+% \texttt{figure} and \texttt{Figure}.
+%
+% \subsection{Orcid}
+%
+% \begin{function}{\neworcid,\useorcid}
+% \begin{syntax}
+% \cs{neworcid}\Arg{key word}\Arg{ORCID}\\
+% \cs{useorcid}\Arg{key word}
+% \end{syntax}
+% With \cs{neworcid} a ORCID can be stored under the key word \meta{key word}
+% and then use later with \cs{useorcid}. This will produce an icon with a link.
+% \end{function}
+%
+% \subsection{Appendix}
+% \begin{function}{\appendixstart}
+% This command is not needed anymore. The numbering is reset automatically in the
+% \cs{appendix} command.
+% \end{function}
 %
 % \section{Implementation}
 % \subsection{Declaration}
@@ -89,7 +106,7 @@
 \@ifundefined{directlua}
  {\endinput}
  {}
-\NeedsDocumentMetadata 
+\NeedsDocumentMetadata
 %    \end{macrocode}
 % \subsection{Class loading}
 %    \begin{macrocode}
@@ -106,8 +123,8 @@
 \RequirePackage{calc}
 \RequirePackage{lastpage}
 \RequirePackage{ifthen}
-\RequirePackage{etoolbox} 
-\RequirePackage{refcount} 
+\RequirePackage{etoolbox}
+\RequirePackage{refcount}
 \RequirePackage{alphalph}
 %    \end{macrocode}
 % TODO: replace by lualineno
@@ -115,17 +132,17 @@
 \RequirePackage[right,mathlines]{lineno}
 %    \end{macrocode}
 % Use in the biography environment. TODO: check if a proper list or display environment
-% can be used. 
+% can be used.
 %    \begin{macrocode}
 \RequirePackage{pbox}
 %    \end{macrocode}
 %  To adjust the width of the column for the title part and figures/tables (adjustwidth environment)
 %    \begin{macrocode}
-\RequirePackage{changepage} % 
+\RequirePackage{changepage} %
 %    \end{macrocode}
 % For XML2PDF use \cs{tag} for equation (??)
 %    \begin{macrocode}
-\RequirePackage{attrib} 
+\RequirePackage{attrib}
 %    \end{macrocode}
 %
 % \subsubsection{Text font setup}
@@ -146,7 +163,7 @@
 % We load amssymb for e.g. \cs{square}
 %    \begin{macrocode}
 \RequirePackage{amsmath}
-\RequirePackage{amssymb} 
+\RequirePackage{amssymb}
 %    \end{macrocode}
 % And lua-unicode-math for the rest
 %    \begin{macrocode}
@@ -188,8 +205,8 @@
 % Note that wasysym doesn't provide correct ToUnicode values for every char.
 % Every use must be check. https://github.com/latex3/tagging-project/issues/1140
 %    \begin{macrocode}
-\RequirePackage{wasysym} 
-\RequirePackage{pifont} 
+\RequirePackage{wasysym}
+\RequirePackage{pifont}
 %    \end{macrocode}
 %
 % \subsubsection{Tables}
@@ -218,7 +235,7 @@
 %
 % \subsubsection{Graphics and color}
 %    \begin{macrocode}
-\RequirePackage{xcolor}  
+\RequirePackage{xcolor}
 \RequirePackage{luacolor}
 %    \end{macrocode}
 % Define color for citations
@@ -255,18 +272,18 @@
 % \subsubsection{Endnotes}
 % Partially compatible with tagging.
 %    \begin{macrocode}
-\RequirePackage{enotez} 
+\RequirePackage{enotez}
 %    \end{macrocode}
 %
 %  \subsubsection{Floats}
 %  Note: float is only partly compatible with tagging. subfig is incompatible!
 %  marginnote is used for the left column on the title page.
 %    \begin{macrocode}
-\RequirePackage{marginnote} 
+\RequirePackage{marginnote}
 \reversemarginpar % To have the left column on the left side
 \RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
 \RequirePackage{float}
-\RequirePackage[labelformat=simple]{subfig} 
+\RequirePackage[labelformat=simple]{subfig}
 %    \end{macrocode}
 % Change subfigure label format:
 %    \begin{macrocode}
@@ -274,14 +291,14 @@
 %    \end{macrocode}
 %
 % \subsubsection{Bibliography}
-% \pkg{natbib} or \pkg{mdpi_apacite} are loaded 
+% \pkg{natbib} or \pkg{mdpi_apacite} are loaded
 % below as they and their options depend on the journal type.
-% 
+%
 % \subsection{Journal class options}
-% All journals (website name, full name, short name, DOI abbreviation, 
+% All journals (website name, full name, short name, DOI abbreviation,
 % and ISSN + choice of continuous page numbers) are defined in an extra file
 % which sets up various class options.
-% 
+%
 % We predefine the commands used in \texttt{journalnames.tex} for the case that a journal has incomplete data:
 %    \begin{macrocode}
 \gdef\@journal{notspecified}
@@ -292,7 +309,7 @@
 \gdef\@societyowner{}
 \gdef\@journaltype{ACS}
 %    \end{macrocode}
-% And now load the file. 
+% And now load the file.
 %    \begin{macrocode}
 \input{Definitions/journalnames}
 %    \end{macrocode}
@@ -302,9 +319,9 @@
 %    \begin{macrocode}
 \DeclareOption{journal}
   {\ClassWarning{mdpi}{%
-    You used an invalid journal name or you have not specified the journal. 
-    The first option of the documentclass command specifies the journal. 
-    The word 'journal' should be replaced by one of the journal names 
+    You used an invalid journal name or you have not specified the journal.
+    The first option of the documentclass command specifies the journal.
+    The word 'journal' should be replaced by one of the journal names
     specified in template.tex (in the comment 'Choose between the following MDPI journal').}
   }
 %    \end{macrocode}
@@ -368,14 +385,14 @@
 \DeclareOption{urologyaroundtheworld}{\gdef\@arttype{Urology around the World}}
 \DeclareOption{viewpoint}   {\gdef\@arttype{Viewpoint}}
 %    \end{macrocode}
-% 
+%
 % Options to choose the status of the manuscript
 %    \begin{macrocode}
 \DeclareOption{submit}{\gdef\@status{submit}}
 \DeclareOption{accept}{\gdef\@status{accept}}
 %    \end{macrocode}
 % To choose the whether there is one or more authors.
-% TODO: the code should count the authors. 
+% TODO: the code should count the authors.
 %    \begin{macrocode}
 \DeclareOption{oneauthor}  {\gdef\@authornum{author}}
 \DeclareOption{moreauthors}{\gdef\@authornum{authors}}
@@ -408,19 +425,19 @@
 %    \begin{macrocode}
 \newcommand\@journallicence{ccby}
 \clist_map_inline:nn{ijtpp}
- {\tl_if_eq:NnT\@journal{#1}{\def\@journallicence{ccbyncnd}}} 
+ {\tl_if_eq:NnT\@journal{#1}{\def\@journallicence{ccbyncnd}}}
 %    \end{macrocode}
 % Some journals have a different MDPI logo if \cs{IsAssociation} has not been set.
 %    \begin{macrocode}
-\newcommand\@journalmdpilogo{logo-mdpi} 
-\newcommand\@journallogo{\@journal-logo} 
+\newcommand\@journalmdpilogo{logo-mdpi}
+\newcommand\@journallogo{\@journal-logo}
 \clist_map_inline:nn{ijom,siuj,scipharm}
  {
    \tl_if_eq:NnT\@journal{#1}
      {
-       \gdef\@journalmdpilogo{logo-mdpi-#1}       
+       \gdef\@journalmdpilogo{logo-mdpi-#1}
      }
- } 
+ }
 %    \end{macrocode}
 % Some journal set only a short publishing date in \cs{leftcolDates}
 %    \begin{macrocode}
@@ -434,7 +451,7 @@
 %    \end{macrocode}
 %
 % \subsection{Temporary patches for taggings}
-% 
+%
 % \subsection{Fontsizes}
 % The following font size are inherited from article
 % \begin{tabular}{lll}
@@ -503,9 +520,9 @@
 \DeclareRobustCommand\LARGE{\@setfontsize\LARGE{18pt}{21pt}}
 %    \end{macrocode}
 %
-% In floats and footnotes \pkg{setspace} did reset the linespread to 
+% In floats and footnotes \pkg{setspace} did reset the linespread to
 % single spacing again. We have to compensate for that (gh/100):
-% This give 12pt for normalsize and 9.5pt for footnote size. 
+% This give 12pt for normalsize and 9.5pt for footnote size.
 %    \begin{macrocode}
 \AddToHook{cmd/@floatboxreset/before}{\linespread{0.8584}}
 \AddToHook{fntext}{\linespread{0.9061}}
@@ -516,7 +533,7 @@
 %    \begin{macrocode}
 \newcommand{\highlighting}[1]{\colorbox{yellow}{#1}}
 %    \end{macrocode}
-% Map the lua-ul/soul names to ulem names. Note: these commands are 
+% Map the lua-ul/soul names to ulem names. Note: these commands are
 % not yet properly tagged, the pathes appear in the tag tree.
 %    \begin{macrocode}
 \let\sout\st
@@ -524,16 +541,16 @@
 %    \end{macrocode}
 % Define \cs{uuline} and \cs{uwave} with luamml. We make the decorations
 % artifacts for now. Adding structure is not trivial as they can go over
-% a paragraph break. 
+% a paragraph break.
 %    \begin{macrocode}
 \newunderlinetype \mdpi@UulineRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%
   \unitlength=0.2em\relax
   \begin{picture}[artifact](1,2)(0,0)
     \put(0,1){\line(1,0){1}}
     \put(0,0){\line(1,0){1}}
-  \end{picture}%  
+  \end{picture}%
 }}
-\newunderlinetype \mdpi@UwaveRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%  
+\newunderlinetype \mdpi@UwaveRule {\tagmcbegin{artifact}\SuspendTagging{\leaders}\cleaders\hbox{%
   \unitlength=0.3ex\relax
   \begin{picture}[artifact](4,0)(0,1)
     \thicklines
@@ -562,7 +579,7 @@
 %    \begin{macrocode}
 \EditInstance{captionedtext}{proof}{caption-decls = \bfseries}
 %    \end{macrocode}
-%  Redefine \cs{qed}, see https://github.com/MDPI-AG/luatex-template/issues/83 
+%  Redefine \cs{qed}, see https://github.com/MDPI-AG/luatex-template/issues/83
 %    \begin{macrocode}
 \renewcommand{\qed}{\unskip\nobreak\quad\qedsymbol}
 %    \end{macrocode}
@@ -624,7 +641,7 @@
 %
 % \subsection{Journal conditionals}
 % The command \cs{@journaltype} used in the conditionals
-% is defined in \texttt{journalnames.tex} and is by default 
+% is defined in \texttt{journalnames.tex} and is by default
 % (if no journal is specified and the journal name is \texttt{notspecified})
 % \texttt{ACS}.
 %
@@ -703,7 +720,7 @@
 \newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
 %    \end{macrocode}
 % \end{macro}
-% 
+%
 % \subsubsection{APA or Chicago style journals}
 %
 % A combination of both tests: true if a journal is either APA or a Chicago style journal.
@@ -711,7 +728,7 @@
 %    \begin{macrocode}
 \prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
  {
-   \bool_lazy_or:nnTF 
+   \bool_lazy_or:nnTF
     { \__mdpi_is_journal_apastyle_p: }
     { \__mdpi_is_journal_chicagostyle_p: }
     {
@@ -741,7 +758,7 @@
 %    \begin{macrocode}
   {\RequirePackage[sort&compress,sectionbib]{natbib}}
 %    \end{macrocode}
-% 
+%
 %    \begin{macrocode}
 \renewcommand\NAT@set@cites{%
   \ifNAT@numbers
@@ -796,9 +813,9 @@
 %
 % \subsection{Loading \pkg{hyperref} and \pkg{cleveref}}
 % \pkg{cleveref} wants to be loaded rather late. For \pkg{hyperref} it is no longer
-% very important but the class delays the loading nevertheless to the 
+% very important but the class delays the loading nevertheless to the
 % \texttt{begindocument/before} hook.
-% 
+%
 % \pkg{cleveref} needs various setups. We store that in one command which is called
 % after the package is loaded.
 %    \begin{macrocode}
@@ -821,7 +838,7 @@
 % theorems
 %    \begin{macrocode}
   \crefname{scheme}{Scheme}{Schemes}
-  \crefname{chart}{Chart}{Charts}  
+  \crefname{chart}{Chart}{Charts}
   \crefname{graph}{Graph}{Graphs}
   \crefname{Theorem}{Theorem}{Theorems}
   \crefname{Lemma}{Lemma}{Lemmas}
@@ -853,7 +870,7 @@
 
 %    \end{macrocode}
 % The \pkg{hyperref} options \texttt{unicode=true}, \texttt{pdfpagelabels} are set by default,
-% so they are not set explicitly. 
+% so they are not set explicitly.
 %    \begin{macrocode}
 \ExplSyntaxOn
 \newcommand{\mdpi@load@hyperref@cleveref}
@@ -865,7 +882,7 @@
       \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
     }{}
    \tl_if_eq:NnT \@journal {laws}
-    { 
+    {
       \PassOptionsToPackage{hyperfootnotes=false}{hyperref}
     }
    \RequirePackage
@@ -875,7 +892,7 @@
      pdfpagemode  = UseNone,
      colorlinks   = true,
      allcolors    = mdpi@hypcolor,
-    ] 
+    ]
     {hyperref}
 %    \end{macrocode}
 % Now load cleveref
@@ -888,8 +905,8 @@
 \AddToHook{begindocument/before}
   {
     \RequirePackage{bm}
-    \mdpi@load@hyperref@cleveref    
-  } 
+    \mdpi@load@hyperref@cleveref
+  }
 %    \end{macrocode}
 %
 % The urlsetup must be done at begin document to overwrite
@@ -905,7 +922,7 @@
      \def\UrlDigits{\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\0}
      \g@addto@macro{\UrlBreaks}{\UrlOrds}
      \g@addto@macro{\UrlBreaks}{\UrlDigits}
-  }   
+  }
 %    \end{macrocode}
 % This sets the PDF metadata:
 %    \begin{macrocode}
@@ -918,7 +935,7 @@
      pdfkeywords={\@keyword},
      pdfauthor  ={\@AuthorNames}
    }%
- }  
+ }
 \ExplSyntaxOff
 %    \end{macrocode}
 %
@@ -964,7 +981,7 @@
 %    \end{macrocode}
 % Slopiness / badness of the line breaking
 %    \begin{macrocode}
-\tolerance=1000 
+\tolerance=1000
 %    \end{macrocode}
 % To avoid "Output-loop.." compile bug
 %    \begin{macrocode}
@@ -979,10 +996,10 @@
 %    \end{macrocode}
 % \subsection{Frontmatter}
 % TODO: improve tagging!
-% 
+%
 % \subsubsection{Helper commands}
 % At first some length used in the frontmatter. \cs{dist} is no longer
-% used but kept for compatibility. 
+% used but kept for compatibility.
 %    \begin{macrocode}
 \newcommand{\dist}{1.7em}
 \newcommand\mdpi@len@dist{1.7em}
@@ -1001,7 +1018,7 @@
 }
 %    \end{macrocode}
 % This adds leading zeros to create at least four digits, it prints (?) error
-% if there are more than five digits. 
+% if there are more than five digits.
 %    \begin{macrocode}
 \newcommand\mdpi@minfourdigits[1]{%
   \ifnum#1<10 %
@@ -1157,18 +1174,29 @@
 %    \begin{macrocode}
 \newcommand{\orcidicon}{\includegraphics[width=0.32cm,actualtext=ORCID]{Definitions/logo-orcid.pdf}}
 %    \end{macrocode}
-% Define link and button for author A--Z. Before these commands can be used, the
+% Define link and button for author A--Z and AA--AZ. Before these commands can be used, the
 % author has to define \verb+\orcidauthorA+ etc.
 %    \begin{macrocode}
 \ExplSyntaxOn
 \int_step_inline:nn{26}
  {
    \tl_new:c{orcid\int_to_Alph:n{#1}}
+   \tl_new:c{orcidA\int_to_Alph:n{#1}}
    \tl_set:cn{orcid\int_to_Alph:n{#1}}
      {
-       \href{https://orcid.org/\use:c{orcidauthor\int_to_Alph:n{#1}}}{\orcidicon}
-     }  
- }  
+       \hrefurl{https://orcid.org/\use:c{orcidauthor\int_to_Alph:n{#1}}}{\orcidicon}
+     }
+   \tl_set:cn{orcidA\int_to_Alph:n{#1}}
+     {
+       \hrefurl{https://orcid.org/\use:c{orcidauthorA\int_to_Alph:n{#1}}}{\orcidicon}
+     }
+ }
+%    \end{macrocode}
+% Orcids can also be stored with a keyword:
+%    \begin{macrocode}
+\cs_new_protected:Npn \neworcid #1 #2 {\tl_const:cn {c__mdpi_orcid_#1_tl}{#2}}
+\cs_new_protected:Npn \useorcid #1
+  {\hrefurl{https://orcid.org/\use:c{c__mdpi_orcid_#1_tl}}{\orcidicon}}
 \ExplSyntaxOff
 %    \end{macrocode}
 %
@@ -1472,7 +1500,7 @@
        %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
      }%
   }
-\ExplSyntaxOff  
+\ExplSyntaxOff
 %    \end{macrocode}
 % \end{macro}
 
@@ -1584,9 +1612,9 @@
    \ResumeTagging{}%
 %    \end{macrocode}
 % \cs{Mylen} should be \cs{textheight} minus the total height of the box
-%  so that the resulting value can be used to align the left column 
-%  to the bottom of \cs{textheight}. A small correction is added to account for 
-%  the depth of a strutbox. 
+%  so that the resulting value can be used to align the left column
+%  to the bottom of \cs{textheight}. A small correction is added to account for
+%  the depth of a strutbox.
 %    \begin{macrocode}
    \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-2.1pt}}%
   }
@@ -1687,7 +1715,7 @@
 %    \end{macrocode}
 % \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
 % so we set the \cs{parshape} instead.
-%    \begin{macrocode}     
+%    \begin{macrocode}
      \tl_if_eq:NnF{\firstargument}{1}
        {\parshape 2~0cm \linewidth \dimeval{\mdpi@len@dist}~\dimeval{\linewidth-\mdpi@len@dist}}
      \@address
@@ -1699,8 +1727,8 @@
      % Scheme B: single affiliation (\address[1]) -> tighter note indent
      \tl_if_eq:NnTF{\firstargument}{1}
        {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist-\mdpi@len@distshift\relax}
-       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}     
-     \parshape 2~0cm \linewidth 
+       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}
+     \parshape 2~0cm \linewidth
      \dimeval{\mdpi@len@tmpa}~\dimeval{\linewidth-\mdpi@len@tmpa}
      \tl_if_eq:NnTF\@authornum{author}
        {
@@ -1738,7 +1766,7 @@
 \ExplSyntaxOff
 %    \end{macrocode}
 % \end{macro}
-% 
+%
 %    \begin{macrocode}
 %%%% Abstract, keywords, journal data, PACS, MSC, JEL
 \newcommand{\abstractkeywords}{%
@@ -1894,7 +1922,7 @@
  {
   \DeclareInstance    {headformat}{mdpi/std}{hang}
    {heading-indent = 0pt,number-title-sep=\WordSpaceAmount{1}}
- }  
+ }
 \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
@@ -2054,7 +2082,7 @@
      theorem,lemma,corollary,proposition,
      characterization,property,problem,example,remark,definition,
      hypothesis,notation,algorithm,graph
-    } 
+    }
     {\setcounter{##1}{0}}
 %    \end{macrocode}
 % Reset the cref names:
@@ -2083,7 +2111,7 @@
          \appendixname\nobreakspace\theheading
          \tl_if_eq:NnT\@appendixtitles {yes}{.}
       }
-   }    
+   }
 %    \end{macrocode}
 % Reset the numbering in the appendix
 %    \begin{macrocode}
@@ -2239,7 +2267,7 @@
     float/new=boxenv,
     float/new=chart,
     float/new=scheme,
-    float/new=graph,              
+    float/new=graph,
   }
 %    \end{macrocode}
 %
@@ -2274,7 +2302,7 @@
 %    \end{macrocode}
 % A minimal, first adjustment of captions with tagging.
 % This should be replaced by templates once there are implemented in LaTeX.
-% Captions use the normal linespacing so have to reset the reduced 
+% Captions use the normal linespacing so have to reset the reduced
 % \cs{baselinestretch} (gh/131).
 %    \begin{macrocode}
 \abovecaptionskip=6pt
@@ -2283,7 +2311,7 @@
  {
    \long\def\@makecaption#1#2{%
      \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
-     \vskip\abovecaptionskip     
+     \vskip\abovecaptionskip
      \renewcommand\baselinestretch{1}%
      \small
 %    \end{macrocode}
@@ -2303,7 +2331,7 @@
      \UseTaggingSocket{caption/end}%
      \vskip\belowcaptionskip}
  }
- 
+
 %% For table footnotes
 \newsavebox{\@justcentbox}
 \newcommand{\justifyorcenter}[1]{
@@ -2322,7 +2350,7 @@
 % \subsection{List settings}
 % The tagging code doesn't support yet the star-value for \texttt{leftmargin} and
 % the value \texttt{parleft} for align, so we adapted that and use fixed values
-% for the label width and margin and left align the label. 
+% for the label width and margin and left align the label.
 % TODO: values should be reviewed, e.g. for second level.
 %    \begin{macrocode}
 \setlist[itemize]
@@ -2487,12 +2515,12 @@
 
 %    \end{macrocode}
 % \subsection{Bibliography support}
-% TODO: Check handling of the heading in books 
+% TODO: Check handling of the heading in books
 %    \begin{macrocode}
 \renewcommand\bibname{References} % Backwards compatibility for book production
 \renewcommand\@biblabel[1]{#1.\hfill}
 %    \end{macrocode}
-% The bibliography has a special formatting of the section and special list 
+% The bibliography has a special formatting of the section and special list
 % settings.
 %    \begin{macrocode}
 \ExplSyntaxOn
@@ -2532,22 +2560,22 @@
     }
   }
   {\endlist}
-\ExplSyntaxOff  
+\ExplSyntaxOff
 %    \end{macrocode}
 %
 % \subsection{Textsnippets}
 % \subsection{Publisher's note}
-% This is used in the template after the bibliography. 
+% This is used in the template after the bibliography.
 % TODO: should it be inserted automatically?
 % TODO: why the null?
 %    \begin{macrocode}
 \newcommand{\PublishersNote}
  {%
-   \null\par\noindent\small\textbf{Disclaimer/Publisher's Note:} 
-   The statements, opinions and data contained in all publications are solely 
-   those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). 
-   MDPI and/or the editor(s) disclaim responsibility for any injury to people or 
-   property resulting from any ideas, methods, instructions or products referred to in the 
+   \null\par\noindent\small\textbf{Disclaimer/Publisher's Note:}
+   The statements, opinions and data contained in all publications are solely
+   those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s).
+   MDPI and/or the editor(s) disclaim responsibility for any injury to people or
+   property resulting from any ideas, methods, instructions or products referred to in the
    content.\par
  }
 %    \end{macrocode}
@@ -2556,7 +2584,7 @@
 %    \begin{macrocode}
 \newcommand\mdpi@cright@text@submit
  {%
-   \textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum. 
+   \textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum.
            Submitted to {\em\journalname} for possible open access publication
            under the terms and conditions of the %
  }
@@ -2570,9 +2598,9 @@
              {\@societyowner}
              {Published by MDPI on behalf of the {\@societyowner}.}
            Licensee MDPI, Basel, Switzerland.
-           This article is an open access article distributed under the terms 
-           and conditions of the 
- } 
+           This article is an open access article distributed under the terms
+           and conditions of the
+ }
 %    \end{macrocode}
 % Text snipped for license info:
 %    \begin{macrocode}
@@ -2581,8 +2609,8 @@
    \href
       {https://creativecommons.org/licenses/by-nc-nd/4.0/}
       {Creative Commons Attribution (CC BY-NC-ND) license}.%
- } 
- 
+ }
+
 \newcommand\mdpi@cright@text@ccby
   {%
     \href
@@ -2590,30 +2618,30 @@
       {Creative Commons Attribution (CC~BY) license}.%
   }
 %    \end{macrocode}
-% 
+%
 % Now we build the whole text. The text is used at the end of a box in its own paragraph
-% so there is no need for grouping. 
-% 
+% so there is no need for grouping.
+%
 % TODO: \verb+\fontdimen2\font=1.2pt+ has been removed as this setting is not local and
 % affects the font in whole document.
-% Spacing must be checked and if needed be adapted in some other way. 
-% 
+% Spacing must be checked and if needed be adapted in some other way.
+%
 %    \begin{macrocode}
 \ExplSyntaxOn
 \newcommand{\mdpi@text@copyright}
   {
-    \raggedright 
+    \raggedright
     \tl_if_eq:NnF\@arttype{Supfile}
      {
       \tl_if_eq:NnTF\@status{submit}
          {
            %\fontdimen2\font=1.2pt % not local!!
-           \mdpi@cright@text@submit           
+           \mdpi@cright@text@submit
          }
          {
-          \mdpi@cright@text@published          
+          \mdpi@cright@text@published
          }
-      \use:c{ mdpi@cright@text@\@journallicence }   
+      \use:c{ mdpi@cright@text@\@journallicence }
       }
    }
 \ExplSyntaxOff
@@ -2635,10 +2663,10 @@
 \let\twodigits\mdpi@mintwodigits
 \let\fivedigits\mdpi@minfourdigits
 %    \end{macrocode}
-% For \cs{@pubvolume}, \cs{@issuenum}, and \cs{@articlenumber}: 
-% A command to cut leading zeros. Doesn't make sense, the 
-% error case is never reached, so simply using \cs{number} or \cs{inteval} is quite 
-% enough. 
+% For \cs{@pubvolume}, \cs{@issuenum}, and \cs{@articlenumber}:
+% A command to cut leading zeros. Doesn't make sense, the
+% error case is never reached, so simply using \cs{number} or \cs{inteval} is quite
+% enough.
 %    \begin{macrocode}
 \newcommand\cutdigits[1]{%
   \ifnum#1>0 %
