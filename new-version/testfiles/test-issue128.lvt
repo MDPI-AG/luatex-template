@@ -1,0 +1,72 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\START
+\SHOWFILE{\jobname.aux}
+\OMIT
+\begin{document}
+\TIMO\showoutput
+\section{abc} \label{sec}
+
+\cref{tab1,tab2}---MDPI required: Tables 1 and 2
+
+\cref{tab2,tab3,tab5}---MDPI required: Tables 2, 3 and A1
+
+\cref{tab1,tab2,tab3,tab4,tab5}---MDPI required: Tables 1--4 and A1
+
+\cref{fig1,tab1,tab2,tab5}---MDPI required: Figure 1, Tables 1, 2 and A1
+
+\cref{tab1,tab2,tab5}---MDPI required:  Tables 1, 2 and A1
+
+\cref{tab2,tab5}---MDPI required:  Tables 2 and A1, not Tables A1 and 2
+
+\cref{tab5}---MDPI required: Table A1
+
+\cref{app1}---MDPI required:  Appendix A, not Section A
+
+\cref{app1.1}---MDPI required:  Appendix A.1, not Section A.1
+
+All figures and tables should be cited in the main text as Figure~\ref{fig1}, Table~\ref{tab1}, etc. Just for test  \cref{fig1,fig2}
+
+\begin{figure}[H]
+\caption{figure} \label{fig1}
+\end{figure}   
+
+
+\begin{table}[H] 
+\caption{This is a table caption. \label{tab1}}
+\end{table}
+
+The text continues here (Figure~\ref{fig2} and Table~\ref{tab2}).
+
+\begin{figure}[H]
+\caption{This is a wide figure\label{fig2}}
+\end{figure} 
+
+\begin{table}[H]
+\caption{This is a wide table.\label{tab2}}
+\end{table}
+
+\begin{table}[H]
+\caption{This is a wide table.\label{tab3}}
+\end{table}
+
+\begin{table}[H]
+\caption{This is a wide table.\label{tab4}}
+\end{table}
+
+\appendix
+\section[\appendixname~\thesection]{}\label{app1}
+\subsection[\appendixname~\thesubsection]{}\label{app1.1}
+
+\begin{table}[H] 
+\caption{This is a table caption.\label{tab5}}
+\end{table}
+
+\section[\appendixname~\thesection]{}\label{app2}
+\subsection[\appendixname~\thesubsection]{}\label{app2.2}
+
+\begin{table}[H] 
+\caption{This is a table caption.\label{tab6}}
+\end{table}
+\end{document}
