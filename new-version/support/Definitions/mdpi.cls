@@ -23,8 +23,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-10-14}
-\def\mdpiversion{v6.5c}
+\def\mdpidate{2026-10-16}
+\def\mdpiversion{v6.5d}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
 
@@ -478,15 +478,45 @@
 }
 \RequirePackage[capitalise,noabbrev]{cleveref}
 }
+%% To correct the "First Aid for cleveref" after 2025 version.
+\newif\ifmdpiappendix
+\mdpiappendixfalse
+
+%% To repaire the cref citation format.
+\newcommand{\crefAppendixFix}{%
+	\@ifundefined{mdpi@firstaid@cref@updatelabeldata}{%
+		\@ifundefined{firstaid@cref@updatelabeldata}{}{%
+			\let\mdpi@firstaid@cref@updatelabeldata\firstaid@cref@updatelabeldata
+			\renewcommand{\firstaid@cref@updatelabeldata}[1]{%
+				\mdpi@firstaid@cref@updatelabeldata{##1}%
+				\ifmdpiappendix
+					\expandafter\mdpi@cref@appendixsentinel\cref@gcurrentlabel@temp\@nil
+				\fi%
+			}%
+		}%
+	}{}%
+}
+
+\def\mdpi@cref@appendixsentinel[#1][#2][#3]#4\@nil{%
+	\ifx\@empty#3\@empty%
+		\def\mdpi@cref@prefix{2147483647}%
+	\else%
+		\edef\mdpi@cref@prefix{2147483647,#3}%
+	\fi%
+	\protected@xdef\cref@gcurrentlabel@temp{[#1][#2][\mdpi@cref@prefix]#4}%
+}
+
 \ifdef{\AddToHook}{
 \DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
 	\AddToHook{begindocument/before}{ 
 		\hyperrefpackage
              \crefnameDefinitions
+             \crefAppendixFix
 		}
 	}{
 	     \hyperrefpackage
            \crefnameDefinitions
+           \crefAppendixFix
 }
 
 \ifdefined\XeTeXversion
@@ -1436,6 +1466,7 @@
 }
 
 \renewcommand{\appendix}{%
+\mdpiappendixtrue
 %
 \gdef\thesection{\AlphAlph{\value{section}}}%
 \gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
@@ -1586,7 +1617,6 @@
 \DeclareFloatingEnvironment[name=Box]{boxenv}	
 \DeclareFloatingEnvironment[]{chart}
 \DeclareFloatingEnvironment[]{scheme}
-\DeclareFloatingEnvironment[]{figurewide}
 \DeclareFloatingEnvironment[]{graph}
 
 \RequirePackage{caption}
