@@ -37,7 +37,8 @@ collection-latex
         marginnote
         multirow
         pbox
-        sillypage
+        seqsplit
+        sillypage       
         tcolorbox
         tocloft
         translations
