@@ -844,7 +844,11 @@
   \crefrangelabelformat{scheme}{##3##1##4--##5##2##6}
   \crefrangelabelformat{chart}{##3##1##4--##5##2##6}
   \crefrangelabelformat{graph}{##3##1##4--##5##2##6}
-  \newcommand{\crefrangeconjunction}{--}
+  \newcommand\crefrangeconjunction{--}
+  \newcommand\crefpairconjunction{ and }
+  \newcommand\crefmiddleconjunction{, }
+  \newcommand\creflastconjunction{ and }
+  \newcommand\crefpairgroupconjunction{, }
  }
 
 %    \end{macrocode}
@@ -2069,7 +2073,15 @@
 \renewcommand{\appendix}
  {
   \gdef\thesection   {\AlphAlph{\value{section}}}%
-  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
+%    \end{macrocode}
+% Reset the cref names:
+%    \begin{macrocode}
+   \crefalias{section}{appendix}
+   \crefalias{subsection}{appendix}
+%    \end{macrocode}
+%  For correct sorting, we must mark the labels with the special number used by cleveref:
+%    \begin{macrocode}
+   \patchcmd\firstaid@cref@updatelabeldata{{\cref@result}}{{\cref@result}\def\cref@result{2147483647}}{}{\fail}
 %    \end{macrocode}
 % \subsection{Formatting of the heading commands after \cs{appendix}}
 % Even in monographs sections should use a smaller font in the appendix.
@@ -2091,8 +2103,6 @@
 %    \end{macrocode}
 % Reset the numbering in the appendix
 %    \begin{macrocode}
-  %\gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
-  %\gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
   \csname appendixmore\endcsname
   \renewcommand{\thefigure}{A\arabic{figure}}
   \renewcommand{\thetable}{A\arabic{table}}
