@@ -1,0 +1,3379 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+-------- test-issue128.aux (start) ---------
+(test-issue128.aux)
+\relax[nl]
+\bibstyle{Definitions/mdpi}[nl]
+\providecommand\hyper@newdestlabel[2]{}[nl]
+\providecommand\HyField@AuxAddToFields[1]{}[nl]
+\providecommand\HyField@AuxAddToCoFields[2]{}[nl]
+\providecommand\BKM@entry[2]{}[nl]
+\BKM@entry{id=1,open,dest={73656374696F6E2E31},srcline={9},srcfile={2E2F746573742D69737375653132382E6C7674}}{5C3337365C3337375C303030615C303030625C30303063}[nl]
+\BKM@entry{id=2,open,dest={617070656E6469782E41},srcline={59},srcfile={2E2F746573742D69737375653132382E6C7674}}{5C3337365C3337375C303030415C303030705C303030705C303030655C3030306E5C303030645C303030695C303030785C3030305C3034305C30303041}[nl]
+\BKM@entry{id=3,open,dest={73756273656374696F6E2E412E31},srcline={60},srcfile={2E2F746573742D69737375653132382E6C7674}}{5C3337365C3337375C303030415C303030705C303030705C303030655C3030306E5C303030645C303030695C303030785C3030305C3034305C303030415C3030302E5C30303031}[nl]
+\BKM@entry{id=4,open,dest={617070656E6469782E42},srcline={66},srcfile={2E2F746573742D69737375653132382E6C7674}}{5C3337365C3337375C303030415C303030705C303030705C303030655C3030306E5C303030645C303030695C303030785C3030305C3034305C30303042}[nl]
+\BKM@entry{id=5,open,dest={73756273656374696F6E2E422E31},srcline={67},srcfile={2E2F746573742D69737375653132382E6C7674}}{5C3337365C3337375C303030415C303030705C303030705C303030655C3030306E5C303030645C303030695C303030785C3030305C3034305C303030425C3030302E5C30303031}[nl]
+\def\@LN@column{1}[nl]
+\newmarginnote{note.1.1}{{1}{10945661sp}}[nl]
+\@writefile{toc}{\contentsline {section}{\numberline {1}abc}{1}{section.1}\protected@file@percent }[nl]
+\newlabel{sec}{{1}{1}{abc}{section.1}{}}[nl]
+\newlabel{sec@cref}{{[section][1][]1}{[1][1][]1}{}{}{}}[nl]
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces figure}}{1}{figure.caption.1}\protected@file@percent }[nl]
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}[nl]
+\newlabel{fig1}{{1}{1}{figure}{figure.caption.1}{}}[nl]
+\newlabel{fig1@cref}{{[figure][1][]1}{[1][1][]1}{}{}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces This is a table caption. }}{1}{table.caption.2}\protected@file@percent }[nl]
+\newlabel{tab1}{{1}{1}{This is a table caption}{table.caption.2}{}}[nl]
+\newlabel{tab1@cref}{{[table][1][]1}{[1][1][]1}{}{}{}}[nl]
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces This is a wide figure}}{1}{figure.caption.3}\protected@file@percent }[nl]
+\newlabel{fig2}{{2}{1}{This is a wide figure}{figure.caption.3}{}}[nl]
+\newlabel{fig2@cref}{{[figure][2][]2}{[1][1][]1}{}{}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces This is a wide table.}}{1}{table.caption.4}\protected@file@percent }[nl]
+\newlabel{tab2}{{2}{1}{This is a wide table}{table.caption.4}{}}[nl]
+\newlabel{tab2@cref}{{[table][2][]2}{[1][1][]1}{}{}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces This is a wide table.}}{1}{table.caption.5}\protected@file@percent }[nl]
+\newlabel{tab3}{{3}{1}{This is a wide table}{table.caption.5}{}}[nl]
+\newlabel{tab3@cref}{{[table][3][]3}{[1][1][]1}{}{}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces This is a wide table.}}{1}{table.caption.6}\protected@file@percent }[nl]
+\newlabel{tab4}{{4}{1}{This is a wide table}{table.caption.6}{}}[nl]
+\newlabel{tab4@cref}{{[table][4][]4}{[1][1][]1}{}{}{}}[nl]
+\@writefile{toc}{\contentsline {section}{\numberline {A}Appendix~A}{1}{appendix.A}\protected@file@percent }[nl]
+\newlabel{app1}{{A}{1}{\appendixname ~\thesection }{appendix.A}{}}[nl]
+\newlabel{app1@cref}{{[appendix][1][2147483647]A}{[1][1][]1}{}{}{}}[nl]
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Appendix~A.1}{1}{subsection.A.1}\protected@file@percent }[nl]
+\newlabel{app1.1}{{A.1}{1}{\appendixname ~\thesubsection }{subsection.A.1}{}}[nl]
+\newlabel{app1.1@cref}{{[appendix][1][2147483647]A.1}{[1][1][]1}{}{}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces This is a table caption.}}{1}{table.caption.7}\protected@file@percent }[nl]
+\newlabel{tab5}{{A1}{1}{This is a table caption}{table.caption.7}{}}[nl]
+\newlabel{tab5@cref}{{[table][1][2147483647]A1}{[1][1][]1}{}{}{}}[nl]
+\def\@LN@column{1}[nl]
+\@writefile{toc}{\contentsline {section}{\numberline {B}Appendix~B}{2}{appendix.B}\protected@file@percent }[nl]
+\newlabel{app2}{{B}{2}{\appendixname ~\thesection }{appendix.B}{}}[nl]
+\newlabel{app2@cref}{{[appendix][2][2147483647]B}{[1][1][]2}{}{}{}}[nl]
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Appendix~B.1}{2}{subsection.B.1}\protected@file@percent }[nl]
+\newlabel{app2.2}{{B.1}{2}{\appendixname ~\thesubsection }{subsection.B.1}{}}[nl]
+\newlabel{app2.2@cref}{{[appendix][1][2147483647]B.1}{[1][1][]2}{}{}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {A2}{\ignorespaces This is a table caption.}}{2}{table.caption.8}\protected@file@percent }[nl]
+\newlabel{tab6}{{A2}{2}{This is a table caption}{table.caption.8}{}}[nl]
+\newlabel{tab6@cref}{{[table][2][2147483647]A2}{[1][1][]2}{}{}{}}[nl]
+\new@label@record{@tag@LastPage}{{abspage}{2}{tagmcabs}{0}{tagstruct}{1}}[nl]
+\newlabel{LastPage}{{B.1}{2}{Appendix~B.1}{page.2}{}}[nl]
+\gdef\lastpage@lastpage{2}[nl]
+\gdef\lastpage@lastpageHy{2}[nl]
+\gdef \@abspage@last{2}[nl]
+-------- test-issue128.aux (end) -----------
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX template Info: Declaring instance 'section' of type heading on line ....
+LaTeX template Info: Declaring instance 'section' of type heading on line ....
+LaTeX template Info: Declaring instance 'subsection' of type heading on line ....
+LaTeX template Info: Declaring instance 'subsubsection' of type heading on line ....
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.97998pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.97998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+Completed box being shipped out [1]
+\vbox(742.04784+4.19403)x489.10277, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
+.....\kern-72.26999
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 37.13861fil, direction TLT
+..\kern0.0
+..\kern-36.13487
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 93.7438fil, direction TLT
+...\kern0.0
+...\kern94.74754
+...\kern-1.00374
+...\pdfdest name{page.1} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(742.04784+4.19403)x489.10277, direction TLT
+..\glue -36.13487
+..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
+...\vbox(12.0+0.0)x394.35522, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(12.0+0.0)x394.35522, direction TLT
+.....\hbox(12.0+0.0)x394.35522, direction TLT
+......\glue -131.16722
+......\hbox(12.0+0.0)x525.52245, direction TLT
+.......\vbox(12.0+0.0)x525.52245, direction TLT
+........\hbox(21.97998+0.0)x525.52245, direction TLT
+.........\hbox(21.97998+0.0)x0.0, glue set - 525.52246fil, direction TLT
+..........\vbox(21.97998+0.0)x525.52245, direction TLT
+...........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
+............\rule(9.78595+4.19403)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 8.0
+...........\glue 0.0
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\vbox(21.97998+0.0)x525.52245, direction TLT
+..........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\rule(9.78595+4.19403)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0 plus 1.0fil
+..........\glue 8.0
+..........\glue 0.0
+.........\glue 0.0 plus 1.0fill
+.........\hbox(21.97998+0.0)x0.0, glue set - 525.52246fil, direction TLT
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\vbox(21.97998+0.0)x525.52245, direction TLT
+...........\hbox(9.78595+4.19403)x525.52245, glue set 525.52246fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\rule(9.78595+4.19403)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+...........\glue 8.0
+...........\glue 0.0
+........\glue 0.0
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdflinkstate 0
+...\glue 24.0
+...\glue(\lineskip) 0.0
+...\vbox(706.18271+0.0)x394.35522, glue set >20000.0fil, direction TLT
+....\write1{\def\@LN@column{1}}
+....\vbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\vbox(0.0+0.0)x0.0, direction TLT
+........\glue 0.0
+........\glue 0.0
+........\glue 0.0
+.......\glue 14.51074
+....\write-{}
+....\pdfcolorstack 0 push {0 g 0 G}
+....\pdfdest name{Doc-Start} xyz
+....\glue(\topskip) 0.21405
+....\vbox(9.78595+0.0)x0.0, glue set 9.78595fil, direction TLT
+.....\vbox(0.0+0.0)x0.0, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\savepos
+......\write1{\newmarginnote{note.1.1}{{\themn@abspage }{\number \mn@lastxpos sp}}}
+......\hbox(0.0+0.0)x0.0, glue set - 131.1672fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\vbox(0.0+0.0)x116.65646, glue set - 565.30286fil, direction TLT
+........\kern0.0
+........\kern565.30289
+........\vbox(0.0+0.0)x116.65646, glue set - 138.77982fil, direction TLT
+.........\kern0.0
+.........\glue(\parskip) 0.0 plus 1.0
+.........\glue(\parskip) 0.0
+.........\hbox(17.07182+4.19403)x116.65646, glue set 116.65646fil, direction TLT
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\pdfliteral direct <lua data reference ...>
+..........\rule(9.78595+4.19403)x0.0
+..........\glue 0.0
+..........\hbox(17.07182+0.0)x0.0, direction TLT
+...........\rule(17.07182+0.0)x0.0
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\parskip) 6.0
+.........\glue(\parskip) 0.0
+.........\glue(\baselineskip) 2.72397
+.........\hbox(5.082+0.14)x116.65646, glue set 88.11748fil, direction TLT
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\TU/texgyrepagella(0)/m/n/7 R
+..........\kern-0.14 (font)
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 c
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\TU/texgyrepagella(0)/m/n/7 v
+..........\kern-0.28 (font)
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 d
+..........\TU/texgyrepagella(0)/m/n/7 :
+..........\penalty 10000
+..........\kern-0.875 (right margin)
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue -6.0
+.........\glue(\parskip) 6.0
+.........\glue(\parskip) 0.0
+.........\glue(\baselineskip) 6.778
+.........\hbox(5.082+1.967)x116.65646, glue set 87.30547fil, direction TLT
+..........\kern-0.273 (left margin)
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\TU/texgyrepagella(0)/m/n/7 A
+..........\kern-0.245 (font)
+..........\TU/texgyrepagella(0)/m/n/7 c
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 c
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 p
+..........\kern-0.14 (font)
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 d
+..........\TU/texgyrepagella(0)/m/n/7 :
+..........\penalty 10000
+..........\kern-0.875 (right margin)
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue -6.0
+.........\glue(\parskip) 6.0
+.........\glue(\parskip) 0.0
+.........\glue(\baselineskip) 4.951
+.........\hbox(5.082+0.14)x116.65646, glue set 84.74347fil, direction TLT
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\TU/texgyrepagella(0)/m/n/7 P
+..........\TU/texgyrepagella(0)/m/n/7 u
+..........\TU/texgyrepagella(0)/m/n/7 b
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 l
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\TU/texgyrepagella(0)/m/n/7 h
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 d
+..........\TU/texgyrepagella(0)/m/n/7 :
+..........\penalty 10000
+..........\kern-0.875 (right margin)
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\parskip) 6.0
+.........\glue(\parskip) 0.0
+.........\glue(\baselineskip) 6.778
+.........\hbox(5.082+1.981)x116.65646, glue set 15.29417fil, direction TLT
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\TU/texgyrepagella(0)/b/n/7 C
+..........\TU/texgyrepagella(0)/b/n/7 o
+..........\TU/texgyrepagella(0)/b/n/7 p
+..........\kern-0.105 (font)
+..........\TU/texgyrepagella(0)/b/n/7 y
+..........\discretionary (penalty 10000)
+...........< \kern-0.07 (font)
+...........< \TU/texgyrepagella(0)/b/n/7 -
+..........\TU/texgyrepagella(0)/b/n/7 r
+..........\kern0.14 (font)
+..........\TU/texgyrepagella(0)/b/n/7 i
+..........\TU/texgyrepagella(0)/b/n/7 g
+..........\TU/texgyrepagella(0)/b/n/7 h
+..........\TU/texgyrepagella(0)/b/n/7 t
+..........\kern0.105 (font)
+..........\TU/texgyrepagella(0)/b/n/7 :
+..........\kern0.0 (italic)
+..........\glue(\spaceskip) 2.33333 plus 1.75 minus 0.29166
+..........\TU/texgyrepagella(0)/m/n/7 ^^a9
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 2
+..........\TU/texgyrepagella(0)/m/n/7 0
+..........\TU/texgyrepagella(0)/m/n/7 1
+..........\TU/texgyrepagella(0)/m/n/7 6
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 b
+..........\kern-0.21 (font)
+..........\TU/texgyrepagella(0)/m/n/7 y
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\kern0.105 (font)
+..........\TU/texgyrepagella(0)/m/n/7 h
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 a
+..........\TU/texgyrepagella(0)/m/n/7 u
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\kern0.105 (font)
+..........\TU/texgyrepagella(0)/m/n/7 h
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 r
+..........\kern-0.42 (font)
+..........\TU/texgyrepagella(0)/m/n/7 .
+..........\kern-1.225 (right margin)
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\penalty 10000
+.........\glue(\baselineskip) 4.888
+.........\hbox(5.131+1.932)x116.65646, glue set 4.61447fil, direction TLT
+..........\TU/texgyrepagella(0)/m/n/7 S
+..........\TU/texgyrepagella(0)/m/n/7 u
+..........\TU/texgyrepagella(0)/m/n/7 b
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 m
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 d
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\kern-0.07 (font)
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/it/7 J
+..........\TU/texgyrepagella(0)/m/it/7 o
+..........\TU/texgyrepagella(0)/m/it/7 u
+..........\TU/texgyrepagella(0)/m/it/7 r
+..........\discretionary (penalty 10000)
+...........< \kern-0.35 (font)
+...........< \TU/texgyrepagella(0)/m/it/7 -
+..........\TU/texgyrepagella(0)/m/it/7 n
+..........\TU/texgyrepagella(0)/m/it/7 a
+..........\TU/texgyrepagella(0)/m/it/7 l
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/it/7 N
+..........\kern-0.175 (font)
+..........\TU/texgyrepagella(0)/m/it/7 o
+..........\kern-0.105 (font)
+..........\TU/texgyrepagella(0)/m/it/7 t
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/it/7 S
+..........\TU/texgyrepagella(0)/m/it/7 p
+..........\TU/texgyrepagella(0)/m/it/7 e
+..........\TU/texgyrepagella(0)/m/it/7 c
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/it/7 -
+..........\TU/texgyrepagella(0)/m/it/7 i
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/it/7 -
+..........\TU/texgyrepagella(0)/m/it/7 ﬁ
+..........\TU/texgyrepagella(0)/m/it/7 e
+..........\TU/texgyrepagella(0)/m/it/7 d
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 f
+..........\kern-0.105 (font)
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 r
+..........\kern-0.14 (right margin)
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\baselineskip) 4.986
+.........\hbox(5.082+1.967)x116.65646, glue set 16.57042fil, direction TLT
+..........\TU/texgyrepagella(0)/m/n/7 p
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 b
+..........\TU/texgyrepagella(0)/m/n/7 l
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 p
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 a
+..........\TU/texgyrepagella(0)/m/n/7 c
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 c
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 p
+..........\TU/texgyrepagella(0)/m/n/7 u
+..........\TU/texgyrepagella(0)/m/n/7 b
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 l
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 c
+..........\TU/texgyrepagella(0)/m/n/7 a
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\baselineskip) 4.93701
+.........\hbox(5.096+0.14)x116.65646, glue set - 0.00656, direction TLT
+..........\TU/texgyrepagella(0)/m/n/7 u
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 d
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 r
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\kern0.105 (font)
+..........\TU/texgyrepagella(0)/m/n/7 h
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 r
+..........\kern0.07 (font)
+..........\TU/texgyrepagella(0)/m/n/7 m
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 a
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\TU/texgyrepagella(0)/m/n/7 d
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 c
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 d
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 f
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\kern0.105 (font)
+..........\TU/texgyrepagella(0)/m/n/7 h
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\baselineskip) 6.778
+.........\hbox(5.082+0.14)x116.65646, glue set 20.46245fil, direction TLT
+..........\pdfstartlink(*+*)x116.65646 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >> } action user{}
+..........\pdfendlink
+..........\pdfliteral direct <lua data reference ...>
+..........\TU/texgyrepagella(0)/m/n/7 C
+..........\TU/texgyrepagella(0)/m/n/7 r
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 a
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\TU/texgyrepagella(0)/m/n/7 v
+..........\kern-0.28 (font)
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 C
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 m
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 m
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 A
+..........\kern-0.28 (font)
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/texgyrepagella(0)/m/n/7 r
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 b
+..........\TU/texgyrepagella(0)/m/n/7 u
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\TU/texgyrepagella(0)/m/n/7 o
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\penalty 10000
+.........\glue(\baselineskip) 6.65201
+.........\hbox(5.208+1.708)x116.65646, glue set 67.04047fil, direction TLT
+..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >> } action user{}
+..........\kern-0.322 (left margin)
+..........\TU/texgyrepagella(0)/m/n/7 (
+..........\TU/texgyrepagella(0)/m/n/7 C
+..........\TU/texgyrepagella(0)/m/n/7 C
+..........\penalty 10000
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
+..........\TU/texgyrepagella(0)/m/n/7 B
+..........\kern-0.245 (font)
+..........\TU/texgyrepagella(0)/m/n/7 Y
+..........\TU/texgyrepagella(0)/m/n/7 )
+..........\glue(\spaceskip) 1.75 plus 0.87411 minus 0.58391
+..........\TU/texgyrepagella(0)/m/n/7 l
+..........\TU/texgyrepagella(0)/m/n/7 i
+..........\discretionary (penalty 10000)
+...........< \TU/texgyrepagella(0)/m/n/7 -
+..........\TU/texgyrepagella(0)/m/n/7 c
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/texgyrepagella(0)/m/n/7 n
+..........\TU/texgyrepagella(0)/m/n/7 s
+..........\TU/texgyrepagella(0)/m/n/7 e
+..........\pdfendlink
+..........\pdfliteral direct <lua data reference ...>
+..........\TU/texgyrepagella(0)/m/n/7 .
+..........\penalty 10000
+..........\kern-1.225 (right margin)
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\kern167.01753
+.......\kern-94.74754
+.......\kern-72.26999
+.......\kern14.51074
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue -13.98
+....\glue 13.98
+....\penalty -51
+....\glue -13.98
+....\glue 13.98
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
+....\penalty -51
+....\glue 0.0 plus 1.0
+....\glue 0.0 plus -1.0
+....\rule(0.0+0.0)x*
+....\penalty 10000
+....\glue -49.79231
+....\glue 0.0
+....\glue -2.0
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\lineskip) 1.0
+....\hbox(34.14322+0.0)x525.52245, glue set 482.55368fill, shifted -131.16722, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(34.14322+0.0)x0.0, direction TLT
+.....\glue 0.0 plus 1.0fill
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://www.mdpi.com) >> } action user{}
+.....\hbox(28.45274+0.0)x42.96877, direction TLT
+......\hbox(28.45236+0.0)x42.96887, direction TLT
+.......\hbox(28.45236+0.0)x42.96887, direction TLT
+........\hbox(28.45236+0.0)x0.0, direction TLT
+.........\pdfliteral direct <lua data reference ...>
+.........\pdfsave
+.........\pdfsetmatrix{.57849 0 0 .57849}
+.........\hbox(49.18375+0.0)x0.0, glue set - 74.2775fil, direction TLT
+..........\hbox(49.18375+0.0)x74.2775, direction TLT
+...........\image(49.18375+0.0)x74.2775
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\pdfrestore
+........\kern42.96887
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfendlink
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 13.58
+....\hbox(0.4+0.0)x525.52245, glue set 0.14241fil, shifted -131.16722, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.4+0.0)x525.23764, direction TLT
+......\pdfliteral direct <lua data reference ...>
+......\rule(0.4+0.0)x525.23764
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 14.0
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 6.65
+....\hbox(7.33+0.11)x525.52245, glue set 248.93622fil, shifted -131.16722, direction TLT
+.....\kern-0.36 (left margin)
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\TU/texgyrepagella(0)/m/it/10 A
+.....\TU/texgyrepagella(0)/m/it/10 r
+.....\discretionary (penalty 50)
+......< \kern-0.5 (font)
+......< \TU/texgyrepagella(0)/m/it/10 -
+.....\TU/texgyrepagella(0)/m/it/10 t
+.....\TU/texgyrepagella(0)/m/it/10 i
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/it/10 -
+.....\TU/texgyrepagella(0)/m/it/10 c
+.....\TU/texgyrepagella(0)/m/it/10 l
+.....\TU/texgyrepagella(0)/m/it/10 e
+.....\kern0.05 (italic)
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 8.632
+....\hbox(12.258+0.054)x525.52245, glue set 236.55322fil, shifted -131.16722, direction TLT
+.....\kern-0.594 (left margin)
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\TU/texgyrepagella(0)/b/n/18 T
+.....\TU/texgyrepagella(0)/b/n/18 I
+.....\discretionary (penalty 10000)
+......< \TU/texgyrepagella(0)/b/n/18 -
+.....\TU/texgyrepagella(0)/b/n/18 T
+.....\TU/texgyrepagella(0)/b/n/18 L
+.....\TU/texgyrepagella(0)/b/n/18 E
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 12.0
+....\glue 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 6.976
+....\hbox(6.95+0.17)x525.52245, glue set 240.12622fil, shifted -131.16722, direction TLT
+.....\kern-0.39 (left margin)
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\TU/texgyrepagella(0)/b/n/10 A
+.....\kern-0.45 (font)
+.....\TU/texgyrepagella(0)/b/n/10 U
+.....\discretionary (penalty 10000)
+......< \TU/texgyrepagella(0)/b/n/10 -
+.....\TU/texgyrepagella(0)/b/n/10 T
+.....\TU/texgyrepagella(0)/b/n/10 H
+.....\TU/texgyrepagella(0)/b/n/10 O
+.....\TU/texgyrepagella(0)/b/n/10 R
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\glue 12.0
+....\glue 0.0
+....\penalty -51
+....\glue 0.0
+....\penalty -51
+....\glue 0.0
+....\penalty -51
+....\glue 10.0 plus 4.0 minus 5.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.643
+....\hbox(5.672+0.16)x394.35522, glue set 178.71362fil, direction TLT
+.....\kern-0.312 (left margin)
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\TU/texgyrepagella(0)/m/n/8 A
+.....\TU/texgyrepagella(0)/m/n/8 D
+.....\discretionary (penalty 10000)
+......< \TU/texgyrepagella(0)/m/n/8 -
+.....\TU/texgyrepagella(0)/m/n/8 D
+.....\TU/texgyrepagella(0)/m/n/8 R
+.....\TU/texgyrepagella(0)/m/n/8 E
+.....\TU/texgyrepagella(0)/m/n/8 S
+.....\TU/texgyrepagella(0)/m/n/8 S
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 10.0 plus 3.0 minus 5.0
+....\glue 4.0
+....\glue 0.0
+....\rule(0.4+0.0)x*
+....\glue 12.0
+....\glue 0.0
+....\penalty -300
+....\glue 12.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\hbox(8.64+0.204)x394.35522, glue set 181.84761fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(8.04+0.144)x12.0, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+........\pdfdest name{section.1} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
+......\TU/texgyrepagella(0)/b/n/12 1
+......\TU/texgyrepagella(0)/b/n/12 .
+......\glue 3.0 plus 1.5 minus 1.0
+.....\TU/texgyrepagella(0)/b/n/12 a
+.....\TU/texgyrepagella(0)/b/n/12 b
+.....\TU/texgyrepagella(0)/b/n/12 c
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\kern-0.204
+....\hbox(0.0+0.204)x0.0, direction TLT
+.....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-0.204
+....\hbox(0.0+0.204)x0.0, direction TLT
+....\marks1{\__mark_value:nn {1}{\MakeUppercase    []{1\hskip 1em\relax abc}}}
+....\marks2{\__mark_value:nn {2}{}}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {1}abc}{\thepage }{section.1}\protected@file@percent }}
+....\penalty 10000
+....\glue 3.0
+....\write1{\newlabel{sec}{{1}{\thepage }{abc}{section.1}{}}}
+....\penalty 10000
+....\penalty 10000
+....\write1{\newlabel{sec@cref}{{[section][1][]1}{[1][1][]\thepage }{}{}{}}}
+....\penalty 10000
+....\penalty 10000
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 6.516
+....\hbox(7.26+2.81)x394.35522, glue set 165.52234fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+.....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 2
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.81)x394.35522, glue set 130.21234fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.5}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 3
+.....\pdfendlink
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 3
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\penalty 10000
+.....\kern-0.25 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 3
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.81)x394.35522, glue set 130.21234fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 –
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.6}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 4
+.....\pdfendlink
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagella(0)/m/n/10 –
+.....\TU/texgyrepagella(0)/m/n/10 4
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\penalty 10000
+.....\kern-0.25 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+.....\hbox(3.28+0.0)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.28+0.0)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 4
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.83)x394.35522, glue set 48.09238fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 F
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.1}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\pdfendlink
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 F
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\penalty 10000
+.....\kern-0.25 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.83
+....\hbox(0.0+2.83)x0.0, direction TLT
+.....\hbox(3.28+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.28+0.105)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 5
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.83
+....\hbox(0.0+2.83)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.89
+....\hbox(7.26+2.81)x394.35522, glue set 130.21234fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\pdfendlink
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\penalty 10000
+.....\kern-0.25 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 6
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.81)x394.35522, glue set 58.06232fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\pdfendlink
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\kern-0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+.....\hbox(3.28+0.05)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.28+0.05)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 7
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.81)x394.35522, glue set 212.55237fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\penalty 10000
+.....\kern-0.25 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 8
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.81)x394.35522, glue set 117.00238fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 x
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{appendix.A}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 x
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\kern-0.35 (font)
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\kern-0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 S
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 c
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\penalty 10000
+.....\kern-0.39 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 9
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.81)x394.35522, glue set 94.76237fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 x
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{subsection.A.1}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\kern-0.25 (font)
+.....\TU/texgyrepagella(0)/m/n/10 .
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 —
+.....\TU/texgyrepagella(0)/m/n/10 M
+.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 P
+.....\TU/texgyrepagella(0)/m/n/10 I
+.....\glue(\spaceskip) 2.5 plus 1.24875 minus 0.83415
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 q
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 :
+.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 p
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 x
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\kern-0.25 (font)
+.....\TU/texgyrepagella(0)/m/n/10 .
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\kern-0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 S
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 c
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\kern-0.25 (font)
+.....\TU/texgyrepagella(0)/m/n/10 .
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\penalty 10000
+.....\kern-0.25 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 0
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.81
+....\hbox(0.0+2.81)x0.0, direction TLT
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.89
+....\hbox(7.28+2.83)x394.35522, glue set 0.0055, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 ﬁ
+.....\TU/texgyrepagella(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\TU/texgyrepagella(0)/m/n/10 h
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\kern0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 h
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 m
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 x
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 F
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.1}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 ,
+.....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagella(0)/m/n/10 .
+.....\glue(\spaceskip) 3.33333 plus 3.75 minus 0.27777
+.....\TU/texgyrepagella(0)/m/n/10 J
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\kern-0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 f
+.....\kern-0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\kern-0.2 (right margin)
+.....\glue(\rightskip) 0.0
+....\kern-2.83
+....\hbox(0.0+2.83)x0.0, direction TLT
+.....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.0)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 1
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 20000
+....\penalty 10000
+....\glue(\baselineskip) 3.89
+....\hbox(7.26+2.83)x394.35522, glue set 309.22522fil, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\kern-0.15 (font)
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 F
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.1}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 1
+.....\pdfendlink
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.3}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\pdfendlink
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.83
+....\hbox(0.0+2.83)x0.0, direction TLT
+.....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.0)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral direct <lua data reference ...>
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 2
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.83
+....\hbox(0.0+2.83)x0.0, direction TLT
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\baselineskip) 2.051
+....\vbox(9.099+0.0)x394.35522, direction TLT
+.....\vbox(9.099+0.0)x394.35522, direction TLT
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue -6.0002
+......\glue 0.0
+......\pdfdest name{figure.caption.1} xyz
+......\penalty 10000
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue 6.0002
+......\glue 0.0
+......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces figure}}{\thepage }{figure.caption.1}\protected@file@percent }}
+......\glue 6.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\hbox(6.552+2.547)x394.35522, glue set 332.10822fil, direction TLT
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\TU/texgyrepagella(0)/b/n/9 F
+.......\TU/texgyrepagella(0)/b/n/9 i
+.......\TU/texgyrepagella(0)/b/n/9 g
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/9 -
+.......\TU/texgyrepagella(0)/b/n/9 u
+.......\TU/texgyrepagella(0)/b/n/9 r
+.......\TU/texgyrepagella(0)/b/n/9 e
+.......\penalty 10000
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/b/n/9 1
+.......\TU/texgyrepagella(0)/b/n/9 .
+.......\kern0.0 (italic)
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\TU/texgyrepagella(0)/m/n/9 ﬁ
+.......\TU/texgyrepagella(0)/m/n/9 g
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+.......\TU/texgyrepagella(0)/m/n/9 u
+.......\TU/texgyrepagella(0)/m/n/9 r
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue -6.0
+......\write1{\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}}
+......\write1{\newlabel{fig1}{{1}{\thepage }{figure}{figure.caption.1}{}}}
+......\write1{\newlabel{fig1@cref}{{[figure][1][]1}{[1][1][]\thepage }{}{}{}}}
+......\glue 0.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\lineskip) 1.0
+....\vbox(21.063+0.0)x394.35522, direction TLT
+.....\vbox(21.063+0.0)x394.35522, direction TLT
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue -6.0002
+......\glue 0.0
+......\pdfdest name{table.caption.2} xyz
+......\penalty 10000
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue 6.0002
+......\glue 0.0
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces This is a table caption. }}{\thepage }{table.caption.2}\protected@file@percent }}
+......\glue 6.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\hbox(6.534+2.529)x394.35522, glue set 268.74524fil, direction TLT
+.......\kern-0.297 (left margin)
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\TU/texgyrepagella(0)/b/n/9 T
+.......\kern-0.63 (font)
+.......\TU/texgyrepagella(0)/b/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/9 -
+.......\TU/texgyrepagella(0)/b/n/9 b
+.......\TU/texgyrepagella(0)/b/n/9 l
+.......\TU/texgyrepagella(0)/b/n/9 e
+.......\penalty 10000
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/b/n/9 1
+.......\TU/texgyrepagella(0)/b/n/9 .
+.......\kern0.0 (italic)
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\TU/texgyrepagella(0)/m/n/9 T
+.......\TU/texgyrepagella(0)/m/n/9 h
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+.......\TU/texgyrepagella(0)/m/n/9 b
+.......\TU/texgyrepagella(0)/m/n/9 l
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 c
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\TU/texgyrepagella(0)/m/n/9 p
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+........= \kern-0.18 (font)
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 o
+.......\TU/texgyrepagella(0)/m/n/9 n
+.......\TU/texgyrepagella(0)/m/n/9 .
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\write1{\newlabel{tab1}{{1}{\thepage }{This is a table caption}{table.caption.2}{}}}
+.......\penalty 10000
+.......\glue -0.00002
+.......\glue 0.00002
+.......\write1{\newlabel{tab1@cref}{{[table][1][]1}{[1][1][]\thepage }{}{}{}}}
+.......\penalty 10000
+.......\glue -0.00002
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue 6.0
+......\glue 0.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 6.54
+....\hbox(7.44+2.83)x394.35522, glue set 168.8057fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\TU/texgyrepagella(0)/m/n/10 h
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 x
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 c
+.....\TU/texgyrepagella(0)/m/n/10 o
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 s
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 h
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 (
+.....\TU/texgyrepagella(0)/m/n/10 F
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/n/10 i
+.....\TU/texgyrepagella(0)/m/n/10 g
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 u
+.....\TU/texgyrepagella(0)/m/n/10 r
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.3}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\pdfendlink
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\TU/texgyrepagella(0)/m/n/10 n
+.....\TU/texgyrepagella(0)/m/n/10 d
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/n/10 T
+.....\kern-0.8 (font)
+.....\TU/texgyrepagella(0)/m/n/10 a
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/n/10 -
+.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/texgyrepagella(0)/m/n/10 l
+.....\TU/texgyrepagella(0)/m/n/10 e
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 2
+.....\pdfendlink
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/n/10 )
+.....\TU/texgyrepagella(0)/m/n/10 .
+.....\penalty 10000
+.....\kern-1.75 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\kern-2.83
+....\hbox(0.0+2.83)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 3
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.83
+....\hbox(0.0+2.83)x0.0, direction TLT
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\baselineskip) 2.051
+....\vbox(9.099+0.0)x394.35522, direction TLT
+.....\vbox(9.099+0.0)x394.35522, direction TLT
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue -6.0002
+......\glue 0.0
+......\pdfdest name{figure.caption.3} xyz
+......\penalty 10000
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue 6.0002
+......\glue 0.0
+......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {2}{\ignorespaces This is a wide figure}}{\thepage }{figure.caption.3}\protected@file@percent }}
+......\glue 6.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\hbox(6.552+2.547)x394.35522, glue set 275.15625fil, direction TLT
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\TU/texgyrepagella(0)/b/n/9 F
+.......\TU/texgyrepagella(0)/b/n/9 i
+.......\TU/texgyrepagella(0)/b/n/9 g
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/9 -
+.......\TU/texgyrepagella(0)/b/n/9 u
+.......\TU/texgyrepagella(0)/b/n/9 r
+.......\TU/texgyrepagella(0)/b/n/9 e
+.......\penalty 10000
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/b/n/9 2
+.......\TU/texgyrepagella(0)/b/n/9 .
+.......\kern0.0 (italic)
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\TU/texgyrepagella(0)/m/n/9 T
+.......\TU/texgyrepagella(0)/m/n/9 h
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 w
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 d
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 ﬁ
+.......\TU/texgyrepagella(0)/m/n/9 g
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+.......\TU/texgyrepagella(0)/m/n/9 u
+.......\TU/texgyrepagella(0)/m/n/9 r
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\write1{\newlabel{fig2}{{2}{\thepage }{This is a wide figure}{figure.caption.3}{}}}
+.......\write1{\newlabel{fig2@cref}{{[figure][2][]2}{[1][1][]\thepage }{}{}{}}}
+.......\penalty 10000
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue -6.0
+......\glue 0.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\lineskip) 1.0
+....\vbox(18.71399+0.0)x394.35522, direction TLT
+.....\vbox(18.71399+0.0)x394.35522, direction TLT
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue -6.0002
+......\glue 0.0
+......\pdfdest name{table.caption.4} xyz
+......\penalty 10000
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue 6.0002
+......\glue 0.0
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {2}{\ignorespaces This is a wide table.}}{\thepage }{table.caption.4}\protected@file@percent }}
+......\glue 6.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\hbox(6.534+0.18)x394.35522, glue set 282.81525fil, direction TLT
+.......\kern-0.297 (left margin)
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\TU/texgyrepagella(0)/b/n/9 T
+.......\kern-0.63 (font)
+.......\TU/texgyrepagella(0)/b/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/9 -
+.......\TU/texgyrepagella(0)/b/n/9 b
+.......\TU/texgyrepagella(0)/b/n/9 l
+.......\TU/texgyrepagella(0)/b/n/9 e
+.......\penalty 10000
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/b/n/9 2
+.......\TU/texgyrepagella(0)/b/n/9 .
+.......\kern0.0 (italic)
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\TU/texgyrepagella(0)/m/n/9 T
+.......\TU/texgyrepagella(0)/m/n/9 h
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 w
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 d
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+.......\TU/texgyrepagella(0)/m/n/9 b
+.......\TU/texgyrepagella(0)/m/n/9 l
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\TU/texgyrepagella(0)/m/n/9 .
+.......\write1{\newlabel{tab2}{{2}{\thepage }{This is a wide table}{table.caption.4}{}}}
+.......\write1{\newlabel{tab2@cref}{{[table][2][]2}{[1][1][]\thepage }{}{}{}}}
+.......\penalty 10000
+.......\kern-1.575 (right margin)
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue 6.0
+......\glue 0.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\lineskip) 1.0
+....\vbox(18.71399+0.0)x394.35522, direction TLT
+.....\vbox(18.71399+0.0)x394.35522, direction TLT
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue -6.0002
+......\glue 0.0
+......\pdfdest name{table.caption.5} xyz
+......\penalty 10000
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue 6.0002
+......\glue 0.0
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {3}{\ignorespaces This is a wide table.}}{\thepage }{table.caption.5}\protected@file@percent }}
+......\glue 6.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\hbox(6.534+0.18)x394.35522, glue set 282.81525fil, direction TLT
+.......\kern-0.297 (left margin)
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\TU/texgyrepagella(0)/b/n/9 T
+.......\kern-0.63 (font)
+.......\TU/texgyrepagella(0)/b/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/9 -
+.......\TU/texgyrepagella(0)/b/n/9 b
+.......\TU/texgyrepagella(0)/b/n/9 l
+.......\TU/texgyrepagella(0)/b/n/9 e
+.......\penalty 10000
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/b/n/9 3
+.......\TU/texgyrepagella(0)/b/n/9 .
+.......\kern0.0 (italic)
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\TU/texgyrepagella(0)/m/n/9 T
+.......\TU/texgyrepagella(0)/m/n/9 h
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 w
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 d
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+.......\TU/texgyrepagella(0)/m/n/9 b
+.......\TU/texgyrepagella(0)/m/n/9 l
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\TU/texgyrepagella(0)/m/n/9 .
+.......\write1{\newlabel{tab3}{{3}{\thepage }{This is a wide table}{table.caption.5}{}}}
+.......\write1{\newlabel{tab3@cref}{{[table][3][]3}{[1][1][]\thepage }{}{}{}}}
+.......\penalty 10000
+.......\kern-1.575 (right margin)
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue 6.0
+......\glue 0.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\lineskip) 1.0
+....\vbox(18.71399+0.0)x394.35522, direction TLT
+.....\vbox(18.71399+0.0)x394.35522, direction TLT
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue -6.0002
+......\glue 0.0
+......\pdfdest name{table.caption.6} xyz
+......\penalty 10000
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue 6.0002
+......\glue 0.0
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {4}{\ignorespaces This is a wide table.}}{\thepage }{table.caption.6}\protected@file@percent }}
+......\glue 6.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\hbox(6.534+0.18)x394.35522, glue set 282.81525fil, direction TLT
+.......\kern-0.297 (left margin)
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\TU/texgyrepagella(0)/b/n/9 T
+.......\kern-0.63 (font)
+.......\TU/texgyrepagella(0)/b/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/9 -
+.......\TU/texgyrepagella(0)/b/n/9 b
+.......\TU/texgyrepagella(0)/b/n/9 l
+.......\TU/texgyrepagella(0)/b/n/9 e
+.......\penalty 10000
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/b/n/9 4
+.......\TU/texgyrepagella(0)/b/n/9 .
+.......\kern0.0 (italic)
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\TU/texgyrepagella(0)/m/n/9 T
+.......\TU/texgyrepagella(0)/m/n/9 h
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 w
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 d
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+.......\TU/texgyrepagella(0)/m/n/9 b
+.......\TU/texgyrepagella(0)/m/n/9 l
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\TU/texgyrepagella(0)/m/n/9 .
+.......\write1{\newlabel{tab4}{{4}{\thepage }{This is a wide table}{table.caption.6}{}}}
+.......\write1{\newlabel{tab4@cref}{{[table][4][]4}{[1][1][]\thepage }{}{}{}}}
+.......\penalty 10000
+.......\kern-1.575 (right margin)
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue 6.0
+......\glue 0.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue -12.0 plus -2.0 minus -2.0
+....\penalty -300
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 7.68001
+....\hbox(8.64+3.096)x394.35522, glue set 162.17961fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(8.64+3.096)x69.996, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+........\pdfdest name{appendix.A} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
+......\TU/texgyrepagella(0)/b/n/12 A
+......\TU/texgyrepagella(0)/b/n/12 p
+......\discretionary (penalty 50)
+.......< \TU/texgyrepagella(0)/b/n/12 -
+......\TU/texgyrepagella(0)/b/n/12 p
+......\TU/texgyrepagella(0)/b/n/12 e
+......\TU/texgyrepagella(0)/b/n/12 n
+......\TU/texgyrepagella(0)/b/n/12 d
+......\TU/texgyrepagella(0)/b/n/12 i
+......\TU/texgyrepagella(0)/b/n/12 x
+......\penalty 10000
+......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+......\TU/texgyrepagella(0)/b/n/12 A
+......\glue 3.0 plus 1.5 minus 1.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\kern-3.096
+....\hbox(0.0+3.096)x0.0, direction TLT
+.....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.0)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 4
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-3.096
+....\hbox(0.0+3.096)x0.0, direction TLT
+....\marks1{\__mark_value:nn {3}{\MakeUppercase    []{A\hskip 1em\relax Appendix~A}}}
+....\marks2{\__mark_value:nn {4}{}}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {A}Appendix~A}{\thepage }{appendix.A}\protected@file@percent }}
+....\penalty 10000
+....\glue 3.0
+....\write1{\newlabel{app1}{{A}{\thepage }{\appendixname ~\thesection }{appendix.A}{}}}
+....\penalty 10000
+....\penalty 10000
+....\write1{\newlabel{app1@cref}{{[appendix][1][2147483647]A}{[1][1][]\thepage }{}{}{}}}
+....\penalty 10000
+....\penalty 10000
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.554
+....\hbox(7.33+2.76)x394.35522, glue set 167.59262fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(7.33+2.76)x59.17, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
+........\pdfdest name{subsection.A.1} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
+......\TU/texgyrepagella(0)/m/it/10 A
+......\TU/texgyrepagella(0)/m/it/10 p
+......\discretionary (penalty 50)
+.......< \TU/texgyrepagella(0)/m/it/10 -
+......\TU/texgyrepagella(0)/m/it/10 p
+......\TU/texgyrepagella(0)/m/it/10 e
+......\TU/texgyrepagella(0)/m/it/10 n
+......\TU/texgyrepagella(0)/m/it/10 d
+......\TU/texgyrepagella(0)/m/it/10 i
+......\TU/texgyrepagella(0)/m/it/10 x
+......\penalty 10000
+......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+......\TU/texgyrepagella(0)/m/it/10 A
+......\TU/texgyrepagella(0)/m/it/10 .
+......\TU/texgyrepagella(0)/m/it/10 1
+......\glue 2.5 plus 1.25 minus 0.83333
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\kern-2.76
+....\hbox(0.0+2.76)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 5
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.76
+....\hbox(0.0+2.76)x0.0, direction TLT
+....\marks2{\__mark_value:nn {5}{A.1\hskip 1em\relax Appendix~A.1}}
+....\penalty 10000
+....\marks3{\__mark_value:nn {6}{A.1\hskip 1em\relax Appendix~A.1}}
+....\penalty 10000
+....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {A.1}Appendix~A.1}{\thepage }{subsection.A.1}\protected@file@percent }}
+....\penalty 10000
+....\penalty 10000
+....\glue 3.0
+....\write1{\newlabel{app1.1}{{A.1}{\thepage }{\appendixname ~\thesubsection }{subsection.A.1}{}}}
+....\penalty 10000
+....\penalty 10000
+....\write1{\newlabel{app1.1@cref}{{[appendix][1][2147483647]A.1}{[1][1][]\thepage }{}{}{}}}
+....\penalty 10000
+....\penalty 10000
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\lineskip) 1.0
+....\vbox(21.063+0.0)x394.35522, direction TLT
+.....\vbox(21.063+0.0)x394.35522, direction TLT
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue -6.0002
+......\glue 0.0
+......\pdfdest name{table.caption.7} xyz
+......\penalty 10000
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue 6.0002
+......\glue 0.0
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {A1}{\ignorespaces This is a table caption.}}{\thepage }{table.caption.7}\protected@file@percent }}
+......\glue 6.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\hbox(6.534+2.529)x394.35522, glue set 266.31824fil, direction TLT
+.......\kern-0.297 (left margin)
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\TU/texgyrepagella(0)/b/n/9 T
+.......\kern-0.63 (font)
+.......\TU/texgyrepagella(0)/b/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/9 -
+.......\TU/texgyrepagella(0)/b/n/9 b
+.......\TU/texgyrepagella(0)/b/n/9 l
+.......\TU/texgyrepagella(0)/b/n/9 e
+.......\penalty 10000
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/b/n/9 A
+.......\TU/texgyrepagella(0)/b/n/9 1
+.......\TU/texgyrepagella(0)/b/n/9 .
+.......\kern0.0 (italic)
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\TU/texgyrepagella(0)/m/n/9 T
+.......\TU/texgyrepagella(0)/m/n/9 h
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+.......\TU/texgyrepagella(0)/m/n/9 b
+.......\TU/texgyrepagella(0)/m/n/9 l
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 c
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\TU/texgyrepagella(0)/m/n/9 p
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+........= \kern-0.18 (font)
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 o
+.......\TU/texgyrepagella(0)/m/n/9 n
+.......\TU/texgyrepagella(0)/m/n/9 .
+.......\write1{\newlabel{tab5}{{A1}{\thepage }{This is a table caption}{table.caption.7}{}}}
+.......\write1{\newlabel{tab5@cref}{{[table][1][2147483647]A1}{[1][1][]\thepage }{}{}{}}}
+.......\penalty 10000
+.......\kern-1.575 (right margin)
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue 6.0
+......\glue 0.0
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
+...\glue(\baselineskip) 21.62003
+...\hbox(14.37997+4.19403)x394.35522, direction TLT
+....\hbox(14.37997+4.19403)x394.35522, direction TLT
+.....\glue -131.16722
+.....\hbox(14.37997+4.19403)x525.52245, direction TLT
+......\vbox(14.37997+4.19403)x525.52245, direction TLT
+.......\rule(0.4+0.0)x525.52245
+.......\glue 4.19403
+.......\hbox(9.78595+4.19403)x525.52245, direction TLT
+........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+.........\vbox(7.33946+3.14552)x525.52245, direction TLT
+..........\hbox(7.33946+3.14552)x525.52245, glue set 167.01321fil, direction TLT
+...........\kern-0.288 (left margin)
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\TU/texgyrepagella(0)/m/n/8 V
+...........\kern-0.72 (font)
+...........\TU/texgyrepagella(0)/m/n/8 e
+...........\TU/texgyrepagella(0)/m/n/8 r
+...........\discretionary (penalty 50)
+............< \kern-0.24 (font)
+............< \TU/texgyrepagella(0)/m/n/8 -
+...........\TU/texgyrepagella(0)/m/n/8 s
+...........\TU/texgyrepagella(0)/m/n/8 i
+...........\TU/texgyrepagella(0)/m/n/8 o
+...........\TU/texgyrepagella(0)/m/n/8 n
+...........\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+...........\TU/texgyrepagella(0)/m/n/8 M
+...........\TU/texgyrepagella(0)/m/n/8 a
+...........\kern-0.32 (font)
+...........\TU/texgyrepagella(0)/m/n/8 y
+...........\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+...........\TU/texgyrepagella(0)/m/n/8 2
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagella(0)/m/n/8 ,
+...........\glue(\spaceskip) 2.0 plus 1.25 minus 0.53333
+...........\TU/texgyrepagella(0)/m/n/8 2
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/texgyrepagella(0)/m/n/8 1
+...........\TU/texgyrepagella(0)/m/n/8 6
+...........\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+...........\TU/texgyrepagella(0)/m/n/8 s
+...........\TU/texgyrepagella(0)/m/n/8 u
+...........\TU/texgyrepagella(0)/m/n/8 b
+...........\discretionary (penalty 50)
+............< \TU/texgyrepagella(0)/m/n/8 -
+...........\TU/texgyrepagella(0)/m/n/8 m
+...........\TU/texgyrepagella(0)/m/n/8 i
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\discretionary (penalty 50)
+............< \TU/texgyrepagella(0)/m/n/8 -
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\TU/texgyrepagella(0)/m/n/8 e
+...........\TU/texgyrepagella(0)/m/n/8 d
+...........\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\kern-0.08 (font)
+...........\TU/texgyrepagella(0)/m/n/8 o
+...........\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+...........\TU/texgyrepagella(0)/m/it/8 J
+...........\TU/texgyrepagella(0)/m/it/8 o
+...........\TU/texgyrepagella(0)/m/it/8 u
+...........\TU/texgyrepagella(0)/m/it/8 r
+...........\discretionary (penalty 50)
+............< \kern-0.4 (font)
+............< \TU/texgyrepagella(0)/m/it/8 -
+...........\TU/texgyrepagella(0)/m/it/8 n
+...........\TU/texgyrepagella(0)/m/it/8 a
+...........\TU/texgyrepagella(0)/m/it/8 l
+...........\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+...........\TU/texgyrepagella(0)/m/it/8 N
+...........\kern-0.2 (font)
+...........\TU/texgyrepagella(0)/m/it/8 o
+...........\kern-0.12 (font)
+...........\TU/texgyrepagella(0)/m/it/8 t
+...........\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+...........\TU/texgyrepagella(0)/m/it/8 S
+...........\TU/texgyrepagella(0)/m/it/8 p
+...........\TU/texgyrepagella(0)/m/it/8 e
+...........\TU/texgyrepagella(0)/m/it/8 c
+...........\discretionary (penalty 50)
+............< \TU/texgyrepagella(0)/m/it/8 -
+...........\TU/texgyrepagella(0)/m/it/8 i
+...........\discretionary (penalty 50)
+............< \TU/texgyrepagella(0)/m/it/8 -
+...........\TU/texgyrepagella(0)/m/it/8 ﬁ
+...........\TU/texgyrepagella(0)/m/it/8 e
+...........\TU/texgyrepagella(0)/m/it/8 d
+...........\rule(7.33946+3.14552)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\vbox(9.78595+4.19403)x525.52245, direction TLT
+.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\rule(9.78595+4.19403)x0.0
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\vbox(7.33946+3.14552)x525.52245, direction TLT
+..........\hbox(7.33946+3.14552)x525.52245, glue set 410.37042fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >> } action user{}
+...........\mathon
+...........\pdfliteral direct <lua data reference ...>
+...........\TU/texgyrepagella(0)/m/n/8 h
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\TU/texgyrepagella(0)/m/n/8 p
+...........\TU/texgyrepagella(0)/m/n/8 s
+...........\glue(\thickmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 :
+...........\penalty 500
+...........\glue(\thickmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 d
+...........\TU/texgyrepagella(0)/m/n/8 o
+...........\TU/texgyrepagella(0)/m/n/8 i
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 .
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 o
+...........\TU/texgyrepagella(0)/m/n/8 r
+...........\TU/texgyrepagella(0)/m/n/8 g
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 1
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 .
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 3
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 3
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 9
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\mathoff
+...........\pdfendlink
+...........\pdfliteral direct <lua data reference ...>
+...........\rule(7.33946+3.14552)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdflinkstate 0
+.\kern0.0
+.\kern0.0
+<./Definitions/logo-mdpi.pdf>
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.49452pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.49452pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
+Completed box being shipped out [2]
+\vbox(742.04784+4.19403)x489.10277, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
+.....\kern-72.26999
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 37.13861fil, direction TLT
+..\kern0.0
+..\kern-36.13487
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 93.7438fil, direction TLT
+...\kern0.0
+...\kern94.74754
+...\kern-1.00374
+...\pdfdest name{page.2} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(742.04784+4.19403)x489.10277, direction TLT
+..\glue -36.13487
+..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
+...\vbox(12.0+0.0)x394.35522, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(12.0+0.0)x394.35522, direction TLT
+.....\hbox(12.0+0.0)x394.35522, direction TLT
+......\glue -131.16722
+......\hbox(12.0+0.0)x525.52245, direction TLT
+.......\vbox(12.0+0.0)x525.52245, direction TLT
+........\hbox(18.349+3.14552)x525.52245, direction TLT
+.........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+..........\vbox(18.349+3.14552)x525.52245, direction TLT
+...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+............\kern-0.288 (left margin)
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
+............\TU/texgyrepagella(0)/m/n/8 V
+............\kern-0.72 (font)
+............\TU/texgyrepagella(0)/m/n/8 e
+............\TU/texgyrepagella(0)/m/n/8 r
+............\discretionary (penalty 50)
+.............< \kern-0.24 (font)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 s
+............\TU/texgyrepagella(0)/m/n/8 i
+............\TU/texgyrepagella(0)/m/n/8 o
+............\TU/texgyrepagella(0)/m/n/8 n
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 M
+............\TU/texgyrepagella(0)/m/n/8 a
+............\kern-0.32 (font)
+............\TU/texgyrepagella(0)/m/n/8 y
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 2
+............\TU/texgyrepagella(0)/m/n/8 0
+............\TU/texgyrepagella(0)/m/n/8 ,
+............\glue(\spaceskip) 2.0 plus 1.25 minus 0.53333
+............\TU/texgyrepagella(0)/m/n/8 2
+............\TU/texgyrepagella(0)/m/n/8 0
+............\TU/texgyrepagella(0)/m/n/8 1
+............\TU/texgyrepagella(0)/m/n/8 6
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 s
+............\TU/texgyrepagella(0)/m/n/8 u
+............\TU/texgyrepagella(0)/m/n/8 b
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 m
+............\TU/texgyrepagella(0)/m/n/8 i
+............\TU/texgyrepagella(0)/m/n/8 t
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/n/8 -
+............\TU/texgyrepagella(0)/m/n/8 t
+............\TU/texgyrepagella(0)/m/n/8 e
+............\TU/texgyrepagella(0)/m/n/8 d
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 t
+............\kern-0.08 (font)
+............\TU/texgyrepagella(0)/m/n/8 o
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 J
+............\TU/texgyrepagella(0)/m/it/8 o
+............\TU/texgyrepagella(0)/m/it/8 u
+............\TU/texgyrepagella(0)/m/it/8 r
+............\discretionary (penalty 50)
+.............< \kern-0.4 (font)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 n
+............\TU/texgyrepagella(0)/m/it/8 a
+............\TU/texgyrepagella(0)/m/it/8 l
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 N
+............\kern-0.2 (font)
+............\TU/texgyrepagella(0)/m/it/8 o
+............\kern-0.12 (font)
+............\TU/texgyrepagella(0)/m/it/8 t
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/it/8 S
+............\TU/texgyrepagella(0)/m/it/8 p
+............\TU/texgyrepagella(0)/m/it/8 e
+............\TU/texgyrepagella(0)/m/it/8 c
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 i
+............\discretionary (penalty 50)
+.............< \TU/texgyrepagella(0)/m/it/8 -
+............\TU/texgyrepagella(0)/m/it/8 ﬁ
+............\TU/texgyrepagella(0)/m/it/8 e
+............\TU/texgyrepagella(0)/m/it/8 d
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 2.0
+...........\glue 0.0
+...........\glue 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\baselineskip) 0.88153
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.4+0.0)x525.23764, direction TLT
+.............\rule(0.4+0.0)x525.23764
+............\rule(7.33946+3.14552)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\vbox(0.0+0.0)x525.52245, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\hbox(16.309+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\vbox(16.309+3.14552)x525.52245, direction TLT
+...........\hbox(5.824+0.16)x525.52245, glue set 506.49045fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\TU/texgyrepagella(0)/m/n/8 2
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 o
+............\TU/texgyrepagella(0)/m/n/8 f
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/texgyrepagella(0)/m/n/8 2
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+...........\glue 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\baselineskip) 2.98553
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.4+0.0)x525.23764, direction TLT
+.............\rule(0.4+0.0)x525.23764
+............\rule(7.33946+3.14552)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+........\glue 0.0
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdflinkstate 0
+...\glue 24.0
+...\glue(\lineskip) 0.0
+...\vbox(706.18271+0.0)x394.35522, glue set 627.31268fil, direction TLT
+....\write1{\def\@LN@column{1}}
+....\vbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\vbox(0.0+0.0)x0.0, direction TLT
+........\glue 0.0
+........\glue 0.0
+........\glue 0.0
+.......\glue 14.51074
+....\glue(\topskip) 1.36
+....\hbox(8.64+3.096)x394.35522, glue set 162.84561fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(8.64+3.096)x68.664, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+........\pdfdest name{appendix.B} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
+......\TU/texgyrepagella(0)/b/n/12 A
+......\TU/texgyrepagella(0)/b/n/12 p
+......\discretionary (penalty 50)
+.......< \TU/texgyrepagella(0)/b/n/12 -
+......\TU/texgyrepagella(0)/b/n/12 p
+......\TU/texgyrepagella(0)/b/n/12 e
+......\TU/texgyrepagella(0)/b/n/12 n
+......\TU/texgyrepagella(0)/b/n/12 d
+......\TU/texgyrepagella(0)/b/n/12 i
+......\TU/texgyrepagella(0)/b/n/12 x
+......\penalty 10000
+......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+......\TU/texgyrepagella(0)/b/n/12 B
+......\glue 3.0 plus 1.5 minus 1.0
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\kern-3.096
+....\hbox(0.0+3.096)x0.0, direction TLT
+.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 6
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-3.096
+....\hbox(0.0+3.096)x0.0, direction TLT
+....\marks1{\__mark_value:nn {7}{\MakeUppercase    []{B\hskip 1em\relax Appendix~B}}}
+....\penalty 10000
+....\marks2{\__mark_value:nn {8}{}}
+....\penalty 10000
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {B}Appendix~B}{\thepage }{appendix.B}\protected@file@percent }}
+....\penalty 10000
+....\penalty 10000
+....\glue 3.0
+....\write1{\newlabel{app2}{{B}{\thepage }{\appendixname ~\thesection }{appendix.B}{}}}
+....\penalty 10000
+....\penalty 10000
+....\write1{\newlabel{app2@cref}{{[appendix][2][2147483647]B}{[1][1][]\thepage }{}{}{}}}
+....\penalty 10000
+....\penalty 10000
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.554
+....\hbox(7.33+2.76)x394.35522, glue set 168.14761fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(7.33+2.76)x58.06, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
+........\pdfdest name{subsection.B.1} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
+......\TU/texgyrepagella(0)/m/it/10 A
+......\TU/texgyrepagella(0)/m/it/10 p
+......\discretionary (penalty 50)
+.......< \TU/texgyrepagella(0)/m/it/10 -
+......\TU/texgyrepagella(0)/m/it/10 p
+......\TU/texgyrepagella(0)/m/it/10 e
+......\TU/texgyrepagella(0)/m/it/10 n
+......\TU/texgyrepagella(0)/m/it/10 d
+......\TU/texgyrepagella(0)/m/it/10 i
+......\TU/texgyrepagella(0)/m/it/10 x
+......\penalty 10000
+......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+......\TU/texgyrepagella(0)/m/it/10 B
+......\TU/texgyrepagella(0)/m/it/10 .
+......\TU/texgyrepagella(0)/m/it/10 1
+......\glue 2.5 plus 1.25 minus 0.83333
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\kern-2.76
+....\hbox(0.0+2.76)x0.0, direction TLT
+.....\hbox(3.385+0.05)x0.0, glue set - 414.35522fil, direction TLT
+......\glue 10.0
+......\glue 394.35522
+......\hbox(3.385+0.05)x10.0, glue set 4.69fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\TU/lmss/m/n/5 1
+.......\TU/lmss/m/n/5 7
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\penalty 10000
+....\kern-2.76
+....\hbox(0.0+2.76)x0.0, direction TLT
+....\marks2{\__mark_value:nn {9}{B.1\hskip 1em\relax Appendix~B.1}}
+....\penalty 10000
+....\marks3{\__mark_value:nn {10}{B.1\hskip 1em\relax Appendix~B.1}}
+....\penalty 10000
+....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {B.1}Appendix~B.1}{\thepage }{subsection.B.1}\protected@file@percent }}
+....\penalty 10000
+....\penalty 10000
+....\glue 3.0
+....\write1{\newlabel{app2.2}{{B.1}{\thepage }{\appendixname ~\thesubsection }{subsection.B.1}{}}}
+....\penalty 10000
+....\penalty 10000
+....\write1{\newlabel{app2.2@cref}{{[appendix][1][2147483647]B.1}{[1][1][]\thepage }{}{}{}}}
+....\penalty 10000
+....\penalty 10000
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue(\lineskip) 1.0
+....\vbox(21.063+0.0)x394.35522, direction TLT
+.....\vbox(21.063+0.0)x394.35522, direction TLT
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue -6.0002
+......\glue 0.0
+......\pdfdest name{table.caption.8} xyz
+......\penalty 10000
+......\rule(0.0+0.0)x*
+......\penalty 10000
+......\glue 6.0002
+......\glue 0.0
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {A2}{\ignorespaces This is a table caption.}}{\thepage }{table.caption.8}\protected@file@percent }}
+......\glue 6.0
+......\glue(\parskip) 0.0
+......\glue(\parskip) 0.0
+......\hbox(6.534+2.529)x394.35522, glue set 266.31824fil, direction TLT
+.......\kern-0.297 (left margin)
+.......\localpar
+........\localinterlinepenalty=0
+........\localbrokenpenalty=0
+........\localleftbox=null
+........\localrightbox=null
+.......\hbox(0.0+0.0)x0.0, direction TLT
+.......\TU/texgyrepagella(0)/b/n/9 T
+.......\kern-0.63 (font)
+.......\TU/texgyrepagella(0)/b/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/9 -
+.......\TU/texgyrepagella(0)/b/n/9 b
+.......\TU/texgyrepagella(0)/b/n/9 l
+.......\TU/texgyrepagella(0)/b/n/9 e
+.......\penalty 10000
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/b/n/9 A
+.......\TU/texgyrepagella(0)/b/n/9 2
+.......\TU/texgyrepagella(0)/b/n/9 .
+.......\kern0.0 (italic)
+.......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
+.......\TU/texgyrepagella(0)/m/n/9 T
+.......\TU/texgyrepagella(0)/m/n/9 h
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 s
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+.......\TU/texgyrepagella(0)/m/n/9 b
+.......\TU/texgyrepagella(0)/m/n/9 l
+.......\TU/texgyrepagella(0)/m/n/9 e
+.......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.......\TU/texgyrepagella(0)/m/n/9 c
+.......\TU/texgyrepagella(0)/m/n/9 a
+.......\TU/texgyrepagella(0)/m/n/9 p
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/9 -
+........= \kern-0.18 (font)
+.......\TU/texgyrepagella(0)/m/n/9 t
+.......\TU/texgyrepagella(0)/m/n/9 i
+.......\TU/texgyrepagella(0)/m/n/9 o
+.......\TU/texgyrepagella(0)/m/n/9 n
+.......\TU/texgyrepagella(0)/m/n/9 .
+.......\write1{\newlabel{tab6}{{A2}{\thepage }{This is a table caption}{table.caption.8}{}}}
+.......\write1{\newlabel{tab6@cref}{{[table][2][2147483647]A2}{[1][1][]\thepage }{}{}{}}}
+.......\penalty 10000
+.......\kern-1.575 (right margin)
+.......\glue(\parfillskip) 0.0 plus 1.0fil
+.......\glue(\rightskip) 0.0
+......\glue 6.0
+......\glue 0.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
+...\glue(\baselineskip) 22.02002
+...\hbox(13.97998+4.19403)x394.35522, direction TLT
+....\hbox(13.97998+4.19403)x394.35522, direction TLT
+.....\glue -131.16722
+.....\hbox(13.97998+4.19403)x525.52245, direction TLT
+......\vbox(13.97998+4.19403)x525.52245, direction TLT
+.......\rule(0.0+0.0)x525.52245
+.......\glue 4.19403
+.......\hbox(9.78595+4.19403)x525.52245, direction TLT
+........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
+.........\vbox(0.0+0.0)x525.52245, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\vbox(9.78595+4.19403)x525.52245, direction TLT
+.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\rule(9.78595+4.19403)x0.0
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\vbox(7.33946+3.14552)x525.52245, direction TLT
+..........\hbox(7.33946+3.14552)x525.52245, glue set 410.37042fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >> } action user{}
+...........\mathon
+...........\pdfliteral direct <lua data reference ...>
+...........\TU/texgyrepagella(0)/m/n/8 h
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\TU/texgyrepagella(0)/m/n/8 t
+...........\TU/texgyrepagella(0)/m/n/8 p
+...........\TU/texgyrepagella(0)/m/n/8 s
+...........\glue(\thickmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 :
+...........\penalty 500
+...........\glue(\thickmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 d
+...........\TU/texgyrepagella(0)/m/n/8 o
+...........\TU/texgyrepagella(0)/m/n/8 i
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 .
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 o
+...........\TU/texgyrepagella(0)/m/n/8 r
+...........\TU/texgyrepagella(0)/m/n/8 g
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 1
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 .
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 3
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 3
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 9
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/texgyrepagella(0)/m/n/8 0
+...........\mathoff
+...........\pdfendlink
+...........\pdfliteral direct <lua data reference ...>
+...........\rule(7.33946+3.14552)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdflinkstate 0
+.\kern0.0
+.\kern-746.24187
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern746.24187
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(test-issue128.aux)
+***************
+Compilation 1 of test file completed with exit status 0
+Compilation 2 of test file completed with exit status 0

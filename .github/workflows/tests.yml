@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - "UF**"
-  pull_request:
 
 jobs:
   # Update the TeX Live tree if necessary
