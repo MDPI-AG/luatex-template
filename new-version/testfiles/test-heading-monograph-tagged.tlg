@@ -447,7 +447,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+2.83)x367.04037, glue set 246.78038fill, direction TLT
+....\hbox(7.26+2.83)x367.04037, glue set 245.36038fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -460,13 +460,14 @@ Completed box being shipped out [1]
 .....\glue -15.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 7} action struct name{appendix.B} goto name{appendix.B}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 7} action struct name{appendix.A} goto name{appendix.A}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 B
+.....\TU/texgyrepagella(0)/m/n/10 A
+.....\kern-0.25 (font)
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\penalty 10000
 .....\TU/texgyrepagella(0)/m/n/10  
@@ -537,7 +538,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x367.04037, glue set 258.96039fill, direction TLT
+....\hbox(7.26+2.83)x367.04037, glue set 259.61038fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -550,13 +551,13 @@ Completed box being shipped out [1]
 .....\glue -15.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 8} action struct name{appendix.D} goto name{appendix.D}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 8} action struct name{appendix.C} goto name{appendix.C}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 D
+.....\TU/texgyrepagella(0)/m/n/10 C
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\penalty 10000
 .....\TU/texgyrepagella(0)/m/n/10  
@@ -622,7 +623,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.20999
-....\hbox(6.94+0.2)x367.04037, glue set 287.54034fill, direction TLT
+....\hbox(6.94+0.2)x367.04037, glue set 285.91034fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -635,13 +636,13 @@ Completed box being shipped out [1]
 .....\glue -15.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 9} action struct name{appendix.E} goto name{appendix.E}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 9} action struct name{appendix.D} goto name{appendix.D}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 E
+.....\TU/texgyrepagella(0)/m/n/10 D
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\penalty 10000
 .....\TU/texgyrepagella(0)/m/n/10  
@@ -698,7 +699,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+0.2)x367.04037, glue set 248.407fill, direction TLT
+....\hbox(7.26+0.2)x367.04037, glue set 246.777fill, direction TLT
 .....\glue(\leftskip) 38.00003
 .....\localpar
 ......\localinterlinepenalty=0
@@ -711,13 +712,13 @@ Completed box being shipped out [1]
 .....\glue -38.00003
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 10} action struct name{subsection.E.1} goto name{subsection.E.1}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 10} action struct name{subsection.D.1} goto name{subsection.D.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 E
+.....\TU/texgyrepagella(0)/m/n/10 D
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\TU/texgyrepagella(0)/m/n/10 1
 .....\TU/texgyrepagella(0)/m/n/10 .
@@ -781,7 +782,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+0.2)x367.04037, glue set 202.10696fill, direction TLT
+....\hbox(7.26+0.2)x367.04037, glue set 200.47696fill, direction TLT
 .....\glue(\leftskip) 70.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -794,13 +795,13 @@ Completed box being shipped out [1]
 .....\glue -70.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 11} action struct name{subsubsection.E.1.1} goto name{subsubsection.E.1.1}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 11} action struct name{subsubsection.D.1.1} goto name{subsubsection.D.1.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 E
+.....\TU/texgyrepagella(0)/m/n/10 D
 .....\TU/texgyrepagella(0)/m/n/10 .
 .....\TU/texgyrepagella(0)/m/n/10 1
 .....\TU/texgyrepagella(0)/m/n/10 .
@@ -2721,20 +2722,20 @@ Completed box being shipped out [3]
 ........\glue 0.0
 .......\glue 11.0
 ....\glue(\topskip) 1.36
-....\hbox(8.64+3.192)x367.04037, glue set 92.85419fil, direction TLT
+....\hbox(8.64+3.192)x367.04037, glue set 92.18819fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(8.64+3.096)x68.664, direction TLT
+.....\hbox(8.64+3.096)x69.996, direction TLT
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{appendix.B} xyz
-........\pdfdest name{appendix.B} xyz
+........\pdfdest name{appendix.A} xyz
+........\pdfdest name{appendix.A} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -2751,7 +2752,7 @@ Completed box being shipped out [3]
 ......\penalty 10000
 ......\TU/texgyrepagella(0)/b/n/12  
 ......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
-......\TU/texgyrepagella(0)/b/n/12 B
+......\TU/texgyrepagella(0)/b/n/12 A
 ......\TU/texgyrepagella(0)/b/n/12  
 ......\glue 0.0 plus 1.5 minus 1.0
 .....\pdfliteral page <lua data reference ...>
@@ -2790,28 +2791,28 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\marks1{\__mark_value:nn {8}{\MakeUppercase    []{B\hskip 1em\relax appendixtitlesempty}}}
+....\marks1{\__mark_value:nn {8}{\MakeUppercase    []{A\hskip 1em\relax appendixtitlesempty}}}
 ....\marks2{\__mark_value:nn {9}{}}
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {B}appendixtitlesempty}{\thepage }{appendix.B}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {A}appendixtitlesempty}{\thepage }{appendix.A}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.488
-....\hbox(8.64+3.096)x367.04037, glue set 148.85818fil, direction TLT
+....\hbox(8.64+3.096)x367.04037, glue set 149.18819fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(8.64+3.096)x69.324, direction TLT
+.....\hbox(8.64+3.096)x68.664, direction TLT
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{appendix.C} xyz
-........\pdfdest name{appendix.C} xyz
+........\pdfdest name{appendix.B} xyz
+........\pdfdest name{appendix.B} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -2828,7 +2829,7 @@ Completed box being shipped out [3]
 ......\penalty 10000
 ......\TU/texgyrepagella(0)/b/n/12  
 ......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
-......\TU/texgyrepagella(0)/b/n/12 C
+......\TU/texgyrepagella(0)/b/n/12 B
 ......\TU/texgyrepagella(0)/b/n/12  
 ......\glue 0.0 plus 1.5 minus 1.0
 .....\penalty 10000
@@ -3085,20 +3086,20 @@ Completed box being shipped out [3]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.81999
-....\hbox(7.33+2.76)x367.04037, glue set 154.21019fil, direction TLT
+....\hbox(7.33+2.76)x367.04037, glue set 154.49019fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.33+2.76)x58.62, direction TLT
+.....\hbox(7.33+2.76)x58.06, direction TLT
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsection.C.1} xyz
-........\pdfdest name{subsection.C.1} xyz
+........\pdfdest name{subsection.B.1} xyz
+........\pdfdest name{subsection.B.1} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -3115,7 +3116,7 @@ Completed box being shipped out [3]
 ......\penalty 10000
 ......\TU/texgyrepagella(0)/m/it/10  
 ......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-......\TU/texgyrepagella(0)/m/it/10 C
+......\TU/texgyrepagella(0)/m/it/10 B
 ......\TU/texgyrepagella(0)/m/it/10 .
 ......\TU/texgyrepagella(0)/m/it/10 1
 ......\TU/texgyrepagella(0)/m/it/10  
@@ -3374,20 +3375,20 @@ Completed box being shipped out [3]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.81)x367.04037, glue set 147.7002fil, direction TLT
+....\hbox(7.26+2.81)x367.04037, glue set 148.19019fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.26+2.81)x71.63998, direction TLT
+.....\hbox(7.26+2.81)x70.65999, direction TLT
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsubsection.C.1.1} xyz
-........\pdfdest name{subsubsection.C.1.1} xyz
+........\pdfdest name{subsubsection.B.1.1} xyz
+........\pdfdest name{subsubsection.B.1.1} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -3404,7 +3405,7 @@ Completed box being shipped out [3]
 ......\penalty 10000
 ......\TU/texgyrepagella(0)/m/n/10  
 ......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-......\TU/texgyrepagella(0)/m/n/10 C
+......\TU/texgyrepagella(0)/m/n/10 B
 ......\TU/texgyrepagella(0)/m/n/10 .
 ......\TU/texgyrepagella(0)/m/n/10 1
 ......\TU/texgyrepagella(0)/m/n/10 .
@@ -4346,7 +4347,7 @@ TEST 1: Show PDF Tags
           id="ID.027"
          >
         <?MarkedContent page="1" ?>
-        <?MarkedContent page="1" ?>B.  appendixtitlesempty
+        <?MarkedContent page="1" ?>A.  appendixtitlesempty
         <?ReferencedObject type="Annot" page="1" ?>
        </Link>
        <?MarkedContent page="1" ?>3
@@ -4364,7 +4365,7 @@ TEST 1: Show PDF Tags
           id="ID.030"
          >
         <?MarkedContent page="1" ?>
-        <?MarkedContent page="1" ?>D.  appendixtitlesyes
+        <?MarkedContent page="1" ?>C.  appendixtitlesyes
         <?ReferencedObject type="Annot" page="1" ?>
        </Link>
        <?MarkedContent page="1" ?>4
@@ -4382,7 +4383,7 @@ TEST 1: Show PDF Tags
           id="ID.033"
          >
         <?MarkedContent page="1" ?>
-        <?MarkedContent page="1" ?>E. Test section
+        <?MarkedContent page="1" ?>D. Test section
         <?ReferencedObject type="Annot" page="1" ?>
        </Link>
        <?MarkedContent page="1" ?>4
@@ -4403,7 +4404,7 @@ TEST 1: Show PDF Tags
            id="ID.037"
           >
          <?MarkedContent page="1" ?>
-         <?MarkedContent page="1" ?>E.1. Test subsection
+         <?MarkedContent page="1" ?>D.1. Test subsection
          <?ReferencedObject type="Annot" page="1" ?>
         </Link>
         <?MarkedContent page="1" ?>4
@@ -4424,7 +4425,7 @@ TEST 1: Show PDF Tags
             id="ID.041"
            >
           <?MarkedContent page="1" ?>
-          <?MarkedContent page="1" ?>E.1.1. Test subsubsection
+          <?MarkedContent page="1" ?>D.1.1. Test subsubsection
           <?ReferencedObject type="Annot" page="1" ?>
          </Link>
          <?MarkedContent page="1" ?>4
@@ -4593,7 +4594,7 @@ TEST 1: Show PDF Tags
         rolemaps-to="Span"
         referenced-as="4"
        >
-      <?MarkedContent page="3" ?>Appendix B 
+      <?MarkedContent page="3" ?>Appendix A 
      </section-number>
      <?MarkedContent page="3" ?>appendixtitlesempty
     </section>
@@ -4610,7 +4611,7 @@ TEST 1: Show PDF Tags
         id="ID.070"
         rolemaps-to="Span"
        >
-      <?MarkedContent page="3" ?>Appendix C 
+      <?MarkedContent page="3" ?>Appendix B 
      </section-number>
     </section>
     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
@@ -4639,7 +4640,7 @@ TEST 1: Show PDF Tags
          id="ID.075"
          rolemaps-to="Span"
         >
-       <?MarkedContent page="3" ?>Appendix C.1 
+       <?MarkedContent page="3" ?>Appendix B.1 
       </section-number>
      </subsection>
      <text-unit xmlns="https://www.latex-project.org/ns/dflt"
@@ -4668,7 +4669,7 @@ TEST 1: Show PDF Tags
           id="ID.080"
           rolemaps-to="Span"
          >
-        <?MarkedContent page="3" ?>Appendix C.1.1 
+        <?MarkedContent page="3" ?>Appendix B.1.1 
        </section-number>
       </subsubsection>
       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
@@ -4750,7 +4751,7 @@ TEST 1: Show PDF Tags
         rolemaps-to="Span"
         referenced-as="5"
        >
-      <?MarkedContent page="4" ?>Appendix D. 
+      <?MarkedContent page="4" ?>Appendix C. 
      </section-number>
      <?MarkedContent page="4" ?>appendixtitlesyes
     </section>
@@ -4768,7 +4769,7 @@ TEST 1: Show PDF Tags
         rolemaps-to="Span"
         referenced-as="6"
        >
-      <?MarkedContent page="4" ?>Appendix E. 
+      <?MarkedContent page="4" ?>Appendix D. 
      </section-number>
      <?MarkedContent page="4" ?>Test section
     </section>
@@ -4799,7 +4800,7 @@ TEST 1: Show PDF Tags
          rolemaps-to="Span"
          referenced-as="7"
         >
-       <?MarkedContent page="4" ?>Appendix E.1. 
+       <?MarkedContent page="4" ?>Appendix D.1. 
       </section-number>
       <?MarkedContent page="4" ?>Test subsection
      </subsection>
@@ -4830,7 +4831,7 @@ TEST 1: Show PDF Tags
           rolemaps-to="Span"
           referenced-as="8"
          >
-        <?MarkedContent page="4" ?>Appendix E.1.1. 
+        <?MarkedContent page="4" ?>Appendix D.1.1. 
        </section-number>
        <?MarkedContent page="4" ?>Test subsubsection
       </subsubsection>
@@ -5016,7 +5017,80 @@ Completed box being shipped out [4]
 ........\glue 0.0
 .......\glue 11.0
 ....\glue(\topskip) 1.36
-....\hbox(8.64+3.192)x367.04037, glue set 98.58418fil, direction TLT
+....\hbox(8.64+3.192)x367.04037, glue set 99.25018fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(8.64+3.096)x72.324, direction TLT
+......\penalty 10000
+......\hbox(0.0+0.0)x0.0, direction TLT
+.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\pdfdest name{appendix.C} xyz
+........\pdfdest name{appendix.C} xyz
+........\penalty 10000
+......\kern0.0
+......\glue 0.0
+......\TU/texgyrepagella(0)/b/n/12 A
+......\TU/texgyrepagella(0)/b/n/12 p
+......\discretionary (penalty 50)
+.......< \TU/texgyrepagella(0)/b/n/12 -
+......\TU/texgyrepagella(0)/b/n/12 p
+......\TU/texgyrepagella(0)/b/n/12 e
+......\TU/texgyrepagella(0)/b/n/12 n
+......\TU/texgyrepagella(0)/b/n/12 d
+......\TU/texgyrepagella(0)/b/n/12 i
+......\TU/texgyrepagella(0)/b/n/12 x
+......\penalty 10000
+......\TU/texgyrepagella(0)/b/n/12  
+......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+......\TU/texgyrepagella(0)/b/n/12 C
+......\TU/texgyrepagella(0)/b/n/12 .
+......\TU/texgyrepagella(0)/b/n/12  
+......\glue 0.0 plus 1.5 minus 1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/texgyrepagella(0)/b/n/12 a
+.....\TU/texgyrepagella(0)/b/n/12 p
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/b/n/12 -
+.....\TU/texgyrepagella(0)/b/n/12 p
+.....\TU/texgyrepagella(0)/b/n/12 e
+.....\TU/texgyrepagella(0)/b/n/12 n
+.....\TU/texgyrepagella(0)/b/n/12 d
+.....\TU/texgyrepagella(0)/b/n/12 i
+.....\TU/texgyrepagella(0)/b/n/12 x
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/b/n/12 -
+.....\TU/texgyrepagella(0)/b/n/12 t
+.....\TU/texgyrepagella(0)/b/n/12 i
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/b/n/12 -
+.....\TU/texgyrepagella(0)/b/n/12 t
+.....\TU/texgyrepagella(0)/b/n/12 l
+.....\TU/texgyrepagella(0)/b/n/12 e
+.....\TU/texgyrepagella(0)/b/n/12 s
+.....\TU/texgyrepagella(0)/b/n/12 y
+.....\kern-0.42 (font)
+.....\TU/texgyrepagella(0)/b/n/12 e
+.....\TU/texgyrepagella(0)/b/n/12 s
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\marks1{\__mark_value:nn {10}{\MakeUppercase    []{C\hskip 1em\relax appendixtitlesyes}}}
+....\marks2{\__mark_value:nn {11}{}}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {C}appendixtitlesyes}{\thepage }{appendix.C}\protected@file@percent }}
+....\penalty 10000
+....\glue 3.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 4.488
+....\hbox(8.64+3.096)x367.04037, glue set 114.74219fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -5052,79 +5126,6 @@ Completed box being shipped out [4]
 ......\glue 0.0 plus 1.5 minus 1.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/12 a
-.....\TU/texgyrepagella(0)/b/n/12 p
-.....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/12 -
-.....\TU/texgyrepagella(0)/b/n/12 p
-.....\TU/texgyrepagella(0)/b/n/12 e
-.....\TU/texgyrepagella(0)/b/n/12 n
-.....\TU/texgyrepagella(0)/b/n/12 d
-.....\TU/texgyrepagella(0)/b/n/12 i
-.....\TU/texgyrepagella(0)/b/n/12 x
-.....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/12 -
-.....\TU/texgyrepagella(0)/b/n/12 t
-.....\TU/texgyrepagella(0)/b/n/12 i
-.....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/12 -
-.....\TU/texgyrepagella(0)/b/n/12 t
-.....\TU/texgyrepagella(0)/b/n/12 l
-.....\TU/texgyrepagella(0)/b/n/12 e
-.....\TU/texgyrepagella(0)/b/n/12 s
-.....\TU/texgyrepagella(0)/b/n/12 y
-.....\kern-0.42 (font)
-.....\TU/texgyrepagella(0)/b/n/12 e
-.....\TU/texgyrepagella(0)/b/n/12 s
-.....\penalty 10000
-.....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 0.0 plus 1.0fil
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
-....\marks1{\__mark_value:nn {10}{\MakeUppercase    []{D\hskip 1em\relax appendixtitlesyes}}}
-....\marks2{\__mark_value:nn {11}{}}
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {D}appendixtitlesyes}{\thepage }{appendix.D}\protected@file@percent }}
-....\penalty 10000
-....\glue 3.0
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 4.488
-....\hbox(8.64+3.096)x367.04037, glue set 116.07419fil, direction TLT
-.....\localpar
-......\localinterlinepenalty=0
-......\localbrokenpenalty=0
-......\localleftbox=null
-......\localrightbox=null
-.....\hbox(8.64+3.096)x70.992, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{appendix.E} xyz
-........\pdfdest name{appendix.E} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 A
-......\TU/texgyrepagella(0)/b/n/12 p
-......\discretionary (penalty 50)
-.......< \TU/texgyrepagella(0)/b/n/12 -
-......\TU/texgyrepagella(0)/b/n/12 p
-......\TU/texgyrepagella(0)/b/n/12 e
-......\TU/texgyrepagella(0)/b/n/12 n
-......\TU/texgyrepagella(0)/b/n/12 d
-......\TU/texgyrepagella(0)/b/n/12 i
-......\TU/texgyrepagella(0)/b/n/12 x
-......\penalty 10000
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
-......\TU/texgyrepagella(0)/b/n/12 E
-......\TU/texgyrepagella(0)/b/n/12 .
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 T
 .....\kern-1.08 (font)
 .....\TU/texgyrepagella(0)/b/n/12 e
@@ -5146,11 +5147,11 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\marks1{\__mark_value:nn {12}{\MakeUppercase    []{E\hskip 1em\relax Test section}}}
+....\marks1{\__mark_value:nn {12}{\MakeUppercase    []{D\hskip 1em\relax Test section}}}
 ....\penalty 10000
 ....\marks2{\__mark_value:nn {13}{}}
 ....\penalty 10000
-....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {E}Test section}{\thepage }{appendix.E}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {D}Test section}{\thepage }{appendix.D}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
 ....\glue 3.0
@@ -5403,20 +5404,20 @@ Completed box being shipped out [4]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.81999
-....\hbox(7.33+2.76)x367.04037, glue set 122.96019fil, direction TLT
+....\hbox(7.33+2.76)x367.04037, glue set 122.12518fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.33+2.76)x60.56, direction TLT
+.....\hbox(7.33+2.76)x62.23, direction TLT
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsection.E.1} xyz
-........\pdfdest name{subsection.E.1} xyz
+........\pdfdest name{subsection.D.1} xyz
+........\pdfdest name{subsection.D.1} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -5433,7 +5434,7 @@ Completed box being shipped out [4]
 ......\penalty 10000
 ......\TU/texgyrepagella(0)/m/it/10  
 ......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-......\TU/texgyrepagella(0)/m/it/10 E
+......\TU/texgyrepagella(0)/m/it/10 D
 ......\TU/texgyrepagella(0)/m/it/10 .
 ......\TU/texgyrepagella(0)/m/it/10 1
 ......\TU/texgyrepagella(0)/m/it/10 .
@@ -5468,9 +5469,9 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\marks2{\__mark_value:nn {14}{E.1\hskip 1em\relax Test subsection}}
-....\marks3{\__mark_value:nn {15}{E.1\hskip 1em\relax Test subsection}}
-....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {E.1}Test subsection}{\thepage }{subsection.E.1}\protected@file@percent }}
+....\marks2{\__mark_value:nn {14}{D.1\hskip 1em\relax Test subsection}}
+....\marks3{\__mark_value:nn {15}{D.1\hskip 1em\relax Test subsection}}
+....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {D.1}Test subsection}{\thepage }{subsection.D.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -5722,20 +5723,20 @@ Completed box being shipped out [4]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.81)x367.04037, glue set 105.79019fil, direction TLT
+....\hbox(7.26+2.81)x367.04037, glue set 104.97519fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.26+2.81)x73.15999, direction TLT
+.....\hbox(7.26+2.81)x74.79, direction TLT
 ......\penalty 10000
 ......\hbox(0.0+0.0)x0.0, direction TLT
 .......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
 ........\pdfliteral page <lua data reference ...>
 ........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsubsection.E.1.1} xyz
-........\pdfdest name{subsubsection.E.1.1} xyz
+........\pdfdest name{subsubsection.D.1.1} xyz
+........\pdfdest name{subsubsection.D.1.1} xyz
 ........\penalty 10000
 ......\kern0.0
 ......\glue 0.0
@@ -5752,7 +5753,7 @@ Completed box being shipped out [4]
 ......\penalty 10000
 ......\TU/texgyrepagella(0)/m/n/10  
 ......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-......\TU/texgyrepagella(0)/m/n/10 E
+......\TU/texgyrepagella(0)/m/n/10 D
 ......\TU/texgyrepagella(0)/m/n/10 .
 ......\TU/texgyrepagella(0)/m/n/10 1
 ......\TU/texgyrepagella(0)/m/n/10 .
@@ -5794,7 +5795,7 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{\protect \numberline {E.1.1}Test subsubsection}{\thepage }{subsubsection.E.1.1}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{\protect \numberline {D.1.1}Test subsubsection}{\thepage }{subsubsection.D.1.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
