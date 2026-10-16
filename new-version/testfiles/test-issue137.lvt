@@ -1,0 +1,12 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+
+\Author{Firstname Lastname, Firstname Lastname and Firstname Lastname$^\dagger$}
+\address[1]{%
+Affiliation 1; e-mail@e-mail.com}
+\firstnote{Current address: Affiliation.}  
+\begin{document}
+\START\showoutput
+test
+\end{document}
