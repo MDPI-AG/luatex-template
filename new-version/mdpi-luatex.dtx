@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-10-16}
-\def\mdpiversion{v7.0s}
+\def\mdpiversion{v7.0t}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2036,35 +2036,10 @@
 \def\@appendixsections{}
 \newcommand{\appendixsections}[1]{\gdef\@appendixsections{#1}}
 
-\def\@appendixstart{}
-\newcommand{\appendixstart}[1]{\gdef\@appendixstart{#1}}
-
-\renewcommand{\appendixstart}{%
-\setcounter{section}{0}%
-\setcounter{subsection}{0}%
-\setcounter{subsubsection}{0}%
-\setcounter{figure}{0}
-\setcounter{table}{0}
-\setcounter{scheme}{0}
-\setcounter{chart}{0}
-\setcounter{boxenv}{0}
-\setcounter{equation}{0}
-\setcounter{theorem}{0}
-\setcounter{lemma}{0}
-\setcounter{corollary}{0}
-\setcounter{proposition}{0}
-\setcounter{characterization}{0}
-\setcounter{property}{0}
-\setcounter{problem}{0}
-\setcounter{example}{0}
-\setcounter{remark}{0}
-\setcounter{definition}{0}
-\setcounter{hypothesis}{0}
-\setcounter{notation}{0}
-\setcounter{algorithm}{0}
-\setcounter{graph}{0}
-}
-
+%    \end{macrocode}
+% This command does nothing, but is kept for compatibility.
+%    \begin{macrocode}
+\newcommand{\appendixstart}{}
 %    \end{macrocode}
 %
 %
@@ -2073,6 +2048,14 @@
 \renewcommand{\appendix}
  {
   \gdef\thesection   {\AlphAlph{\value{section}}}%
+  \clist_map_inline:nn
+    {
+     section,figure,table,scheme,chart,boxenv,equation,
+     theorem,lemma,corollary,proposition,
+     characterization,property,problem,example,remark,definition,
+     hypothesis,notation,algorithm,graph
+    } 
+    {\setcounter{##1}{0}}
 %    \end{macrocode}
 % Reset the cref names:
 %    \begin{macrocode}
