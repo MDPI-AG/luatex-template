@@ -68,7 +68,7 @@
 \RequirePackage{tabularx}
 \RequirePackage{pbox} % For biography environment
 \RequirePackage{ragged2e} % For command \justifying
-\RequirePackage[subfigure]{tocloft} % For dots in TOC. If subfigure package is loaded, the subfigure option needs to be added here to avoid clash: \RequirePackage[subfigure]{tocloft}
+\RequirePackage[subfigure,titles]{tocloft} % titles: TOC heading is \section* (same after-skip as body). 
 \RequirePackage{marginnote} % For left column
 \reversemarginpar % To have the left column on the left side
 \RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
@@ -567,6 +567,7 @@
 
 %%%%% Endnotes
 \setenotez{backref=true}
+\isBookContribution{}{\setenotez{totoc=section}}
 \DeclareInstance{enotez-list}{custom}{paragraph}{
 	format=\fontsize{9}{11}\selectfont\leftskip0.76cm,
       number=\textsuperscript{\makebox[6mm][l]{#1}},
@@ -1355,6 +1356,24 @@
 
 %%%% Table of contents
 \renewcommand{\cfttoctitlefont}{\normalfont\fontsize{12}{12}\selectfont\bfseries}
+\setlength{\cftaftertoctitleskip}{3pt}
+\isMonograph{\setlength{\cftaftertoctitleskip}{8pt}}{}
+\newif\ifmdpi@tocfirstsec
+\AtBeginDocument{%
+	\preto\tableofcontents{\global\mdpi@tocfirstsectrue}%
+	\let\mdpi@orig@l@section\l@section
+	\renewcommand*\l@section[2]{%
+		\ifmdpi@tocfirstsec
+			\global\mdpi@tocfirstsecfalse
+			\begingroup
+				\cftbeforesecskip\z@
+				\mdpi@orig@l@section{#1}{#2}%
+			\endgroup
+		\else
+			\mdpi@orig@l@section{#1}{#2}%
+		\fi
+	}%
+}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots between section title and page number
 \renewcommand{\numberline}[1]{#1.~\space} % Increase space between number and title
 
@@ -1444,7 +1463,15 @@
 \def\@appendixtitles{}
 \newcommand{\appendixtitles}[1]{\gdef\@appendixtitles{#1}}
 \newcommand{\mdpi@appendix@printtitle}[1]{%
-	\ifblank{#1}{}{.~#1}%
+	\@ifundefined{ifttl@label}{%
+		\ifblank{#1}{}{.~#1}%
+	}{%
+		\ifttl@label
+			\ifblank{#1}{}{.~#1}%
+		\else
+			#1%
+		\fi
+	}%
 }
 \newcommand{\mdpi@appendix@makefull}[1]{%
 	\protected@edef\mdpi@app@label{\appendixname\space\csname the#1\endcsname}%
