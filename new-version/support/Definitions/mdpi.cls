@@ -23,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-10-16}
+\def\mdpidate{2026-10-19}
 \def\mdpiversion{v6.5d}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
@@ -396,6 +396,8 @@
 	\crefname{chart}{Chart}{Charts}
 	\crefname{paragraph}{Section}{Sections}
 	\crefname{graph}{Graph}{Graphs}
+	\crefname{boxenv}{Box}{Boxes}
+	\crefname{listing}{Listing}{Listings}
 	\crefname{theorem}{Theorem}{Theorems}
 	\crefname{lemma}{Lemma}{Lemmas}
 	\crefname{corollary}{Corollary}{Corollaries}
@@ -592,6 +594,9 @@
 % Indents & Commands for hanging indent
 \setlength{\parindent}{0.75cm}
 \newcommand{\dist}{1.7em}
+\newcommand{\mdpi@len@dist}{1.7em}
+\newcommand{\mdpi@len@distshift}{0.85em}
+\newdimen\mdpi@len@tmpa
 \newcommand{\hang}{\hangafter=1\hangindent=\dist\noindent}
 
 %%%% Front matter
@@ -599,9 +604,9 @@
 \def\instring#1#2{TT\fi\begingroup\edef\x{\endgroup\noexpand\in@{#1}{#2}}\x\ifin@}
 
 \newcommand{\firstargument}{}
-\def\@Title{TITLE}
+\def\@Title{Title}
 \newcommand{\Title}[1]{\gdef\@Title{#1}}%
-\def\@Author{}
+\def\@Author{Author}
 \newcommand{\Author}[1]{\gdef\@Author{#1}}%
 \def\@AuthorNames{}
 \newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
@@ -676,7 +681,7 @@
 \newcommand{\pubvolume}[1]{\gdef\@pubvolume{\cutdigits{#1}}}
 \newcommand{\pubyear}[1]{\gdef\@pubyear{#1}}
 \newcommand{\copyrightyear}[1]{\gdef\@copyrightyear{#1}}
-\def\@address{ADDRESS}
+\def\@address{Address}
 \newcommand{\address}[2][]{\renewcommand{\firstargument}{#1}\gdef\@address{#2}}
 \newcommand{\corresfirstargument}{}
 \def\@corres{}
@@ -768,13 +773,19 @@
 \newcommand{\IsAssociation}[1]{\gdef\@IsAssociation{#1}}
 
 %% ORCID
-% Make Orcid icon
 \newcommand{\orcidicon}{\includegraphics[width=0.32cm]{Definitions/logo-orcid.pdf}}
-
-% Define link and button for each author
 \foreach \x in {A, ..., Z}{%
-\expandafter\xdef\csname orcid\x\endcsname{\noexpand\href{https://orcid.org/\csname orcidauthor\x\endcsname}{\noexpand\orcidicon}}
+	\edef\mdpi@orcid@def{%
+		\noexpand\href{https://orcid.org/\noexpand\csname orcidauthor\x\noexpand\endcsname}{\noexpand\orcidicon}%
+	}%
+	\expandafter\gdef\csname orcid\x\expandafter\endcsname\expandafter{\mdpi@orcid@def}%
+	\edef\mdpi@orcid@def{%
+		\noexpand\href{https://orcid.org/\noexpand\csname orcidauthorA\x\noexpand\endcsname}{\noexpand\orcidicon}%
+	}%
+	\expandafter\gdef\csname orcidA\x\expandafter\endcsname\expandafter{\mdpi@orcid@def}%
 }
+\newcommand{\neworcid}[2]{\expandafter\gdef\csname mdpi@orcid@#1\endcsname{#2}}
+\newcommand{\useorcid}[1]{\href{https://orcid.org/\csname mdpi@orcid@#1\endcsname}{\orcidicon}}
 
 %%%% Journal name for the header
 \newcommand{\journalname}{\@journalshort}
@@ -1138,6 +1149,9 @@
 	\hang}\@address
 	\par
 	}%
+	\ifthenelse{\equal{\firstargument}{1}}{%
+	  \renewcommand{\dist}{\dimexpr\mdpi@len@dist-\mdpi@len@distshift\relax}%
+	}{}%
 	{%
 	\ifthenelse{\equal{\@authornum}{author}}{}{%
 	\ifthenelse{\equal{\@corres}{\@empty}}{}{%
@@ -1340,6 +1354,7 @@
 }
 
 %%%% Table of contents
+\renewcommand{\cfttoctitlefont}{\normalfont\fontsize{12}{12}\selectfont\bfseries}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Dots between section title and page number
 \renewcommand{\numberline}[1]{#1.~\space} % Increase space between number and title
 
@@ -1428,6 +1443,25 @@
 %%%%% Defines the appendix
 \def\@appendixtitles{}
 \newcommand{\appendixtitles}[1]{\gdef\@appendixtitles{#1}}
+\newcommand{\mdpi@appendix@printtitle}[1]{%
+	\ifblank{#1}{}{.~#1}%
+}
+\newcommand{\mdpi@appendix@makefull}[1]{%
+	\protected@edef\mdpi@app@label{\appendixname\space\csname the#1\endcsname}%
+	\expandafter\mdpi@appendix@makefull@i\expandafter{\ttl@savetitle}%
+}
+\def\mdpi@appendix@makefull@i#1{%
+	\ifblank{#1}{%
+		\let\mdpi@app@full\mdpi@app@label
+	}{%
+		\protected@edef\mdpi@app@full{\mdpi@app@label. \unexpanded{#1}}%
+	}%
+}
+\newcommand{\mdpi@appendix@tocline}[2]{%
+	\mdpi@appendix@makefull{#1}%
+	\addcontentsline{toc}{#1}{\mdpi@app@full}%
+	\nobreak
+}
 
 \def\@appendixsections{}
 \newcommand{\appendixsections}[1]{\gdef\@appendixsections{#1}}
@@ -1471,32 +1505,19 @@
 \gdef\thesection{\AlphAlph{\value{section}}}%
 \gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}%
 
-\titleformat {\section} [block] {\raggedright\bfseries\fontsize{12}{12}\selectfont} {\fontsize{12}{12}\selectfont\bfseries%
-	\ifthenelse{\equal{\@appendixtitles}{yes}}{%
-		\appendixname~\thesection.%
-		}{%
-		\appendixname~\thesection~%
-		}
-	} {0pt} {}
+\titleformat {\section} [block] {\raggedright\bfseries\fontsize{12}{12}\selectfont} {\fontsize{12}{12}\selectfont\bfseries\appendixname~\thesection} {0pt} {\mdpi@appendix@printtitle}
 \titlespacing {\section} {0pt} {12pt} {3pt}
 %
-\titleformat {\subsection} [block] {\raggedright\itshape} {%
-	\ifthenelse{\equal{\@appendixtitles}{yes}}{%
-		\appendixname~\thesubsection.%
-		}{%
-		\appendixname~\thesubsection%
-		}
-	} {0pt} {}
-\titlespacing {\section} {0pt} {12pt} {3pt}
+\titleformat {\subsection} [block] {\raggedright\itshape} {\appendixname~\thesubsection} {0pt} {\mdpi@appendix@printtitle}
+\titlespacing {\subsection} {0pt} {12pt} {3pt}
 %
-\titleformat {\subsubsection} [block] {\raggedright\selectfont} {%
-	\ifthenelse{\equal{\@appendixtitles}{yes}}{%
-		\appendixname~\thesubsubsection.%
-		}{%
-		\appendixname~\thesubsubsection%
-		}
-	} {0pt} {}
-\titlespacing {\section} {0pt} {12pt} {3pt}
+\titleformat {\subsubsection} [block] {\raggedright\selectfont} {\appendixname~\thesubsubsection} {0pt} {\mdpi@appendix@printtitle}
+\titlespacing {\subsubsection} {0pt} {12pt} {3pt}
+%
+\@ifundefined{ttl@addcontentsline}{}{%
+	\@ifundefined{mdpi@ttl@addcontentsline@orig}{\let\mdpi@ttl@addcontentsline@orig\ttl@addcontentsline}{}%
+	\let\ttl@addcontentsline\mdpi@appendix@tocline
+}
 %
 \gdef\thesection{\AlphAlph{\value{section}}}% for hyperref
 \gdef\thesubsection{\AlphAlph{\value{section}}.\@arabic\c@subsection}% for hyperref
@@ -1811,9 +1832,12 @@
 \renewcommand\@biblabel[1]{#1.\hfill}
 \def\thebibliography#1{
 \emergencystretch 2em
+\@ifundefined{mdpi@ttl@addcontentsline@orig}{}{\let\ttl@addcontentsline\mdpi@ttl@addcontentsline@orig}%
 \titleformat {\section} [block] {\raggedright \fontsize{12}{12}\selectfont\bfseries} {} {0pt} {}
-     \isBookContribution{}{% to remove the sectin from the TOC in books
-	\section{\@reftitle}
+     \isBookContribution{}{% 
+	\@ifundefined{phantomsection}{}{\phantomsection}%
+	\addcontentsline{toc}{section}{\@reftitle}%
+	\section*{\@reftitle}%
 }
 \fontsize{9}{11}\selectfont
 \list{{\arabic{enumi}}}{\def\makelabel##1{\hss{##1}}
