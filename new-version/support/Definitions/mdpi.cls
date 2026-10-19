@@ -391,7 +391,7 @@
 	\crefname{figure}{Figure}{Figures}
 	\crefname{table}{Table}{Tables}
 	\crefname{section}{Section}{Sections}
-	\crefname{appendix}{Appendix}{Appendixes}
+	\crefname{appendix}{Appendix}{Appendices}
 	\crefname{scheme}{Scheme}{Schemes}
 	\crefname{chart}{Chart}{Charts}
 	\crefname{paragraph}{Section}{Sections}
@@ -1493,7 +1493,6 @@
 \setcounter{notation}{0}
 \setcounter{algorithm}{0}
 \setcounter{graph}{0}
-\crefname{appendix}{Appendix}{Appendixes}
 \crefalias{section}{appendix}%
 \crefalias{subsection}{appendix}%
 \crefalias{subsubsection}{appendix}%
