@@ -2663,28 +2663,10 @@
 \let\twodigits\mdpi@mintwodigits
 \let\fivedigits\mdpi@minfourdigits
 %    \end{macrocode}
-% For \cs{@pubvolume}, \cs{@issuenum}, and \cs{@articlenumber}:
-% A command to cut leading zeros. Doesn't make sense, the
-% error case is never reached, so simply using \cs{number} or \cs{inteval} is quite
-% enough.
-%    \begin{macrocode}
-\newcommand\cutdigits[1]{%
-  \ifnum#1>0 %
-    \number#1
-  \else
-    \ifnum#1<10000 %
-      \number#1
-    \else
-      error
-    \fi
-  \fi
-}
-
 % TODO: check if these commands are used and make sense (names are not very good):
 % To have the possibility to change the urlcolor
 %    \begin{macrocode}
 \newcommand{\changeurlcolor}[1]{\hypersetup{urlcolor=#1}}
-
 \newcommand{\fig}[1]{Figure~\ref{#1}}
 \newcommand{\tabref}[1]{Table~\ref{#1}}
 \newcommand{\sect}[1]{Section~\ref{#1}}
