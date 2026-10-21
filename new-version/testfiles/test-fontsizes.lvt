@@ -7,7 +7,7 @@
 \newcommand\testfontsize[1]{\par\medskip\UseName{#1}%
 \noindent\rule{1cm}{1pt}#1: \UseName{f@size}, \the\baselineskip\\
 \rule{1cm}{1pt}more text MORE TEXT}
-\RemoveFromHook{begindocument/end}[mdpi-luatex]
+\RemoveFromHook{begindocument/end}[mdpi/maketitle]
 \begin{document}
 \START\showoutput
 

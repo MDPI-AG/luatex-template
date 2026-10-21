@@ -5,7 +5,7 @@
 \documentclass{mdpi-luatex}
 \usepackage{lipsum}
 % no title
-\RemoveFromHook{begindocument/end}[mdpi-luatex]
+\RemoveFromHook{begindocument/end}[mdpi/maketitle]
 \begin{document}
 \START
 
