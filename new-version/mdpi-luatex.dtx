@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-10-21}
-\def\mdpiversion{v7.0v}
+\def\mdpiversion{v7.0w}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -268,10 +268,7 @@
 %    \begin{macrocode}
 \RequirePackage{fancyhdr}
 %    \end{macrocode}
-% \subsubsection{Headings}
-%    \begin{macrocode}
-\RequirePackage{indentfirst}
-%    \end{macrocode}
+%
 % \subsubsection{Lists}
 %    \begin{macrocode}
 \RequirePackage{enumitem}
@@ -1945,6 +1942,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
+    para-indent=true,
 %    \end{macrocode}
 % Avoid hanging indent:
 %    \begin{macrocode}
@@ -1960,6 +1958,7 @@
     {
       heading-decls=\raggedright\LARGE\bfseries,
       after-vspace =8pt,
+      para-indent=true,
     }
  }
  {}
@@ -1973,6 +1972,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
+    para-indent=true,
     headformat-instance = subsection
   }
 %    \end{macrocode}
@@ -1985,6 +1985,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
+    para-indent=true,
     headformat-instance = subsection
   }
 %    \end{macrocode}
@@ -1999,11 +2000,18 @@
     , after-vspace  = 3pt
     , heading-decls = \raggedright\normalfont\normalsize
     , mark-cmd      = \paragraphmark {#1}
-    , number-format=\theheading.,
+    , number-format=\theheading.
+    , para-indent=true,
     , headformat-instance = paragraph
   }
 %    \end{macrocode}
-%
+% \cs{subparagraph} needs only the para-indent setting:
+%    \begin{macrocode}
+\EditInstance{heading}{subsubsection}
+ {
+   para-indent=true
+ }
+%    \end{macrocode}
 %    \begin{macrocode}
 %%%% Special section title style for back matter
 \newcommand{\supplementary}[1]{
@@ -2047,10 +2055,13 @@
 
 \newcommand{\reviewreports}[1]{%
 \vspace{6pt}\noindent{\small\textbf{Review Reports:} {#1}\par}}
-
-\newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\large\textbf{#1}}{%
-\par\vspace{3pt}\hspace{-0.85cm}{\small #2}\par}}
-
+%    \end{macrocode}
+% 
+%    \begin{macrocode}
+\newcommand\abbreviations[2]{\section*[para-indent=false]{#1}{\small #2\par}}
+%    \end{macrocode}
+% 
+%    \begin{macrocode}
 % UF TODO correct semantic, e.g.
 %\renewcommand\abbreviations[2]{\section*{#1}\small #2\par}
 
