@@ -2124,7 +2124,10 @@
 \ExplSyntaxOn
 \renewcommand{\appendix}
  {
+  \par
+  \SaveLastSkip
   \addtocontents{toc}{\protect\UseName{mdpi@toc@appendixsetup}} 
+  \RestoreLastSkip
   \gdef\thesection   {\AlphAlph{\value{section}}}%
   \clist_map_inline:nn
     {
