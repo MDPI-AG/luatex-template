@@ -4,6 +4,9 @@
 % note: with 2026-11-01 appendix A will appear in the toc, and the dots will be correct
 \begin{document}
 \START\showoutput
+\IfFormatAtLeastTF{2026-11-01}
+ {\TYPE{LaTeX 2026-11-01: THIS SHOULD FAIL}}
+ {\TYPE{WRONG OUTPUT}}
 \tableofcontents
 
 
