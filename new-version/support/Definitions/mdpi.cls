@@ -1441,7 +1441,7 @@
 \vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{Review Reports:} {#1}\par}}
 
 \newcommand{\abbreviations}[2]{\vspace{12pt}\noindent{\fontsize{12}{12}\selectfont\textbf{#1}}{%
-\par\vspace{3pt}\hspace{-0.85cm}{\fontsize{9}{11.2}\selectfont #2}\par}}
+\par\vspace{3pt}\hspace{-0.75cm}{\fontsize{9}{11.2}\selectfont #2}\par}}
 
 % Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
