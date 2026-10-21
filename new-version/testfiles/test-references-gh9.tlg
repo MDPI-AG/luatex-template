@@ -268,6 +268,7 @@ Completed box being shipped out [1]
 ....\write-{}
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
+....\write1{\@writefile{toc}{\protect \UseName {mdpi@toc@appendixsetup}}}
 ....\glue(\topskip) 1.36
 ....\hbox(8.64+0.204)x394.35522, glue set 167.3336fil, direction TLT
 .....\localpar

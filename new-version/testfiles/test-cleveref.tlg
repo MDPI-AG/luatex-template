@@ -11256,6 +11256,7 @@ Completed box being shipped out [5]
 ........\glue 0.0
 .......\glue 14.51074
 ....\write-{}
+....\write1{\@writefile{toc}{\protect \UseName {mdpi@toc@appendixsetup}}}
 ....\write1{\newlabel{app}{{4}{\thepage }{References to theorems}{Algorithm.2}{}}}
 ....\write1{\newlabel{app@cref}{{[appendix][0][2147483647]}{[1][5][]\thepage }{}{}{}}}
 ....\glue(\topskip) 1.36
