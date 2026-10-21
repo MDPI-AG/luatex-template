@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-17}
-\def\mdpiversion{v7.0u}
+\def\mdpidate{2026-10-21}
+\def\mdpiversion{v7.0v}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -74,6 +74,14 @@
 % \end{function}
 %
 % \subsection{Appendix}
+% \begin{function}{\appendixtitles}
+% \begin{syntax}
+% \cs{appendixtitles}\Arg{string}
+% \end{syntax}
+% If used with an non-empty argument the code assumes that the following
+% section has a title and a period is added to the number. Obsolete with
+% a \LaTeX{} 2026-11-01.
+% \end{function}
 % \begin{function}{\appendixstart}
 % This command is not needed anymore. The numbering is reset automatically in the
 % \cs{appendix} command.
@@ -150,7 +158,7 @@
 %    \begin{macrocode}
 \RequirePackage{inputnormalization}
 \Uinputnormalization=0
-\AddToHook{begindocument/end}{\Uinputnormalization=2}
+\AddToHook{begindocument/end}[mdpi/input]{\Uinputnormalization=2}
 %    \end{macrocode}
 % TODO: sans serif, typewriter?
 %    \begin{macrocode}
@@ -945,6 +953,7 @@
 % TODO: perhaps better use a list template type for better tagging
 %    \begin{macrocode}
 \setenotez{backref=true}
+\isBookContribution{}{\setenotez{totoc=section}}
 \DeclareInstance{enotez-list}{custom}{paragraph}
  {
    format   =\small\leftskip0.76cm,
@@ -1852,15 +1861,15 @@
 } % For Monograph, remove front part
 
 %%%%% Print maketitle and abstractkeywords
-\AddToHook{begindocument/end}{\calculateMyLen}
+\AddToHook{begindocument/end}[mdpi/maketitle]{\calculateMyLen}
 \ifthenelse{\equal{\@arttype}{Supfile}}{
-  \AfterEndPreamble{
+  \AddToHook{begindocument/end}[mdpi/maketitle]{
     \maketitle
     \let\maketitle\relax
     \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
     }%
   }{
-  \AfterEndPreamble{
+  \AddToHook{begindocument/end}[mdpi/maketitle]{
     \maketitle
     \let\maketitle\relax
     \maketitlen
@@ -1878,7 +1887,7 @@
 %    \end{macrocode}
 % Font size in Tables and watermark in arttype retraction
 %    \begin{macrocode}
-\AtEndPreamble{
+\AddToHook{begindocument/before}{
   \def\@tablesize{}
   \newcommand{\tablesize}[1]{\gdef\@tablesize{#1}}
   \let\oldtabularx\tabularx
@@ -2057,24 +2066,68 @@
 \newcommand{\backnotes}[2]{
 \vspace{6pt}\noindent{\small\textbf{#1:} {#2}\par}}
 
-%%%%% Defines the appendix
+%    \end{macrocode}
+% \subsection{Appendix}
+% In the appendix sections should use the prefix \cs{appendixname}.
+% If the section has no title the number has not dot, with title there should 
+% be a dot. This has been previously implemented with dedicated commands
+% that users need to set in the template but in the release 2026-11-01 this 
+% will be done automatically.
+% 
+% \begin{macro}{\appendixtitles}
+% This will be obsolete in 2026-11-01.
+%    \begin{macrocode}
 \def\@appendixtitles{}
 \newcommand{\appendixtitles}[1]{\gdef\@appendixtitles{#1}}
-
-\def\@appendixsections{}
-\newcommand{\appendixsections}[1]{\gdef\@appendixsections{#1}}
-
 %    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\appendixstart}
 % This command does nothing, but is kept for compatibility.
 %    \begin{macrocode}
 \newcommand{\appendixstart}{}
 %    \end{macrocode}
+% \end{macro}
 %
-%
+% \begin{macro}{\mdpi@toc@appendixsetup}
+% Table of contents of the appendix entries need a different setup. 
+% This is setup with a command inserted into the toc by the appendix.
+%    \begin{macrocode}
+\protected\def\mdpi@toc@appendixsetup
+  {
+    \let\numberline\mdpi@toc@appendix@numberline
+  }
+%    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\mdpi@toc@appendix@numberline,\mdpi@toc@appendix@numberline@aux}
+% The \cs{numberline} in the appendix should append the prefix, enlarge 
+% the place for the number, and check if there is a following title and if not
+% add a dot.
+%    \begin{macrocode}
+\newlength\mdpi@toc@appendix@len
+\AddToHook{begindocument/end}[mdpi/appendix]{\settowidth\mdpi@toc@appendix@len{\appendixname~}}
+\newcommand\mdpi@toc@appendix@numberline@aux[1]
+ {%
+   \hb@xt@\dimexpr\@tempdima+\mdpi@toc@appendix@len\relax{\appendixname~#1\hfil}
+ }
+\newcommand\mdpi@toc@appendix@numberline[1]
+  {%
+   \@ifnextchar\egroup
+    {\mdpi@toc@appendix@numberline@aux{#1}}
+    {\mdpi@toc@appendix@numberline@aux{#1.}}%
+  }
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\appendix}
 %    \begin{macrocode}
 \ExplSyntaxOn
 \renewcommand{\appendix}
  {
+  \par
+  \SaveLastSkip
+  \addtocontents{toc}{\protect\UseName{mdpi@toc@appendixsetup}} 
+  \RestoreLastSkip
   \gdef\thesection   {\AlphAlph{\value{section}}}%
   \clist_map_inline:nn
     {
@@ -2103,15 +2156,29 @@
      after-vspace=3pt,
      heading-decls=\raggedright\large\bfseries\boldmath,
     }
-  \clist_map_inline:nn {section,subsection,subsubsection}
-   {
-     \EditInstance{heading}{##1}
-      {
-        number-format=
-         \appendixname\nobreakspace\theheading
-         \tl_if_eq:NnT\@appendixtitles {yes}{.}
-      }
-   }
+%    \end{macrocode}
+% This command will only work in the next release 2026-11-01, so we have to test for
+% it now
+%    \begin{macrocode}
+\@ifundefined{IfBlankOrderItemTF}
+  {    
+    \clist_map_inline:nn {section,subsection,subsubsection}
+     {
+       \EditInstance{heading}{##1}
+        {
+          number-format=
+           \appendixname\nobreakspace\theheading
+           \tl_if_eq:NnT\@appendixtitles {yes}{.}
+        }
+     }
+  }
+  {
+    \clist_map_inline:nn {section,subsection,subsubsection}
+     {
+       \EditInstance{heading}{##1}{text=\appendixname,
+        number-format=\theheading\IfBlankOrderItemTF{title}{}{.\ }}       
+     }
+  } 
 %    \end{macrocode}
 % Reset the numbering in the appendix
 %    \begin{macrocode}
@@ -2139,6 +2206,7 @@
 }
   \ExplSyntaxOff
 %    \end{macrocode}
+% \end{macro}
 
 %    \begin{macrocode}
 %%%% Dimensions
