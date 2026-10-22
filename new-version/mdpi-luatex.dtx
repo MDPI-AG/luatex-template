@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-10-22}
-\def\mdpiversion{v7.0z}
+\def\mdpiversion{v7.1a}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -174,6 +174,10 @@
 %    \begin{macrocode}
 \RequirePackage{fontspec}
 \setmainfont{texgyrepagella}
+  [
+   NFSSFamily = tg-pagella,
+   FontFace   = {eb}{n} { Font = texgyrepagella-bold.otf, FakeBold=2 }
+  ]
 \RequirePackage{microtype} % provides also \textls[]{}
 %    \end{macrocode}
 %
@@ -209,6 +213,15 @@
   {<-> \UnicodeFontFile{texgyrepagella-math}{mode=base;script=math;language=dflt;ssty=2;}}{}
 \DeclareFontShape{TU}{tg-pagella-math-ssf}{b}{n}%
   {<-> s*[0.93]\UnicodeFontFile{texgyrepagella-math}{mode=base;script=math;language=dflt;embolden=3;ssty=2;}}{}
+%    \end{macrocode}
+% We overwrite the math alphabets at begin document (issue \#129)
+%    \begin{macrocode}
+\AtBeginDocument
+ {
+   \SetMathAlphabet\mathbf{normal}{TU}{tg-pagella}{bx}{n}
+   \SetMathAlphabet\mathbf{bold}{TU}{tg-pagella}{eb}{n}
+   \SetMathAlphabet\mathit{bold}{TU}{tg-pagella}{bx}{it}
+ }
 %    \end{macrocode}
 % Now define greek commands as replacement for the upgreek package: issue \#92
 % Various \cs{up}+lowercase greek:
@@ -942,6 +955,10 @@
 \AddToHook{begindocument/before}
   {
     \RequirePackage{bm}
+%    \end{macrocode}
+% bm 2026-10-05 v1.2h doesn't handle \cs{symup}:
+%    \begin{macrocode}
+    \pretocmd\bm@um@int@setup{\let\symup\widowpenalties}{}{}
     \mdpi@load@hyperref@cleveref
   }
 %    \end{macrocode}

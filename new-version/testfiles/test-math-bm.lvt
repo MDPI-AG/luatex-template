@@ -11,7 +11,9 @@
 \START\showoutput
 
 {\makeatletter \let\@@end\@@@end\makeatother
-$\bm \alpha$}
+$\bm \alpha$
+$\boldsymbol\Upgamma$
+}
 
 \SHOWPDFTAGS
 \end{document} 
