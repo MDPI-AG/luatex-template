@@ -37,11 +37,12 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfliteral page <lua data reference ...>
 ....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
@@ -818,27 +819,34 @@ Completed box being shipped out [1]
 ....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(8.04+0.204)x394.35522, glue set 171.85161fil, direction TLT
+....\hbox(8.04+0.204)x382.35522, glue set 171.85161fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(8.04+0.144)x12.0, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{section.1} xyz
-........\pdfdest name{section.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 1
-......\TU/texgyrepagella(0)/b/n/12 .
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
+.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(8.04+0.144)x0.0, glue set - 12.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(8.04+0.144)x12.0, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section.1} xyz
+.........\pdfdest name{section.1} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 1
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 s
@@ -860,13 +868,13 @@ Completed box being shipped out [1]
 ......\glue 394.35522
 ......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\kern-0.204
 ....\hbox(0.0+0.204)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\marks1{\__mark_value:nn {1}{\MakeUppercase    []{1\hskip 1em\relax section}}}
 ....\marks2{\__mark_value:nn {2}{}}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {1}section}{\thepage }{section.1}\protected@file@percent }}
@@ -881,27 +889,34 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 8.12401
-....\hbox(7.992+0.204)x394.35522, glue set 171.85161fil, direction TLT
+....\hbox(7.992+0.204)x382.35522, glue set 171.85161fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.92+0.144)x12.0, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{section.2} xyz
-........\pdfdest name{section.2} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 2
-......\TU/texgyrepagella(0)/b/n/12 .
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
+.....\write1{\new@label@record{heading*.1}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(7.92+0.144)x0.0, glue set - 12.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(7.92+0.144)x12.0, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section.2} xyz
+.........\pdfdest name{section.2} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 2
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 s
@@ -923,13 +938,13 @@ Completed box being shipped out [1]
 ......\glue 394.35522
 ......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\kern-0.204
 ....\hbox(0.0+0.204)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\marks1{\__mark_value:nn {3}{\MakeUppercase    []{2\hskip 1em\relax section}}}
 ....\penalty 10000
 ....\marks2{\__mark_value:nn {4}{}}
@@ -953,15 +968,18 @@ Completed box being shipped out [1]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\write1{\new@label@record{heading*.2}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\penalty 10000
+......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfdest name{paragraph*.1} xyz
-........\pdfdest name{paragraph*.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
+.........\pdfdest name{paragraph*.1} xyz
+.........\pdfdest name{paragraph*.1} xyz
+.........\penalty 10000
+.......\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/10 p
@@ -979,13 +997,13 @@ Completed box being shipped out [1]
 ......\glue 394.35522
 ......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 3
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{para}{\thepage }{paragraph*.1}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
@@ -1349,27 +1367,34 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.87001
-....\hbox(8.64+0.204)x394.35522, glue set 138.3356fil, direction TLT
+....\hbox(8.64+0.204)x382.35522, glue set 138.3356fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.92+0.204)x12.0, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{section.3} xyz
-........\pdfdest name{section.3} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 3
-......\TU/texgyrepagella(0)/b/n/12 .
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
+.....\write1{\new@label@record{heading*.3}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(7.92+0.204)x0.0, glue set - 12.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(7.92+0.204)x12.0, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section.3} xyz
+.........\pdfdest name{section.3} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 3
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 R
@@ -1410,13 +1435,13 @@ Completed box being shipped out [1]
 ......\glue 394.35522
 ......\hbox(3.28+0.05)x10.0, glue set 7.345fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 7
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\kern-0.204
 ....\hbox(0.0+0.204)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\marks1{\__mark_value:nn {5}{\MakeUppercase    []{3\hskip 1em\relax References to floats}}}
 ....\marks2{\__mark_value:nn {6}{}}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {3}References to floats}{\thepage }{section.3}\protected@file@percent }}
@@ -2566,11 +2591,12 @@ Completed box being shipped out [2]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfliteral page <lua data reference ...>
 ....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
@@ -3800,11 +3826,12 @@ Completed box being shipped out [3]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfliteral page <lua data reference ...>
 ....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
@@ -4017,7 +4044,7 @@ Completed box being shipped out [3]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set - 0.25278, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set >20000.0fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\penalty 10000
 ....\vbox(0.0+0.0)x0.0, direction TLT
@@ -4031,27 +4058,34 @@ Completed box being shipped out [3]
 .......\glue 14.51074
 ....\write-{}
 ....\glue(\topskip) 1.36
-....\hbox(8.64+0.204)x394.35522, glue set 127.5476fil, direction TLT
+....\hbox(8.64+0.204)x382.35522, glue set 127.5476fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(8.064+0.144)x12.0, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{section.4} xyz
-........\pdfdest name{section.4} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 4
-......\TU/texgyrepagella(0)/b/n/12 .
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
+.....\write1{\new@label@record{heading*.4}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(8.064+0.144)x0.0, glue set - 12.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(8.064+0.144)x12.0, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section.4} xyz
+.........\pdfdest name{section.4} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 4
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 R
@@ -4100,14 +4134,14 @@ Completed box being shipped out [3]
 ......\glue 394.35522
 ......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 1
 .......\TU/lmss/m/n/5 5
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\kern-0.204
 ....\hbox(0.0+0.204)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\marks1{\__mark_value:nn {7}{\MakeUppercase    []{4\hskip 1em\relax References to theorems}}}
 ....\marks2{\__mark_value:nn {8}{}}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {4}References to theorems}{\thepage }{section.4}\protected@file@percent }}
@@ -4148,10 +4182,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 r
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\TU/texgyrepagella(0)/b/n/10 m
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -4229,10 +4265,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 r
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\TU/texgyrepagella(0)/b/n/10 m
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -4383,12 +4421,12 @@ Completed box being shipped out [3]
 ....\kern-0.2
 ....\hbox(0.0+0.2)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Lemma.1} xyz
 ....\pdfdest name{Lemma.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Lemma:label1}{{1}{\thepage }{References to theorems}{Lemma.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -4412,10 +4450,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 m
 .....\TU/texgyrepagella(0)/b/n/10 m
 .....\TU/texgyrepagella(0)/b/n/10 a
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -4444,20 +4484,18 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -12.17
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -14.17 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 0.17
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Lemma.2} xyz
 ....\pdfdest name{Lemma.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Lemma:label2}{{2}{\thepage }{References to theorems}{Lemma.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -4481,10 +4519,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 m
 .....\TU/texgyrepagella(0)/b/n/10 m
 .....\TU/texgyrepagella(0)/b/n/10 a
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -4618,12 +4658,12 @@ Completed box being shipped out [3]
 ....\kern-0.2
 ....\hbox(0.0+0.2)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Corollary.1} xyz
 ....\pdfdest name{Corollary.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Corollary:label1}{{1}{\thepage }{References to theorems}{Corollary.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -4654,10 +4694,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 r
 .....\kern0.35 (font)
 .....\TU/texgyrepagella(0)/b/n/10 y
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -4695,20 +4737,18 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -14.76
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -16.76 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 2.76
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Corollary.2} xyz
 ....\pdfdest name{Corollary.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Corollary:label2}{{2}{\thepage }{References to theorems}{Corollary.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -4739,10 +4779,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 r
 .....\kern0.35 (font)
 .....\TU/texgyrepagella(0)/b/n/10 y
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -4900,12 +4942,12 @@ Completed box being shipped out [3]
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Proposition.1} xyz
 ....\pdfdest name{Proposition.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Proposition:label1}{{1}{\thepage }{References to theorems}{Proposition.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -4939,10 +4981,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -4982,20 +5026,18 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -14.76
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -16.76 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 2.76
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Proposition.2} xyz
 ....\pdfdest name{Proposition.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Proposition:label2}{{2}{\thepage }{References to theorems}{Proposition.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -5029,10 +5071,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -5195,12 +5239,12 @@ Completed box being shipped out [3]
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Characterization.1} xyz
 ....\pdfdest name{Characterization.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Characterization:label1}{{1}{\thepage }{References to theorems}{Characterization.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -5248,10 +5292,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -5305,20 +5351,18 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -12.18
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -14.18 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 0.18
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Characterization.2} xyz
 ....\pdfdest name{Characterization.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Characterization:label2}{{2}{\thepage }{References to theorems}{Characterization.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -5366,10 +5410,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -5574,12 +5620,12 @@ Completed box being shipped out [3]
 ....\kern-0.2
 ....\hbox(0.0+0.2)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Property.1} xyz
 ....\pdfdest name{Property.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Property:label1}{{1}{\thepage }{References to theorems}{Property.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -5609,10 +5655,12 @@ Completed box being shipped out [3]
 .....\kern0.25 (font)
 .....\TU/texgyrepagella(0)/b/n/10 t
 .....\TU/texgyrepagella(0)/b/n/10 y
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -5648,20 +5696,18 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -14.76
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -16.76 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 2.76
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Property.2} xyz
 ....\pdfdest name{Property.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Property:label2}{{2}{\thepage }{References to theorems}{Property.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -5691,10 +5737,12 @@ Completed box being shipped out [3]
 .....\kern0.25 (font)
 .....\TU/texgyrepagella(0)/b/n/10 t
 .....\TU/texgyrepagella(0)/b/n/10 y
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -5847,12 +5895,12 @@ Completed box being shipped out [3]
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Problem.1} xyz
 ....\pdfdest name{Problem.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Problem:label1}{{1}{\thepage }{References to theorems}{Problem.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -5880,10 +5928,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 l
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\TU/texgyrepagella(0)/b/n/10 m
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -5917,20 +5967,18 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -12.17
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -14.17 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 0.17
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Problem.2} xyz
 ....\pdfdest name{Problem.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Problem:label2}{{2}{\thepage }{References to theorems}{Problem.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -5958,10 +6006,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 l
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\TU/texgyrepagella(0)/b/n/10 m
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -6106,12 +6156,12 @@ Completed box being shipped out [3]
 ....\kern-0.2
 ....\hbox(0.0+0.2)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Example.1} xyz
 ....\pdfdest name{Example.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Example:label1}{{1}{\thepage }{References to theorems}{Example.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -6142,10 +6192,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 p
 .....\TU/texgyrepagella(0)/b/n/10 l
 .....\TU/texgyrepagella(0)/b/n/10 e
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -6181,20 +6233,18 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -14.76
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -16.76 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 2.76
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Example.2} xyz
 ....\pdfdest name{Example.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Example:label2}{{2}{\thepage }{References to theorems}{Example.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -6225,10 +6275,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 p
 .....\TU/texgyrepagella(0)/b/n/10 l
 .....\TU/texgyrepagella(0)/b/n/10 e
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -6381,12 +6433,12 @@ Completed box being shipped out [3]
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Remark.1} xyz
 ....\pdfdest name{Remark.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Remark:label1}{{1}{\thepage }{References to theorems}{Remark.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -6414,10 +6466,12 @@ Completed box being shipped out [3]
 .....\TU/texgyrepagella(0)/b/n/10 a
 .....\TU/texgyrepagella(0)/b/n/10 r
 .....\TU/texgyrepagella(0)/b/n/10 k
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -6451,84 +6505,9 @@ Completed box being shipped out [3]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -12.17
-....\penalty -51
-....\glue 0.17
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
-....\pdfdest name{Remark.2} xyz
-....\pdfdest name{Remark.2} xyz
-....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
-....\write1{\newlabel{Remark:label2}{{2}{\thepage }{References to theorems}{Remark.2}{}}}
-....\penalty 10000
-....\penalty 10000
-....\write1{\newlabel{Remark:label2@cref}{{[Remark][2][]2}{[1][3][]\thepage }{}{}{}}}
-....\penalty 10000
-....\penalty 10000
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 6.48
-....\hbox(7.33+0.17)x394.35522, glue set 296.21521fil, direction TLT
-.....\localpar
-......\localinterlinepenalty=0
-......\localbrokenpenalty=0
-......\localleftbox=null
-......\localrightbox=null
-.....\glue 0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/10 R
-.....\kern-0.1 (font)
-.....\TU/texgyrepagella(0)/b/n/10 e
-.....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 m
-.....\TU/texgyrepagella(0)/b/n/10 a
-.....\TU/texgyrepagella(0)/b/n/10 r
-.....\TU/texgyrepagella(0)/b/n/10 k
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/10  
-.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/b/n/10 2
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/10 .
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/10  
-.....\glue 2.5
-.....\penalty 0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/it/10 t
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/it/10 e
-.....\TU/texgyrepagella(0)/m/it/10 s
-.....\kern-0.2 (font)
-.....\TU/texgyrepagella(0)/m/it/10 t
-.....\TU/texgyrepagella(0)/m/it/10  
-.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/it/10 R
-.....\TU/texgyrepagella(0)/m/it/10 e
-.....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/it/10 -
-.....\TU/texgyrepagella(0)/m/it/10 m
-.....\TU/texgyrepagella(0)/m/it/10 a
-.....\TU/texgyrepagella(0)/m/it/10 r
-.....\kern-0.3 (font)
-.....\TU/texgyrepagella(0)/m/it/10 k
-.....\penalty 10000
-.....\kern-0.22 (right margin)
-.....\glue(\parfillskip) 0.0 plus 1.0fil
-.....\glue(\rightskip) 0.0
-....\glue -0.17
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -14.17 plus -1.0 minus -1.0
+....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
 ...\pdfliteral page <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
@@ -6682,11 +6661,12 @@ Completed box being shipped out [4]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfliteral page <lua data reference ...>
 ....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
@@ -6900,7 +6880,7 @@ Completed box being shipped out [4]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 283.62247fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 245.64653fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -6911,7 +6891,72 @@ Completed box being shipped out [4]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 14.51074
-....\glue(\topskip) 2.74
+....\pdfdest name{Remark.2} xyz
+....\pdfdest name{Remark.2} xyz
+....\write1{\newlabel{Remark:label2}{{2}{\thepage }{References to theorems}{Remark.2}{}}}
+....\write1{\newlabel{Remark:label2@cref}{{[Remark][2][]2}{[1][3][]\thepage }{}{}{}}}
+....\glue(\topskip) 2.67
+....\hbox(7.33+0.17)x394.35522, glue set 296.21521fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\glue 0.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/texgyrepagella(0)/b/n/10 R
+.....\kern-0.1 (font)
+.....\TU/texgyrepagella(0)/b/n/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/b/n/10 -
+.....\TU/texgyrepagella(0)/b/n/10 m
+.....\TU/texgyrepagella(0)/b/n/10 a
+.....\TU/texgyrepagella(0)/b/n/10 r
+.....\TU/texgyrepagella(0)/b/n/10 k
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/texgyrepagella(0)/b/n/10 2
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/texgyrepagella(0)/b/n/10 .
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue 2.5
+.....\penalty 0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/texgyrepagella(0)/m/it/10 t
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/it/10 e
+.....\TU/texgyrepagella(0)/m/it/10 s
+.....\kern-0.2 (font)
+.....\TU/texgyrepagella(0)/m/it/10 t
+.....\TU/texgyrepagella(0)/m/it/10  
+.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/m/it/10 R
+.....\TU/texgyrepagella(0)/m/it/10 e
+.....\discretionary (penalty 50)
+......< \TU/texgyrepagella(0)/m/it/10 -
+.....\TU/texgyrepagella(0)/m/it/10 m
+.....\TU/texgyrepagella(0)/m/it/10 a
+.....\TU/texgyrepagella(0)/m/it/10 r
+.....\kern-0.3 (font)
+.....\TU/texgyrepagella(0)/m/it/10 k
+.....\penalty 10000
+.....\kern-0.22 (right margin)
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\penalty -51
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 6.55
 ....\hbox(7.26+0.2)x394.35522, glue set 248.12569fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
@@ -7022,12 +7067,12 @@ Completed box being shipped out [4]
 ....\kern-0.2
 ....\hbox(0.0+0.2)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Definition.1} xyz
 ....\pdfdest name{Definition.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Definition:label1}{{1}{\thepage }{References to theorems}{Definition.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -7063,10 +7108,12 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -7107,20 +7154,18 @@ Completed box being shipped out [4]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -14.76
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -16.76 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 2.76
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Definition.2} xyz
 ....\pdfdest name{Definition.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Definition:label2}{{2}{\thepage }{References to theorems}{Definition.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -7156,10 +7201,12 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -7327,12 +7374,12 @@ Completed box being shipped out [4]
 ....\kern-0.2
 ....\hbox(0.0+0.2)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Hypothesis.1} xyz
 ....\pdfdest name{Hypothesis.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Hypothesis:label1}{{1}{\thepage }{References to theorems}{Hypothesis.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -7369,10 +7416,12 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 s
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 s
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -7414,20 +7463,18 @@ Completed box being shipped out [4]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -14.76
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -16.76 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 2.76
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Hypothesis.2} xyz
 ....\pdfdest name{Hypothesis.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Hypothesis:label2}{{2}{\thepage }{References to theorems}{Hypothesis.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -7464,10 +7511,12 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 s
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 s
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -7637,12 +7686,12 @@ Completed box being shipped out [4]
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Notation.1} xyz
 ....\pdfdest name{Notation.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Notation:label1}{{1}{\thepage }{References to theorems}{Notation.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -7675,10 +7724,12 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -7717,20 +7768,18 @@ Completed box being shipped out [4]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -12.17
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -14.17 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 0.17
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Notation.2} xyz
 ....\pdfdest name{Notation.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Notation:label2}{{2}{\thepage }{References to theorems}{Notation.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -7763,10 +7812,12 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -7926,12 +7977,12 @@ Completed box being shipped out [4]
 ....\kern-0.2
 ....\hbox(0.0+0.2)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Assumption.1} xyz
 ....\pdfdest name{Assumption.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Assumption:label1}{{1}{\thepage }{References to theorems}{Assumption.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -7966,10 +8017,12 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -8009,20 +8062,18 @@ Completed box being shipped out [4]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -14.76
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -16.76 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 2.76
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Assumption.2} xyz
 ....\pdfdest name{Assumption.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Assumption:label2}{{2}{\thepage }{References to theorems}{Assumption.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -8057,10 +8108,12 @@ Completed box being shipped out [4]
 .....\TU/texgyrepagella(0)/b/n/10 i
 .....\TU/texgyrepagella(0)/b/n/10 o
 .....\TU/texgyrepagella(0)/b/n/10 n
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -8225,12 +8278,12 @@ Completed box being shipped out [4]
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
 ....\penalty -51
-....\glue 12.0 plus 1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\pdfdest name{Algorithm.1} xyz
 ....\pdfdest name{Algorithm.1} xyz
 ....\penalty 10000
-....\glue -12.0 plus -1.0
-....\glue 12.0 plus 1.0
+....\glue -14.0 plus -2.0 minus -1.0
+....\glue 14.0 plus 2.0 minus 1.0
 ....\write1{\newlabel{Algorithm:label1}{{1}{\thepage }{References to theorems}{Algorithm.1}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -8265,10 +8318,12 @@ Completed box being shipped out [4]
 .....\kern0.2 (font)
 .....\TU/texgyrepagella(0)/b/n/10 h
 .....\TU/texgyrepagella(0)/b/n/10 m
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 1
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -8306,20 +8361,18 @@ Completed box being shipped out [4]
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
 ....\penalty -51
-....\glue 12.0
-....\glue -14.76
+....\glue 14.0 plus 1.0 minus 1.0
+....\glue -16.76 plus -1.0 minus -1.0
 ....\penalty -51
 ....\glue 2.76
-....\glue 12.0
-....\glue -12.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdfdest name{Algorithm.2} xyz
 ....\pdfdest name{Algorithm.2} xyz
 ....\penalty 10000
-....\glue -14.0 plus -2.0 minus -1.0
-....\glue 14.0 plus 2.0 minus 1.0
+....\glue -14.0 plus -1.0 minus -1.0
+....\glue 14.0 plus 1.0 minus 1.0
 ....\write1{\newlabel{Algorithm:label2}{{2}{\thepage }{References to theorems}{Algorithm.2}{}}}
 ....\penalty 10000
 ....\penalty 10000
@@ -8354,10 +8407,12 @@ Completed box being shipped out [4]
 .....\kern0.2 (font)
 .....\TU/texgyrepagella(0)/b/n/10 h
 .....\TU/texgyrepagella(0)/b/n/10 m
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\TU/texgyrepagella(0)/b/n/10  
+.....\glue -2.5
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/10 2
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
@@ -8673,63 +8728,63 @@ TEST 1: Show PDF Tags
    <Aside xmlns="http://iso.org/pdf2/ssn"
       id="ID.0011"
      >
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0012"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0013"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="End"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0014"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0015"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>Received:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0016"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0017"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>Accepted:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0018"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0019"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>Published:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0020"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0021"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
@@ -8745,14 +8800,14 @@ TEST 1: Show PDF Tags
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
       <?MarkedContent page="1" ?>.
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
    </Aside>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0023"
       rolemaps-to="Part"
      >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0024"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -8771,101 +8826,105 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0027"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
-     <?MarkedContent page="1" ?>
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0028"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>Article
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0029"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>TITLE
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0030"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>AUTHOR
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+   </semantic-para>
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0031"
       rolemaps-to="Part"
      >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0032"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>ADDRESS
-    </text>
-   </text-unit>
-   <Sect xmlns="http://iso.org/pdf2/ssn"
+    </text-block>
+   </semantic-para>
+   <section xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0033"
+      rolemaps-to="Sect"
      >
-    <section xmlns="https://www.latex-project.org/ns/dflt"
+    <section-heading xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0034"
        title="section"
        rolemaps-to="H1"
       >
-     <section-number xmlns="https://www.latex-project.org/ns/dflt"
+     <heading-number xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0035"
-        rolemaps-to="Span"
+        rolemaps-to="Lbl"
        >
-      <?MarkedContent page="1" ?>1. 
-     </section-number>
-     <?MarkedContent page="1" ?>section
-    </section>
-   </Sect>
-   <Sect xmlns="http://iso.org/pdf2/ssn"
+      <?MarkedContent page="1" ?>1.
+     </heading-number>
+     <?MarkedContent page="1" ?>  
+     <?MarkedContent page="1" ?>section1
+    </section-heading>
+   </section>
+   <section xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0036"
+      rolemaps-to="Sect"
      >
-    <section xmlns="https://www.latex-project.org/ns/dflt"
+    <section-heading xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0037"
        title="section"
        rolemaps-to="H1"
       >
-     <section-number xmlns="https://www.latex-project.org/ns/dflt"
+     <heading-number xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0038"
-        rolemaps-to="Span"
+        rolemaps-to="Lbl"
        >
-      <?MarkedContent page="1" ?>2. 
-     </section-number>
-     <?MarkedContent page="1" ?>section
-    </section>
-    <Sect xmlns="http://iso.org/pdf2/ssn"
+      <?MarkedContent page="1" ?>2.
+     </heading-number>
+     <?MarkedContent page="1" ?>  
+     <?MarkedContent page="1" ?>section2
+    </section-heading>
+    <paragraph xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0039"
+       rolemaps-to="Sect"
       >
-     <paragraph xmlns="https://www.latex-project.org/ns/dflt"
+     <paragraph-heading xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0040"
         title="para"
         rolemaps-to="H4"
        >
-      <?MarkedContent page="1" ?>para
-     </paragraph>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      <?MarkedContent page="1" ?>para3
+     </paragraph-heading>
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0041"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0042"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
@@ -8897,13 +8956,13 @@ TEST 1: Show PDF Tags
         <?MarkedContent page="1" ?>2
         <?ReferencedObject type="Annot" page="1" ?>
        </Link>
-      </text>
-     </text-unit>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      </text-block>
+     </semantic-para>
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0046"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0047"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
@@ -8917,13 +8976,13 @@ TEST 1: Show PDF Tags
         <?MarkedContent page="1" ?>2
         <?ReferencedObject type="Annot" page="1" ?>
        </Link>
-      </text>
-     </text-unit>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      </text-block>
+     </semantic-para>
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0049"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0050"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
@@ -8960,31 +9019,33 @@ TEST 1: Show PDF Tags
         <?MarkedContent page="1" ?>A.1.1
         <?ReferencedObject type="Annot" page="1" ?>
        </Link>
-      </text>
-     </text-unit>
-    </Sect>
-   </Sect>
-   <Sect xmlns="http://iso.org/pdf2/ssn"
+      </text-block>
+     </semantic-para>
+    </paragraph>
+   </section>
+   <section xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0055"
+      rolemaps-to="Sect"
      >
-    <section xmlns="https://www.latex-project.org/ns/dflt"
+    <section-heading xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0056"
        title="References to floats"
        rolemaps-to="H1"
       >
-     <section-number xmlns="https://www.latex-project.org/ns/dflt"
+     <heading-number xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0057"
-        rolemaps-to="Span"
+        rolemaps-to="Lbl"
        >
-      <?MarkedContent page="1" ?>3. 
-     </section-number>
-     <?MarkedContent page="1" ?>References to floats
-    </section>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+      <?MarkedContent page="1" ?>3.
+     </heading-number>
+     <?MarkedContent page="1" ?>  
+     <?MarkedContent page="1" ?>References to floats7
+    </section-heading>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0058"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0059"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9016,13 +9077,13 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="1" ?>2
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0063"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0064"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9054,13 +9115,13 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="1" ?>2
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0068"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0069"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9092,13 +9153,13 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="1" ?>2
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0073"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0074"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9130,13 +9191,13 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="1" ?>2
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0078"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0079"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9168,13 +9229,13 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="1" ?>2
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0083"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0084"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9206,13 +9267,13 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="1" ?>2
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0088"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0089"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9244,25 +9305,27 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="1" ?>2
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-     </text>
-    </text-unit>
-   </Sect>
-   <Sect xmlns="http://iso.org/pdf2/ssn"
+     </text-block>
+    </semantic-para>
+   </section>
+   <section xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0149"
+      rolemaps-to="Sect"
      >
-    <section xmlns="https://www.latex-project.org/ns/dflt"
+    <section-heading xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0150"
        title="References to theorems"
        rolemaps-to="H1"
       >
-     <section-number xmlns="https://www.latex-project.org/ns/dflt"
+     <heading-number xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0151"
-        rolemaps-to="Span"
+        rolemaps-to="Lbl"
        >
-      <?MarkedContent page="3" ?>4. 
-     </section-number>
-     <?MarkedContent page="3" ?>References to theorems
-    </section>
+      <?MarkedContent page="3" ?>4.
+     </heading-number>
+     <?MarkedContent page="3" ?>  
+     <?MarkedContent page="3" ?>References to theorems15
+    </section-heading>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0152"
        rolemaps-to="Sect"
@@ -9270,27 +9333,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0153"
        >
-      <?MarkedContent page="3" ?>Theorem
+      <?MarkedContent page="3" ?>Theorem  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0154"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0155"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0156"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Theorem
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0157"
@@ -9299,33 +9362,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0158"
        >
-      <?MarkedContent page="3" ?>Theorem
+      <?MarkedContent page="3" ?>Theorem  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0159"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="3" ?>2
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0160"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0161"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Theorem
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0162"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0163"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9357,8 +9420,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>2
        <?ReferencedObject type="Annot" page="3" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0167"
        rolemaps-to="Sect"
@@ -9366,27 +9429,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0168"
        >
-      <?MarkedContent page="3" ?>Lemma
+      <?MarkedContent page="3" ?>Lemma  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0169"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0170"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0171"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Lemma
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0172"
@@ -9395,33 +9458,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0173"
        >
-      <?MarkedContent page="3" ?>Lemma
+      <?MarkedContent page="3" ?>Lemma  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0174"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="3" ?>2
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0175"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0176"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Lemma
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0177"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0178"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9453,8 +9516,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>2
        <?ReferencedObject type="Annot" page="3" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0182"
        rolemaps-to="Sect"
@@ -9462,27 +9525,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0183"
        >
-      <?MarkedContent page="3" ?>Corollary
+      <?MarkedContent page="3" ?>Corollary  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0184"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0185"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0186"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Corollary
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0187"
@@ -9491,33 +9554,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0188"
        >
-      <?MarkedContent page="3" ?>Corollary
+      <?MarkedContent page="3" ?>Corollary  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0189"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="3" ?>2
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0190"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0191"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Corollary
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0192"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0193"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9549,8 +9612,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>2
        <?ReferencedObject type="Annot" page="3" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0197"
        rolemaps-to="Sect"
@@ -9558,27 +9621,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0198"
        >
-      <?MarkedContent page="3" ?>Proposition
+      <?MarkedContent page="3" ?>Proposition  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0199"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0200"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0201"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Proposition
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0202"
@@ -9587,33 +9650,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0203"
        >
-      <?MarkedContent page="3" ?>Proposition
+      <?MarkedContent page="3" ?>Proposition  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0204"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="3" ?>2
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0205"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0206"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Proposition
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0207"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0208"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9645,8 +9708,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>2
        <?ReferencedObject type="Annot" page="3" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0212"
        rolemaps-to="Sect"
@@ -9654,27 +9717,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0213"
        >
-      <?MarkedContent page="3" ?>Characterization
+      <?MarkedContent page="3" ?>Characterization  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0214"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0215"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0216"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Characterization
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0217"
@@ -9683,33 +9746,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0218"
        >
-      <?MarkedContent page="3" ?>Characterization
+      <?MarkedContent page="3" ?>Characterization  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0219"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="3" ?>2
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0220"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0221"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Characterization
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0222"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0223"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9741,8 +9804,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>2
        <?ReferencedObject type="Annot" page="3" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0227"
        rolemaps-to="Sect"
@@ -9750,27 +9813,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0228"
        >
-      <?MarkedContent page="3" ?>Property
+      <?MarkedContent page="3" ?>Property  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0229"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0230"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0231"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Property
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0232"
@@ -9779,33 +9842,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0233"
        >
-      <?MarkedContent page="3" ?>Property
+      <?MarkedContent page="3" ?>Property  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0234"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="3" ?>2
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0235"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0236"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Property
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0237"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0238"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9837,8 +9900,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>2
        <?ReferencedObject type="Annot" page="3" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0242"
        rolemaps-to="Sect"
@@ -9846,27 +9909,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0243"
        >
-      <?MarkedContent page="3" ?>Problem
+      <?MarkedContent page="3" ?>Problem  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0244"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0245"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0246"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Problem
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0247"
@@ -9875,33 +9938,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0248"
        >
-      <?MarkedContent page="3" ?>Problem
+      <?MarkedContent page="3" ?>Problem  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0249"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="3" ?>2
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0250"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0251"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Problem
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0252"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0253"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -9933,8 +9996,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>2
        <?ReferencedObject type="Annot" page="3" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0257"
        rolemaps-to="Sect"
@@ -9942,27 +10005,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0258"
        >
-      <?MarkedContent page="3" ?>Example
+      <?MarkedContent page="3" ?>Example  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0259"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0260"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0261"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Example
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0262"
@@ -9971,33 +10034,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0263"
        >
-      <?MarkedContent page="3" ?>Example
+      <?MarkedContent page="3" ?>Example  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0264"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="3" ?>2
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0265"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0266"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Example
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0267"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0268"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -10029,8 +10092,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>2
        <?ReferencedObject type="Annot" page="3" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0272"
        rolemaps-to="Sect"
@@ -10038,27 +10101,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0273"
        >
-      <?MarkedContent page="3" ?>Remark
+      <?MarkedContent page="3" ?>Remark  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0274"
         >
-       <?MarkedContent page="3" ?> 1
+       <?MarkedContent page="3" ?>1
       </Lbl>
       <?MarkedContent page="3" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0275"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0276"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="3" ?>test Remark
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0277"
@@ -10067,33 +10130,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0278"
        >
-      <?MarkedContent page="3" ?>Remark
+      <?MarkedContent page="4" ?>Remark  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0279"
         >
-       <?MarkedContent page="3" ?> 2
+       <?MarkedContent page="4" ?>2
       </Lbl>
-      <?MarkedContent page="3" ?>.
+      <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0280"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0281"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
-       <?MarkedContent page="3" ?>test Remark
-      </text>
-     </text-unit>
+       <?MarkedContent page="4" ?>test Remark
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0282"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0283"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -10125,8 +10188,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>2
        <?ReferencedObject type="Annot" page="4" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0287"
        rolemaps-to="Sect"
@@ -10134,27 +10197,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0288"
        >
-      <?MarkedContent page="4" ?>Definition
+      <?MarkedContent page="4" ?>Definition  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0289"
         >
-       <?MarkedContent page="4" ?> 1
+       <?MarkedContent page="4" ?>1
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0290"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0291"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Definition
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0292"
@@ -10163,33 +10226,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0293"
        >
-      <?MarkedContent page="4" ?>Definition
+      <?MarkedContent page="4" ?>Definition  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0294"
         >
-       <?MarkedContent page="4" ?> 2
+       <?MarkedContent page="4" ?>2
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0295"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0296"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Definition
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0297"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0298"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -10221,8 +10284,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>2
        <?ReferencedObject type="Annot" page="4" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0302"
        rolemaps-to="Sect"
@@ -10230,27 +10293,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0303"
        >
-      <?MarkedContent page="4" ?>Hypothesis
+      <?MarkedContent page="4" ?>Hypothesis  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0304"
         >
-       <?MarkedContent page="4" ?> 1
+       <?MarkedContent page="4" ?>1
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0305"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0306"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Hypothesis
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0307"
@@ -10259,33 +10322,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0308"
        >
-      <?MarkedContent page="4" ?>Hypothesis
+      <?MarkedContent page="4" ?>Hypothesis  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0309"
         >
-       <?MarkedContent page="4" ?> 2
+       <?MarkedContent page="4" ?>2
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0310"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0311"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Hypothesis
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0312"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0313"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -10317,8 +10380,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>2
        <?ReferencedObject type="Annot" page="4" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0317"
        rolemaps-to="Sect"
@@ -10326,27 +10389,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0318"
        >
-      <?MarkedContent page="4" ?>Notation
+      <?MarkedContent page="4" ?>Notation  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0319"
         >
-       <?MarkedContent page="4" ?> 1
+       <?MarkedContent page="4" ?>1
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0320"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0321"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Notation
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0322"
@@ -10355,33 +10418,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0323"
        >
-      <?MarkedContent page="4" ?>Notation
+      <?MarkedContent page="4" ?>Notation  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0324"
         >
-       <?MarkedContent page="4" ?> 2
+       <?MarkedContent page="4" ?>2
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0325"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0326"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Notation
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0327"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0328"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -10413,8 +10476,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>2
        <?ReferencedObject type="Annot" page="4" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0332"
        rolemaps-to="Sect"
@@ -10422,27 +10485,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0333"
        >
-      <?MarkedContent page="4" ?>Assumption
+      <?MarkedContent page="4" ?>Assumption  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0334"
         >
-       <?MarkedContent page="4" ?> 1
+       <?MarkedContent page="4" ?>1
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0335"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0336"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Assumption
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0337"
@@ -10451,33 +10514,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0338"
        >
-      <?MarkedContent page="4" ?>Assumption
+      <?MarkedContent page="4" ?>Assumption  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0339"
         >
-       <?MarkedContent page="4" ?> 2
+       <?MarkedContent page="4" ?>2
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0340"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0341"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Assumption
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0342"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0343"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -10509,8 +10572,8 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>2
        <?ReferencedObject type="Annot" page="4" ?>
       </Link>
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0347"
        rolemaps-to="Sect"
@@ -10518,27 +10581,27 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0348"
        >
-      <?MarkedContent page="4" ?>Algorithm
+      <?MarkedContent page="4" ?>Algorithm  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0349"
         >
-       <?MarkedContent page="4" ?> 1
+       <?MarkedContent page="4" ?>1
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0350"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0351"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Algorithm
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
     <theorem-like xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0352"
@@ -10547,33 +10610,33 @@ TEST 1: Show PDF Tags
      <Caption xmlns="http://iso.org/pdf2/ssn"
         id="ID.0353"
        >
-      <?MarkedContent page="4" ?>Algorithm
+      <?MarkedContent page="4" ?>Algorithm  
       <Lbl xmlns="http://iso.org/pdf2/ssn"
          id="ID.0354"
         >
-       <?MarkedContent page="4" ?> 2
+       <?MarkedContent page="4" ?>2
       </Lbl>
       <?MarkedContent page="4" ?>.
      </Caption>
-     <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0355"
         rolemaps-to="Part"
        >
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0356"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="4" ?>test Algorithm
-      </text>
-     </text-unit>
+      </text-block>
+     </semantic-para>
     </theorem-like>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0357"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0358"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
@@ -10605,60 +10668,69 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>2
        <?ReferencedObject type="Annot" page="4" ?>
       </Link>
-     </text>
-    </text-unit>
-   </Sect>
-   <Sect xmlns="http://iso.org/pdf2/ssn"
+     </text-block>
+    </semantic-para>
+   </section>
+   <section xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0362"
+      rolemaps-to="Sect"
      >
-    <section xmlns="https://www.latex-project.org/ns/dflt"
+    <section-heading xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0363"
        title="section"
        rolemaps-to="H1"
       >
-     <section-number xmlns="https://www.latex-project.org/ns/dflt"
+     <?MarkedContent page="5" ?>Appendix  
+     <heading-number xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0364"
-        rolemaps-to="Span"
+        rolemaps-to="Lbl"
        >
-      <?MarkedContent page="5" ?>Appendix A 
-     </section-number>
-     <?MarkedContent page="5" ?>section
-    </section>
-    <Sect xmlns="http://iso.org/pdf2/ssn"
+      <?MarkedContent page="5" ?>A. 
+     </heading-number>
+     <?MarkedContent page="5" ?> 
+     <?MarkedContent page="5" ?>section30
+    </section-heading>
+    <subsection xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0365"
+       rolemaps-to="Sect"
       >
-     <subsection xmlns="https://www.latex-project.org/ns/dflt"
+     <subsection-heading xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0366"
         title="subsection"
         rolemaps-to="H2"
        >
-      <section-number xmlns="https://www.latex-project.org/ns/dflt"
+      <?MarkedContent page="5" ?>Appendix  
+      <heading-number xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0367"
-         rolemaps-to="Span"
+         rolemaps-to="Lbl"
         >
-       <?MarkedContent page="5" ?>Appendix A.1 
-      </section-number>
-      <?MarkedContent page="5" ?>subsection
-     </subsection>
-     <Sect xmlns="http://iso.org/pdf2/ssn"
+       <?MarkedContent page="5" ?>A.1. 
+      </heading-number>
+      <?MarkedContent page="5" ?> 
+      <?MarkedContent page="5" ?>subsection31
+     </subsection-heading>
+     <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0368"
+        rolemaps-to="Sect"
        >
-      <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
+      <subsubsection-heading xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0369"
          title="subsubsection"
          rolemaps-to="H3"
         >
-       <section-number xmlns="https://www.latex-project.org/ns/dflt"
+       <?MarkedContent page="5" ?>Appendix  
+       <heading-number xmlns="https://www.latex-project.org/ns/dflt"
           id="ID.0370"
-          rolemaps-to="Span"
+          rolemaps-to="Lbl"
          >
-        <?MarkedContent page="5" ?>Appendix A.1.1 
-       </section-number>
-       <?MarkedContent page="5" ?>subsubsection
-      </subsubsection>
-     </Sect>
-    </Sect>
-   </Sect>
+        <?MarkedContent page="5" ?>A.1.1. 
+       </heading-number>
+       <?MarkedContent page="5" ?> 
+       <?MarkedContent page="5" ?>subsubsection32
+      </subsubsection-heading>
+     </subsubsection>
+    </subsection>
+   </section>
    <figures xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0004"
       rolemaps-to="Sect"
@@ -10675,14 +10747,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Figure 1. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0096"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="1" ?>a figure
-      </text>
+      </text-block>
      </Caption>
     </float>
     <float xmlns="https://www.latex-project.org/ns/dflt"
@@ -10697,14 +10769,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Figure 2. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0100"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a figure
-      </text>
+      </text-block>
      </Caption>
     </float>
    </figures>
@@ -10724,14 +10796,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Table 1. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0104"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a table
-      </text>
+      </text-block>
      </Caption>
     </float>
     <float xmlns="https://www.latex-project.org/ns/dflt"
@@ -10746,14 +10818,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Table 2. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0108"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a table
-      </text>
+      </text-block>
      </Caption>
     </float>
    </tables>
@@ -10772,14 +10844,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Listing 1. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0112"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a listing
-      </text>
+      </text-block>
      </Caption>
     </float>
     <float xmlns="https://www.latex-project.org/ns/dflt"
@@ -10794,14 +10866,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Listing 2. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0116"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a listing
-      </text>
+      </text-block>
      </Caption>
     </float>
    </Sect>
@@ -10820,14 +10892,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Box 1. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0144"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a boxenv
-      </text>
+      </text-block>
      </Caption>
     </float>
     <float xmlns="https://www.latex-project.org/ns/dflt"
@@ -10842,14 +10914,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Box 2. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0148"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a boxenv
-      </text>
+      </text-block>
      </Caption>
     </float>
    </Sect>
@@ -10868,14 +10940,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Chart 1. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0128"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a chart
-      </text>
+      </text-block>
      </Caption>
     </float>
     <float xmlns="https://www.latex-project.org/ns/dflt"
@@ -10890,14 +10962,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Chart 2. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0132"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a chart
-      </text>
+      </text-block>
      </Caption>
     </float>
    </Sect>
@@ -10916,14 +10988,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Scheme 1. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0120"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a scheme
-      </text>
+      </text-block>
      </Caption>
     </float>
     <float xmlns="https://www.latex-project.org/ns/dflt"
@@ -10938,14 +11010,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Scheme 2. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0124"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a scheme
-      </text>
+      </text-block>
      </Caption>
     </float>
    </Sect>
@@ -10964,14 +11036,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Graph 1. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0136"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a graph
-      </text>
+      </text-block>
      </Caption>
     </float>
     <float xmlns="https://www.latex-project.org/ns/dflt"
@@ -10986,14 +11058,14 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="2" ?>Graph 2. 
       </Lbl>
-      <text xmlns="https://www.latex-project.org/ns/dflt"
+      <text-block xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0140"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
         >
        <?MarkedContent page="2" ?>a graph
-      </text>
+      </text-block>
      </Caption>
     </float>
    </Sect>
@@ -11027,11 +11099,12 @@ Completed box being shipped out [5]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfliteral page <lua data reference ...>
 ....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
@@ -11260,39 +11333,53 @@ Completed box being shipped out [5]
 ....\write1{\newlabel{app}{{4}{\thepage }{References to theorems}{Algorithm.2}{}}}
 ....\write1{\newlabel{app@cref}{{[appendix][0][2147483647]}{[1][5][]\thepage }{}{}{}}}
 ....\glue(\topskip) 1.36
-....\hbox(8.64+3.096)x394.35522, glue set 142.8536fil, direction TLT
+....\hbox(8.64+3.096)x318.23923, glue set 139.79361fil, shifted 76.116, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(8.64+3.096)x69.996, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{appendix.A} xyz
-........\pdfdest name{appendix.A} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 A
-......\TU/texgyrepagella(0)/b/n/12 p
-......\discretionary (penalty 50)
-.......< \TU/texgyrepagella(0)/b/n/12 -
-......\TU/texgyrepagella(0)/b/n/12 p
-......\TU/texgyrepagella(0)/b/n/12 e
-......\TU/texgyrepagella(0)/b/n/12 n
-......\TU/texgyrepagella(0)/b/n/12 d
-......\TU/texgyrepagella(0)/b/n/12 i
-......\TU/texgyrepagella(0)/b/n/12 x
-......\penalty 10000
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
-......\TU/texgyrepagella(0)/b/n/12 A
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
+.....\write1{\new@label@record{heading*.5}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(8.64+3.096)x0.0, glue set - 76.116fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(8.64+3.096)x76.116, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{appendix.A} xyz
+.........\pdfdest name{appendix.A} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 A
+.......\TU/texgyrepagella(0)/b/n/12 p
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/b/n/12 -
+.......\TU/texgyrepagella(0)/b/n/12 p
+.......\TU/texgyrepagella(0)/b/n/12 e
+.......\TU/texgyrepagella(0)/b/n/12 n
+.......\TU/texgyrepagella(0)/b/n/12 d
+.......\TU/texgyrepagella(0)/b/n/12 i
+.......\TU/texgyrepagella(0)/b/n/12 x
+.......\penalty 10000
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 A
+.......\kern0.12 (font)
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 s
@@ -11314,14 +11401,14 @@ Completed box being shipped out [5]
 ......\glue 394.35522
 ......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\kern-3.096
 ....\hbox(0.0+3.096)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\marks1{\__mark_value:nn {9}{\MakeUppercase    []{A\hskip 1em\relax section}}}
 ....\marks2{\__mark_value:nn {10}{}}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {A}section}{\thepage }{appendix.A}\protected@file@percent }}
@@ -11336,41 +11423,54 @@ Completed box being shipped out [5]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.554
-....\hbox(7.33+2.76)x394.35522, glue set 146.5726fil, direction TLT
+....\hbox(7.33+2.76)x330.18523, glue set 144.0726fil, shifted 64.17, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.33+2.76)x59.17, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsection.A.1} xyz
-........\pdfdest name{subsection.A.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/m/it/10 A
-......\TU/texgyrepagella(0)/m/it/10 p
-......\discretionary (penalty 50)
-.......< \TU/texgyrepagella(0)/m/it/10 -
-......\TU/texgyrepagella(0)/m/it/10 p
-......\TU/texgyrepagella(0)/m/it/10 e
-......\TU/texgyrepagella(0)/m/it/10 n
-......\TU/texgyrepagella(0)/m/it/10 d
-......\TU/texgyrepagella(0)/m/it/10 i
-......\TU/texgyrepagella(0)/m/it/10 x
-......\penalty 10000
-......\TU/texgyrepagella(0)/m/it/10  
-......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-......\TU/texgyrepagella(0)/m/it/10 A
-......\TU/texgyrepagella(0)/m/it/10 .
-......\TU/texgyrepagella(0)/m/it/10 1
-......\TU/texgyrepagella(0)/m/it/10  
-......\glue 0.0 plus 1.25 minus 0.83333
+.....\write1{\new@label@record{heading*.6}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(7.33+2.76)x0.0, glue set - 64.17fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(7.33+2.76)x64.17, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
+.........\pdfdest name{subsection.A.1} xyz
+.........\pdfdest name{subsection.A.1} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10 A
+.......\TU/texgyrepagella(0)/m/it/10 p
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/it/10 -
+.......\TU/texgyrepagella(0)/m/it/10 p
+.......\TU/texgyrepagella(0)/m/it/10 e
+.......\TU/texgyrepagella(0)/m/it/10 n
+.......\TU/texgyrepagella(0)/m/it/10 d
+.......\TU/texgyrepagella(0)/m/it/10 i
+.......\TU/texgyrepagella(0)/m/it/10 x
+.......\penalty 10000
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue -2.5
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10 A
+.......\TU/texgyrepagella(0)/m/it/10 .
+.......\TU/texgyrepagella(0)/m/it/10 1
+.......\TU/texgyrepagella(0)/m/it/10 .
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue -2.5
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/it/10 s
@@ -11397,14 +11497,14 @@ Completed box being shipped out [5]
 ......\glue 394.35522
 ......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 1
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\kern-2.76
 ....\hbox(0.0+2.76)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\marks2{\__mark_value:nn {11}{A.1\hskip 1em\relax subsection}}
 ....\penalty 10000
 ....\marks3{\__mark_value:nn {12}{A.1\hskip 1em\relax subsection}}
@@ -11422,44 +11522,57 @@ Completed box being shipped out [5]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.96
-....\hbox(7.26+2.81)x394.35522, glue set 129.89761fil, direction TLT
+....\hbox(7.26+2.81)x317.27524, glue set 127.39761fil, shifted 77.07999, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.26+2.81)x72.07999, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsubsection.A.1.1} xyz
-........\pdfdest name{subsubsection.A.1.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/m/n/10 A
-......\TU/texgyrepagella(0)/m/n/10 p
-......\discretionary (penalty 50)
-.......< \TU/texgyrepagella(0)/m/n/10 -
-......\TU/texgyrepagella(0)/m/n/10 p
-......\TU/texgyrepagella(0)/m/n/10 e
-......\TU/texgyrepagella(0)/m/n/10 n
-......\TU/texgyrepagella(0)/m/n/10 d
-......\TU/texgyrepagella(0)/m/n/10 i
-......\TU/texgyrepagella(0)/m/n/10 x
-......\penalty 10000
-......\TU/texgyrepagella(0)/m/n/10  
-......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-......\TU/texgyrepagella(0)/m/n/10 A
-......\kern-0.25 (font)
-......\TU/texgyrepagella(0)/m/n/10 .
-......\TU/texgyrepagella(0)/m/n/10 1
-......\TU/texgyrepagella(0)/m/n/10 .
-......\TU/texgyrepagella(0)/m/n/10 1
-......\TU/texgyrepagella(0)/m/n/10  
-......\glue 0.0 plus 1.25 minus 0.83333
+.....\write1{\new@label@record{heading*.7}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(7.26+2.81)x0.0, glue set - 77.07999fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(7.26+2.81)x77.07999, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
+.........\pdfdest name{subsubsection.A.1.1} xyz
+.........\pdfdest name{subsubsection.A.1.1} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/10 A
+.......\TU/texgyrepagella(0)/m/n/10 p
+.......\discretionary (penalty 50)
+........< \TU/texgyrepagella(0)/m/n/10 -
+.......\TU/texgyrepagella(0)/m/n/10 p
+.......\TU/texgyrepagella(0)/m/n/10 e
+.......\TU/texgyrepagella(0)/m/n/10 n
+.......\TU/texgyrepagella(0)/m/n/10 d
+.......\TU/texgyrepagella(0)/m/n/10 i
+.......\TU/texgyrepagella(0)/m/n/10 x
+.......\penalty 10000
+.......\TU/texgyrepagella(0)/m/n/10  
+.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.......\TU/texgyrepagella(0)/m/n/10  
+.......\glue -2.5
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/10 A
+.......\kern-0.25 (font)
+.......\TU/texgyrepagella(0)/m/n/10 .
+.......\TU/texgyrepagella(0)/m/n/10 1
+.......\TU/texgyrepagella(0)/m/n/10 .
+.......\TU/texgyrepagella(0)/m/n/10 1
+.......\TU/texgyrepagella(0)/m/n/10 .
+.......\TU/texgyrepagella(0)/m/n/10  
+.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/n/10  
+.......\glue -2.5
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/10 s
@@ -11491,14 +11604,14 @@ Completed box being shipped out [5]
 ......\glue 394.35522
 ......\hbox(3.385+0.105)x10.0, glue set 4.69fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
 .......\TU/lmss/m/n/5 3
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
 ....\kern-2.81
 ....\hbox(0.0+2.81)x0.0, direction TLT
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{\protect \numberline {A.1.1}subsubsection}{\thepage }{subsubsection.A.1.1}\protected@file@percent }}
 ....\penalty 10000
 ....\penalty 10000
@@ -11666,7 +11779,7 @@ MathML statistic
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
 (tagpdf)             Writing out ~371 structure objects
-(tagpdf)             with ~348 'MC' leaf nodes.
+(tagpdf)             with ~360 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

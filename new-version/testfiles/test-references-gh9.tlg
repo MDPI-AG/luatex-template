@@ -55,6 +55,7 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
@@ -276,14 +277,17 @@ Completed box being shipped out [1]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\penalty 10000
+......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfdest name{section*.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section*.1} xyz
+.........\penalty 10000
+.......\kern0.0
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 R
 .....\kern-0.12 (font)

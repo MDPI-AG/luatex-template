@@ -4,9 +4,10 @@ module   = "mdpi"
 
 -- with this we can test with lualatex-dev
 specialformats = specialformats or {}
+
 specialformats["latex"] = specialformats["latex"] or
   {
---    luatex     = {binary="luahbtex",format = "lualatex-dev"},
+    luatex     = {binary="luahbtex",format = "lualatex-dev"},
   }
 
 forcecheckruns=true

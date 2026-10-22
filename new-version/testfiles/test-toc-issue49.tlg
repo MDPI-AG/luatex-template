@@ -16,11 +16,12 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfliteral page <lua data reference ...>
 ....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
@@ -858,15 +859,18 @@ Completed box being shipped out [1]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\penalty 10000
+......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfdest name{section*.1} xyz
-........\pdfdest name{section*.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section*.1} xyz
+.........\pdfdest name{section*.1} xyz
+.........\penalty 10000
+.......\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 C
@@ -1287,27 +1291,36 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 7.48001
-....\hbox(8.64+0.204)x394.35522, glue set 181.84761fil, direction TLT
+....\hbox(8.64+0.204)x382.35522, glue set 181.84761fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(8.04+0.144)x12.0, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{section.1} xyz
-........\pdfdest name{section.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 1
-......\TU/texgyrepagella(0)/b/n/12 .
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\write1{\new@label@record{heading*.1}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(8.04+0.144)x0.0, glue set - 12.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(8.04+0.144)x12.0, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section.1} xyz
+.........\pdfdest name{section.1} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 1
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 a
@@ -1326,29 +1339,36 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.446
-....\hbox(7.33+0.11)x394.35522, glue set 175.46262fil, direction TLT
+....\hbox(7.33+0.11)x376.85522, glue set 175.46262fil, shifted 17.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.99+0.05)x17.5, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsection.1.1} xyz
-........\pdfdest name{subsection.1.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/m/it/10 1
-......\TU/texgyrepagella(0)/m/it/10 .
-......\TU/texgyrepagella(0)/m/it/10 1
-......\TU/texgyrepagella(0)/m/it/10 .
-......\TU/texgyrepagella(0)/m/it/10  
-......\glue 0.0 plus 1.25 minus 0.83333
+.....\write1{\new@label@record{heading*.2}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(6.99+0.05)x0.0, glue set - 17.5fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(6.99+0.05)x17.5, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
+.........\pdfdest name{subsection.1.1} xyz
+.........\pdfdest name{subsection.1.1} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10 1
+.......\TU/texgyrepagella(0)/m/it/10 .
+.......\TU/texgyrepagella(0)/m/it/10 1
+.......\TU/texgyrepagella(0)/m/it/10 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue -2.5
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/it/10 s
@@ -1375,29 +1395,36 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.54
-....\hbox(7.33+0.11)x394.35522, glue set 175.46262fil, direction TLT
+....\hbox(7.33+0.11)x376.85522, glue set 175.46262fil, shifted 17.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.99+0.05)x17.5, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsection.1.2} xyz
-........\pdfdest name{subsection.1.2} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/m/it/10 1
-......\TU/texgyrepagella(0)/m/it/10 .
-......\TU/texgyrepagella(0)/m/it/10 2
-......\TU/texgyrepagella(0)/m/it/10 .
-......\TU/texgyrepagella(0)/m/it/10  
-......\glue 0.0 plus 1.25 minus 0.83333
+.....\write1{\new@label@record{heading*.3}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(6.99+0.05)x0.0, glue set - 17.5fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(6.99+0.05)x17.5, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
+.........\pdfdest name{subsection.1.2} xyz
+.........\pdfdest name{subsection.1.2} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10 1
+.......\TU/texgyrepagella(0)/m/it/10 .
+.......\TU/texgyrepagella(0)/m/it/10 2
+.......\TU/texgyrepagella(0)/m/it/10 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue -2.5
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/it/10 s
@@ -1424,29 +1451,36 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.54
-....\hbox(7.33+0.11)x394.35522, glue set 175.46262fil, direction TLT
+....\hbox(7.33+0.11)x376.85522, glue set 175.46262fil, shifted 17.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.99+0.11)x17.5, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{subsection.1.3} xyz
-........\pdfdest name{subsection.1.3} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/m/it/10 1
-......\TU/texgyrepagella(0)/m/it/10 .
-......\TU/texgyrepagella(0)/m/it/10 3
-......\TU/texgyrepagella(0)/m/it/10 .
-......\TU/texgyrepagella(0)/m/it/10  
-......\glue 0.0 plus 1.25 minus 0.83333
+.....\write1{\new@label@record{heading*.4}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(6.99+0.11)x0.0, glue set - 17.5fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(6.99+0.11)x17.5, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
+.........\pdfdest name{subsection.1.3} xyz
+.........\pdfdest name{subsection.1.3} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10 1
+.......\TU/texgyrepagella(0)/m/it/10 .
+.......\TU/texgyrepagella(0)/m/it/10 3
+.......\TU/texgyrepagella(0)/m/it/10 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.......\TU/texgyrepagella(0)/m/it/10  
+.......\glue -2.5
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/it/10 s
@@ -1473,27 +1507,34 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 7.57
-....\hbox(8.64+0.204)x394.35522, glue set 181.84761fil, direction TLT
+....\hbox(8.64+0.204)x382.35522, glue set 181.84761fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.92+0.144)x12.0, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{section.2} xyz
-........\pdfdest name{section.2} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 2
-......\TU/texgyrepagella(0)/b/n/12 .
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
+.....\write1{\new@label@record{heading*.5}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(7.92+0.144)x0.0, glue set - 12.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(7.92+0.144)x12.0, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section.2} xyz
+.........\pdfdest name{section.2} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 2
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 a
@@ -1515,27 +1556,34 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 7.47601
-....\hbox(8.64+0.204)x394.35522, glue set 181.84761fil, direction TLT
+....\hbox(8.64+0.204)x382.35522, glue set 181.84761fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.92+0.204)x12.0, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfdest name{section.3} xyz
-........\pdfdest name{section.3} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 3
-......\TU/texgyrepagella(0)/b/n/12 .
-......\TU/texgyrepagella(0)/b/n/12  
-......\glue 0.0 plus 1.5 minus 1.0
+.....\write1{\new@label@record{heading*.6}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(7.92+0.204)x0.0, glue set - 12.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(7.92+0.204)x12.0, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section.3} xyz
+.........\pdfdest name{section.3} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12 3
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.......\TU/texgyrepagella(0)/b/n/12  
+.......\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/b/n/12 a
@@ -1751,7 +1799,7 @@ MathML statistic
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
 (tagpdf)             Writing out ~77 structure objects
-(tagpdf)             with ~70 'MC' leaf nodes.
+(tagpdf)             with ~78 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

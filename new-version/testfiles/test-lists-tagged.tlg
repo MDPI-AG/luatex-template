@@ -12,18 +12,18 @@ TEST 1: Show PDF Tags
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"
     >
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.011"
       rolemaps-to="Part"
      >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.012"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
-    </text>
+    </text-block>
     <itemize xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.013"
        xmlns:List="http://iso.org/pdf/ssn/List"
@@ -44,19 +44,19 @@ TEST 1: Show PDF Tags
          id="ID.016"
          rolemaps-to="LBody"
         >
-       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
           id="ID.017"
           rolemaps-to="Part"
          >
-        <text xmlns="https://www.latex-project.org/ns/dflt"
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
            id="ID.018"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
           >
          <?MarkedContent page="1" ?>Point 1
-        </text>
-       </text-unit>
+        </text-block>
+       </semantic-para>
       </itembody>
      </item>
      <item xmlns="https://www.latex-project.org/ns/dflt"
@@ -73,11 +73,11 @@ TEST 1: Show PDF Tags
          id="ID.021"
          rolemaps-to="LBody"
         >
-       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
           id="ID.022"
           rolemaps-to="Part"
          >
-        <text xmlns="https://www.latex-project.org/ns/dflt"
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
            id="ID.023"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
@@ -85,7 +85,7 @@ TEST 1: Show PDF Tags
           >
          <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
          <?MarkedContent page="1" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-        </text>
+        </text-block>
         <itemize xmlns="https://www.latex-project.org/ns/dflt"
            id="ID.024"
            xmlns:List="http://iso.org/pdf/ssn/List"
@@ -106,19 +106,19 @@ TEST 1: Show PDF Tags
              id="ID.027"
              rolemaps-to="LBody"
             >
-           <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+           <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
               id="ID.028"
               rolemaps-to="Part"
              >
-            <text xmlns="https://www.latex-project.org/ns/dflt"
+            <text-block xmlns="https://www.latex-project.org/ns/dflt"
                id="ID.029"
                xmlns:Layout="http://iso.org/pdf/ssn/Layout"
                Layout:TextAlign="Justify"
                rolemaps-to="P"
               >
              <?MarkedContent page="1" ?>Point 1
-            </text>
-           </text-unit>
+            </text-block>
+           </semantic-para>
           </itembody>
          </item>
          <item xmlns="https://www.latex-project.org/ns/dflt"
@@ -135,11 +135,11 @@ TEST 1: Show PDF Tags
              id="ID.032"
              rolemaps-to="LBody"
             >
-           <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+           <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
               id="ID.033"
               rolemaps-to="Part"
              >
-            <text xmlns="https://www.latex-project.org/ns/dflt"
+            <text-block xmlns="https://www.latex-project.org/ns/dflt"
                id="ID.034"
                xmlns:Layout="http://iso.org/pdf/ssn/Layout"
                Layout:TextAlign="Justify"
@@ -147,17 +147,17 @@ TEST 1: Show PDF Tags
               >
              <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mau
              <?MarkedContent page="1" ?>ris.
-            </text>
-           </text-unit>
+            </text-block>
+           </semantic-para>
           </itembody>
          </item>
         </itemize>
-       </text-unit>
+       </semantic-para>
       </itembody>
      </item>
     </itemize>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+   </semantic-para>
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.035"
       rolemaps-to="Part"
      >
@@ -181,19 +181,19 @@ TEST 1: Show PDF Tags
          id="ID.039"
          rolemaps-to="LBody"
         >
-       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
           id="ID.040"
           rolemaps-to="Part"
          >
-        <text xmlns="https://www.latex-project.org/ns/dflt"
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
            id="ID.041"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
           >
          <?MarkedContent page="1" ?>Point 1
-        </text>
-       </text-unit>
+        </text-block>
+       </semantic-para>
       </itembody>
      </item>
      <item xmlns="https://www.latex-project.org/ns/dflt"
@@ -210,11 +210,11 @@ TEST 1: Show PDF Tags
          id="ID.044"
          rolemaps-to="LBody"
         >
-       <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
           id="ID.045"
           rolemaps-to="Part"
          >
-        <text xmlns="https://www.latex-project.org/ns/dflt"
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
            id="ID.046"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
@@ -222,7 +222,7 @@ TEST 1: Show PDF Tags
           >
          <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
          <?MarkedContent page="1" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
-        </text>
+        </text-block>
         <enumerate xmlns="https://www.latex-project.org/ns/dflt"
            id="ID.047"
            xmlns:List="http://iso.org/pdf/ssn/List"
@@ -243,19 +243,19 @@ TEST 1: Show PDF Tags
              id="ID.050"
              rolemaps-to="LBody"
             >
-           <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+           <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
               id="ID.051"
               rolemaps-to="Part"
              >
-            <text xmlns="https://www.latex-project.org/ns/dflt"
+            <text-block xmlns="https://www.latex-project.org/ns/dflt"
                id="ID.052"
                xmlns:Layout="http://iso.org/pdf/ssn/Layout"
                Layout:TextAlign="Justify"
                rolemaps-to="P"
               >
              <?MarkedContent page="1" ?>Point 1
-            </text>
-           </text-unit>
+            </text-block>
+           </semantic-para>
           </itembody>
          </item>
          <item xmlns="https://www.latex-project.org/ns/dflt"
@@ -272,11 +272,11 @@ TEST 1: Show PDF Tags
              id="ID.055"
              rolemaps-to="LBody"
             >
-           <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+           <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
               id="ID.056"
               rolemaps-to="Part"
              >
-            <text xmlns="https://www.latex-project.org/ns/dflt"
+            <text-block xmlns="https://www.latex-project.org/ns/dflt"
                id="ID.057"
                xmlns:Layout="http://iso.org/pdf/ssn/Layout"
                Layout:TextAlign="Justify"
@@ -284,16 +284,16 @@ TEST 1: Show PDF Tags
               >
              <?MarkedContent page="1" ?>Point 2 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mau
              <?MarkedContent page="1" ?>ris.
-            </text>
-           </text-unit>
+            </text-block>
+           </semantic-para>
           </itembody>
          </item>
         </enumerate>
-       </text-unit>
+       </semantic-para>
       </itembody>
      </item>
     </enumerate>
-   </text-unit>
+   </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
       id="ID.058"
       title="Ignored link annotations"
@@ -362,11 +362,12 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfliteral page <lua data reference ...>
 ....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
