@@ -12,11 +12,11 @@ TEST 1: Show PDF Tags
    <Aside xmlns="http://iso.org/pdf2/ssn"
       id="ID.011"
      >
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.012"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.013"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="End"
@@ -35,52 +35,52 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="1" ?>
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.016"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.017"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>Received:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.018"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.019"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>Accepted:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.020"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.021"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>Published:
-     </text>
-    </text-unit>
-    <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.022"
        rolemaps-to="Part"
       >
-     <text xmlns="https://www.latex-project.org/ns/dflt"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.023"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
@@ -96,14 +96,14 @@ TEST 1: Show PDF Tags
        <?ReferencedObject type="Annot" page="1" ?>
       </Link>
       <?MarkedContent page="1" ?>.
-     </text>
-    </text-unit>
+     </text-block>
+    </semantic-para>
    </Aside>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.025"
       rolemaps-to="Part"
      >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.026"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -135,45 +135,45 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.031"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
-     <?MarkedContent page="1" ?>
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.032"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>Article
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.033"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>TITLE
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.034"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>Firstname Lastname 
-     <Span xmlns="http://iso.org/pdf2/ssn"
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.035"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
+        rolemaps-to="Span"
        >
       <?MarkedContent page="1" ?>1
-     </Span>
+     </text-fragment>
      <Link xmlns="http://iso.org/pdf2/ssn"
         id="ID.036"
        >
@@ -188,59 +188,63 @@ TEST 1: Show PDF Tags
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
      <?MarkedContent page="1" ?>, Firstname Lastname 
-     <Span xmlns="http://iso.org/pdf2/ssn"
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.038"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
+        rolemaps-to="Span"
        >
       <?MarkedContent page="1" ?>2
-     </Span>
+     </text-fragment>
      <?MarkedContent page="1" ?> and Firstname Lastname 
-     <Span xmlns="http://iso.org/pdf2/ssn"
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.039"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
+        rolemaps-to="Span"
        >
       <?MarkedContent page="1" ?>2,
-     </Span>
+     </text-fragment>
      <?MarkedContent page="1" ?>*
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+   </semantic-para>
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.040"
       rolemaps-to="Part"
      >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.041"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
-     <Span xmlns="http://iso.org/pdf2/ssn"
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.042"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
+        rolemaps-to="Span"
        >
       <?MarkedContent page="1" ?>1
-     </Span>
+     </text-fragment>
      <?MarkedContent page="1" ?> Affiliation 1; e-mail@e-mail.com
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.043"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
-     <Span xmlns="http://iso.org/pdf2/ssn"
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.044"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
+        rolemaps-to="Span"
        >
       <?MarkedContent page="1" ?>2
-     </Span>
+     </text-fragment>
      <?MarkedContent page="1" ?> Affiliation 2; e-mail@e-mail.com
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.045"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -252,8 +256,8 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>* 
      </Lbl>
      <?MarkedContent page="1" ?>Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.047"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -262,18 +266,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.048"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.049"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>†
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>This paper is an extended version of our paper published in Conference.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.050"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -282,18 +287,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.051"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.052"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>‡
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>First note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.053"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -302,18 +308,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.054"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.055"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>§
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Second note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.056"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -322,18 +329,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.057"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.058"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>‖
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Third note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.059"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -342,18 +350,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.060"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.061"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>¶
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Fourth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.062"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -365,8 +374,8 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>** 
      </Lbl>
      <?MarkedContent page="1" ?>Fifth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.064"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -375,18 +384,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.065"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.066"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>††
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Sixth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.067"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -395,18 +405,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.068"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.069"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>‡‡
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Seventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.070"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -415,18 +426,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.071"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.072"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>§§
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Eighth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.073"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -435,18 +447,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.074"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.075"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>‖‖
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Nineth noteLorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.076"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -455,18 +468,19 @@ TEST 1: Show PDF Tags
      <Lbl xmlns="http://iso.org/pdf2/ssn"
         id="ID.077"
        >
-      <Span xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.078"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
        <?MarkedContent page="1" ?>¶¶
-      </Span>
+      </text-fragment>
       <?MarkedContent page="1" ?> 
      </Lbl>
      <?MarkedContent page="1" ?>Tenth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.079"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
@@ -478,21 +492,21 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>*** 
      </Lbl>
      <?MarkedContent page="1" ?>Eleventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text>
-   </text-unit>
-   <text-unit xmlns="https://www.latex-project.org/ns/dflt"
+    </text-block>
+   </semantic-para>
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.081"
       rolemaps-to="Part"
      >
-    <text xmlns="https://www.latex-project.org/ns/dflt"
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.082"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>xxxx
-    </text>
-   </text-unit>
+    </text-block>
+   </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
       id="ID.083"
       title="Ignored link annotations"
@@ -522,11 +536,12 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral page <lua data reference ...>
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-....\pdfliteral page <lua data reference ...>
 ....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue 0.0 plus 1.0fil minus 1.0fil
@@ -4639,7 +4654,7 @@ MathML statistic
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
 (tagpdf)             Writing out ~83 structure objects
-(tagpdf)             with ~102 'MC' leaf nodes.
+(tagpdf)             with ~104 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

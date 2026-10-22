@@ -55,6 +55,7 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
 ....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
 .....\kern-72.26999
@@ -747,23 +748,27 @@ Completed box being shipped out [1]
 ....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(8.328+0.204)x394.35522, glue set 165.44633fil, direction TLT
+....\hbox(8.328+0.204)x382.35522, glue set 165.44633fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(8.04+0.144)x12.0, direction TLT
-......\penalty 10000
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-........\pdfdest name{section.1} xyz
-........\penalty 10000
-......\kern0.0
-......\glue 0.0
-......\TU/texgyrepagella(0)/b/n/12 1
-......\TU/texgyrepagella(0)/b/n/12 .
-......\glue 3.0 plus 1.5 minus 1.0
+.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
+.....\glue 0.0
+.....\hbox(8.04+0.144)x0.0, glue set - 12.0fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(8.04+0.144)x12.0, direction TLT
+.......\penalty 10000
+.......\hbox(0.0+0.0)x0.0, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
+.........\pdfdest name{section.1} xyz
+.........\penalty 10000
+.......\kern0.0
+.......\TU/texgyrepagella(0)/b/n/12 1
+.......\TU/texgyrepagella(0)/b/n/12 .
+.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.......\glue 0.0
 .....\TU/texgyrepagella(0)/b/n/12 T
 .....\kern-1.08 (font)
 .....\TU/texgyrepagella(0)/b/n/12 e
