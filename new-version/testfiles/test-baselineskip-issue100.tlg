@@ -1,5 +1,9 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -141,7 +145,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 460.14688fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 460.21967fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -823,7 +827,7 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(8.398+0.2)x394.35522, glue set 345.56525fil, direction TLT
+....\hbox(8.15018+0.2)x394.35522, glue set 345.56525fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -847,8 +851,8 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 4} action struct name{footnote*.1} goto name{footnote*.1}
-.....\hbox(8.398+0.0)x4.0, direction TLT
-......\hbox(4.858+0.021)x3.5, shifted -3.54, direction TLT
+.....\hbox(8.15018+0.0)x4.0, direction TLT
+......\hbox(4.858+0.021)x3.5, shifted -3.29218, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral direct <lua data reference ...>
@@ -881,8 +885,8 @@ Completed box being shipped out [1]
 ....\hbox(0.0+0.2)x0.0, direction TLT
 ....\glue 12.0 plus 2.0 minus 2.0
 ....\glue(\lineskip) 1.0
-....\vbox(45.98097+0.0)x394.35522, direction TLT
-.....\vbox(45.98097+0.0)x394.35522, direction TLT
+....\vbox(46.15599+0.0)x394.35522, direction TLT
+.....\vbox(46.15599+0.0)x394.35522, direction TLT
 ......\rule(0.0+0.0)x*
 ......\penalty 10000
 ......\glue -6.0002
@@ -976,16 +980,16 @@ Completed box being shipped out [1]
 .......\glue(\rightskip) 0.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
-......\glue(\baselineskip) 0.6902
-......\hbox(8.5002+3.50018)x394.35522, glue set 353.90247fil, direction TLT
+......\glue(\baselineskip) 0.86522
+......\hbox(8.32518+3.6752)x394.35522, glue set 353.90247fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
 .......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(8.5002+3.50018)x40.45274, direction TLT
-........\vbox(8.5002+3.50018)x40.45274, direction TLT
+.......\hbox(8.32518+3.6752)x40.45274, direction TLT
+........\vbox(8.32518+3.6752)x40.45274, direction TLT
 .........\hbox(8.40024+3.60014)x40.45274, direction TLT
 ..........\glue(\tabskip) 0.0
 ..........\hbox(8.40024+3.60014)x40.45274, direction TLT
@@ -1059,11 +1063,11 @@ Completed box being shipped out [1]
 .......\pdfdest name{footnote*.2} xyz
 .......\penalty 10000
 .....\kern0.0
-.....\hbox(6.996+0.0)x0.0, glue set - 15.0fil, direction TLT
+.....\hbox(6.79774+0.0)x0.0, glue set - 15.0fil, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(6.996+0.0)x15.0, glue set 11.5fil, direction TLT
-.......\hbox(6.996+0.0)x3.5, direction TLT
-........\hbox(4.164+0.018)x3.0, shifted -2.832, direction TLT
+......\hbox(6.79774+0.0)x15.0, glue set 11.5fil, direction TLT
+.......\hbox(6.79774+0.0)x3.5, direction TLT
+........\hbox(4.164+0.018)x3.0, shifted -2.63374, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\TU/texgyrepagella(0)/m/n/6 1

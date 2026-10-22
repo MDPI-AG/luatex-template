@@ -1,5 +1,11 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 11.15991pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-ssf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <8> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line ....
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <6> not available
@@ -37,6 +43,12 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <18> not available
 (Font)              size <17.28> substituted on input line ....
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <12.59995> not available
 (Font)              size <12> substituted on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 16.73987pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 11.71785pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-ssf/b/n' will be
+(Font)              scaled to size 8.36993pt on input line ....
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <18> not available
 (Font)              size <17.28> substituted on input line ....
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <12.59995> not available
@@ -48,6 +60,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \setlength{\headheight}{21.97998pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
 Completed box being shipped out [1]
 \vbox(742.04784+4.19403)x489.10277, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -147,7 +163,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 380.32422fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 380.4802fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -748,7 +764,7 @@ Completed box being shipped out [1]
 ....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(8.328+0.204)x382.35522, glue set 165.44633fil, shifted 12.0, direction TLT
+....\hbox(8.172+0.204)x382.35522, glue set 166.34036fil, shifted 12.0, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -777,15 +793,15 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
 .....\mathon
 .....\TU/tg-pagella-math/b/n/12 𝑡
-.....\kern0.06 (italic)
-.....\glue(\thickmuskip) 3.33328 plus 3.33328
+.....\kern0.0558 (italic)
+.....\glue(\thickmuskip) 3.09998 plus 3.09998
 .....\TU/tg-pagella-math/b/n/12 =
 .....\penalty 500
-.....\glue(\thickmuskip) 3.33328 plus 3.33328
+.....\glue(\thickmuskip) 3.09998 plus 3.09998
 .....\TU/tg-pagella-math/b/n/12 1
 .....\mathoff
 .....\penalty 10000
-.....\kern-0.3 (right margin)
+.....\kern-0.27899 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\kern-0.204
@@ -807,8 +823,8 @@ Completed box being shipped out [1]
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 5.816
-....\hbox(7.96+2.96)x394.35522, glue set 311.18817fil, direction TLT
+....\glue(\baselineskip) 5.99101
+....\hbox(7.78499+3.13503)x394.35522, glue set 312.0824fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -817,31 +833,31 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/m/n/10 𝑎
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/m/n/10 =
 .....\penalty 500
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\hbox(7.96+2.96)x6.34, direction TLT
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
+.....\hbox(7.96+2.96)x6.34, shifted 0.17502, direction TLT
 ......\TU/tg-pagella-math/m/n/10 ∫
-.....\glue(\thinmuskip) 1.66663
+.....\glue(\thinmuskip) 1.54999
 .....\TU/tg-pagella-math/m/n/10 𝑓
 .....\kern1.63 (italic)
 .....\TU/tg-pagella-math/m/n/10 (
 .....\TU/tg-pagella-math/m/n/10 𝑥
 .....\kern0.12 (italic)
 .....\TU/tg-pagella-math/m/n/10 )
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/m/n/10 =
 .....\penalty 500
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/m/n/10 𝐚
 .....\kern0.06 (italic)
 .....\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-2.96
-....\hbox(0.0+2.96)x0.0, direction TLT
+....\kern-3.13503
+....\hbox(0.0+3.13503)x0.0, direction TLT
 .....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -850,12 +866,12 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 2
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-2.96
-....\hbox(0.0+2.96)x0.0, direction TLT
+....\kern-3.13503
+....\hbox(0.0+3.13503)x0.0, direction TLT
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.05998
-....\hbox(7.96+2.96)x394.35522, glue set 311.18817fil, direction TLT
+....\glue(\baselineskip) 3.44223
+....\hbox(7.40274+2.75278)x394.35522, glue set 315.5163fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -864,31 +880,31 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/b/n/10 𝑎
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/b/n/10 =
 .....\penalty 500
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\hbox(7.96+2.96)x6.34, direction TLT
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
+.....\hbox(7.40274+2.75278)x5.89615, direction TLT
 ......\TU/tg-pagella-math/b/n/10 ∫
-.....\glue(\thinmuskip) 1.66663
+.....\glue(\thinmuskip) 1.54999
 .....\TU/tg-pagella-math/b/n/10 𝑓
-.....\kern1.63 (italic)
+.....\kern1.51588 (italic)
 .....\TU/tg-pagella-math/b/n/10 (
 .....\TU/tg-pagella-math/b/n/10 𝑥
-.....\kern0.12 (italic)
+.....\kern0.1116 (italic)
 .....\TU/tg-pagella-math/b/n/10 )
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/b/n/10 =
 .....\penalty 500
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/b/n/10 𝐚
-.....\kern0.06 (italic)
+.....\kern0.0558 (italic)
 .....\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-2.96
-....\hbox(0.0+2.96)x0.0, direction TLT
+....\kern-2.75278
+....\hbox(0.0+2.75278)x0.0, direction TLT
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -897,12 +913,12 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 3
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-2.96
-....\hbox(0.0+2.96)x0.0, direction TLT
+....\kern-2.75278
+....\hbox(0.0+2.75278)x0.0, direction TLT
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.05998
-....\hbox(7.96+2.96)x394.35522, glue set 311.18817fil, direction TLT
+....\glue(\baselineskip) 3.44223
+....\hbox(7.78499+3.13503)x394.35522, glue set 312.0824fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -911,31 +927,31 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/m/n/10 𝑎
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/m/n/10 =
 .....\penalty 500
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\hbox(7.96+2.96)x6.34, direction TLT
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
+.....\hbox(7.96+2.96)x6.34, shifted 0.17502, direction TLT
 ......\TU/tg-pagella-math/m/n/10 ∫
-.....\glue(\thinmuskip) 1.66663
+.....\glue(\thinmuskip) 1.54999
 .....\TU/tg-pagella-math/m/n/10 𝑓
 .....\kern1.63 (italic)
 .....\TU/tg-pagella-math/m/n/10 (
 .....\TU/tg-pagella-math/m/n/10 𝑥
 .....\kern0.12 (italic)
 .....\TU/tg-pagella-math/m/n/10 )
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/m/n/10 =
 .....\penalty 500
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/m/n/10 𝐚
 .....\kern0.06 (italic)
 .....\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-2.96
-....\hbox(0.0+2.96)x0.0, direction TLT
+....\kern-3.13503
+....\hbox(0.0+3.13503)x0.0, direction TLT
 .....\hbox(3.28+0.0)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -944,12 +960,12 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-2.96
-....\hbox(0.0+2.96)x0.0, direction TLT
+....\kern-3.13503
+....\hbox(0.0+3.13503)x0.0, direction TLT
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.05998
-....\hbox(7.96+2.96)x394.35522, glue set 311.18817fil, direction TLT
+....\glue(\baselineskip) 3.44223
+....\hbox(7.40274+2.75278)x394.35522, glue set 315.5163fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -958,31 +974,31 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/b/n/10 𝑎
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/b/n/10 =
 .....\penalty 500
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
-.....\hbox(7.96+2.96)x6.34, direction TLT
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
+.....\hbox(7.40274+2.75278)x5.89615, direction TLT
 ......\TU/tg-pagella-math/b/n/10 ∫
-.....\glue(\thinmuskip) 1.66663
+.....\glue(\thinmuskip) 1.54999
 .....\TU/tg-pagella-math/b/n/10 𝑓
-.....\kern1.63 (italic)
+.....\kern1.51588 (italic)
 .....\TU/tg-pagella-math/b/n/10 (
 .....\TU/tg-pagella-math/b/n/10 𝑥
-.....\kern0.12 (italic)
+.....\kern0.1116 (italic)
 .....\TU/tg-pagella-math/b/n/10 )
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/b/n/10 =
 .....\penalty 500
-.....\glue(\thickmuskip) 2.77771 plus 2.77771
+.....\glue(\thickmuskip) 2.58331 plus 2.58331
 .....\TU/tg-pagella-math/b/n/10 𝐚
-.....\kern0.06 (italic)
+.....\kern0.0558 (italic)
 .....\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-2.96
-....\hbox(0.0+2.96)x0.0, direction TLT
+....\kern-2.75278
+....\hbox(0.0+2.75278)x0.0, direction TLT
 .....\hbox(3.28+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -991,12 +1007,12 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 5
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-2.96
-....\hbox(0.0+2.96)x0.0, direction TLT
+....\kern-2.75278
+....\hbox(0.0+2.75278)x0.0, direction TLT
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.71199
-....\hbox(14.328+5.328)x394.35522, glue set 261.72565fil, direction TLT
+....\glue(\baselineskip) 4.23425
+....\hbox(14.01297+5.64304)x394.35522, glue set 263.33582fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1005,31 +1021,31 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/m/n/18 𝑎
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/m/n/18 =
 .....\penalty 500
-.....\glue(\thickmuskip) 5.0 plus 5.0
-.....\hbox(14.328+5.328)x11.412, direction TLT
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
+.....\hbox(14.328+5.328)x11.412, shifted 0.31503, direction TLT
 ......\TU/tg-pagella-math/m/n/18 ∫
-.....\glue(\thinmuskip) 3.0
+.....\glue(\thinmuskip) 2.78998
 .....\TU/tg-pagella-math/m/n/18 𝑓
 .....\kern2.934 (italic)
 .....\TU/tg-pagella-math/m/n/18 (
 .....\TU/tg-pagella-math/m/n/18 𝑥
 .....\kern0.216 (italic)
 .....\TU/tg-pagella-math/m/n/18 )
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/m/n/18 =
 .....\penalty 500
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/m/n/18 𝐚
 .....\kern0.108 (italic)
 .....\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-5.328
-....\hbox(0.0+5.328)x0.0, direction TLT
+....\kern-5.64304
+....\hbox(0.0+5.64304)x0.0, direction TLT
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -1038,12 +1054,12 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 6
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-5.328
-....\hbox(0.0+5.328)x0.0, direction TLT
+....\kern-5.64304
+....\hbox(0.0+5.64304)x0.0, direction TLT
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.344
-....\hbox(14.328+5.328)x394.35522, glue set 261.72565fil, direction TLT
+....\glue(\baselineskip) 2.03203
+....\hbox(13.32494+4.955)x394.35522, glue set 269.51678fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1052,31 +1068,31 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/b/n/18 𝑎
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/b/n/18 =
 .....\penalty 500
-.....\glue(\thickmuskip) 5.0 plus 5.0
-.....\hbox(14.328+5.328)x11.412, direction TLT
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
+.....\hbox(13.32494+4.955)x10.61308, direction TLT
 ......\TU/tg-pagella-math/b/n/18 ∫
-.....\glue(\thinmuskip) 3.0
+.....\glue(\thinmuskip) 2.78998
 .....\TU/tg-pagella-math/b/n/18 𝑓
-.....\kern2.934 (italic)
+.....\kern2.72859 (italic)
 .....\TU/tg-pagella-math/b/n/18 (
 .....\TU/tg-pagella-math/b/n/18 𝑥
-.....\kern0.216 (italic)
+.....\kern0.20088 (italic)
 .....\TU/tg-pagella-math/b/n/18 )
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/b/n/18 =
 .....\penalty 500
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/b/n/18 𝐚
-.....\kern0.108 (italic)
+.....\kern0.10043 (italic)
 .....\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-5.328
-....\hbox(0.0+5.328)x0.0, direction TLT
+....\kern-4.955
+....\hbox(0.0+4.955)x0.0, direction TLT
 .....\hbox(3.28+0.05)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -1085,12 +1101,12 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 7
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-5.328
-....\hbox(0.0+5.328)x0.0, direction TLT
+....\kern-4.955
+....\hbox(0.0+4.955)x0.0, direction TLT
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.344
-....\hbox(14.328+5.328)x394.35522, glue set 261.72565fil, direction TLT
+....\glue(\baselineskip) 2.03203
+....\hbox(14.01297+5.64304)x394.35522, glue set 263.33582fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1099,31 +1115,31 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/m/n/18 𝑎
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/m/n/18 =
 .....\penalty 500
-.....\glue(\thickmuskip) 5.0 plus 5.0
-.....\hbox(14.328+5.328)x11.412, direction TLT
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
+.....\hbox(14.328+5.328)x11.412, shifted 0.31503, direction TLT
 ......\TU/tg-pagella-math/m/n/18 ∫
-.....\glue(\thinmuskip) 3.0
+.....\glue(\thinmuskip) 2.78998
 .....\TU/tg-pagella-math/m/n/18 𝑓
 .....\kern2.934 (italic)
 .....\TU/tg-pagella-math/m/n/18 (
 .....\TU/tg-pagella-math/m/n/18 𝑥
 .....\kern0.216 (italic)
 .....\TU/tg-pagella-math/m/n/18 )
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/m/n/18 =
 .....\penalty 500
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/m/n/18 𝐚
 .....\kern0.108 (italic)
 .....\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-5.328
-....\hbox(0.0+5.328)x0.0, direction TLT
+....\kern-5.64304
+....\hbox(0.0+5.64304)x0.0, direction TLT
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -1132,12 +1148,12 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 8
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-5.328
-....\hbox(0.0+5.328)x0.0, direction TLT
+....\kern-5.64304
+....\hbox(0.0+5.64304)x0.0, direction TLT
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.344
-....\hbox(14.328+5.328)x394.35522, glue set 261.72565fil, direction TLT
+....\glue(\baselineskip) 2.03203
+....\hbox(13.32494+4.955)x394.35522, glue set 269.51678fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1146,31 +1162,31 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/b/n/18 𝑎
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/b/n/18 =
 .....\penalty 500
-.....\glue(\thickmuskip) 5.0 plus 5.0
-.....\hbox(14.328+5.328)x11.412, direction TLT
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
+.....\hbox(13.32494+4.955)x10.61308, direction TLT
 ......\TU/tg-pagella-math/b/n/18 ∫
-.....\glue(\thinmuskip) 3.0
+.....\glue(\thinmuskip) 2.78998
 .....\TU/tg-pagella-math/b/n/18 𝑓
-.....\kern2.934 (italic)
+.....\kern2.72859 (italic)
 .....\TU/tg-pagella-math/b/n/18 (
 .....\TU/tg-pagella-math/b/n/18 𝑥
-.....\kern0.216 (italic)
+.....\kern0.20088 (italic)
 .....\TU/tg-pagella-math/b/n/18 )
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/b/n/18 =
 .....\penalty 500
-.....\glue(\thickmuskip) 5.0 plus 5.0
+.....\glue(\thickmuskip) 4.64996 plus 4.64996
 .....\TU/tg-pagella-math/b/n/18 𝐚
-.....\kern0.108 (italic)
+.....\kern0.10043 (italic)
 .....\mathoff
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-5.328
-....\hbox(0.0+5.328)x0.0, direction TLT
+....\kern-4.955
+....\hbox(0.0+4.955)x0.0, direction TLT
 .....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
 ......\glue 10.0
 ......\glue 394.35522
@@ -1179,11 +1195,11 @@ Completed box being shipped out [1]
 .......\TU/lmss/m/n/5 9
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\penalty 10000
-....\kern-5.328
-....\hbox(0.0+5.328)x0.0, direction TLT
+....\kern-4.955
+....\hbox(0.0+4.955)x0.0, direction TLT
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.252
+....\glue(\baselineskip) 3.625
 ....\hbox(12.42+0.234)x394.35522, glue set 332.19958fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0

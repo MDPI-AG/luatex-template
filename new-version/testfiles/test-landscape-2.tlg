@@ -5,6 +5,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \setlength{\headheight}{21.97998pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]
@@ -7494,12 +7498,12 @@ Completed box being shipped out [3]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(458.64374+0.0)x772.77661, glue set 148.22057fil, direction TLT
+...\vbox(458.64374+0.0)x772.77661, glue set 148.13306fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\glue -8.0 plus -2.0fil
 ....\glue 8.0 plus 2.0fil
-....\vbox(162.2026+0.0)x772.77661, direction TLT
-.....\vbox(162.2026+0.0)x772.77661, direction TLT
+....\vbox(162.37762+0.0)x772.77661, direction TLT
+.....\vbox(162.37762+0.0)x772.77661, direction TLT
 ......\pdfdest name{table.struct.41} xyz
 ......\pdfdest name{table.struct.41} xyz
 ......\penalty 10000
@@ -9994,16 +9998,16 @@ Completed box being shipped out [3]
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
-......\glue(\baselineskip) 0.9532
-......\hbox(8.5002+3.50018)x772.77661, glue set 705.79663fil, direction TLT
+......\glue(\baselineskip) 1.12822
+......\hbox(8.32518+3.6752)x772.77661, glue set 705.79663fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
 .......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(8.5002+3.50018)x66.97998, direction TLT
-........\vbox(8.5002+3.50018)x66.97998, direction TLT
+.......\hbox(8.32518+3.6752)x66.97998, direction TLT
+........\vbox(8.32518+3.6752)x66.97998, direction TLT
 .........\hbox(8.40024+3.60014)x66.97998, direction TLT
 ..........\glue(\tabskip) 0.0
 ..........\hbox(8.40024+3.60014)x33.48999, direction TLT
@@ -10421,8 +10425,8 @@ Completed box being shipped out [4]
 ...\vbox(706.18271+0.0)x394.35522, glue set >20000.0fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\penalty 10000
-....\vbox(251.90762+0.0)x394.35522, direction TLT
-.....\vbox(251.90762+0.0)x394.35522, direction TLT
+....\vbox(252.08264+0.0)x394.35522, direction TLT
+.....\vbox(252.08264+0.0)x394.35522, direction TLT
 ......\pdfdest name{table.struct.61} xyz
 ......\pdfdest name{table.struct.61} xyz
 ......\penalty 10000
@@ -12921,16 +12925,16 @@ Completed box being shipped out [4]
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
-......\glue(\baselineskip) 0.9532
-......\hbox(8.5002+3.50018)x394.35522, glue set 327.37524fil, direction TLT
+......\glue(\baselineskip) 1.12822
+......\hbox(8.32518+3.6752)x394.35522, glue set 327.37524fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
 .......\hbox(0.0+0.0)x0.0, direction TLT
-.......\hbox(8.5002+3.50018)x66.97998, direction TLT
-........\vbox(8.5002+3.50018)x66.97998, direction TLT
+.......\hbox(8.32518+3.6752)x66.97998, direction TLT
+........\vbox(8.32518+3.6752)x66.97998, direction TLT
 .........\hbox(8.40024+3.60014)x66.97998, direction TLT
 ..........\glue(\tabskip) 0.0
 ..........\hbox(8.40024+3.60014)x33.48999, direction TLT

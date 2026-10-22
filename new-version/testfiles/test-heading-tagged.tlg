@@ -14,37 +14,36 @@ File: mt-msa.cfg ....-..-.. v... microtype config. file: AMS symbols (a) (RS)
 LaTeX Font Info:    Trying to load font information for U+msb on input line ....
 File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math on input line ....
-(../tutg-pagella-math.fd
-File: tutg-pagella-math.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math
-)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `tg-pagella-math' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math-sf on input line ....
-(../tutg-pagella-math-sf.fd
-File: tutg-pagella-math-sf.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math Script
-)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `tg-pagella-math-sf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for TU+tg-pagella-math-ssf on input line ....
-(../tutg-pagella-math-ssf.fd
-File: tutg-pagella-math-ssf.fd ....-..-.. v... NFSS font definitions for TeX Gyre Pagella Math Subscript
-)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `tg-pagella-math-ssf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for U+wasy on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 9.29993pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 6.50995pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-ssf/b/n' will be
+(Font)              scaled to size 4.64996pt on input line ....
+(test-heading-tagged.toc)
 \tf@toc=\write...
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 21.49452pt, for example:
 (fancyhdr)                \setlength{\headheight}{21.49452pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]
@@ -380,13 +379,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -463,13 +462,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -553,13 +552,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -656,13 +655,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -753,13 +752,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -843,13 +842,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -938,13 +937,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1040,13 +1039,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000

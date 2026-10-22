@@ -886,6 +886,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \setlength{\headheight}{21.97998pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]

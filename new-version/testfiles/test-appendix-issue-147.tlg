@@ -11,11 +11,17 @@ LaTeX template Info: Declaring instance 'section' of type heading on line ....
 LaTeX template Info: Declaring instance 'section' of type heading on line ....
 LaTeX template Info: Declaring instance 'subsection' of type heading on line ....
 LaTeX template Info: Declaring instance 'subsubsection' of type heading on line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 8.36993pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 21.97998pt, for example:
 (fancyhdr)                \setlength{\headheight}{21.97998pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]
@@ -909,13 +915,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -988,13 +994,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1112,13 +1118,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1241,13 +1247,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1377,13 +1383,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1452,13 +1458,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -2137,8 +2143,8 @@ Completed box being shipped out [1]
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.772
-....\hbox(8.398+0.2)x394.35522, glue set 335.7157fil, direction TLT
+....\glue(\baselineskip) 3.01982
+....\hbox(8.15018+0.2)x394.35522, glue set 335.7157fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -2167,7 +2173,7 @@ Completed box being shipped out [1]
 .......\pdfdest name{endnote.1} xyz
 .......\penalty 10000
 .....\kern0.0
-.....\hbox(4.858+0.021)x3.5, shifted -3.54, direction TLT
+.....\hbox(4.858+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 10} action struct name{enz.1} goto name{enz.1}
@@ -2261,17 +2267,17 @@ Completed box being shipped out [1]
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 3.425
-....\hbox(9.186+0.18)x394.35522, glue set 331.16925fil, direction TLT
+....\glue(\baselineskip) 3.64806
+....\hbox(8.96295+0.18)x394.35522, glue set 331.16925fil, direction TLT
 .....\glue(\leftskip) 21.62393
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(9.186+0.0)x0.0, glue set - 19.82164fil, direction TLT
+.....\hbox(8.96295+0.0)x0.0, glue set - 19.82164fil, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(6.0+0.018)x17.07164, shifted -3.186, direction TLT
+......\hbox(6.0+0.018)x17.07164, shifted -2.96295, direction TLT
 .......\hbox(6.0+0.018)x17.07164, glue set 14.07164fil, direction TLT
 ........\hbox(0.0+0.0)x0.0, shifted -6.0, direction TLT
 .........\pdfliteral page <lua data reference ...>

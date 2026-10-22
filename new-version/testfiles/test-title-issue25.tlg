@@ -746,7 +746,7 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\hbox(4.69+0.021)x3.5, shifted -3.54, direction TLT
+.....\hbox(4.69+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\TU/texgyrepagella(0)/b/n/7 1
@@ -811,7 +811,7 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\hbox(4.62+0.021)x3.5, shifted -3.54, direction TLT
+.....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\TU/texgyrepagella(0)/b/n/7 2
@@ -853,7 +853,7 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\TU/texgyrepagella(0)/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\hbox(4.62+1.162)x5.25, shifted -3.54, direction TLT
+.....\hbox(4.62+1.162)x5.25, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\TU/texgyrepagella(0)/b/n/7 2
@@ -878,8 +878,8 @@ Completed box being shipped out [1]
 ....\glue 10.0 plus 4.0 minus 5.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.829
-....\hbox(6.996+1.224)x394.35522, glue set 133.86261fil, direction TLT
+....\glue(\baselineskip) 2.02725
+....\hbox(6.79774+1.224)x394.35522, glue set 133.86261fil, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\kern-0.15 (left margin)
@@ -889,7 +889,7 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(4.164+0.018)x3.0, shifted -2.832, direction TLT
+.....\hbox(4.164+0.018)x3.0, shifted -2.63374, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\TU/texgyrepagella(0)/m/n/6 1
@@ -953,15 +953,15 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus -1.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.295
-....\hbox(6.966+1.224)x394.35522, glue set 133.7876fil, direction TLT
+....\glue(\baselineskip) 2.49326
+....\hbox(6.76775+1.224)x394.35522, glue set 133.7876fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(4.134+0.018)x3.0, shifted -2.832, direction TLT
+.....\hbox(4.134+0.018)x3.0, shifted -2.63374, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\TU/texgyrepagella(0)/m/n/6 2
@@ -1293,17 +1293,17 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.22499
-....\hbox(6.996+2.248)x380.75525, glue set 63.44557fil, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.42325
+....\hbox(6.79774+2.248)x380.75525, glue set 63.44557fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.996+0.0)x0.0, direction TLT
+.....\hbox(6.79774+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
-.......\hbox(6.996+0.0)x3.5, direction TLT
+......\hbox(6.79774+0.0)x13.59998, glue set 10.09998fil, direction TLT
+.......\hbox(6.79774+0.0)x3.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
@@ -1313,7 +1313,7 @@ Completed box being shipped out [1]
 ..........\pdfdest name{itemize*.2} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
+........\hbox(4.164+0.03)x3.0, shifted -2.63374, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\TU/texgyrepagella(0)/m/n/6 †

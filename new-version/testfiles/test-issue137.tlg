@@ -646,8 +646,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 5.528
-....\hbox(8.398+1.66)x525.52245, glue set 109.08122fil, shifted -131.16722, direction TLT
+....\glue(\baselineskip) 6.11592
+....\hbox(7.81007+1.66)x525.52245, glue set 109.21774fil, shifted -131.16722, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -730,7 +730,7 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\mathon
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(4.858+0.035)x3.9, shifted -3.54, direction TLT
+.....\hbox(4.5179+0.03255)x3.62697, shifted -3.29218, direction TLT
 ......\TU/tg-pagella-math-sf/b/n/7 †
 .....\mathoff
 .....\penalty 10000
@@ -807,24 +807,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.265
-....\hbox(6.996+0.16)x387.5553, glue set 144.4363fil, shifted 6.79993, direction TLT
+....\glue(\baselineskip) 2.46326
+....\hbox(6.79774+0.16)x387.5553, glue set 144.4363fil, shifted 6.79993, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.996+0.0)x0.0, direction TLT
+.....\hbox(6.79774+0.0)x0.0, direction TLT
 ......\glue -6.79993
-......\hbox(6.996+0.0)x6.79993, glue set 3.29993fil, direction TLT
-.......\hbox(6.996+0.0)x3.5, direction TLT
+......\hbox(6.79774+0.0)x6.79993, glue set 3.29993fil, direction TLT
+.......\hbox(6.79774+0.0)x3.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.1} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
+........\hbox(4.164+0.03)x3.0, shifted -2.63374, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 †
 ........\penalty 10000
 ........\glue 0.5

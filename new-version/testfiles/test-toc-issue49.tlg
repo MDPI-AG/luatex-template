@@ -7,6 +7,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \setlength{\headheight}{21.97998pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]
@@ -928,13 +932,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -997,13 +1001,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1066,13 +1070,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1135,13 +1139,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1199,13 +1203,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
@@ -1263,13 +1267,13 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\leaders 0.0 plus 1.0fill
-......\hbox(1.11+0.05)x7.49988, direction TLT
+......\hbox(1.11+0.05)x7.14996, direction TLT
 .......\mathon
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\hbox(1.11+0.05)x2.5, direction TLT
 ........\pdfliteral direct <lua data reference ...>
 ........\TU/texgyrepagella(0)/m/n/10 .
-.......\kern2.49994 (italic)
+.......\kern2.32498 (italic)
 .......\mathoff
 .....\penalty 10000
 .....\penalty 10000
