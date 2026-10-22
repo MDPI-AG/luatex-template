@@ -1090,27 +1090,36 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0 plus 1.0
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.309
-....\hbox(5.952+2.264)x394.35522, glue set 44.36581fil, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\kern-0.672 (left margin)
+....\hbox(5.952+2.264)x380.75525, glue set 43.69382fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.512+0.0)x13.59998, glue set 10.23198fil, direction TLT
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/b/n/8 *
-......\kern0.0 (italic)
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(5.512+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(5.512+0.0)x13.59998, glue set 10.23198fil, direction TLT
+.......\hbox(5.512+0.0)x3.368, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.1} xyz
+..........\pdfdest name{itemize*.1} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/b/n/8 *
+........\kern0.0 (italic)
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 C
@@ -1348,29 +1357,40 @@ Completed box being shipped out [1]
 .....\kern-0.728 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.22499
-....\hbox(6.996+2.248)x394.35522, glue set 63.44557fil, direction TLT
+....\hbox(6.996+2.248)x380.75525, glue set 63.44557fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
-......\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 †
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.996+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
+.......\hbox(6.996+0.0)x3.5, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.2} xyz
+..........\pdfdest name{itemize*.2} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 †
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 T
@@ -1477,6 +1497,8 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 0.0
 ....\penalty -51
 ....\glue 10.0 plus 3.0 minus 5.0
 ....\glue 4.0
@@ -1750,8 +1772,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~53 structure objects
-(tagpdf)             with ~56 'MC' leaf nodes.
+(tagpdf)             Writing out ~60 structure objects
+(tagpdf)             with ~54 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

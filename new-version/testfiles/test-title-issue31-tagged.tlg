@@ -7,27 +7,27 @@ TEST 1: Show PDF Tags
 <PDF version="2.0">
  <StructTreeRoot>
   <Document xmlns="http://iso.org/pdf2/ssn"
-     id="ID.002"
+     id="ID.0002"
     >
    <Aside xmlns="http://iso.org/pdf2/ssn"
-      id="ID.011"
+      id="ID.0011"
      >
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.012"
+       id="ID.0012"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.013"
+        id="ID.0013"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="End"
         rolemaps-to="P"
        >
       <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.014"
+         id="ID.0014"
         >
        <?MarkedContent page="1" ?>
        <Span xmlns="http://iso.org/pdf2/ssn"
-          id="ID.015"
+          id="ID.0015"
           actualtext="Check for updates"
          >
         <?MarkedContent page="1" ?>
@@ -38,11 +38,11 @@ TEST 1: Show PDF Tags
      </text-block>
     </semantic-para>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.016"
+       id="ID.0016"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.017"
+        id="ID.0017"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
@@ -51,11 +51,11 @@ TEST 1: Show PDF Tags
      </text-block>
     </semantic-para>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.018"
+       id="ID.0018"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.019"
+        id="ID.0019"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
@@ -64,11 +64,11 @@ TEST 1: Show PDF Tags
      </text-block>
     </semantic-para>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.020"
+       id="ID.0020"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.021"
+        id="ID.0021"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
@@ -77,18 +77,18 @@ TEST 1: Show PDF Tags
      </text-block>
     </semantic-para>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.022"
+       id="ID.0022"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.023"
+        id="ID.0023"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="P"
        >
       <?MarkedContent page="1" ?>Copyright: © 0000 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the 
       <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.024"
+         id="ID.0024"
         >
        <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
@@ -100,21 +100,21 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </Aside>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.025"
+      id="ID.0025"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.026"
+       id="ID.0026"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <Link xmlns="http://iso.org/pdf2/ssn"
-        id="ID.027"
+        id="ID.0027"
        >
       <?MarkedContent page="1" ?>
       <Span xmlns="http://iso.org/pdf2/ssn"
-         id="ID.028"
+         id="ID.0028"
          actualtext="Logo of Acoustics"
         >
        <?MarkedContent page="1" ?>
@@ -123,11 +123,11 @@ TEST 1: Show PDF Tags
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
      <Link xmlns="http://iso.org/pdf2/ssn"
-        id="ID.029"
+        id="ID.0029"
        >
       <?MarkedContent page="1" ?>
       <Span xmlns="http://iso.org/pdf2/ssn"
-         id="ID.030"
+         id="ID.0030"
          actualtext="MDPI logo"
         >
        <?MarkedContent page="1" ?>
@@ -137,14 +137,14 @@ TEST 1: Show PDF Tags
      </Link>
     </text-block>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.031"
+       id="ID.0031"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
     </text-block>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.032"
+       id="ID.0032"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
@@ -152,7 +152,7 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?>Article
     </text-block>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.033"
+       id="ID.0033"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
@@ -160,14 +160,14 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?>TITLE
     </text-block>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.034"
+       id="ID.0034"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>Firstname Lastname 
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.035"
+        id="ID.0035"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -175,11 +175,11 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>1
      </text-fragment>
      <Link xmlns="http://iso.org/pdf2/ssn"
-        id="ID.036"
+        id="ID.0036"
        >
       <?MarkedContent page="1" ?>
       <Span xmlns="http://iso.org/pdf2/ssn"
-         id="ID.037"
+         id="ID.0037"
          actualtext="ORCID"
         >
        <?MarkedContent page="1" ?>
@@ -189,7 +189,7 @@ TEST 1: Show PDF Tags
      </Link>
      <?MarkedContent page="1" ?>, Firstname Lastname 
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.038"
+        id="ID.0038"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -198,7 +198,7 @@ TEST 1: Show PDF Tags
      </text-fragment>
      <?MarkedContent page="1" ?> and Firstname Lastname 
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.039"
+        id="ID.0039"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -209,17 +209,17 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.040"
+      id="ID.0040"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.041"
+       id="ID.0041"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.042"
+        id="ID.0042"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -229,13 +229,13 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?> Affiliation 1; e-mail@e-mail.com
     </text-block>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.043"
+       id="ID.0043"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.044"
+        id="ID.0044"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -244,262 +244,477 @@ TEST 1: Show PDF Tags
      </text-fragment>
      <?MarkedContent page="1" ?> Affiliation 2; e-mail@e-mail.com
     </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.045"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
+    <itemize xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.0045"
+       xmlns:List="http://iso.org/pdf/ssn/List"
+       List:ListNumbering="Unordered"
+       rolemaps-to="L"
       >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.046"
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0046"
+        rolemaps-to="LI"
        >
-      <?MarkedContent page="1" ?>* 
-     </Lbl>
-     <?MarkedContent page="1" ?>Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.047"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.048"
-       >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.049"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0047"
+         rolemaps-to="Lbl"
         >
-       <?MarkedContent page="1" ?>†
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>This paper is an extended version of our paper published in Conference.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.050"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.051"
-       >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.052"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+       <?MarkedContent page="1" ?>*
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0048"
+         rolemaps-to="LBody"
         >
-       <?MarkedContent page="1" ?>‡
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>First note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.053"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.054"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0049"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0050"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0051"
+        rolemaps-to="LI"
        >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.055"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0052"
+         rolemaps-to="Lbl"
         >
-       <?MarkedContent page="1" ?>§
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>Second note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.056"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.057"
-       >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.058"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0053"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>†
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0054"
+         rolemaps-to="LBody"
         >
-       <?MarkedContent page="1" ?>‖
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>Third note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.059"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.060"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0055"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0056"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>This paper is an extended version of our paper published in Conference.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0057"
+        rolemaps-to="LI"
        >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.061"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0058"
+         rolemaps-to="Lbl"
         >
-       <?MarkedContent page="1" ?>¶
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>Fourth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.062"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.063"
-       >
-      <?MarkedContent page="1" ?>** 
-     </Lbl>
-     <?MarkedContent page="1" ?>Fifth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.064"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.065"
-       >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.066"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0059"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>‡
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0060"
+         rolemaps-to="LBody"
         >
-       <?MarkedContent page="1" ?>††
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>Sixth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.067"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.068"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0061"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0062"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>First note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0063"
+        rolemaps-to="LI"
        >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.069"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0064"
+         rolemaps-to="Lbl"
         >
-       <?MarkedContent page="1" ?>‡‡
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>Seventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.070"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.071"
-       >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.072"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0065"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>§
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0066"
+         rolemaps-to="LBody"
         >
-       <?MarkedContent page="1" ?>§§
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>Eighth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.073"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.074"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0067"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0068"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Second note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0069"
+        rolemaps-to="LI"
        >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.075"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0070"
+         rolemaps-to="Lbl"
         >
-       <?MarkedContent page="1" ?>‖‖
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>Nineth noteLorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.076"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.077"
-       >
-      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.078"
-         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextPosition="Sup"
-         rolemaps-to="Span"
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0071"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>‖
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0072"
+         rolemaps-to="LBody"
         >
-       <?MarkedContent page="1" ?>¶¶
-      </text-fragment>
-      <?MarkedContent page="1" ?> 
-     </Lbl>
-     <?MarkedContent page="1" ?>Tenth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.079"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.080"
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0073"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0074"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Third note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0075"
+        rolemaps-to="LI"
        >
-      <?MarkedContent page="1" ?>*** 
-     </Lbl>
-     <?MarkedContent page="1" ?>Eleventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-    </text-block>
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0076"
+         rolemaps-to="Lbl"
+        >
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0077"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>¶
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0078"
+         rolemaps-to="LBody"
+        >
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0079"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0080"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Fourth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0081"
+        rolemaps-to="LI"
+       >
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0082"
+         rolemaps-to="Lbl"
+        >
+       <?MarkedContent page="1" ?>**
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0083"
+         rolemaps-to="LBody"
+        >
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0084"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0085"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Fifth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0086"
+        rolemaps-to="LI"
+       >
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0087"
+         rolemaps-to="Lbl"
+        >
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0088"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>††
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0089"
+         rolemaps-to="LBody"
+        >
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0090"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0091"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Sixth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0092"
+        rolemaps-to="LI"
+       >
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0093"
+         rolemaps-to="Lbl"
+        >
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0094"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>‡‡
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0095"
+         rolemaps-to="LBody"
+        >
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0096"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0097"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Seventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0098"
+        rolemaps-to="LI"
+       >
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0099"
+         rolemaps-to="Lbl"
+        >
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0100"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>§§
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0101"
+         rolemaps-to="LBody"
+        >
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0102"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0103"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Eighth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0104"
+        rolemaps-to="LI"
+       >
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0105"
+         rolemaps-to="Lbl"
+        >
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0106"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>‖‖
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0107"
+         rolemaps-to="LBody"
+        >
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0108"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0109"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Nineth noteLorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0110"
+        rolemaps-to="LI"
+       >
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0111"
+         rolemaps-to="Lbl"
+        >
+       <?MarkedContent page="1" ?>
+       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0112"
+          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+          Layout:TextPosition="Sup"
+          rolemaps-to="Span"
+         >
+        <?MarkedContent page="1" ?>¶¶
+       </text-fragment>
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0113"
+         rolemaps-to="LBody"
+        >
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0114"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0115"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Tenth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+     <item xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0116"
+        rolemaps-to="LI"
+       >
+      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0117"
+         rolemaps-to="Lbl"
+        >
+       <?MarkedContent page="1" ?>***
+      </itemlabel>
+      <itembody xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0118"
+         rolemaps-to="LBody"
+        >
+       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0119"
+          rolemaps-to="Part"
+         >
+        <text-block xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0120"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextAlign="Start"
+           rolemaps-to="P"
+          >
+         <?MarkedContent page="1" ?>Eleventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+        </text-block>
+       </semantic-para>
+      </itembody>
+     </item>
+    </itemize>
    </semantic-para>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.081"
+      id="ID.0121"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.082"
+       id="ID.0122"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -508,11 +723,11 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.083"
+      id="ID.0123"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
-       id="ID.003"
+       id="ID.0003"
       >
      <?ReferencedObject type="Annot" page="1" ?>
     </Link>
@@ -1612,27 +1827,36 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0 plus 1.0
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.309
-....\hbox(5.952+2.264)x394.35522, glue set 44.36581fil, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\kern-0.672 (left margin)
+....\hbox(5.952+2.264)x380.75525, glue set 43.69382fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.512+0.0)x13.59998, glue set 10.23198fil, direction TLT
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/b/n/8 *
-......\kern0.0 (italic)
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(5.512+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(5.512+0.0)x13.59998, glue set 10.23198fil, direction TLT
+.......\hbox(5.512+0.0)x3.368, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.1} xyz
+..........\pdfdest name{itemize*.1} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/b/n/8 *
+........\kern0.0 (italic)
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 C
@@ -1870,29 +2094,40 @@ Completed box being shipped out [1]
 .....\kern-0.728 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.22499
-....\hbox(6.996+2.248)x394.35522, glue set 63.44557fil, direction TLT
+....\hbox(6.996+2.248)x380.75525, glue set 63.44557fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
-......\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 †
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.996+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
+.......\hbox(6.996+0.0)x3.5, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.2} xyz
+..........\pdfdest name{itemize*.2} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 †
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 T
@@ -1999,29 +2234,40 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.075
-....\hbox(7.162+2.264)x394.35522, glue set 1.79245fil, direction TLT
+....\hbox(7.162+2.264)x380.75525, glue set 1.79245fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(7.162+0.0)x13.59998, glue set 10.09998fil, direction TLT
-......\hbox(4.164+1.494)x3.0, shifted -2.998, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 ‡
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(7.162+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(7.162+0.0)x13.59998, glue set 10.09998fil, direction TLT
+.......\hbox(7.162+0.0)x3.5, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.3} xyz
+..........\pdfdest name{itemize*.3} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.164+1.494)x3.0, shifted -2.998, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 ‡
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 F
@@ -2219,29 +2465,40 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.135
-....\hbox(7.086+2.264)x394.35522, glue set - 0.09288, direction TLT
+....\hbox(7.086+2.264)x380.75525, glue set - 0.09288, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(7.086+0.0)x13.59998, glue set 10.09998fil, direction TLT
-......\hbox(4.254+1.314)x3.0, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 ^^a7
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(7.086+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(7.086+0.0)x13.59998, glue set 10.09998fil, direction TLT
+.......\hbox(7.086+0.0)x3.5, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.4} xyz
+..........\pdfdest name{itemize*.4} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.254+1.314)x3.0, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 ^^a7
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 S
@@ -2440,29 +2697,40 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.489
-....\hbox(6.732+2.264)x394.35522, glue set 0.11201fil, direction TLT
+....\hbox(6.732+2.264)x380.75525, glue set 0.11201fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(6.732+0.0)x13.59998, glue set 10.84398fil, direction TLT
-......\hbox(3.9+0.9)x2.256, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 ‖
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.732+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(6.732+0.0)x13.59998, glue set 10.84398fil, direction TLT
+.......\hbox(6.732+0.0)x2.756, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.5} xyz
+..........\pdfdest name{itemize*.5} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(3.9+0.9)x2.256, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 ‖
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 T
@@ -2659,29 +2927,40 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.19499
-....\hbox(7.026+2.264)x394.35522, glue set - 0.01425, direction TLT
+....\hbox(7.026+2.264)x380.75525, glue set - 0.01425, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(7.026+0.0)x13.59998, glue set 9.33197fil, direction TLT
-......\hbox(4.194+0.9)x3.768, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 ^^b6
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(7.026+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(7.026+0.0)x13.59998, glue set 9.33197fil, direction TLT
+.......\hbox(7.026+0.0)x4.268, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.6} xyz
+..........\pdfdest name{itemize*.6} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.194+0.9)x3.768, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 ^^b6
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 F
@@ -2880,27 +3159,35 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 2.39699
-....\hbox(5.824+2.264)x394.35522, glue set 1.32845fil, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\kern-0.624 (left margin)
+....\hbox(5.824+2.264)x380.75525, glue set 0.70445fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.552+0.0)x13.59998, glue set 7.35999fil, direction TLT
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 *
-......\TU/texgyrepagella(0)/m/n/8 *
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(5.552+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(5.552+0.0)x13.59998, glue set 7.35999fil, direction TLT
+.......\hbox(5.552+0.0)x6.23999, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.7} xyz
+..........\pdfdest name{itemize*.7} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/m/n/8 *
+........\TU/texgyrepagella(0)/m/n/8 *
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 F
@@ -3099,30 +3386,41 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.22499
-....\hbox(6.996+2.264)x394.35522, glue set 0.11836fil, direction TLT
+....\hbox(6.996+2.264)x380.75525, glue set 0.11836fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(6.996+0.0)x13.59998, glue set 7.09998fil, direction TLT
-......\hbox(4.164+0.03)x6.0, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 †
-.......\TU/texgyrepagella(0)/m/n/6 †
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.996+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(6.996+0.0)x13.59998, glue set 7.09998fil, direction TLT
+.......\hbox(6.996+0.0)x6.5, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.8} xyz
+..........\pdfdest name{itemize*.8} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.164+0.03)x6.0, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 †
+.........\TU/texgyrepagella(0)/m/n/6 †
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 S
@@ -3319,30 +3617,41 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.05899
-....\hbox(7.162+2.264)x394.35522, glue set - 0.00485, direction TLT
+....\hbox(7.162+2.264)x380.75525, glue set - 0.00485, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(7.162+0.0)x13.59998, glue set 7.09998fil, direction TLT
-......\hbox(4.164+1.494)x6.0, shifted -2.998, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 ‡
-.......\TU/texgyrepagella(0)/m/n/6 ‡
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(7.162+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(7.162+0.0)x13.59998, glue set 7.09998fil, direction TLT
+.......\hbox(7.162+0.0)x6.5, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.9} xyz
+..........\pdfdest name{itemize*.9} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.164+1.494)x6.0, shifted -2.998, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 ‡
+.........\TU/texgyrepagella(0)/m/n/6 ‡
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 S
@@ -3545,30 +3854,41 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.135
-....\hbox(7.086+2.264)x394.35522, glue set 0.15883fil, direction TLT
+....\hbox(7.086+2.264)x380.75525, glue set 0.15883fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(7.086+0.0)x13.59998, glue set 7.09998fil, direction TLT
-......\hbox(4.254+1.314)x6.0, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 ^^a7
-.......\TU/texgyrepagella(0)/m/n/6 ^^a7
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(7.086+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(7.086+0.0)x13.59998, glue set 7.09998fil, direction TLT
+.......\hbox(7.086+0.0)x6.5, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.10} xyz
+..........\pdfdest name{itemize*.10} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.254+1.314)x6.0, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 ^^a7
+.........\TU/texgyrepagella(0)/m/n/6 ^^a7
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 E
@@ -3766,30 +4086,41 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.489
-....\hbox(6.732+2.264)x394.35522, glue set - 0.00388, direction TLT
+....\hbox(6.732+2.264)x380.75525, glue set - 0.00388, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(6.732+0.0)x13.59998, glue set 8.58798fil, direction TLT
-......\hbox(3.9+0.9)x4.512, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 ‖
-.......\TU/texgyrepagella(0)/m/n/6 ‖
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(6.732+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(6.732+0.0)x13.59998, glue set 8.58798fil, direction TLT
+.......\hbox(6.732+0.0)x5.012, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.11} xyz
+..........\pdfdest name{itemize*.11} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(3.9+0.9)x4.512, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 ‖
+.........\TU/texgyrepagella(0)/m/n/6 ‖
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 N
@@ -3985,30 +4316,41 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.19499
-....\hbox(7.026+2.264)x394.35522, glue set - 0.01062, direction TLT
+....\hbox(7.026+2.264)x380.75525, glue set - 0.01062, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(7.026+0.0)x13.59998, glue set 5.56396fil, direction TLT
-......\hbox(4.194+0.9)x7.53601, shifted -2.832, direction TLT
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/texgyrepagella(0)/m/n/6 ^^b6
-.......\TU/texgyrepagella(0)/m/n/6 ^^b6
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(7.026+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(7.026+0.0)x13.59998, glue set 5.56396fil, direction TLT
+.......\hbox(7.026+0.0)x8.03601, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.12} xyz
+..........\pdfdest name{itemize*.12} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.194+0.9)x7.53601, shifted -2.832, direction TLT
+.........\pdfliteral page <lua data reference ...>
+.........\pdfliteral page <lua data reference ...>
+.........\TU/texgyrepagella(0)/m/n/6 ^^b6
+.........\TU/texgyrepagella(0)/m/n/6 ^^b6
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 T
@@ -4206,28 +4548,36 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 2.413
-....\hbox(5.808+2.264)x394.35522, glue set 0.04828fil, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\kern-0.624 (left margin)
+....\hbox(5.808+2.264)x380.75525, glue set 0.13226fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(5.552+0.0)x13.59998, glue set 4.23999fil, direction TLT
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\TU/texgyrepagella(0)/m/n/8 *
-......\TU/texgyrepagella(0)/m/n/8 *
-......\TU/texgyrepagella(0)/m/n/8 *
-......\TU/texgyrepagella(0)/m/n/8  
-......\glue -2.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\hbox(5.552+0.0)x0.0, direction TLT
+......\glue -13.59998
+......\hbox(5.552+0.0)x13.59998, glue set 4.23999fil, direction TLT
+.......\hbox(5.552+0.0)x9.35999, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfliteral page <lua data reference ...>
+..........\pdfliteral page <lua data reference ...>
+..........\pdfdest name{itemize*.13} xyz
+..........\pdfdest name{itemize*.13} xyz
+..........\penalty 10000
+........\kern0.0
+........\TU/texgyrepagella(0)/m/n/8 *
+........\TU/texgyrepagella(0)/m/n/8 *
+........\TU/texgyrepagella(0)/m/n/8 *
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+......\glue 0.0
+.....\penalty 0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/texgyrepagella(0)/m/n/8 E
@@ -4428,6 +4778,8 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 0.0
 ....\penalty -51
 ....\glue 10.0 plus 3.0 minus 5.0
 ....\glue 4.0
@@ -4653,8 +5005,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~83 structure objects
-(tagpdf)             with ~104 'MC' leaf nodes.
+(tagpdf)             Writing out ~123 structure objects
+(tagpdf)             with ~91 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
