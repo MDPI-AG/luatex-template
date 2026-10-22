@@ -713,7 +713,7 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/10 m
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\hbox(4.69+0.021)x3.5, shifted -3.54, direction TLT
+.....\hbox(4.69+0.021)x3.5, shifted -3.29218, direction TLT
 ......\TU/texgyrepagella(0)/b/n/7 1
 .....\penalty 10000
 .....\glue 0.5
@@ -761,7 +761,7 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/10 m
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\hbox(4.62+0.021)x3.5, shifted -3.54, direction TLT
+.....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\TU/texgyrepagella(0)/b/n/7 2
 .....\penalty 10000
 .....\glue 0.5
@@ -795,7 +795,7 @@ Completed box being shipped out [1]
 .....\TU/texgyrepagella(0)/b/n/10 m
 .....\TU/texgyrepagella(0)/b/n/10 e
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\hbox(4.62+1.162)x5.25, shifted -3.54, direction TLT
+.....\hbox(4.62+1.162)x5.25, shifted -3.29218, direction TLT
 ......\TU/texgyrepagella(0)/b/n/7 2
 ......\TU/texgyrepagella(0)/b/n/7 ,
 .....\penalty 10000
@@ -816,8 +816,8 @@ Completed box being shipped out [1]
 ....\glue 10.0 plus 4.0 minus 5.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.829
-....\hbox(6.996+1.224)x394.35522, glue set 133.86261fil, direction TLT
+....\glue(\baselineskip) 2.02725
+....\hbox(6.79774+1.224)x394.35522, glue set 133.86261fil, direction TLT
 .....\kern-0.15 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
@@ -825,7 +825,7 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(4.164+0.018)x3.0, shifted -2.832, direction TLT
+.....\hbox(4.164+0.018)x3.0, shifted -2.63374, direction TLT
 ......\TU/texgyrepagella(0)/m/n/6 1
 .....\penalty 10000
 .....\glue 0.5
@@ -882,15 +882,15 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus -1.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 2.295
-....\hbox(6.966+1.224)x394.35522, glue set 133.7876fil, direction TLT
+....\glue(\baselineskip) 2.49326
+....\hbox(6.76775+1.224)x394.35522, glue set 133.7876fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(4.134+0.018)x3.0, shifted -2.832, direction TLT
+.....\hbox(4.134+0.018)x3.0, shifted -2.63374, direction TLT
 ......\TU/texgyrepagella(0)/m/n/6 2
 .....\penalty 10000
 .....\glue 0.5
@@ -1193,24 +1193,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.22499
-....\hbox(6.996+2.248)x380.75525, glue set 63.44557fil, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.42325
+....\hbox(6.79774+2.248)x380.75525, glue set 63.44557fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.996+0.0)x0.0, direction TLT
+.....\hbox(6.79774+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
-.......\hbox(6.996+0.0)x3.5, direction TLT
+......\hbox(6.79774+0.0)x13.59998, glue set 10.09998fil, direction TLT
+.......\hbox(6.79774+0.0)x3.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.2} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
+........\hbox(4.164+0.03)x3.0, shifted -2.63374, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 †
 ........\penalty 10000
 ........\glue 0.5
@@ -1315,24 +1315,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.075
-....\hbox(7.162+2.264)x380.75525, glue set 1.79245fil, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.18028
+....\hbox(7.05672+2.264)x380.75525, glue set 1.79245fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.162+0.0)x0.0, direction TLT
+.....\hbox(7.05672+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(7.162+0.0)x13.59998, glue set 10.09998fil, direction TLT
-.......\hbox(7.162+0.0)x3.5, direction TLT
+......\hbox(7.05672+0.0)x13.59998, glue set 10.09998fil, direction TLT
+.......\hbox(7.05672+0.0)x3.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.3} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.164+1.494)x3.0, shifted -2.998, direction TLT
+........\hbox(4.164+1.494)x3.0, shifted -2.89272, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 ‡
 ........\penalty 10000
 ........\glue 0.5
@@ -1520,24 +1520,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.135
-....\hbox(7.086+2.264)x380.75525, glue set - 0.09288, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.25429
+....\hbox(6.9667+2.264)x380.75525, glue set - 0.09288, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.086+0.0)x0.0, direction TLT
+.....\hbox(6.9667+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(7.086+0.0)x13.59998, glue set 10.09998fil, direction TLT
-.......\hbox(7.086+0.0)x3.5, direction TLT
+......\hbox(6.9667+0.0)x13.59998, glue set 10.09998fil, direction TLT
+.......\hbox(6.9667+0.0)x3.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.4} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.254+1.314)x3.0, shifted -2.832, direction TLT
+........\hbox(4.254+1.314)x3.0, shifted -2.7127, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 ^^a7
 ........\penalty 10000
 ........\glue 0.5
@@ -1726,24 +1726,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.489
-....\hbox(6.732+2.264)x380.75525, glue set 0.11201fil, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.68726
+....\hbox(6.53374+2.264)x380.75525, glue set 0.11201fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.732+0.0)x0.0, direction TLT
+.....\hbox(6.53374+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(6.732+0.0)x13.59998, glue set 10.84398fil, direction TLT
-.......\hbox(6.732+0.0)x2.756, direction TLT
+......\hbox(6.53374+0.0)x13.59998, glue set 10.84398fil, direction TLT
+.......\hbox(6.53374+0.0)x2.756, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.5} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(3.9+0.9)x2.256, shifted -2.832, direction TLT
+........\hbox(3.9+0.9)x2.256, shifted -2.63374, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 ‖
 ........\penalty 10000
 ........\glue 0.5
@@ -1930,24 +1930,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.19499
-....\hbox(7.026+2.264)x380.75525, glue set - 0.01425, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.39325
+....\hbox(6.82774+2.264)x380.75525, glue set - 0.01425, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.026+0.0)x0.0, direction TLT
+.....\hbox(6.82774+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(7.026+0.0)x13.59998, glue set 9.33197fil, direction TLT
-.......\hbox(7.026+0.0)x4.268, direction TLT
+......\hbox(6.82774+0.0)x13.59998, glue set 9.33197fil, direction TLT
+.......\hbox(6.82774+0.0)x4.268, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.6} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.194+0.9)x3.768, shifted -2.832, direction TLT
+........\hbox(4.194+0.9)x3.768, shifted -2.63374, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 ^^b6
 ........\penalty 10000
 ........\glue 0.5
@@ -2339,24 +2339,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.22499
-....\hbox(6.996+2.264)x380.75525, glue set 0.11836fil, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.42325
+....\hbox(6.79774+2.264)x380.75525, glue set 0.11836fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.996+0.0)x0.0, direction TLT
+.....\hbox(6.79774+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(6.996+0.0)x13.59998, glue set 7.09998fil, direction TLT
-.......\hbox(6.996+0.0)x6.5, direction TLT
+......\hbox(6.79774+0.0)x13.59998, glue set 7.09998fil, direction TLT
+.......\hbox(6.79774+0.0)x6.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.8} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.164+0.03)x6.0, shifted -2.832, direction TLT
+........\hbox(4.164+0.03)x6.0, shifted -2.63374, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 †
 .........\TU/texgyrepagella(0)/m/n/6 †
 ........\penalty 10000
@@ -2544,24 +2544,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.05899
-....\hbox(7.162+2.264)x380.75525, glue set - 0.00485, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.16428
+....\hbox(7.05672+2.264)x380.75525, glue set - 0.00485, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.162+0.0)x0.0, direction TLT
+.....\hbox(7.05672+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(7.162+0.0)x13.59998, glue set 7.09998fil, direction TLT
-.......\hbox(7.162+0.0)x6.5, direction TLT
+......\hbox(7.05672+0.0)x13.59998, glue set 7.09998fil, direction TLT
+.......\hbox(7.05672+0.0)x6.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.9} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.164+1.494)x6.0, shifted -2.998, direction TLT
+........\hbox(4.164+1.494)x6.0, shifted -2.89272, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 ‡
 .........\TU/texgyrepagella(0)/m/n/6 ‡
 ........\penalty 10000
@@ -2755,24 +2755,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.135
-....\hbox(7.086+2.264)x380.75525, glue set 0.15883fil, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.25429
+....\hbox(6.9667+2.264)x380.75525, glue set 0.15883fil, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.086+0.0)x0.0, direction TLT
+.....\hbox(6.9667+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(7.086+0.0)x13.59998, glue set 7.09998fil, direction TLT
-.......\hbox(7.086+0.0)x6.5, direction TLT
+......\hbox(6.9667+0.0)x13.59998, glue set 7.09998fil, direction TLT
+.......\hbox(6.9667+0.0)x6.5, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.10} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.254+1.314)x6.0, shifted -2.832, direction TLT
+........\hbox(4.254+1.314)x6.0, shifted -2.7127, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 ^^a7
 .........\TU/texgyrepagella(0)/m/n/6 ^^a7
 ........\penalty 10000
@@ -2961,24 +2961,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.489
-....\hbox(6.732+2.264)x380.75525, glue set - 0.00388, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.68726
+....\hbox(6.53374+2.264)x380.75525, glue set - 0.00388, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(6.732+0.0)x0.0, direction TLT
+.....\hbox(6.53374+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(6.732+0.0)x13.59998, glue set 8.58798fil, direction TLT
-.......\hbox(6.732+0.0)x5.012, direction TLT
+......\hbox(6.53374+0.0)x13.59998, glue set 8.58798fil, direction TLT
+.......\hbox(6.53374+0.0)x5.012, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.11} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(3.9+0.9)x4.512, shifted -2.832, direction TLT
+........\hbox(3.9+0.9)x4.512, shifted -2.63374, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 ‖
 .........\TU/texgyrepagella(0)/m/n/6 ‖
 ........\penalty 10000
@@ -3166,24 +3166,24 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 1.19499
-....\hbox(7.026+2.264)x380.75525, glue set - 0.01062, shifted 13.59998, direction TLT
+....\glue(\baselineskip) 1.39325
+....\hbox(6.82774+2.264)x380.75525, glue set - 0.01062, shifted 13.59998, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(7.026+0.0)x0.0, direction TLT
+.....\hbox(6.82774+0.0)x0.0, direction TLT
 ......\glue -13.59998
-......\hbox(7.026+0.0)x13.59998, glue set 5.56396fil, direction TLT
-.......\hbox(7.026+0.0)x8.03601, direction TLT
+......\hbox(6.82774+0.0)x13.59998, glue set 5.56396fil, direction TLT
+.......\hbox(6.82774+0.0)x8.03601, direction TLT
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 ..........\pdfdest name{itemize*.12} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\hbox(4.194+0.9)x7.53601, shifted -2.832, direction TLT
+........\hbox(4.194+0.9)x7.53601, shifted -2.63374, direction TLT
 .........\TU/texgyrepagella(0)/m/n/6 ^^b6
 .........\TU/texgyrepagella(0)/m/n/6 ^^b6
 ........\penalty 10000

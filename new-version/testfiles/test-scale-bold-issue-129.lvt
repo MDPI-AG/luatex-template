@@ -1,0 +1,10 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\begin{document}
+\START\showoutput
+$a${\boldmath $a$}
+x\textsuperscript{2}$x^{3^4}$
+{\boldmath\bfseries x\textsuperscript{2}$x^{3^4}$}
+
+\end{document}
