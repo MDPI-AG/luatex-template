@@ -1,0 +1,29 @@
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+% note: with 2026-11-01 appendix A will appear in the toc, and the dots will be correct
+\begin{document}
+\START\showoutput
+\IfFormatAtLeastTF{2026-11-01}
+ {\TYPE{LaTeX 2026-11-01: THIS SHOULD FAIL}}
+ {\TYPE{WRONG OUTPUT}}
+\tableofcontents
+
+
+\section{Introduction}
+
+\subsection{blub}
+
+\appendix
+
+\section{}
+\section{Some section in the appendix}
+\subsection{Some subsection in the appendix}
+\subsection{}
+\subsubsection{Some subsubsection in the appendix}
+
+test test\endnote{A endnote} 
+
+\printendnotes[custom] 
+
+\end{document}

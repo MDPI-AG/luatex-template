@@ -1,0 +1,23 @@
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\RemoveFromHook{begindocument/end}[mdpi/maketitle] 
+\begin{document}
+\START\showoutput
+\SHOWPDFTAGS
+\section{A section}
+
+some text
+\abbreviations{Abbreviations}{%
+The following abbreviations are used in this manuscript:\\
+
+\noindent 
+\begin{tabular}{@{}ll}
+MDPI & Multidisciplinary Digital Publishing Institute\\
+DOAJ & Directory of open access journals\\
+TLA   & Three-letter acronym\\
+LD      & Linear dichroism
+\end{tabular}
+}
+
+\end{document}

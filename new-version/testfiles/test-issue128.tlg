@@ -37,6 +37,7 @@ Don't change this file in any respect.
 \@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces This is a wide table.}}{1}{table.caption.6}\protected@file@percent }[nl]
 \newlabel{tab4}{{4}{1}{This is a wide table}{table.caption.6}{}}[nl]
 \newlabel{tab4@cref}{{[table][4][]4}{[1][1][]1}{}{}{}}[nl]
+\@writefile{toc}{\UseName {mdpi@toc@appendixsetup}}[nl]
 \@writefile{toc}{\contentsline {section}{\numberline {A}Appendix~A}{1}{appendix.A}\protected@file@percent }[nl]
 \newlabel{app1}{{A}{1}{\appendixname ~\thesection }{appendix.A}{}}[nl]
 \newlabel{app1@cref}{{[appendix][1][2147483647]A}{[1][1][]1}{}{}{}}[nl]
@@ -2412,6 +2413,10 @@ Completed box being shipped out [1]
 .......\glue(\rightskip) 0.0
 ......\glue 6.0
 ......\glue 0.0
+....\glue 12.0 plus 2.0 minus 2.0
+....\write1{\@writefile{toc}{\protect \UseName {mdpi@toc@appendixsetup}}}
+....\penalty 10000
+....\glue -12.0 plus -2.0 minus -2.0
 ....\glue 12.0 plus 2.0 minus 2.0
 ....\glue -12.0 plus -2.0 minus -2.0
 ....\penalty -300
