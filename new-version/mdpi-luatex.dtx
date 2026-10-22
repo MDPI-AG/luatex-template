@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-10-22}
-\def\mdpiversion{v7.0y}
+\def\mdpiversion{v7.0z}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -187,6 +187,28 @@
 %    \begin{macrocode}
 \RequirePackage{lua-unicode-math}
 \RequirePackage{lum-pagella}
+%    \end{macrocode}
+% We scale the bold font, see issue \#129
+%    \begin{macrocode}
+\DeclareFontFamily{TU}{tg-pagella-math}{}
+\DeclareFontShape{TU}{tg-pagella-math}{m}{n}%
+  {<-> \UnicodeFontFile{texgyrepagella-math}{mode=base;script=math;language=dflt;}}{}
+\DeclareFontShape{TU}{tg-pagella-math}{b}{n}%
+  {<-> s*[0.93]\UnicodeFontFile{texgyrepagella-math}{mode=base;script=math;language=dflt;embolden=3;}}{}
+
+\DeclareMathScriptfontMapping{TU}{tg-pagella-math}{TU}{tg-pagella-math-sf}{TU}{tg-pagella-math-ssf}
+
+\DeclareFontFamily{TU}{tg-pagella-math-sf}{}
+\DeclareFontShape{TU}{tg-pagella-math-sf}{m}{n}%
+  {<-> \UnicodeFontFile{texgyrepagella-math}{mode=base;script=math;language=dflt;ssty=1;}}{}
+\DeclareFontShape{TU}{tg-pagella-math-sf}{b}{n}%
+  {<-> s*[0.93]\UnicodeFontFile{texgyrepagella-math}{mode=base;script=math;language=dflt;embolden=3;ssty=1;}}{}
+
+\DeclareFontFamily{TU}{tg-pagella-math-ssf}{}
+\DeclareFontShape{TU}{tg-pagella-math-ssf}{m}{n}%
+  {<-> \UnicodeFontFile{texgyrepagella-math}{mode=base;script=math;language=dflt;ssty=2;}}{}
+\DeclareFontShape{TU}{tg-pagella-math-ssf}{b}{n}%
+  {<-> s*[0.93]\UnicodeFontFile{texgyrepagella-math}{mode=base;script=math;language=dflt;embolden=3;ssty=2;}}{}
 %    \end{macrocode}
 % Now define greek commands as replacement for the upgreek package: issue \#92
 % Various \cs{up}+lowercase greek:
