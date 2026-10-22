@@ -206,9 +206,15 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `texgyrepagella' (encoding: TU).
+(microtype)             `tg-pagella' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  TU/lmr-base/bx/n --> TU/tg-pagella/bx/n on input line ....
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  TU/lmr-base/bx/n --> TU/tg-pagella/eb/n on input line ....
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  TU/lmr-base/bx/it --> TU/tg-pagella/bx/it on input line ....
 (../supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count...
@@ -429,10 +435,10 @@ Completed box being shipped out [1]
 .....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 b
-.....\TU/texgyrepagella(0)/m/n/10 l
-.....\TU/texgyrepagella(0)/m/n/10 u
-.....\TU/texgyrepagella(0)/m/n/10 b
+.....\TU/tg-pagella/m/n/10 b
+.....\TU/tg-pagella/m/n/10 l
+.....\TU/tg-pagella/m/n/10 u
+.....\TU/tg-pagella/m/n/10 b
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
@@ -489,7 +495,7 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-..........\TU/texgyrepagella(0)/m/n/8 1
+..........\TU/tg-pagella/m/n/8 1
 ..........\rule(7.33946+3.14552)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
