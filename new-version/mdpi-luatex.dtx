@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-21}
-\def\mdpiversion{v7.0x}
+\def\mdpidate{2026-10-22}
+\def\mdpiversion{v7.0y}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -62,6 +62,16 @@
 % Graphics can be stored in folders \texttt{figures}, \texttt{Figures},
 % \texttt{figure} and \texttt{Figure}.
 %
+% \subsection{Frontmatter}
+% 
+% \begin{function}{\address}
+% \begin{syntax}
+% \cs{address}\oarg{number}\Arg{text}
+% \end{syntax}
+% This set affiliation information. If \meta{number} is 1, the code assumes
+% that only one author is there and the text is set \emph{without} hanging indent.
+% \end{function}
+% 
 % \subsection{Orcid}
 %
 % \begin{function}{\neworcid,\useorcid}
@@ -1052,7 +1062,11 @@
 
 %    \end{macrocode}
 % \subsubsection{Data commands for the front matter}
+% We want to keep track if notes for the list on title has been 
+% added.
 %    \begin{macrocode}
+\ExplSyntaxOn
+\bool_new:N\l__mdpi_frontmatter_notes_bool
 \def\@Title{TITLE}
 \newcommand{\Title}[1]{\gdef\@Title{#1}}%
 \def\@Author{AUTHOR}
@@ -1075,9 +1089,17 @@
 \newcommand{\address}[2][]{\renewcommand{\firstargument}{#1}\gdef\@address{#2}}
 \newcommand{\corresfirstargument}{}
 \def\@corres{}
-\newcommand{\corres}[2][]{\renewcommand{\corresfirstargument}{#1}\gdef\@corres{#2}}
+\newcommand{\corres}[2][]
+  {
+   \bool_set_true:N\l__mdpi_frontmatter_notes_bool
+   \renewcommand{\corresfirstargument}{#1}\gdef\@corres{#2}
+  }
 \def\@conference{}
-\newcommand{\conference}[1]{\gdef\@conference{#1}}%
+\newcommand{\conference}[1]
+  {
+   \bool_set_true:N\l__mdpi_frontmatter_notes_bool
+   \gdef\@conference{#1}
+  }%
 \def\@abstract{}
 \renewcommand{\abstract}[1]{\gdef\@abstract{#1}}
 \def\@externaleditor{}
@@ -1116,30 +1138,40 @@
 \def\@issuenum{0}
 \newcommand{\issuenum}[1]{\gdef\@issuenum{\inteval{#1}}}
 \def\@firstnote{}
-\newcommand{\firstnote}[1]{\gdef\@firstnote{#1}}
+\newcommand{\firstnote}[1]
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@firstnote{#1}}
 \def\@secondnote{}
-\newcommand{\secondnote}[1]{\gdef\@secondnote{#1}}%
+\newcommand{\secondnote}[1]
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@secondnote{#1}}%
 \def\@thirdnote{}
-\newcommand{\thirdnote}[1]{\gdef\@thirdnote{#1}}%
+\newcommand{\thirdnote}[1]
+  {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@thirdnote{#1}}%
 \def\@fourthnote{}
-\newcommand{\fourthnote}[1]{\gdef\@fourthnote{#1}}%
+\newcommand{\fourthnote}[1]
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fourthnote{#1}}%
 \def\@fifthnote{}
-\newcommand{\fifthnote}[1]{\gdef\@fifthnote{#1}}%
+\newcommand{\fifthnote}[1]
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fifthnote{#1}}%
 \def\@sixthnote{}
-\newcommand{\sixthnote}[1]{\gdef\@sixthnote{#1}}%
+\newcommand{\sixthnote}[1]
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@sixthnote{#1}}%
 \def\@seventhnote{}
 \newcommand{\seventhnote}[1]{\gdef\@seventhnote{#1}}%
 \def\@eighthnote{}
 %    \end{macrocode}
 % The user command uses plural as \cs{eighthnote} is already defined
 %    \begin{macrocode}
-\newcommand{\eighthnotes}[1]{\gdef\@eighthnote{#1}}%
+\newcommand{\eighthnotes}[1]
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@eighthnote{#1}}%
 \def\@ninethnote{}
-\newcommand{\ninethnote}[1]{\gdef\@ninethnote{#1}}%
+\newcommand{\ninethnote}[1]
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@ninethnote{#1}}%
 \def\@tenthnote{}
-\newcommand{\tenthnote}[1]{\gdef\@tenthnote{#1}}%
+\newcommand{\tenthnote}[1]
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@tenthnote{#1}}%
 \def\@eleventhnote{}
 \newcommand{\eleventhnote}[1]{\gdef\@eleventhnote{#1}}%
+\ExplSyntaxOff
 \def\@simplesumm{}
 \newcommand{\simplesumm}[1]{\gdef\@simplesumm{#1}}
 \def\@articlenumber{0}
@@ -1699,9 +1731,7 @@
 %    \begin{macrocode}
 \newcommand\mdpi@notelabel
  {
-   \stepcounter{mdpi@notecnt}
-   \makebox[\mdpi@len@dist][l]
-    {\UseTaggingSocket{inline/begin}{tag=Lbl}\mdpi@notesymbol\csname pdffakespace\endcsname\UseTaggingSocket{inline/end}}
+   \stepcounter{mdpi@notecnt}\mdpi@notesymbol
  }
 %    \end{macrocode}
 %
@@ -1727,45 +1757,49 @@
      \@address
      \par
 %    \end{macrocode}
-% \env{flushleft} doesn't work together with the \cs{hang} command if \cs{DocumentMetadata} is used,
-% so we set the \cs{parshape} instead.
+% The rest of the notes are implemented with a list, this gives also better tagging.
 %    \begin{macrocode}
-     % Scheme B: single affiliation (\address[1]) -> tighter note indent
      \tl_if_eq:NnTF{\firstargument}{1}
        {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist-\mdpi@len@distshift\relax}
-       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}
-     \parshape 2~0cm \linewidth
-     \dimeval{\mdpi@len@tmpa}~\dimeval{\linewidth-\mdpi@len@tmpa}
-     \tl_if_eq:NnTF\@authornum{author}
+       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax} 
+     \bool_if:NT\l__mdpi_frontmatter_notes_bool   
        {
-         \stepcounter{mdpi@notecnt}
-       }
-       {
-        \tl_if_empty:NTF\@corres
+        \begin{itemize}
+          [nosep,
+           left-margin=\mdpi@len@tmpa,
+           label-width=\mdpi@len@tmpa,
+           label-sep=0pt,
+           align=left
+          ]     
+        \tl_if_eq:NnTF\@authornum{author}
+          {
+            \stepcounter{mdpi@notecnt}
+          }
+          {
+           \tl_if_empty:NTF\@corres
+            {
+              \stepcounter{mdpi@notecnt}
+            }
+            {
+              \item[\mdpi@notelabel]\@corres
+            }
+          }
+        \tl_if_empty:NF\@conference
+          {
+            \item[\mdpi@notelabel]
+            This~ paper~ is~ an~ extended~ version~ of~ our~ paper~ published~ in\space \@conference.
+          }
+        \clist_map_inline:nn{first,second,third,fourth,fifth,sixth,seventh,eighth,nineth,tenth,eleventh}
          {
-           \stepcounter{mdpi@notecnt}
+          \tl_if_empty:cF{@##1note}
+           {
+            \item[\mdpi@notelabel]
+            \tl_use:c{@##1note}         
+           }
          }
-         {
-           \mdpi@notelabel\@corres
-           \par
-         }
-       }
-     \tl_if_empty:NF\@conference
-       {
-         \mdpi@notelabel
-         This~ paper~ is~ an~ extended~ version~ of~ our~ paper~ published~ in\space \@conference.
-         \par
-       }
-     \clist_map_inline:nn{first,second,third,fourth,fifth,sixth,seventh,eighth,nineth,tenth,eleventh}
-      {
-       \tl_if_empty:cF{@##1note}
-        {
-         \mdpi@notelabel
-         \tl_use:c{@##1note}
-         \par
-        }
-      }
-     \tl_if_empty:NF\@LSID{\vskip12pt \@LSID \par}
+        \end{itemize}
+      } 
+     \tl_if_empty:NF\@LSID{\par\vskip12pt \@LSID \par}
      \end{flushleft}
    }
  }

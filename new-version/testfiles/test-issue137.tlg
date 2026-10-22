@@ -802,24 +802,36 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-....\glue(\parskip) 0.0 plus 1.0
+....\penalty -51
+....\glue 0.0 plus 1.0
+....\glue 0.0
+....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 2.265
-....\hbox(6.996+0.16)x394.35522, glue set 141.03627fil, direction TLT
+....\hbox(6.996+0.16)x387.5553, glue set 144.4363fil, shifted 6.79993, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(6.996+0.0)x13.59998, glue set 10.09998fil, direction TLT
-......\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
-.......\TU/texgyrepagella(0)/m/n/6 †
-......\penalty 10000
-......\glue 0.5
-......\kern0.0
+.....\hbox(6.996+0.0)x0.0, direction TLT
+......\glue -6.79993
+......\hbox(6.996+0.0)x6.79993, glue set 3.29993fil, direction TLT
+.......\hbox(6.996+0.0)x3.5, direction TLT
+........\penalty 10000
+........\hbox(0.0+0.0)x0.0, direction TLT
+.........\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
+..........\pdfdest name{itemize*.1} xyz
+..........\penalty 10000
+........\kern0.0
+........\hbox(4.164+0.03)x3.0, shifted -2.832, direction TLT
+.........\TU/texgyrepagella(0)/m/n/6 †
+........\penalty 10000
+........\glue 0.5
+........\kern0.0
+.......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\glue 0.0
-......\glue 0.0 plus 1.0fil minus 1.0fil
+.....\penalty 0
 .....\TU/texgyrepagella(0)/m/n/8 C
 .....\TU/texgyrepagella(0)/m/n/8 u
 .....\TU/texgyrepagella(0)/m/n/8 r
@@ -866,6 +878,8 @@ Completed box being shipped out [1]
 .....\kern-1.4 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\penalty -51
+....\glue 0.0
 ....\penalty -51
 ....\glue 10.0 plus 3.0 minus 5.0
 ....\glue 4.0
