@@ -273,7 +273,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 548.47418fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 496.53973fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -684,6 +684,221 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
+....\hbox(7.26+2.81)x394.35522, glue set 314.3052fill, direction TLT
+.....\glue(\leftskip) 15.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -15.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 8} action struct name{appendix.B} goto name{appendix.B}
+.....\hbox(7.26+2.81)x62.04999, glue set 8.89fil, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral direct <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/10 A
+......\TU/tg-pagella/m/n/10 p
+......\discretionary (penalty 50)
+.......< \TU/tg-pagella/m/n/10 -
+......\TU/tg-pagella/m/n/10 p
+......\TU/tg-pagella/m/n/10 e
+......\TU/tg-pagella/m/n/10 n
+......\TU/tg-pagella/m/n/10 d
+......\TU/tg-pagella/m/n/10 i
+......\TU/tg-pagella/m/n/10 x
+......\penalty 10000
+......\TU/tg-pagella/m/n/10  
+......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+......\TU/tg-pagella/m/n/10 B
+......\glue 0.0 plus 1.0fil
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfendlink
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.11+0.05)x7.14996, direction TLT
+.......\mathon
+.......\kern2.32498 (italic)
+.......\hbox(1.11+0.05)x2.5, direction TLT
+........\pdfliteral direct <lua data reference ...>
+........\TU/tg-pagella/m/n/10 .
+.......\kern2.32498 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.89+0.2)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral direct <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/10 3
+......\kern-1.0
+......\kern1.0
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.81)x394.35522, glue set 291.30518fill, direction TLT
+.....\glue(\leftskip) 38.00003
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x15.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -38.00003
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 9} action struct name{subsection.B.1} goto name{subsection.B.1}
+.....\hbox(7.26+2.81)x70.05002, glue set 9.39003fil, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral direct <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/10 A
+......\TU/tg-pagella/m/n/10 p
+......\discretionary (penalty 50)
+.......< \TU/tg-pagella/m/n/10 -
+......\TU/tg-pagella/m/n/10 p
+......\TU/tg-pagella/m/n/10 e
+......\TU/tg-pagella/m/n/10 n
+......\TU/tg-pagella/m/n/10 d
+......\TU/tg-pagella/m/n/10 i
+......\TU/tg-pagella/m/n/10 x
+......\penalty 10000
+......\TU/tg-pagella/m/n/10  
+......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+......\TU/tg-pagella/m/n/10 B
+......\TU/tg-pagella/m/n/10 .
+......\TU/tg-pagella/m/n/10 1
+......\glue 0.0 plus 1.0fil
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfendlink
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.11+0.05)x7.14996, direction TLT
+.......\mathon
+.......\kern2.32498 (italic)
+.......\hbox(1.11+0.05)x2.5, direction TLT
+........\pdfliteral direct <lua data reference ...>
+........\TU/tg-pagella/m/n/10 .
+.......\kern2.32498 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.89+0.2)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral direct <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/10 3
+......\kern-1.0
+......\kern1.0
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
+....\hbox(7.26+2.81)x394.35522, glue set 259.3052fill, direction TLT
+.....\glue(\leftskip) 70.0
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x38.00003, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+.....\penalty 10000
+.....\glue -70.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 10} action struct name{subsubsection.B.1.1} goto name{subsubsection.B.1.1}
+.....\hbox(7.26+2.81)x79.04996, glue set 10.88997fil, direction TLT
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral direct <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/10 A
+......\TU/tg-pagella/m/n/10 p
+......\discretionary (penalty 50)
+.......< \TU/tg-pagella/m/n/10 -
+......\TU/tg-pagella/m/n/10 p
+......\TU/tg-pagella/m/n/10 e
+......\TU/tg-pagella/m/n/10 n
+......\TU/tg-pagella/m/n/10 d
+......\TU/tg-pagella/m/n/10 i
+......\TU/tg-pagella/m/n/10 x
+......\penalty 10000
+......\TU/tg-pagella/m/n/10  
+......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+......\TU/tg-pagella/m/n/10 B
+......\TU/tg-pagella/m/n/10 .
+......\TU/tg-pagella/m/n/10 1
+......\TU/tg-pagella/m/n/10 .
+......\TU/tg-pagella/m/n/10 1
+......\glue 0.0 plus 1.0fil
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\pdfendlink
+.....\penalty 10000
+.....\penalty 10000
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\leaders 0.0 plus 1.0fill
+......\hbox(1.11+0.05)x7.14996, direction TLT
+.......\mathon
+.......\kern2.32498 (italic)
+.......\hbox(1.11+0.05)x2.5, direction TLT
+........\pdfliteral direct <lua data reference ...>
+........\TU/tg-pagella/m/n/10 .
+.......\kern2.32498 (italic)
+.......\mathoff
+.....\penalty 10000
+.....\penalty 10000
+.....\hbox(6.89+0.2)x15.50003, glue set 10.50003fil, direction TLT
+......\glue 0.0 plus 1.0fil
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral direct <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/10 3
+......\kern-1.0
+......\kern1.0
+.....\penalty 10000
+.....\glue(\parfillskip) -25.50003
+.....\glue(\rightskip) 25.50003
+....\penalty -300
+....\glue 10.0 plus 1.0
+....\glue 0.0 plus 0.2
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.91
 ....\hbox(7.26+2.83)x394.35522, glue set 236.96524fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
@@ -697,7 +912,7 @@ Completed box being shipped out [1]
 .....\glue -15.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 8} action struct name{appendix.C} goto name{appendix.C}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 11} action struct name{appendix.C} goto name{appendix.C}
 .....\hbox(7.26+2.81)x62.04999, glue set 5.41fil, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -794,7 +1009,7 @@ Completed box being shipped out [1]
 .....\glue -15.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 9} action struct name{appendix.D} goto name{appendix.D}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 12} action struct name{appendix.D} goto name{appendix.D}
 .....\hbox(7.26+2.81)x62.04999, glue set 4.76fil, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -882,7 +1097,7 @@ Completed box being shipped out [1]
 .....\glue -38.00003
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 10} action struct name{subsection.D.1} goto name{subsection.D.1}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 13} action struct name{subsection.D.1} goto name{subsection.D.1}
 .....\hbox(7.26+2.81)x70.05002, glue set 5.26003fil, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -977,7 +1192,7 @@ Completed box being shipped out [1]
 .....\glue -70.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 11} action struct name{subsubsection.D.1.1} goto name{subsubsection.D.1.1}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 14} action struct name{subsubsection.D.1.1} goto name{subsubsection.D.1.1}
 .....\hbox(7.26+2.81)x79.04996, glue set 6.75996fil, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -1118,7 +1333,7 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 12/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 15/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
@@ -3004,7 +3219,7 @@ Completed box being shipped out [2]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 13/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 16/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
@@ -3477,6 +3692,14 @@ Completed box being shipped out [3]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\marks1{\__mark_value:nn {10}{\MakeUppercase    []{B\hskip 1em\relax }}}
+....\penalty 10000
+....\marks2{\__mark_value:nn {11}{}}
+....\penalty 10000
+....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {B}}{\thepage }{appendix.B}\protected@file@percent }}
+....\penalty 10000
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -3774,6 +3997,11 @@ Completed box being shipped out [3]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\marks2{\__mark_value:nn {12}{B.1\hskip 1em\relax }}
+....\marks3{\__mark_value:nn {13}{B.1\hskip 1em\relax }}
+....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {B.1}}{\thepage }{subsection.B.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -4073,6 +4301,9 @@ Completed box being shipped out [3]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\write1{\@writefile{toc}{\protect \contentsline {subsubsection}{\protect \numberline {B.1.1}}{\thepage }{subsubsection.B.1.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -4342,6 +4573,7 @@ Completed box being shipped out [3]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
+....\write1{\@writefile{toc}{\protect \contentsline {paragraph}{}{\thepage }{paragraph*.4}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -4605,6 +4837,7 @@ Completed box being shipped out [3]
 .....\kern0.0
 .....\glue 21.33955
 .....\write1{\new@label@record{heading*.11}{{pagenum}{\__property_code_pagenum: }}}
+.....\write1{\@writefile{toc}{\protect \contentsline {subparagraph}{}{\thepage }{subparagraph*.5}\protected@file@percent }}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/10  
@@ -4891,7 +5124,7 @@ Completed box being shipped out [3]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 14/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 17/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
@@ -5085,7 +5318,7 @@ TEST 1: Show PDF Tags
      </TOCI>
      <TOCI xmlns="http://iso.org/pdf/ssn"
         id="ID.028"
-        title="appendixtitlesyes"
+        title=""
        >
        <?References objects="5" ?>
       <Reference xmlns="http://iso.org/pdf/ssn"
@@ -5095,6 +5328,68 @@ TEST 1: Show PDF Tags
           id="ID.030"
          >
         <?MarkedContent page="1" ?>
+        <?MarkedContent page="1" ?>Appendix B
+        <?ReferencedObject type="Annot" page="1" ?>
+       </Link>
+       <?MarkedContent page="1" ?>3
+      </Reference>
+     </TOCI>
+     <TOC xmlns="http://iso.org/pdf/ssn"
+        id="ID.031"
+       >
+      <TOCI xmlns="http://iso.org/pdf/ssn"
+         id="ID.032"
+         title=""
+        >
+        <?References objects="6" ?>
+       <Reference xmlns="http://iso.org/pdf/ssn"
+          id="ID.033"
+         >
+        <Link xmlns="http://iso.org/pdf2/ssn"
+           id="ID.034"
+          >
+         <?MarkedContent page="1" ?>
+         <?MarkedContent page="1" ?>Appendix B.1
+         <?ReferencedObject type="Annot" page="1" ?>
+        </Link>
+        <?MarkedContent page="1" ?>3
+       </Reference>
+      </TOCI>
+      <TOC xmlns="http://iso.org/pdf/ssn"
+         id="ID.035"
+        >
+       <TOCI xmlns="http://iso.org/pdf/ssn"
+          id="ID.036"
+          title=""
+         >
+         <?References objects="7" ?>
+        <Reference xmlns="http://iso.org/pdf/ssn"
+           id="ID.037"
+          >
+         <Link xmlns="http://iso.org/pdf2/ssn"
+            id="ID.038"
+           >
+          <?MarkedContent page="1" ?>
+          <?MarkedContent page="1" ?>Appendix B.1.1
+          <?ReferencedObject type="Annot" page="1" ?>
+         </Link>
+         <?MarkedContent page="1" ?>3
+        </Reference>
+       </TOCI>
+      </TOC>
+     </TOC>
+     <TOCI xmlns="http://iso.org/pdf/ssn"
+        id="ID.039"
+        title="appendixtitlesyes"
+       >
+       <?References objects="8" ?>
+      <Reference xmlns="http://iso.org/pdf/ssn"
+         id="ID.040"
+        >
+       <Link xmlns="http://iso.org/pdf2/ssn"
+          id="ID.041"
+         >
+        <?MarkedContent page="1" ?>
         <?MarkedContent page="1" ?>Appendix C. appendixtitlesyes
         <?ReferencedObject type="Annot" page="1" ?>
        </Link>
@@ -5102,15 +5397,15 @@ TEST 1: Show PDF Tags
       </Reference>
      </TOCI>
      <TOCI xmlns="http://iso.org/pdf/ssn"
-        id="ID.031"
+        id="ID.042"
         title="Test section"
        >
-       <?References objects="6" ?>
+       <?References objects="9" ?>
       <Reference xmlns="http://iso.org/pdf/ssn"
-         id="ID.032"
+         id="ID.043"
         >
        <Link xmlns="http://iso.org/pdf2/ssn"
-          id="ID.033"
+          id="ID.044"
          >
         <?MarkedContent page="1" ?>
         <?MarkedContent page="1" ?>Appendix D. Test section
@@ -5120,18 +5415,18 @@ TEST 1: Show PDF Tags
       </Reference>
      </TOCI>
      <TOC xmlns="http://iso.org/pdf/ssn"
-        id="ID.034"
+        id="ID.045"
        >
       <TOCI xmlns="http://iso.org/pdf/ssn"
-         id="ID.035"
+         id="ID.046"
          title="Test subsection"
         >
-        <?References objects="7" ?>
+        <?References objects="10" ?>
        <Reference xmlns="http://iso.org/pdf/ssn"
-          id="ID.036"
+          id="ID.047"
          >
         <Link xmlns="http://iso.org/pdf2/ssn"
-           id="ID.037"
+           id="ID.048"
           >
          <?MarkedContent page="1" ?>
          <?MarkedContent page="1" ?>Appendix D.1. Test subsection
@@ -5141,18 +5436,18 @@ TEST 1: Show PDF Tags
        </Reference>
       </TOCI>
       <TOC xmlns="http://iso.org/pdf/ssn"
-         id="ID.038"
+         id="ID.049"
         >
        <TOCI xmlns="http://iso.org/pdf/ssn"
-          id="ID.039"
+          id="ID.050"
           title="Test subsubsection"
          >
-         <?References objects="8" ?>
+         <?References objects="11" ?>
         <Reference xmlns="http://iso.org/pdf/ssn"
-           id="ID.040"
+           id="ID.051"
           >
          <Link xmlns="http://iso.org/pdf2/ssn"
-            id="ID.041"
+            id="ID.052"
            >
           <?MarkedContent page="1" ?>
           <?MarkedContent page="1" ?>Appendix D.1.1. Test subsubsection
@@ -5166,17 +5461,17 @@ TEST 1: Show PDF Tags
     </TOC>
    </section>
    <section xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.042"
+      id="ID.053"
       rolemaps-to="Sect"
      >
     <section-heading xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.043"
+       id="ID.054"
        title="Test section"
        rolemaps-to="H1"
        referenced-as="1"
       >
      <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.044"
+        id="ID.055"
         rolemaps-to="Lbl"
        >
       <?MarkedContent page="2" ?>1.
@@ -5185,11 +5480,11 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="2" ?>Test section
     </section-heading>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.045"
+       id="ID.056"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.046"
+        id="ID.057"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -5198,17 +5493,17 @@ TEST 1: Show PDF Tags
      </text-block>
     </semantic-para>
     <subsection xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.047"
+       id="ID.058"
        rolemaps-to="Sect"
       >
      <subsection-heading xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.048"
+        id="ID.059"
         title="Test subsection"
         rolemaps-to="H2"
         referenced-as="2"
        >
       <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.049"
+         id="ID.060"
          rolemaps-to="Lbl"
         >
        <?MarkedContent page="2" ?>1.1.
@@ -5217,11 +5512,11 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="2" ?>Test subsection
      </subsection-heading>
      <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.050"
+        id="ID.061"
         rolemaps-to="Part"
        >
       <text-block xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.051"
+         id="ID.062"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -5230,17 +5525,17 @@ TEST 1: Show PDF Tags
       </text-block>
      </semantic-para>
      <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.052"
+        id="ID.063"
         rolemaps-to="Sect"
        >
       <subsubsection-heading xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.053"
+         id="ID.064"
          title="Test subsubsection"
          rolemaps-to="H3"
          referenced-as="3"
         >
        <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.054"
+          id="ID.065"
           rolemaps-to="Lbl"
          >
         <?MarkedContent page="2" ?>1.1.1.
@@ -5249,11 +5544,11 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="2" ?>Test subsubsection
       </subsubsection-heading>
       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.055"
+         id="ID.066"
          rolemaps-to="Part"
         >
        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.056"
+          id="ID.067"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -5262,22 +5557,22 @@ TEST 1: Show PDF Tags
        </text-block>
       </semantic-para>
       <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.057"
+         id="ID.068"
          rolemaps-to="Sect"
         >
        <paragraph-heading xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.058"
+          id="ID.069"
           title="Test paragraph"
           rolemaps-to="H4"
          >
         <?MarkedContent page="2" ?>Test paragraph
        </paragraph-heading>
        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.059"
+          id="ID.070"
           rolemaps-to="Part"
          >
         <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.060"
+           id="ID.071"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -5286,11 +5581,11 @@ TEST 1: Show PDF Tags
         </text-block>
        </semantic-para>
        <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.061"
+          id="ID.072"
           rolemaps-to="Sect"
          >
         <subparagraph-heading xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.062"
+           id="ID.073"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -5298,11 +5593,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="2" ?>Test subparagraph
         </subparagraph-heading>
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.063"
+           id="ID.074"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.064"
+            id="ID.075"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -5316,18 +5611,18 @@ TEST 1: Show PDF Tags
     </subsection>
    </section>
    <section xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.065"
+      id="ID.076"
       rolemaps-to="Sect"
      >
     <section-heading xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.066"
+       id="ID.077"
        title="appendixtitlesempty"
        rolemaps-to="H1"
        referenced-as="4"
       >
      <?MarkedContent page="3" ?>Appendix  
      <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.067"
+        id="ID.078"
         rolemaps-to="Lbl"
        >
       <?MarkedContent page="3" ?>A. 
@@ -5337,17 +5632,18 @@ TEST 1: Show PDF Tags
     </section-heading>
    </section>
    <section xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.068"
+      id="ID.079"
       rolemaps-to="Sect"
      >
     <section-heading xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.069"
+       id="ID.080"
        title=""
        rolemaps-to="H1"
+       referenced-as="5"
       >
      <?MarkedContent page="3" ?>Appendix  
      <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.070"
+        id="ID.081"
         rolemaps-to="Lbl"
        >
       <?MarkedContent page="3" ?>B
@@ -5355,11 +5651,11 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="3" ?>  
     </section-heading>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.071"
+       id="ID.082"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.072"
+        id="ID.083"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -5368,17 +5664,18 @@ TEST 1: Show PDF Tags
      </text-block>
     </semantic-para>
     <subsection xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.073"
+       id="ID.084"
        rolemaps-to="Sect"
       >
      <subsection-heading xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.074"
+        id="ID.085"
         title=""
         rolemaps-to="H2"
+        referenced-as="6"
        >
       <?MarkedContent page="3" ?>Appendix  
       <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.075"
+         id="ID.086"
          rolemaps-to="Lbl"
         >
        <?MarkedContent page="3" ?>B.1
@@ -5386,11 +5683,11 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="3" ?>  
      </subsection-heading>
      <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.076"
+        id="ID.087"
         rolemaps-to="Part"
        >
       <text-block xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.077"
+         id="ID.088"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -5399,17 +5696,18 @@ TEST 1: Show PDF Tags
       </text-block>
      </semantic-para>
      <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.078"
+        id="ID.089"
         rolemaps-to="Sect"
        >
       <subsubsection-heading xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.079"
+         id="ID.090"
          title=""
          rolemaps-to="H3"
+         referenced-as="7"
         >
        <?MarkedContent page="3" ?>Appendix  
        <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.080"
+          id="ID.091"
           rolemaps-to="Lbl"
          >
         <?MarkedContent page="3" ?>B.1.1
@@ -5417,11 +5715,11 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="3" ?>  
       </subsubsection-heading>
       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.081"
+         id="ID.092"
          rolemaps-to="Part"
         >
        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.082"
+          id="ID.093"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -5430,21 +5728,21 @@ TEST 1: Show PDF Tags
        </text-block>
       </semantic-para>
       <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.083"
+         id="ID.094"
          rolemaps-to="Sect"
         >
        <paragraph-heading xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.084"
+          id="ID.095"
           title=""
           rolemaps-to="H4"
          >
        </paragraph-heading>
        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.085"
+          id="ID.096"
           rolemaps-to="Part"
          >
         <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.086"
+           id="ID.097"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -5453,11 +5751,11 @@ TEST 1: Show PDF Tags
         </text-block>
        </semantic-para>
        <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.087"
+          id="ID.098"
           rolemaps-to="Sect"
          >
         <subparagraph-heading xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.088"
+           id="ID.099"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -5465,11 +5763,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="3" ?>
         </subparagraph-heading>
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.089"
+           id="ID.100"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.090"
+            id="ID.101"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -5483,18 +5781,18 @@ TEST 1: Show PDF Tags
     </subsection>
    </section>
    <section xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.091"
+      id="ID.102"
       rolemaps-to="Sect"
      >
     <section-heading xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.092"
+       id="ID.103"
        title="appendixtitlesyes"
        rolemaps-to="H1"
-       referenced-as="5"
+       referenced-as="8"
       >
      <?MarkedContent page="4" ?>Appendix  
      <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.093"
+        id="ID.104"
         rolemaps-to="Lbl"
        >
       <?MarkedContent page="4" ?>C. 
@@ -5504,18 +5802,18 @@ TEST 1: Show PDF Tags
     </section-heading>
    </section>
    <section xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.094"
+      id="ID.105"
       rolemaps-to="Sect"
      >
     <section-heading xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.095"
+       id="ID.106"
        title="Test section"
        rolemaps-to="H1"
-       referenced-as="6"
+       referenced-as="9"
       >
      <?MarkedContent page="4" ?>Appendix  
      <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.096"
+        id="ID.107"
         rolemaps-to="Lbl"
        >
       <?MarkedContent page="4" ?>D. 
@@ -5524,11 +5822,11 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="4" ?>Test section
     </section-heading>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.097"
+       id="ID.108"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.098"
+        id="ID.109"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -5537,18 +5835,18 @@ TEST 1: Show PDF Tags
      </text-block>
     </semantic-para>
     <subsection xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.099"
+       id="ID.110"
        rolemaps-to="Sect"
       >
      <subsection-heading xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.100"
+        id="ID.111"
         title="Test subsection"
         rolemaps-to="H2"
-        referenced-as="7"
+        referenced-as="10"
        >
       <?MarkedContent page="4" ?>Appendix  
       <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.101"
+         id="ID.112"
          rolemaps-to="Lbl"
         >
        <?MarkedContent page="4" ?>D.1. 
@@ -5557,11 +5855,11 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="4" ?>Test subsection
      </subsection-heading>
      <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.102"
+        id="ID.113"
         rolemaps-to="Part"
        >
       <text-block xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.103"
+         id="ID.114"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:TextAlign="Justify"
          rolemaps-to="P"
@@ -5570,18 +5868,18 @@ TEST 1: Show PDF Tags
       </text-block>
      </semantic-para>
      <subsubsection xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.104"
+        id="ID.115"
         rolemaps-to="Sect"
        >
       <subsubsection-heading xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.105"
+         id="ID.116"
          title="Test subsubsection"
          rolemaps-to="H3"
-         referenced-as="8"
+         referenced-as="11"
         >
        <?MarkedContent page="4" ?>Appendix  
        <heading-number xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.106"
+          id="ID.117"
           rolemaps-to="Lbl"
          >
         <?MarkedContent page="4" ?>D.1.1. 
@@ -5590,11 +5888,11 @@ TEST 1: Show PDF Tags
        <?MarkedContent page="4" ?>Test subsubsection
       </subsubsection-heading>
       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.107"
+         id="ID.118"
          rolemaps-to="Part"
         >
        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.108"
+          id="ID.119"
           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
           Layout:TextAlign="Justify"
           rolemaps-to="P"
@@ -5603,22 +5901,22 @@ TEST 1: Show PDF Tags
        </text-block>
       </semantic-para>
       <paragraph xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.109"
+         id="ID.120"
          rolemaps-to="Sect"
         >
        <paragraph-heading xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.110"
+          id="ID.121"
           title="Test paragraph"
           rolemaps-to="H4"
          >
         <?MarkedContent page="4" ?>Test paragraph
        </paragraph-heading>
        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.111"
+          id="ID.122"
           rolemaps-to="Part"
          >
         <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.112"
+           id="ID.123"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="P"
@@ -5627,11 +5925,11 @@ TEST 1: Show PDF Tags
         </text-block>
        </semantic-para>
        <subparagraph xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.113"
+          id="ID.124"
           rolemaps-to="Sect"
          >
         <subparagraph-heading xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.114"
+           id="ID.125"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextAlign="Justify"
            rolemaps-to="H5"
@@ -5639,11 +5937,11 @@ TEST 1: Show PDF Tags
          <?MarkedContent page="4" ?>Test subparagraph
         </subparagraph-heading>
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.115"
+           id="ID.126"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.116"
+            id="ID.127"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Justify"
             rolemaps-to="P"
@@ -5657,7 +5955,7 @@ TEST 1: Show PDF Tags
     </subsection>
    </section>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.117"
+      id="ID.128"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -5994,8 +6292,8 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\marks1{\__mark_value:nn {10}{\MakeUppercase    []{C\hskip 1em\relax appendixtitlesyes}}}
-....\marks2{\__mark_value:nn {11}{}}
+....\marks1{\__mark_value:nn {14}{\MakeUppercase    []{C\hskip 1em\relax appendixtitlesyes}}}
+....\marks2{\__mark_value:nn {15}{}}
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {C}appendixtitlesyes}{\thepage }{appendix.C}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
@@ -6071,9 +6369,9 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\marks1{\__mark_value:nn {12}{\MakeUppercase    []{D\hskip 1em\relax Test section}}}
+....\marks1{\__mark_value:nn {16}{\MakeUppercase    []{D\hskip 1em\relax Test section}}}
 ....\penalty 10000
-....\marks2{\__mark_value:nn {13}{}}
+....\marks2{\__mark_value:nn {17}{}}
 ....\penalty 10000
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {D}Test section}{\thepage }{appendix.D}\protected@file@percent }}
 ....\penalty 10000
@@ -6402,8 +6700,8 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\marks2{\__mark_value:nn {14}{D.1\hskip 1em\relax Test subsection}}
-....\marks3{\__mark_value:nn {15}{D.1\hskip 1em\relax Test subsection}}
+....\marks2{\__mark_value:nn {18}{D.1\hskip 1em\relax Test subsection}}
+....\marks3{\__mark_value:nn {19}{D.1\hskip 1em\relax Test subsection}}
 ....\write1{\@writefile{toc}{\protect \contentsline {subsection}{\protect \numberline {D.1}Test subsection}{\thepage }{subsection.D.1}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
@@ -7611,7 +7909,7 @@ Completed box being shipped out [4]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 15/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 18/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
@@ -7713,8 +8011,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~117 structure objects
-(tagpdf)             with ~111 'MC' leaf nodes.
+(tagpdf)             Writing out ~128 structure objects
+(tagpdf)             with ~126 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
