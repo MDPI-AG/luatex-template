@@ -1,0 +1,18 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\RemoveFromHook{begindocument/end}[mdpi/maketitle]
+\begin{document}
+\START\showoutput
+{$\symbf \alpha$} 
+
+$\symbf\Gamma$
+
+$\mathbf\delta\Delta\varDelta\Updelta\mathbf{123ABCabc}$
+
+{\boldmath{$a\pm b~123~$123}~$\mathbf{123ABCabc}$}  
+
+$123 \mathbf{123}  \mathit{123}$ 
+
+{\boldmath $123 \mathbf{123} \mathit{123}$ } 
+\end{document}

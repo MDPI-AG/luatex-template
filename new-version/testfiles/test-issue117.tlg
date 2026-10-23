@@ -1,0 +1,585 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+LaTeX Font Info:    Trying to load font information for TU+lmr-base on input line ....
+(../tulmr-base.fd
+File: tulmr-base.fd ....-..-.. v... LaTeX font definitions for Latin Modern in base mode
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmr-base' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+msa on input line ....
+File: mt-msa.cfg ....-..-.. v... microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line ....
+File: mt-msb.cfg ....-..-.. v... microtype config. file: AMS symbols (b) (RS)
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `tg-pagella-math' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `tg-pagella-math-sf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `tg-pagella-math-ssf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 9.29993pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 6.50995pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-ssf/b/n' will be
+(Font)              scaled to size 4.64996pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella/bx/n' in size <10> not available
+(Font)              Font shape `TU/tg-pagella/b/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella/bx/n' in size <7> not available
+(Font)              Font shape `TU/tg-pagella/b/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella/bx/n' in size <5> not available
+(Font)              Font shape `TU/tg-pagella/b/n' tried instead on input line ....
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line ....
+LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5> not available
+(Font)              Font shape `U/wasy/m/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella/bx/it' in size <10> not available
+(Font)              Font shape `TU/tg-pagella/b/it' tried instead on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella/bx/it' in size <7> not available
+(Font)              Font shape `TU/tg-pagella/b/it' tried instead on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella/bx/it' in size <5> not available
+(Font)              Font shape `TU/tg-pagella/b/it' tried instead on input line ....
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 21.49452pt, for example:
+(fancyhdr)                \setlength{\headheight}{21.49452pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
+LaTeX Font Info:    Font shape `TU/tg-pagella/bx/n' in size <8> not available
+(Font)              Font shape `TU/tg-pagella/b/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella/bx/n' in size <6> not available
+(Font)              Font shape `TU/tg-pagella/b/n' tried instead on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 7.43994pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 5.57996pt on input line ....
+Completed box being shipped out [1]
+\vbox(742.04784+4.19403)x489.10277, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(0.0+0.0)x0.0, direction TLT
+..\kern-72.26999
+..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
+...\kern-72.26999
+...\pdflinkstate -3
+...\hbox(0.0+0.0)x0.0, direction TLT
+....\hbox(0.0+0.0)x0.0, glue set 72.26999fil, shifted 72.26999, direction TLT
+.....\kern-72.26999
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\latelua0{ltx.__pdf.backend_ThisPage_gpush(tex.count["g_shipout_readonly_int"])}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+...\glue 0.0 plus 1.0fil minus 1.0fil
+.\vbox(0.0+0.0)x0.0, glue set 37.13861fil, direction TLT
+..\kern0.0
+..\kern-36.13487
+..\kern-1.00374
+..\hbox(0.0+0.0)x0.0, glue set - 93.7438fil, direction TLT
+...\kern0.0
+...\kern94.74754
+...\kern-1.00374
+...\pdfdest name{page.1} xyz
+...\penalty 10000
+...\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\lineskip) 0.0
+.\vbox(742.04784+4.19403)x489.10277, direction TLT
+..\glue -36.13487
+..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
+...\vbox(12.0+0.0)x394.35522, direction TLT
+....\glue 0.0 plus 1.0fil
+....\pdflinkstate 1
+....\hbox(12.0+0.0)x394.35522, direction TLT
+.....\hbox(12.0+0.0)x394.35522, direction TLT
+......\glue -131.16722
+......\hbox(12.0+0.0)x525.52245, direction TLT
+.......\vbox(12.0+0.0)x525.52245, direction TLT
+........\hbox(18.349+3.14552)x525.52245, direction TLT
+.........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+..........\vbox(18.349+3.14552)x525.52245, direction TLT
+...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+............\kern-0.288 (left margin)
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral direct <lua data reference ...>
+............\TU/tg-pagella/m/n/8 V
+............\kern-0.72 (font)
+............\TU/tg-pagella/m/n/8 e
+............\TU/tg-pagella/m/n/8 r
+............\discretionary (penalty 50)
+.............< \kern-0.24 (font)
+.............< \TU/tg-pagella/m/n/8 -
+............\TU/tg-pagella/m/n/8 s
+............\TU/tg-pagella/m/n/8 i
+............\TU/tg-pagella/m/n/8 o
+............\TU/tg-pagella/m/n/8 n
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/n/8 M
+............\TU/tg-pagella/m/n/8 a
+............\kern-0.32 (font)
+............\TU/tg-pagella/m/n/8 y
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/n/8 2
+............\TU/tg-pagella/m/n/8 0
+............\TU/tg-pagella/m/n/8 ,
+............\glue(\spaceskip) 2.0 plus 1.25 minus 0.53333
+............\TU/tg-pagella/m/n/8 2
+............\TU/tg-pagella/m/n/8 0
+............\TU/tg-pagella/m/n/8 1
+............\TU/tg-pagella/m/n/8 6
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/n/8 s
+............\TU/tg-pagella/m/n/8 u
+............\TU/tg-pagella/m/n/8 b
+............\discretionary (penalty 50)
+.............< \TU/tg-pagella/m/n/8 -
+............\TU/tg-pagella/m/n/8 m
+............\TU/tg-pagella/m/n/8 i
+............\TU/tg-pagella/m/n/8 t
+............\discretionary (penalty 50)
+.............< \TU/tg-pagella/m/n/8 -
+............\TU/tg-pagella/m/n/8 t
+............\TU/tg-pagella/m/n/8 e
+............\TU/tg-pagella/m/n/8 d
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/n/8 t
+............\kern-0.08 (font)
+............\TU/tg-pagella/m/n/8 o
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/it/8 J
+............\TU/tg-pagella/m/it/8 o
+............\TU/tg-pagella/m/it/8 u
+............\TU/tg-pagella/m/it/8 r
+............\discretionary (penalty 50)
+.............< \kern-0.4 (font)
+.............< \TU/tg-pagella/m/it/8 -
+............\TU/tg-pagella/m/it/8 n
+............\TU/tg-pagella/m/it/8 a
+............\TU/tg-pagella/m/it/8 l
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/it/8 N
+............\kern-0.2 (font)
+............\TU/tg-pagella/m/it/8 o
+............\kern-0.12 (font)
+............\TU/tg-pagella/m/it/8 t
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/it/8 S
+............\TU/tg-pagella/m/it/8 p
+............\TU/tg-pagella/m/it/8 e
+............\TU/tg-pagella/m/it/8 c
+............\discretionary (penalty 50)
+.............< \TU/tg-pagella/m/it/8 -
+............\TU/tg-pagella/m/it/8 i
+............\discretionary (penalty 50)
+.............< \TU/tg-pagella/m/it/8 -
+............\TU/tg-pagella/m/it/8 ﬁ
+............\TU/tg-pagella/m/it/8 e
+............\TU/tg-pagella/m/it/8 d
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 2.0
+...........\glue 0.0
+...........\glue 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\baselineskip) 0.88153
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.4+0.0)x525.23764, direction TLT
+.............\rule(0.4+0.0)x525.23764
+............\rule(7.33946+3.14552)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 1.0fil
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\vbox(0.0+0.0)x525.52245, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fill
+.........\hbox(16.309+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+..........\glue 0.0 plus 1.0fil minus 1.0fil
+..........\vbox(16.309+3.14552)x525.52245, direction TLT
+...........\hbox(5.824+0.16)x525.52245, glue set 506.89044fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\kern-0.2 (left margin)
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\TU/tg-pagella/m/n/8 1
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/n/8 o
+............\TU/tg-pagella/m/n/8 f
+............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
+............\TU/tg-pagella/m/n/8 1
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\penalty 10000
+............\kern-0.2 (right margin)
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+...........\glue 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\parskip) 0.0
+...........\glue(\baselineskip) 2.98553
+...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\localpar
+.............\localinterlinepenalty=0
+.............\localbrokenpenalty=0
+.............\localleftbox=null
+.............\localrightbox=null
+............\hbox(0.0+0.0)x0.0, direction TLT
+............\hbox(0.4+0.0)x525.23764, direction TLT
+.............\rule(0.4+0.0)x525.23764
+............\rule(7.33946+3.14552)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0
+........\glue 0.0
+......\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdflinkstate 0
+...\glue 24.0
+...\glue(\lineskip) 0.0
+...\vbox(706.18271+0.0)x394.35522, glue set 626.02985fil, direction TLT
+....\write1{\def\@LN@column{1}}
+....\vbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(0.0+0.0)x0.0, direction TLT
+......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
+.......\glue 0.0 plus 1.0fil minus 1.0fil
+.......\vbox(0.0+0.0)x0.0, direction TLT
+........\glue 0.0
+........\glue 0.0
+........\glue 0.0
+.......\glue 14.51074
+....\write-{}
+....\pdfcolorstack 0 push {0 g 0 G}
+....\pdfdest name{Doc-Start} xyz
+....\glue(\topskip) 5.31
+....\hbox(4.69+0.17)x394.35522, glue set 367.59567fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\mathon
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/tg-pagella-math/m/n/10 𝜶
+.....\kern0.06 (italic)
+.....\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 7.0
+....\hbox(6.81+0.03)x394.35522, glue set 367.31567fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\mathon
+.....\TU/tg-pagella-math/m/n/10 𝚪
+.....\kern0.08 (italic)
+.....\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 6.75
+....\hbox(7.2+0.17)x394.35522, glue set 296.91565fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\mathon
+.....\TU/tg-pagella/b/n/10 δ
+.....\TU/tg-pagella-math/m/n/10 Δ
+.....\kern0.16 (italic)
+.....\TU/tg-pagella-math/m/n/10 𝛥
+.....\TU/tg-pagella-math/m/n/10 Δ
+.....\kern0.16 (italic)
+.....\hbox(7.2+0.17)x52.22, direction TLT
+......\TU/tg-pagella/b/n/10 1
+......\TU/tg-pagella/b/n/10 2
+......\TU/tg-pagella/b/n/10 3
+......\TU/tg-pagella/b/n/10 A
+......\TU/tg-pagella/b/n/10 B
+......\TU/tg-pagella/b/n/10 C
+......\TU/tg-pagella/b/n/10 a
+......\TU/tg-pagella/b/n/10 b
+......\TU/tg-pagella/b/n/10 c
+.....\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 6.61
+....\hbox(7.2+1.581)x394.35522, glue set 264.7095fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\mathon
+.....\TU/tg-pagella-math/b/n/10 𝑎
+.....\glue(\medmuskip) 2.06665 plus 1.03333 minus 2.06665
+.....\TU/tg-pagella-math/b/n/10 ^^b1
+.....\penalty 700
+.....\glue(\medmuskip) 2.06665 plus 1.03333 minus 2.06665
+.....\TU/tg-pagella-math/b/n/10 𝑏
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\TU/tg-pagella-math/b/n/10 1
+.....\TU/tg-pagella-math/b/n/10 2
+.....\TU/tg-pagella-math/b/n/10 3
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\mathoff
+.....\TU/tg-pagella/m/n/10 1
+.....\TU/tg-pagella/m/n/10 2
+.....\TU/tg-pagella/m/n/10 3
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\mathon
+.....\hbox(7.2+0.17)x52.22, direction TLT
+......\TU/tg-pagella/eb/n/10 1
+......\TU/tg-pagella/eb/n/10 2
+......\TU/tg-pagella/eb/n/10 3
+......\TU/tg-pagella/eb/n/10 A
+......\TU/tg-pagella/eb/n/10 B
+......\TU/tg-pagella/eb/n/10 C
+......\TU/tg-pagella/eb/n/10 a
+......\TU/tg-pagella/eb/n/10 b
+......\TU/tg-pagella/eb/n/10 c
+.....\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 5.409
+....\hbox(6.99+0.2)x394.35522, glue set 328.01569fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\mathon
+.....\TU/tg-pagella-math/m/n/10 1
+.....\TU/tg-pagella-math/m/n/10 2
+.....\TU/tg-pagella-math/m/n/10 3
+.....\hbox(6.7+0.17)x15.0, direction TLT
+......\TU/tg-pagella/b/n/10 1
+......\TU/tg-pagella/b/n/10 2
+......\TU/tg-pagella/b/n/10 3
+.....\hbox(6.99+0.11)x15.0, direction TLT
+......\TU/tg-pagella/m/it/10 1
+......\TU/tg-pagella/m/it/10 2
+......\TU/tg-pagella/m/it/10 3
+.....\mathoff
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 6.95
+....\hbox(6.83+0.186)x394.35522, glue set 326.5658fil, direction TLT
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
+.....\mathon
+.....\TU/tg-pagella-math/b/n/10 1
+.....\TU/tg-pagella-math/b/n/10 2
+.....\TU/tg-pagella-math/b/n/10 3
+.....\hbox(6.7+0.17)x15.0, direction TLT
+......\TU/tg-pagella/eb/n/10 1
+......\TU/tg-pagella/eb/n/10 2
+......\TU/tg-pagella/eb/n/10 3
+.....\hbox(6.83+0.17)x15.0, direction TLT
+......\TU/tg-pagella/b/it/10 1
+......\TU/tg-pagella/b/it/10 2
+......\TU/tg-pagella/b/it/10 3
+.....\mathoff
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+....\glue 0.0 plus 1.0fil
+....\glue 0.0
+....\glue 0.0 plus 0.0001fil
+...\pdflinkstate 1
+...\glue(\baselineskip) 22.02002
+...\hbox(13.97998+4.19403)x394.35522, direction TLT
+....\hbox(13.97998+4.19403)x394.35522, direction TLT
+.....\glue -131.16722
+.....\hbox(13.97998+4.19403)x525.52245, direction TLT
+......\vbox(13.97998+4.19403)x525.52245, direction TLT
+.......\rule(0.0+0.0)x525.52245
+.......\glue 4.19403
+.......\hbox(9.78595+4.19403)x525.52245, direction TLT
+........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
+.........\vbox(0.0+0.0)x525.52245, direction TLT
+..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0 plus 1.0fil
+...........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\vbox(9.78595+4.19403)x525.52245, direction TLT
+.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+..........\glue(\leftskip) 0.0 plus 1.0fil
+..........\localpar
+...........\localinterlinepenalty=0
+...........\localbrokenpenalty=0
+...........\localleftbox=null
+...........\localrightbox=null
+..........\hbox(0.0+0.0)x0.0, direction TLT
+..........\rule(9.78595+4.19403)x0.0
+..........\penalty 10000
+..........\glue(\parfillskip) 0.0
+..........\glue(\rightskip) 0.0 plus 1.0fil
+........\glue 0.0 plus 1.0fill
+........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+.........\glue 0.0 plus 1.0fil minus 1.0fil
+.........\vbox(7.33946+3.14552)x525.52245, direction TLT
+..........\hbox(7.33946+3.14552)x525.52245, glue set 410.37042fil, direction TLT
+...........\glue(\leftskip) 0.0 plus 1.0fil
+...........\localpar
+............\localinterlinepenalty=0
+............\localbrokenpenalty=0
+............\localleftbox=null
+............\localrightbox=null
+...........\hbox(0.0+0.0)x0.0, direction TLT
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >> } action user{}
+...........\mathon
+...........\pdfliteral direct <lua data reference ...>
+...........\TU/tg-pagella/m/n/8 h
+...........\TU/tg-pagella/m/n/8 t
+...........\TU/tg-pagella/m/n/8 t
+...........\TU/tg-pagella/m/n/8 p
+...........\TU/tg-pagella/m/n/8 s
+...........\glue(\thickmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 :
+...........\penalty 500
+...........\glue(\thickmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 /
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 d
+...........\TU/tg-pagella/m/n/8 o
+...........\TU/tg-pagella/m/n/8 i
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 .
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 o
+...........\TU/tg-pagella/m/n/8 r
+...........\TU/tg-pagella/m/n/8 g
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 1
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 .
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 3
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 3
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 9
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 /
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\penalty 700
+...........\glue(\medmuskip) 0.0
+...........\TU/tg-pagella/m/n/8 0
+...........\mathoff
+...........\pdfendlink
+...........\pdfliteral direct <lua data reference ...>
+...........\rule(7.33946+3.14552)x0.0
+...........\penalty 10000
+...........\glue(\parfillskip) 0.0
+...........\glue(\rightskip) 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+...\pdflinkstate 0
+.\kern0.0
+.\kern0.0
+.\kern-746.24187
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\kern746.24187
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(test-issue117.aux)
+***************
+Compilation 1 of test file completed with exit status 0
+Compilation 2 of test file completed with exit status 0

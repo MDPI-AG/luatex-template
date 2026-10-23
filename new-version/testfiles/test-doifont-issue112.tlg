@@ -188,6 +188,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \setlength{\headheight}{21.97998pt}.
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
 (Font)              scaled to size 7.43994pt on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
@@ -358,19 +362,19 @@ Completed box being shipped out [1]
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\TU/texgyrepagella(0)/m/n/7 R
+..........\TU/tg-pagella/m/n/7 R
 ..........\kern-0.14 (font)
-..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/tg-pagella/m/n/7 e
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 c
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 i
-..........\TU/texgyrepagella(0)/m/n/7 v
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 c
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 i
+..........\TU/tg-pagella/m/n/7 v
 ..........\kern-0.28 (font)
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 d
-..........\TU/texgyrepagella(0)/m/n/7 :
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 d
+..........\TU/tg-pagella/m/n/7 :
 ..........\penalty 10000
 ..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
@@ -391,19 +395,19 @@ Completed box being shipped out [1]
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\TU/texgyrepagella(0)/m/n/7 A
+..........\TU/tg-pagella/m/n/7 A
 ..........\kern-0.245 (font)
-..........\TU/texgyrepagella(0)/m/n/7 c
+..........\TU/tg-pagella/m/n/7 c
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 c
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 p
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 c
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 p
 ..........\kern-0.14 (font)
-..........\TU/texgyrepagella(0)/m/n/7 t
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 d
-..........\TU/texgyrepagella(0)/m/n/7 :
+..........\TU/tg-pagella/m/n/7 t
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 d
+..........\TU/tg-pagella/m/n/7 :
 ..........\penalty 10000
 ..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
@@ -421,18 +425,18 @@ Completed box being shipped out [1]
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\TU/texgyrepagella(0)/m/n/7 P
-..........\TU/texgyrepagella(0)/m/n/7 u
-..........\TU/texgyrepagella(0)/m/n/7 b
+..........\TU/tg-pagella/m/n/7 P
+..........\TU/tg-pagella/m/n/7 u
+..........\TU/tg-pagella/m/n/7 b
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 l
-..........\TU/texgyrepagella(0)/m/n/7 i
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7 h
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 d
-..........\TU/texgyrepagella(0)/m/n/7 :
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 l
+..........\TU/tg-pagella/m/n/7 i
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7 h
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 d
+..........\TU/tg-pagella/m/n/7 :
 ..........\penalty 10000
 ..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
@@ -449,228 +453,228 @@ Completed box being shipped out [1]
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\TU/texgyrepagella(0)/b/n/7 C
-..........\TU/texgyrepagella(0)/b/n/7 o
-..........\TU/texgyrepagella(0)/b/n/7 p
+..........\TU/tg-pagella/b/n/7 C
+..........\TU/tg-pagella/b/n/7 o
+..........\TU/tg-pagella/b/n/7 p
 ..........\kern-0.105 (font)
-..........\TU/texgyrepagella(0)/b/n/7 y
+..........\TU/tg-pagella/b/n/7 y
 ..........\discretionary (penalty 10000)
 ...........< \kern-0.07 (font)
-...........< \TU/texgyrepagella(0)/b/n/7 -
-..........\TU/texgyrepagella(0)/b/n/7 r
+...........< \TU/tg-pagella/b/n/7 -
+..........\TU/tg-pagella/b/n/7 r
 ..........\kern0.14 (font)
-..........\TU/texgyrepagella(0)/b/n/7 i
-..........\TU/texgyrepagella(0)/b/n/7 g
-..........\TU/texgyrepagella(0)/b/n/7 h
-..........\TU/texgyrepagella(0)/b/n/7 t
+..........\TU/tg-pagella/b/n/7 i
+..........\TU/tg-pagella/b/n/7 g
+..........\TU/tg-pagella/b/n/7 h
+..........\TU/tg-pagella/b/n/7 t
 ..........\kern0.105 (font)
-..........\TU/texgyrepagella(0)/b/n/7 :
+..........\TU/tg-pagella/b/n/7 :
 ..........\kern0.0 (italic)
-..........\TU/texgyrepagella(0)/b/n/7  
+..........\TU/tg-pagella/b/n/7  
 ..........\glue(\spaceskip) 0.58333 plus 1.75 minus 0.29166
-..........\TU/texgyrepagella(0)/m/n/7 ^^a9
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 ^^a9
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 2
-..........\TU/texgyrepagella(0)/m/n/7 0
-..........\TU/texgyrepagella(0)/m/n/7 1
-..........\TU/texgyrepagella(0)/m/n/7 6
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 2
+..........\TU/tg-pagella/m/n/7 0
+..........\TU/tg-pagella/m/n/7 1
+..........\TU/tg-pagella/m/n/7 6
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 b
+..........\TU/tg-pagella/m/n/7 b
 ..........\kern-0.21 (font)
-..........\TU/texgyrepagella(0)/m/n/7 y
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 y
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
-..........\TU/texgyrepagella(0)/m/n/7 h
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 h
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 a
-..........\TU/texgyrepagella(0)/m/n/7 u
+..........\TU/tg-pagella/m/n/7 a
+..........\TU/tg-pagella/m/n/7 u
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 t
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
-..........\TU/texgyrepagella(0)/m/n/7 h
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 r
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7 .
+..........\TU/tg-pagella/m/n/7 h
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 r
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7 .
 ..........\kern-1.225 (right margin)
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\penalty 10000
 .........\glue(\baselineskip) 4.888
 .........\hbox(5.131+1.932)x116.65646, glue set 4.61447fil, direction TLT
-..........\TU/texgyrepagella(0)/m/n/7 S
-..........\TU/texgyrepagella(0)/m/n/7 u
-..........\TU/texgyrepagella(0)/m/n/7 b
+..........\TU/tg-pagella/m/n/7 S
+..........\TU/tg-pagella/m/n/7 u
+..........\TU/tg-pagella/m/n/7 b
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 m
-..........\TU/texgyrepagella(0)/m/n/7 i
-..........\TU/texgyrepagella(0)/m/n/7 t
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 m
+..........\TU/tg-pagella/m/n/7 i
+..........\TU/tg-pagella/m/n/7 t
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 t
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 d
-..........\TU/texgyrepagella(0)/m/n/7  
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 t
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 d
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/tg-pagella/m/n/7 t
 ..........\kern-0.07 (font)
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/it/7 J
-..........\TU/texgyrepagella(0)/m/it/7 o
-..........\TU/texgyrepagella(0)/m/it/7 u
-..........\TU/texgyrepagella(0)/m/it/7 r
+..........\TU/tg-pagella/m/it/7 J
+..........\TU/tg-pagella/m/it/7 o
+..........\TU/tg-pagella/m/it/7 u
+..........\TU/tg-pagella/m/it/7 r
 ..........\discretionary (penalty 10000)
 ...........< \kern-0.35 (font)
-...........< \TU/texgyrepagella(0)/m/it/7 -
-..........\TU/texgyrepagella(0)/m/it/7 n
-..........\TU/texgyrepagella(0)/m/it/7 a
-..........\TU/texgyrepagella(0)/m/it/7 l
-..........\TU/texgyrepagella(0)/m/it/7  
+...........< \TU/tg-pagella/m/it/7 -
+..........\TU/tg-pagella/m/it/7 n
+..........\TU/tg-pagella/m/it/7 a
+..........\TU/tg-pagella/m/it/7 l
+..........\TU/tg-pagella/m/it/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/it/7 N
+..........\TU/tg-pagella/m/it/7 N
 ..........\kern-0.175 (font)
-..........\TU/texgyrepagella(0)/m/it/7 o
+..........\TU/tg-pagella/m/it/7 o
 ..........\kern-0.105 (font)
-..........\TU/texgyrepagella(0)/m/it/7 t
-..........\TU/texgyrepagella(0)/m/it/7  
+..........\TU/tg-pagella/m/it/7 t
+..........\TU/tg-pagella/m/it/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/it/7 S
-..........\TU/texgyrepagella(0)/m/it/7 p
-..........\TU/texgyrepagella(0)/m/it/7 e
-..........\TU/texgyrepagella(0)/m/it/7 c
+..........\TU/tg-pagella/m/it/7 S
+..........\TU/tg-pagella/m/it/7 p
+..........\TU/tg-pagella/m/it/7 e
+..........\TU/tg-pagella/m/it/7 c
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/it/7 -
-..........\TU/texgyrepagella(0)/m/it/7 i
+...........< \TU/tg-pagella/m/it/7 -
+..........\TU/tg-pagella/m/it/7 i
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/it/7 -
-..........\TU/texgyrepagella(0)/m/it/7 ﬁ
-..........\TU/texgyrepagella(0)/m/it/7 e
-..........\TU/texgyrepagella(0)/m/it/7 d
-..........\TU/texgyrepagella(0)/m/it/7  
+...........< \TU/tg-pagella/m/it/7 -
+..........\TU/tg-pagella/m/it/7 ﬁ
+..........\TU/tg-pagella/m/it/7 e
+..........\TU/tg-pagella/m/it/7 d
+..........\TU/tg-pagella/m/it/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 f
+..........\TU/tg-pagella/m/n/7 f
 ..........\kern-0.105 (font)
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 r
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 r
 ..........\kern-0.14 (right margin)
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\glue(\baselineskip) 4.986
 .........\hbox(5.082+1.967)x116.65646, glue set 16.57042fil, direction TLT
-..........\TU/texgyrepagella(0)/m/n/7 p
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 s
+..........\TU/tg-pagella/m/n/7 p
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 s
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7 i
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7 i
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 b
-..........\TU/texgyrepagella(0)/m/n/7 l
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7  
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 b
+..........\TU/tg-pagella/m/n/7 l
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 p
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 n
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 p
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 n
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 a
-..........\TU/texgyrepagella(0)/m/n/7 c
+..........\TU/tg-pagella/m/n/7 a
+..........\TU/tg-pagella/m/n/7 c
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 c
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7  
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 c
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 p
-..........\TU/texgyrepagella(0)/m/n/7 u
-..........\TU/texgyrepagella(0)/m/n/7 b
+..........\TU/tg-pagella/m/n/7 p
+..........\TU/tg-pagella/m/n/7 u
+..........\TU/tg-pagella/m/n/7 b
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 l
-..........\TU/texgyrepagella(0)/m/n/7 i
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 l
+..........\TU/tg-pagella/m/n/7 i
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 c
-..........\TU/texgyrepagella(0)/m/n/7 a
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 c
+..........\TU/tg-pagella/m/n/7 a
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 t
-..........\TU/texgyrepagella(0)/m/n/7 i
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 n
-..........\TU/texgyrepagella(0)/m/n/7  
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 t
+..........\TU/tg-pagella/m/n/7 i
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 n
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\glue(\baselineskip) 4.93701
 .........\hbox(5.096+0.14)x116.65646, glue set - 0.00656, direction TLT
-..........\TU/texgyrepagella(0)/m/n/7 u
-..........\TU/texgyrepagella(0)/m/n/7 n
+..........\TU/tg-pagella/m/n/7 u
+..........\TU/tg-pagella/m/n/7 n
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 d
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 r
-..........\TU/texgyrepagella(0)/m/n/7  
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 d
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 r
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
-..........\TU/texgyrepagella(0)/m/n/7 h
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 h
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 t
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 r
+..........\TU/tg-pagella/m/n/7 t
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 r
 ..........\kern0.07 (font)
-..........\TU/texgyrepagella(0)/m/n/7 m
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 m
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 a
-..........\TU/texgyrepagella(0)/m/n/7 n
-..........\TU/texgyrepagella(0)/m/n/7 d
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 a
+..........\TU/tg-pagella/m/n/7 n
+..........\TU/tg-pagella/m/n/7 d
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 c
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 n
+..........\TU/tg-pagella/m/n/7 c
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 n
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 d
-..........\TU/texgyrepagella(0)/m/n/7 i
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 d
+..........\TU/tg-pagella/m/n/7 i
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 t
-..........\TU/texgyrepagella(0)/m/n/7 i
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 n
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7  
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 t
+..........\TU/tg-pagella/m/n/7 i
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 n
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 f
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 f
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
-..........\TU/texgyrepagella(0)/m/n/7 h
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 h
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\glue(\baselineskip) 6.778
 .........\hbox(5.082+0.14)x116.65646, glue set 20.46245fil, direction TLT
@@ -683,83 +687,83 @@ Completed box being shipped out [1]
 ..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\TU/texgyrepagella(0)/m/n/7 C
-..........\TU/texgyrepagella(0)/m/n/7 r
-..........\TU/texgyrepagella(0)/m/n/7 e
+..........\TU/tg-pagella/m/n/7 C
+..........\TU/tg-pagella/m/n/7 r
+..........\TU/tg-pagella/m/n/7 e
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 a
-..........\TU/texgyrepagella(0)/m/n/7 t
-..........\TU/texgyrepagella(0)/m/n/7 i
-..........\TU/texgyrepagella(0)/m/n/7 v
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 a
+..........\TU/tg-pagella/m/n/7 t
+..........\TU/tg-pagella/m/n/7 i
+..........\TU/tg-pagella/m/n/7 v
 ..........\kern-0.28 (font)
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 C
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 m
+..........\TU/tg-pagella/m/n/7 C
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 m
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 m
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 n
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7  
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 m
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 n
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 A
+..........\TU/tg-pagella/m/n/7 A
 ..........\kern-0.28 (font)
-..........\TU/texgyrepagella(0)/m/n/7 t
+..........\TU/tg-pagella/m/n/7 t
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 t
-..........\TU/texgyrepagella(0)/m/n/7 r
-..........\TU/texgyrepagella(0)/m/n/7 i
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 t
+..........\TU/tg-pagella/m/n/7 r
+..........\TU/tg-pagella/m/n/7 i
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 b
-..........\TU/texgyrepagella(0)/m/n/7 u
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 b
+..........\TU/tg-pagella/m/n/7 u
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 t
-..........\TU/texgyrepagella(0)/m/n/7 i
-..........\TU/texgyrepagella(0)/m/n/7 o
-..........\TU/texgyrepagella(0)/m/n/7 n
-..........\TU/texgyrepagella(0)/m/n/7  
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 t
+..........\TU/tg-pagella/m/n/7 i
+..........\TU/tg-pagella/m/n/7 o
+..........\TU/tg-pagella/m/n/7 n
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\rightskip) -1.75 plus 1.0fil
 .........\penalty 10000
 .........\glue(\baselineskip) 6.65201
 .........\hbox(5.208+1.708)x116.65646, glue set 67.04047fil, direction TLT
 ..........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /final/StructParent 2} action user{}
 ..........\kern-0.322 (left margin)
-..........\TU/texgyrepagella(0)/m/n/7 (
-..........\TU/texgyrepagella(0)/m/n/7 C
-..........\TU/texgyrepagella(0)/m/n/7 C
+..........\TU/tg-pagella/m/n/7 (
+..........\TU/tg-pagella/m/n/7 C
+..........\TU/tg-pagella/m/n/7 C
 ..........\penalty 10000
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.875 minus 0.58333
-..........\TU/texgyrepagella(0)/m/n/7 B
+..........\TU/tg-pagella/m/n/7 B
 ..........\kern-0.245 (font)
-..........\TU/texgyrepagella(0)/m/n/7 Y
-..........\TU/texgyrepagella(0)/m/n/7 )
-..........\TU/texgyrepagella(0)/m/n/7  
+..........\TU/tg-pagella/m/n/7 Y
+..........\TU/tg-pagella/m/n/7 )
+..........\TU/tg-pagella/m/n/7  
 ..........\glue(\spaceskip) 0.0 plus 0.87411 minus 0.58391
-..........\TU/texgyrepagella(0)/m/n/7 l
-..........\TU/texgyrepagella(0)/m/n/7 i
+..........\TU/tg-pagella/m/n/7 l
+..........\TU/tg-pagella/m/n/7 i
 ..........\discretionary (penalty 10000)
-...........< \TU/texgyrepagella(0)/m/n/7 -
-..........\TU/texgyrepagella(0)/m/n/7 c
-..........\TU/texgyrepagella(0)/m/n/7 e
-..........\TU/texgyrepagella(0)/m/n/7 n
-..........\TU/texgyrepagella(0)/m/n/7 s
-..........\TU/texgyrepagella(0)/m/n/7 e
+...........< \TU/tg-pagella/m/n/7 -
+..........\TU/tg-pagella/m/n/7 c
+..........\TU/tg-pagella/m/n/7 e
+..........\TU/tg-pagella/m/n/7 n
+..........\TU/tg-pagella/m/n/7 s
+..........\TU/tg-pagella/m/n/7 e
 ..........\pdfendlink
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
-..........\TU/texgyrepagella(0)/m/n/7 .
+..........\TU/tg-pagella/m/n/7 .
 ..........\penalty 10000
 ..........\kern-1.225 (right margin)
 ..........\glue(\parfillskip) 0.0
@@ -865,18 +869,18 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/it/10 A
-.....\TU/texgyrepagella(0)/m/it/10 r
+.....\TU/tg-pagella/m/it/10 A
+.....\TU/tg-pagella/m/it/10 r
 .....\discretionary (penalty 50)
 ......< \kern-0.5 (font)
-......< \TU/texgyrepagella(0)/m/it/10 -
-.....\TU/texgyrepagella(0)/m/it/10 t
-.....\TU/texgyrepagella(0)/m/it/10 i
+......< \TU/tg-pagella/m/it/10 -
+.....\TU/tg-pagella/m/it/10 t
+.....\TU/tg-pagella/m/it/10 i
 .....\discretionary (penalty 50)
-......< \TU/texgyrepagella(0)/m/it/10 -
-.....\TU/texgyrepagella(0)/m/it/10 c
-.....\TU/texgyrepagella(0)/m/it/10 l
-.....\TU/texgyrepagella(0)/m/it/10 e
+......< \TU/tg-pagella/m/it/10 -
+.....\TU/tg-pagella/m/it/10 c
+.....\TU/tg-pagella/m/it/10 l
+.....\TU/tg-pagella/m/it/10 e
 .....\kern0.05 (italic)
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
@@ -896,13 +900,13 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/18 T
-.....\TU/texgyrepagella(0)/b/n/18 I
+.....\TU/tg-pagella/b/n/18 T
+.....\TU/tg-pagella/b/n/18 I
 .....\discretionary (penalty 10000)
-......< \TU/texgyrepagella(0)/b/n/18 -
-.....\TU/texgyrepagella(0)/b/n/18 T
-.....\TU/texgyrepagella(0)/b/n/18 L
-.....\TU/texgyrepagella(0)/b/n/18 E
+......< \TU/tg-pagella/b/n/18 -
+.....\TU/tg-pagella/b/n/18 T
+.....\TU/tg-pagella/b/n/18 L
+.....\TU/tg-pagella/b/n/18 E
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -923,15 +927,15 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/b/n/10 A
+.....\TU/tg-pagella/b/n/10 A
 .....\kern-0.45 (font)
-.....\TU/texgyrepagella(0)/b/n/10 U
+.....\TU/tg-pagella/b/n/10 U
 .....\discretionary (penalty 10000)
-......< \TU/texgyrepagella(0)/b/n/10 -
-.....\TU/texgyrepagella(0)/b/n/10 T
-.....\TU/texgyrepagella(0)/b/n/10 H
-.....\TU/texgyrepagella(0)/b/n/10 O
-.....\TU/texgyrepagella(0)/b/n/10 R
+......< \TU/tg-pagella/b/n/10 -
+.....\TU/tg-pagella/b/n/10 T
+.....\TU/tg-pagella/b/n/10 H
+.....\TU/tg-pagella/b/n/10 O
+.....\TU/tg-pagella/b/n/10 R
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -958,15 +962,15 @@ Completed box being shipped out [1]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/8 A
-.....\TU/texgyrepagella(0)/m/n/8 D
+.....\TU/tg-pagella/m/n/8 A
+.....\TU/tg-pagella/m/n/8 D
 .....\discretionary (penalty 10000)
-......< \TU/texgyrepagella(0)/m/n/8 -
-.....\TU/texgyrepagella(0)/m/n/8 D
-.....\TU/texgyrepagella(0)/m/n/8 R
-.....\TU/texgyrepagella(0)/m/n/8 E
-.....\TU/texgyrepagella(0)/m/n/8 S
-.....\TU/texgyrepagella(0)/m/n/8 S
+......< \TU/tg-pagella/m/n/8 -
+.....\TU/tg-pagella/m/n/8 D
+.....\TU/tg-pagella/m/n/8 R
+.....\TU/tg-pagella/m/n/8 E
+.....\TU/tg-pagella/m/n/8 S
+.....\TU/tg-pagella/m/n/8 S
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -989,16 +993,16 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\TU/texgyrepagella(0)/m/n/10 s
-.....\TU/texgyrepagella(0)/m/n/10 o
-.....\TU/texgyrepagella(0)/m/n/10 m
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10  
+.....\TU/tg-pagella/m/n/10 s
+.....\TU/tg-pagella/m/n/10 o
+.....\TU/tg-pagella/m/n/10 m
+.....\TU/tg-pagella/m/n/10 e
+.....\TU/tg-pagella/m/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\TU/texgyrepagella(0)/m/n/10 t
-.....\TU/texgyrepagella(0)/m/n/10 e
-.....\TU/texgyrepagella(0)/m/n/10 x
-.....\TU/texgyrepagella(0)/m/n/10 t
+.....\TU/tg-pagella/m/n/10 t
+.....\TU/tg-pagella/m/n/10 e
+.....\TU/tg-pagella/m/n/10 x
+.....\TU/tg-pagella/m/n/10 t
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
@@ -1041,87 +1045,87 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\TU/texgyrepagella(0)/m/n/8 V
+...........\TU/tg-pagella/m/n/8 V
 ...........\kern-0.72 (font)
-...........\TU/texgyrepagella(0)/m/n/8 e
-...........\TU/texgyrepagella(0)/m/n/8 r
+...........\TU/tg-pagella/m/n/8 e
+...........\TU/tg-pagella/m/n/8 r
 ...........\discretionary (penalty 50)
 ............< \kern-0.24 (font)
-............< \TU/texgyrepagella(0)/m/n/8 -
-...........\TU/texgyrepagella(0)/m/n/8 s
-...........\TU/texgyrepagella(0)/m/n/8 i
-...........\TU/texgyrepagella(0)/m/n/8 o
-...........\TU/texgyrepagella(0)/m/n/8 n
-...........\TU/texgyrepagella(0)/m/n/8  
+............< \TU/tg-pagella/m/n/8 -
+...........\TU/tg-pagella/m/n/8 s
+...........\TU/tg-pagella/m/n/8 i
+...........\TU/tg-pagella/m/n/8 o
+...........\TU/tg-pagella/m/n/8 n
+...........\TU/tg-pagella/m/n/8  
 ...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/n/8 M
-...........\TU/texgyrepagella(0)/m/n/8 a
+...........\TU/tg-pagella/m/n/8 M
+...........\TU/tg-pagella/m/n/8 a
 ...........\kern-0.32 (font)
-...........\TU/texgyrepagella(0)/m/n/8 y
-...........\TU/texgyrepagella(0)/m/n/8  
+...........\TU/tg-pagella/m/n/8 y
+...........\TU/tg-pagella/m/n/8  
 ...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/n/8 2
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\TU/texgyrepagella(0)/m/n/8 ,
-...........\TU/texgyrepagella(0)/m/n/8  
+...........\TU/tg-pagella/m/n/8 2
+...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 ,
+...........\TU/tg-pagella/m/n/8  
 ...........\glue(\spaceskip) 0.0 plus 1.25 minus 0.53333
-...........\TU/texgyrepagella(0)/m/n/8 2
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\TU/texgyrepagella(0)/m/n/8 1
-...........\TU/texgyrepagella(0)/m/n/8 6
-...........\TU/texgyrepagella(0)/m/n/8  
+...........\TU/tg-pagella/m/n/8 2
+...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 6
+...........\TU/tg-pagella/m/n/8  
 ...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/n/8 s
-...........\TU/texgyrepagella(0)/m/n/8 u
-...........\TU/texgyrepagella(0)/m/n/8 b
+...........\TU/tg-pagella/m/n/8 s
+...........\TU/tg-pagella/m/n/8 u
+...........\TU/tg-pagella/m/n/8 b
 ...........\discretionary (penalty 50)
-............< \TU/texgyrepagella(0)/m/n/8 -
-...........\TU/texgyrepagella(0)/m/n/8 m
-...........\TU/texgyrepagella(0)/m/n/8 i
-...........\TU/texgyrepagella(0)/m/n/8 t
+............< \TU/tg-pagella/m/n/8 -
+...........\TU/tg-pagella/m/n/8 m
+...........\TU/tg-pagella/m/n/8 i
+...........\TU/tg-pagella/m/n/8 t
 ...........\discretionary (penalty 50)
-............< \TU/texgyrepagella(0)/m/n/8 -
-...........\TU/texgyrepagella(0)/m/n/8 t
-...........\TU/texgyrepagella(0)/m/n/8 e
-...........\TU/texgyrepagella(0)/m/n/8 d
-...........\TU/texgyrepagella(0)/m/n/8  
+............< \TU/tg-pagella/m/n/8 -
+...........\TU/tg-pagella/m/n/8 t
+...........\TU/tg-pagella/m/n/8 e
+...........\TU/tg-pagella/m/n/8 d
+...........\TU/tg-pagella/m/n/8  
 ...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/n/8 t
+...........\TU/tg-pagella/m/n/8 t
 ...........\kern-0.08 (font)
-...........\TU/texgyrepagella(0)/m/n/8 o
-...........\TU/texgyrepagella(0)/m/n/8  
+...........\TU/tg-pagella/m/n/8 o
+...........\TU/tg-pagella/m/n/8  
 ...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/it/8 J
-...........\TU/texgyrepagella(0)/m/it/8 o
-...........\TU/texgyrepagella(0)/m/it/8 u
-...........\TU/texgyrepagella(0)/m/it/8 r
+...........\TU/tg-pagella/m/it/8 J
+...........\TU/tg-pagella/m/it/8 o
+...........\TU/tg-pagella/m/it/8 u
+...........\TU/tg-pagella/m/it/8 r
 ...........\discretionary (penalty 50)
 ............< \kern-0.4 (font)
-............< \TU/texgyrepagella(0)/m/it/8 -
-...........\TU/texgyrepagella(0)/m/it/8 n
-...........\TU/texgyrepagella(0)/m/it/8 a
-...........\TU/texgyrepagella(0)/m/it/8 l
-...........\TU/texgyrepagella(0)/m/it/8  
+............< \TU/tg-pagella/m/it/8 -
+...........\TU/tg-pagella/m/it/8 n
+...........\TU/tg-pagella/m/it/8 a
+...........\TU/tg-pagella/m/it/8 l
+...........\TU/tg-pagella/m/it/8  
 ...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/it/8 N
+...........\TU/tg-pagella/m/it/8 N
 ...........\kern-0.2 (font)
-...........\TU/texgyrepagella(0)/m/it/8 o
+...........\TU/tg-pagella/m/it/8 o
 ...........\kern-0.12 (font)
-...........\TU/texgyrepagella(0)/m/it/8 t
-...........\TU/texgyrepagella(0)/m/it/8  
+...........\TU/tg-pagella/m/it/8 t
+...........\TU/tg-pagella/m/it/8  
 ...........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
-...........\TU/texgyrepagella(0)/m/it/8 S
-...........\TU/texgyrepagella(0)/m/it/8 p
-...........\TU/texgyrepagella(0)/m/it/8 e
-...........\TU/texgyrepagella(0)/m/it/8 c
+...........\TU/tg-pagella/m/it/8 S
+...........\TU/tg-pagella/m/it/8 p
+...........\TU/tg-pagella/m/it/8 e
+...........\TU/tg-pagella/m/it/8 c
 ...........\discretionary (penalty 50)
-............< \TU/texgyrepagella(0)/m/it/8 -
-...........\TU/texgyrepagella(0)/m/it/8 i
+............< \TU/tg-pagella/m/it/8 -
+...........\TU/tg-pagella/m/it/8 i
 ...........\discretionary (penalty 50)
-............< \TU/texgyrepagella(0)/m/it/8 -
-...........\TU/texgyrepagella(0)/m/it/8 ﬁ
-...........\TU/texgyrepagella(0)/m/it/8 e
-...........\TU/texgyrepagella(0)/m/it/8 d
+............< \TU/tg-pagella/m/it/8 -
+...........\TU/tg-pagella/m/it/8 ﬁ
+...........\TU/tg-pagella/m/it/8 e
+...........\TU/tg-pagella/m/it/8 d
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
@@ -1145,7 +1149,7 @@ Completed box being shipped out [1]
 ........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\vbox(7.33946+3.14552)x525.52245, direction TLT
-..........\hbox(7.33946+3.14552)x525.52245, glue set 410.37042fil, direction TLT
+..........\hbox(7.33946+3.14552)x525.52245, glue set 393.83441fil, direction TLT
 ...........\glue(\leftskip) 0.0 plus 1.0fil
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -1160,69 +1164,54 @@ Completed box being shipped out [1]
 ...........\pdfliteral direct <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/texgyrepagella(0)/m/n/8 h
-...........\TU/texgyrepagella(0)/m/n/8 t
-...........\TU/texgyrepagella(0)/m/n/8 t
-...........\TU/texgyrepagella(0)/m/n/8 p
-...........\TU/texgyrepagella(0)/m/n/8 s
+...........\TU/lmtt/m/n/8 h
+...........\TU/lmtt/m/n/8 t
+...........\TU/lmtt/m/n/8 t
+...........\TU/lmtt/m/n/8 p
+...........\TU/lmtt/m/n/8 s
 ...........\glue(\thickmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 :
-...........\TU/texgyrepagella(0)/m/n/8 /
-...........\TU/texgyrepagella(0)/m/n/8 /
+...........\TU/lmtt/m/n/8 :
+...........\TU/lmtt/m/n/8 /
+...........\TU/lmtt/m/n/8 /
 ...........\penalty 500
 ...........\glue(\thickmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 d
-...........\TU/texgyrepagella(0)/m/n/8 o
-...........\TU/texgyrepagella(0)/m/n/8 i
+...........\TU/lmtt/m/n/8 d
+...........\TU/lmtt/m/n/8 o
+...........\TU/lmtt/m/n/8 i
 ...........\glue(\medmuskip) 0.0
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 .
-...........\TU/texgyrepagella(0)/m/n/8 o
-...........\TU/texgyrepagella(0)/m/n/8 r
-...........\TU/texgyrepagella(0)/m/n/8 g
+...........\TU/lmtt/m/n/8 .
+...........\TU/lmtt/m/n/8 o
+...........\TU/lmtt/m/n/8 r
+...........\TU/lmtt/m/n/8 g
 ...........\glue(\thickmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 /
+...........\TU/lmtt/m/n/8 /
 ...........\penalty 500
 ...........\glue(\thickmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 1
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\penalty 700
+...........\TU/lmtt/m/n/8 1
+...........\TU/lmtt/m/n/8 0
 ...........\glue(\medmuskip) 0.0
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\TU/texgyrepagella(0)/m/n/8 .
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 3
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 3
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 9
-...........\penalty 700
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/lmtt/m/n/8 .
+...........\TU/lmtt/m/n/8 3
+...........\TU/lmtt/m/n/8 3
+...........\TU/lmtt/m/n/8 9
+...........\TU/lmtt/m/n/8 0
 ...........\glue(\thickmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 /
+...........\TU/lmtt/m/n/8 /
 ...........\penalty 500
 ...........\glue(\thickmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\penalty 700
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\penalty 700
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
-...........\penalty 700
-...........\glue(\medmuskip) 0.0
-...........\TU/texgyrepagella(0)/m/n/8 0
+...........\TU/lmtt/m/n/8 0
+...........\TU/lmtt/m/n/8 0
+...........\TU/lmtt/m/n/8 0
+...........\TU/lmtt/m/n/8 0
+...........\TU/lmtt/m/n/8 0
+...........\TU/lmtt/m/n/8 0
+...........\TU/lmtt/m/n/8 0
 ...........\mathoff
 ...........\pdfendlink
 ...........\pdfliteral page <lua data reference ...>
