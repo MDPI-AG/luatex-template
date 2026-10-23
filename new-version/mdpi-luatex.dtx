@@ -2233,7 +2233,7 @@
 %    \begin{macrocode}
    \patchcmd\firstaid@cref@updatelabeldata{{\cref@result}}{{\cref@result}\def\cref@result{2147483647}}{}{\fail}
 %    \end{macrocode}
-% \subsection{Formatting of the heading commands after \cs{appendix}}
+% Formatting of the heading commands after \cs{appendix}:
 % Even in monographs sections should use a smaller font in the appendix.
 %    \begin{macrocode}
   \EditInstance{heading}{section}
@@ -2420,8 +2420,12 @@
     float/new=boxenv,
     float/new=chart,
     float/new=scheme,
-    float/new=graph,
+    float/new=graph,    
   }
+%    \end{macrocode}
+% If the algorithm package is loaded we setup a float for it too:
+%    \begin{macrocode}
+\AddToHook{package/algorithm/after}{\tagpdfsetup{float/new=algorithm}}  
 %    \end{macrocode}
 %
 %    \begin{macrocode}
