@@ -715,12 +715,13 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(9.0667+0.11)x394.35522, glue set 337.95953fil, direction TLT
+....\hbox(9.0667+0.11)x394.35522, glue set 316.61996fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\mathon
 .....\TU/tg-pagella-math/m/n/10 𝑎
 .....\mathoff

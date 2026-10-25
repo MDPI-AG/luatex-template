@@ -679,8 +679,13 @@ TEST 1: Show PDF Tags
       </itembody>
      </item>
     </itemize>
+   </semantic-para>
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.0116"
+      rolemaps-to="Part"
+     >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0116"
+       id="ID.0117"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -689,7 +694,7 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.0117"
+      id="ID.0118"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -4488,13 +4493,13 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(4.69+0.03)x394.35522, glue set 374.2352fil, direction TLT
-.....\kern-0.26 (left margin)
+....\hbox(4.69+0.03)x394.35522, glue set 352.63565fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 x
@@ -4702,7 +4707,7 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~117 structure objects
+(tagpdf)             Writing out ~118 structure objects
 (tagpdf)             with ~89 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
