@@ -889,12 +889,13 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(6.21+0.2)x394.35522, glue set 378.95523fil, direction TLT
+....\hbox(6.21+0.2)x394.35522, glue set 357.61566fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
+.....\hbox(0.0+0.0)x21.33955, direction TLT
 .....\TU/tg-pagella/m/n/10 t
 .....\TU/tg-pagella/m/n/10 e
 .....\TU/tg-pagella/m/n/10 s

@@ -1,0 +1,27 @@
+\DocumentMetadata
+ {
+   tagging = on,           
+ }
+ \input{regression-test}
+\documentclass{mdpi-luatex} 
+
+\begin{document}
+\START \SHOWPDFTAGS
+\begin{tabular}{cccc}
+\multirow[m]{3}{*}{Entry 1 *}  & Data      & Data      & Data\\
+                               & Data      & Data      & Data\\
+                               & Data      & Data      & Data\\
+\end{tabular}
+
+\begin{tabular}{cccc}
+                               & Data      & Data      & Data\\
+                               & Data      & Data      & Data\\
+\multirow[m]{-3}{*}{Entry 1 *}  & Data      & Data      & Data\\
+\end{tabular}
+
+\begin{tabularx}{\textwidth}{cccc}
+\multirow[m]{3}{*}{Entry 1 *}  & Data      & Data      & Data\\
+                               & Data      & Data      & Data\\
+                               & Data      & Data      & Data\\
+\end{tabularx}
+\end{document} 
