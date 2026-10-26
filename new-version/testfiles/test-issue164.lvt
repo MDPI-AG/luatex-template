@@ -1,0 +1,9 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\externaleditor{Firstname Lastname} 
+\CorrStatement{yes} 
+\begin{document}
+\START\showoutput
+test test 
+\end{document}
