@@ -1248,7 +1248,7 @@
 \newcommand{\addhighlights}[1]{\gdef\@addhighlights{#1}}
 \def\@CorrStatement{}
 \newcommand{\CorrStatement}[1]{\gdef\@CorrStatement{#1}}
-\newcommand{\textcorrstatement}{\textbf{Correction Statement:} This article has been republished with a minor change. The change does not affect the scientific content of the article and further details are available within the backmatter of the website version of this article.}
+\newcommand{\textcorrstatement}{\textbf{Correction Statement:}~This article has been republished with a minor change. The change does not affect the scientific content of the article and further details are available within the backmatter of the website version of this article.}
 \def\@IsAssociation{}
 \newcommand{\IsAssociation}[1]
  {%
@@ -1637,7 +1637,11 @@
     {%
       \ifthenelse
         {\equal{\@CorrStatement}{yes}}
-        {\looseness=-1 \textcorrstatement}
+        {\begingroup
+         \spaceskip=0.18em plus 0.02em minus 0.08em
+         \xspaceskip=\spaceskip
+         \textcorrstatement
+         \endgroup}
         {}%
     }%
  }
