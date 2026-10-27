@@ -105,7 +105,8 @@
 % This command is not needed anymore. The numbering is reset automatically in the
 % \cs{appendix} command.
 % \end{function}
-%
+% 
+% 
 % \section{Implementation}
 % \subsection{Declaration}
 %    \begin{macrocode}
@@ -1130,15 +1131,17 @@
 \ExplSyntaxOn
 \bool_new:N\l__mdpi_frontmatter_notes_bool
 \def\@Title{TITLE}
-\newcommand{\Title}[1]{\gdef\@Title{#1}}%
+\newcommand{\Title}[1]{\gdef\@Title{#1}}
 \def\@Author{AUTHOR}
-\newcommand{\Author}[1]{\gdef\@Author{#1}}%
+\newcommand{\Author}[1]{\gdef\@Author{#1}}
 \def\@AuthorNames{}
-\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
+\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}
 \newcommand{\firstpage}[1]{\gdef\@firstpage{#1}}
 \newcommand{\doinum}[1]{\gdef\@doinum{#1}}
 \newcommand\mdpi@doinum@short{10.3390/\@articlenumber}
-\newcommand\mdpi@doinum@long {10.3390/\@doiabbr\@pubvolume\mdpi@mintwodigits\@issuenum\mdpi@minfourdigits\@articlenumber}
+\newcommand\mdpi@doinum@long
+  {10.3390/\@doiabbr\@pubvolume\mdpi@mintwodigits%
+   \@issuenum\mdpi@minfourdigits\@articlenumber}
 \gdef\@doinum{\UseName{mdpi@doinum@\@journaldoinum}}
 \def\@pubvolume{0}
 \newcommand{\pubvolume}[1]{\gdef\@pubvolume{\inteval{#1}}}
@@ -1196,7 +1199,6 @@
 \newcommand{\featuredapplication}[1]{\gdef\@featuredapplication{#1}}
 \def\@keycontribution{}
 \newcommand{\keycontribution}[1]{\gdef\@keycontribution{#1}}
-% this is the wrong default: it should be a number
 \def\@issuenum{0}
 \newcommand{\issuenum}[1]{\gdef\@issuenum{\inteval{#1}}}
 \def\@firstnote{}
@@ -1204,19 +1206,19 @@
  {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@firstnote{#1}}
 \def\@secondnote{}
 \newcommand{\secondnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@secondnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@secondnote{#1}}
 \def\@thirdnote{}
 \newcommand{\thirdnote}[1]
-  {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@thirdnote{#1}}%
+  {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@thirdnote{#1}}
 \def\@fourthnote{}
 \newcommand{\fourthnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fourthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fourthnote{#1}}
 \def\@fifthnote{}
 \newcommand{\fifthnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fifthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fifthnote{#1}}
 \def\@sixthnote{}
 \newcommand{\sixthnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@sixthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@sixthnote{#1}}
 \def\@seventhnote{}
 \newcommand{\seventhnote}[1]{\gdef\@seventhnote{#1}}%
 \def\@eighthnote{}
@@ -1224,27 +1226,25 @@
 % The user command uses plural as \cs{eighthnote} is already defined
 %    \begin{macrocode}
 \newcommand{\eighthnotes}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@eighthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@eighthnote{#1}}
 \def\@ninethnote{}
 \newcommand{\ninethnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@ninethnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@ninethnote{#1}}
 \def\@tenthnote{}
 \newcommand{\tenthnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@tenthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@tenthnote{#1}}
 \def\@eleventhnote{}
-\newcommand{\eleventhnote}[1]{\gdef\@eleventhnote{#1}}%
-\ExplSyntaxOff
+\newcommand{\eleventhnote}[1]{\gdef\@eleventhnote{#1}}
 \def\@simplesumm{}
 \newcommand{\simplesumm}[1]{\gdef\@simplesumm{#1}}
 \def\@articlenumber{0}
-\newcommand{\articlenumber}[1]{
-  \ifthenelse{\equal{\@journal}{molbank}}{
-    \gdef\@articlenumber{#1}%
-    }{
-    \gdef\@articlenumber{\inteval{#1}}%
-    }
+\newcommand{\articlenumber}[1]
+ {
+  \tl_if_eq:NnTF\@journal}{molbank}
+   {\gdef\@articlenumber{#1}}
+   {\gdef\@articlenumber{\inteval{#1}}}   
   }
-
+\ExplSyntaxOff
 \def\@externalbibliography{}
 \newcommand{\externalbibliography}[1]{\gdef\@externalbibliography{#1}}
 \def\@reftitle{}
@@ -1264,10 +1264,10 @@
   \gdef\@IsAssociation{#1}%
   \gdef\mdpi@logo@right{\@journalmdpilogo}%
  }
-
-%%%% Journal name for the header
+%    \end{macrocode}
+% The journal name for the header
+%    \begin{macrocode}
 \newcommand{\journalname}{\@journalshort}
-
 %    \end{macrocode}
 %
 % \subsubsection{Orcid}
@@ -1331,6 +1331,7 @@
      }
  }
 %    \end{macrocode}
+%
 %\subsubsection{\cs{@maketitle}}
 %
 % Some variants have a different title format depending on \cs{@arttype}:
@@ -2160,7 +2161,7 @@
    \NewDocumentEnvironment{mdpi@notes}{O{}}
      {\SimpleBlockEnv{mdpi-notes}{#1}}{\BlockEnvEnd}
 %    \end{macrocode}
-% For the backnotes we define a command that sets the fontsize to small. 
+% For the backnotes we define a command that sets the fontsize to \cs{small}. 
 % We also define the user command \cs{backnotes} command in term of this new instance.
 %    \begin{macrocode}
    \NewDocumentCommand\mdpi@backnotes{m+m}
