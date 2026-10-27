@@ -1240,7 +1240,7 @@
 \def\@articlenumber{0}
 \newcommand{\articlenumber}[1]
  {
-  \tl_if_eq:NnTF\@journal}{molbank}
+  \tl_if_eq:NnTF\@journal{molbank}
    {\gdef\@articlenumber{#1}}
    {\gdef\@articlenumber{\inteval{#1}}}   
   }
