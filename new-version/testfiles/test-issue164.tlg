@@ -134,10 +134,10 @@ Completed box being shipped out [1]
 ......\write1{\newmarginnote{note.1.1}{{\themn@abspage }{\number \mn@lastxpos sp}}}
 ......\hbox(0.0+0.0)x0.0, glue set - 131.1672fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\vbox(0.0+0.0)x116.65646, glue set - 469.30289fil, direction TLT
+.......\vbox(0.0+0.0)x116.65646, glue set - 457.30289fil, direction TLT
 ........\kern0.0
-........\kern469.30289
-........\vbox(0.0+0.0)x116.65646, glue set - 234.77982fil, direction TLT
+........\kern457.30289
+........\vbox(0.0+0.0)x116.65646, glue set - 246.77982fil, direction TLT
 .........\kern0.0
 .........\glue(\parskip) 0.0 plus 1.0
 .........\glue(\parskip) 0.0
@@ -307,7 +307,7 @@ Completed box being shipped out [1]
 .........\glue(\parskip) 6.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 6.778
-.........\hbox(5.082+0.14)x116.65646, glue set 0.58267fil, direction TLT
+.........\hbox(5.082+0.14)x116.65646, glue set - 0.02118, direction TLT
 ..........\localpar
 ...........\localinterlinepenalty=0
 ...........\localbrokenpenalty=0
@@ -330,7 +330,7 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/b/n/7 i
 ..........\TU/tg-pagella/b/n/7 o
 ..........\TU/tg-pagella/b/n/7 n
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/b/n/7 S
 ..........\kern-0.105 (font)
 ..........\TU/tg-pagella/b/n/7 t
@@ -348,12 +348,12 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/b/n/7 :
 ..........\kern0.0 (italic)
 ..........\penalty 10000
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 T
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 s
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 a
 ..........\TU/tg-pagella/m/n/7 r
 ..........\discretionary (penalty 10000)
@@ -366,19 +366,19 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 c
 ..........\TU/tg-pagella/m/n/7 l
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 a
 ..........\TU/tg-pagella/m/n/7 s
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\penalty 10000
 .........\glue(\baselineskip) 6.778
-.........\hbox(5.082+1.981)x116.65646, glue set - 0.009, direction TLT
+.........\hbox(5.082+1.967)x116.65646, glue set 21.35146fil, direction TLT
 ..........\TU/tg-pagella/m/n/7 b
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 n
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 r
 ..........\TU/tg-pagella/m/n/7 e
 ..........\discretionary (penalty 10000)
@@ -394,15 +394,15 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 d
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 w
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/tg-pagella/m/n/7 h
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 a
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 m
 ..........\TU/tg-pagella/m/n/7 i
 ..........\discretionary (penalty 10000)
@@ -410,7 +410,10 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 n
 ..........\TU/tg-pagella/m/n/7 o
 ..........\TU/tg-pagella/m/n/7 r
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\kern-0.14 (right margin)
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\baselineskip) 4.93701
+.........\hbox(5.096+1.981)x116.65646, glue set - 0.11398, direction TLT
 ..........\TU/tg-pagella/m/n/7 c
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 a
@@ -419,15 +422,11 @@ Completed box being shipped out [1]
 ..........\kern-0.14 (font)
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 .
-..........\kern-1.225 (right margin)
-..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\baselineskip) 4.923
-.........\hbox(5.096+1.981)x116.65646, glue set - 0.02496, direction TLT
-..........\kern-0.217 (left margin)
+..........\glue(\spaceskip) 2.33333 plus 2.625 minus 0.19444
 ..........\TU/tg-pagella/m/n/7 T
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 c
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 a
@@ -435,17 +434,17 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 g
 ..........\kern-0.14 (font)
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 d
 ..........\TU/tg-pagella/m/n/7 o
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 s
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 n
 ..........\TU/tg-pagella/m/n/7 o
 ..........\kern-0.105 (font)
 ..........\TU/tg-pagella/m/n/7 t
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 a
 ..........\discretionary (penalty 10000)
 ...........< \TU/tg-pagella/m/n/7 f
@@ -456,12 +455,14 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 c
 ..........\TU/tg-pagella/m/n/7 t
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\baselineskip) 4.923
+.........\hbox(5.096+0.14)x116.65646, glue set 10.89345fil, direction TLT
 ..........\TU/tg-pagella/m/n/7 s
 ..........\TU/tg-pagella/m/n/7 c
 ..........\TU/tg-pagella/m/n/7 i
@@ -475,9 +476,7 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 ﬁ
 ..........\TU/tg-pagella/m/n/7 c
-..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\baselineskip) 4.923
-.........\hbox(5.096+0.14)x116.65646, glue set - 0.25499, direction TLT
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 c
 ..........\TU/tg-pagella/m/n/7 o
 ..........\TU/tg-pagella/m/n/7 n
@@ -487,15 +486,15 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 n
 ..........\TU/tg-pagella/m/n/7 t
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 o
 ..........\TU/tg-pagella/m/n/7 f
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 a
 ..........\TU/tg-pagella/m/n/7 r
 ..........\discretionary (penalty 10000)
@@ -508,11 +507,13 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 c
 ..........\TU/tg-pagella/m/n/7 l
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 a
 ..........\TU/tg-pagella/m/n/7 n
 ..........\TU/tg-pagella/m/n/7 d
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\baselineskip) 6.764
+.........\hbox(5.096+0.14)x116.65646, glue set - 0.00291, direction TLT
 ..........\TU/tg-pagella/m/n/7 f
 ..........\TU/tg-pagella/m/n/7 u
 ..........\TU/tg-pagella/m/n/7 r
@@ -524,7 +525,7 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 r
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 d
 ..........\TU/tg-pagella/m/n/7 e
 ..........\discretionary (penalty 10000)
@@ -534,13 +535,11 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 l
 ..........\TU/tg-pagella/m/n/7 s
-..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\baselineskip) 6.764
-.........\hbox(5.096+0.14)x116.65646, glue set 2.33972fil, direction TLT
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 a
 ..........\TU/tg-pagella/m/n/7 r
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 a
 ..........\kern-0.245 (font)
 ..........\TU/tg-pagella/m/n/7 v
@@ -554,7 +553,7 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 b
 ..........\TU/tg-pagella/m/n/7 l
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 w
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 t
@@ -562,12 +561,14 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 n
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue(\baselineskip) 6.764
+.........\hbox(5.096+0.14)x116.65646, glue set 4.99246fil, direction TLT
 ..........\TU/tg-pagella/m/n/7 b
 ..........\TU/tg-pagella/m/n/7 a
 ..........\TU/tg-pagella/m/n/7 c
@@ -583,18 +584,15 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 t
 ..........\TU/tg-pagella/m/n/7 e
 ..........\TU/tg-pagella/m/n/7 r
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 o
 ..........\TU/tg-pagella/m/n/7 f
-..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\penalty 10000
-.........\glue(\baselineskip) 6.764
-.........\hbox(5.096+0.14)x116.65646, glue set 17.31271fil, direction TLT
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 w
 ..........\kern-0.28 (font)
 ..........\TU/tg-pagella/m/n/7 e
@@ -605,7 +603,7 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 t
 ..........\TU/tg-pagella/m/n/7 e
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 v
 ..........\kern-0.28 (font)
 ..........\TU/tg-pagella/m/n/7 e
@@ -617,16 +615,19 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 o
 ..........\TU/tg-pagella/m/n/7 n
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 o
 ..........\TU/tg-pagella/m/n/7 f
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\rightskip) 0.0 plus 1.0fil
+.........\penalty 10000
+.........\glue(\baselineskip) 6.778
+.........\hbox(5.082+0.14)x116.65646, glue set 83.88947fil, direction TLT
 ..........\TU/tg-pagella/m/n/7 t
 ..........\kern0.105 (font)
 ..........\TU/tg-pagella/m/n/7 h
 ..........\TU/tg-pagella/m/n/7 i
 ..........\TU/tg-pagella/m/n/7 s
-..........\glue(\spaceskip) 1.25995 plus 0.14003 minus 0.56001
+..........\glue(\spaceskip) 1.75 plus 0.875 minus 0.58333
 ..........\TU/tg-pagella/m/n/7 a
 ..........\TU/tg-pagella/m/n/7 r
 ..........\discretionary (penalty 10000)
