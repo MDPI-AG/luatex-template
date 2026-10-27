@@ -1637,11 +1637,7 @@
     {%
       \ifthenelse
         {\equal{\@CorrStatement}{yes}}
-        {\begingroup
-         \spaceskip=0.18em plus 0.02em minus 0.08em
-         \xspaceskip=\spaceskip
-         \textcorrstatement
-         \endgroup}
+        {\textcorrstatement}
         {}%
     }%
  }
