@@ -22,6 +22,9 @@ docfiledir = "./doc"
 typesetexe = "lualatex"
 typesetfiles = {"*.dtx","template-*.tex"} 
 
+specialtypesetting = specialtypesetting or {}
+specialtypesetting["template-tagged.tex"] = {cmd = "lualatex-dev -interaction=nonstopmode"}
+
 -- duplicates are files that are both in the support/Definitions folder and in installfiles
 -- we remove them from the typesetdir and testdir
 

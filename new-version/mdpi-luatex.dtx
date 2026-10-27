@@ -2102,55 +2102,127 @@
  }
 %    \end{macrocode}
 % \subsection{Backmatter}
-% The backmatter has a number of commands for small parts with a bold, run-in heading.
-% For tagging we implement that with the help of a special subsection instance.
-%  
-% 
+% The backmatter (and also the front matter)
+% has a number of commands for small parts starting with a bold, run-in title.
+% For tagging we implement that with the help of a special environment based on 
+% a captionedtext template.
+% The keys of the instance require the format 2026-11-01:
 %    \begin{macrocode}
-%%%% Special section title style for back matter
-\newcommand{\supplementary}[1]{
-\par\vspace{6pt}\noindent{\small\textbf{Supplementary Materials:} {#1}\par}}
-
+\IfFormatAtLeastTF{2026-11-01}
+ {
+   \DeclareInstance{blockenv}{mdpi-notes}{std}
+     {
+        name                = mdpi-notes
+       ,tag-name            = Sect
+       ,tagging-recipe      = standalone
+       ,standalone          = true
+       ,transparent-level   = true
+       ,block-instance      = mdpi-notes
+       ,inner-instance-type = captionedtext
+       ,inner-instance      = mdpi-notes
+       ,para-instance       = justify
+     }
+   \DeclareInstance{block}{mdpi-notes-1}{std}
+     {
+      ,begin-vspace       = 6pt
+      ,end-vspace         = 0pt
+      ,begin-extra-vspace = 0pt
+      ,end-extra-vspace   =  0pt 
+      ,left-margin        = 0pt
+      ,para-indent        = \parindent
+      ,para-vspace        = \parskip
+     } 
+%    \end{macrocode}
+% The captionedtext instance is currently based on the proof template.
+% This should be changed once a simpler template exist.
+% Note that the fontsize is not set here, so that it can react to the size in the context.
+%    \begin{macrocode}
+   \DeclareInstance{captionedtext}{mdpi-notes}{proof}
+     {
+       ,title    =  Note
+       ,after-hspace=0pt      
+       ,punct=:\space
+       ,title-decls = \normalfont\bfseries
+       ,punct-decls= \normalfont\bfseries
+     }      
+%    \end{macrocode}
+% Now we define an environment:
+%    \begin{macrocode}
+   \NewDocumentEnvironment{mdpi@notes}{O{}}
+     {\SimpleBlockEnv{mdpi-notes}{#1}}{\BlockEnvEnd}
+%    \end{macrocode}
+% For the backnotes we define a command that sets the fontsize to small. 
+% We also define the user command \cs{backnotes} command in term of this new instance.
+%    \begin{macrocode}
+   \NewDocumentCommand\mdpi@backnotes{m+m}
+    {%
+     \begin{mdpi@notes}[title=#1,caption-decls=\small,body-decls=\small]%
+     #2
+     \end{mdpi@notes}
+    }    
+ }
+%    \end{macrocode}
+% In older formats we fall back to a simple bold text:
+%    \begin{macrocode}
+ {
+  \NewDocumentCommand\mdpi@backnotes{m+m}
+    {%
+      \par\vspace{6pt}%
+      \begingroup\small
+      \textbf{#1\unskip:} #2%
+      \unskip\par\endgroup
+    }  
+ }
+\NewCommandCopy\backnotes\mdpi@backnotes 
+%    \end{macrocode}
+% Now we apply this to the various commands.
+%    \begin{macrocode}
+\newcommand{\supplementary}[1]{%
+  \mdpi@backnotes{Supplementary Materials}{#1}} 
+  
 \newcommand{\authorcontributions}[1]{%
-\vspace{6pt}\noindent{\small\textbf{Author Contributions:} {#1}\par}}
+  \mdpi@backnotes{Author Contributions}{#1}} 
 
-\newcommand{\funding}[1]{
-\vspace{6pt}\noindent{\small\textbf{Funding:} {#1}\par}}
+\newcommand{\funding}[1]{%
+  \mdpi@backnotes{Funding}{#1}} 
 
-\newcommand{\institutionalreview}[1]{
-\vspace{6pt}\noindent{\small\textbf{Institutional Review Board Statement:} {#1}\par}}
+\newcommand{\institutionalreview}[1]{%
+  \mdpi@backnotes{Institutional Review Board Statement}{#1}} 
 
-\newcommand{\informedconsent}[1]{
-\vspace{6pt}\noindent{\small\textbf{Informed Consent Statement:} {#1}\par}}
+\newcommand{\informedconsent}[1]{%
+  \mdpi@backnotes{Informed Consent Statement}{#1}} 
 
-\newcommand{\dataavailability}[1]{
-\vspace{6pt}\noindent{\small\textbf{Data Availability Statement:} {#1}\par}}
+\newcommand{\dataavailability}[1]{%
+  \mdpi@backnotes{Data Availability Statement}{#1}} 
 
-\newcommand{\durcstatement}[1]{% For journal Drones
-\vspace{6pt}\noindent{\small\textbf{DURC Statement:} {#1}\par}}
+\newcommand{\durcstatement}[1]{%
+  \mdpi@backnotes{DURC Statement}{#1}} 
+    
+\newcommand{\publicinvolvement}[1]{%
+  \mdpi@backnotes{Public Involvement Statement}{#1}}
 
-\newcommand{\publicinvolvement}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\small\textbf{Public Involvement Statement:} {#1}\par}}
-
-\newcommand{\guidelinesstandards}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\small\textbf{Guidelines and Standards Statement:} {#1}\par}}
-
-\newcommand{\acknowledgments}[1]{
-\vspace{6pt}\noindent{\small\textbf{Acknowledgments:} {#1}\par}}
-
+\newcommand{\guidelinesstandards}[1]{%
+  \mdpi@backnotes{Guidelines and Standards Statement}{#1}}
+    
+\newcommand{\acknowledgments}[1]{%
+  \mdpi@backnotes{Acknowledgments}{#1}}
+  
 \newcommand{\conflictsofinterest}[1]{%
-\vspace{6pt}\noindent{\small\textbf{Conflicts of Interest:} {#1}\par}}
+  \mdpi@backnotes{Conflicts of Interest}{#1}}
 
-\newcommand{\entrylink}[1]{% For journal Encyclopedia
-\vspace{6pt}\noindent{\small\textbf{Entry Link:} {#1}\par}}
-
-\newcommand{\useofartificialintelligence}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\small\textbf{Use of Artificial Intelligence:} {#1}\par}}
-
+\newcommand{\entrylink}[1]{%
+  \mdpi@backnotes{Entry Link}{#1}}
+%    \end{macrocode}
+% For journal Nursing Reports
+%    \begin{macrocode}
+\newcommand{\useofartificialintelligence}[1]{%
+  \mdpi@backnotes{Use of Artificial Intelligence}{#1}}
+          
 \newcommand{\reviewreports}[1]{%
-\vspace{6pt}\noindent{\small\textbf{Review Reports:} {#1}\par}}
+  \mdpi@backnotes{Review Reports}{#1}}
 %    \end{macrocode}
 % 
+% Abbreviations are in a section, but use small font.
 %    \begin{macrocode}
 \newcommand\abbreviations[2]{\section*[para-indent=false]{#1}{\small #2\par}}
 %    \end{macrocode}
@@ -2168,8 +2240,7 @@
 \noindent{#1}\hspace{1.1cm}\noindent {\small \pbox[b]{13.86cm}{#2}}\par\vspace{6pt}}
 
 % Use for special paragraph requirement in back matter
-\newcommand{\backnotes}[2]{
-\vspace{6pt}\noindent{\small\textbf{#1:} {#2}\par}}
+
 
 %    \end{macrocode}
 % \subsection{Appendix}
