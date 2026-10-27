@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-25}
-\def\mdpiversion{v7.1c}
+\def\mdpidate{2026-10-27}
+\def\mdpiversion{v7.1d}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -1248,7 +1248,7 @@
 \newcommand{\addhighlights}[1]{\gdef\@addhighlights{#1}}
 \def\@CorrStatement{}
 \newcommand{\CorrStatement}[1]{\gdef\@CorrStatement{#1}}
-\newcommand{\textcorrstatement}{\textbf{Correction Statement:} This article has been republished with a minor change. The change does not affect the scientific content of the article and further details are available within the backmatter of the website version of this article.}
+\newcommand{\textcorrstatement}{\textbf{Correction Statement:}~This article has been republished with a minor change. The change does not affect the scientific content of the article and further details are available within the backmatter of the website version of this article.}
 \def\@IsAssociation{}
 \newcommand{\IsAssociation}[1]
  {%
@@ -1637,7 +1637,7 @@
     {%
       \ifthenelse
         {\equal{\@CorrStatement}{yes}}
-        {\looseness=-1 \textcorrstatement}
+        {\textcorrstatement}
         {}%
     }%
  }
