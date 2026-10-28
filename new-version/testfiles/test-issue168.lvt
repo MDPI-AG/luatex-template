@@ -1,0 +1,10 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\usepackage{tikz}
+\protected\def\drawline{\tikz[overlay]{\draw[red,<->](-1cm,0)--++(0,-16pt);}}
+\externaleditor{\drawline XXX A. Collazos} 
+\CorrStatement{yes}
+\begin{document}
+\START\showoutput	
+\end{document}
