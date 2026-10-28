@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-27}
-\def\mdpiversion{v7.1d}
+\def\mdpidate{2026-10-28}
+\def\mdpiversion{v7.1e}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -1867,97 +1867,133 @@
      \par
    }
  }
-\ExplSyntaxOff
 %    \end{macrocode}
 % \end{macro}
 %
 % \subsection{Abstract and keywords}
-% This command inserts abstract, keywords, journal data, PACS, MSC, JEL.
+% The command \cs{abstractkeywords} inserts abstract, keywords, journal data, PACS, MSC, JEL.
 % It is used automatically.
+%
+% \subsubsection{Helper command for the formatting}
+% This commands should be used in highlights. It create a bold heading without special
+% spacing:
 %    \begin{macrocode}
-\newcommand{\abstractkeywords}{%
-\isMonograph{}{%
+\newcommand\minisec[1]{%
+    \if@noskipsec \leavevmode \fi
+    \par
+    \@afterindentfalse
+    \if@nobreak
+      \everypar{}%
+    \else
+      \addpenalty\@secpenalty
+    \fi
+  {\parindent \z@    
+   \setlength{\parfillskip}{\z@ plus 1fil}%
+    \raggedright\normalfont\bfseries\nobreak
+    \nobreak\interlinepenalty \@M \leavevmode\UseTaggingSocket{inline/begin}{tag=\UseStructureName{text/strong}}#1\UseTaggingSocket{inline/end}\par\nobreak%
+  }\nobreak
+  \@afterheading
+} 
+%    \end{macrocode}
+% These commands are used to format the various parts. 
+% The first creates a captioned text with a display title, the second a run-in.
+% TODO: balance begin and endspace 
+%    \begin{macrocode}
+\NewDocumentCommand\mdpi@abstractnotes@display{mm}
+  {%
+   \tl_if_empty:NF#2
+    {
+      \begin{mdpi@notes}[title=#1,
+        punct=\\*[6pt],
+        after-hspace=0pt,
+        begin-vspace= 0pt,
+        end-vspace  = 12pt,
+        ]%
+       #2
+      \end{mdpi@notes}
+     }
+  }
+\NewDocumentCommand\mdpi@abstractnotes@runin{mm}
+  {%
+   \tl_if_empty:NF#2
+    {
+      \begin{mdpi@notes}[title=#1,        
+        begin-vspace= 0pt,
+        end-vspace  = 12pt,
+        ]%
+       #2
+      \end{mdpi@notes}
+     }
+  }  
+%    \end{macrocode}
+% In a monograph this does nothing.
+%    \begin{macrocode}
+\isMonograph
+ {\newcommand\abstractkeywords{}}
+ {
+  \newcommand\abstractkeywords
+   {     
+%    \end{macrocode}
 % For journal Applied Sciences:
-\ifthenelse{\equal{\@featuredapplication}{\@empty}}{
-  }{%
-  \noindent\textbf{Featured Application\vspace{6pt}\\}\@featuredapplication
-  \vspace{12pt}
-  \par
-}
-%6
-\ifthenelse{\equal{\@addhighlights}{\@empty}}{}{
-  \noindent\textbf{Highlights\vspace{-6pt}\\}\addhighlights % redefined in .tex to use itemize
-  \vspace{12pt}
-  \par
-}
-\ifthenelse{\equal{\@simplesumm}{\@empty}}{}{
-  \noindent\textbf{Simple Summary\vspace{6pt}\\}\@simplesumm
-  \vspace{12pt}
-  \par
-}
-\ifthenelse{\equal{\@abstract}{\@empty}}{}{
-  \noindent\textbf{Abstract\vspace{6pt}\\}\@abstract
-  \vspace{12pt}
-  \par
-}
-\ifthenelse{\equal{\@encyclopediadef}{\@empty}}{}{
-  \noindent\textbf{Definition\vspace{6pt}\\}\@encyclopediadef
-  \vspace{12pt}
-  \par
-}
-%7
-% For journal Data:
-\ifthenelse{\equal{\@dataset}{\@empty}}{}{
-  \noindent\textbf{Dataset:\space}\@dataset
-  \vspace{12pt}
-  \par
-}
-%For journal Data:
-\ifthenelse{\equal{\@datasetlicense}{\@empty}}{}{
-  \noindent\textbf{Dataset License:\space}\@datasetlicense
-  \vspace{12pt}
-  \par
-}
-%8
-\ifthenelse{\equal{\@keyword}{\@empty}}{}{
-  \noindent\textbf{Keywords:\space}\@keyword
-  \vspace{12pt}
-  \par
-}
-%9
-%For journal Toxins:
-\ifthenelse{\equal{\@keycontribution}{\@empty}}{}{
-  \noindent\textbf{Key Contribution:\space}\@keycontribution
-  \vspace{12pt}
-  \par
-}
-%10
-\ifthenelse{\equal{\@pacs}{\@empty}}{}{
-  \noindent\textbf{PACS:\space}\@pacs
-  \vspace{12pt}
-  \par
-}
-%11
-\ifthenelse{\equal{\@msc}{\@empty}}{}{
-  \noindent\textbf{MSC:\space}\@msc
-  \vspace{12pt}
-  \par
-}
-%12
-\ifthenelse{\equal{\@jel}{\@empty}}{}{
-  \noindent\textbf{JEL Classification:\space}\@jel
-  \vspace{12pt}
-  \par
-}
-%13
-\vspace{4pt}
-\isBookContribution{}{\hrule}
-\vspace{12pt}
-\normalsize
-}
-} % For Monograph, remove front part
-
-%%%%% Print maketitle and abstractkeywords
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Featured~Application}{\@featuredapplication}
+%    \end{macrocode}
+% 6. Highlights. Note that actually redefines
+% \cs{addhighlights} and not \cs{@addhighlights} to contain the actual text, 
+% probably because they got problems with list, issue 172
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Highlights}{\addhighlights}
+%    \end{macrocode}
+% A simple summary
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Simple~Summary}{\@simplesumm}
+%    \end{macrocode}
+% The abstract
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Abstract}{\@abstract}
+%    \end{macrocode}
+% A definition
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Definition}{\@encyclopediadef}
+%    \end{macrocode}
+% 7. For journal Data:
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{Dataset}{\@dataset}
+    \mdpi@abstractnotes@runin{Dataset~License}{\@datasetlicense}
+%    \end{macrocode}
+% 8. Keywords
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{Keywords}{\@keyword}
+%    \end{macrocode}
+% 9. For journal Toxins:
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{Key~Contribution}{\@keycontribution}
+%    \end{macrocode}
+% 10. PACS
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{PACS}{\@pacs}
+%    \end{macrocode}
+% 11. MSC
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{MSC}{\@msc}
+%    \end{macrocode}
+% 12. JEL Classification
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{JEL~Classification:}{\@jel}
+%    \end{macrocode}
+% 13. A final rule
+%    \begin{macrocode}
+    \vspace{4pt}
+    \isBookContribution{}{\hrule}
+    \vspace{12pt}
+    \normalsize
+  }
+ }%
+\ExplSyntaxOff
+%    \end{macrocode}
+%
+% Print maketitle and abstractkeywords in the \texttt{begindocument/end} hook:
+%    \begin{macrocode}
 \AddToHook{begindocument/end}[mdpi/maketitle]{\calculateMyLen}
 \ifthenelse{\equal{\@arttype}{Supfile}}{
   \AddToHook{begindocument/end}[mdpi/maketitle]{
