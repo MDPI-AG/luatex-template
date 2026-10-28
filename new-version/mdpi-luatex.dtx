@@ -1959,14 +1959,12 @@
 %    \begin{macrocode}
     \mdpi@abstractnotes@display{Featured~Application}{\@featuredapplication}
 %    \end{macrocode}
-% 6. Highlights. Note that actually redefines
-% \cs{addhighlights} and not \cs{@addhighlights} to contain the actual text,
+% 6. Highlights. Note that this requires a change in the template
+% as previously it redefines \cs{addhighlights} and not 
+% \cs{@addhighlights} to contain the actual text,
 % probably because they got problems with list, issue 172
 %    \begin{macrocode}
-    \tl_if_empty:NF\@addhighlights
-    {
-      \mdpi@abstractnotes@display{Highlights}{\addhighlights}
-    }
+    \mdpi@abstractnotes@display{Highlights}{\@addhighlights}
 %    \end{macrocode}
 % A simple summary
 %    \begin{macrocode}
