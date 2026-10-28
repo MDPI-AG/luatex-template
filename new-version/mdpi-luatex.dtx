@@ -1911,7 +1911,7 @@
         ]%
        #2
       \end{mdpi@notes}
-     }
+    }
   }
 \NewDocumentCommand\mdpi@abstractnotes@runin{mm}
   {%
@@ -1923,7 +1923,7 @@
         ]%
        #2
       \end{mdpi@notes}
-     }
+    }
   }  
 %    \end{macrocode}
 % In a monograph this does nothing.
@@ -1942,7 +1942,10 @@
 % \cs{addhighlights} and not \cs{@addhighlights} to contain the actual text, 
 % probably because they got problems with list, issue 172
 %    \begin{macrocode}
-    \mdpi@abstractnotes@display{Highlights}{\addhighlights}
+    \tl_if_empty:NF\@addhighlights
+    {
+      \mdpi@abstractnotes@display{Highlights}{\addhighlights}
+    }  
 %    \end{macrocode}
 % A simple summary
 %    \begin{macrocode}
