@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-10-27}
-\def\mdpiversion{v7.1d}
+\def\mdpidate{2026-10-28}
+\def\mdpiversion{v7.1e}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -63,7 +63,7 @@
 % \texttt{figure} and \texttt{Figure}.
 %
 % \subsection{Frontmatter}
-% 
+%
 % \begin{function}{\address}
 % \begin{syntax}
 % \cs{address}\oarg{number}\Arg{text}
@@ -71,7 +71,7 @@
 % This set affiliation information. If \meta{number} is 1, the code assumes
 % that only one author is there and the text is set \emph{without} hanging indent.
 % \end{function}
-% 
+%
 % \subsection{Orcid}
 %
 % \begin{function}{\neworcid,\useorcid}
@@ -81,6 +81,15 @@
 % \end{syntax}
 % With \cs{neworcid} a ORCID can be stored under the key word \meta{key word}
 % and then use later with \cs{useorcid}. This will produce an icon with a link.
+% \end{function}
+%
+% \subsection{Backmatter}
+% \begin{function}{\backnotes}
+% \begin{syntax}
+% \cs{backnotes}\Arg{title}\Arg{text}
+% \end{syntax}
+% This is a generic command which typesets \meta{text} in a block in a small font
+% with \textbf{\meta{title}:} at the begin. \meta{text} can contain paragraphs.
 % \end{function}
 %
 % \subsection{Appendix}
@@ -96,6 +105,7 @@
 % This command is not needed anymore. The numbering is reset automatically in the
 % \cs{appendix} command.
 % \end{function}
+%
 %
 % \section{Implementation}
 % \subsection{Declaration}
@@ -281,7 +291,7 @@
 \RequirePackage{multirow}
 %    \end{macrocode}
 % This adds tagging support for the case that the argument is positive. Negative arguments
-% do not work and will issue a warning. We first check if something has already changed the 
+% do not work and will issue a warning. We first check if something has already changed the
 % command and issue a warning in this case.
 %    \begin{macrocode}
 \CheckCommand\multirow[2][c]{\@multirow[#1]{#2}}
@@ -291,8 +301,8 @@
     \int_compare:nNnT{#2}>{1}{\tag_if_active:T{\tagpdfsetup{table/multirow={#2}}}}
     \int_compare:nNnT{#2}<{0}{\tag_if_active:T{\ClassWarning{mdpi}{multirow~with~negative~argument~is~not~supported~with~tagging!}{}}}
     \@multirow[#1]{#2}
-  } 
-\ExplSyntaxOff    
+  }
+\ExplSyntaxOff
 %    \end{macrocode}
 %
 % \subsubsection{Math environments}
@@ -1115,21 +1125,23 @@
 
 %    \end{macrocode}
 % \subsubsection{Data commands for the front matter}
-% We want to keep track if notes for the list on title has been 
+% We want to keep track if notes for the list on title has been
 % added.
 %    \begin{macrocode}
 \ExplSyntaxOn
 \bool_new:N\l__mdpi_frontmatter_notes_bool
 \def\@Title{TITLE}
-\newcommand{\Title}[1]{\gdef\@Title{#1}}%
+\newcommand{\Title}[1]{\gdef\@Title{#1}}
 \def\@Author{AUTHOR}
-\newcommand{\Author}[1]{\gdef\@Author{#1}}%
+\newcommand{\Author}[1]{\gdef\@Author{#1}}
 \def\@AuthorNames{}
-\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}%
+\newcommand{\AuthorNames}[1]{\gdef\@AuthorNames{#1}}
 \newcommand{\firstpage}[1]{\gdef\@firstpage{#1}}
 \newcommand{\doinum}[1]{\gdef\@doinum{#1}}
 \newcommand\mdpi@doinum@short{10.3390/\@articlenumber}
-\newcommand\mdpi@doinum@long {10.3390/\@doiabbr\@pubvolume\mdpi@mintwodigits\@issuenum\mdpi@minfourdigits\@articlenumber}
+\newcommand\mdpi@doinum@long
+  {10.3390/\@doiabbr\@pubvolume\mdpi@mintwodigits%
+   \@issuenum\mdpi@minfourdigits\@articlenumber}
 \gdef\@doinum{\UseName{mdpi@doinum@\@journaldoinum}}
 \def\@pubvolume{0}
 \newcommand{\pubvolume}[1]{\gdef\@pubvolume{\inteval{#1}}}
@@ -1187,7 +1199,6 @@
 \newcommand{\featuredapplication}[1]{\gdef\@featuredapplication{#1}}
 \def\@keycontribution{}
 \newcommand{\keycontribution}[1]{\gdef\@keycontribution{#1}}
-% this is the wrong default: it should be a number
 \def\@issuenum{0}
 \newcommand{\issuenum}[1]{\gdef\@issuenum{\inteval{#1}}}
 \def\@firstnote{}
@@ -1195,19 +1206,19 @@
  {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@firstnote{#1}}
 \def\@secondnote{}
 \newcommand{\secondnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@secondnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@secondnote{#1}}
 \def\@thirdnote{}
 \newcommand{\thirdnote}[1]
-  {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@thirdnote{#1}}%
+  {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@thirdnote{#1}}
 \def\@fourthnote{}
 \newcommand{\fourthnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fourthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fourthnote{#1}}
 \def\@fifthnote{}
 \newcommand{\fifthnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fifthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@fifthnote{#1}}
 \def\@sixthnote{}
 \newcommand{\sixthnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@sixthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@sixthnote{#1}}
 \def\@seventhnote{}
 \newcommand{\seventhnote}[1]{\gdef\@seventhnote{#1}}%
 \def\@eighthnote{}
@@ -1215,27 +1226,25 @@
 % The user command uses plural as \cs{eighthnote} is already defined
 %    \begin{macrocode}
 \newcommand{\eighthnotes}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@eighthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@eighthnote{#1}}
 \def\@ninethnote{}
 \newcommand{\ninethnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@ninethnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@ninethnote{#1}}
 \def\@tenthnote{}
 \newcommand{\tenthnote}[1]
- {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@tenthnote{#1}}%
+ {\bool_set_true:N\l__mdpi_frontmatter_notes_bool\gdef\@tenthnote{#1}}
 \def\@eleventhnote{}
-\newcommand{\eleventhnote}[1]{\gdef\@eleventhnote{#1}}%
-\ExplSyntaxOff
+\newcommand{\eleventhnote}[1]{\gdef\@eleventhnote{#1}}
 \def\@simplesumm{}
 \newcommand{\simplesumm}[1]{\gdef\@simplesumm{#1}}
 \def\@articlenumber{0}
-\newcommand{\articlenumber}[1]{
-  \ifthenelse{\equal{\@journal}{molbank}}{
-    \gdef\@articlenumber{#1}%
-    }{
-    \gdef\@articlenumber{\inteval{#1}}%
-    }
+\newcommand{\articlenumber}[1]
+ {
+  \tl_if_eq:NnTF\@journal{molbank}
+   {\gdef\@articlenumber{#1}}
+   {\gdef\@articlenumber{\inteval{#1}}}
   }
-
+\ExplSyntaxOff
 \def\@externalbibliography{}
 \newcommand{\externalbibliography}[1]{\gdef\@externalbibliography{#1}}
 \def\@reftitle{}
@@ -1255,10 +1264,10 @@
   \gdef\@IsAssociation{#1}%
   \gdef\mdpi@logo@right{\@journalmdpilogo}%
  }
-
-%%%% Journal name for the header
+%    \end{macrocode}
+% The journal name for the header
+%    \begin{macrocode}
 \newcommand{\journalname}{\@journalshort}
-
 %    \end{macrocode}
 %
 % \subsubsection{Orcid}
@@ -1322,6 +1331,7 @@
      }
  }
 %    \end{macrocode}
+%
 %\subsubsection{\cs{@maketitle}}
 %
 % Some variants have a different title format depending on \cs{@arttype}:
@@ -1814,8 +1824,8 @@
 %    \begin{macrocode}
      \tl_if_eq:NnTF{\firstargument}{1}
        {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist-\mdpi@len@distshift\relax}
-       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax} 
-     \bool_if:NT\l__mdpi_frontmatter_notes_bool   
+       {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}
+     \bool_if:NT\l__mdpi_frontmatter_notes_bool
        {
         \begin{itemize}
           [nosep,
@@ -1823,7 +1833,7 @@
            label-width=\mdpi@len@tmpa,
            label-sep=0pt,
            align=left
-          ]     
+          ]
         \tl_if_eq:NnTF\@authornum{author}
           {
             \stepcounter{mdpi@notecnt}
@@ -1847,105 +1857,166 @@
           \tl_if_empty:cF{@##1note}
            {
             \item[\mdpi@notelabel]
-            \tl_use:c{@##1note}         
+            \tl_use:c{@##1note}
            }
          }
         \end{itemize}
-      } 
+      }
      \tl_if_empty:NF\@LSID{\par\vskip12pt \@LSID \par}
      \end{flushleft}
      \par
    }
  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Abstract and keywords}
+% The command \cs{mdpi@abstractkeywords} inserts abstract, keywords, journal data, PACS, MSC, JEL.
+% It is used automatically.
+%
+% \subsubsection{Helper command for the formatting}
+% This commands should be used in highlights. It create a bold heading without special
+% spacing:
+%    \begin{macrocode}
+\newcommand\minisec[1]{%
+    \if@noskipsec \leavevmode \fi
+    \par
+    \@afterindentfalse
+    \if@nobreak
+      \everypar{}%
+    \else
+      \addpenalty\@secpenalty
+    \fi
+  {\parindent \z@
+   \setlength{\parfillskip}{\z@ plus 1fil}%
+    \raggedright\normalfont\bfseries\nobreak
+    \nobreak\interlinepenalty \@M \leavevmode\UseTaggingSocket{inline/begin}{tag=\UseStructureName{text/strong}}#1\UseTaggingSocket{inline/end}\par\nobreak%
+  }\nobreak
+  \@afterheading
+}
+%    \end{macrocode}
+% These commands are used to format the various parts.
+% The first creates a captioned text with a display title, the second a run-in.
+% TODO: balance begin and endspace
+%    \begin{macrocode}
+\IfFormatAtLeastTF{2026-11-01}
+ {
+    \NewDocumentCommand\mdpi@abstractnotes@display{mm}
+      {%
+       \tl_if_empty:NF#2
+        {
+          \begin{mdpi@notes}[title=#1,
+            punct=\\*[6pt],
+            after-hspace=0pt,
+            begin-vspace= 0pt,
+            end-vspace  = 12pt,
+            ]%
+           #2
+          \end{mdpi@notes}
+        }
+      }
+    \NewDocumentCommand\mdpi@abstractnotes@runin{mm}
+      {%
+       \tl_if_empty:NF#2
+        {
+          \begin{mdpi@notes}[title=#1,
+            begin-vspace= 0pt,
+            end-vspace  = 12pt,
+            ]%
+           #2
+          \end{mdpi@notes}
+        }
+      }
+ }
+ {
+   \NewDocumentCommand\mdpi@abstractnotes@display{mm}
+      {
+       \tl_if_empty:NF#2
+        {
+         \par\noindent\textbf{#1}\\*[6pt]
+          #2\par\vspace{12pt}
+        }
+      }
+   \NewDocumentCommand\mdpi@abstractnotes@runin{mm}
+      {
+       \tl_if_empty:NF#2
+        {
+         \par\noindent\textbf{#1\unskip :}~#2\unskip\par\vspace{12pt}
+        }
+      }
+ }
+%    \end{macrocode}
+% \begin{macro}{\mdpi@abstractkeywords}
+% In a monograph this does nothing.
+%    \begin{macrocode}
+\isMonograph
+ {\newcommand\mdpi@abstractkeywords{}}
+ {
+  \newcommand\mdpi@abstractkeywords
+   {
+%    \end{macrocode}
+% For journal Applied Sciences:
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Featured~Application}{\@featuredapplication}
+%    \end{macrocode}
+% 6. Highlights. Note that this requires a change in the template
+% as previously it redefines \cs{addhighlights} and not 
+% \cs{@addhighlights} to contain the actual text,
+% probably because they got problems with list, issue 172
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Highlights}{\@addhighlights}
+%    \end{macrocode}
+% A simple summary
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Simple~Summary}{\@simplesumm}
+%    \end{macrocode}
+% The abstract
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Abstract}{\@abstract}
+%    \end{macrocode}
+% A definition
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Definition}{\@encyclopediadef}
+%    \end{macrocode}
+% 7. For journal Data:
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{Dataset}{\@dataset}
+    \mdpi@abstractnotes@runin{Dataset~License}{\@datasetlicense}
+%    \end{macrocode}
+% 8. Keywords
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{Keywords}{\@keyword}
+%    \end{macrocode}
+% 9. For journal Toxins:
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{Key~Contribution}{\@keycontribution}
+%    \end{macrocode}
+% 10. PACS
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{PACS}{\@pacs}
+%    \end{macrocode}
+% 11. MSC
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{MSC}{\@msc}
+%    \end{macrocode}
+% 12. JEL Classification
+%    \begin{macrocode}
+    \mdpi@abstractnotes@runin{JEL~Classification:}{\@jel}
+%    \end{macrocode}
+% 13. A final rule
+%    \begin{macrocode}
+    \vspace{4pt}
+    \isBookContribution{}{\hrule}
+    \vspace{12pt}
+    \normalsize
+  }
+ }%
 \ExplSyntaxOff
 %    \end{macrocode}
 % \end{macro}
 %
+% Print \cs{maketitle} and \cs{mdpi@abstractkeywords} in the \texttt{begindocument/end} hook:
 %    \begin{macrocode}
-%%%% Abstract, keywords, journal data, PACS, MSC, JEL
-\newcommand{\abstractkeywords}{%
-\isMonograph{}{%
-% For journal Applied Sciences:
-\ifthenelse{\equal{\@featuredapplication}{\@empty}}{
-  }{%
-  \noindent\textbf{Featured Application\vspace{6pt}\\}\@featuredapplication
-  \vspace{12pt}
-  \par
-}
-%6
-\ifthenelse{\equal{\@addhighlights}{\@empty}}{}{
-  \noindent\textbf{Highlights\vspace{-6pt}\\}\addhighlights % redefined in .tex to use itemize
-  \vspace{12pt}
-  \par
-}
-\ifthenelse{\equal{\@simplesumm}{\@empty}}{}{
-  \noindent\textbf{Simple Summary\vspace{6pt}\\}\@simplesumm
-  \vspace{12pt}
-  \par
-}
-\ifthenelse{\equal{\@abstract}{\@empty}}{}{
-  \noindent\textbf{Abstract\vspace{6pt}\\}\@abstract
-  \vspace{12pt}
-  \par
-}
-\ifthenelse{\equal{\@encyclopediadef}{\@empty}}{}{
-  \noindent\textbf{Definition\vspace{6pt}\\}\@encyclopediadef
-  \vspace{12pt}
-  \par
-}
-%7
-% For journal Data:
-\ifthenelse{\equal{\@dataset}{\@empty}}{}{
-  \noindent\textbf{Dataset:\space}\@dataset
-  \vspace{12pt}
-  \par
-}
-%For journal Data:
-\ifthenelse{\equal{\@datasetlicense}{\@empty}}{}{
-  \noindent\textbf{Dataset License:\space}\@datasetlicense
-  \vspace{12pt}
-  \par
-}
-%8
-\ifthenelse{\equal{\@keyword}{\@empty}}{}{
-  \noindent\textbf{Keywords:\space}\@keyword
-  \vspace{12pt}
-  \par
-}
-%9
-%For journal Toxins:
-\ifthenelse{\equal{\@keycontribution}{\@empty}}{}{
-  \noindent\textbf{Key Contribution:\space}\@keycontribution
-  \vspace{12pt}
-  \par
-}
-%10
-\ifthenelse{\equal{\@pacs}{\@empty}}{}{
-  \noindent\textbf{PACS:\space}\@pacs
-  \vspace{12pt}
-  \par
-}
-%11
-\ifthenelse{\equal{\@msc}{\@empty}}{}{
-  \noindent\textbf{MSC:\space}\@msc
-  \vspace{12pt}
-  \par
-}
-%12
-\ifthenelse{\equal{\@jel}{\@empty}}{}{
-  \noindent\textbf{JEL Classification:\space}\@jel
-  \vspace{12pt}
-  \par
-}
-%13
-\vspace{4pt}
-\isBookContribution{}{\hrule}
-\vspace{12pt}
-\normalsize
-}
-} % For Monograph, remove front part
-
-%%%%% Print maketitle and abstractkeywords
 \AddToHook{begindocument/end}[mdpi/maketitle]{\calculateMyLen}
 \ifthenelse{\equal{\@arttype}{Supfile}}{
   \AddToHook{begindocument/end}[mdpi/maketitle]{
@@ -1959,8 +2030,8 @@
     \let\maketitle\relax
     \maketitlen
     \let\maketitlen\relax
-    \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
-    \abstractkeywords
+    \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}%
+    \mdpi@abstractkeywords
   }%
 }
 
@@ -2101,55 +2172,136 @@
    para-indent=true
  }
 %    \end{macrocode}
+% \subsection{Backmatter}
+% The backmatter (and also the front matter)
+% has a number of commands for small parts starting with a bold, run-in title.
+% For tagging we implement that with the help of a special environment based on
+% a captionedtext template.
+% The keys of the instance require the format 2026-11-01:
+% \begin{macro}{\backnotes}
+% \begin{macro}[no-user-doc]{\mdpi@backnotes}
 %    \begin{macrocode}
-%%%% Special section title style for back matter
-\newcommand{\supplementary}[1]{
-\par\vspace{6pt}\noindent{\small\textbf{Supplementary Materials:} {#1}\par}}
+\IfFormatAtLeastTF{2026-11-01}
+ {
+   \DeclareInstance{blockenv}{mdpi-notes}{std}
+     {
+        name                = mdpi-notes
+       ,tag-name            = Sect
+       ,tagging-recipe      = standalone
+       ,standalone          = true
+       ,transparent-level   = true
+       ,block-instance      = mdpi-notes
+       ,inner-instance-type = captionedtext
+       ,inner-instance      = mdpi-notes
+       ,para-instance       = justify
+     }
+   \DeclareInstance{block}{mdpi-notes-1}{std}
+     {
+      ,begin-vspace       = 6pt
+      ,end-vspace         = 0pt
+      ,begin-extra-vspace = 0pt
+      ,end-extra-vspace   =  0pt
+      ,left-margin        = 0pt
+      ,para-indent        = \parindent
+      ,para-vspace        = \parskip
+     }
+%    \end{macrocode}
+% The captionedtext instance is currently based on the proof template.
+% This should be changed once a simpler template exist.
+% Note that the fontsize is not set here, so that it can react to the size in the context.
+%    \begin{macrocode}
+   \DeclareInstance{captionedtext}{mdpi-notes}{proof}
+     {
+       ,title    =  Note
+       ,after-hspace=0pt
+       ,punct=:\space
+       ,title-decls = \normalfont\bfseries
+       ,punct-decls= \normalfont\bfseries
+     }
+%    \end{macrocode}
+% Now we define an environment:
+%    \begin{macrocode}
+   \NewDocumentEnvironment{mdpi@notes}{O{}}
+     {\SimpleBlockEnv{mdpi-notes}{#1}}{\BlockEnvEnd}
+%    \end{macrocode}
+% For the backnotes we define a command that sets the fontsize to \cs{small}.
+% We also define the user command \cs{backnotes} command in term of this new instance.
+%    \begin{macrocode}
+   \NewDocumentCommand\mdpi@backnotes{m+m}
+    {%
+     \begin{mdpi@notes}[title=#1,caption-decls=\small,body-decls=\small]%
+     #2
+     \end{mdpi@notes}
+    }
+ }
+%    \end{macrocode}
+% In older formats we fall back to a simple bold text:
+%    \begin{macrocode}
+ {
+  \NewDocumentCommand\mdpi@backnotes{m+m}
+    {%
+      \par\vspace{6pt}%
+      \begingroup\small
+      \textbf{#1\unskip :} #2%
+      \unskip\par\endgroup
+    }
+ }
+\NewCommandCopy\backnotes\mdpi@backnotes
+%    \end{macrocode}
+% \end{macro}
+% \end{macro}
+% Now we apply this to the various commands.
+%    \begin{macrocode}
+\newcommand{\supplementary}[1]{%
+  \mdpi@backnotes{Supplementary Materials}{#1}}
 
 \newcommand{\authorcontributions}[1]{%
-\vspace{6pt}\noindent{\small\textbf{Author Contributions:} {#1}\par}}
+  \mdpi@backnotes{Author Contributions}{#1}}
 
-\newcommand{\funding}[1]{
-\vspace{6pt}\noindent{\small\textbf{Funding:} {#1}\par}}
+\newcommand{\funding}[1]{%
+  \mdpi@backnotes{Funding}{#1}}
 
-\newcommand{\institutionalreview}[1]{
-\vspace{6pt}\noindent{\small\textbf{Institutional Review Board Statement:} {#1}\par}}
+\newcommand{\institutionalreview}[1]{%
+  \mdpi@backnotes{Institutional Review Board Statement}{#1}}
 
-\newcommand{\informedconsent}[1]{
-\vspace{6pt}\noindent{\small\textbf{Informed Consent Statement:} {#1}\par}}
+\newcommand{\informedconsent}[1]{%
+  \mdpi@backnotes{Informed Consent Statement}{#1}}
 
-\newcommand{\dataavailability}[1]{
-\vspace{6pt}\noindent{\small\textbf{Data Availability Statement:} {#1}\par}}
+\newcommand{\dataavailability}[1]{%
+  \mdpi@backnotes{Data Availability Statement}{#1}}
 
-\newcommand{\durcstatement}[1]{% For journal Drones
-\vspace{6pt}\noindent{\small\textbf{DURC Statement:} {#1}\par}}
+\newcommand{\durcstatement}[1]{%
+  \mdpi@backnotes{DURC Statement}{#1}}
 
-\newcommand{\publicinvolvement}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\small\textbf{Public Involvement Statement:} {#1}\par}}
+\newcommand{\publicinvolvement}[1]{%
+  \mdpi@backnotes{Public Involvement Statement}{#1}}
 
-\newcommand{\guidelinesstandards}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\small\textbf{Guidelines and Standards Statement:} {#1}\par}}
+\newcommand{\guidelinesstandards}[1]{%
+  \mdpi@backnotes{Guidelines and Standards Statement}{#1}}
 
-\newcommand{\acknowledgments}[1]{
-\vspace{6pt}\noindent{\small\textbf{Acknowledgments:} {#1}\par}}
+\newcommand{\acknowledgments}[1]{%
+  \mdpi@backnotes{Acknowledgments}{#1}}
 
 \newcommand{\conflictsofinterest}[1]{%
-\vspace{6pt}\noindent{\small\textbf{Conflicts of Interest:} {#1}\par}}
+  \mdpi@backnotes{Conflicts of Interest}{#1}}
 
-\newcommand{\entrylink}[1]{% For journal Encyclopedia
-\vspace{6pt}\noindent{\small\textbf{Entry Link:} {#1}\par}}
-
-\newcommand{\useofartificialintelligence}[1]{% For journal Nursing Reports
-\vspace{6pt}\noindent{\small\textbf{Use of Artificial Intelligence:} {#1}\par}}
+\newcommand{\entrylink}[1]{%
+  \mdpi@backnotes{Entry Link}{#1}}
+%    \end{macrocode}
+% For journal Nursing Reports
+%    \begin{macrocode}
+\newcommand{\useofartificialintelligence}[1]{%
+  \mdpi@backnotes{Use of Artificial Intelligence}{#1}}
 
 \newcommand{\reviewreports}[1]{%
-\vspace{6pt}\noindent{\small\textbf{Review Reports:} {#1}\par}}
+  \mdpi@backnotes{Review Reports}{#1}}
 %    \end{macrocode}
-% 
+%
+% Abbreviations are in a section, but use small font.
 %    \begin{macrocode}
 \newcommand\abbreviations[2]{\section*[para-indent=false]{#1}{\small #2\par}}
 %    \end{macrocode}
-% 
+%
 %    \begin{macrocode}
 % UF TODO correct semantic, e.g.
 %\renewcommand\abbreviations[2]{\section*{#1}\small #2\par}
@@ -2163,17 +2315,16 @@
 \noindent{#1}\hspace{1.1cm}\noindent {\small \pbox[b]{13.86cm}{#2}}\par\vspace{6pt}}
 
 % Use for special paragraph requirement in back matter
-\newcommand{\backnotes}[2]{
-\vspace{6pt}\noindent{\small\textbf{#1:} {#2}\par}}
+
 
 %    \end{macrocode}
 % \subsection{Appendix}
 % In the appendix sections should use the prefix \cs{appendixname}.
-% If the section has no title the number has not dot, with title there should 
+% If the section has no title the number has not dot, with title there should
 % be a dot. This has been previously implemented with dedicated commands
-% that users need to set in the template but in the release 2026-11-01 this 
+% that users need to set in the template but in the release 2026-11-01 this
 % will be done automatically.
-% 
+%
 % \begin{macro}{\appendixtitles}
 % This will be obsolete in 2026-11-01.
 %    \begin{macrocode}
@@ -2181,7 +2332,7 @@
 \newcommand{\appendixtitles}[1]{\gdef\@appendixtitles{#1}}
 %    \end{macrocode}
 % \end{macro}
-% 
+%
 % \begin{macro}{\appendixstart}
 % This command does nothing, but is kept for compatibility.
 %    \begin{macrocode}
@@ -2190,7 +2341,7 @@
 % \end{macro}
 %
 % \begin{macro}{\mdpi@toc@appendixsetup}
-% Table of contents of the appendix entries need a different setup. 
+% Table of contents of the appendix entries need a different setup.
 % This is setup with a command inserted into the toc by the appendix.
 %    \begin{macrocode}
 \protected\def\mdpi@toc@appendixsetup
@@ -2199,9 +2350,9 @@
   }
 %    \end{macrocode}
 % \end{macro}
-% 
+%
 % \begin{macro}{\mdpi@toc@appendix@numberline,\mdpi@toc@appendix@numberline@aux}
-% The \cs{numberline} in the appendix should append the prefix, enlarge 
+% The \cs{numberline} in the appendix should append the prefix, enlarge
 % the place for the number, and check if there is a following title and if not
 % add a dot.
 %    \begin{macrocode}
@@ -2226,7 +2377,7 @@
  {
   \par
   \SaveLastSkip
-  \addtocontents{toc}{\protect\UseName{mdpi@toc@appendixsetup}} 
+  \addtocontents{toc}{\protect\UseName{mdpi@toc@appendixsetup}}
   \RestoreLastSkip
   \gdef\thesection   {\AlphAlph{\value{section}}}%
   \clist_map_inline:nn
@@ -2260,25 +2411,25 @@
 % This command will only work in the next release 2026-11-01, so we have to test for
 % it now
 %    \begin{macrocode}
-\@ifundefined{IfBlankOrderItemTF}
-  {    
-    \clist_map_inline:nn {section,subsection,subsubsection}
-     {
-       \EditInstance{heading}{##1}
-        {
-          number-format=
-           \appendixname\nobreakspace\theheading
-           \tl_if_eq:NnT\@appendixtitles {yes}{.}
-        }
-     }
-  }
-  {
-    \clist_map_inline:nn {section,subsection,subsubsection}
-     {
-       \EditInstance{heading}{##1}{text=\appendixname,
-        number-format=\theheading\IfBlankOrderItemTF{title}{}{.\ }}       
-     }
-  } 
+  \@ifundefined{IfBlankOrderItemTF}
+    {
+      \clist_map_inline:nn {section,subsection,subsubsection}
+       {
+         \EditInstance{heading}{##1}
+          {
+            number-format=
+             \appendixname\nobreakspace\theheading
+             \tl_if_eq:NnT\@appendixtitles {yes}{.}
+          }
+       }
+    }
+    {
+      \clist_map_inline:nn {section,subsection,subsubsection}
+       {
+         \EditInstance{heading}{##1}{text=\appendixname,
+          number-format=\theheading\IfBlankOrderItemTF{title}{}{.\ }}
+       }
+    }
 %    \end{macrocode}
 % Reset the numbering in the appendix
 %    \begin{macrocode}
@@ -2435,12 +2586,12 @@
     float/new=boxenv,
     float/new=chart,
     float/new=scheme,
-    float/new=graph,    
+    float/new=graph,
   }
 %    \end{macrocode}
 % If the algorithm package is loaded we setup a float for it too:
 %    \begin{macrocode}
-\AddToHook{package/algorithm/after}{\tagpdfsetup{float/new=algorithm}}  
+\AddToHook{package/algorithm/after}{\tagpdfsetup{float/new=algorithm}}
 %    \end{macrocode}
 %
 %    \begin{macrocode}
