@@ -152,10 +152,10 @@ Completed box being shipped out [1]
 ......\write1{\newmarginnote{note.1.1}{{\themn@abspage }{\number \mn@lastxpos sp}}}
 ......\hbox(0.0+0.0)x0.0, glue set - 131.1672fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\vbox(0.0+0.0)x116.65646, glue set - 565.30286fil, direction TLT
+.......\vbox(0.0+0.0)x116.65646, glue set - 571.30286fil, direction TLT
 ........\kern0.0
-........\kern565.30289
-........\vbox(0.0+0.0)x116.65646, glue set - 138.77982fil, direction TLT
+........\kern571.30289
+........\vbox(0.0+0.0)x116.65646, glue set - 132.77982fil, direction TLT
 .........\kern0.0
 .........\glue(\parskip) 0.0 plus 1.0
 .........\glue(\parskip) 0.0
@@ -176,7 +176,7 @@ Completed box being shipped out [1]
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\parskip) 6.0
+.........\glue(\parskip) 3.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 2.72397
 .........\hbox(5.082+0.14)x116.65646, glue set 88.11748fil, direction TLT
@@ -205,8 +205,8 @@ Completed box being shipped out [1]
 ..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue -6.0
-.........\glue(\parskip) 6.0
+.........\glue -3.0
+.........\glue(\parskip) 3.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 6.778
 .........\hbox(5.082+1.967)x116.65646, glue set 87.30547fil, direction TLT
@@ -238,8 +238,8 @@ Completed box being shipped out [1]
 ..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue -6.0
-.........\glue(\parskip) 6.0
+.........\glue -3.0
+.........\glue(\parskip) 3.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 4.951
 .........\hbox(5.082+0.14)x116.65646, glue set 84.74347fil, direction TLT
@@ -267,7 +267,7 @@ Completed box being shipped out [1]
 ..........\kern-0.875 (right margin)
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue(\parskip) 6.0
+.........\glue(\parskip) 3.0
 .........\glue(\parskip) 0.0
 .........\glue(\baselineskip) 6.778
 .........\hbox(5.082+1.981)x116.65646, glue set 15.29417fil, direction TLT
