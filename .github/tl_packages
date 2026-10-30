@@ -39,6 +39,7 @@ collection-latex
         pbox
         seqsplit
         sillypage       
+        subcaptionlite        
         tcolorbox
         tocloft
         translations
