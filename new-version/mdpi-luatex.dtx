@@ -357,11 +357,35 @@
 \reversemarginpar % To have the left column on the left side
 \RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
 \RequirePackage{float}
-\RequirePackage[labelformat=simple]{subfig}
+%    \end{macrocode}
+% The caption package is not compatible with the tagging code.
+% For normal captions it is simply ignores as the tagging overwrites
+% the definition again, but e.g. with listings it actually harms, see issue \#167.
+% An emulation does not yet exist. We therefore suppress the loading and also the
+% loading of the subfig package. 
+%    \begin{macrocode}
+\disable@package@load{caption}
+ {%
+  \ClassWarning{mdpi-luatex}{The caption package is not compatible 
+  with the tagging code. \MessageBreak
+  Its loading is suppressed.}
+ }
+\disable@package@load{subfig}
+ {%
+  \ClassWarning{mdpi-luatex}{The subfig package is not compatible 
+  with the tagging code. \MessageBreak
+  Its loading is suppressed.}
+ }
+%\RequirePackage[labelformat=simple]{subfig} 
+%    \end{macrocode}
+% As replacement we load subcaptionlite. The tagging is not perfect (subcaptions
+% are not tagged as Caption), but it doesn't error
+%    \begin{macrocode}
+\RequirePackage{subcaptionlite}
 %    \end{macrocode}
 % Change subfigure label format:
 %    \begin{macrocode}
-\renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} %
+%\renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} %
 %    \end{macrocode}
 %
 % \subsubsection{Bibliography}
@@ -2594,9 +2618,33 @@
 \AddToHook{package/algorithm/after}{\tagpdfsetup{float/new=algorithm}}
 %    \end{macrocode}
 %
+% \subsection{Captions}
+% We above disabled the loading of the \pkg{caption} package.
+% Here we some fallbacks for the 
+% \cs{captionsetup} command and its settings.
 %    \begin{macrocode}
-
-\RequirePackage{caption}
+%\RequirePackage{caption}
+\ExplSyntaxOn
+\clist_new:N\l__mdpi_tempa_clist
+\newlength\mdpi@caption@leftmargin
+\newlength\mdpi@caption@rightmargin
+%    \end{macrocode}
+% the subcaptionlite package defines the command as noop.
+%    \begin{macrocode}
+\RenewDocumentCommand\captionsetup{O{}m}
+ {
+   \keys_set_known:nn {mdpi/captionsetup}{#2} 
+ }
+\keys_define:nn {mdpi/captionsetup}
+ {
+   margin.code:n = 
+    { 
+      \clist_set:Nn \l__mdpi_tempa_clist {#1,#1}
+      \setlength\mdpi@caption@leftmargin{\clist_item:Nn\l__mdpi_tempa_clist{1}}
+      \setlength\mdpi@caption@rightmargin{\clist_item:Nn\l__mdpi_tempa_clist{2}}
+    }        
+ } 
+\ExplSyntaxOff 
 \captionsetup
   {
    labelfont={bf, small, stretch=1.17},
@@ -2641,8 +2689,8 @@
 % We set the margin to the values from the caption package, so that e.g. landscape
 % can change them with \cs{captionsetup}
 %    \begin{macrocode}
-     \leftskip \caption@leftmargin
-     \rightskip\caption@rightmargin
+     \leftskip \mdpi@caption@leftmargin
+     \rightskip\mdpi@caption@rightmargin
      \parfillskip=\z@ plus 1fil
      \UseTaggingSocket{caption/begin}{\@current@float@struct}%
      \UseTaggingSocket{caption/label/begin}%
