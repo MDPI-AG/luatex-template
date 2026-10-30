@@ -139,7 +139,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 305.05527fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 293.05655fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -1487,7 +1487,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 16} action struct name{figure.caption.2} goto name{figure.caption.2}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 16} action struct name{figure.1} goto name{figure.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1519,7 +1519,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 17} action struct name{figure.caption.2} goto name{figure.caption.2}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 17} action struct name{figure.1} goto name{figure.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1543,7 +1543,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 18} action struct name{figure.caption.3} goto name{figure.caption.3}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 18} action struct name{figure.2} goto name{figure.2}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1604,7 +1604,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 19} action struct name{table.caption.4} goto name{table.caption.4}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 19} action struct name{table.1} goto name{table.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1635,7 +1635,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 20} action struct name{table.caption.4} goto name{table.caption.4}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 20} action struct name{table.1} goto name{table.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1659,7 +1659,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 21} action struct name{table.caption.5} goto name{table.caption.5}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 21} action struct name{table.2} goto name{table.2}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1725,7 +1725,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 22} action struct name{listing.caption.6} goto name{listing.caption.6}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 22} action struct name{listing.1} goto name{listing.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1758,7 +1758,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 23} action struct name{listing.caption.6} goto name{listing.caption.6}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 23} action struct name{listing.1} goto name{listing.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1782,7 +1782,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 24} action struct name{listing.caption.7} goto name{listing.caption.7}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 24} action struct name{listing.2} goto name{listing.2}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1841,7 +1841,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 25} action struct name{scheme.caption.8} goto name{scheme.caption.8}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 25} action struct name{scheme.1} goto name{scheme.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1870,7 +1870,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 26} action struct name{scheme.caption.8} goto name{scheme.caption.8}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 26} action struct name{scheme.1} goto name{scheme.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1894,7 +1894,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 27} action struct name{scheme.caption.9} goto name{scheme.caption.9}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 27} action struct name{scheme.2} goto name{scheme.2}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1951,7 +1951,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 28} action struct name{chart.caption.10} goto name{chart.caption.10}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 28} action struct name{chart.1} goto name{chart.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -1979,7 +1979,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 29} action struct name{chart.caption.10} goto name{chart.caption.10}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 29} action struct name{chart.1} goto name{chart.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -2003,7 +2003,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 30} action struct name{chart.caption.11} goto name{chart.caption.11}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 30} action struct name{chart.2} goto name{chart.2}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -2063,7 +2063,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 31} action struct name{graph.caption.12} goto name{graph.caption.12}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 31} action struct name{graph.1} goto name{graph.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -2092,7 +2092,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 32} action struct name{graph.caption.12} goto name{graph.caption.12}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 32} action struct name{graph.1} goto name{graph.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -2116,7 +2116,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 33} action struct name{graph.caption.13} goto name{graph.caption.13}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 33} action struct name{graph.2} goto name{graph.2}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -2179,7 +2179,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 34} action struct name{boxenv.caption.14} goto name{boxenv.caption.14}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 34} action struct name{boxenv.1} goto name{boxenv.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -2208,7 +2208,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 35} action struct name{boxenv.caption.14} goto name{boxenv.caption.14}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 35} action struct name{boxenv.1} goto name{boxenv.1}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -2232,7 +2232,7 @@ Completed box being shipped out [1]
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 36} action struct name{boxenv.caption.15} goto name{boxenv.caption.15}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 36} action struct name{boxenv.2} goto name{boxenv.2}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral direct <lua data reference ...>
@@ -2289,23 +2289,15 @@ Completed box being shipped out [1]
 ....\penalty 10000
 ....\glue 0.0 plus 1.0fil
 ....\glue 20.0 plus 2.0 minus 4.0
-....\vbox(9.099+0.0)x394.35522, direction TLT
-.....\vbox(9.099+0.0)x394.35522, direction TLT
+....\vbox(21.099+0.0)x394.35522, direction TLT
+.....\vbox(21.099+0.0)x394.35522, direction TLT
 ......\pdfdest name{figure.struct.93} xyz
 ......\pdfdest name{figure.struct.93} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{figure.1} xyz
+......\pdfdest name{figure.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{figure.caption.2} xyz
-......\pdfdest name{figure.caption.2} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces a figure}}{\thepage }{figure.caption.2}\protected@file@percent }}
+......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces a figure}}{\thepage }{figure.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2349,11 +2341,10 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
-......\glue -6.0
+......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}}
-......\write1{\newlabel{figure:label1}{{1}{\thepage }{a figure}{figure.caption.2}{}}}
+......\write1{\newlabel{figure:label1}{{1}{\thepage }{References to floats}{figure.1}{}}}
 ......\write1{\newlabel{figure:label1@cref}{{[figure][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 12.0 plus 2.0 minus 2.0
@@ -2813,27 +2804,19 @@ Completed box being shipped out [2]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 15.96338fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 13.65569fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\glue -8.0 plus -2.0fil
 ....\glue 8.0 plus 2.0fil
-....\vbox(9.099+0.0)x394.35522, direction TLT
-.....\vbox(9.099+0.0)x394.35522, direction TLT
+....\vbox(21.099+0.0)x394.35522, direction TLT
+.....\vbox(21.099+0.0)x394.35522, direction TLT
 ......\pdfdest name{figure.struct.97} xyz
 ......\pdfdest name{figure.struct.97} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{figure.2} xyz
+......\pdfdest name{figure.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{figure.caption.3} xyz
-......\pdfdest name{figure.caption.3} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {2}{\ignorespaces a figure}}{\thepage }{figure.caption.3}\protected@file@percent }}
+......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {2}{\ignorespaces a figure}}{\thepage }{figure.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2877,10 +2860,10 @@ Completed box being shipped out [2]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
-......\glue -6.0
+......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{figure:label2}{{2}{\thepage }{a figure}{figure.caption.3}{}}}
+......\write1{\newlabel{figure:label2}{{2}{\thepage }{References to floats}{figure.2}{}}}
 ......\write1{\newlabel{figure:label2@cref}{{[figure][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -2889,18 +2872,10 @@ Completed box being shipped out [2]
 ......\pdfdest name{table.struct.101} xyz
 ......\pdfdest name{table.struct.101} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.1} xyz
+......\pdfdest name{table.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.4} xyz
-......\pdfdest name{table.caption.4} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces a table}}{\thepage }{table.caption.4}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces a table}}{\thepage }{table.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2948,7 +2923,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{table:label1}{{1}{\thepage }{a table}{table.caption.4}{}}}
+......\write1{\newlabel{table:label1}{{1}{\thepage }{References to floats}{table.1}{}}}
 ......\write1{\newlabel{table:label1@cref}{{[table][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -2957,18 +2932,10 @@ Completed box being shipped out [2]
 ......\pdfdest name{table.struct.105} xyz
 ......\pdfdest name{table.struct.105} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.2} xyz
+......\pdfdest name{table.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.5} xyz
-......\pdfdest name{table.caption.5} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {2}{\ignorespaces a table}}{\thepage }{table.caption.5}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {2}{\ignorespaces a table}}{\thepage }{table.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3016,7 +2983,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{table:label2}{{2}{\thepage }{a table}{table.caption.5}{}}}
+......\write1{\newlabel{table:label2}{{2}{\thepage }{References to floats}{table.2}{}}}
 ......\write1{\newlabel{table:label2@cref}{{[table][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3025,18 +2992,10 @@ Completed box being shipped out [2]
 ......\pdfdest name{listing.struct.109} xyz
 ......\pdfdest name{listing.struct.109} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{listing.1} xyz
+......\pdfdest name{listing.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{listing.caption.6} xyz
-......\pdfdest name{listing.caption.6} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lolisting}{\protect \contentsline {listing}{\protect \numberline {1}{\ignorespaces a listing}}{\thepage }{listing.caption.6}\protected@file@percent }}
+......\write1{\@writefile{lolisting}{\protect \contentsline {listing}{\protect \numberline {1}{\ignorespaces a listing}}{\thepage }{listing.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3087,7 +3046,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{listing:label1}{{1}{\thepage }{a listing}{listing.caption.6}{}}}
+......\write1{\newlabel{listing:label1}{{1}{\thepage }{References to floats}{listing.1}{}}}
 ......\write1{\newlabel{listing:label1@cref}{{[listing][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3096,18 +3055,10 @@ Completed box being shipped out [2]
 ......\pdfdest name{listing.struct.113} xyz
 ......\pdfdest name{listing.struct.113} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{listing.2} xyz
+......\pdfdest name{listing.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{listing.caption.7} xyz
-......\pdfdest name{listing.caption.7} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lolisting}{\protect \contentsline {listing}{\protect \numberline {2}{\ignorespaces a listing}}{\thepage }{listing.caption.7}\protected@file@percent }}
+......\write1{\@writefile{lolisting}{\protect \contentsline {listing}{\protect \numberline {2}{\ignorespaces a listing}}{\thepage }{listing.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3158,27 +3109,19 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{listing:label2}{{2}{\thepage }{a listing}{listing.caption.7}{}}}
+......\write1{\newlabel{listing:label2}{{2}{\thepage }{References to floats}{listing.2}{}}}
 ......\write1{\newlabel{listing:label2@cref}{{[listing][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
-....\vbox(6.71399+0.0)x394.35522, direction TLT
-.....\vbox(6.71399+0.0)x394.35522, direction TLT
+....\vbox(18.71399+0.0)x394.35522, direction TLT
+.....\vbox(18.71399+0.0)x394.35522, direction TLT
 ......\pdfdest name{scheme.struct.117} xyz
 ......\pdfdest name{scheme.struct.117} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{scheme.1} xyz
+......\pdfdest name{scheme.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{scheme.caption.8} xyz
-......\pdfdest name{scheme.caption.8} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{loscheme}{\protect \contentsline {scheme}{\protect \numberline {1}{\ignorespaces a scheme}}{\thepage }{scheme.caption.8}\protected@file@percent }}
+......\write1{\@writefile{loscheme}{\protect \contentsline {scheme}{\protect \numberline {1}{\ignorespaces a scheme}}{\thepage }{scheme.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3219,30 +3162,22 @@ Completed box being shipped out [2]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
-......\glue -6.0
+......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{scheme:label1}{{1}{\thepage }{a scheme}{scheme.caption.8}{}}}
+......\write1{\newlabel{scheme:label1}{{1}{\thepage }{References to floats}{scheme.1}{}}}
 ......\write1{\newlabel{scheme:label1@cref}{{[scheme][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
-....\vbox(6.71399+0.0)x394.35522, direction TLT
-.....\vbox(6.71399+0.0)x394.35522, direction TLT
+....\vbox(18.71399+0.0)x394.35522, direction TLT
+.....\vbox(18.71399+0.0)x394.35522, direction TLT
 ......\pdfdest name{scheme.struct.121} xyz
 ......\pdfdest name{scheme.struct.121} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{scheme.2} xyz
+......\pdfdest name{scheme.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{scheme.caption.9} xyz
-......\pdfdest name{scheme.caption.9} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{loscheme}{\protect \contentsline {scheme}{\protect \numberline {2}{\ignorespaces a scheme}}{\thepage }{scheme.caption.9}\protected@file@percent }}
+......\write1{\@writefile{loscheme}{\protect \contentsline {scheme}{\protect \numberline {2}{\ignorespaces a scheme}}{\thepage }{scheme.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3283,30 +3218,22 @@ Completed box being shipped out [2]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
-......\glue -6.0
+......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{scheme:label2}{{2}{\thepage }{a scheme}{scheme.caption.9}{}}}
+......\write1{\newlabel{scheme:label2}{{2}{\thepage }{References to floats}{scheme.2}{}}}
 ......\write1{\newlabel{scheme:label2@cref}{{[scheme][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
-....\vbox(6.71399+0.0)x394.35522, direction TLT
-.....\vbox(6.71399+0.0)x394.35522, direction TLT
+....\vbox(18.71399+0.0)x394.35522, direction TLT
+.....\vbox(18.71399+0.0)x394.35522, direction TLT
 ......\pdfdest name{chart.struct.125} xyz
 ......\pdfdest name{chart.struct.125} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{chart.1} xyz
+......\pdfdest name{chart.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{chart.caption.10} xyz
-......\pdfdest name{chart.caption.10} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lochart}{\protect \contentsline {chart}{\protect \numberline {1}{\ignorespaces a chart}}{\thepage }{chart.caption.10}\protected@file@percent }}
+......\write1{\@writefile{lochart}{\protect \contentsline {chart}{\protect \numberline {1}{\ignorespaces a chart}}{\thepage }{chart.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3346,30 +3273,22 @@ Completed box being shipped out [2]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
-......\glue -6.0
+......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{chart:label1}{{1}{\thepage }{a chart}{chart.caption.10}{}}}
+......\write1{\newlabel{chart:label1}{{1}{\thepage }{References to floats}{chart.1}{}}}
 ......\write1{\newlabel{chart:label1@cref}{{[chart][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
-....\vbox(6.71399+0.0)x394.35522, direction TLT
-.....\vbox(6.71399+0.0)x394.35522, direction TLT
+....\vbox(18.71399+0.0)x394.35522, direction TLT
+.....\vbox(18.71399+0.0)x394.35522, direction TLT
 ......\pdfdest name{chart.struct.129} xyz
 ......\pdfdest name{chart.struct.129} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{chart.2} xyz
+......\pdfdest name{chart.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{chart.caption.11} xyz
-......\pdfdest name{chart.caption.11} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lochart}{\protect \contentsline {chart}{\protect \numberline {2}{\ignorespaces a chart}}{\thepage }{chart.caption.11}\protected@file@percent }}
+......\write1{\@writefile{lochart}{\protect \contentsline {chart}{\protect \numberline {2}{\ignorespaces a chart}}{\thepage }{chart.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3409,10 +3328,10 @@ Completed box being shipped out [2]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
-......\glue -6.0
+......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{chart:label2}{{2}{\thepage }{a chart}{chart.caption.11}{}}}
+......\write1{\newlabel{chart:label2}{{2}{\thepage }{References to floats}{chart.2}{}}}
 ......\write1{\newlabel{chart:label2@cref}{{[chart][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3421,18 +3340,10 @@ Completed box being shipped out [2]
 ......\pdfdest name{graph.struct.133} xyz
 ......\pdfdest name{graph.struct.133} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{graph.1} xyz
+......\pdfdest name{graph.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{graph.caption.12} xyz
-......\pdfdest name{graph.caption.12} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lograph}{\protect \contentsline {graph}{\protect \numberline {1}{\ignorespaces a graph}}{\thepage }{graph.caption.12}\protected@file@percent }}
+......\write1{\@writefile{lograph}{\protect \contentsline {graph}{\protect \numberline {1}{\ignorespaces a graph}}{\thepage }{graph.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3476,7 +3387,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{graph:label1}{{1}{\thepage }{a graph}{graph.caption.12}{}}}
+......\write1{\newlabel{graph:label1}{{1}{\thepage }{References to floats}{graph.1}{}}}
 ......\write1{\newlabel{graph:label1@cref}{{[graph][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3485,18 +3396,10 @@ Completed box being shipped out [2]
 ......\pdfdest name{graph.struct.137} xyz
 ......\pdfdest name{graph.struct.137} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{graph.2} xyz
+......\pdfdest name{graph.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{graph.caption.13} xyz
-......\pdfdest name{graph.caption.13} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lograph}{\protect \contentsline {graph}{\protect \numberline {2}{\ignorespaces a graph}}{\thepage }{graph.caption.13}\protected@file@percent }}
+......\write1{\@writefile{lograph}{\protect \contentsline {graph}{\protect \numberline {2}{\ignorespaces a graph}}{\thepage }{graph.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3540,7 +3443,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{graph:label2}{{2}{\thepage }{a graph}{graph.caption.13}{}}}
+......\write1{\newlabel{graph:label2}{{2}{\thepage }{References to floats}{graph.2}{}}}
 ......\write1{\newlabel{graph:label2@cref}{{[graph][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3549,18 +3452,10 @@ Completed box being shipped out [2]
 ......\pdfdest name{boxenv.struct.141} xyz
 ......\pdfdest name{boxenv.struct.141} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{boxenv.1} xyz
+......\pdfdest name{boxenv.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{boxenv.caption.14} xyz
-......\pdfdest name{boxenv.caption.14} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{loboxenv}{\protect \contentsline {boxenv}{\protect \numberline {1}{\ignorespaces a boxenv}}{\thepage }{boxenv.caption.14}\protected@file@percent }}
+......\write1{\@writefile{loboxenv}{\protect \contentsline {boxenv}{\protect \numberline {1}{\ignorespaces a boxenv}}{\thepage }{boxenv.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3608,7 +3503,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{boxenv:label1}{{1}{\thepage }{a boxenv}{boxenv.caption.14}{}}}
+......\write1{\newlabel{boxenv:label1}{{1}{\thepage }{References to floats}{boxenv.1}{}}}
 ......\write1{\newlabel{boxenv:label1@cref}{{[boxenv][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3617,18 +3512,10 @@ Completed box being shipped out [2]
 ......\pdfdest name{boxenv.struct.145} xyz
 ......\pdfdest name{boxenv.struct.145} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{boxenv.2} xyz
+......\pdfdest name{boxenv.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{boxenv.caption.15} xyz
-......\pdfdest name{boxenv.caption.15} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{loboxenv}{\protect \contentsline {boxenv}{\protect \numberline {2}{\ignorespaces a boxenv}}{\thepage }{boxenv.caption.15}\protected@file@percent }}
+......\write1{\@writefile{loboxenv}{\protect \contentsline {boxenv}{\protect \numberline {2}{\ignorespaces a boxenv}}{\thepage }{boxenv.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3676,7 +3563,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{boxenv:label2}{{2}{\thepage }{a boxenv}{boxenv.caption.15}{}}}
+......\write1{\newlabel{boxenv:label2}{{2}{\thepage }{References to floats}{boxenv.2}{}}}
 ......\write1{\newlabel{boxenv:label2@cref}{{[boxenv][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 0.0 plus 1.0fil

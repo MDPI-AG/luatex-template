@@ -7507,18 +7507,10 @@ Completed box being shipped out [3]
 ......\pdfdest name{table.struct.41} xyz
 ......\pdfdest name{table.struct.41} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.1} xyz
+......\pdfdest name{table.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.1} xyz
-......\pdfdest name{table.caption.1} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces \kant [1-2]}}{\thepage }{table.caption.1}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces \kant [1-2]}}{\thepage }{table.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -10430,18 +10422,10 @@ Completed box being shipped out [4]
 ......\pdfdest name{table.struct.61} xyz
 ......\pdfdest name{table.struct.61} xyz
 ......\penalty 10000
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.2} xyz
+......\pdfdest name{table.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.2} xyz
-......\pdfdest name{table.caption.2} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {2}{\ignorespaces \kant [1-2]}}{\thepage }{table.caption.2}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {2}{\ignorespaces \kant [1-2]}}{\thepage }{table.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0

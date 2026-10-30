@@ -888,18 +888,10 @@ Completed box being shipped out [1]
 ....\glue(\lineskip) 1.0
 ....\vbox(46.15599+0.0)x394.35522, direction TLT
 .....\vbox(46.15599+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.1} xyz
+......\pdfdest name{table.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.1} xyz
-......\pdfdest name{table.caption.1} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces a caption}}{\thepage }{table.caption.1}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces a caption}}{\thepage }{table.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -950,8 +942,7 @@ Completed box being shipped out [1]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}}
-......\write1{\newlabel{tabref:xxx}{{1}{\thepage }{a caption}{table.caption.1}{}}}
+......\write1{\newlabel{tabref:xxx}{{1}{\thepage }{}{table.1}{}}}
 ......\write1{\newlabel{tabref:xxx@cref}{{[table][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
