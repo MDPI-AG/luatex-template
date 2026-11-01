@@ -350,7 +350,7 @@
 %    \end{macrocode}
 %
 %  \subsubsection{Floats}
-%  Note: float is only partly compatible with tagging. subfig is incompatible!
+%  float is compatible with tagging starting with 2026-11-01. 
 %  marginnote is used for the left column on the title page.
 %    \begin{macrocode}
 \RequirePackage{marginnote}
@@ -359,10 +359,10 @@
 \RequirePackage{float}
 %    \end{macrocode}
 % The caption package is not compatible with the tagging code.
-% For normal captions it is simply ignores as the tagging overwrites
+% For normal captions it is simply ignored as the tagging overwrites
 % the definition again, but e.g. with listings it actually harms, see issue \#167.
 % An emulation does not yet exist. We therefore suppress the loading and also the
-% loading of the subfig package. 
+% loading of the subfig package which is also incompatible too (as it loads caption). 
 %    \begin{macrocode}
 \disable@package@load{caption}
  {%
@@ -383,9 +383,34 @@
 %    \begin{macrocode}
 \RequirePackage{subcaptionlite}
 %    \end{macrocode}
+% We fake the \cs{subfloat} command.  
+%    \begin{macrocode}
+\NewDocumentCommand\subfloat{oo+m}
+ {%
+   \leavevmode
+   \UseTaggingSocket{minipage/before}{}%
+   \begingroup
+   \AssignTaggingSocketPlug{minipage/before}{noop}%
+   \AssignTaggingSocketPlug{minipage/after}{noop}%
+   \AssignTaggingSocketPlug{para/restore}{noop}%
+   \tagpdfsetup{para/flattened}%
+   \AssignStructureRole{para/textblock}{Lbl}%
+   \IfNoValueTF{#1}
+    {%
+      \hbox{#3}%
+    }
+    {%
+      \IfNoValueTF{#2}
+       {\subcaptionbox{#1}{#3}}
+       {\subcaptionbox{#2}{#3}}%
+    }%
+   \endgroup 
+   \UseTaggingSocket{minipage/after}%
+ }
+%    \end{macrocode}
 % Change subfigure label format:
 %    \begin{macrocode}
-%\renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} %
+\renewcommand\thesubfigure{\normalfont(\textbf{\alph{subfigure}})} %
 %    \end{macrocode}
 %
 % \subsubsection{Bibliography}
