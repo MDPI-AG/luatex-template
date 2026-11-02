@@ -350,14 +350,63 @@
 %    \end{macrocode}
 %
 %  \subsubsection{Floats}
-%  Note: float is only partly compatible with tagging. subfig is incompatible!
+%  float is compatible with tagging starting with 2026-11-01. 
 %  marginnote is used for the left column on the title page.
 %    \begin{macrocode}
 \RequirePackage{marginnote}
 \reversemarginpar % To have the left column on the left side
 \RequirePackage{marginfix} % For command \clearmargin for manually moving the left column to the next page
 \RequirePackage{float}
-\RequirePackage[labelformat=simple]{subfig}
+%    \end{macrocode}
+% The caption package is not compatible with the tagging code.
+% For normal captions it is simply ignored as the tagging overwrites
+% the definition again, but e.g. with listings it actually harms, see issue \#167.
+% An emulation does not yet exist. We therefore suppress the loading and also the
+% loading of the subfig package which is also incompatible too (as it loads caption). 
+%    \begin{macrocode}
+\disable@package@load{caption}
+ {%
+  \ClassWarning{mdpi-luatex}{The caption package is not compatible 
+  with the tagging code. \MessageBreak
+  Its loading is suppressed.}
+ }
+\disable@package@load{subfig}
+ {%
+  \ClassWarning{mdpi-luatex}{The subfig package is not compatible 
+  with the tagging code. \MessageBreak
+  Its loading is suppressed.}
+ }
+%\RequirePackage[labelformat=simple]{subfig} 
+%    \end{macrocode}
+% As replacement we load subcaptionlite. The tagging is not perfect (subcaptions
+% are not tagged as Caption), but it doesn't error
+%    \begin{macrocode}
+\RequirePackage{subcaptionlite}
+%    \end{macrocode}
+% We fake the \cs{subfloat} command.  
+%    \begin{macrocode}
+\NewDocumentCommand\subfloat{oo+m}
+ {%
+   \leavevmode
+   \UseTaggingSocket{minipage/before}{}%
+   \begingroup
+   \AssignTaggingSocketPlug{minipage/before}{noop}%
+   \AssignTaggingSocketPlug{minipage/after}{noop}%
+   \AssignTaggingSocketPlug{para/restore}{noop}%
+   \tagpdfsetup{para/flattened}%
+   \AssignStructureRole{para/textblock}{Lbl}%
+   \IfNoValueTF{#1}
+    {%
+      \hbox{#3}%
+    }
+    {%
+      \IfNoValueTF{#2}
+       {\subcaptionbox{#1}{#3}}
+       {\subcaptionbox{#2}{#3}}%
+    }%
+   \endgroup 
+   \UseTaggingSocket{minipage/after}%
+ }
 %    \end{macrocode}
 % Change subfigure label format:
 %    \begin{macrocode}
@@ -968,6 +1017,16 @@
      allcolors    = mdpi@hypcolor,
     ]
     {hyperref}
+%    \end{macrocode}
+% Temporarily correct nameref 
+%    \begin{macrocode}
+   \IfPackageAtLeastF{nameref}{2026-10-30}
+     { 
+        \let\NR@@caption\@caption
+        \long\def\@caption##1[##2]{%
+          \NR@gettitle{##2}%
+          \NR@@caption{##1}[{##2}]}
+     }
 %    \end{macrocode}
 % Now load cleveref
 %    \begin{macrocode}
@@ -2434,27 +2493,16 @@
 % Reset the numbering in the appendix
 %    \begin{macrocode}
   \csname appendixmore\endcsname
-  \renewcommand{\thefigure}{A\arabic{figure}}
-  \renewcommand{\thetable}{A\arabic{table}}
-  \renewcommand{\thescheme}{A\arabic{scheme}}
-  \renewcommand{\thechart}{A\arabic{chart}}
-  \renewcommand{\theboxenv}{A\arabic{boxenv}}
-  \renewcommand{\theequation}{A\arabic{equation}}
-  \renewcommand{\thetheorem}{A\arabic{theorem}}
-  \renewcommand{\thelemma}{A\arabic{lemma}}
-  \renewcommand{\thecorollary}{A\arabic{corollary}}
-  \renewcommand{\theproposition}{A\arabic{proposition}}
-  \renewcommand{\thecharacterization}{A\arabic{characterization}}
-  \renewcommand{\theproperty}{A\arabic{property}}
-  \renewcommand{\theproblem}{A\arabic{problem}}
-  \renewcommand{\theexample}{A\arabic{example}}
-  \renewcommand{\theremark}{A\arabic{remark}}
-  \renewcommand{\thedefinition}{A\arabic{definition}}
-  \renewcommand{\thehypothesis}{A\arabic{hypothesis}}
-  \renewcommand{\thenotation}{A\arabic{notation}}
-  \renewcommand{\thealgorithm}{A\arabic{algorithm}}
-  \renewcommand{\thegraph}{A\arabic{graph}}
-}
+  \clist_map_inline:nn
+    {figure,table,scheme,chart,boxenv,equation,
+      theorem,lemma,corollary,proposition,
+      characterization,property,problem,example,remark,definition,
+      hypothesis,notation,algorithm,graph}
+    {
+      \ExpandArgs{c}\renewcommand{the##1}{A\arabic{##1}}
+      \ExpandArgs{c}\renewcommand{theH##1}{A\arabic{##1}}
+    }  
+ }
   \ExplSyntaxOff
 %    \end{macrocode}
 % \end{macro}
@@ -2594,9 +2642,33 @@
 \AddToHook{package/algorithm/after}{\tagpdfsetup{float/new=algorithm}}
 %    \end{macrocode}
 %
+% \subsection{Captions}
+% We above disabled the loading of the \pkg{caption} package.
+% Here we some fallbacks for the 
+% \cs{captionsetup} command and its settings.
 %    \begin{macrocode}
-
-\RequirePackage{caption}
+%\RequirePackage{caption}
+\ExplSyntaxOn
+\clist_new:N\l__mdpi_tempa_clist
+\newlength\mdpi@caption@leftmargin
+\newlength\mdpi@caption@rightmargin
+%    \end{macrocode}
+% the subcaptionlite package defines the command as noop.
+%    \begin{macrocode}
+\RenewDocumentCommand\captionsetup{O{}m}
+ {
+   \keys_set_known:nn {mdpi/captionsetup}{#2} 
+ }
+\keys_define:nn {mdpi/captionsetup}
+ {
+   margin.code:n = 
+    { 
+      \clist_set:Nn \l__mdpi_tempa_clist {#1,#1}
+      \setlength\mdpi@caption@leftmargin{\clist_item:Nn\l__mdpi_tempa_clist{1}}
+      \setlength\mdpi@caption@rightmargin{\clist_item:Nn\l__mdpi_tempa_clist{2}}
+    }        
+ } 
+\ExplSyntaxOff 
 \captionsetup
   {
    labelfont={bf, small, stretch=1.17},
@@ -2641,8 +2713,8 @@
 % We set the margin to the values from the caption package, so that e.g. landscape
 % can change them with \cs{captionsetup}
 %    \begin{macrocode}
-     \leftskip \caption@leftmargin
-     \rightskip\caption@rightmargin
+     \leftskip \mdpi@caption@leftmargin
+     \rightskip\mdpi@caption@rightmargin
      \parfillskip=\z@ plus 1fil
      \UseTaggingSocket{caption/begin}{\@current@float@struct}%
      \UseTaggingSocket{caption/label/begin}%
