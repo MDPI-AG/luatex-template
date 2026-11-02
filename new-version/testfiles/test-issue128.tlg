@@ -19,24 +19,23 @@ Don't change this file in any respect.
 \@writefile{toc}{\contentsline {section}{\numberline {1}abc}{1}{section.1}\protected@file@percent }[nl]
 \newlabel{sec}{{1}{1}{abc}{section.1}{}}[nl]
 \newlabel{sec@cref}{{[section][1][]1}{[1][1][]1}{}{}{}}[nl]
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces figure}}{1}{figure.caption.1}\protected@file@percent }[nl]
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}[nl]
-\newlabel{fig1}{{1}{1}{figure}{figure.caption.1}{}}[nl]
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces figure}}{1}{figure.1}\protected@file@percent }[nl]
+\newlabel{fig1}{{1}{1}{figure}{figure.1}{}}[nl]
 \newlabel{fig1@cref}{{[figure][1][]1}{[1][1][]1}{}{}{}}[nl]
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces This is a table caption. }}{1}{table.caption.2}\protected@file@percent }[nl]
-\newlabel{tab1}{{1}{1}{This is a table caption}{table.caption.2}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces This is a table caption. }}{1}{table.1}\protected@file@percent }[nl]
+\newlabel{tab1}{{1}{1}{This is a table caption}{table.1}{}}[nl]
 \newlabel{tab1@cref}{{[table][1][]1}{[1][1][]1}{}{}{}}[nl]
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces This is a wide figure}}{1}{figure.caption.3}\protected@file@percent }[nl]
-\newlabel{fig2}{{2}{1}{This is a wide figure}{figure.caption.3}{}}[nl]
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces This is a wide figure}}{1}{figure.2}\protected@file@percent }[nl]
+\newlabel{fig2}{{2}{1}{This is a wide figure}{figure.2}{}}[nl]
 \newlabel{fig2@cref}{{[figure][2][]2}{[1][1][]1}{}{}{}}[nl]
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces This is a wide table.}}{1}{table.caption.4}\protected@file@percent }[nl]
-\newlabel{tab2}{{2}{1}{This is a wide table}{table.caption.4}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces This is a wide table.}}{1}{table.2}\protected@file@percent }[nl]
+\newlabel{tab2}{{2}{1}{This is a wide table}{table.2}{}}[nl]
 \newlabel{tab2@cref}{{[table][2][]2}{[1][1][]1}{}{}{}}[nl]
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces This is a wide table.}}{1}{table.caption.5}\protected@file@percent }[nl]
-\newlabel{tab3}{{3}{1}{This is a wide table}{table.caption.5}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces This is a wide table.}}{1}{table.3}\protected@file@percent }[nl]
+\newlabel{tab3}{{3}{1}{This is a wide table}{table.3}{}}[nl]
 \newlabel{tab3@cref}{{[table][3][]3}{[1][1][]1}{}{}{}}[nl]
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces This is a wide table.}}{1}{table.caption.6}\protected@file@percent }[nl]
-\newlabel{tab4}{{4}{1}{This is a wide table}{table.caption.6}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces This is a wide table.}}{1}{table.4}\protected@file@percent }[nl]
+\newlabel{tab4}{{4}{1}{This is a wide table}{table.4}{}}[nl]
 \newlabel{tab4@cref}{{[table][4][]4}{[1][1][]1}{}{}{}}[nl]
 \@writefile{toc}{\UseName {mdpi@toc@appendixsetup}}[nl]
 \new@label@record{heading*.1}{{pagenum}{1}}[nl]
@@ -47,8 +46,8 @@ Don't change this file in any respect.
 \@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Appendix~A.1}{1}{subsection.A.1}\protected@file@percent }[nl]
 \newlabel{app1.1}{{A.1}{1}{\appendixname ~\thesubsection }{subsection.A.1}{}}[nl]
 \newlabel{app1.1@cref}{{[appendix][1][2147483647]A.1}{[1][1][]1}{}{}{}}[nl]
-\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces This is a table caption.}}{1}{table.caption.7}\protected@file@percent }[nl]
-\newlabel{tab5}{{A1}{1}{This is a table caption}{table.caption.7}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {A1}{\ignorespaces This is a table caption.}}{1}{table.A1}\protected@file@percent }[nl]
+\newlabel{tab5}{{A1}{1}{This is a table caption}{table.A1}{}}[nl]
 \newlabel{tab5@cref}{{[table][1][2147483647]A1}{[1][1][]1}{}{}{}}[nl]
 \def\@LN@column{1}[nl]
 \new@label@record{heading*.3}{{pagenum}{2}}[nl]
@@ -59,8 +58,8 @@ Don't change this file in any respect.
 \@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Appendix~B.1}{2}{subsection.B.1}\protected@file@percent }[nl]
 \newlabel{app2.2}{{B.1}{2}{\appendixname ~\thesubsection }{subsection.B.1}{}}[nl]
 \newlabel{app2.2@cref}{{[appendix][1][2147483647]B.1}{[1][1][]2}{}{}{}}[nl]
-\@writefile{lot}{\contentsline {table}{\numberline {A2}{\ignorespaces This is a table caption.}}{2}{table.caption.8}\protected@file@percent }[nl]
-\newlabel{tab6}{{A2}{2}{This is a table caption}{table.caption.8}{}}[nl]
+\@writefile{lot}{\contentsline {table}{\numberline {A2}{\ignorespaces This is a table caption.}}{2}{table.A2}\protected@file@percent }[nl]
+\newlabel{tab6}{{A2}{2}{This is a table caption}{table.A2}{}}[nl]
 \newlabel{tab6@cref}{{[table][2][2147483647]A2}{[1][1][]2}{}{}{}}[nl]
 \new@label@record{@tag@LastPage}{{abspage}{2}{tagmcabs}{0}{tagstruct}{1}}[nl]
 \newlabel{LastPage}{{B.1}{2}{Appendix~B.1}{page.2}{}}[nl]
@@ -186,6 +185,7 @@ Completed box being shipped out [1]
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set >20000.0fil, direction TLT
 ....\write1{\def\@LN@column{1}}
+....\penalty 10000
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
@@ -856,7 +856,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 s
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 1
 .....\pdfendlink
@@ -866,7 +866,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 d
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.2}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 2
 .....\pdfendlink
@@ -942,14 +942,14 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 s
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.2}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 2
 .....\pdfendlink
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 ,
 .....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.5}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.3}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 3
 .....\pdfendlink
@@ -959,7 +959,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 d
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.A1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 A
 .....\TU/tg-pagella/m/n/10 1
@@ -1041,13 +1041,13 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 s
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 1
 .....\pdfendlink
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 –
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.6}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.4}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 4
 .....\pdfendlink
@@ -1057,7 +1057,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 d
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.A1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 A
 .....\TU/tg-pagella/m/n/10 1
@@ -1138,7 +1138,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 e
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.1}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 1
 .....\pdfendlink
@@ -1156,14 +1156,14 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 s
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 1
 .....\pdfendlink
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 ,
 .....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.2}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 2
 .....\pdfendlink
@@ -1173,7 +1173,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 d
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.A1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 A
 .....\TU/tg-pagella/m/n/10 1
@@ -1268,14 +1268,14 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 s
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 1
 .....\pdfendlink
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 ,
 .....\glue(\spaceskip) 2.5 plus 1.5625 minus 0.66666
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.2}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 2
 .....\pdfendlink
@@ -1285,7 +1285,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 d
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.A1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 A
 .....\TU/tg-pagella/m/n/10 1
@@ -1367,7 +1367,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 s
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.2}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 2
 .....\pdfendlink
@@ -1377,7 +1377,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 d
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.A1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 A
 .....\TU/tg-pagella/m/n/10 1
@@ -1479,7 +1479,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 e
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.7}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.A1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 A
 .....\TU/tg-pagella/m/n/10 1
@@ -1807,7 +1807,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 e
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.1}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 1
 .....\pdfendlink
@@ -1824,7 +1824,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 e
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.2}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 1
 .....\pdfendlink
@@ -1880,7 +1880,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 s
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.1}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.1}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 1
 .....\pdfendlink
@@ -1890,7 +1890,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 d
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.3}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.2}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 2
 .....\pdfendlink
@@ -1912,20 +1912,12 @@ Completed box being shipped out [1]
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
 ....\glue 12.0 plus 2.0 minus 2.0
-....\glue(\baselineskip) 2.051
-....\vbox(9.099+0.0)x394.35522, direction TLT
-.....\vbox(9.099+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+....\glue(\lineskip) 1.0
+....\vbox(21.099+0.0)x394.35522, direction TLT
+.....\vbox(21.099+0.0)x394.35522, direction TLT
+......\pdfdest name{figure.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{figure.caption.1} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces figure}}{\thepage }{figure.caption.1}\protected@file@percent }}
+......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces figure}}{\thepage }{figure.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -1960,9 +1952,8 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
-......\glue -6.0
-......\write1{\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}}
-......\write1{\newlabel{fig1}{{1}{\thepage }{figure}{figure.caption.1}{}}}
+......\glue 6.0
+......\write1{\newlabel{fig1}{{1}{\thepage }{figure}{figure.1}{}}}
 ......\write1{\newlabel{fig1@cref}{{[figure][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 12.0 plus 2.0 minus 2.0
@@ -1970,17 +1961,9 @@ Completed box being shipped out [1]
 ....\glue(\lineskip) 1.0
 ....\vbox(21.063+0.0)x394.35522, direction TLT
 .....\vbox(21.063+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.2} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces This is a table caption. }}{\thepage }{table.caption.2}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {1}{\ignorespaces This is a table caption. }}{\thepage }{table.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2036,7 +2019,7 @@ Completed box being shipped out [1]
 .......\TU/tg-pagella/m/n/9 n
 .......\TU/tg-pagella/m/n/9 .
 .......\glue(\spaceskip) 3.0 plus 3.375 minus 0.25
-.......\write1{\newlabel{tab1}{{1}{\thepage }{This is a table caption}{table.caption.2}{}}}
+.......\write1{\newlabel{tab1}{{1}{\thepage }{This is a table caption}{table.1}{}}}
 .......\penalty 10000
 .......\glue -0.00002
 .......\glue 0.00002
@@ -2099,7 +2082,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 e
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.caption.3}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{figure.2}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 2
 .....\pdfendlink
@@ -2119,7 +2102,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 e
 .....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.caption.4}
+.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{table.2}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/m/n/10 2
 .....\pdfendlink
@@ -2144,20 +2127,12 @@ Completed box being shipped out [1]
 ....\kern-2.83
 ....\hbox(0.0+2.83)x0.0, direction TLT
 ....\glue 12.0 plus 2.0 minus 2.0
-....\glue(\baselineskip) 2.051
-....\vbox(9.099+0.0)x394.35522, direction TLT
-.....\vbox(9.099+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+....\glue(\lineskip) 1.0
+....\vbox(21.099+0.0)x394.35522, direction TLT
+.....\vbox(21.099+0.0)x394.35522, direction TLT
+......\pdfdest name{figure.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{figure.caption.3} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {2}{\ignorespaces This is a wide figure}}{\thepage }{figure.caption.3}\protected@file@percent }}
+......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {2}{\ignorespaces This is a wide figure}}{\thepage }{figure.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2204,29 +2179,21 @@ Completed box being shipped out [1]
 .......\TU/tg-pagella/m/n/9 u
 .......\TU/tg-pagella/m/n/9 r
 .......\TU/tg-pagella/m/n/9 e
-.......\write1{\newlabel{fig2}{{2}{\thepage }{This is a wide figure}{figure.caption.3}{}}}
+.......\write1{\newlabel{fig2}{{2}{\thepage }{This is a wide figure}{figure.2}{}}}
 .......\write1{\newlabel{fig2@cref}{{[figure][2][]2}{[1][1][]\thepage }{}{}{}}}
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
-......\glue -6.0
+......\glue 6.0
 ......\glue 0.0
 ....\glue 12.0 plus 2.0 minus 2.0
 ....\glue 12.0 plus 2.0 minus 2.0
 ....\glue(\lineskip) 1.0
 ....\vbox(18.71399+0.0)x394.35522, direction TLT
 .....\vbox(18.71399+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.4} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {2}{\ignorespaces This is a wide table.}}{\thepage }{table.caption.4}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {2}{\ignorespaces This is a wide table.}}{\thepage }{table.2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2275,7 +2242,7 @@ Completed box being shipped out [1]
 .......\TU/tg-pagella/m/n/9 l
 .......\TU/tg-pagella/m/n/9 e
 .......\TU/tg-pagella/m/n/9 .
-.......\write1{\newlabel{tab2}{{2}{\thepage }{This is a wide table}{table.caption.4}{}}}
+.......\write1{\newlabel{tab2}{{2}{\thepage }{This is a wide table}{table.2}{}}}
 .......\write1{\newlabel{tab2@cref}{{[table][2][]2}{[1][1][]\thepage }{}{}{}}}
 .......\penalty 10000
 .......\kern-1.575 (right margin)
@@ -2288,17 +2255,9 @@ Completed box being shipped out [1]
 ....\glue(\lineskip) 1.0
 ....\vbox(18.71399+0.0)x394.35522, direction TLT
 .....\vbox(18.71399+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.3} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.5} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {3}{\ignorespaces This is a wide table.}}{\thepage }{table.caption.5}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {3}{\ignorespaces This is a wide table.}}{\thepage }{table.3}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2347,7 +2306,7 @@ Completed box being shipped out [1]
 .......\TU/tg-pagella/m/n/9 l
 .......\TU/tg-pagella/m/n/9 e
 .......\TU/tg-pagella/m/n/9 .
-.......\write1{\newlabel{tab3}{{3}{\thepage }{This is a wide table}{table.caption.5}{}}}
+.......\write1{\newlabel{tab3}{{3}{\thepage }{This is a wide table}{table.3}{}}}
 .......\write1{\newlabel{tab3@cref}{{[table][3][]3}{[1][1][]\thepage }{}{}{}}}
 .......\penalty 10000
 .......\kern-1.575 (right margin)
@@ -2360,17 +2319,9 @@ Completed box being shipped out [1]
 ....\glue(\lineskip) 1.0
 ....\vbox(18.71399+0.0)x394.35522, direction TLT
 .....\vbox(18.71399+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.4} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.6} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {4}{\ignorespaces This is a wide table.}}{\thepage }{table.caption.6}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {4}{\ignorespaces This is a wide table.}}{\thepage }{table.4}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2419,7 +2370,7 @@ Completed box being shipped out [1]
 .......\TU/tg-pagella/m/n/9 l
 .......\TU/tg-pagella/m/n/9 e
 .......\TU/tg-pagella/m/n/9 .
-.......\write1{\newlabel{tab4}{{4}{\thepage }{This is a wide table}{table.caption.6}{}}}
+.......\write1{\newlabel{tab4}{{4}{\thepage }{This is a wide table}{table.4}{}}}
 .......\write1{\newlabel{tab4@cref}{{[table][4][]4}{[1][1][]\thepage }{}{}{}}}
 .......\penalty 10000
 .......\kern-1.575 (right margin)
@@ -2570,17 +2521,9 @@ Completed box being shipped out [1]
 ....\glue(\lineskip) 1.0
 ....\vbox(21.063+0.0)x394.35522, direction TLT
 .....\vbox(21.063+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.A1} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.7} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {A1}{\ignorespaces This is a table caption.}}{\thepage }{table.caption.7}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {A1}{\ignorespaces This is a table caption.}}{\thepage }{table.A1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -2636,7 +2579,7 @@ Completed box being shipped out [1]
 .......\TU/tg-pagella/m/n/9 o
 .......\TU/tg-pagella/m/n/9 n
 .......\TU/tg-pagella/m/n/9 .
-.......\write1{\newlabel{tab5}{{A1}{\thepage }{This is a table caption}{table.caption.7}{}}}
+.......\write1{\newlabel{tab5}{{A1}{\thepage }{This is a table caption}{table.A1}{}}}
 .......\write1{\newlabel{tab5@cref}{{[table][1][2147483647]A1}{[1][1][]\thepage }{}{}{}}}
 .......\penalty 10000
 .......\kern-1.575 (right margin)
@@ -3205,17 +3148,9 @@ Completed box being shipped out [2]
 ....\glue(\lineskip) 1.0
 ....\vbox(21.063+0.0)x394.35522, direction TLT
 .....\vbox(21.063+0.0)x394.35522, direction TLT
-......\rule(0.0+0.0)x*
+......\pdfdest name{table.A2} xyz
 ......\penalty 10000
-......\glue -6.0002
-......\glue 0.0
-......\pdfdest name{table.caption.8} xyz
-......\penalty 10000
-......\rule(0.0+0.0)x*
-......\penalty 10000
-......\glue 6.0002
-......\glue 0.0
-......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {A2}{\ignorespaces This is a table caption.}}{\thepage }{table.caption.8}\protected@file@percent }}
+......\write1{\@writefile{lot}{\protect \contentsline {table}{\protect \numberline {A2}{\ignorespaces This is a table caption.}}{\thepage }{table.A2}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3271,7 +3206,7 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 o
 .......\TU/tg-pagella/m/n/9 n
 .......\TU/tg-pagella/m/n/9 .
-.......\write1{\newlabel{tab6}{{A2}{\thepage }{This is a table caption}{table.caption.8}{}}}
+.......\write1{\newlabel{tab6}{{A2}{\thepage }{This is a table caption}{table.A2}{}}}
 .......\write1{\newlabel{tab6@cref}{{[table][2][2147483647]A2}{[1][1][]\thepage }{}{}{}}}
 .......\penalty 10000
 .......\kern-1.575 (right margin)
