@@ -2344,7 +2344,7 @@ Completed box being shipped out [1]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{figure:label1}{{1}{\thepage }{References to floats}{figure.1}{}}}
+......\write1{\newlabel{figure:label1}{{1}{\thepage }{a figure}{figure.1}{}}}
 ......\write1{\newlabel{figure:label1@cref}{{[figure][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 12.0 plus 2.0 minus 2.0
@@ -2863,7 +2863,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{figure:label2}{{2}{\thepage }{References to floats}{figure.2}{}}}
+......\write1{\newlabel{figure:label2}{{2}{\thepage }{a figure}{figure.2}{}}}
 ......\write1{\newlabel{figure:label2@cref}{{[figure][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -2923,7 +2923,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{table:label1}{{1}{\thepage }{References to floats}{table.1}{}}}
+......\write1{\newlabel{table:label1}{{1}{\thepage }{a table}{table.1}{}}}
 ......\write1{\newlabel{table:label1@cref}{{[table][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -2983,7 +2983,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{table:label2}{{2}{\thepage }{References to floats}{table.2}{}}}
+......\write1{\newlabel{table:label2}{{2}{\thepage }{a table}{table.2}{}}}
 ......\write1{\newlabel{table:label2@cref}{{[table][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3046,7 +3046,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{listing:label1}{{1}{\thepage }{References to floats}{listing.1}{}}}
+......\write1{\newlabel{listing:label1}{{1}{\thepage }{a listing}{listing.1}{}}}
 ......\write1{\newlabel{listing:label1@cref}{{[listing][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3109,7 +3109,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{listing:label2}{{2}{\thepage }{References to floats}{listing.2}{}}}
+......\write1{\newlabel{listing:label2}{{2}{\thepage }{a listing}{listing.2}{}}}
 ......\write1{\newlabel{listing:label2@cref}{{[listing][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3165,7 +3165,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{scheme:label1}{{1}{\thepage }{References to floats}{scheme.1}{}}}
+......\write1{\newlabel{scheme:label1}{{1}{\thepage }{a scheme}{scheme.1}{}}}
 ......\write1{\newlabel{scheme:label1@cref}{{[scheme][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3221,7 +3221,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{scheme:label2}{{2}{\thepage }{References to floats}{scheme.2}{}}}
+......\write1{\newlabel{scheme:label2}{{2}{\thepage }{a scheme}{scheme.2}{}}}
 ......\write1{\newlabel{scheme:label2@cref}{{[scheme][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3276,7 +3276,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{chart:label1}{{1}{\thepage }{References to floats}{chart.1}{}}}
+......\write1{\newlabel{chart:label1}{{1}{\thepage }{a chart}{chart.1}{}}}
 ......\write1{\newlabel{chart:label1@cref}{{[chart][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3331,7 +3331,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{chart:label2}{{2}{\thepage }{References to floats}{chart.2}{}}}
+......\write1{\newlabel{chart:label2}{{2}{\thepage }{a chart}{chart.2}{}}}
 ......\write1{\newlabel{chart:label2@cref}{{[chart][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3387,7 +3387,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{graph:label1}{{1}{\thepage }{References to floats}{graph.1}{}}}
+......\write1{\newlabel{graph:label1}{{1}{\thepage }{a graph}{graph.1}{}}}
 ......\write1{\newlabel{graph:label1@cref}{{[graph][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3443,7 +3443,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{graph:label2}{{2}{\thepage }{References to floats}{graph.2}{}}}
+......\write1{\newlabel{graph:label2}{{2}{\thepage }{a graph}{graph.2}{}}}
 ......\write1{\newlabel{graph:label2@cref}{{[graph][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3503,7 +3503,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{boxenv:label1}{{1}{\thepage }{References to floats}{boxenv.1}{}}}
+......\write1{\newlabel{boxenv:label1}{{1}{\thepage }{a boxenv}{boxenv.1}{}}}
 ......\write1{\newlabel{boxenv:label1@cref}{{[boxenv][1][]1}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 8.0 plus 2.0fil
@@ -3563,7 +3563,7 @@ Completed box being shipped out [2]
 ......\glue 6.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\newlabel{boxenv:label2}{{2}{\thepage }{References to floats}{boxenv.2}{}}}
+......\write1{\newlabel{boxenv:label2}{{2}{\thepage }{a boxenv}{boxenv.2}{}}}
 ......\write1{\newlabel{boxenv:label2@cref}{{[boxenv][2][]2}{[1][1][]\thepage }{}{}{}}}
 ......\glue 0.0
 ....\glue 0.0 plus 1.0fil
