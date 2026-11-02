@@ -1,0 +1,12 @@
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\begin{document}
+\START\showoutput \SHOWPDFTAGS
+before 
+\listofcontributions{\begin{enumerate}\item some text\\text \end{enumerate}}
+after
+before 
+\listofcontributions{some text \par some text}
+after
+\end{document}
