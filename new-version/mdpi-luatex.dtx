@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-11-02}
-\def\mdpiversion{v7.1h}
+\def\mdpidate{2026-11-03}
+\def\mdpiversion{v7.1i}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2147,7 +2147,8 @@
 \IfFormatAtLeastTF{2026-11-01}
  {
    \DeclareInstance    {headformat}{mdpi/std}{hang}
-   {heading-indent = 0pt,separator-b=\ }
+   {heading-indent = 0pt,separator-b=\ ,
+    left-margin=\@totalleftmargin}
  }
  {
   \DeclareInstance    {headformat}{mdpi/std}{hang}
@@ -2237,10 +2238,23 @@
  }
 %    \end{macrocode}
 % \subsection{Backmatter}
+% 
+% The backmatter is in a \env{adjustwidth} environment, we define a wrapper for this,
+%    \begin{macrocode}
+\isPreprints
+ {\NewDocumentEnvironment{journalbackmatter}{}{}{}}
+ {
+   \NewDocumentEnvironment{journalbackmatter}{}
+    {\begin{adjustwidth}{-\extralength}{0cm}}
+    {\end{adjustwidth}}
+ }
+%    \end{macrocode}
+%
 % The backmatter (and also the front matter)
 % has a number of commands for small parts starting with a bold, run-in title.
 % For tagging we implement that with the help of a special environment based on
 % a captionedtext template.
+%  
 % The keys of the instance require the format 2026-11-01:
 % \begin{macro}{\backnotes}
 % \begin{macro}[no-user-doc]{\mdpi@backnotes}
