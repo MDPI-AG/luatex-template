@@ -1,0 +1,38 @@
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\begin{document}
+\START\showoutput 
+
+\begin{algorithm}[H]
+	\caption{Training Procedure of~CERO.}
+\let\TRUE\undefined\let\FALSE\undefined
+	\label{alg:training}
+	\begin{algorithmic}[1]
+		\STATE \textbf{Initialize:}
+		\FOR{episode = 1 to $E_{\text{max}}$}
+		\STATE Initialize environment state $s_0$, terminal flag $done \leftarrow \text{False}$
+		\WHILE{$done = \text{False}$}
+		\STATE Select action $a_t$ via $\epsilon$-greedy policy
+		\STATE Execute action $a_t$, obtain reward $r_t$, next state $s_{t+1}$, terminal flag $done$
+		\STATE \quad $y = r' + \gamma \cdot (1-done) \cdot \min\left(Q_{\theta^-}^{\text{nom}}, Q_{\theta^-}^{\text{adv1}}, Q_{\theta^-}^{\text{adv2}}\right)$
+		\STATE Update Q-network $\theta$ by gradient descent on TD loss
+		\STATE Periodically update target network: $\theta^- \leftarrow \theta$
+		\ENDWHILE
+		{
+			\IF{episode $\bmod\ K = 0$}
+			\STATE Run validation on Combo Crisis scenario for $N_{\text{val}}$ independent episodes
+			\STATE Calculate average post-crisis KR as validation score $\text{val\_kr}$
+			\IF{$\text{val\_kr} > \text{best\_kr}$}
+			\STATE $\text{best\_kr} \leftarrow \text{val\_kr}$
+			\STATE Save current model as best checkpoint $\theta_{\text{best}} \leftarrow \theta$
+			\ENDIF
+			\ENDIF
+		}
+		\ENDFOR
+		\STATE \textbf{Finalize:} Restore best checkpoint $\theta_{\text{best}}$ as the final trained model
+	\end{algorithmic}
+\end{algorithm}
+\end{document}
