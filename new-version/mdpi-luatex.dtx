@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-11-03}
-\def\mdpiversion{v7.1i}
+\def\mdpiversion{v7.1j}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -582,7 +582,14 @@
 %    \end{macrocode}
 %
 % \subsection{Temporary patches for taggings}
-%
+% The algorithmic package redefines list labels and this is lost if \cs{DocumentMetadata}
+% is used, so we need to edit locally the item instance, issue \#191
+%    \begin{macrocode}
+\newcommand\mdpi@ALC@labelformat[1]%
+   {\makebox[0pt][r]{\footnotesize\theALC@line:\hspace{\dimexpr\ALC@tlm-\labelsep}}}
+\AddToHook{env/algorithmic/begin}
+ {\EditInstance{item}{basic}{label-align=right,label-format=\mdpi@ALC@labelformat{#1}}}
+%    \end{macrocode}
 % \subsection{Fontsizes}
 % The following font size are inherited from article
 % \begin{tabular}{lll}
