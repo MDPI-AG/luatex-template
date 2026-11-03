@@ -5,8 +5,10 @@
 \usepackage{algorithmic}
 \begin{document}
 \START\showoutput 
+
 \begin{algorithm}[H]
 	\caption{Training Procedure of~CERO.}
+\let\TRUE\undefined\let\FALSE\undefined
 	\label{alg:training}
 	\begin{algorithmic}[1]
 		\STATE \textbf{Initialize:}
