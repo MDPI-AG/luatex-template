@@ -1,0 +1,24 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\usepackage{listings}
+\START
+\SHOWFILE{\jobname.aux}
+\OMIT
+\begin{document}
+\begin{listing}[H]
+\caption{listing}\label{lst:prompt1}
+\begin{lstlisting}    
+ROLE:
+    ...
+\end{lstlisting}
+\end{listing}
+
+\begin{lstlisting}[
+     caption={lstlistings},
+    label={lst:prompt2}, 
+]
+    ROLE:
+ test test test 
+\end{lstlisting}
+\end{document}

@@ -2662,7 +2662,24 @@
 % New floating environments:
 %    \begin{macrocode}
 \RequirePackage{newfloat}
-\DeclareFloatingEnvironment[]{listing}
+%    \end{macrocode}
+% listing and lstlisting should share a counter, issue \#190, so we define
+% this floating environment late. Sadly newfloat resets all counters but doesn't know
+% about alias counter and this gives a warning in a log. We patch the relevant command: 
+%    \begin{macrocode}
+\patchcmd\newfloat@setwithin
+  {\@removefromreset{#1}{section}}
+  {%
+   \ifcsname alias@ctr@#1\endcsname\else
+    \@removefromreset{#1}{section}%
+   \fi
+  }{}{}
+\AddToHook{begindocument}[mdpi/listing]
+  {
+    \IfPackageLoadedT{listings}{\newcounteralias{listing}{lstlisting}}
+    \DeclareFloatingEnvironment[]{listing}
+  } 
+\DeclareHookRule{begindocument}{mdpi/listing}{after}{listings}     
 \DeclareFloatingEnvironment[name=Box]{boxenv}
 \DeclareFloatingEnvironment[]{chart}
 \DeclareFloatingEnvironment[]{scheme}

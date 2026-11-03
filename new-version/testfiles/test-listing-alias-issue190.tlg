@@ -1,0 +1,27 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+-------- test-listing-alias-issue190.aux (start) ---------
+(test-listing-alias-issue190.aux)
+\relax[nl]
+\bibstyle{Definitions/mdpi}[nl]
+\providecommand\hyper@newdestlabel[2]{}[nl]
+\providecommand\HyField@AuxAddToFields[1]{}[nl]
+\providecommand\HyField@AuxAddToCoFields[2]{}[nl]
+\providecommand\BKM@entry[2]{}[nl]
+\def\@LN@column{1}[nl]
+\newmarginnote{note.1.1}{{1}{10945661sp}}[nl]
+\@writefile{lolisting}{\contentsline {listing}{\numberline {1}{\ignorespaces listing}}{1}{listing.1}\protected@file@percent }[nl]
+\newlabel{lst:prompt1}{{1}{1}{listing}{listing.1}{}}[nl]
+\newlabel{lst:prompt1@cref}{{[listing][1][]1}{[1][1][]1}{}{}{}}[nl]
+\newlabel{lst:prompt2}{{2}{1}{lstlistings}{lstlisting.2}{}}[nl]
+\newlabel{lst:prompt2@cref}{{[listing][2][]2}{[1][1][]1}{}{}{}}[nl]
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {2}lstlistings}{1}{lstlisting.2}\protected@file@percent }[nl]
+\new@label@record{@tag@LastPage}{{abspage}{1}{tagmcabs}{0}{tagstruct}{1}}[nl]
+\newlabel{LastPage}{{}{1}{}{page.1}{}}[nl]
+\gdef\lastpage@lastpage{1}[nl]
+\gdef\lastpage@lastpageHy{1}[nl]
+\gdef \@abspage@last{1}[nl]
+-------- test-listing-alias-issue190.aux (end) -----------
+***************
+Compilation 1 of test file completed with exit status 0
+Compilation 2 of test file completed with exit status 0
