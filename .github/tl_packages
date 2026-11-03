@@ -6,6 +6,7 @@ collection-latex
         acronym
         adjustbox
         alphalph
+        algorithms
         bearwear
         changepage
         cleveref
