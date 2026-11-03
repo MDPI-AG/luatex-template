@@ -12,21 +12,11 @@
 	\label{alg:training}
 	\begin{algorithmic}[1]
 		\STATE \textbf{Initialize:}
-		\STATE \quad Q-network parameters $\theta$, target network parameters $\theta^- \leftarrow \theta$
-		\STATE \quad Replay buffer $\mathcal{D}$, discount factor $\gamma$
-		\STATE \quad {Reward shaping coefficient $\lambda_{\text{pbrs}} = 0.4$}
-		\STATE \quad {Validation interval $K$, best validation metric $\text{best\_kr} \leftarrow 0$}
-		
 		\FOR{episode = 1 to $E_{\text{max}}$}
 		\STATE Initialize environment state $s_0$, terminal flag $done \leftarrow \text{False}$
 		\WHILE{$done = \text{False}$}
 		\STATE Select action $a_t$ via $\epsilon$-greedy policy
 		\STATE Execute action $a_t$, obtain reward $r_t$, next state $s_{t+1}$, terminal flag $done$
-		\STATE {Generate adversarial next states: global surge $s_{t+1}^{\text{adv1}}$, targeted attack $s_{t+1}^{\text{adv2}}$}
-		\STATE {Compute shaped reward: $r_t' = r_t + \lambda_{\text{pbrs}} \cdot \Delta \Phi(s_t, s_{t+1})$}
-		\STATE Store transition $(s_t, a_t, r_t', s_{t+1}, s_{t+1}^{\text{adv1}}, s_{t+1}^{\text{adv2}}, done)$ into $\mathcal{D}$
-		\STATE Sample mini-batch from $\mathcal{D}$
-		\STATE Compute minimax TD target:
 		\STATE \quad $y = r' + \gamma \cdot (1-done) \cdot \min\left(Q_{\theta^-}^{\text{nom}}, Q_{\theta^-}^{\text{adv1}}, Q_{\theta^-}^{\text{adv2}}\right)$
 		\STATE Update Q-network $\theta$ by gradient descent on TD loss
 		\STATE Periodically update target network: $\theta^- \leftarrow \theta$

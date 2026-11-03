@@ -118,7 +118,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 171.58553fil, direction TLT
+...\vbox(706.18271+0.0)x394.35522, glue set 281.0893fil, direction TLT
 ....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
@@ -799,7 +799,7 @@ Completed box being shipped out [1]
 ....\glue 12.0
 ....\glue 0.0
 ....\glue 12.0 plus 2.0 minus 2.0
-....\vbox(369.24297+0.0)x394.35522, direction TLT
+....\vbox(259.7275+0.0)x394.35522, direction TLT
 .....\rule(0.8+0.0)x*
 .....\kern2.0
 .....\hbox(7.28+2.83)x394.35522, glue set 209.40523fil, direction TLT
@@ -883,7 +883,7 @@ Completed box being shipped out [1]
 .....\pdfliteral page <lua data reference ...>
 .....\rule(0.4+0.0)x*
 .....\kern2.0
-.....\vbox(349.53297+0.0)x394.35522, direction TLT
+.....\vbox(240.0175+0.0)x394.35522, direction TLT
 ......\pdfdest name{algorithm.1} xyz
 ......\pdfdest name{algorithm.1} xyz
 ......\penalty 10000
@@ -950,7 +950,7 @@ Completed box being shipped out [1]
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
 ......\glue(\baselineskip) 4.5704
-......\hbox(7.26+2.83)x377.35526, glue set 102.65672fil, shifted 16.99997, direction TLT
+......\hbox(7.26+2.81)x377.35526, glue set 262.1803fil, shifted 16.99997, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
@@ -966,494 +966,6 @@ Completed box being shipped out [1]
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 :
-...........\glue 0.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/8  
-.......\glue 8.0
-.......\TU/tg-pagella/m/n/10 Q
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-........= \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 w
-.......\kern-0.4 (font)
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 r
-.......\kern-0.3 (font)
-.......\TU/tg-pagella/m/n/10 k
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 a
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 r
-.......\kern-0.15 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 m
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 e
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 r
-.......\TU/tg-pagella/m/n/10 s
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝜃
-.......\kern0.29 (italic)
-.......\mathoff
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 ,
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 r
-.......\discretionary (penalty 50)
-........< \kern-0.3 (font)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 g
-.......\kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 t
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 w
-.......\kern-0.4 (font)
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 r
-.......\kern-0.3 (font)
-.......\TU/tg-pagella/m/n/10 k
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 a
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 r
-.......\kern-0.15 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 m
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 e
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 r
-.......\TU/tg-pagella/m/n/10 s
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝜃
-.......\kern0.29 (italic)
-.......\hbox(1.96+0.0)x5.692, shifted -3.29218, direction TLT
-........\TU/tg-pagella-math-sf/m/n/7 −
-.......\glue(\thickmuskip) 2.58331 plus 2.58331
-.......\TU/tg-pagella-math/m/n/10 ←
-.......\penalty 500
-.......\glue(\thickmuskip) 2.58331 plus 2.58331
-.......\TU/tg-pagella-math/m/n/10 𝜃
-.......\kern0.29 (italic)
-.......\mathoff
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.3} xyz
-.........\pdfdest name{ALC@unique.3} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\baselineskip) 1.5304
-......\hbox(7.64+2.83)x377.35526, glue set 213.85527fil, shifted 16.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 6.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 3
-...........\TU/tg-pagella/m/n/8 :
-...........\glue 0.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/8  
-.......\glue 8.0
-.......\TU/tg-pagella/m/n/10 R
-.......\kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 e
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 l
-.......\TU/tg-pagella/m/n/10 a
-.......\kern-0.4 (font)
-.......\TU/tg-pagella/m/n/10 y
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 b
-.......\TU/tg-pagella/m/n/10 u
-.......\TU/tg-pagella/m/n/10 ﬀ
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 r
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝒟
-.......\kern0.81 (italic)
-.......\mathoff
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 ,
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 s
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 c
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 u
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 f
-.......\kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 c
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 t
-.......\kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 r
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝛾
-.......\kern0.46 (italic)
-.......\mathoff
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.4} xyz
-.........\pdfdest name{ALC@unique.4} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\baselineskip) 1.8904
-......\hbox(7.28+4.13812)x377.35526, glue set 197.93564fil, shifted 16.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.552+0.04)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.04)x0.0, direction TLT
-..........\hbox(5.552+0.04)x0.0, glue set - 6.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 4
-...........\TU/tg-pagella/m/n/8 :
-...........\glue 0.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/7  
-.......\glue 8.25
-.......\TU/tg-pagella/m/n/10 R
-.......\kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 e
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 w
-.......\kern-0.3 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 r
-.......\kern-0.15 (font)
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 s
-.......\TU/tg-pagella/m/n/10 h
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 g
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 c
-.......\TU/tg-pagella/m/n/10 o
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 e
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 f
-........< \TU/tg-pagella/m/n/10 -
-........> \TU/tg-pagella/m/n/10 ﬁ
-........= \TU/tg-pagella/m/n/10 ﬃ
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 c
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝜆
-.......\hbox(5.082+1.967)x14.183, shifted 2.17113, direction TLT
-........\TU/tg-pagella/m/n/7 p
-........\TU/tg-pagella/m/n/7 b
-........\TU/tg-pagella/m/n/7 r
-........\TU/tg-pagella/m/n/7 s
-.......\glue(\thickmuskip) 2.58331 plus 2.58331
-.......\TU/tg-pagella-math/m/n/10 =
-.......\penalty 500
-.......\glue(\thickmuskip) 2.58331 plus 2.58331
-.......\TU/tg-pagella-math/m/n/10 0
-.......\TU/tg-pagella-math/m/n/10 .
-.......\TU/tg-pagella-math/m/n/10 4
-.......\mathoff
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.5} xyz
-.........\pdfdest name{ALC@unique.5} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\baselineskip) 0.60228
-......\hbox(7.26+1.55)x377.35526, glue set 121.01868fil, shifted 16.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 6.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 5
-...........\TU/tg-pagella/m/n/8 :
-...........\glue 0.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10  
-.......\glue 7.5
-.......\TU/tg-pagella/m/n/10 V
-.......\kern-0.95 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 l
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 i
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10 a
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 n
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 r
-.......\discretionary (penalty 50)
-........< \kern-0.3 (font)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern0.2 (font)
-.......\TU/tg-pagella/m/n/10 v
-.......\kern-0.3 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 l
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝐾
-.......\kern0.44 (italic)
-.......\mathoff
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 ,
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.......\TU/tg-pagella/m/n/10 b
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 s
-.......\kern-0.15 (font)
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 v
-.......\kern-0.3 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 l
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 i
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10 a
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 m
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 t
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 r
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 c
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\hbox(7.26+1.25)x32.18, direction TLT
-........\TU/tg-pagella/m/n/10 b
-........\TU/tg-pagella/m/n/10 e
-........\TU/tg-pagella/m/n/10 s
-........\kern-0.15 (font)
-........\TU/tg-pagella/m/n/10 t
-........\TU/tg-pagella/m/n/10 _
-........\TU/tg-pagella/m/n/10 k
-........\TU/tg-pagella/m/n/10 r
-.......\glue(\thickmuskip) 2.58331 plus 2.58331
-.......\TU/tg-pagella-math/m/n/10 ←
-.......\penalty 500
-.......\glue(\thickmuskip) 2.58331 plus 2.58331
-.......\TU/tg-pagella-math/m/n/10 0
-.......\mathoff
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.6} xyz
-......\pdfdest name{ALC@unique.6} xyz
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\baselineskip) 3.1904
-......\hbox(7.26+2.81)x377.35526, glue set 262.1803fil, shifted 16.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 6.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 6
 ...........\TU/tg-pagella/m/n/8 :
 ...........\glue 0.0
 ........\glue 5.0
@@ -1511,8 +1023,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.7} xyz
-......\pdfdest name{ALC@unique.7} xyz
+......\pdfdest name{ALC@unique.3} xyz
+......\pdfdest name{ALC@unique.3} xyz
 ......\penalty 10000
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -1523,16 +1035,16 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.04)x0.0, direction TLT
+.......\hbox(5.512+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.04)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.04)x0.0, direction TLT
-..........\hbox(5.512+0.04)x0.0, glue set - 16.0fil, direction TLT
+.........\hbox(5.512+0.16)x0.0, direction TLT
+..........\hbox(5.512+0.16)x0.0, glue set - 16.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 7
+...........\TU/tg-pagella/m/n/8 3
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 8.0
@@ -1644,8 +1156,8 @@ Completed box being shipped out [1]
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.8} xyz
-.........\pdfdest name{ALC@unique.8} xyz
+.........\pdfdest name{ALC@unique.4} xyz
+.........\pdfdest name{ALC@unique.4} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -1662,16 +1174,16 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
+.......\hbox(5.552+0.04)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 16.0fil, direction TLT
+.........\hbox(5.552+0.04)x0.0, direction TLT
+..........\hbox(5.552+0.04)x0.0, glue set - 16.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 8
+...........\TU/tg-pagella/m/n/8 4
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 8.0
@@ -1723,8 +1235,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.9} xyz
-......\pdfdest name{ALC@unique.9} xyz
+......\pdfdest name{ALC@unique.5} xyz
+......\pdfdest name{ALC@unique.5} xyz
 ......\penalty 10000
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -1744,7 +1256,7 @@ Completed box being shipped out [1]
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 9
+...........\TU/tg-pagella/m/n/8 5
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -1821,8 +1333,8 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\hbox(0.0+0.0)x0.0, direction TLT
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfdest name{ALC@unique.10} xyz
-.........\pdfdest name{ALC@unique.10} xyz
+.........\pdfdest name{ALC@unique.6} xyz
+.........\pdfdest name{ALC@unique.6} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -1839,17 +1351,16 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.552+0.16)x0.0, direction TLT
+.......\hbox(5.512+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.16)x0.0, direction TLT
-..........\hbox(5.552+0.16)x0.0, glue set - 30.0fil, direction TLT
+.........\hbox(5.512+0.16)x0.0, direction TLT
+..........\hbox(5.512+0.16)x0.0, glue set - 26.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 6
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -1993,618 +1504,8 @@ Completed box being shipped out [1]
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.11} xyz
-.........\pdfdest name{ALC@unique.11} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\baselineskip) 0.79622
-......\hbox(8.37418+3.48782)x357.35526, glue set 40.33401fil, shifted 36.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.552+0.04)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.04)x0.0, direction TLT
-..........\hbox(5.552+0.04)x0.0, glue set - 30.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 :
-...........\TU/tg-pagella/m/n/8  
-...........\glue 18.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 G
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 n
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 r
-.......\discretionary (penalty 50)
-........< \kern-0.3 (font)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.15 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 d
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 v
-.......\kern-0.4 (font)
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 r
-.......\discretionary (penalty 50)
-........< \kern-0.3 (font)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 s
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 r
-.......\discretionary (penalty 50)
-........< \kern-0.3 (font)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 l
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 x
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 s
-.......\kern-0.15 (font)
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 s
-.......\TU/tg-pagella/m/n/10 :
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.83333 plus 2.5 minus 0.41666
-.......\TU/tg-pagella/m/n/10 g
-.......\TU/tg-pagella/m/n/10 l
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 b
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 l
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 s
-.......\TU/tg-pagella/m/n/10 u
-.......\TU/tg-pagella/m/n/10 r
-.......\kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 g
-.......\kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝑠
-.......\vbox(11.512+0.35)x15.60399, shifted 3.13782, direction TLT
-........\hbox(5.082+0.084)x15.60399, direction TLT
-.........\TU/tg-pagella/m/n/7 a
-.........\TU/tg-pagella/m/n/7 d
-.........\TU/tg-pagella/m/n/7 v
-.........\TU/tg-pagella/m/n/7 1
-........\kern1.48799 (font)
-........\hbox(4.858+0.35)x12.328, direction TLT
-.........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.........\TU/tg-pagella-math-sf/m/n/7 +
-.........\TU/tg-pagella-math-sf/m/n/7 1
-.......\mathoff
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 ,
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.5625 minus 0.66666
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 r
-.......\discretionary (penalty 50)
-........< \kern-0.3 (font)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 g
-.......\kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 t
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 c
-.......\TU/tg-pagella/m/n/10 k
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝑠
-.......\vbox(11.512+0.35)x15.60399, shifted 3.13782, direction TLT
-........\hbox(5.082+0.084)x15.60399, direction TLT
-.........\TU/tg-pagella/m/n/7 a
-.........\TU/tg-pagella/m/n/7 d
-.........\TU/tg-pagella/m/n/7 v
-.........\TU/tg-pagella/m/n/7 2
-........\kern1.48799 (font)
-........\hbox(4.858+0.35)x12.328, direction TLT
-.........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.........\TU/tg-pagella-math-sf/m/n/7 +
-.........\TU/tg-pagella-math-sf/m/n/7 1
-.......\mathoff
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.12} xyz
-.........\pdfdest name{ALC@unique.12} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\baselineskip) 1.25258
-......\hbox(7.26+4.13812)x357.35526, glue set 123.35873fil, shifted 36.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.552+0.04)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.04)x0.0, direction TLT
-..........\hbox(5.552+0.04)x0.0, glue set - 30.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 :
-...........\TU/tg-pagella/m/n/8  
-...........\glue 18.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 C
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 m
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 u
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 s
-.......\TU/tg-pagella/m/n/10 h
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 r
-.......\TU/tg-pagella/m/n/10 e
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 w
-.......\kern-0.3 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 r
-.......\kern-0.15 (font)
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10 :
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.83333 plus 2.5 minus 0.41666
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝑟
-.......\vbox(9.636+0.063)x3.053, shifted 2.71782, direction TLT
-........\hbox(3.626+0.0)x2.801, shifted 0.23, direction TLT
-.........\TU/tg-pagella-math-sf/m/n/7 ′
-........\kern1.48799 (font)
-........\hbox(4.522+0.063)x3.053, direction TLT
-.........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.......\glue(\thickmuskip) 2.58331 plus 2.58331
-.......\TU/tg-pagella-math/m/n/10 =
-.......\penalty 500
-.......\glue(\thickmuskip) 2.58331 plus 2.58331
-.......\TU/tg-pagella-math/m/n/10 𝑟
-.......\hbox(4.522+0.063)x3.053, shifted 2.15758, direction TLT
-........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.......\glue(\medmuskip) 2.06665 plus 1.03333 minus 2.06665
-.......\TU/tg-pagella-math/m/n/10 +
-.......\penalty 700
-.......\glue(\medmuskip) 2.06665 plus 1.03333 minus 2.06665
-.......\TU/tg-pagella-math/m/n/10 𝜆
-.......\hbox(5.082+1.967)x14.183, shifted 2.17113, direction TLT
-........\TU/tg-pagella/m/n/7 p
-........\TU/tg-pagella/m/n/7 b
-........\TU/tg-pagella/m/n/7 r
-........\TU/tg-pagella/m/n/7 s
-.......\glue(\medmuskip) 2.06665 plus 1.03333 minus 2.06665
-.......\TU/tg-pagella-math/m/n/10 ⋅
-.......\penalty 700
-.......\glue(\medmuskip) 2.06665 plus 1.03333 minus 2.06665
-.......\TU/tg-pagella-math/m/n/10 Δ
-.......\kern0.16 (italic)
-.......\TU/tg-pagella-math/m/n/10 Φ
-.......\TU/tg-pagella-math/m/n/10 (
-.......\TU/tg-pagella-math/m/n/10 𝑠
-.......\hbox(4.522+0.063)x3.053, shifted 2.15758, direction TLT
-........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.......\TU/tg-pagella-math/m/n/10 ,
-.......\glue(\thinmuskip) 1.54999
-.......\TU/tg-pagella-math/m/n/10 𝑠
-.......\hbox(4.858+0.35)x12.328, shifted 2.15758, direction TLT
-........\TU/tg-pagella-math-sf/m/n/7 𝑡
-........\TU/tg-pagella-math-sf/m/n/7 +
-........\TU/tg-pagella-math-sf/m/n/7 1
-.......\TU/tg-pagella-math/m/n/10 )
-.......\mathoff
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.13} xyz
-.........\pdfdest name{ALC@unique.13} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\lineskip) 1.0
-......\hbox(8.37418+3.48782)x357.35526, glue set 124.76036fil, shifted 36.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.552+0.16)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.16)x0.0, direction TLT
-..........\hbox(5.552+0.16)x0.0, glue set - 30.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 3
-...........\TU/tg-pagella/m/n/8 :
-...........\TU/tg-pagella/m/n/8  
-...........\glue 18.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 S
-.......\kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 t
-.......\kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 r
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 r
-.......\kern-0.15 (font)
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 n
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 s
-.......\TU/tg-pagella/m/n/10 i
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 (
-.......\TU/tg-pagella-math/m/n/10 𝑠
-.......\hbox(4.522+0.063)x3.053, shifted 2.15758, direction TLT
-........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.......\TU/tg-pagella-math/m/n/10 ,
-.......\glue(\thinmuskip) 1.54999
-.......\TU/tg-pagella-math/m/n/10 𝑎
-.......\hbox(4.522+0.063)x3.053, shifted 2.15758, direction TLT
-........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.......\TU/tg-pagella-math/m/n/10 ,
-.......\glue(\thinmuskip) 1.54999
-.......\TU/tg-pagella-math/m/n/10 𝑟
-.......\vbox(9.636+0.063)x3.053, shifted 2.71782, direction TLT
-........\hbox(3.626+0.0)x2.801, shifted 0.23, direction TLT
-.........\TU/tg-pagella-math-sf/m/n/7 ′
-........\kern1.48799 (font)
-........\hbox(4.522+0.063)x3.053, direction TLT
-.........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.......\TU/tg-pagella-math/m/n/10 ,
-.......\glue(\thinmuskip) 1.54999
-.......\TU/tg-pagella-math/m/n/10 𝑠
-.......\hbox(4.858+0.35)x12.328, shifted 2.15758, direction TLT
-........\TU/tg-pagella-math-sf/m/n/7 𝑡
-........\TU/tg-pagella-math-sf/m/n/7 +
-........\TU/tg-pagella-math-sf/m/n/7 1
-.......\TU/tg-pagella-math/m/n/10 ,
-.......\glue(\thinmuskip) 1.54999
-.......\TU/tg-pagella-math/m/n/10 𝑠
-.......\vbox(11.512+0.35)x15.60399, shifted 3.13782, direction TLT
-........\hbox(5.082+0.084)x15.60399, direction TLT
-.........\TU/tg-pagella/m/n/7 a
-.........\TU/tg-pagella/m/n/7 d
-.........\TU/tg-pagella/m/n/7 v
-.........\TU/tg-pagella/m/n/7 1
-........\kern1.48799 (font)
-........\hbox(4.858+0.35)x12.328, direction TLT
-.........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.........\TU/tg-pagella-math-sf/m/n/7 +
-.........\TU/tg-pagella-math-sf/m/n/7 1
-.......\TU/tg-pagella-math/m/n/10 ,
-.......\glue(\thinmuskip) 1.54999
-.......\TU/tg-pagella-math/m/n/10 𝑠
-.......\vbox(11.512+0.35)x15.60399, shifted 3.13782, direction TLT
-........\hbox(5.082+0.084)x15.60399, direction TLT
-.........\TU/tg-pagella/m/n/7 a
-.........\TU/tg-pagella/m/n/7 d
-.........\TU/tg-pagella/m/n/7 v
-.........\TU/tg-pagella/m/n/7 2
-........\kern1.48799 (font)
-........\hbox(4.858+0.35)x12.328, direction TLT
-.........\TU/tg-pagella-math-sf/m/n/7 𝑡
-.........\TU/tg-pagella-math-sf/m/n/7 +
-.........\TU/tg-pagella-math-sf/m/n/7 1
-.......\TU/tg-pagella-math/m/n/10 ,
-.......\glue(\thinmuskip) 1.54999
-.......\TU/tg-pagella-math/m/n/10 𝑑
-.......\kern0.11 (italic)
-.......\TU/tg-pagella-math/m/n/10 𝑜
-.......\TU/tg-pagella-math/m/n/10 𝑛
-.......\TU/tg-pagella-math/m/n/10 𝑒
-.......\kern0.13 (italic)
-.......\TU/tg-pagella-math/m/n/10 )
-.......\mathoff
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 t
-.......\kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝒟
-.......\kern0.81 (italic)
-.......\mathoff
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.14} xyz
-.........\pdfdest name{ALC@unique.14} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\baselineskip) 0.87257
-......\hbox(7.64+2.81)x357.35526, glue set 235.94525fil, shifted 36.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.552+0.04)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.04)x0.0, direction TLT
-..........\hbox(5.552+0.04)x0.0, glue set - 30.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 4
-...........\TU/tg-pagella/m/n/8 :
-...........\TU/tg-pagella/m/n/8  
-...........\glue 18.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 S
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 m
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 l
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 m
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 i
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-........= \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 b
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 c
-.......\TU/tg-pagella/m/n/10 h
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 f
-.......\TU/tg-pagella/m/n/10 r
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 m
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\mathon
-.......\TU/tg-pagella-math/m/n/10 𝒟
-.......\kern0.81 (italic)
-.......\mathoff
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.15} xyz
-.........\pdfdest name{ALC@unique.15} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\penalty 10000
-.......\glue(\parfillskip) 0.0 plus 1.0fil
-.......\glue(\rightskip) 0.0
-......\penalty -51
-......\glue 0.0
-......\glue(\parskip) 0.0
-......\glue(\parskip) 0.0
-......\glue(\baselineskip) 2.1004
-......\hbox(7.09+2.83)x357.35526, glue set 223.98195fil, shifted 36.99997, direction TLT
-.......\localpar
-........\localinterlinepenalty=0
-........\localbrokenpenalty=0
-........\localleftbox=null
-........\localrightbox=null
-.......\hbox(5.552+0.16)x0.0, direction TLT
-........\glue -16.99997
-........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
-.........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.16)x0.0, direction TLT
-..........\hbox(5.552+0.16)x0.0, glue set - 30.0fil, direction TLT
-...........\glue 0.0 plus 1.0fil minus 1.0fil
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 5
-...........\TU/tg-pagella/m/n/8 :
-...........\TU/tg-pagella/m/n/8  
-...........\glue 18.0
-........\glue 5.0
-.......\penalty 0
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/m/n/10 C
-.......\TU/tg-pagella/m/n/10 o
-.......\TU/tg-pagella/m/n/10 m
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 u
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 m
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 n
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 i
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 m
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 x
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.......\TU/tg-pagella/m/n/10 T
-.......\TU/tg-pagella/m/n/10 D
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.0 plus 1.24875 minus 0.83415
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 a
-.......\TU/tg-pagella/m/n/10 r
-.......\discretionary (penalty 50)
-........< \kern-0.3 (font)
-........< \TU/tg-pagella/m/n/10 -
-........= \kern-0.1 (font)
-.......\TU/tg-pagella/m/n/10 g
-.......\kern-0.2 (font)
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 t
-.......\TU/tg-pagella/m/n/10 :
-.......\TU/tg-pagella/m/n/10  
-.......\glue(\spaceskip) 0.83333 plus 2.5 minus 0.41666
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfdest name{ALC@unique.16} xyz
-.........\pdfdest name{ALC@unique.16} xyz
+.........\pdfdest name{ALC@unique.7} xyz
+.........\pdfdest name{ALC@unique.7} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -2621,17 +1522,16 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.552+0.16)x0.0, direction TLT
+.......\hbox(5.512+0.04)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.512+0.04)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.16)x0.0, direction TLT
-..........\hbox(5.552+0.16)x0.0, glue set - 30.0fil, direction TLT
+.........\hbox(5.512+0.04)x0.0, direction TLT
+..........\hbox(5.512+0.04)x0.0, glue set - 26.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 6
+...........\TU/tg-pagella/m/n/8 7
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -2742,8 +1642,8 @@ Completed box being shipped out [1]
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.17} xyz
-.........\pdfdest name{ALC@unique.17} xyz
+.........\pdfdest name{ALC@unique.8} xyz
+.........\pdfdest name{ALC@unique.8} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -2760,17 +1660,16 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.552+0.04)x0.0, direction TLT
+.......\hbox(5.512+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.04)x0.0, direction TLT
-..........\hbox(5.552+0.04)x0.0, glue set - 30.0fil, direction TLT
+.........\hbox(5.512+0.16)x0.0, direction TLT
+..........\hbox(5.512+0.16)x0.0, glue set - 26.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 7
+...........\TU/tg-pagella/m/n/8 8
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -2863,8 +1762,8 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\hbox(0.0+0.0)x0.0, direction TLT
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfdest name{ALC@unique.18} xyz
-.........\pdfdest name{ALC@unique.18} xyz
+.........\pdfdest name{ALC@unique.9} xyz
+.........\pdfdest name{ALC@unique.9} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -2881,17 +1780,16 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.552+0.16)x0.0, direction TLT
+.......\hbox(5.512+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.16)x0.0, direction TLT
-..........\hbox(5.552+0.16)x0.0, glue set - 30.0fil, direction TLT
+.........\hbox(5.512+0.16)x0.0, direction TLT
+..........\hbox(5.512+0.16)x0.0, glue set - 26.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 8
+...........\TU/tg-pagella/m/n/8 9
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -2981,8 +1879,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.19} xyz
-......\pdfdest name{ALC@unique.19} xyz
+......\pdfdest name{ALC@unique.10} xyz
+......\pdfdest name{ALC@unique.10} xyz
 ......\penalty 10000
 ......\penalty -51
 ......\glue 0.0
@@ -3005,7 +1903,7 @@ Completed box being shipped out [1]
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 1
-...........\TU/tg-pagella/m/n/8 9
+...........\TU/tg-pagella/m/n/8 0
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 8.0
@@ -3030,8 +1928,8 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\hbox(0.0+0.0)x0.0, direction TLT
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfdest name{ALC@unique.20} xyz
-.........\pdfdest name{ALC@unique.20} xyz
+.........\pdfdest name{ALC@unique.11} xyz
+.........\pdfdest name{ALC@unique.11} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -3048,17 +1946,17 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
+.......\hbox(5.552+0.04)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 20.0fil, direction TLT
+.........\hbox(5.552+0.04)x0.0, direction TLT
+..........\hbox(5.552+0.04)x0.0, glue set - 20.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 1
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 8.0
@@ -3121,8 +2019,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.21} xyz
-......\pdfdest name{ALC@unique.21} xyz
+......\pdfdest name{ALC@unique.12} xyz
+......\pdfdest name{ALC@unique.12} xyz
 ......\penalty 10000
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3142,8 +2040,8 @@ Completed box being shipped out [1]
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
 ...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 2
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -3261,8 +2159,8 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\hbox(0.0+0.0)x0.0, direction TLT
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfdest name{ALC@unique.22} xyz
-.........\pdfdest name{ALC@unique.22} xyz
+.........\pdfdest name{ALC@unique.13} xyz
+.........\pdfdest name{ALC@unique.13} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -3279,17 +2177,17 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.04)x0.0, direction TLT
+.......\hbox(5.552+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.04)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.04)x0.0, direction TLT
-..........\hbox(5.512+0.04)x0.0, glue set - 30.0fil, direction TLT
+.........\hbox(5.552+0.16)x0.0, direction TLT
+..........\hbox(5.552+0.16)x0.0, glue set - 30.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 2
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 3
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -3399,8 +2297,8 @@ Completed box being shipped out [1]
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.23} xyz
-.........\pdfdest name{ALC@unique.23} xyz
+.........\pdfdest name{ALC@unique.14} xyz
+.........\pdfdest name{ALC@unique.14} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -3417,17 +2315,17 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
+.......\hbox(5.552+0.04)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 30.0fil, direction TLT
+.........\hbox(5.552+0.04)x0.0, direction TLT
+..........\hbox(5.552+0.04)x0.0, glue set - 30.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 3
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 4
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -3483,8 +2381,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.24} xyz
-......\pdfdest name{ALC@unique.24} xyz
+......\pdfdest name{ALC@unique.15} xyz
+......\pdfdest name{ALC@unique.15} xyz
 ......\penalty 10000
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
@@ -3495,17 +2393,17 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.552+0.04)x0.0, direction TLT
+.......\hbox(5.552+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.552+0.04)x0.0, direction TLT
-..........\hbox(5.552+0.04)x0.0, glue set - 40.0fil, direction TLT
+.........\hbox(5.552+0.16)x0.0, direction TLT
+..........\hbox(5.552+0.16)x0.0, glue set - 40.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 4
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 5
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 28.0
@@ -3542,8 +2440,8 @@ Completed box being shipped out [1]
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{ALC@unique.25} xyz
-.........\pdfdest name{ALC@unique.25} xyz
+.........\pdfdest name{ALC@unique.16} xyz
+.........\pdfdest name{ALC@unique.16} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -3560,17 +2458,17 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
+.......\hbox(5.552+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 40.0fil, direction TLT
+.........\hbox(5.552+0.16)x0.0, direction TLT
+..........\hbox(5.552+0.16)x0.0, glue set - 40.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 5
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 6
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 28.0
@@ -3655,8 +2553,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.26} xyz
-......\pdfdest name{ALC@unique.26} xyz
+......\pdfdest name{ALC@unique.17} xyz
+......\pdfdest name{ALC@unique.17} xyz
 ......\penalty 10000
 ......\penalty -51
 ......\glue 0.0
@@ -3669,17 +2567,17 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
+.......\hbox(5.552+0.04)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.04)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 30.0fil, direction TLT
+.........\hbox(5.552+0.04)x0.0, direction TLT
+..........\hbox(5.552+0.04)x0.0, glue set - 30.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 6
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 7
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 18.0
@@ -3703,8 +2601,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.27} xyz
-......\pdfdest name{ALC@unique.27} xyz
+......\pdfdest name{ALC@unique.18} xyz
+......\pdfdest name{ALC@unique.18} xyz
 ......\penalty 10000
 ......\penalty -51
 ......\glue 0.0
@@ -3717,17 +2615,17 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.04)x0.0, direction TLT
+.......\hbox(5.552+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.04)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.04)x0.0, direction TLT
-..........\hbox(5.512+0.04)x0.0, glue set - 20.0fil, direction TLT
+.........\hbox(5.552+0.16)x0.0, direction TLT
+..........\hbox(5.552+0.16)x0.0, glue set - 20.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 7
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 8
 ...........\TU/tg-pagella/m/n/8 :
 ...........\TU/tg-pagella/m/n/8  
 ...........\glue 8.0
@@ -3751,8 +2649,8 @@ Completed box being shipped out [1]
 ......\glue 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfdest name{ALC@unique.28} xyz
-......\pdfdest name{ALC@unique.28} xyz
+......\pdfdest name{ALC@unique.19} xyz
+......\pdfdest name{ALC@unique.19} xyz
 ......\penalty 10000
 ......\penalty -51
 ......\glue 0.0
@@ -3765,17 +2663,17 @@ Completed box being shipped out [1]
 ........\localbrokenpenalty=0
 ........\localleftbox=null
 ........\localrightbox=null
-.......\hbox(5.512+0.16)x0.0, direction TLT
+.......\hbox(5.552+0.16)x0.0, direction TLT
 ........\glue -16.99997
-........\hbox(5.512+0.16)x11.99997, glue set 11.99997fil, direction TLT
+........\hbox(5.552+0.16)x11.99997, glue set 11.99997fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\hbox(5.512+0.16)x0.0, direction TLT
-..........\hbox(5.512+0.16)x0.0, glue set - 10.0fil, direction TLT
+.........\hbox(5.552+0.16)x0.0, direction TLT
+..........\hbox(5.552+0.16)x0.0, glue set - 10.0fil, direction TLT
 ...........\glue 0.0 plus 1.0fil minus 1.0fil
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
-...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 8
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 9
 ...........\TU/tg-pagella/m/n/8 :
 ...........\glue 0.0
 ........\glue 5.0
@@ -3796,8 +2694,8 @@ Completed box being shipped out [1]
 .......\penalty 10000
 .......\hbox(0.0+0.0)x0.0, direction TLT
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfdest name{ALC@unique.29} xyz
-.........\pdfdest name{ALC@unique.29} xyz
+.........\pdfdest name{ALC@unique.20} xyz
+.........\pdfdest name{ALC@unique.20} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -3825,7 +2723,7 @@ Completed box being shipped out [1]
 ...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral page <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 2
-...........\TU/tg-pagella/m/n/8 9
+...........\TU/tg-pagella/m/n/8 0
 ...........\TU/tg-pagella/m/n/8 :
 ...........\glue 0.0
 ........\glue 5.0
@@ -4178,14 +3076,14 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 <<latex-list-css.html>><<latex-align-css.html>> (test-issue191.aux)
 MathML statistic
 ================
-==> 33 MathML fragments read
-==> 28 different MathML fragments
-==> 33 math fragments found
-==> 33 fitting MathML AF found
-==> 33 MathML AF attached
+==> 20 MathML fragments read
+==> 19 different MathML fragments
+==> 20 math fragments found
+==> 20 fitting MathML AF found
+==> 20 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~222 structure objects
-(tagpdf)             with ~147 'MC' leaf nodes.
+(tagpdf)             Writing out ~164 structure objects
+(tagpdf)             with ~103 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
