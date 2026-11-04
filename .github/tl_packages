@@ -36,6 +36,7 @@ collection-latex
         lipsum
         marginfix
         marginnote
+        mwe
         multirow
         pbox
         seqsplit
