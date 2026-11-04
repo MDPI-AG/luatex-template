@@ -1,0 +1,13 @@
+\DocumentMetadata{ }
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\RemoveFromHook{begindocument/end}[mdpi/maketitle]
+\begin{document}
+\START
+\section{Start}
+\appendix 
+\section{} 
+\subsection{}
+\section{sec}
+\subsection{subsec}
+\end{document}
