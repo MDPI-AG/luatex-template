@@ -1030,8 +1030,13 @@
      pdfpagemode  = UseNone,
      colorlinks   = true,
      allcolors    = mdpi@hypcolor,
+     %bookmarksnumbered
     ]
     {hyperref}
+%    \end{macrocode}
+% In case numbered bookmarks are activated they should contain the final dot:
+%    \begin{macrocode}
+   \def\Hy@numberline##1{##1. } 
 %    \end{macrocode}
 % Temporarily correct nameref 
 %    \begin{macrocode}
@@ -2518,28 +2523,40 @@
      heading-decls=\raggedright\large\bfseries\boldmath,
     }
 %    \end{macrocode}
-% This command will only work in the next release 2026-11-01, so we have to test for
-% it now
+% \cs{IfBlankOrderItemTF} has been defined in 2026-11-01 and allows to test if
+% the title is empty.
 %    \begin{macrocode}
-  \@ifundefined{IfBlankOrderItemTF}
-    {
-      \clist_map_inline:nn {section,subsection,subsubsection}
-       {
-         \EditInstance{heading}{##1}
-          {
-            number-format=
-             \appendixname\nobreakspace\theheading
-             \tl_if_eq:NnT\@appendixtitles {yes}{.}
-          }
-       }
-    }
-    {
-      \clist_map_inline:nn {section,subsection,subsubsection}
-       {
-         \EditInstance{heading}{##1}{text=\appendixname,
-          number-format=\theheading\IfBlankOrderItemTF{title}{}{.\ }}
-       }
-    }
+ \clist_map_inline:nn {section,subsection,subsubsection}
+   {
+     \EditInstance{heading}{##1}{text=\appendixname,
+      number-format=\theheading\IfBlankOrderItemTF{title}{}{.\ }}
+%    \end{macrocode}
+% To be able to add an optional period in the bookmarks we have to redefine
+% the heading command:
+%    \begin{macrocode}
+     \ExpandArgs{c}\DeclareDocumentCommand {##1} {s ={shorttitle}o m}
+      {
+       \IfNoValueTF{####2}
+        {      
+         \ParseLaTeXeHeading {##1}
+          {####1}
+          {bookmark={\appendixname\space\theheading\tl_if_empty:nF{####3}{.\space####3}},}
+          {####3}
+        }
+        {
+         \ParseLaTeXeHeading {##1}
+          {####1}
+          {bookmark={\appendixname\space\theheading\tl_if_empty:nF{####3}{.\space####3}},####2}
+          {####3}
+        } 
+      }
+   }
+%    \end{macrocode}
+% As the appendix can contain headings without title we want ``numbered'' bookmarks
+% with a prefix, but this is handled above in the heading definition, so we need to ensure 
+% that hyperref doesn't add it too:
+%    \begin{macrocode}
+   \bookmarksetup{numbered=false}   
 %    \end{macrocode}
 % Reset the numbering in the appendix
 %    \begin{macrocode}
