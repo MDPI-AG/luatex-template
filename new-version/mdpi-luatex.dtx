@@ -99,7 +99,18 @@
 % This typesets the \meta{text} with title \meta{title} (by default List of contributions)
 % \meta{text} can contain paragraphs.
 % \end{function}
-
+% 
+% \begin{function}{\bio}
+% \begin{syntax}
+% \cs{bio}\oarg{foto}\Arg{Firstname Lastname}\Arg{text}
+% \end{syntax}
+% This command is used in the backmatter to typeset the author biographies.
+% \meta{foto} is the name of a graphic, at best a portrait picture.
+% \meta{Firstname Lastname} takes the name of the author. 
+% \meta{text} takes some arbitrary text, it can contain paragraphs but if a 
+% foto is present it is typeset inside a box and so won't page break.
+% \end{function}
+% 
 % \subsection{Appendix}
 % \begin{function}{\appendixtitles}
 % \begin{syntax}
@@ -2424,14 +2435,49 @@
 % Standby command for adding paragraph in back matter part
 \newcommand{\specialsection}[2]{%
 \vspace{12pt}\noindent{\selectfont\textbf{#1}\par\vspace{6pt}\noindent {\small #2}\par}}
-
-% Command for author's biography
-\newcommand{\bio}[2]{%
-\noindent{#1}\hspace{1.1cm}\noindent {\small \pbox[b]{13.86cm}{#2}}\par\vspace{6pt}}
-
-% Use for special paragraph requirement in back matter
-
-
+%    \end{macrocode}
+% \subsubsection{Author biographies}
+% We want to be able to tag the name as a caption, so the command has been changed.
+% It now takes two mandatory arguments for name and text and an optional argument for the
+% foto.
+%    \begin{macrocode}
+\ExplSyntaxOn
+\tl_new:N\g__mdpi_bio_struct_tmpa_tl
+\NewDocumentCommand{\bio}{om+m}
+ {
+  \IfValueTF{#1}
+   {
+     \begingroup
+     \par
+     \addvspace{\medskipamount}
+     \AssignTaggingSocketPlug{minipage/before}{noop}
+     \AssignTaggingSocketPlug{minipage/after}{noop}
+     \UseTaggingSocket{para/off}
+     \noindent\hspace*{4.6cm}%
+     \begin{minipage}[t]{\dimeval{\linewidth-4.6cm}}
+      \begin{mdpi@notes}[title={#2},caption-decls=\small,
+                        body-decls=\small,punct=\space]
+      \tl_gset:Ne\g__mdpi_bio_struct_tmpa_tl{\tag_get:n{struct_num}}
+      #3
+      \end{mdpi@notes}
+     \end{minipage}
+     \hspace{-\linewidth}
+     \UseTaggingSocket{struct/begin}{tag=Div,parent=\g__mdpi_bio_struct_tmpa_tl}
+     \makebox[0pt][l]{\raisebox{-\height+0.7\ht\strutbox}
+      {\includegraphics
+        [alt={Foto~of~#2},width=3.5cm,height=5.3cm,keepaspectratio]{#1}}}
+     \UseTaggingSocket{struct/end}
+     \par\medskip
+     \endgroup
+   }
+   {
+    \par
+    \begin{mdpi@notes}[title={#2},caption-decls=\small,
+                       body-decls=\small,punct=\space]#3\end{mdpi@notes}
+    \par
+   }
+ }
+\ExplSyntaxOff
 %    \end{macrocode}
 % \subsection{Appendix}
 % In the appendix sections should use the prefix \cs{appendixname}.
