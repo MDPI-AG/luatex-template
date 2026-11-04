@@ -2775,8 +2775,8 @@
 %
 % \subsection{Captions}
 % We above disabled the loading of the \pkg{caption} package.
-% Here we some fallbacks for the 
-% \cs{captionsetup} command and its settings.
+% Here we add some fallbacks for commands like 
+% the \cs{captionsetup} command and others.
 %    \begin{macrocode}
 %\RequirePackage{caption}
 \ExplSyntaxOn
@@ -2816,6 +2816,17 @@
 \captionsetup[boxenv] {position=top}
 
 %    \end{macrocode}
+% \begin{macro}{\ContinuedFloat}
+%    \begin{macrocode}
+\newcounter{mdpi@continuedfloat}
+\newcommand\ContinuedFloat{%
+  \stepcounter{mdpi@continuedfloat}%
+  \ExpandArgs{c}%
+   \renewcommand{theH\@captype}{\UseName{the\@captype}.cont.\themdpi@continuedfloat}%
+  \addtocounter{\@captype}{-1}}
+%    \end{macrocode}
+% \end{macro}
+%
 % Why this??
 %    \begin{macrocode}
 \isPreprints
