@@ -250,7 +250,6 @@ Completed box being shipped out [1]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 518.00336fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
@@ -264,6 +263,7 @@ Completed box being shipped out [1]
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
 ....\write1{\@writefile{toc}{\protect \UseName {mdpi@toc@appendixsetup}}}
+....\pdfdest name{section*.1} xyz
 ....\glue(\topskip) 1.36
 ....\hbox(8.64+0.204)x394.35522, glue set 167.3336fil, direction TLT
 .....\localpar
@@ -271,17 +271,9 @@ Completed box being shipped out [1]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
-.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-.........\pdfdest name{section*.1} xyz
-.........\penalty 10000
-.......\kern0.0
+.....\glue 0.0
+.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/12 R
 .....\kern-0.12 (font)

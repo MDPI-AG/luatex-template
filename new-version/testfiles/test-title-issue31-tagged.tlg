@@ -90,7 +90,6 @@ TEST 1: Show PDF Tags
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.0024"
         >
-       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
        <?ReferencedObject type="Annot" page="1" ?>
        <?ReferencedObject type="Annot" page="1" ?>
@@ -194,9 +193,9 @@ TEST 1: Show PDF Tags
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
        >
-      <?MarkedContent page="1" ?>2
+      <?MarkedContent page="1" ?>2 
      </text-fragment>
-     <?MarkedContent page="1" ?> and Firstname Lastname 
+     <?MarkedContent page="1" ?>and Firstname Lastname 
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0039"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -224,9 +223,9 @@ TEST 1: Show PDF Tags
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
        >
-      <?MarkedContent page="1" ?>1
+      <?MarkedContent page="1" ?>1 
      </text-fragment>
-     <?MarkedContent page="1" ?> Affiliation 1; e-mail@e-mail.com
+     <?MarkedContent page="1" ?>Affiliation 1; e-mail@e-mail.com
     </text-block>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0043"
@@ -240,9 +239,9 @@ TEST 1: Show PDF Tags
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
        >
-      <?MarkedContent page="1" ?>2
+      <?MarkedContent page="1" ?>2 
      </text-fragment>
-     <?MarkedContent page="1" ?> Affiliation 2; e-mail@e-mail.com
+     <?MarkedContent page="1" ?>Affiliation 2; e-mail@e-mail.com
     </text-block>
     <itemize xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.0045"
@@ -751,6 +750,7 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral direct <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
@@ -796,7 +796,6 @@ Completed box being shipped out [1]
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral direct <lua data reference ...>
 ............\pdfliteral page <lua data reference ...>
 ............\pdfliteral page <lua data reference ...>
 ............\rule(9.78595+4.19403)x0.0
@@ -850,7 +849,6 @@ Completed box being shipped out [1]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 285.38232fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
@@ -899,8 +897,6 @@ Completed box being shipped out [1]
 ..............\pdfliteral page <lua data reference ...>
 ..............\pdfliteral page <lua data reference ...>
 ..............\pdfliteral direct <lua data reference ...>
-..............\pdfliteral page <lua data reference ...>
-..............\pdfliteral page <lua data reference ...>
 ..............\pdfsave
 ..............\pdfsetmatrix{.39554 0 0 .39554}
 ..............\hbox(43.16125+0.0)x0.0, glue set - 223.83624fil, direction TLT
@@ -910,6 +906,7 @@ Completed box being shipped out [1]
 ..............\pdfrestore
 .............\kern88.53581
 .............\glue 0.0 plus 1.0fil minus 1.0fil
+..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfendlink
@@ -926,9 +923,6 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\TU/tg-pagella/m/n/7 R
@@ -1263,11 +1257,7 @@ Completed box being shipped out [1]
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfstartlink(*+*)x62.99445 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 2} action user{}
 ..........\pdfendlink
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral direct <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
 ..........\TU/tg-pagella/m/n/7 C
 ..........\TU/tg-pagella/m/n/7 r
 ..........\TU/tg-pagella/m/n/7 e
@@ -1339,8 +1329,6 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 s
 ..........\TU/tg-pagella/m/n/7 e
 ..........\pdfendlink
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
@@ -1394,8 +1382,6 @@ Completed box being shipped out [1]
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral direct <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.24297 0 0 .24297}
 .........\hbox(140.525+0.0)x0.0, glue set - 435.6275fil, direction TLT
@@ -1405,6 +1391,7 @@ Completed box being shipped out [1]
 .........\pdfrestore
 ........\kern105.84253
 ........\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfendlink
@@ -1418,6 +1405,7 @@ Completed box being shipped out [1]
 ........\hbox(28.45236+0.0)x0.0, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
+.........\pdfliteral direct <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.57849 0 0 .57849}
 .........\hbox(49.18375+0.0)x0.0, glue set - 74.2775fil, direction TLT
@@ -1427,6 +1415,7 @@ Completed box being shipped out [1]
 .........\pdfrestore
 ........\kern42.96887
 ........\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfendlink
@@ -1444,9 +1433,6 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.4+0.0)x525.23764, direction TLT
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\rule(0.4+0.0)x525.23764
@@ -1568,8 +1554,6 @@ Completed box being shipped out [1]
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral direct <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.08893 0 0 .08893}
 .........\hbox(102.3825+0.0)x0.0, glue set - 102.3825fil, direction TLT
@@ -1579,12 +1563,10 @@ Completed box being shipped out [1]
 .........\pdfrestore
 ........\kern9.10469
 ........\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfendlink
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/b/n/10 ,
@@ -1623,10 +1605,10 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 n
 .....\TU/tg-pagella/b/n/10 d
@@ -1702,10 +1684,10 @@ Completed box being shipped out [1]
 .....\glue 0.5
 .....\kern0.0
 .....\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/8  
 .....\glue 6.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/8 A
 .....\discretionary (penalty 10000)
 ......< \TU/tg-pagella/m/n/8 f
@@ -1774,10 +1756,10 @@ Completed box being shipped out [1]
 .....\glue 0.5
 .....\kern0.0
 .....\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/8  
 .....\glue 6.0
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/8 A
 .....\discretionary (penalty 10000)
 ......< \TU/tg-pagella/m/n/8 f
@@ -4895,11 +4877,7 @@ Completed box being shipped out [1]
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/acoustics0000000) >>  /LTEX_position /isolated/StructParent 7/Contents (artifact)} action user{}
 ...........\mathon
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 h
 ...........\TU/tg-pagella/m/n/8 t
 ...........\TU/tg-pagella/m/n/8 t
@@ -4975,11 +4953,7 @@ Completed box being shipped out [1]
 ...........\TU/tg-pagella/m/n/8 0
 ...........\mathoff
 ...........\pdfendlink
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0

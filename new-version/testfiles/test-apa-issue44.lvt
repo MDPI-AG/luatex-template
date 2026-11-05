@@ -3,6 +3,8 @@
 \documentclass[apajournal,article,submit,moreauthors]{mdpi-luatex}
 \begin{document}
 text \cite{ref-journal}
+
+\reftitle{references}
 \begin{thebibliography}{99}
 \bibitem[Author(year)]{ref-journal} blub
 \end{thebibliography}

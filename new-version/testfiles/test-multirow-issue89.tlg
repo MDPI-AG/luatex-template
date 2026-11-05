@@ -78,7 +78,6 @@ TEST 1: Show PDF Tags
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.022"
         >
-       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
        <?ReferencedObject type="Annot" page="1" ?>
        <?ReferencedObject type="Annot" page="1" ?>
@@ -432,10 +431,6 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-multirow-issue89.xml (end) -----------
 ============================================================
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Class mdpi Warning: multirow with negative argument is not supported with tagging! on input line ....
 Underfull \hbox (badness 10000) in alignment at lines ...
 [][][][]

@@ -78,7 +78,6 @@ TEST 1: Show PDF Tags
       <Link xmlns="http://iso.org/pdf2/ssn"
          id="ID.022"
         >
-       <?MarkedContent page="1" ?>
        <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
        <?ReferencedObject type="Annot" page="1" ?>
        <?ReferencedObject type="Annot" page="1" ?>
@@ -187,7 +186,13 @@ TEST 1: Show PDF Tags
         Layout:TextAlign="Justify"
         rolemaps-to="P"
        >
-      <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
+      <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, 
+      <?MarkedContent page="2" ?>felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue 
+      <?MarkedContent page="2" ?>eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra 
+      <?MarkedContent page="2" ?>metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer 
+      <?MarkedContent page="2" ?>sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, 
+      <?MarkedContent page="2" ?>malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, 
+      <?MarkedContent page="2" ?>accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
      </text-block>
     </semantic-para>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
@@ -200,7 +205,11 @@ TEST 1: Show PDF Tags
         Layout:TextAlign="Justify"
         rolemaps-to="P"
        >
-      <?MarkedContent page="2" ?>Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris.
+      <?MarkedContent page="2" ?>Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, 
+      <?MarkedContent page="2" ?>lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi. 
+      <?MarkedContent page="2" ?>Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque penatibus et 
+      <?MarkedContent page="2" ?>magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque 
+      <?MarkedContent page="2" ?>cursus luctus mauris.
      </text-block>
     </semantic-para>
    </Sect>
@@ -223,7 +232,9 @@ TEST 1: Show PDF Tags
         rolemaps-to="P"
        >
       <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
-      <?MarkedContent page="2" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+      <?MarkedContent page="2" ?>
+      <?MarkedContent page="2" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, 
+      <?MarkedContent page="2" ?>nonummy eget, consectetuer id, vulputate a, magna.
      </text-block>
     </semantic-para>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
@@ -236,7 +247,9 @@ TEST 1: Show PDF Tags
         Layout:TextAlign="Justify"
         rolemaps-to="P"
        >
-      <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.
+      <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat 
+      <?MarkedContent page="2" ?>ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, 
+      <?MarkedContent page="2" ?>consectetuer id, vulputate a, magna.
      </text-block>
     </semantic-para>
     <Div xmlns="http://iso.org/pdf2/ssn"
@@ -270,7 +283,8 @@ TEST 1: Show PDF Tags
         Layout:TextAlign="Justify"
         rolemaps-to="P"
        >
-      <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
+      <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing 
+      <?MarkedContent page="2" ?>vitae, felis. Curabitur dictum gravida mauris.
      </text-block>
     </semantic-para>
    </Sect>
@@ -293,6 +307,7 @@ TEST 1: Show PDF Tags
         rolemaps-to="P"
        >
       <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
+      <?MarkedContent page="2" ?>
       <?MarkedContent page="2" ?>lum ut, placerat ac, adipiscing vitae, felis.
      </text-block>
     </semantic-para>
@@ -328,7 +343,15 @@ TEST 1: Show PDF Tags
         rolemaps-to="P"
        >
       <?MarkedContent page="2" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
-      <?MarkedContent page="2" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
+      <?MarkedContent page="2" ?>
+      <?MarkedContent page="2" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, 
+      <?MarkedContent page="2" ?>nonummy eget, consectetuer id, vulputate a, magna. Donec vehicula augue eu neque. Pellentesque 
+      <?MarkedContent page="2" ?>habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut leo. Cras 
+      <?MarkedContent page="2" ?>viverra metus rhoncus sem. Nulla et lectus vestibulum urna fringilla ultrices. Phasellus eu tellus sit 
+      <?MarkedContent page="2" ?>amet tortor gravida placerat. Integer sapien est, iaculis in, pretium quis, viverra ac, nunc. Praesent 
+      <?MarkedContent page="2" ?>eget sem vel leo ultrices bibendum. Aenean faucibus. Morbi dolor nulla, malesuada eu, pulvinar at, 
+      <?MarkedContent page="2" ?>mollis ac, nulla. Curabitur auctor semper nulla. Donec varius orci eget risus. Duis nibh mi, congue 
+      <?MarkedContent page="2" ?>eu, accumsan eleifend, sagittis quis, diam. Duis eget orci sit amet orci dignissim rutrum.
      </text-block>
     </semantic-para>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
@@ -341,7 +364,12 @@ TEST 1: Show PDF Tags
         Layout:TextAlign="Justify"
         rolemaps-to="P"
        >
-      <?MarkedContent page="2" ?>Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit mollis. Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper vestibulum turpis. Pellentesque cursus luctus mauris.
+      <?MarkedContent page="2" ?>Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. 
+      <?MarkedContent page="2" ?>Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus. Donec aliquet, tortor sed accumsan 
+      <?MarkedContent page="2" ?>bibendum, erat ligula aliquet magna, vitae ornare odio metus a mi. Morbi ac orci et nisl hendrerit 
+      <?MarkedContent page="2" ?>mollis. Suspendisse ut massa. Cras nec ante. Pellentesque a nulla. Cum sociis natoque penatibus et 
+      <?MarkedContent page="2" ?>magnis dis parturient montes, nascetur ridiculus mus. Aliquam tincidunt urna. Nulla ullamcorper 
+      <?MarkedContent page="2" ?>vestibulum turpis. Pellentesque cursus luctus mauris.
      </text-block>
     </semantic-para>
     <Div xmlns="http://iso.org/pdf2/ssn"
@@ -376,6 +404,7 @@ TEST 1: Show PDF Tags
         rolemaps-to="P"
        >
       <?MarkedContent page="3" ?>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibu
+      <?MarkedContent page="3" ?>
       <?MarkedContent page="3" ?>lum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris.
      </text-block>
     </semantic-para>
@@ -409,10 +438,6 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-bio.xml (end) -----------
 ============================================================
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 21.97998pt, for example:
 (fancyhdr)                \setlength{\headheight}{21.97998pt}.
@@ -431,6 +456,7 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral direct <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
@@ -476,7 +502,6 @@ Completed box being shipped out [1]
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral direct <lua data reference ...>
 ............\pdfliteral page <lua data reference ...>
 ............\pdfliteral page <lua data reference ...>
 ............\rule(9.78595+4.19403)x0.0
@@ -530,7 +555,6 @@ Completed box being shipped out [1]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 557.32727fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
@@ -908,11 +932,7 @@ Completed box being shipped out [1]
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfstartlink(*+*)x116.65646 attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://creativecommons.org/licenses/by/4.0/) >>  /LTEX_position /initial/StructParent 3} action user{}
 ..........\pdfendlink
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral direct <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
 ..........\TU/tg-pagella/m/n/7 C
 ..........\TU/tg-pagella/m/n/7 r
 ..........\TU/tg-pagella/m/n/7 e
@@ -984,8 +1004,6 @@ Completed box being shipped out [1]
 ..........\TU/tg-pagella/m/n/7 s
 ..........\TU/tg-pagella/m/n/7 e
 ..........\pdfendlink
-..........\pdfliteral page <lua data reference ...>
-..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
@@ -1041,8 +1059,6 @@ Completed box being shipped out [1]
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral direct <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.57849 0 0 .57849}
 .........\hbox(49.18375+0.0)x0.0, glue set - 74.2775fil, direction TLT
@@ -1052,6 +1068,7 @@ Completed box being shipped out [1]
 .........\pdfrestore
 ........\kern42.96887
 ........\glue 0.0 plus 1.0fil minus 1.0fil
+.....\pdfliteral direct <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\pdfendlink
@@ -1069,9 +1086,6 @@ Completed box being shipped out [1]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.4+0.0)x525.23764, direction TLT
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\rule(0.4+0.0)x525.23764
@@ -1226,20 +1240,11 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-0.2
-....\hbox(0.0+0.2)x0.0, direction TLT
-.....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/lmss/m/n/5 1
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern-0.2
-....\hbox(0.0+0.2)x0.0, direction TLT
+.....\hbox(3.47+0.015)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 1
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
@@ -1379,11 +1384,7 @@ Completed box being shipped out [1]
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 6/Contents (artifact)} action user{}
 ...........\mathon
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 h
 ...........\TU/tg-pagella/m/n/8 t
 ...........\TU/tg-pagella/m/n/8 t
@@ -1450,11 +1451,7 @@ Completed box being shipped out [1]
 ...........\TU/tg-pagella/m/n/8 0
 ...........\mathoff
 ...........\pdfendlink
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
@@ -1470,7 +1467,7 @@ Completed box being shipped out [1]
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for 'english' will be used instead.
 (lipsum)                
 (lipsum)                With LuaTeX, lipsum requires babel to get proper hyphenation (you can use \usepackage[base]{babel}).
-<example-image-10x16.pdf, id=93, 200.75pt x 321.2pt>
+<example-image-10x16.pdf, id=92, 200.75pt x 321.2pt>
 File: example-image-10x16.pdf Graphic file (type pdf)
 <use example-image-10x16.pdf>
 Package luatex.def Info: example-image-10x16.pdf  used on input line ....
@@ -1498,6 +1495,7 @@ Completed box being shipped out [2]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral direct <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
@@ -1545,11 +1543,6 @@ Completed box being shipped out [2]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral direct <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
 ............\TU/tg-pagella/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/tg-pagella/m/n/8 e
@@ -1717,7 +1710,6 @@ Completed box being shipped out [2]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set >20000.0fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
@@ -1930,9 +1922,16 @@ Completed box being shipped out [2]
 .....\kern-1.125 (right margin)
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.445+0.015)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 2
 ....\penalty 10000
 ....\glue(\baselineskip) 3.716
 ....\hbox(6.552+2.547)x525.52245, glue set 0.00922, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 f
 .....\kern-0.135 (font)
 .....\TU/tg-pagella/m/n/9 e
@@ -2110,8 +2109,15 @@ Completed box being shipped out [2]
 .....\TU/tg-pagella/m/n/9 e
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 3
 ....\glue(\baselineskip) 3.716
 ....\hbox(6.552+2.547)x525.52245, glue set - 0.00027, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 e
 .....\TU/tg-pagella/m/n/9 u
 .....\TU/tg-pagella/m/n/9  
@@ -2291,8 +2297,15 @@ Completed box being shipped out [2]
 .....\TU/tg-pagella/m/n/9 a
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.47+0.015)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 4
 ....\glue(\baselineskip) 3.716
 ....\hbox(6.552+2.547)x525.52245, glue set 0.22513, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 m
 .....\TU/tg-pagella/m/n/9 e
 .....\discretionary (penalty 50)
@@ -2483,8 +2496,15 @@ Completed box being shipped out [2]
 .....\kern-0.18 (right margin)
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 5
 ....\glue(\baselineskip) 3.716
 ....\hbox(6.552+2.547)x525.52245, glue set 0.00089, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 s
 .....\TU/tg-pagella/m/n/9 a
 .....\TU/tg-pagella/m/n/9 p
@@ -2670,8 +2690,15 @@ Completed box being shipped out [2]
 .....\kern-1.125 (right margin)
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 6
 ....\glue(\baselineskip) 3.73401
 ....\hbox(6.534+2.547)x525.52245, glue set 0.11147, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 m
 .....\TU/tg-pagella/m/n/9 a
 .....\TU/tg-pagella/m/n/9 l
@@ -2850,9 +2877,16 @@ Completed box being shipped out [2]
 .....\kern-1.125 (right margin)
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.445+0.015)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 7
 ....\penalty 10000
 ....\glue(\baselineskip) 3.716
 ....\hbox(6.552+2.547)x525.52245, glue set 191.2415fil, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 a
 .....\TU/tg-pagella/m/n/9 c
 .....\discretionary (penalty 50)
@@ -2969,6 +3003,11 @@ Completed box being shipped out [2]
 .....\kern-1.575 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 8
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.716
@@ -3154,9 +3193,16 @@ Completed box being shipped out [2]
 .....\kern-1.125 (right margin)
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 9
 ....\penalty 10000
 ....\glue(\baselineskip) 3.73401
 ....\hbox(6.534+2.547)x525.52245, glue set - 0.00552, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 l
 .....\TU/tg-pagella/m/n/9 o
 .....\TU/tg-pagella/m/n/9 b
@@ -3349,8 +3395,16 @@ Completed box being shipped out [2]
 .....\kern-1.575 (right margin)
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.47+0.1)x13.00003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 1
+......\TU/tg-pagella/m/n/5 0
 ....\glue(\baselineskip) 3.73401
 ....\hbox(6.534+2.529)x525.52245, glue set 0.0748, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 M
 .....\TU/tg-pagella/m/n/9 o
 .....\TU/tg-pagella/m/n/9 r
@@ -3524,8 +3578,16 @@ Completed box being shipped out [2]
 .....\TU/tg-pagella/m/n/9 t
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.47+0.015)x13.00003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 1
+......\TU/tg-pagella/m/n/5 1
 ....\glue(\baselineskip) 3.752
 ....\hbox(6.534+2.547)x525.52245, glue set - 0.0231, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 m
 .....\TU/tg-pagella/m/n/9 a
 .....\TU/tg-pagella/m/n/9 g
@@ -3704,9 +3766,17 @@ Completed box being shipped out [2]
 .....\TU/tg-pagella/m/n/9 e
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.47+0.015)x13.00003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 1
+......\TU/tg-pagella/m/n/5 2
 ....\penalty 10000
 ....\glue(\baselineskip) 3.73401
 ....\hbox(6.534+0.18)x525.52245, glue set 442.26346fil, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/m/n/9 c
 .....\TU/tg-pagella/m/n/9 u
 .....\TU/tg-pagella/m/n/9 r
@@ -3741,6 +3811,12 @@ Completed box being shipped out [2]
 .....\kern-1.575 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
+.....\hbox(3.47+0.1)x13.00003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 1
+......\TU/tg-pagella/m/n/5 3
 ....\penalty -51
 ....\glue 0.0
 ....\glue 6.0 plus 2.0 minus 2.0
@@ -3753,8 +3829,6 @@ Completed box being shipped out [2]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\rule(*+*)x0.0
 .....\penalty 10000
 .....\TU/tg-pagella/m/n/9  
@@ -3914,9 +3988,17 @@ Completed box being shipped out [2]
 .......\pdfliteral page <lua data reference ...>
 .......\discretionary (penalty 50)
 .......\glue(\rightskip) 0.0
+.......\hbox(3.47+0.015)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 1
+........\TU/tg-pagella/m/n/5 4
 ......\penalty 10100
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 0.87238, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 l
 .......\TU/tg-pagella/m/n/9 u
 .......\TU/tg-pagella/m/n/9 m
@@ -4052,9 +4134,17 @@ Completed box being shipped out [2]
 .......\kern-1.125 (right margin)
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.47+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 1
+........\TU/tg-pagella/m/n/5 5
 ......\penalty 10000
 ......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.547)x394.6396, glue set 187.8195fil, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 n
 .......\TU/tg-pagella/m/n/9 o
 .......\TU/tg-pagella/m/n/9 n
@@ -4123,6 +4213,12 @@ Completed box being shipped out [2]
 .......\kern-1.575 (right margin)
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
+.......\hbox(3.47+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 1
+........\TU/tg-pagella/m/n/5 6
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
 ......\glue(\baselineskip) 3.73401
@@ -4266,9 +4362,17 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 t
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.47+0.015)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 1
+........\TU/tg-pagella/m/n/5 7
 ......\penalty 10000
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 0.95227, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 a
 .......\TU/tg-pagella/m/n/9 c
 .......\TU/tg-pagella/m/n/9 ,
@@ -4401,9 +4505,17 @@ Completed box being shipped out [2]
 .......\kern-1.125 (right margin)
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.47+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 1
+........\TU/tg-pagella/m/n/5 8
 ......\penalty 10000
 ......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.547)x394.6396, glue set 252.30455fil, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 c
 .......\TU/tg-pagella/m/n/9 o
 .......\TU/tg-pagella/m/n/9 n
@@ -4452,6 +4564,12 @@ Completed box being shipped out [2]
 .......\kern-1.575 (right margin)
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
+.......\hbox(3.47+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 1
+........\TU/tg-pagella/m/n/5 9
 ......\penalty -51
 .....\glue -525.52245
 .....\hbox(6.85013+143.95215)x0.0, glue set - 94.25142fil, direction TLT
@@ -4677,9 +4795,17 @@ Completed box being shipped out [2]
 .....\TU/tg-pagella/m/n/9 g
 .....\TU/tg-pagella/m/n/9  
 .....\glue(\rightskip) -2.25
+.....\hbox(3.445+0.1)x13.00003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 2
+......\TU/tg-pagella/m/n/5 0
 ....\penalty 20000
 ....\glue(\baselineskip) 3.716
 ....\hbox(6.552+2.547)x525.52245, glue set 347.16647fil, shifted -131.16722, direction TLT
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
 .....\kern-0.252 (left margin)
 .....\TU/tg-pagella/m/n/9 v
 .....\TU/tg-pagella/m/n/9 i
@@ -4752,6 +4878,12 @@ Completed box being shipped out [2]
 .....\kern-1.575 (right margin)
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
+.....\hbox(3.47+0.015)x13.00003, direction TLT
+......\kern8.00003
+......\pdfliteral page <lua data reference ...>
+......\pdfliteral page <lua data reference ...>
+......\TU/tg-pagella/m/n/5 2
+......\TU/tg-pagella/m/n/5 1
 ....\penalty -51
 ....\glue 0.0
 ....\glue 6.0 plus 2.0 minus 2.0
@@ -4764,8 +4896,6 @@ Completed box being shipped out [2]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\rule(*+*)x0.0
 .....\penalty 10000
 .....\TU/tg-pagella/m/n/9  
@@ -4925,9 +5055,17 @@ Completed box being shipped out [2]
 .......\pdfliteral page <lua data reference ...>
 .......\discretionary (penalty 50)
 .......\glue(\rightskip) 0.0
+.......\hbox(3.445+0.015)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 2
+........\TU/tg-pagella/m/n/5 2
 ......\penalty 20100
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 232.3606fil, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 l
 .......\TU/tg-pagella/m/n/9 u
 .......\TU/tg-pagella/m/n/9 m
@@ -4995,6 +5133,12 @@ Completed box being shipped out [2]
 .......\kern-1.575 (right margin)
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 2
+........\TU/tg-pagella/m/n/5 3
 ......\penalty -51
 .....\glue -525.52245
 .....\hbox(6.85013+143.95215)x0.0, glue set - 94.25142fil, direction TLT
@@ -5195,9 +5339,17 @@ Completed box being shipped out [2]
 .......\pdfliteral page <lua data reference ...>
 .......\discretionary (penalty 50)
 .......\glue(\rightskip) 0.0
+.......\hbox(3.47+0.015)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 2
+........\TU/tg-pagella/m/n/5 4
 ......\penalty 10100
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 0.87238, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 l
 .......\TU/tg-pagella/m/n/9 u
 .......\TU/tg-pagella/m/n/9 m
@@ -5333,8 +5485,16 @@ Completed box being shipped out [2]
 .......\kern-1.125 (right margin)
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 2
+........\TU/tg-pagella/m/n/5 5
 ......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.547)x394.6396, glue set 0.00406, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 n
 .......\TU/tg-pagella/m/n/9 o
 .......\TU/tg-pagella/m/n/9 n
@@ -5463,8 +5623,16 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 e
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 2
+........\TU/tg-pagella/m/n/5 6
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 0.0063, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 h
 .......\TU/tg-pagella/m/n/9 a
 .......\TU/tg-pagella/m/n/9 b
@@ -5602,8 +5770,16 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 s
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.015)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 2
+........\TU/tg-pagella/m/n/5 7
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 0.00023, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\kern-0.252 (left margin)
 .......\TU/tg-pagella/m/n/9 v
 .......\TU/tg-pagella/m/n/9 i
@@ -5746,8 +5922,16 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 t
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 2
+........\TU/tg-pagella/m/n/5 8
 ......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.547)x394.6396, glue set 0.00603, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 a
 .......\TU/tg-pagella/m/n/9 m
 .......\TU/tg-pagella/m/n/9 e
@@ -5892,8 +6076,16 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 t
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 2
+........\TU/tg-pagella/m/n/5 9
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 0.0038, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 e
 .......\TU/tg-pagella/m/n/9 g
 .......\kern-0.18 (font)
@@ -6033,8 +6225,16 @@ Completed box being shipped out [2]
 .......\kern-1.125 (right margin)
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 0
 ......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.547)x394.6396, glue set 0.00601, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 m
 .......\TU/tg-pagella/m/n/9 o
 .......\TU/tg-pagella/m/n/9 l
@@ -6168,9 +6368,17 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 e
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.47+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 1
 ......\penalty 10000
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 46.12065fil, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 e
 .......\TU/tg-pagella/m/n/9 u
 .......\TU/tg-pagella/m/n/9 ,
@@ -6292,6 +6500,12 @@ Completed box being shipped out [2]
 .......\kern-1.575 (right margin)
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 2
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
 ......\glue(\baselineskip) 3.716
@@ -6439,9 +6653,17 @@ Completed box being shipped out [2]
 .......\kern-1.575 (right margin)
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 3
 ......\penalty 10000
 ......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.529)x394.6396, glue set 0.00945, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 N
 .......\kern-0.27 (font)
 .......\TU/tg-pagella/m/n/9 a
@@ -6583,8 +6805,16 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 n
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.47+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 4
 ......\glue(\baselineskip) 3.752
 ......\hbox(6.534+2.547)x394.6396, glue set 0.04092, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 b
 .......\TU/tg-pagella/m/n/9 i
 .......\TU/tg-pagella/m/n/9 b
@@ -6713,8 +6943,16 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 t
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 5
 ......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.529)x394.6396, glue set 0.00148, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 m
 .......\TU/tg-pagella/m/n/9 o
 .......\TU/tg-pagella/m/n/9 l
@@ -6848,8 +7086,16 @@ Completed box being shipped out [2]
 .......\TU/tg-pagella/m/n/9 t
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 6
 ......\glue(\baselineskip) 3.752
 ......\hbox(6.534+2.547)x394.6396, glue set 0.00931, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 m
 .......\TU/tg-pagella/m/n/9 a
 .......\TU/tg-pagella/m/n/9 g
@@ -6984,9 +7230,17 @@ Completed box being shipped out [2]
 .......\kern-0.18 (right margin)
 .......\TU/tg-pagella/m/n/9  
 .......\glue(\rightskip) -2.25
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 7
 ......\penalty 10000
 ......\glue(\baselineskip) 3.73401
 ......\hbox(6.534+2.529)x394.6396, glue set 183.46957fil, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\kern-0.252 (left margin)
 .......\TU/tg-pagella/m/n/9 v
 .......\kern-0.36 (font)
@@ -7067,6 +7321,12 @@ Completed box being shipped out [2]
 .......\kern-1.575 (right margin)
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 8
 ......\penalty -51
 .....\glue -525.52245
 .....\hbox(6.85013+143.95215)x0.0, glue set - 94.25142fil, direction TLT
@@ -7151,11 +7411,7 @@ Completed box being shipped out [2]
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 7/Contents (artifact)} action user{}
 ...........\mathon
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 h
 ...........\TU/tg-pagella/m/n/8 t
 ...........\TU/tg-pagella/m/n/8 t
@@ -7222,11 +7478,7 @@ Completed box being shipped out [2]
 ...........\TU/tg-pagella/m/n/8 0
 ...........\mathoff
 ...........\pdfendlink
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
@@ -7249,6 +7501,7 @@ Completed box being shipped out [3]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral direct <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
@@ -7296,11 +7549,6 @@ Completed box being shipped out [3]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral direct <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
 ............\TU/tg-pagella/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/tg-pagella/m/n/8 e
@@ -7468,7 +7716,6 @@ Completed box being shipped out [3]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 546.17224fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
@@ -7644,9 +7891,17 @@ Completed box being shipped out [3]
 .......\pdfliteral page <lua data reference ...>
 .......\discretionary (penalty 50)
 .......\glue(\rightskip) 0.0
+.......\hbox(3.445+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 3
+........\TU/tg-pagella/m/n/5 9
 ......\penalty 20100
 ......\glue(\baselineskip) 3.716
 ......\hbox(6.552+2.547)x394.6396, glue set 94.53163fil, direction TLT
+.......\pdfliteral page <lua data reference ...>
+.......\pdfliteral page <lua data reference ...>
 .......\TU/tg-pagella/m/n/9 l
 .......\TU/tg-pagella/m/n/9 u
 .......\TU/tg-pagella/m/n/9 m
@@ -7762,6 +8017,12 @@ Completed box being shipped out [3]
 .......\kern-1.575 (right margin)
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
+.......\hbox(3.47+0.1)x13.00003, direction TLT
+........\kern8.00003
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\TU/tg-pagella/m/n/5 4
+........\TU/tg-pagella/m/n/5 0
 ......\penalty -51
 .....\glue -525.52245
 .....\hbox(6.85013+143.95215)x0.0, glue set - 94.25142fil, direction TLT
@@ -7851,11 +8112,7 @@ Completed box being shipped out [3]
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 8/Contents (artifact)} action user{}
 ...........\mathon
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 h
 ...........\TU/tg-pagella/m/n/8 t
 ...........\TU/tg-pagella/m/n/8 t
@@ -7922,11 +8179,7 @@ Completed box being shipped out [3]
 ...........\TU/tg-pagella/m/n/8 0
 ...........\mathoff
 ...........\pdfendlink
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0

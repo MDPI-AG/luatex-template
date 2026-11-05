@@ -22,9 +22,8 @@ TEST 1: Show PDF Tags
         id="ID.013"
         rolemaps-to="Lbl"
        >
-      <?MarkedContent page="1" ?>1.
+      <?MarkedContent page="1" ?>1.  
      </heading-number>
-     <?MarkedContent page="1" ?>  
      <?MarkedContent page="1" ?>A section
     </section-heading>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
@@ -214,6 +213,7 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral direct <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
@@ -261,11 +261,6 @@ Completed box being shipped out [1]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral direct <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
 ............\TU/tg-pagella/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/tg-pagella/m/n/8 e
@@ -435,7 +430,6 @@ Completed box being shipped out [1]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 569.93188fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
@@ -449,36 +443,28 @@ Completed box being shipped out [1]
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
 ....\pdfdest name{Doc-Start} xyz
+....\pdfdest name{section.1} xyz
+....\pdfdest name{section.1} xyz
 ....\glue(\topskip) 1.768
-....\hbox(8.232+0.204)x382.35522, glue set 165.68361fil, shifted 12.0, direction TLT
+....\hbox(8.232+0.204)x394.35522, glue set 165.83362fil, direction TLT
+.....\kern-0.3 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(8.04+0.144)x0.0, glue set - 12.0fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(8.04+0.144)x12.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-.........\pdfdest name{section.1} xyz
-.........\pdfdest name{section.1} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\pdfliteral direct <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/b/n/12 1
-.......\TU/tg-pagella/b/n/12 .
-.......\pdfliteral page <lua data reference ...>
-.......\pdfliteral page <lua data reference ...>
-.......\TU/tg-pagella/b/n/12  
-.......\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
-.......\TU/tg-pagella/b/n/12  
-.......\glue -3.0
+.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
+.....\pdfliteral direct <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\pdfliteral page <lua data reference ...>
+.....\TU/tg-pagella/b/n/12 1
+.....\TU/tg-pagella/b/n/12 .
+.....\TU/tg-pagella/b/n/12  
+.....\glue(\spaceskip) 0.0 plus 1.5 minus 1.0
+.....\TU/tg-pagella/b/n/12  
+.....\glue -3.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/b/n/12 A
@@ -530,29 +516,30 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -12.2
+....\penalty 10000
+....\glue 0.2
+....\glue 12.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
+....\pdfdest name{section*.1} xyz
+....\pdfdest name{section*.1} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 7.48001
-....\hbox(8.64+0.204)x394.35522, glue set 157.84761fil, direction TLT
+....\hbox(8.64+0.204)x394.35522, glue set 158.0816fil, direction TLT
+.....\kern-0.468 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\write1{\new@label@record{heading*.1}{{pagenum}{\__property_code_pagenum: }}}
-.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-.........\pdfdest name{section*.1} xyz
-.........\pdfdest name{section*.1} xyz
-.........\penalty 10000
-.......\kern0.0
+.....\glue 0.0
+.....\write1{\new@label@record{heading*.1}{{pagenum}{\__property_code_pagenum: }}}
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/b/n/12 A
@@ -1026,11 +1013,7 @@ Completed box being shipped out [1]
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 1/Contents (artifact)} action user{}
 ...........\mathon
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 h
 ...........\TU/tg-pagella/m/n/8 t
 ...........\TU/tg-pagella/m/n/8 t
@@ -1097,11 +1080,7 @@ Completed box being shipped out [1]
 ...........\TU/tg-pagella/m/n/8 0
 ...........\mathoff
 ...........\pdfendlink
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\pdfliteral direct <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
-...........\pdfliteral page <lua data reference ...>
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0
@@ -1127,7 +1106,7 @@ MathML statistic
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
 (tagpdf)             Writing out ~36 structure objects
-(tagpdf)             with ~18 'MC' leaf nodes.
+(tagpdf)             with ~17 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

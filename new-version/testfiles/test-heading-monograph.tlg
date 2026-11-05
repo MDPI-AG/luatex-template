@@ -131,7 +131,6 @@ Completed box being shipped out [1]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(601.69264+0.0)x367.04037, glue set 384.55164fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 11.0fil, direction TLT
@@ -144,6 +143,7 @@ Completed box being shipped out [1]
 ....\write-{}
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
+....\pdfdest name{section*.1} xyz
 ....\glue(\topskip) 0.0
 ....\hbox(12.51+0.306)x367.04037, glue set 146.53018fil, direction TLT
 .....\localpar
@@ -151,17 +151,9 @@ Completed box being shipped out [1]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
-.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -21.0, direction TLT
-.........\pdfdest name{section*.1} xyz
-.........\penalty 10000
-.......\kern0.0
+.....\glue 0.0
+.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
 .....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/18 C
 .....\TU/tg-pagella/b/n/18 o
@@ -1113,7 +1105,6 @@ Completed box being shipped out [2]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(601.69264+0.0)x367.04037, glue set 322.60773fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 11.0fil, direction TLT
@@ -1123,28 +1114,22 @@ Completed box being shipped out [2]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 11.0
+....\pdfdest name{section.1} xyz
 ....\glue(\topskip) 0.0
-....\hbox(12.258+0.306)x349.04037, glue set 126.59518fil, shifted 18.0, direction TLT
+....\hbox(12.258+0.306)x367.04037, glue set 126.82018fil, direction TLT
+.....\kern-0.45 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.1}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(12.06+0.216)x0.0, glue set - 18.0fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(12.06+0.216)x18.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -21.0, direction TLT
-.........\pdfdest name{section.1} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/b/n/18 1
-.......\TU/tg-pagella/b/n/18 .
-.......\glue(\spaceskip) 4.5 plus 2.25 minus 1.5
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.1}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/b/n/18 1
+.....\TU/tg-pagella/b/n/18 .
+.....\glue(\spaceskip) 4.5 plus 2.25 minus 1.5
+.....\glue 0.0
 .....\TU/tg-pagella/b/n/18 T
 .....\kern-1.62 (font)
 .....\TU/tg-pagella/b/n/18 e
@@ -1387,32 +1372,33 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{subsection.1.1} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.81999
-....\hbox(7.33+0.11)x349.54037, glue set 144.49017fil, shifted 17.5, direction TLT
+....\hbox(7.33+0.11)x367.04037, glue set 144.61517fil, direction TLT
+.....\kern-0.25 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.2}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(6.99+0.05)x0.0, glue set - 17.5fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(6.99+0.05)x17.5, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{subsection.1.1} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/m/it/10 1
-.......\TU/tg-pagella/m/it/10 .
-.......\TU/tg-pagella/m/it/10 1
-.......\TU/tg-pagella/m/it/10 .
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.2}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/m/it/10 1
+.....\TU/tg-pagella/m/it/10 .
+.....\TU/tg-pagella/m/it/10 1
+.....\TU/tg-pagella/m/it/10 .
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue 0.0
 .....\TU/tg-pagella/m/it/10 T
 .....\kern-1.0 (font)
 .....\TU/tg-pagella/m/it/10 e
@@ -1661,34 +1647,35 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{subsubsection.1.1.1} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+0.2)x342.04037, glue set 129.87018fil, shifted 25.0, direction TLT
+....\hbox(7.26+0.2)x367.04037, glue set 129.99518fil, direction TLT
+.....\kern-0.25 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.3}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(6.94+0.05)x0.0, glue set - 25.0fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(6.94+0.05)x25.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{subsubsection.1.1.1} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/m/n/10 1
-.......\TU/tg-pagella/m/n/10 .
-.......\TU/tg-pagella/m/n/10 1
-.......\TU/tg-pagella/m/n/10 .
-.......\TU/tg-pagella/m/n/10 1
-.......\TU/tg-pagella/m/n/10 .
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.3}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/m/n/10 1
+.....\TU/tg-pagella/m/n/10 .
+.....\TU/tg-pagella/m/n/10 1
+.....\TU/tg-pagella/m/n/10 .
+.....\TU/tg-pagella/m/n/10 1
+.....\TU/tg-pagella/m/n/10 .
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue 0.0
 .....\TU/tg-pagella/m/n/10 T
 .....\kern-0.95 (font)
 .....\TU/tg-pagella/m/n/10 e
@@ -1940,26 +1927,27 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{paragraph*.2} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x367.04037, glue set 150.53519fil, direction TLT
+....\hbox(7.26+2.83)x367.04037, glue set 150.69019fil, direction TLT
+.....\kern-0.31 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.4}{{pagenum}{\__property_code_pagenum: }}}
-.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{paragraph*.2} xyz
-.........\penalty 10000
-.......\kern0.0
+.....\glue 0.0
+.....\write1{\new@label@record{heading*.4}{{pagenum}{\__property_code_pagenum: }}}
 .....\TU/tg-pagella/m/n/10 T
 .....\kern-0.95 (font)
 .....\TU/tg-pagella/m/n/10 e
@@ -2615,7 +2603,6 @@ Completed box being shipped out [3]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(601.69264+0.0)x367.04037, glue set 324.52551fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 11.0fil, direction TLT
@@ -2626,43 +2613,37 @@ Completed box being shipped out [3]
 ........\glue 0.0
 .......\glue 11.0
 ....\write1{\@writefile{toc}{\protect \UseName {mdpi@toc@appendixsetup}}}
+....\pdfdest name{appendix.A} xyz
 ....\glue(\topskip) 1.36
-....\hbox(8.64+3.192)x290.92438, glue set 89.12819fil, shifted 76.116, direction TLT
+....\hbox(8.64+3.192)x367.04037, glue set 89.36218fil, direction TLT
+.....\kern-0.468 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.6}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(8.64+3.096)x0.0, glue set - 76.116fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(8.64+3.096)x76.116, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-.........\pdfdest name{appendix.A} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/b/n/12 A
-.......\TU/tg-pagella/b/n/12 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/b/n/12 -
-.......\TU/tg-pagella/b/n/12 p
-.......\TU/tg-pagella/b/n/12 e
-.......\TU/tg-pagella/b/n/12 n
-.......\TU/tg-pagella/b/n/12 d
-.......\TU/tg-pagella/b/n/12 i
-.......\TU/tg-pagella/b/n/12 x
-.......\penalty 10000
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue 0.0
-.......\TU/tg-pagella/b/n/12 A
-.......\kern0.12 (font)
-.......\TU/tg-pagella/b/n/12 .
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.6}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/b/n/12 A
+.....\TU/tg-pagella/b/n/12 p
+.....\discretionary (penalty 50)
+......< \TU/tg-pagella/b/n/12 -
+.....\TU/tg-pagella/b/n/12 p
+.....\TU/tg-pagella/b/n/12 e
+.....\TU/tg-pagella/b/n/12 n
+.....\TU/tg-pagella/b/n/12 d
+.....\TU/tg-pagella/b/n/12 i
+.....\TU/tg-pagella/b/n/12 x
+.....\penalty 10000
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue 0.0
+.....\TU/tg-pagella/b/n/12 A
+.....\kern0.12 (font)
+.....\TU/tg-pagella/b/n/12 .
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue 0.0
 .....\TU/tg-pagella/b/n/12 a
 .....\TU/tg-pagella/b/n/12 p
 .....\discretionary (penalty 50)
@@ -2700,42 +2681,38 @@ Completed box being shipped out [3]
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {A}appendixtitlesempty}{\thepage }{appendix.A}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
+....\pdfdest name{appendix.B} xyz
+....\penalty 10000
+....\glue -3.0
+....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.488
-....\hbox(8.64+3.096)x298.37637, glue set 149.18819fil, shifted 68.664, direction TLT
+....\hbox(8.64+3.096)x367.04037, glue set 149.42218fil, direction TLT
+.....\kern-0.468 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.7}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(8.64+3.096)x0.0, glue set - 68.664fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(8.64+3.096)x68.664, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-.........\pdfdest name{appendix.B} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/b/n/12 A
-.......\TU/tg-pagella/b/n/12 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/b/n/12 -
-.......\TU/tg-pagella/b/n/12 p
-.......\TU/tg-pagella/b/n/12 e
-.......\TU/tg-pagella/b/n/12 n
-.......\TU/tg-pagella/b/n/12 d
-.......\TU/tg-pagella/b/n/12 i
-.......\TU/tg-pagella/b/n/12 x
-.......\penalty 10000
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue 0.0
-.......\TU/tg-pagella/b/n/12 B
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.7}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/b/n/12 A
+.....\TU/tg-pagella/b/n/12 p
+.....\discretionary (penalty 50)
+......< \TU/tg-pagella/b/n/12 -
+.....\TU/tg-pagella/b/n/12 p
+.....\TU/tg-pagella/b/n/12 e
+.....\TU/tg-pagella/b/n/12 n
+.....\TU/tg-pagella/b/n/12 d
+.....\TU/tg-pagella/b/n/12 i
+.....\TU/tg-pagella/b/n/12 x
+.....\penalty 10000
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue 0.0
+.....\TU/tg-pagella/b/n/12 B
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -2966,44 +2943,44 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{subsection.B.1} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.81999
-....\hbox(7.33+2.76)x308.98038, glue set 154.49019fil, shifted 58.06, direction TLT
+....\hbox(7.33+2.76)x367.04037, glue set 154.6702fil, direction TLT
+.....\kern-0.36 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.8}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(7.33+2.76)x0.0, glue set - 58.06fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(7.33+2.76)x58.06, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{subsection.B.1} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/m/it/10 A
-.......\TU/tg-pagella/m/it/10 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/it/10 -
-.......\TU/tg-pagella/m/it/10 p
-.......\TU/tg-pagella/m/it/10 e
-.......\TU/tg-pagella/m/it/10 n
-.......\TU/tg-pagella/m/it/10 d
-.......\TU/tg-pagella/m/it/10 i
-.......\TU/tg-pagella/m/it/10 x
-.......\penalty 10000
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
-.......\TU/tg-pagella/m/it/10 B
-.......\TU/tg-pagella/m/it/10 .
-.......\TU/tg-pagella/m/it/10 1
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.8}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/m/it/10 A
+.....\TU/tg-pagella/m/it/10 p
+.....\discretionary (penalty 50)
+......< \TU/tg-pagella/m/it/10 -
+.....\TU/tg-pagella/m/it/10 p
+.....\TU/tg-pagella/m/it/10 e
+.....\TU/tg-pagella/m/it/10 n
+.....\TU/tg-pagella/m/it/10 d
+.....\TU/tg-pagella/m/it/10 i
+.....\TU/tg-pagella/m/it/10 x
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue 0.0
+.....\TU/tg-pagella/m/it/10 B
+.....\TU/tg-pagella/m/it/10 .
+.....\TU/tg-pagella/m/it/10 1
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -3231,46 +3208,46 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{subsubsection.B.1.1} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.81)x296.38039, glue set 148.19019fil, shifted 70.65999, direction TLT
+....\hbox(7.26+2.81)x367.04037, glue set 148.3852fil, direction TLT
+.....\kern-0.39 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.9}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(7.26+2.81)x0.0, glue set - 70.65999fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(7.26+2.81)x70.65999, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{subsubsection.B.1.1} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/m/n/10 A
-.......\TU/tg-pagella/m/n/10 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 x
-.......\penalty 10000
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
-.......\TU/tg-pagella/m/n/10 B
-.......\TU/tg-pagella/m/n/10 .
-.......\TU/tg-pagella/m/n/10 1
-.......\TU/tg-pagella/m/n/10 .
-.......\TU/tg-pagella/m/n/10 1
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.9}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/m/n/10 A
+.....\TU/tg-pagella/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/tg-pagella/m/n/10 -
+.....\TU/tg-pagella/m/n/10 p
+.....\TU/tg-pagella/m/n/10 e
+.....\TU/tg-pagella/m/n/10 n
+.....\TU/tg-pagella/m/n/10 d
+.....\TU/tg-pagella/m/n/10 i
+.....\TU/tg-pagella/m/n/10 x
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue 0.0
+.....\TU/tg-pagella/m/n/10 B
+.....\TU/tg-pagella/m/n/10 .
+.....\TU/tg-pagella/m/n/10 1
+.....\TU/tg-pagella/m/n/10 .
+.....\TU/tg-pagella/m/n/10 1
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -3496,6 +3473,14 @@ Completed box being shipped out [3]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{paragraph*.4} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 11.15
@@ -3505,17 +3490,9 @@ Completed box being shipped out [3]
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.10}{{pagenum}{\__property_code_pagenum: }}}
-.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{paragraph*.4} xyz
-.........\penalty 10000
-.......\kern0.0
+.....\glue 0.0
+.....\write1{\new@label@record{heading*.10}{{pagenum}{\__property_code_pagenum: }}}
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
@@ -4121,7 +4098,6 @@ Completed box being shipped out [4]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(601.69264+0.0)x367.04037, glue set 310.54703fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 11.0fil, direction TLT
@@ -4131,42 +4107,36 @@ Completed box being shipped out [4]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 11.0
+....\pdfdest name{appendix.C} xyz
 ....\glue(\topskip) 1.36
-....\hbox(8.64+3.192)x291.71637, glue set 97.75018fil, shifted 75.324, direction TLT
+....\hbox(8.64+3.192)x367.04037, glue set 97.98418fil, direction TLT
+.....\kern-0.468 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.12}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(8.64+3.096)x0.0, glue set - 75.324fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(8.64+3.096)x75.324, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-.........\pdfdest name{appendix.C} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/b/n/12 A
-.......\TU/tg-pagella/b/n/12 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/b/n/12 -
-.......\TU/tg-pagella/b/n/12 p
-.......\TU/tg-pagella/b/n/12 e
-.......\TU/tg-pagella/b/n/12 n
-.......\TU/tg-pagella/b/n/12 d
-.......\TU/tg-pagella/b/n/12 i
-.......\TU/tg-pagella/b/n/12 x
-.......\penalty 10000
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue 0.0
-.......\TU/tg-pagella/b/n/12 C
-.......\TU/tg-pagella/b/n/12 .
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.12}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/b/n/12 A
+.....\TU/tg-pagella/b/n/12 p
+.....\discretionary (penalty 50)
+......< \TU/tg-pagella/b/n/12 -
+.....\TU/tg-pagella/b/n/12 p
+.....\TU/tg-pagella/b/n/12 e
+.....\TU/tg-pagella/b/n/12 n
+.....\TU/tg-pagella/b/n/12 d
+.....\TU/tg-pagella/b/n/12 i
+.....\TU/tg-pagella/b/n/12 x
+.....\penalty 10000
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue 0.0
+.....\TU/tg-pagella/b/n/12 C
+.....\TU/tg-pagella/b/n/12 .
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue 0.0
 .....\TU/tg-pagella/b/n/12 a
 .....\TU/tg-pagella/b/n/12 p
 .....\discretionary (penalty 50)
@@ -4199,44 +4169,41 @@ Completed box being shipped out [4]
 ....\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {C}appendixtitlesyes}{\thepage }{appendix.C}\protected@file@percent }}
 ....\penalty 10000
 ....\glue 3.0
+....\pdfdest name{appendix.D} xyz
+....\penalty 10000
+....\glue -3.0
+....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.488
-....\hbox(8.64+3.096)x290.38437, glue set 113.24219fil, shifted 76.656, direction TLT
+....\hbox(8.64+3.096)x367.04037, glue set 113.47618fil, direction TLT
+.....\kern-0.468 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.13}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(8.64+3.096)x0.0, glue set - 76.656fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(8.64+3.096)x76.656, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -16.32, direction TLT
-.........\pdfdest name{appendix.D} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/b/n/12 A
-.......\TU/tg-pagella/b/n/12 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/b/n/12 -
-.......\TU/tg-pagella/b/n/12 p
-.......\TU/tg-pagella/b/n/12 e
-.......\TU/tg-pagella/b/n/12 n
-.......\TU/tg-pagella/b/n/12 d
-.......\TU/tg-pagella/b/n/12 i
-.......\TU/tg-pagella/b/n/12 x
-.......\penalty 10000
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue 0.0
-.......\TU/tg-pagella/b/n/12 D
-.......\TU/tg-pagella/b/n/12 .
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.13}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/b/n/12 A
+.....\TU/tg-pagella/b/n/12 p
+.....\discretionary (penalty 50)
+......< \TU/tg-pagella/b/n/12 -
+.....\TU/tg-pagella/b/n/12 p
+.....\TU/tg-pagella/b/n/12 e
+.....\TU/tg-pagella/b/n/12 n
+.....\TU/tg-pagella/b/n/12 d
+.....\TU/tg-pagella/b/n/12 i
+.....\TU/tg-pagella/b/n/12 x
+.....\penalty 10000
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue 0.0
+.....\TU/tg-pagella/b/n/12 D
+.....\TU/tg-pagella/b/n/12 .
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue(\spaceskip) 3.0 plus 1.5 minus 1.0
+.....\glue 0.0
 .....\TU/tg-pagella/b/n/12 T
 .....\kern-1.08 (font)
 .....\TU/tg-pagella/b/n/12 e
@@ -4482,46 +4449,47 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{subsection.D.1} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.81999
-....\hbox(7.33+2.76)x302.31038, glue set 120.87518fil, shifted 64.73, direction TLT
+....\hbox(7.33+2.76)x367.04037, glue set 121.05519fil, direction TLT
+.....\kern-0.36 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.14}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(7.33+2.76)x0.0, glue set - 64.73fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(7.33+2.76)x64.73, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{subsection.D.1} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/m/it/10 A
-.......\TU/tg-pagella/m/it/10 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/it/10 -
-.......\TU/tg-pagella/m/it/10 p
-.......\TU/tg-pagella/m/it/10 e
-.......\TU/tg-pagella/m/it/10 n
-.......\TU/tg-pagella/m/it/10 d
-.......\TU/tg-pagella/m/it/10 i
-.......\TU/tg-pagella/m/it/10 x
-.......\penalty 10000
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
-.......\TU/tg-pagella/m/it/10 D
-.......\TU/tg-pagella/m/it/10 .
-.......\TU/tg-pagella/m/it/10 1
-.......\TU/tg-pagella/m/it/10 .
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.14}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/m/it/10 A
+.....\TU/tg-pagella/m/it/10 p
+.....\discretionary (penalty 50)
+......< \TU/tg-pagella/m/it/10 -
+.....\TU/tg-pagella/m/it/10 p
+.....\TU/tg-pagella/m/it/10 e
+.....\TU/tg-pagella/m/it/10 n
+.....\TU/tg-pagella/m/it/10 d
+.....\TU/tg-pagella/m/it/10 i
+.....\TU/tg-pagella/m/it/10 x
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue 0.0
+.....\TU/tg-pagella/m/it/10 D
+.....\TU/tg-pagella/m/it/10 .
+.....\TU/tg-pagella/m/it/10 1
+.....\TU/tg-pagella/m/it/10 .
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue 0.0
 .....\TU/tg-pagella/m/it/10 T
 .....\kern-1.0 (font)
 .....\TU/tg-pagella/m/it/10 e
@@ -4770,48 +4738,49 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{subsubsection.D.1.1} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.81)x289.75038, glue set 103.72519fil, shifted 77.29, direction TLT
+....\hbox(7.26+2.81)x367.04037, glue set 103.92018fil, direction TLT
+.....\kern-0.39 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.15}{{pagenum}{\__property_code_pagenum: }}}
+.....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\hbox(7.26+2.81)x0.0, glue set - 77.29fil, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(7.26+2.81)x77.29, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{subsubsection.D.1.1} xyz
-.........\penalty 10000
-.......\kern0.0
-.......\TU/tg-pagella/m/n/10 A
-.......\TU/tg-pagella/m/n/10 p
-.......\discretionary (penalty 50)
-........< \TU/tg-pagella/m/n/10 -
-.......\TU/tg-pagella/m/n/10 p
-.......\TU/tg-pagella/m/n/10 e
-.......\TU/tg-pagella/m/n/10 n
-.......\TU/tg-pagella/m/n/10 d
-.......\TU/tg-pagella/m/n/10 i
-.......\TU/tg-pagella/m/n/10 x
-.......\penalty 10000
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
-.......\TU/tg-pagella/m/n/10 D
-.......\TU/tg-pagella/m/n/10 .
-.......\TU/tg-pagella/m/n/10 1
-.......\TU/tg-pagella/m/n/10 .
-.......\TU/tg-pagella/m/n/10 1
-.......\TU/tg-pagella/m/n/10 .
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\glue 0.0
+.....\write1{\new@label@record{heading*.15}{{pagenum}{\__property_code_pagenum: }}}
+.....\TU/tg-pagella/m/n/10 A
+.....\TU/tg-pagella/m/n/10 p
+.....\discretionary (penalty 50)
+......< \TU/tg-pagella/m/n/10 -
+.....\TU/tg-pagella/m/n/10 p
+.....\TU/tg-pagella/m/n/10 e
+.....\TU/tg-pagella/m/n/10 n
+.....\TU/tg-pagella/m/n/10 d
+.....\TU/tg-pagella/m/n/10 i
+.....\TU/tg-pagella/m/n/10 x
+.....\penalty 10000
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue 0.0
+.....\TU/tg-pagella/m/n/10 D
+.....\TU/tg-pagella/m/n/10 .
+.....\TU/tg-pagella/m/n/10 1
+.....\TU/tg-pagella/m/n/10 .
+.....\TU/tg-pagella/m/n/10 1
+.....\TU/tg-pagella/m/n/10 .
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
+.....\glue 0.0
 .....\TU/tg-pagella/m/n/10 T
 .....\kern-0.95 (font)
 .....\TU/tg-pagella/m/n/10 e
@@ -5063,26 +5032,27 @@ Completed box being shipped out [4]
 .....\glue(\rightskip) 0.0
 ....\penalty -300
 ....\glue 12.0
+....\glue -14.83
+....\penalty 10000
+....\glue 2.83
+....\glue 12.0
+....\pdfdest name{paragraph*.6} xyz
+....\penalty 10000
+....\glue -12.0
+....\glue 12.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x367.04037, glue set 150.53519fil, direction TLT
+....\hbox(7.26+2.83)x367.04037, glue set 150.69019fil, direction TLT
+.....\kern-0.31 (left margin)
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
 ......\localleftbox=null
 ......\localrightbox=null
-.....\write1{\new@label@record{heading*.16}{{pagenum}{\__property_code_pagenum: }}}
-.....\glue 0.0
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x0.0, direction TLT
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -13.98, direction TLT
-.........\pdfdest name{paragraph*.6} xyz
-.........\penalty 10000
-.......\kern0.0
+.....\glue 0.0
+.....\write1{\new@label@record{heading*.16}{{pagenum}{\__property_code_pagenum: }}}
 .....\TU/tg-pagella/m/n/10 T
 .....\kern-0.95 (font)
 .....\TU/tg-pagella/m/n/10 e

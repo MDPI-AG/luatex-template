@@ -16,6 +16,7 @@ Completed box being shipped out [1]
 ..\kern-72.26999
 ..\vbox(0.0+0.0)x0.0, glue set 72.26999fil, direction TLT
 ...\kern-72.26999
+...\pdfliteral direct <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate -3
 ...\hbox(0.0+0.0)x0.0, direction TLT
@@ -60,7 +61,6 @@ Completed box being shipped out [1]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral direct <lua data reference ...>
 ............\pdfliteral page <lua data reference ...>
 ............\pdfliteral page <lua data reference ...>
 ............\rule(9.78595+4.19403)x0.0
@@ -105,7 +105,6 @@ Completed box being shipped out [1]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(601.69264+0.0)x367.04037, glue set 429.31976fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 11.0fil, direction TLT
@@ -135,6 +134,7 @@ Completed box being shipped out [1]
 ........\penalty 10000
 ........\hbox(0.0+0.0)x0.0, direction TLT
 .........\hbox(0.0+0.0)x0.0, shifted -12.815, direction TLT
+..........\pdfliteral direct <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfliteral page <lua data reference ...>
 ..........\pdfdest name{list*.1} xyz
@@ -149,11 +149,6 @@ Completed box being shipped out [1]
 ..........\pdfdest name{cite.ref-journal} xyz
 ..........\penalty 10000
 ........\kern0.0
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral direct <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
-........\pdfliteral page <lua data reference ...>
 ........\TU/tg-pagella/m/n/9 1
 ........\TU/tg-pagella/m/n/9 .
 ........\glue 0.0 plus 1.0fill

@@ -1,9 +1,5 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Missing character: There is no ǋ (U+01CB) in font name:texgyrepagella:mode=node;script=latn;language=dflt;+tlig;!
 Missing character: There is no ǋ (U+01CB) in font name:texgyrepagella:mode=node;script=latn;language=dflt;+tlig;!
 Missing character: There is no Ǉ (U+01C7) in font name:texgyrepagella:mode=node;script=latn;language=dflt;+tlig;!
@@ -117,7 +113,6 @@ Completed box being shipped out [1]
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
 ...\vbox(706.18271+0.0)x394.35522, glue set 446.33917fil, direction TLT
-....\write1{\def\@LN@column{1}}
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
@@ -727,18 +722,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-0.12
-....\hbox(0.0+0.12)x0.0, direction TLT
-.....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 1
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern-0.12
-....\hbox(0.0+0.12)x0.0, direction TLT
+.....\hbox(3.47+0.015)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 1
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 5.17
@@ -754,18 +740,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-0.2
-....\hbox(0.0+0.2)x0.0, direction TLT
-.....\hbox(3.385+0.0)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.385+0.0)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 2
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern-0.2
-....\hbox(0.0+0.2)x0.0, direction TLT
+.....\hbox(3.445+0.015)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 2
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.17
@@ -782,18 +759,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-0.03
-....\hbox(0.0+0.03)x0.0, direction TLT
-.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 3
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern-0.03
-....\hbox(0.0+0.03)x0.0, direction TLT
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 3
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.34
@@ -810,18 +778,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-0.2
-....\hbox(0.0+0.2)x0.0, direction TLT
-.....\hbox(3.28+0.0)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.28+0.0)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 4
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern-0.2
-....\hbox(0.0+0.2)x0.0, direction TLT
+.....\hbox(3.47+0.015)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 4
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 8.94
@@ -837,18 +796,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern0.0
-....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(3.28+0.105)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.28+0.105)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 5
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern0.0
-....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 5
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 9.14
@@ -864,18 +814,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern0.0
-....\hbox(0.0+0.0)x0.0, direction TLT
-.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 6
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern0.0
-....\hbox(0.0+0.0)x0.0, direction TLT
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 6
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 5.40999
@@ -892,18 +833,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-0.12
-....\hbox(0.0+0.12)x0.0, direction TLT
-.....\hbox(3.28+0.05)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.28+0.05)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 7
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern-0.12
-....\hbox(0.0+0.12)x0.0, direction TLT
+.....\hbox(3.445+0.015)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 7
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.94
@@ -919,18 +851,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-0.03
-....\hbox(0.0+0.03)x0.0, direction TLT
-.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 8
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern-0.03
-....\hbox(0.0+0.03)x0.0, direction TLT
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 8
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 7.76
@@ -946,18 +869,9 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
-....\kern-0.2
-....\hbox(0.0+0.2)x0.0, direction TLT
-.....\hbox(3.385+0.105)x0.0, glue set - 414.35522fil, direction TLT
-......\glue 10.0
-......\glue 394.35522
-......\hbox(3.385+0.105)x10.0, glue set 7.345fil, direction TLT
-.......\glue 0.0 plus 1.0fil minus 1.0fil
-.......\TU/lmss/m/n/5 9
-......\glue 0.0 plus 1.0fil minus 1.0fil
-....\penalty 10000
-....\kern-0.2
-....\hbox(0.0+0.2)x0.0, direction TLT
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 9
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
