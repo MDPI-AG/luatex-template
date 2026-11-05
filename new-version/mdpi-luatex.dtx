@@ -174,9 +174,16 @@
 \RequirePackage{refcount}
 \RequirePackage{alphalph}
 %    \end{macrocode}
-% TODO: replace by lualineno
+% We use lualineno for the linenumbers as this is better for tagging
+% (and also more reliable).
 %    \begin{macrocode}
-\RequirePackage[right,mathlines]{lineno}
+\RequirePackage{lualineno}
+\newcounter{mdpi@lineno}
+\lualineno
+ {
+   define={name=mdpi toks={\stepcounter{mdpi@lineno}} right={\kern.8em\tiny\themdpi@lineno}}
+ }
+\newcommand\linenumbers{\lualineno{set=mdpi}}
 %    \end{macrocode}
 % Use in the biography environment. TODO: check if a proper list or display environment
 % can be used.
