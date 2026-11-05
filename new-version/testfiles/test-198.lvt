@@ -1,0 +1,16 @@
+% !TEX TS-program = LuaLaTeX
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\begin{document}
+\START\showoutput\SHOWPDFTAGS
+\begin{figure}[H]
+\includegraphics{example-image}
+\caption{\textit{Cont.}}
+\end{figure}
+
+\begin{figure}[H]\ContinuedFloat
+\includegraphics{example-image}
+\caption{ss}
+\end{figure}
+\end{document}

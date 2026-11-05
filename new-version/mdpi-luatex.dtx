@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-11-03}
-\def\mdpiversion{v7.1j}
+\def\mdpidate{2026-11-05}
+\def\mdpiversion{v7.1k}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2819,7 +2819,8 @@
 % \begin{macro}{\ContinuedFloat}
 %    \begin{macrocode}
 \newcounter{mdpi@continuedfloat}
-\newcommand\ContinuedFloat{%
+\NewDocumentCommand\ContinuedFloat{s}{%
+  \stepcounter{mdpi@continuedfloat}%
   \stepcounter{mdpi@continuedfloat}%
   \ExpandArgs{c}%
    \renewcommand{theH\@captype}{\UseName{the\@captype}.cont.\themdpi@continuedfloat}%
