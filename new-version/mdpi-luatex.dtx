@@ -1479,7 +1479,7 @@
    \isPreprints
      {\vspace{0.92cm}}
      {
-       \begin{adjustwidth}{-\extralength}{}
+       \begin{adjustwidth}{-\mdpi@len@marginpar}{}
      }
    \begin{flushleft}
      \LARGE
@@ -1515,7 +1515,7 @@
    \isPreprints
      {\vspace{0.92cm}}
      {
-       \begin{adjustwidth}{-\extralength}{}
+       \begin{adjustwidth}{-\mdpi@len@marginpar}{}
      }
    \begin{flushleft}
     \vspace*{-1.75cm}
@@ -1526,7 +1526,7 @@
          \vspace{-2pt}%
          \mdpi@maketitle@logoline
          \par
-         \rule{\fulllength}{0.4pt}%
+         \rule{\mdpi@len@bodywidth}{0.4pt}%
         }
       \par
      }%0
@@ -1600,7 +1600,7 @@
       \fancyhead[R]{
         \footnotesize %
         S\thepage{} of S\pageref*{LastPage}%
-        \\\rule{\fulllength}{0.4pt}%
+        \\\rule{\mdpi@len@bodywidth}{0.4pt}%
         }%
       \fancyhead[L]{
         \footnotesize %
@@ -1617,7 +1617,7 @@
             }%
           . {\url{https://doi.org/\@doinum}}%
           }%
-          \\\vspace{-2pt}\rule{\fulllength}{0.4pt}%
+          \\\vspace{-2pt}\rule{\mdpi@len@bodywidth}{0.4pt}%
         }%
       }%
     }{
@@ -2263,7 +2263,7 @@
  {\NewDocumentEnvironment{journalbackmatter}{}{}{}}
  {
    \NewDocumentEnvironment{journalbackmatter}{}
-    {\begin{adjustwidth}{-\extralength}{0cm}}
+    {\begin{adjustwidth}{-\mdpi@len@marginpar}{0cm}}
     {\end{adjustwidth}}
  }
 %    \end{macrocode}
@@ -2296,7 +2296,7 @@
       ,begin-vspace       = 6pt
       ,end-vspace         = 0pt
       ,begin-extra-vspace = 0pt
-      ,end-extra-vspace   =  0pt
+      ,end-extra-vspace   = 0pt
       ,left-margin        = 0pt
       ,para-indent        = \parindent
       ,para-vspace        = \parskip
@@ -2308,17 +2308,18 @@
 %    \begin{macrocode}
    \DeclareInstance{captionedtext}{mdpi-notes}{proof}
      {
-       ,title    =  Note
-       ,after-hspace=0pt
-       ,punct=:\space
-       ,title-decls = \normalfont\bfseries
-       ,punct-decls= \normalfont\bfseries
+       ,title        = Note
+       ,after-hspace = 0pt
+       ,punct        = :\space
+       ,title-decls  = \normalfont\bfseries
+       ,punct-decls  = \normalfont\bfseries
      }
 %    \end{macrocode}
 % Now we define an environment:
 %    \begin{macrocode}
    \NewDocumentEnvironment{mdpi@notes}{O{}}
-     {\SimpleBlockEnv{mdpi-notes}{#1}}{\BlockEnvEnd}
+     {\SimpleBlockEnv{mdpi-notes}{#1}}
+     {\BlockEnvEnd}
 %    \end{macrocode}
 % For the backnotes we define a command that sets the fontsize to \cs{small}.
 % We also define the user command \cs{backnotes} command in term of this new instance.
@@ -2616,110 +2617,182 @@
 %    \end{macrocode}
 % \end{macro}
 
+% \subsection{Page layout}
+% \subsubsection{Dimensions}
+% The following dimensions are used by the main journal layout.
+% Preprints and books use different value set below directly.
+% The width of the left column, also used for \cs{marginparwidth}.
 %    \begin{macrocode}
-%%%% Dimensions
-%% Width of left column = marginparwidth
-\newlength{\leftcolumnlength}
-\setlength{\leftcolumnlength}{4.1cm}
-
-%% Width of left column plus marginsep
-\newlength{\extralength}
-\setlength{\extralength}{4.61cm} % = 0.51 cm + 4.1 cm (= marginparwidth + marginparsep)
-
-%% Width of the page minus the margins
+\newlength\mdpi@len@marginparwidth
+\setlength\mdpi@len@marginparwidth{4.1cm}
+%    \end{macrocode}
+% \cs{marginsep}
+%    \begin{macrocode}
+\newlength\mdpi@len@marginparsep
+\setlength\mdpi@len@marginparsep{0.50cm}
+%    \end{macrocode}
+% The outer margins of journals:
+%    \begin{macrocode}
+\newlength\mdpi@len@hmargin
+\setlength\mdpi@len@hmargin{1.27cm}
+\newlength\mdpi@len@topmargin
+\setlength\mdpi@len@topmargin{1.27cm}
+\newlength\mdpi@len@bottommargin
+\setlength\mdpi@len@bottommargin{1.08cm}
+%    \end{macrocode}
+% TODO: remove this length and replace by \cs{\mdpi@len@marginparwidth}
+%    \begin{macrocode}
+\newlength\leftcolumnlength
+\setlength\leftcolumnlength{4.1cm}
+%    \end{macrocode}
+% \subsection{Calculated lengths}
+% The width of the left column plus \cs{marginsep}, 
+%    \begin{macrocode}
+\newlength\mdpi@len@marginpar
+\setlength\mdpi@len@marginpar
+   {\dimeval{\mdpi@len@marginparwidth+\mdpi@len@marginparsep}} % = 4.61cm
+%    \end{macrocode}
+% this length is the public version and used in the template:
+%    \begin{macrocode}
+\newlength\extralength
+\setlength\extralength{\mdpi@len@marginpar} % = 4.61cm
+%    \end{macrocode}
+% Width of the page minus the margins. 
+% TODO: that is too large for books. Is it used there?.
+%    \begin{macrocode}
+\newlength{\mdpi@len@bodywidth}
+\setlength{\mdpi@len@bodywidth}{\dimeval{\paperwidth - 2\mdpi@len@hmargin}}
+%    \end{macrocode}
+% TODO: check if a public length is needed.
+%    \begin{macrocode}
 \newlength{\fulllength}
-\setlength{\fulllength}{21 cm - 1.27 cm - 1.27 cm}
-
-%%% Layout
-\isPreprints{%
-  \RequirePackage[left=2.7cm,
-        right=2.7cm,
-        top=1.35cm,
-        bottom=1.08cm,
+\setlength{\fulllength}{\mdpi@len@bodywidth}
+%    \end{macrocode}
+% \subsection{Layout}
+% Preprints have larger margins.
+%    \begin{macrocode}
+\isPreprints
+  {%
+    \RequirePackage
+      [%
+        left   =2.7cm,
+        right  =2.7cm,
+        top    =1.35cm,
+        bottom =1.08cm,
         includehead,
         includefoot,
         footnotesep=0.6cm %moved from \skip\footins change for journal laws
-        ]{geometry}
-      }{
-\isBookContribution{%%
-  \RequirePackage[left=2.05cm,
-          right=2.05cm,
-          top=1.8cm,
-          bottom=0.75cm,
+      ]{geometry}
+  }
+%    \end{macrocode}
+% 
+%    \begin{macrocode}
+  {
+%    \end{macrocode}
+% Books have a smaller paper size. 
+%    \begin{macrocode}
+   \isBookContribution
+    {%%
+      \RequirePackage[
+          left      =2.05cm,
+          right     =2.05cm,
+          top       =1.8cm,
+          bottom    =0.75cm,
           paperwidth=170mm,
           paperheight=244mm,
-          footskip=20pt,
-          headsep=24pt,
+          footskip  =20pt,
+          headsep   =24pt,
           includefoot,
           footnotesep=0.6cm %moved from \skip\footins change for journal laws
           ]{geometry}
-  }{
-  \RequirePackage[left=5.87cm, %1.27 cm + 0.51 cm + 4.1 cm = 5.87 cm (= 1.27 cm + marginparwidth + marginparsep)
-        marginparwidth=4.1cm,
-        marginparsep=0.51cm,
-        right=1.27cm,
-        top=1.27cm,
-        bottom=1.08cm,
-        footskip=36pt,
-        headsep=24pt,
+      % needed? head is empty in book?    
+      %\fancyheadoffset[L]{\mdpi@len@marginpar}    
+    }
+%    \end{macrocode}
+% The main geometry setting for the journals. A4 paper with a large left column
+%    \begin{macrocode}
+    {
+      \RequirePackage
+       [
+        left=\dimeval{\mdpi@len@hmargin+\mdpi@len@marginparwidth+\mdpi@len@marginparsep},%=5.87cm,
+        marginparwidth=\mdpi@len@marginparwidth,
+        marginparsep  =\mdpi@len@marginparsep,
+        right         =\mdpi@len@hmargin,
+        top           =\mdpi@len@topmargin,
+        bottom        =\mdpi@len@bottommargin,
+        footskip      =36pt,
+        headsep       =24pt,
         includehead,
         includefoot,
         footnotesep=0.6cm %moved from \skip\footins change for journal laws
         ]{geometry}
       }
-}
-
-\isPreprints{}{%
-\fancyheadoffset[L]{\extralength} % Header into the margin
-\isBookContribution{%
-  }{%
-  \fancyfootoffset[L]{\extralength}%
-    }
-} % Footer into the margin
-
+     \fancyheadoffset[L]{\mdpi@len@marginpar}
+     \fancyfootoffset[L]{\mdpi@len@marginpar}% 
+  }
 %    \end{macrocode}
-%
+% \subsection{Landscape pages}
 % Commands for landscape page:
 % \begin{macro}{\startlandscape,\finishlandscape}
 %    \begin{macrocode}
-\newlength\mdpi@portrait@paperwidth
-\newlength\mdpi@portrait@paperheight
-\mdpi@portrait@paperheight= \paperheight
-\mdpi@portrait@paperwidth = \paperwidth
+\newlength\mdpi@len@portrait@paperwidth
+\newlength\mdpi@len@portrait@paperheight
+\mdpi@len@portrait@paperheight= \paperheight
+\mdpi@len@portrait@paperwidth = \paperwidth
 \newcommand{\startlandscape}{%
 \isPreprints
   {
    \clearpage
-   \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
-   \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
-                 right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
+   \UseName{pdf_pagesize_gset:nn}
+     {\mdpi@len@portrait@paperheight}{\mdpi@len@portrait@paperwidth}
+   \newgeometry
+     {
+      layoutwidth=297mm, layoutheight=210mm, 
+      left   =1.27cm,
+      right  =1.27cm, 
+      top    =1.27cm, 
+      bottom =1.08cm, 
+      includehead, 
+      includefoot
+     }
 %    \end{macrocode}
 % \cs{newgeometry} resets the paper dimension so we overwrite them again:
 %    \begin{macrocode}
-   \paperwidth =\mdpi@portrait@paperheight
-   \paperheight=\mdpi@portrait@paperwidth
+   \paperwidth =\mdpi@len@portrait@paperheight
+   \paperheight=\mdpi@len@portrait@paperwidth
    \fancyheadoffset{0pt}
    \captionsetup{margin={0cm,0cm}}
   }
   {
    \clearpage
-   \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
-   \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
-                 right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
-   \paperwidth=\mdpi@portrait@paperheight
-   \paperheight=\mdpi@portrait@paperwidth
+   \UseName{pdf_pagesize_gset:nn}
+     {\mdpi@len@portrait@paperheight}{\mdpi@len@portrait@paperwidth}
+   \newgeometry
+     {
+       layoutwidth=297mm, layoutheight=210mm, 
+       left  =\mdpi@len@hmargin,
+       right =\mdpi@len@hmargin, 
+       top   =\mdpi@len@topmargin, 
+       bottom=\mdpi@len@bottommargin, 
+       includehead, 
+       includefoot
+     }
+   \paperwidth=\mdpi@len@portrait@paperheight
+   \paperheight=\mdpi@len@portrait@paperwidth
    \fancyheadoffset{0pt}
    \captionsetup{margin={4.6cm,0cm}}
   }
 }
 
-\newcommand{\finishlandscape}{%
+\newcommand{\finishlandscape}
+ {%
   \clearpage
-  \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperwidth}{\mdpi@portrait@paperheight}
+  \UseName{pdf_pagesize_gset:nn}
+    {\mdpi@len@portrait@paperwidth}{\mdpi@len@portrait@paperheight}
   \restoregeometry
-  \fancyheadoffset[L]{\extralength}
+  \fancyheadoffset[L]{\mdpi@len@marginpar}
   \captionsetup{margin={0cm,0cm}}
-}
+ }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -2776,8 +2849,8 @@
 %\RequirePackage{caption}
 \ExplSyntaxOn
 \clist_new:N\l__mdpi_tempa_clist
-\newlength\mdpi@caption@leftmargin
-\newlength\mdpi@caption@rightmargin
+\newlength\mdpi@len@caption@leftmargin
+\newlength\mdpi@len@caption@rightmargin
 %    \end{macrocode}
 % the subcaptionlite package defines the command as noop.
 %    \begin{macrocode}
@@ -2790,8 +2863,8 @@
    margin.code:n = 
     { 
       \clist_set:Nn \l__mdpi_tempa_clist {#1,#1}
-      \setlength\mdpi@caption@leftmargin{\clist_item:Nn\l__mdpi_tempa_clist{1}}
-      \setlength\mdpi@caption@rightmargin{\clist_item:Nn\l__mdpi_tempa_clist{2}}
+      \setlength\mdpi@len@caption@leftmargin {\clist_item:Nn\l__mdpi_tempa_clist{1}}
+      \setlength\mdpi@len@caption@rightmargin{\clist_item:Nn\l__mdpi_tempa_clist{2}}
     }        
  } 
 \ExplSyntaxOff 
@@ -2851,8 +2924,8 @@
 % We set the margin to the values from the caption package, so that e.g. landscape
 % can change them with \cs{captionsetup}
 %    \begin{macrocode}
-     \leftskip \mdpi@caption@leftmargin
-     \rightskip\mdpi@caption@rightmargin
+     \leftskip \mdpi@len@caption@leftmargin
+     \rightskip\mdpi@len@caption@rightmargin
      \parfillskip=\z@ plus 1fil
      \UseTaggingSocket{caption/begin}{\@current@float@struct}%
      \UseTaggingSocket{caption/label/begin}%
@@ -2880,6 +2953,7 @@
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X} % centered text in R columns
 
 %    \end{macrocode}
+%
 % \subsection{List settings}
 % The tagging code doesn't support yet the star-value for \texttt{leftmargin} and
 % the value \texttt{parleft} for align, so we adapted that and use fixed values
@@ -2967,7 +3041,7 @@
       }%
       }\\%
       \isPreprints{}{%
-      \rule{\fulllength}{0.4pt}%
+      \rule{\mdpi@len@bodywidth}{0.4pt}%
       }%
     }%
   }
@@ -2984,7 +3058,7 @@
     }%
     }\\%
     \isPreprints{}{%
-    \rule{\fulllength}{0.4pt}%
+    \rule{\mdpi@len@bodywidth}{0.4pt}%
             }%
   }%
 }
