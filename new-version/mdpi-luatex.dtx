@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-11-05}
-\def\mdpiversion{v7.1l}
+\def\mdpidate{2026-11-06}
+\def\mdpiversion{v7.1m}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2177,8 +2177,7 @@
 % get rid of the hanging indent.
 %    \begin{macrocode}
 \DeclareInstance    {headformat}{mdpi/std}{display}
-  {heading-indent = 0pt,separator-b=\ ,
-   left-margin=\@totalleftmargin}
+  {heading-indent = 0pt,separator-b=\ ,}
 \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
