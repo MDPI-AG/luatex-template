@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-11-06}
-\def\mdpiversion{v7.1m}
+\def\mdpiversion{v7.1n}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -1982,7 +1982,7 @@
     \if@nobreak
       \everypar{}%
     \else
-      \addpenalty\@secpenalty
+      \addpenalty\@secpenalty\addvspace{3pt}%
     \fi
   {\parindent \z@
    \setlength{\parfillskip}{\z@ plus 1fil}%
