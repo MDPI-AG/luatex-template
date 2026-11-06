@@ -1,0 +1,13 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\RemoveFromHook{begindocument/end}[mdpi/maketitle]
+% check if headings are correctly indented
+\begin{document}
+first page\newpage
+\START\showoutput
+\begin{journalbackmatter}
+\section*{References}
+some text 
+\end{journalbackmatter}
+\end{document}
