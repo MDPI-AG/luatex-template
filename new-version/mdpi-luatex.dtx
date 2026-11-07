@@ -2399,29 +2399,18 @@
 %    \end{macrocode}
 % The new list of contributions, see issue \#97
 %    \begin{macrocode}
-\IfFormatAtLeastTF{2026-11-01}
- {
-   \NewDocumentCommand\listofcontributions{O{List of Contributions}+m}
-    {%
-      \begin{mdpi@notes}[title=#1,caption-placement=standalone,
+\NewDocumentCommand\listofcontributions{O{List of Contributions}+m}
+  {%
+    \begin{mdpi@notes}[title=#1,caption-placement=standalone,
        punct=,caption-decls=\small,body-decls=\small]%
 %    \end{macrocode}
 % we need to repeat the font size, see 
 % \url{https://github.com/latex3/tagging-project/issues/1686}
 %    \begin{macrocode}
-       \small%
-       #2%
-      \end{mdpi@notes}%
-    }
- }   
- {
-   \NewDocumentCommand\listofcontributions{O{List of Contributions}+m}
-     {\par\vspace{6pt}%
-      \begingroup\small
-      \textbf{#1}\par#2%
-      \unskip\par\endgroup
-     }      
- }    
+      \small%
+      #2%
+    \end{mdpi@notes}%
+  }
 %    \end{macrocode}
 %    \begin{macrocode}
 % UF TODO correct semantic, e.g.
