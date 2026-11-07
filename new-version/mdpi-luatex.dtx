@@ -1996,52 +1996,32 @@
 % The first creates a captioned text with a display title, the second a run-in.
 % TODO: balance begin and endspace
 %    \begin{macrocode}
-\IfFormatAtLeastTF{2026-11-01}
- {
-    \NewDocumentCommand\mdpi@abstractnotes@display{mm}
-      {%
-       \tl_if_empty:NF#2
-        {
-          \begin{mdpi@notes}[title=#1,
-            punct=\\*[6pt],
-            after-hspace=0pt,
-            begin-vspace= 0pt,
-            end-vspace  = 12pt,
-            ]%
-           #2
-          \end{mdpi@notes}
-        }
-      }
-    \NewDocumentCommand\mdpi@abstractnotes@runin{mm}
-      {%
-       \tl_if_empty:NF#2
-        {
-          \begin{mdpi@notes}[title=#1,
-            begin-vspace= 0pt,
-            end-vspace  = 12pt,
-            ]%
-           #2
-          \end{mdpi@notes}
-        }
-      }
- }
- {
-   \NewDocumentCommand\mdpi@abstractnotes@display{mm}
-      {
-       \tl_if_empty:NF#2
-        {
-         \par\noindent\textbf{#1}\\*[6pt]
-          #2\par\vspace{12pt}
-        }
-      }
-   \NewDocumentCommand\mdpi@abstractnotes@runin{mm}
-      {
-       \tl_if_empty:NF#2
-        {
-         \par\noindent\textbf{#1\unskip :}~#2\unskip\par\vspace{12pt}
-        }
-      }
- }
+\NewDocumentCommand\mdpi@abstractnotes@display{mm}
+  {%
+   \tl_if_empty:NF#2
+    {
+      \begin{mdpi@notes}[title=#1,
+        punct=\\*[6pt],
+        after-hspace=0pt,
+        begin-vspace= 0pt,
+        end-vspace  = 12pt,
+        ]%
+       #2
+      \end{mdpi@notes}
+    }
+  }
+\NewDocumentCommand\mdpi@abstractnotes@runin{mm}
+  {%
+   \tl_if_empty:NF#2
+    {
+      \begin{mdpi@notes}[title=#1,
+        begin-vspace= 0pt,
+        end-vspace  = 12pt,
+        ]%
+       #2
+      \end{mdpi@notes}
+    }
+  }
 %    \end{macrocode}
 % \begin{macro}{\mdpi@abstractkeywords}
 % In a monograph this does nothing.
@@ -2276,72 +2256,58 @@
 % \begin{macro}{\backnotes}
 % \begin{macro}[no-user-doc]{\mdpi@backnotes}
 %    \begin{macrocode}
-\IfFormatAtLeastTF{2026-11-01}
- {
-   \DeclareInstance{blockenv}{mdpi-notes}{std}
-     {
-        name                = mdpi-notes
-       ,tag-name            = Sect
-       ,tagging-recipe      = standalone
-       ,standalone          = true
-       ,transparent-level   = true
-       ,block-instance      = mdpi-notes
-       ,inner-instance-type = captionedtext
-       ,inner-instance      = mdpi-notes
-       ,para-instance       = justify
-     }
-   \DeclareInstance{block}{mdpi-notes-1}{std}
-     {
-      ,begin-vspace       = 6pt
-      ,end-vspace         = 0pt
-      ,begin-extra-vspace = 0pt
-      ,end-extra-vspace   = 0pt
-      ,left-margin        = 0pt
-      ,para-indent        = \parindent
-      ,para-vspace        = \parskip
-     }
+\DeclareInstance{blockenv}{mdpi-notes}{std}
+  {
+     name                = mdpi-notes
+    ,tag-name            = Sect
+    ,tagging-recipe      = standalone
+    ,standalone          = true
+    ,transparent-level   = true
+    ,block-instance      = mdpi-notes
+    ,inner-instance-type = captionedtext
+    ,inner-instance      = mdpi-notes
+    ,para-instance       = justify
+  }
+\DeclareInstance{block}{mdpi-notes-1}{std}
+  {
+   ,begin-vspace       = 6pt
+   ,end-vspace         = 0pt
+   ,begin-extra-vspace = 0pt
+   ,end-extra-vspace   = 0pt
+   ,left-margin        = 0pt
+   ,para-indent        = \parindent
+   ,para-vspace        = \parskip
+  }
 %    \end{macrocode}
 % The captionedtext instance is currently based on the proof template.
 % This should be changed once a simpler template exist.
 % Note that the fontsize is not set here, so that it can react to the size in the context.
 %    \begin{macrocode}
-   \DeclareInstance{captionedtext}{mdpi-notes}{proof}
-     {
-       ,title        = Note
-       ,after-hspace = 0pt
-       ,punct        = :\space
-       ,title-decls  = \normalfont\bfseries
-       ,punct-decls  = \normalfont\bfseries
-     }
+\DeclareInstance{captionedtext}{mdpi-notes}{proof}
+  {
+    ,title        = Note
+    ,after-hspace = 0pt
+    ,punct        = :\space
+    ,title-decls  = \normalfont\bfseries
+    ,punct-decls  = \normalfont\bfseries
+  }
 %    \end{macrocode}
 % Now we define an environment:
 %    \begin{macrocode}
-   \NewDocumentEnvironment{mdpi@notes}{O{}}
-     {\SimpleBlockEnv{mdpi-notes}{#1}}
-     {\BlockEnvEnd}
+\NewDocumentEnvironment{mdpi@notes}{O{}}
+  {\SimpleBlockEnv{mdpi-notes}{#1}}
+  {\BlockEnvEnd}
 %    \end{macrocode}
 % For the backnotes we define a command that sets the fontsize to \cs{small}.
 % We also define the user command \cs{backnotes} command in term of this new instance.
 %    \begin{macrocode}
-   \NewDocumentCommand\mdpi@backnotes{m+m}
-    {%
-     \begin{mdpi@notes}[title=#1,caption-decls=\small,body-decls=\small]%
-     #2
-     \end{mdpi@notes}
-    }
+\NewDocumentCommand\mdpi@backnotes{m+m}
+ {%
+  \begin{mdpi@notes}[title=#1,caption-decls=\small,body-decls=\small]%
+  #2
+  \end{mdpi@notes}
  }
-%    \end{macrocode}
-% In older formats we fall back to a simple bold text:
-%    \begin{macrocode}
- {
-  \NewDocumentCommand\mdpi@backnotes{m+m}
-    {%
-      \par\vspace{6pt}%
-      \begingroup\small
-      \textbf{#1\unskip :} #2%
-      \unskip\par\endgroup
-    }
- }
+ 
 \NewCommandCopy\backnotes\mdpi@backnotes
 %    \end{macrocode}
 % \end{macro}
