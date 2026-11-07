@@ -60,9 +60,9 @@ Completed box being shipped out [1]
 ..\kern0.0
 ..\kern-36.13487
 ..\kern-1.00374
-..\hbox(0.0+0.0)x0.0, glue set - 93.7438fil, direction TLT
+..\hbox(0.0+0.0)x0.0, glue set - 93.74422fil, direction TLT
 ...\kern0.0
-...\kern94.74754
+...\kern94.74796
 ...\kern-1.00374
 ...\pdfdest name{page.1} xyz
 ...\penalty 10000
@@ -71,19 +71,19 @@ Completed box being shipped out [1]
 .\glue(\lineskip) 0.0
 .\vbox(742.04784+4.19403)x489.10277, direction TLT
 ..\glue -36.13487
-..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
-...\vbox(12.0+0.0)x394.35522, direction TLT
+..\vbox(778.18271+4.19403)x394.35481, shifted 94.74796, direction TLT
+...\vbox(12.0+0.0)x394.35481, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(12.0+0.0)x394.35522, direction TLT
-.....\hbox(12.0+0.0)x394.35522, direction TLT
-......\glue -131.16722
-......\hbox(12.0+0.0)x525.52245, direction TLT
-.......\vbox(12.0+0.0)x525.52245, direction TLT
-........\hbox(18.349+3.14552)x525.52245, direction TLT
-.........\hbox(18.349+3.14552)x0.0, glue set - 525.52246fil, direction TLT
-..........\vbox(18.349+3.14552)x525.52245, direction TLT
-...........\hbox(5.864+2.264)x525.52245, glue set 167.01321fil, direction TLT
+....\hbox(12.0+0.0)x394.35481, direction TLT
+.....\hbox(12.0+0.0)x394.35481, direction TLT
+......\glue -130.88283
+......\hbox(12.0+0.0)x525.23764, direction TLT
+.......\vbox(12.0+0.0)x525.23764, direction TLT
+........\hbox(18.349+3.14552)x525.23764, direction TLT
+.........\hbox(18.349+3.14552)x0.0, glue set - 525.23767fil, direction TLT
+..........\vbox(18.349+3.14552)x525.23764, direction TLT
+...........\hbox(5.864+2.264)x525.23764, glue set 166.87082fil, direction TLT
 ............\kern-0.288 (left margin)
 ............\localpar
 .............\localinterlinepenalty=0
@@ -174,7 +174,7 @@ Completed box being shipped out [1]
 ...........\glue(\parskip) 0.0
 ...........\glue(\parskip) 0.0
 ...........\glue(\baselineskip) 0.88153
-...........\hbox(7.33946+3.14552)x525.52245, glue set 0.14241fil, direction TLT
+...........\hbox(7.33946+3.14552)x525.23764, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -189,8 +189,8 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0 plus 1.0fil
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\vbox(0.0+0.0)x525.52245, direction TLT
-..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+.........\vbox(0.0+0.0)x525.23764, direction TLT
+..........\hbox(0.0+0.0)x525.23764, glue set 262.61884fil, direction TLT
 ...........\glue(\leftskip) 0.0 plus 1.0fil
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -202,10 +202,10 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(16.309+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+.........\hbox(16.309+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(16.309+3.14552)x525.52245, direction TLT
-...........\hbox(5.824+0.16)x525.52245, glue set 506.89044fil, direction TLT
+..........\vbox(16.309+3.14552)x525.23764, direction TLT
+...........\hbox(5.824+0.16)x525.23764, glue set 506.60565fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\kern-0.2 (left margin)
 ............\localpar
@@ -229,7 +229,7 @@ Completed box being shipped out [1]
 ...........\glue(\parskip) 0.0
 ...........\glue(\parskip) 0.0
 ...........\glue(\baselineskip) 2.98553
-...........\hbox(7.33946+3.14552)x525.52245, glue set 0.2848fil, direction TLT
+...........\hbox(7.33946+3.14552)x525.23764, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -248,21 +248,21 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 355.40485fil, direction TLT
+...\vbox(706.18271+0.0)x394.35481, glue set 355.40485fil, direction TLT
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
+......\hbox(0.0+0.0)x0.0, glue set - 14.22636fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\vbox(0.0+0.0)x0.0, direction TLT
 ........\glue 0.0
 ........\glue 0.0
 ........\glue 0.0
-.......\glue 14.51074
+.......\glue 14.22636
 ....\write-{}
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
 ....\glue(\topskip) 2.74
-....\hbox(7.26+2.83)x394.35522, glue set 0.08788, direction TLT
+....\hbox(7.26+2.83)x394.35481, glue set 0.08786, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -373,7 +373,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x394.35522, glue set - 0.02028, direction TLT
+....\hbox(7.28+2.83)x394.35481, glue set - 0.02034, direction TLT
 .....\TU/tg-pagella/m/n/10 u
 .....\TU/tg-pagella/m/n/10 t
 .....\TU/tg-pagella/m/n/10 ,
@@ -492,7 +492,7 @@ Completed box being shipped out [1]
 .....\kern-1.25 (right margin)
 .....\glue(\rightskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 0.6463, direction TLT
+....\hbox(7.26+2.83)x394.35481, glue set 0.64629, direction TLT
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 o
 .....\TU/tg-pagella/m/n/10 n
@@ -592,7 +592,7 @@ Completed box being shipped out [1]
 .....\kern-1.75 (right margin)
 .....\glue(\rightskip) 0.0
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x394.35522, glue set - 0.35384, direction TLT
+....\hbox(7.28+2.83)x394.35481, glue set - 0.35388, direction TLT
 .....\TU/tg-pagella/m/n/10 P
 .....\kern-0.5 (font)
 .....\TU/tg-pagella/m/n/10 e
@@ -711,7 +711,7 @@ Completed box being shipped out [1]
 .....\kern-1.75 (right margin)
 .....\glue(\rightskip) 0.0
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x394.35522, glue set - 0.00256, direction TLT
+....\hbox(7.28+2.83)x394.35481, glue set - 0.0026, direction TLT
 .....\TU/tg-pagella/m/n/10 M
 .....\TU/tg-pagella/m/n/10 a
 .....\TU/tg-pagella/m/n/10 u
@@ -820,7 +820,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 a
 .....\glue(\rightskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 0.58687, direction TLT
+....\hbox(7.26+2.83)x394.35481, glue set 0.58685, direction TLT
 .....\TU/tg-pagella/m/n/10 u
 .....\TU/tg-pagella/m/n/10 l
 .....\discretionary (penalty 50)
@@ -943,7 +943,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 s
 .....\glue(\rightskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 0.13728, direction TLT
+....\hbox(7.26+2.83)x394.35481, glue set 0.13725, direction TLT
 .....\TU/tg-pagella/m/n/10 i
 .....\TU/tg-pagella/m/n/10 n
 .....\TU/tg-pagella/m/n/10 ,
@@ -1049,7 +1049,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/m/n/10 n
 .....\glue(\rightskip) 0.0
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.81)x394.35522, glue set 0.00034, direction TLT
+....\hbox(7.28+2.81)x394.35481, glue set 0.00032, direction TLT
 .....\TU/tg-pagella/m/n/10 f
 .....\kern-0.1 (font)
 .....\TU/tg-pagella/m/n/10 a
@@ -1165,7 +1165,7 @@ Completed box being shipped out [1]
 .....\kern-0.2 (right margin)
 .....\glue(\rightskip) 0.0
 ....\glue(\baselineskip) 3.89
-....\hbox(7.28+2.83)x394.35522, glue set 0.0106, direction TLT
+....\hbox(7.28+2.83)x394.35481, glue set 0.01059, direction TLT
 .....\TU/tg-pagella/m/n/10 s
 .....\TU/tg-pagella/m/n/10 e
 .....\TU/tg-pagella/m/n/10 m
@@ -1270,7 +1270,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.89
-....\hbox(7.26+2.83)x394.35522, glue set 109.49193fil, direction TLT
+....\hbox(7.26+2.83)x394.35481, glue set 109.49152fil, direction TLT
 .....\TU/tg-pagella/m/n/10 s
 .....\TU/tg-pagella/m/n/10 a
 .....\TU/tg-pagella/m/n/10 g
@@ -1356,7 +1356,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.20999
-....\hbox(6.94+0.2)x373.10522, glue set 342.95523fil, shifted 21.25, direction TLT
+....\hbox(6.94+0.2)x373.10481, glue set 342.95483fil, shifted 21.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1393,7 +1393,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+2.83)x373.10522, glue set - 0.14575, shifted 21.25, direction TLT
+....\hbox(7.26+2.83)x373.10481, glue set - 0.1458, shifted 21.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1523,7 +1523,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty 20100
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x373.10522, glue set 39.65198fil, shifted 21.25, direction TLT
+....\hbox(7.28+2.83)x373.10481, glue set 39.65157fil, shifted 21.25, direction TLT
 .....\TU/tg-pagella/m/n/10 l
 .....\TU/tg-pagella/m/n/10 u
 .....\TU/tg-pagella/m/n/10 m
@@ -1634,7 +1634,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.20999
-....\hbox(6.94+0.2)x351.85522, glue set 321.70523fil, shifted 42.5, direction TLT
+....\hbox(6.94+0.2)x351.85481, glue set 321.70483fil, shifted 42.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1671,7 +1671,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+2.83)x351.85522, glue set 0.06717, shifted 42.5, direction TLT
+....\hbox(7.26+2.83)x351.85481, glue set 0.06714, shifted 42.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1789,7 +1789,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x351.85522, glue set 0.0017, shifted 42.5, direction TLT
+....\hbox(7.28+2.83)x351.85481, glue set 0.00166, shifted 42.5, direction TLT
 .....\kern-0.28 (left margin)
 .....\TU/tg-pagella/m/n/10 v
 .....\kern-0.4 (font)
@@ -1903,7 +1903,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty 10100
 ....\glue(\baselineskip) 4.73
-....\hbox(6.42+0.2)x351.85522, glue set 340.04523fil, shifted 42.5, direction TLT
+....\hbox(6.42+0.2)x351.85481, glue set 340.0448fil, shifted 42.5, direction TLT
 .....\TU/tg-pagella/m/n/10 r
 .....\TU/tg-pagella/m/n/10 i
 .....\TU/tg-pagella/m/n/10 s
@@ -1929,7 +1929,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.84
-....\hbox(6.94+0.2)x373.10522, glue set 342.95523fil, shifted 21.25, direction TLT
+....\hbox(6.94+0.2)x373.10481, glue set 342.95483fil, shifted 21.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1967,7 +1967,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.52
-....\hbox(7.26+2.83)x373.10522, glue set - 0.14575, shifted 21.25, direction TLT
+....\hbox(7.26+2.83)x373.10481, glue set - 0.1458, shifted 21.25, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -2098,7 +2098,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty 20100
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x373.10522, glue set 39.65198fil, shifted 21.25, direction TLT
+....\hbox(7.28+2.83)x373.10481, glue set 39.65157fil, shifted 21.25, direction TLT
 .....\TU/tg-pagella/m/n/10 l
 .....\TU/tg-pagella/m/n/10 u
 .....\TU/tg-pagella/m/n/10 m
@@ -2209,7 +2209,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 3.70999
-....\hbox(7.44+2.44)x351.85522, glue set 321.70523fil, shifted 42.5, direction TLT
+....\hbox(7.44+2.44)x351.85481, glue set 321.70483fil, shifted 42.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -2248,7 +2248,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.09999
-....\hbox(7.44+2.83)x351.85522, glue set 0.06717, shifted 42.5, direction TLT
+....\hbox(7.44+2.83)x351.85481, glue set 0.06714, shifted 42.5, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -2368,7 +2368,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty 10000
 ....\glue(\baselineskip) 3.87
-....\hbox(7.28+2.83)x351.85522, glue set 0.0017, shifted 42.5, direction TLT
+....\hbox(7.28+2.83)x351.85481, glue set 0.00166, shifted 42.5, direction TLT
 .....\kern-0.28 (left margin)
 .....\TU/tg-pagella/m/n/10 v
 .....\kern-0.4 (font)
@@ -2482,7 +2482,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0
 ....\penalty 10100
 ....\glue(\baselineskip) 4.73
-....\hbox(6.42+0.2)x351.85522, glue set 340.04523fil, shifted 42.5, direction TLT
+....\hbox(6.42+0.2)x351.85481, glue set 340.0448fil, shifted 42.5, direction TLT
 .....\TU/tg-pagella/m/n/10 r
 .....\TU/tg-pagella/m/n/10 i
 .....\TU/tg-pagella/m/n/10 s
@@ -2506,17 +2506,17 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 0.0001fil
 ...\pdflinkstate 1
 ...\glue(\baselineskip) 22.02002
-...\hbox(13.97998+4.19403)x394.35522, direction TLT
-....\hbox(13.97998+4.19403)x394.35522, direction TLT
-.....\glue -131.16722
-.....\hbox(13.97998+4.19403)x525.52245, direction TLT
-......\vbox(13.97998+4.19403)x525.52245, direction TLT
-.......\rule(0.0+0.0)x525.52245
+...\hbox(13.97998+4.19403)x394.35481, direction TLT
+....\hbox(13.97998+4.19403)x394.35481, direction TLT
+.....\glue -130.88283
+.....\hbox(13.97998+4.19403)x525.23764, direction TLT
+......\vbox(13.97998+4.19403)x525.23764, direction TLT
+.......\rule(0.0+0.0)x525.23764
 .......\glue 4.19403
-.......\hbox(9.78595+4.19403)x525.52245, direction TLT
-........\hbox(0.0+0.0)x0.0, glue set - 525.52246fil, direction TLT
-.........\vbox(0.0+0.0)x525.52245, direction TLT
-..........\hbox(0.0+0.0)x525.52245, glue set 262.76123fil, direction TLT
+.......\hbox(9.78595+4.19403)x525.23764, direction TLT
+........\hbox(0.0+0.0)x0.0, glue set - 525.23767fil, direction TLT
+.........\vbox(0.0+0.0)x525.23764, direction TLT
+..........\hbox(0.0+0.0)x525.23764, glue set 262.61884fil, direction TLT
 ...........\localpar
 ............\localinterlinepenalty=0
 ............\localbrokenpenalty=0
@@ -2528,8 +2528,8 @@ Completed box being shipped out [1]
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
-........\vbox(9.78595+4.19403)x525.52245, direction TLT
-.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+........\vbox(9.78595+4.19403)x525.23764, direction TLT
+.........\hbox(9.78595+4.19403)x525.23764, glue set 262.61884fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -2542,10 +2542,10 @@ Completed box being shipped out [1]
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 ........\glue 0.0 plus 1.0fill
-........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\vbox(7.33946+3.14552)x525.52245, direction TLT
-..........\hbox(7.33946+3.14552)x525.52245, glue set 410.37042fil, direction TLT
+.........\vbox(7.33946+3.14552)x525.23764, direction TLT
+..........\hbox(7.33946+3.14552)x525.23764, glue set 410.08563fil, direction TLT
 ...........\glue(\leftskip) 0.0 plus 1.0fil
 ...........\localpar
 ............\localinterlinepenalty=0

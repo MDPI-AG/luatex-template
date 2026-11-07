@@ -434,7 +434,7 @@ TEST 1: Show PDF Tags
 Class mdpi Warning: multirow with negative argument is not supported with tagging! on input line ....
 Underfull \hbox (badness 10000) in alignment at lines ...
 [][][][]
-\hbox(0.0+0.0)x394.35522, direction TLT
+\hbox(0.0+0.0)x394.35481, direction TLT
 .\glue(\tabskip) 0.0
 .\unsetbox(0.0+0.0)x50.74998
 .\glue(\tabskip) 0.0
@@ -446,16 +446,16 @@ Underfull \hbox (badness 10000) in alignment at lines ...
 .\glue(\tabskip) 0.0
 Overfull \hbox (21.33955pt too wide) in paragraph at lines ...
 [][] 
-\hbox(23.29495+18.64499)x394.35522, direction TLT
+\hbox(23.29495+18.64499)x394.35481, direction TLT
 .\localpar
 ..\localinterlinepenalty=0
 ..\localbrokenpenalty=0
 ..\localleftbox=null
 ..\localrightbox=null
 .\hbox(0.0+0.0)x21.33955, direction TLT
-.\hbox(23.29495+18.64499)x394.35522, direction TLT
-..\vbox(23.29495+18.64499)x394.35522, direction TLT
-...\hbox(9.78595+4.19403)x394.35522, direction TLT
+.\hbox(23.29495+18.64499)x394.35481, direction TLT
+..\vbox(23.29495+18.64499)x394.35481, direction TLT
+...\hbox(9.78595+4.19403)x394.35481, direction TLT
 ....\glue(\tabskip) 0.0
 ....\hbox(9.78595+4.19403)x50.74998, direction TLT
 .....\rule(9.78595+4.19403)x0.0
@@ -524,7 +524,7 @@ Overfull \hbox (21.33955pt too wide) in paragraph at lines ...
 .....\glue 6.0
 ....\glue(\tabskip) 0.0
 ...\glue(\lineskip) 0.0
-...\hbox(9.78595+4.19403)x394.35522, direction TLT
+...\hbox(9.78595+4.19403)x394.35481, direction TLT
 ....\glue(\tabskip) 0.0
 ....\hbox(9.78595+4.19403)x50.74998, glue set 38.74998fill, direction TLT
 .....\rule(9.78595+4.19403)x0.0
@@ -572,7 +572,7 @@ Overfull \hbox (21.33955pt too wide) in paragraph at lines ...
 .....\glue 6.0
 ....\glue(\tabskip) 0.0
 ...\glue(\lineskip) 0.0
-...\hbox(9.78595+4.19403)x394.35522, direction TLT
+...\hbox(9.78595+4.19403)x394.35481, direction TLT
 ....\glue(\tabskip) 0.0
 ....\hbox(9.78595+4.19403)x50.74998, glue set 38.74998fill, direction TLT
 .....\rule(9.78595+4.19403)x0.0
