@@ -2848,7 +2848,6 @@
 \newcounter{mdpi@continuedfloat}
 \NewDocumentCommand\ContinuedFloat{s}{%
   \stepcounter{mdpi@continuedfloat}%
-  \stepcounter{mdpi@continuedfloat}%
   \ExpandArgs{c}%
    \renewcommand{theH\@captype}{\UseName{the\@captype}.cont.\themdpi@continuedfloat}%
   \addtocounter{\@captype}{-1}}
