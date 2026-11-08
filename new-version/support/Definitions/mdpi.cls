@@ -1154,23 +1154,27 @@
     }%
  }
 
+% Part 5: Copyright
 \newcommand{\leftcolumnCright}{%
 	\isPreprints{}{\cright}%
 }
 
-\newcommand{\contentleftcolumn}{%
-	\leftcolFont
-	\ifthenelse{\equal{\@arttype}{Supfile}}{}{%
-		\isPreprints{}{%
-			\ifthenelse{\equal{\@status}{submit}}%
-				{\rule{0pt}{0.6cm}\par}%
-				{\leftcolumnUpdatelogo\par}%
-			\leftcolExternalEditor\par
-			\leftcolDates\par
-			\leftcolumnCorrstatement\par
-			\leftcolumnCright\par
-		}%
-	}%
+% Content of the left column. The marginnote with this content will be placed it at the very top of the first page to have a fixed reference point
+\newcommand{\contentleftcolumn}
+  {%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}%     % %1
+        \leftcolExternalEditor\par        % %2
+        \leftcolDates\par                 % %3
+        \leftcolumnCorrstatement\par      % %4
+        \leftcolumnCright\par             % %5
+     }
 }
 
 \newlength{\MyLen} % For length of the left column content
@@ -1189,38 +1193,66 @@
 \newcommand{\leftcolumnsplit}[1]{\gdef\@leftcolumnsplit{#1}}
 
 % Split option 1	
-\newcommand{\OptionOneA}{
-        \leftcolFont
-	\leftcolExternalEditor\par %1
-	\leftcolDates\vspace{-2pt} %2
+\newcommand{\OptionOneA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+        \leftcolExternalEditor\par% 2
+        \leftcolDates\vspace{-2pt}% 3
+      }%
 }
-		
-\newcommand{\OptionOneB}{
+
+\newcommand{\OptionOneB}{%
         \leftcolFont
-	\leftcolumnCright %3
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
 % Split option 2	
-\newcommand{\OptionTwoA}{
-        \leftcolFont
-	\leftcolExternalEditor\vspace{-10pt} %1
+\newcommand{\OptionTwoA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+        \leftcolExternalEditor\vspace{-10pt}% 2
+      }%
 }
 
-\newcommand{\OptionTwoB}{
+\newcommand{\OptionTwoB}{%
         \leftcolFont
-	\leftcolDates\par\vspace{-2pt} %2
-	\vspace{6pt}\leftcolumnCright %3
+	\leftcolDates\par\vspace{-2pt}% 3
+	\leftcolumnCorrstatement\par% 4
+	\vspace{6pt}\leftcolumnCright% 5
 }
 
 % Split option 3
-\newcommand{\OptionThreeA}{
+\newcommand{\OptionThreeA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+      }%
 }
 
-\newcommand{\OptionThreeB}{
+\newcommand{\OptionThreeB}{%
         \leftcolFont
-	\leftcolExternalEditor\par %1
-	\leftcolDates\par\vspace{-2pt} %2
-	\vspace{6pt}\leftcolumnCright %3
+	\leftcolExternalEditor\par% 2
+	\leftcolDates\par\vspace{-2pt}% 3
+	\leftcolumnCorrstatement\par% 4
+	\vspace{6pt}\leftcolumnCright% 5
 }
 
 %%%% Maketitle part 2
@@ -1847,7 +1879,7 @@
     \parshape 1 \dimexpr\linewidth-\textwidth\relax\textwidth
   \fi
   \noindent #1\par
-  \parshape\z@
+  \parshape 0
 }
 \newcommand{\mdpi@tablefooter@preprint}[1]{%
   \sbox{\mdpi@tablefooter@box}{#1}%
