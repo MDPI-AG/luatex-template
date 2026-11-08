@@ -1997,6 +1997,56 @@
 \captionsetup[graph]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
 }
 
+%% Consecutive [H] / longfigurecaption: collapse to 12pt.
+\newif\ifmdpi@floatskip
+\newcommand{\mdpi@floatskip@before}{%
+  \par
+  \@nobreakfalse
+  \ifmdpi@floatskip
+    \global\mdpi@floatskipfalse
+  \else
+    \addvspace{12pt}%
+  \fi
+}
+\newcommand{\mdpi@floatskip@after}{%
+  \par
+  \@nobreakfalse
+  \addvspace{12pt}%
+  \nointerlineskip
+  \global\mdpi@floatskiptrue
+}
+\ifdef{\AddToHook}{%
+  \AddToHook{para/begin}{\global\mdpi@floatskipfalse}%
+}{}
+
+%% Non-floating figure block with a long caption (\captionof{figure}{...}).
+%% caption.sty already provides \captionof. Bind the image to the caption
+%% skip (caption.sty may \let\@makecaption, so patch \caption@aboveskip).
+\newif\ifmdpi@lfc
+\renewcommand*\caption@aboveskip{%
+  \ifmdpi@lfc
+    \par
+    \nopagebreak
+  \fi
+  \vskip\abovecaptionskip
+}
+\NewDocumentEnvironment{longfigurecaption}{}
+ {%
+  \mdpi@floatskip@before
+  \nopagebreak
+  \begingroup
+  \mdpi@lfctrue
+  \parindent\z@
+  \def\@captype{figure}
+  \captionsetup{belowskip=0pt,parbox=none}%
+  \ignorespaces
+ }
+ {%
+  \par
+  \endgroup
+  \mdpi@floatskip@after
+ }
+
 %% For table footnotes
 \newsavebox{\@justcentbox}
 \newcommand{\justifyorcenter}[1]{
