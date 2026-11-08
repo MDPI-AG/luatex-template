@@ -478,6 +478,134 @@
 }{%
 	\relax
 }
+%   \mdpihdashline              full width
+%   \mdpihdashline{2-3}         columns 2--3 (\cline syntax)
+%   \mdpihdashline{5-5}         column 5 only
+%   e.g. \mdpihdashline[RGB]{191,191,191}{2-3}
+%    e.g. \mdpicline[RGB]{191,191,191}{2-3}  solid; fill omitted cols (multirow+cellcolor)
+\newdimen\mdpidashlinedash \mdpidashlinedash=3pt
+\newdimen\mdpidashlinegap  \mdpidashlinegap=3pt
+\def\mdpi@hdash@model{}
+\def\mdpi@hdash@color{}
+\newcount\mdpi@tblcol
+\preto\CT@setup{%
+  \global\advance\mdpi@tblcol\@ne
+  \global\expandafter\let\csname mdpi@cc@\the\mdpi@tblcol\endcsname\relax}
+\let\mdpi@orig@CT@@do@color\CT@@do@color
+\def\CT@@do@color{%
+  \protected@xdef\mdpi@cc@tmp{\current@color}%
+  \global\expandafter\let\csname mdpi@cc@\the\mdpi@tblcol\endcsname\mdpi@cc@tmp
+  \mdpi@orig@CT@@do@color}
+\@ifundefined{IfHookExistsTF}
+  {\preto\@arraycr{\global\mdpi@tblcol\z@}}
+  {\IfHookExistsTF{tbl/row/init}
+     {\AddToHook{tbl/row/init}{\global\mdpi@tblcol\z@}}
+     {\preto\@arraycr{\global\mdpi@tblcol\z@}}}
+\def\mdpi@fill@saved#1{%
+  \begingroup
+    \expandafter\let\expandafter\current@color\csname mdpi@cc@#1\endcsname
+    \set@color
+    \leaders\hrule\@height\arrayrulewidth\hfill
+  \endgroup}
+\def\mdpi@fill@omitted#1{%
+  \ifx\mdpi@hdash@color\@empty
+    \ifcsname mdpi@cc@#1\endcsname
+      \expandafter\ifx\csname mdpi@cc@#1\endcsname\relax
+      \else
+        \mdpi@fill@saved{#1}%
+      \fi
+    \fi
+  \else
+    \mdpi@hdash@coloredrule
+  \fi}
+\def\mdpi@omitprefix#1#2{%
+  \ifnum#1<#2\relax
+    \mdpi@fill@omitted{#1}%
+    \@firstofone{&\omit}%
+    \expandafter\mdpi@omitprefix\expandafter{\the\numexpr#1+1\relax}{#2}%
+  \fi}
+\def\mdpihdashline{%
+  \noalign{\ifnum0=`}\fi
+  \@ifnextchar[\mdpi@hdashline@opt{%
+    \@ifnextchar\bgroup\mdpi@hdashline@cols\mdpi@hdashline@full}}
+\def\mdpi@hdashline@full{%
+  \hbox to \hsize{\xleaders\hbox{%
+    \rule{\mdpidashlinedash}{\arrayrulewidth}\kern\mdpidashlinegap}\hfill}%
+  \ifnum0=`{\fi}}
+\def\mdpi@hdashline@opt[#1]#2#3{%
+  \gdef\mdpi@hdash@model{#1}%
+  \gdef\mdpi@hdash@color{#2}%
+  \ifnum0=`{\fi}%
+  \mdpi@hdashline@do#3\@nil}
+\def\mdpi@hdashline@cols#1{%
+  \gdef\mdpi@hdash@model{}%
+  \gdef\mdpi@hdash@color{}%
+  \ifnum0=`{\fi}%
+  \mdpi@hdashline@do#1\@nil}
+\def\mdpi@hdash@box{%
+  \vrule\@height\arrayrulewidth\@width\mdpidashlinedash
+  \kern\mdpidashlinegap}
+\def\mdpi@hdash@coloredrule{%
+  \ifx\mdpi@hdash@model\@empty
+    {\color{\mdpi@hdash@color}\leaders\hrule\@height\arrayrulewidth\hfill}%
+  \else
+    {\color[\mdpi@hdash@model]{\mdpi@hdash@color}\leaders\hrule\@height\arrayrulewidth\hfill}%
+  \fi}
+\def\mdpi@hdashline@do#1-#2\@nil{%
+  \omit
+  \mdpi@omitprefix{1}{#1}%
+  \@multicnt#2%
+  \advance\@multicnt-#1%
+  \advance\@multispan\@ne
+  \xleaders\hbox{\mdpi@hdash@box}\hfill
+  \cr
+}
+\newcommand\mdpihdashlinewidth[1]{%
+  \noalign{\hbox to #1{\xleaders\hbox{%
+    \rule{\mdpidashlinedash}{\arrayrulewidth}\kern\mdpidashlinegap}\hfill}}}
+\def\mdpihdashlinefrom{%
+  \noalign{\ifnum0=`}\fi
+  \@ifnextchar[\mdpi@hdashlinefrom@opt\mdpi@hdashlinefrom@plain}
+\def\mdpi@hdashlinefrom@opt[#1]#2#3#4{%
+  \hbox{%
+    {\color[#1]{#4}\vrule height\arrayrulewidth width #2\relax}%
+    \hbox to #3{\xleaders\hbox{%
+      \rule{\mdpidashlinedash}{\arrayrulewidth}\kern\mdpidashlinegap}\hfill}%
+  }%
+  \ifnum0=`{\fi}}
+\def\mdpi@hdashlinefrom@plain#1#2#3{%
+  \hbox{%
+    {\color{#3}\vrule height\arrayrulewidth width #1\relax}%
+    \hbox to #2{\xleaders\hbox{%
+      \rule{\mdpidashlinedash}{\arrayrulewidth}\kern\mdpidashlinegap}\hfill}%
+  }%
+  \ifnum0=`{\fi}}
+\def\mdpicline{%
+  \noalign{\ifnum0=`}\fi
+  \@ifnextchar[\mdpi@cline@opt{%
+    \@ifnextchar\bgroup\mdpi@cline@cols\mdpi@cline@full}}
+\def\mdpi@cline@full{%
+  {\CT@arc@\hrule\@height\arrayrulewidth}%
+  \ifnum0=`{\fi}}
+\def\mdpi@cline@opt[#1]#2#3{%
+  \gdef\mdpi@hdash@model{#1}%
+  \gdef\mdpi@hdash@color{#2}%
+  \ifnum0=`{\fi}%
+  \mdpi@cline@do#3\@nil}
+\def\mdpi@cline@cols#1{%
+  \gdef\mdpi@hdash@model{}%
+  \gdef\mdpi@hdash@color{}%
+  \ifnum0=`{\fi}%
+  \mdpi@cline@do#1\@nil}
+\def\mdpi@cline@do#1-#2\@nil{%
+  \omit
+  \mdpi@omitprefix{1}{#1}%
+  \@multicnt#2%
+  \advance\@multicnt-#1%
+  \advance\@multispan\@ne
+  {\CT@arc@\leaders\hrule\@height\arrayrulewidth\hfill}%
+  \cr
+}
 
 % After TeXLive 2021, \AddToHook{begindocument} is needed to make sure that hyperref is loaded last. \ifdef{\AddToHook{begindocument}}{ is needed for backwards-compatibility because \AddToHook{begindocument} did not yet exist in 2020.
 % After TeXLive 2022, \AddToHook{begindocument/before}{} is needed and  \DeclareHookRule{begindocument}{hyperref}{before}{mdpi} needs to be added because of the new version of hyperref.
@@ -1817,6 +1945,9 @@
   \ifcsname c@lstlisting\endcsname
     \let\c@lstlisting\c@listing
     \renewcommand{\thelstlisting}{\thelisting}%
+    \ifcsname listingname\endcsname
+      \let\lstlistingname\listingname
+    \fi
     \ifcsname theHlisting\endcsname
       \@namedef{theHlstlisting}{\theHlisting}%
     \fi
@@ -1839,6 +1970,8 @@
 
 \captionsetup[listing]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
 
+\captionsetup[lstlisting]{position=top, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
+
 \captionsetup[chart]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
 
 \captionsetup[table]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
@@ -1852,6 +1985,8 @@
 \captionsetup[scheme]{position=bottom,	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
 
 \captionsetup[listing]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
+
+\captionsetup[lstlisting]{position=top, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
 
 \captionsetup[chart]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
 
