@@ -1398,6 +1398,7 @@
 %    \end{macrocode}
 %
 % \subsection{Maketitle}
+% 
 % \subsubsection{Helper commands}
 % Store the url:
 %    \begin{macrocode}
@@ -1501,14 +1502,14 @@
 % For journals and preprints we have logos, article type and narrow column
 %    \begin{macrocode}
 \newcommand{\mdpi@maketitle}
-  {
+  {  
 %    \end{macrocode}
 %   Default option for the left column.
 %   The left column should be aligned with the bottom of the text.
-%   For this we calculate the needed offset in \cs{MyLen} and move it down:
+%   For this we calculate the needed offset in \cs{mdpi@len@leftcol@height} and move it down:
 %    \begin{macrocode}
    \tl_if_empty:NT \@leftcolumnsplit
-     {\marginnote[\contentleftcolumn]{}[\MyLen]}
+     {\marginnote[\contentleftcolumn]{}[\mdpi@len@leftcol@height]}
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1517,7 +1518,10 @@
      {
        \begin{adjustwidth}{-\mdpi@len@marginpar}{}
      }
-   \begin{flushleft}
+   \begin{flushleft}[tagging-suppress-paras=true,
+     tagging-recipe=standalone,
+     tag-name=\UseStructureName{title/block},
+     tag-attr-class=aria-banner]
     \vspace*{-1.75cm}
      {%0
       \isPreprints
@@ -1539,8 +1543,9 @@
      {%2
       \LARGE
       \hyphenpenalty=10000
-      \tolerance=1000
-      \boldmath\bfseries{\@Title}
+      \tolerance=1000   
+      \boldmath\bfseries
+      \UseTaggingSocket{title}{}{\@Title}%
       \par
       \vspace{12pt}
      }%2
@@ -1557,7 +1562,8 @@
      {%3
       \hyphenpenalty=10000
       \tolerance=1000
-      \boldmath\bfseries{\@Author}
+      \boldmath\bfseries
+      {\AssignStructureRole{para/textblock}{title-author}\@Author}
       \par
       \vspace{12pt}
      }%3
@@ -1784,28 +1790,31 @@
    }
 %    \end{macrocode}
 % \end{macro}
-
+% \cs{mdpi@len@leftcol@height} is used to store the height of the left column,
+% \cs{mdpi@box@leftcol} is used to store and measure the height of the left column.
 %    \begin{macrocode}
-\newlength{\MyLen} % For length of the left column content
-\newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
+\newlength\mdpi@len@leftcol@height 
+\newsavebox\mdpi@box@leftcol 
 %    \end{macrocode}
 
 % \subsection{Placing of the left column}
-% The following calculation needs to be done after begin document, but before the title is typeset.
+% The following calculation needs to be done after begin document, 
+% but before the title is typeset.
 % It is therefore executed in the \texttt{begindocument/end} hook.
 % It is only for measuring, so tagging should be suspended.
-% \begin{macro}{\calculateMyLen}
+% \begin{macro}{\mdpi@calculate@leftcol@height}
 %    \begin{macrocode}
-\newcommand{\calculateMyLen}
+\newcommand{\mdpi@calculate@leftcol@height}
   {%
    \SuspendTagging{}%
-   \savebox{\MyBox}
+   \savebox{\mdpi@box@leftcol}
     {%
 %    \end{macrocode}
-% \cs{leftcolumnlength} is the width of the left column defined in section \ref{sec:dimensions}.
+% \cs{mdpi@len@marginparwidth} is the width of the left column defined 
+% in section \ref{sec:dimensions}.
 % \cs{contentleftcolumn} is the content defined in section \ref{sec:leftcolumn}
 %    \begin{macrocode}
-     \parbox{\leftcolumnlength}{\contentleftcolumn}%
+     \parbox{\mdpi@len@marginparwidth}{\contentleftcolumn}%
     }%
    \ResumeTagging{}%
 %    \end{macrocode}
@@ -1814,7 +1823,7 @@
 %  to the bottom of \cs{textheight}. A small correction is added to account for
 %  the depth of a strutbox.
 %    \begin{macrocode}
-   \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-2.1pt}}%
+   \setlength{\mdpi@len@leftcol@height}{\dimeval{\textheight-\dp\mdpi@box@leftcol-\ht\mdpi@box@leftcol-2.1pt}}%
   }
 %    \end{macrocode}
 % \end{macro}%
@@ -2094,7 +2103,7 @@
 %
 % Print \cs{maketitle} and \cs{mdpi@abstractkeywords} in the \texttt{begindocument/end} hook:
 %    \begin{macrocode}
-\AddToHook{begindocument/end}[mdpi/maketitle]{\calculateMyLen}
+\AddToHook{begindocument/end}[mdpi/maketitle]{\mdpi@calculate@leftcol@height}
 \ifthenelse{\equal{\@arttype}{Supfile}}{
   \AddToHook{begindocument/end}[mdpi/maketitle]{
     \maketitle
@@ -2594,11 +2603,7 @@
 \newlength\mdpi@len@bottommargin
 \setlength\mdpi@len@bottommargin{1.08cm}
 %    \end{macrocode}
-% TODO: remove this length and replace by \cs{\mdpi@len@marginparwidth}
-%    \begin{macrocode}
-\newlength\leftcolumnlength
-\setlength\leftcolumnlength{4.1cm}
-%    \end{macrocode}
+%
 % \subsection{Calculated lengths}
 % The width of the left column plus \cs{marginsep}, 
 %    \begin{macrocode}
