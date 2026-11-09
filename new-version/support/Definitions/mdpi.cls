@@ -23,8 +23,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-10-19}
-\def\mdpiversion{v6.5d}
+\def\mdpidate{2026-11-09}
+\def\mdpiversion{v6.5e}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
 
@@ -225,6 +225,20 @@
          \OR \equal{\@journal}{preprintsapa}%
 	}%
 }
+
+%% Short date block (proceedings-style journals); long = Received/Revised/Accepted/Published.
+\def\@journaldatesblock{long}
+\ifthenelse{\equal{\@journal}{proceedings}%
+  \OR \equal{\@journal}{chemproc}%
+  \OR \equal{\@journal}{engproc}%
+  \OR \equal{\@journal}{eesp}%
+  \OR \equal{\@journal}{materproc}%
+  \OR \equal{\@journal}{blsf}%
+  \OR \equal{\@journal}{msf}%
+  \OR \equal{\@journal}{psf}%
+  \OR \equal{\@journal}{csmf}}{%
+  \def\@journaldatesblock{short}%
+}{}
 
 %%%% Maths environments
 \RequirePackage{amsthm}
@@ -432,10 +446,166 @@
 }
 
 % TeX Live 2023 / 2026 compatibility--for ArabTeX (package arabtex can't be used in 2026).
-\let\mdpi@document@orig\document
-\def\document{%
-  \ifnum\currentgrouplevel>\z@ \endgroup \fi
-  \mdpi@document@orig}
+\@ifl@t@r\fmtversion{2020-10-01}{%
+	\let\mdpi@document@orig\document
+	\def\document{%
+		\ifnum\currentgrouplevel>\z@ \endgroup \fi
+		\mdpi@document@orig}%
+}{%
+	\relax
+}
+%% Make compatible with old/new version
+\@ifl@t@r\fmtversion{2018-04-01}{}{%
+	\DeclareRobustCommand\centering{%
+		\let\\\@centercr
+		\rightskip\@flushglue\leftskip\@flushglue
+		\parindent\z@\parfillskip\z@skip}%
+	\DeclareRobustCommand\raggedright{%
+		\let\\\@centercr\@rightskip\@flushglue \rightskip\@rightskip
+		\leftskip\z@skip
+		\parindent\z@}%
+	\DeclareRobustCommand\raggedleft{%
+		\let\\\@centercr
+		\rightskip\z@skip\leftskip\@flushglue
+		\parindent\z@\parfillskip\z@skip}%
+}
+
+% TeX Live 2026: make ``colortbl + arydshln + tabularx'' compatible.
+\@ifl@t@r\fmtversion{2020-10-01}{%
+	\AddToHook{package/arydshln/after}[mdpi]{%
+		\expandafter\def\csname endtabular*\endcsname{\endtabular}%
+	}%
+}{%
+	\relax
+}
+%   \mdpihdashline              full width
+%   \mdpihdashline{2-3}         columns 2--3 (\cline syntax)
+%   \mdpihdashline{5-5}         column 5 only
+%   e.g. \mdpihdashline[RGB]{191,191,191}{2-3}
+%    e.g. \mdpicline[RGB]{191,191,191}{2-3}  solid; fill omitted cols (multirow+cellcolor)
+\newdimen\mdpidashlinedash \mdpidashlinedash=3pt
+\newdimen\mdpidashlinegap  \mdpidashlinegap=3pt
+\def\mdpi@hdash@model{}
+\def\mdpi@hdash@color{}
+\newcount\mdpi@tblcol
+\preto\CT@setup{%
+  \global\advance\mdpi@tblcol\@ne
+  \global\expandafter\let\csname mdpi@cc@\the\mdpi@tblcol\endcsname\relax}
+\let\mdpi@orig@CT@@do@color\CT@@do@color
+\def\CT@@do@color{%
+  \protected@xdef\mdpi@cc@tmp{\current@color}%
+  \global\expandafter\let\csname mdpi@cc@\the\mdpi@tblcol\endcsname\mdpi@cc@tmp
+  \mdpi@orig@CT@@do@color}
+\@ifundefined{IfHookExistsTF}
+  {\preto\@arraycr{\global\mdpi@tblcol\z@}}
+  {\IfHookExistsTF{tbl/row/init}
+     {\AddToHook{tbl/row/init}{\global\mdpi@tblcol\z@}}
+     {\preto\@arraycr{\global\mdpi@tblcol\z@}}}
+\def\mdpi@fill@saved#1{%
+  \begingroup
+    \expandafter\let\expandafter\current@color\csname mdpi@cc@#1\endcsname
+    \set@color
+    \leaders\hrule\@height\arrayrulewidth\hfill
+  \endgroup}
+\def\mdpi@fill@omitted#1{%
+  \ifx\mdpi@hdash@color\@empty
+    \ifcsname mdpi@cc@#1\endcsname
+      \expandafter\ifx\csname mdpi@cc@#1\endcsname\relax
+      \else
+        \mdpi@fill@saved{#1}%
+      \fi
+    \fi
+  \else
+    \mdpi@hdash@coloredrule
+  \fi}
+\def\mdpi@omitprefix#1#2{%
+  \ifnum#1<#2\relax
+    \mdpi@fill@omitted{#1}%
+    \@firstofone{&\omit}%
+    \expandafter\mdpi@omitprefix\expandafter{\the\numexpr#1+1\relax}{#2}%
+  \fi}
+\def\mdpihdashline{%
+  \noalign{\ifnum0=`}\fi
+  \@ifnextchar[\mdpi@hdashline@opt{%
+    \@ifnextchar\bgroup\mdpi@hdashline@cols\mdpi@hdashline@full}}
+\def\mdpi@hdashline@full{%
+  \hbox to \hsize{\xleaders\hbox{%
+    \rule{\mdpidashlinedash}{\arrayrulewidth}\kern\mdpidashlinegap}\hfill}%
+  \ifnum0=`{\fi}}
+\def\mdpi@hdashline@opt[#1]#2#3{%
+  \gdef\mdpi@hdash@model{#1}%
+  \gdef\mdpi@hdash@color{#2}%
+  \ifnum0=`{\fi}%
+  \mdpi@hdashline@do#3\@nil}
+\def\mdpi@hdashline@cols#1{%
+  \gdef\mdpi@hdash@model{}%
+  \gdef\mdpi@hdash@color{}%
+  \ifnum0=`{\fi}%
+  \mdpi@hdashline@do#1\@nil}
+\def\mdpi@hdash@box{%
+  \vrule\@height\arrayrulewidth\@width\mdpidashlinedash
+  \kern\mdpidashlinegap}
+\def\mdpi@hdash@coloredrule{%
+  \ifx\mdpi@hdash@model\@empty
+    {\color{\mdpi@hdash@color}\leaders\hrule\@height\arrayrulewidth\hfill}%
+  \else
+    {\color[\mdpi@hdash@model]{\mdpi@hdash@color}\leaders\hrule\@height\arrayrulewidth\hfill}%
+  \fi}
+\def\mdpi@hdashline@do#1-#2\@nil{%
+  \omit
+  \mdpi@omitprefix{1}{#1}%
+  \@multicnt#2%
+  \advance\@multicnt-#1%
+  \advance\@multispan\@ne
+  \xleaders\hbox{\mdpi@hdash@box}\hfill
+  \cr
+}
+\newcommand\mdpihdashlinewidth[1]{%
+  \noalign{\hbox to #1{\xleaders\hbox{%
+    \rule{\mdpidashlinedash}{\arrayrulewidth}\kern\mdpidashlinegap}\hfill}}}
+\def\mdpihdashlinefrom{%
+  \noalign{\ifnum0=`}\fi
+  \@ifnextchar[\mdpi@hdashlinefrom@opt\mdpi@hdashlinefrom@plain}
+\def\mdpi@hdashlinefrom@opt[#1]#2#3#4{%
+  \hbox{%
+    {\color[#1]{#4}\vrule height\arrayrulewidth width #2\relax}%
+    \hbox to #3{\xleaders\hbox{%
+      \rule{\mdpidashlinedash}{\arrayrulewidth}\kern\mdpidashlinegap}\hfill}%
+  }%
+  \ifnum0=`{\fi}}
+\def\mdpi@hdashlinefrom@plain#1#2#3{%
+  \hbox{%
+    {\color{#3}\vrule height\arrayrulewidth width #1\relax}%
+    \hbox to #2{\xleaders\hbox{%
+      \rule{\mdpidashlinedash}{\arrayrulewidth}\kern\mdpidashlinegap}\hfill}%
+  }%
+  \ifnum0=`{\fi}}
+\def\mdpicline{%
+  \noalign{\ifnum0=`}\fi
+  \@ifnextchar[\mdpi@cline@opt{%
+    \@ifnextchar\bgroup\mdpi@cline@cols\mdpi@cline@full}}
+\def\mdpi@cline@full{%
+  {\CT@arc@\hrule\@height\arrayrulewidth}%
+  \ifnum0=`{\fi}}
+\def\mdpi@cline@opt[#1]#2#3{%
+  \gdef\mdpi@hdash@model{#1}%
+  \gdef\mdpi@hdash@color{#2}%
+  \ifnum0=`{\fi}%
+  \mdpi@cline@do#3\@nil}
+\def\mdpi@cline@cols#1{%
+  \gdef\mdpi@hdash@model{}%
+  \gdef\mdpi@hdash@color{}%
+  \ifnum0=`{\fi}%
+  \mdpi@cline@do#1\@nil}
+\def\mdpi@cline@do#1-#2\@nil{%
+  \omit
+  \mdpi@omitprefix{1}{#1}%
+  \@multicnt#2%
+  \advance\@multicnt-#1%
+  \advance\@multispan\@ne
+  {\CT@arc@\leaders\hrule\@height\arrayrulewidth\hfill}%
+  \cr
+}
 
 % After TeXLive 2021, \AddToHook{begindocument} is needed to make sure that hyperref is loaded last. \ifdef{\AddToHook{begindocument}}{ is needed for backwards-compatibility because \AddToHook{begindocument} did not yet exist in 2020.
 % After TeXLive 2022, \AddToHook{begindocument/before}{} is needed and  \DeclareHookRule{begindocument}{hyperref}{before}{mdpi} needs to be added because of the new version of hyperref.
@@ -573,6 +743,28 @@
       number=\textsuperscript{\makebox[6mm][l]{#1}},
 	notes-sep=0pt
 }
+\newcounter{mdpi@endnotecount}
+\ifdef{\AddToHook}{%
+  \AddToHook{cmd/endnote/before}{\stepcounter{mdpi@endnotecount}}%
+  \AddToHook{cmd/endnotemark/before}{\stepcounter{mdpi@endnotecount}}%
+}{%
+  \AtBeginDocument{%
+    \let\mdpi@orig@endnote\endnote
+    \def\endnote{\stepcounter{mdpi@endnotecount}\mdpi@orig@endnote}%
+    \ifcsname endnotemark\endcsname
+      \let\mdpi@orig@endnotemark\endnotemark
+      \def\endnotemark{\stepcounter{mdpi@endnotecount}\mdpi@orig@endnotemark}%
+    \fi
+  }%
+}
+\newcommand{\MDPIprintendnotes}{%
+  \ifnum\value{mdpi@endnotecount}=1
+    \setenotez{list-name=Note}%
+  \else
+    \setenotez{list-name=Notes}%
+  \fi
+  \printendnotes[custom]%
+}
 
 %%%% Footnotes, for journal Laws
 \RequirePackage{scrextend}
@@ -618,37 +810,37 @@
 
 % DOI number
 % Create command to add a leading zero if 1 digit
-\newcommand\twodigits[1]{%
-	\ifnum#1<10 %
-		0\number#1
-   	\else
-		\number#1
-	\fi
+\newcommand\mdpi@mintwodigits[1]{%
+  \ifnum#1<10 %
+    0\number#1
+     \else
+    \number#1
+  \fi
 }
 
 % Create command to add a leading zero if less then 5 digits
-\newcommand\fivedigits[1]{%
-	\ifnum#1<10 %
-		000\number#1
-	\else
-		\ifnum#1<100 %
-			00\number#1
-		\else
-			\ifnum#1<1000 %
-				0\number#1
-			\else
-				\ifnum#1<10000 %
-					\number#1
-				\else
-					\ifnum#1<100000 %
-						\number#1
-					\else
-						error
-					\fi
-				\fi
-			\fi
-		\fi
-	\fi
+\newcommand\mdpi@minfourdigits[1]{%
+  \ifnum#1<10 %
+    000\number#1
+  \else
+    \ifnum#1<100 %
+      00\number#1
+    \else
+      \ifnum#1<1000 %
+        0\number#1
+      \else
+        \ifnum#1<10000 %
+          \number#1
+        \else
+          \ifnum#1<100000 %
+            \number#1
+          \else
+            error
+          \fi
+        \fi
+      \fi
+    \fi
+  \fi
 }
 
 \ifthenelse{\equal{\@journal}{molbank}
@@ -663,7 +855,7 @@
 	}{
 	\doinum{10.3390/\@articlenumber}
 	}{
-	\doinum{10.3390/\@doiabbr\@pubvolume\twodigits\@issuenum\fivedigits\@articlenumber}
+	\doinum{10.3390/\@doiabbr\@pubvolume\mdpi@mintwodigits\@issuenum\mdpi@minfourdigits\@articlenumber}
 }
 
 % For \@pubvolume, \@issuenum, and \@articlenumber: create command to cut leading zeros
@@ -720,7 +912,7 @@
 \def\@datasetlicense{}
 \newcommand{\datasetlicense}[1]{\gdef\@datasetlicense{#1}}
 \def\@featuredapplication{}
-\newcommand{\featuredapplication}[1]{\gdef\@featuredapplication{#1}}
+\long\def\featuredapplication#1{\long\gdef\@featuredapplication{#1}}
 \def\@keycontribution{}
 \newcommand{\keycontribution}[1]{\gdef\@keycontribution{#1}}
 \def\@issuenum{0}
@@ -767,6 +959,43 @@
 \newcommand{\encyclopediadef}[1]{\gdef\@encyclopediadef{#1}}
 \def\@addhighlights{}
 \newcommand{\addhighlights}[1]{\gdef\@addhighlights{#1}}
+\let\mdpi@addhighlights@cmd\addhighlights
+%% \addhighlights{body} (incl. \minisec). Legacy: {yes}+\renewcommand.
+\newcommand{\mdpi@print@highlights}{%
+  \ifx\@addhighlights\@empty
+  \else
+    \ifx\addhighlights\mdpi@addhighlights@cmd
+      \par\noindent\textbf{Highlights}\par
+      \nobreak
+      \vspace{8pt}%
+      \everypar{{\setbox\z@\lastbox}\everypar{}}%
+      \@addhighlights
+    \else
+      \noindent\textbf{Highlights\vspace{-6pt}\\}%
+      \addhighlights
+    \fi
+    \par
+    \@nobreakfalse
+    \vspace{12pt}%
+  \fi
+}
+\newcommand\minisec[1]{%
+  \if@noskipsec \leavevmode \fi
+  \par
+  \vspace{3pt}%
+  \@afterindentfalse
+  \if@nobreak
+    \everypar{}%
+  \else
+    \addpenalty\@secpenalty
+  \fi
+  {\parindent \z@
+   \setlength{\parfillskip}{\z@ plus 1fil}%
+    \raggedright\normalfont\bfseries\nobreak
+    \nobreak\interlinepenalty \@M \leavevmode #1\par\nobreak
+  }\nobreak
+  \@afterheading
+}
 \def\@CorrStatement{}
 \newcommand{\CorrStatement}[1]{\gdef\@CorrStatement{#1}}
 \newcommand{\textcorrstatement}{\textbf{Correction Statement:} This article has been republished with a minor change. The change does not affect the scientific content of the article and further details are available within the backmatter of the website version of this article.}
@@ -982,124 +1211,111 @@
 
 % Definite font size for the narrow column
 \newcommand{\leftcolFont}{%
-	\linespread{1.71} 
-	\fontsize{7}{7}\selectfont
-	\justify
+	\fontsize{7pt}{12pt}\selectfont
+	\baselineskip=12pt
+	\raggedright
+	\parindent=0pt
+	\parskip=2pt
 	\hyphenpenalty=10000
 	\tolerance=1000
 }
 
-% Split content into six parts
-
 % Part 1: Update logo
-\newcommand{\leftcolumnUpdatelogo}{
-	\leftcolFont
-	\ifthenelse{\equal{\@status}{submit}}{
-		}{%
-		\href{https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\twodigits{\the\month}-\twodigits{\the\day}}{\includegraphics[height=.6cm]{Definitions/logo-updates.eps}}
-	\vspace{-18pt}\\
-		}%
-}
+\newcommand{\leftcolumnUpdatelogo}
+ {%
+   \ifthenelse
+     {\equal{\@status}{submit}}
+     {}
+     {%
+       \href
+         {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\mdpi@mintwodigits{\the\month}-\mdpi@mintwodigits{\the\day}}
+         {\includegraphics[height=.6cm]{Definitions/logo-updates}}%
+     }%
+ }
 
 %% Part 2: Academic editor(s)
-\newcommand{\leftcolExternalEditor}{
-	\ifthenelse{\equal{\@externaleditor}{\@empty}}{%
-		}{%
-		\leftcolFont
-		\raggedright            
-            \IfSubStr{\@externaleditor}{ and }{Academic Editors: \@externaleditor}{{\fontdimen2\font=1.4pt Academic Editor: \@externaleditor}}
-            %\@externaleditor % For urgent situation, you can release this command and comment out line 953
-	      \vspace{-4pt}	
-	}
-}
+\ExplSyntaxOn
+\newcommand{\leftcolExternalEditor}
+  {
+    \tl_if_empty:NF\@externaleditor
+    {
+       \tl_if_in:NnTF \@externaleditor{~and~}
+         {Academic~Editors:~\@externaleditor}
+         {Academic~Editor:~\@externaleditor}
+       %\@externaleditor % For urgent situation, you can release this command and comment out the three lines before
+     }%
+  }
+\ExplSyntaxOff
 
 % Part 3: Dates
-\newcommand{\leftcolDates}{
-\isPreprints{%
-	}{%
-	\leftcolFont
-	\ifthenelse{\equal{\@journal}{proceedings}
-		\OR \equal{\@journal}{chemproc}
-		\OR \equal{\@journal}{engproc}
-		\OR \equal{\@journal}{eesp}
-		\OR \equal{\@journal}{materproc}
-		\OR \equal{\@journal}{blsf}
-		\OR \equal{\@journal}{msf}
-		\OR \equal{\@journal}{psf}
-		\OR \equal{\@journal}{csmf}}{%
-			Published: \@datepublished\\\vspace{-16pt}
-			}{%
-			Received: \@datereceived\\
-			\ifthenelse{\equal{\@daterevised}{\@empty}}{%
-				}{%
-				Revised: \@daterevised\\%
-				}
-			Accepted: \@dateaccepted\\
-			Published: \@datepublished
-			\ifthenelse{\equal{\@datecorrected}{\@empty}}{%
-				}{%
-			\newline Corrected: \@datecorrected
-			}
-			\ifthenelse{\equal{\@dateretracted}{\@empty}}{%
-				}{%
-			\newline Retracted: \@dateretracted
-			}\vspace{-4pt}
-		}
-	}
+\newcommand\mdpi@datesblock@short{Published: \@datepublished}
+\newcommand\mdpi@datesblock@long
+ {%
+  Received: \@datereceived\\
+         \ifthenelse
+          {\equal{\@daterevised}{\@empty}}
+          {}
+          {Revised: \@daterevised\\}%
+          Accepted: \@dateaccepted\\
+          Published: \@datepublished
+         \ifthenelse
+          {\equal{\@datecorrected}{\@empty}}
+          {}
+          {\\ Corrected: \@datecorrected}%
+        \ifthenelse
+          {\equal{\@dateretracted}{\@empty}}
+          {}
+          {\\ Retracted: \@dateretracted}%
+ }
+
+\newcommand{\leftcolDates}{%
+	\isPreprints{}{\csname mdpi@datesblock@\@journaldatesblock\endcsname}%
 }
 
 % Part 4: Correction statement
-\newcommand{\leftcolumnCorrstatement}{%
-\isPreprints{}{%
-	\ifthenelse{\equal{\@CorrStatement}{yes}}{%
-		\leftcolFont%
-	        \raggedright
-		\textcorrstatement%
-             \vspace{-2pt}
-		}{%
-             \vspace{-2pt}
-             }
-	}
-}
+\newcommand{\leftcolumnCorrstatement}
+ {%
+   \isPreprints
+    {}
+    {%
+      \ifthenelse
+        {\equal{\@CorrStatement}{yes}}
+        {\textcorrstatement}
+        {}%
+    }%
+ }
 
 % Part 5: Copyright
-\newcommand{\leftcolumnCright}{
-\isPreprints{}{%
-	\leftcolFont
-	\raggedright
-	\cright
-     }
+\newcommand{\leftcolumnCright}{%
+	\isPreprints{}{\cright}%
 }
 
 % Content of the left column. The marginnote with this content will be placed it at the very top of the first page to have a fixed reference point
-\newcommand{\contentleftcolumn}{%
-       \ifthenelse{\equal{\@arttype}{Supfile} 
-       \OR \equal{\@journal}{preprints} 
-       \OR \equal{\@journal}{preprintschicago}
-       \OR \equal{\@journal}{preprintsapa}
-              }{
-          }{%
-	\ifthenelse{\equal{\@status}{submit}}{%
-		}{\leftcolumnUpdatelogo}             %1
-      \leftcolExternalEditor                            %2
-	\leftcolDates		                                 %3
-	\leftcolumnCorrstatement 			 %4
-	\leftcolumnCright 		                    %5
-            }
+\newcommand{\contentleftcolumn}
+  {%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}%     % %1
+        \leftcolExternalEditor\par        % %2
+        \leftcolDates\par                 % %3
+        \leftcolumnCorrstatement\par      % %4
+        \leftcolumnCright\par             % %5
+     }
 }
 
-% Placing on the left column
 \newlength{\MyLen} % For length of the left column content
 \newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
 
-\newcommand{\calculateMyLen}{ % The calculation needs to be done after begin document, therefore this command is executed at \AtBeginDocument
-	\savebox{\MyBox}{ % All this savebox and parbox is apparently needed to measure the length (= height) of the text
-		\parbox[l]{\leftcolumnlength}{ %This is the width of the left column, defined above at "Dimensions" and "Layout"
-			\contentleftcolumn
-		}
-	}
-	\settototalheight{\MyLen}{\usebox{\MyBox}} % Use the length (= height) of the box to assign this value to \MyLen (this can be queried in .tex by \the\MyLen)
-	\setlength{\MyLen}{\textheight-\MyLen-12pt} % Change \MyLen to be \textheight minus \MyLen so that the resulting value can be used to alig the left column to the bottom of \textheight. Then substract 12pt to make the bottom alignment
+\newcommand{\calculateMyLen}{%
+	\savebox{\MyBox}{%
+		\parbox{\leftcolumnlength}{\contentleftcolumn}%
+	}%
+	\setlength{\MyLen}{\dimexpr\textheight-\dp\MyBox-\ht\MyBox-1.1pt\relax}%
 }
 
 % Left column split options for long titles/author lists
@@ -1108,33 +1324,66 @@
 \newcommand{\leftcolumnsplit}[1]{\gdef\@leftcolumnsplit{#1}}
 
 % Split option 1	
-\newcommand{\OptionOneA}{
-	\leftcolExternalEditor %1
-	\leftcolDates\vspace{-2pt} %2
+\newcommand{\OptionOneA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+        \leftcolExternalEditor\par% 2
+        \leftcolDates% 3
+      }%
 }
-		
-\newcommand{\OptionOneB}{
-	\leftcolumnCright %3
+
+\newcommand{\OptionOneB}{%
+        \leftcolFont
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
 % Split option 2	
-\newcommand{\OptionTwoA}{
-	\leftcolExternalEditor\vspace{-10pt} %1
+\newcommand{\OptionTwoA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+        \leftcolExternalEditor% 2
+      }%
 }
 
-\newcommand{\OptionTwoB}{
-	\leftcolDates\vspace{-2pt} %2
-	\vspace{6pt}\leftcolumnCright %3
+\newcommand{\OptionTwoB}{%
+        \leftcolFont
+	\leftcolDates\par% 3
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
 % Split option 3
-\newcommand{\OptionThreeA}{
+\newcommand{\OptionThreeA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+      }%
 }
 
-\newcommand{\OptionThreeB}{
-	\leftcolExternalEditor %1
-	\leftcolDates\vspace{-2pt} %2
-	\vspace{6pt}\leftcolumnCright %3
+\newcommand{\OptionThreeB}{%
+        \leftcolFont
+	\leftcolExternalEditor\par% 2
+	\leftcolDates\par% 3
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
 %%%% Maketitle part 2
@@ -1231,90 +1480,74 @@
 }
 
 %%%% Abstract, keywords, journal data, PACS, MSC, JEL
+\ExplSyntaxOn
+\newcommand{\mdpi@abstractnotes@displayaux}[4]
+ {
+  \tl_if_empty:NF#4
+   {
+    \noindent\textbf{#1\vspace{#2}\\}#3
+    \vspace{12pt}
+    \par
+   }
+ }
+\newcommand{\mdpi@abstractnotes@runin}[2]
+ {
+  \tl_if_empty:NF#2
+   {
+    \noindent\textbf{#1:\space}#2
+    \vspace{12pt}
+    \par
+   }
+ }
+\ExplSyntaxOff
+%% 2-arg (Lua): {title}{content}. 3-arg (legacy): {title}{6pt}{content}.
+\newcommand{\mdpi@abstractnotes@display}[2]{%
+  \@ifnextchar\bgroup
+    {\mdpi@abstractnotes@display@iii{#1}{#2}}%
+    {\mdpi@abstractnotes@display@ii{#1}{#2}}%
+}
+\newcommand{\mdpi@abstractnotes@display@iii}[3]{%
+  \mdpi@abstractnotes@displayaux{#1}{#2}{#3}{#3}%
+}
+\newcommand{\mdpi@abstractnotes@display@ii}[2]{%
+  \def\mdpi@absnotes@title{#1}%
+  \def\mdpi@absnotes@hlt{Highlights}%
+  \ifx\mdpi@absnotes@title\mdpi@absnotes@hlt
+    \mdpi@print@highlights
+  \else
+    \mdpi@abstractnotes@displayaux{#1}{6pt}{#2}{#2}%
+  \fi
+}
+
 \newcommand{\abstractkeywords}{
 \isMonograph{}{\vspace{-8pt}
-% For journal Applied Sciences:
-\ifthenelse{\equal{\@featuredapplication}{\@empty}}{
-	}{%
-	\noindent\textbf{Featured Application\vspace{6pt}\\}\@featuredapplication
+	\mdpi@abstractnotes@display{Highlights}{\@addhighlights}
+	\mdpi@abstractnotes@display{Featured Application}{6pt}{\@featuredapplication}
+	\mdpi@abstractnotes@display{Simple Summary}{6pt}{\@simplesumm}
+	\mdpi@abstractnotes@display{Abstract}{6pt}{\@abstract}
+	\mdpi@abstractnotes@display{Definition}{6pt}{\@encyclopediadef}
+	\mdpi@abstractnotes@runin{Dataset}{\@dataset}
+	\mdpi@abstractnotes@runin{Dataset License}{\@datasetlicense}
+	\mdpi@abstractnotes@runin{Keywords}{\@keyword}
+	\mdpi@abstractnotes@runin{Key Contribution}{\@keycontribution}
+	\mdpi@abstractnotes@runin{PACS}{\@pacs}
+	\mdpi@abstractnotes@runin{MSC}{\@msc}
+	\mdpi@abstractnotes@runin{JEL Classification}{\@jel}
+	\vspace{4pt}
+	\isBookContribution{}{\hrule}
 	\vspace{12pt}
-	\par
-}
-%6
-\ifthenelse{\equal{\@addhighlights}{\@empty}}{}{
-	\noindent\textbf{Highlights\vspace{-6pt}\\}\addhighlights % redefined in .tex to use itemize
-	\vspace{12pt}
-	\par
-}
-\ifthenelse{\equal{\@simplesumm}{\@empty}}{}{
-	\noindent\textbf{Simple Summary\vspace{6pt}\\}\@simplesumm
-	\vspace{12pt}
-	\par
-}
-\ifthenelse{\equal{\@abstract}{\@empty}}{}{
-	\noindent\textbf{Abstract\vspace{6pt}\\}\@abstract
-	\vspace{12pt}
-	\par
-}
-\ifthenelse{\equal{\@encyclopediadef}{\@empty}}{}{
-	\noindent\textbf{Definition\vspace{6pt}\\}\@encyclopediadef
-	\vspace{12pt}
-	\par
-}
-%7
-% For journal Data:
-\ifthenelse{\equal{\@dataset}{\@empty}}{}{
-	\noindent\textbf{Dataset:\space}\@dataset
-	\vspace{12pt}
-	\par
-}
-%For journal Data:
-\ifthenelse{\equal{\@datasetlicense}{\@empty}}{}{
-	\noindent\textbf{Dataset License:\space}\@datasetlicense
-	\vspace{12pt}
-	\par
-}
-%8
-\ifthenelse{\equal{\@keyword}{\@empty}}{}{
-	\noindent\textbf{Keywords:\space}\@keyword
-	\vspace{12pt}
-	\par
-}
-%9
-%For journal Toxins:
-\ifthenelse{\equal{\@keycontribution}{\@empty}}{}{
-	\noindent\textbf{Key Contribution:\space}\@keycontribution
-	\vspace{12pt}
-	\par
-}
-%10
-\ifthenelse{\equal{\@pacs}{\@empty}}{}{
-	\noindent\textbf{PACS:\space}\@pacs
-	\vspace{12pt}
-	\par
-}
-%11
-\ifthenelse{\equal{\@msc}{\@empty}}{}{
-	\noindent\textbf{MSC:\space}\@msc
-	\vspace{12pt}
-	\par
-}
-%12
-\ifthenelse{\equal{\@jel}{\@empty}}{}{
-	\noindent\textbf{JEL Classification:\space}\@jel
-	\vspace{12pt}
-	\par
-}
-%13
-\vspace{4pt}
-\isBookContribution{}{\hrule}
-\vspace{12pt}
-\normalsize
+	\normalsize
 }
 } % For Monograph, remove front part
 
 %%%% Print maketitle and abstractkeywords
-\AddToHook{begindocument/end}{\calculateMyLen}
+\ifdefined\IfFormatAtLeastTF
+	\IfFormatAtLeastTF{2022-06-01}
+		{\AddToHook{begindocument/end}{\calculateMyLen}}
+		{\AtBeginDocument{\calculateMyLen}}
+\else
+	\AtBeginDocument{\calculateMyLen}
+\fi
 \ifthenelse{\equal{\@arttype}{Supfile}}{
 	\AfterEndPreamble{
 		\maketitle
@@ -1447,13 +1680,39 @@
 \newcommand{\specialsection}[2]{%
 \vspace{12pt}\noindent{\selectfont\textbf{#1}\par\vspace{6pt}\noindent {\fontsize{9}{9}\selectfont #2}\par}}
 
-% Command for author's biography
-\newcommand{\bio}[2]{%
-\noindent{#1}\hspace{1.1cm}\noindent {\fontsize{9}{11.2}\selectfont \pbox[b]{13.86cm}{#2}}\par\vspace{6pt}}
+% Author biography: \bio[foto]{Firstname Lastname}{text}
+% Name is required (bold). No-photo: no first-line indent.
+\NewDocumentCommand{\bio}{O{} m +m}{%
+  \par\vspace{6pt}%
+  \if\relax\detokenize{#1}\relax
+    {\fontsize{9}{11.2}\selectfont
+     \noindent \textbf{#2}~#3\par}%
+  \else
+    \noindent
+    \begin{minipage}[t]{3.5cm}%
+      \vspace{0pt}%
+      \includegraphics[width=3.5cm,height=5.3cm,keepaspectratio,clip]{#1}%
+    \end{minipage}%
+    \hspace{1.1cm}%
+    \begin{minipage}[t]{\dimexpr\linewidth-3.5cm-1.1cm\relax}%
+      \vspace{0pt}%
+      \fontsize{9}{11.2}\selectfont \textbf{#2}~#3
+    \end{minipage}%
+    \par
+  \fi
+  \vspace{6pt}%
+}
 
-% List of contribution
-\newcommand{\listofcontribution}[2]{\vspace{6pt}\noindent{\fontsize{9}{11.2}\selectfont\textbf{#1}}{%
-\par\vspace{-12pt}\hspace{-0.85cm}{\fontsize{9}{11.2}\selectfont #2}\par}}
+% List of contributions: \listofcontributions{text} or \listofcontributions[title]{text}.
+\NewDocumentCommand{\listofcontributions}{O{List of Contributions} +m}{%
+  \par\vspace{6pt}%
+  \begingroup
+  \fontsize{9}{11.2}\selectfont
+  \noindent\textbf{#1}\par#2%
+  \unskip\par
+  \endgroup
+}
+\let\listofcontribution\listofcontributions
 
 % Use for special paragraph requirement in back matter
 \newcommand{\backnotes}[2]{%
@@ -1520,6 +1779,10 @@
 \setcounter{notation}{0}
 \setcounter{algorithm}{0}
 \setcounter{graph}{0}
+\setcounter{listing}{0}
+\ifcsname c@lstlisting\endcsname
+  \setcounter{lstlisting}{0}%
+\fi
 \crefalias{section}{appendix}%
 \crefalias{subsection}{appendix}%
 \crefalias{subsubsection}{appendix}%
@@ -1568,6 +1831,16 @@
 \renewcommand{\thenotation}{A\arabic{notation}}
 \renewcommand{\thealgorithm}{A\arabic{algorithm}}
 \renewcommand{\thegraph}{A\arabic{graph}}
+\renewcommand{\thelisting}{A\arabic{listing}}
+\ifcsname theHlisting\endcsname
+  \renewcommand{\theHlisting}{A\arabic{listing}}%
+\fi
+\ifcsname thelstlisting\endcsname
+  \renewcommand{\thelstlisting}{\thelisting}%
+\fi
+\ifcsname theHlstlisting\endcsname
+  \renewcommand{\theHlstlisting}{\theHlisting}%
+\fi
 }
 
 %%%% Dimensions
@@ -1615,6 +1888,12 @@
 				includefoot]{geometry}
       }
 }
+
+%% Preprints have no left column: keep \begin{adjustwidth}{-\extralength} and \tabularx{\fulllength}.
+\isPreprints{%
+	\setlength{\extralength}{0pt}%
+	\setlength{\fulllength}{\textwidth}%
+}{}
 
 \isPreprints{}{%
 \fancyheadoffset[L]{\extralength} % Header into the margin
@@ -1665,6 +1944,26 @@
 \DeclareFloatingEnvironment[]{chart}
 \DeclareFloatingEnvironment[]{scheme}
 \DeclareFloatingEnvironment[]{graph}
+\newcommand{\mdpi@alias@lstlisting}{%
+  \ifcsname c@lstlisting\endcsname
+    \let\c@lstlisting\c@listing
+    \renewcommand{\thelstlisting}{\thelisting}%
+    \ifcsname listingname\endcsname
+      \let\lstlistingname\listingname
+    \fi
+    \ifcsname theHlisting\endcsname
+      \@namedef{theHlstlisting}{\theHlisting}%
+    \fi
+    \ifcsname crefalias\endcsname
+      \crefalias{lstlisting}{listing}%
+    \fi
+  \fi
+}
+\ifdef{\AddToHook}{%
+  \AddToHook{begindocument/end}[mdpi/listings]{\mdpi@alias@lstlisting}%
+}{%
+  \AfterEndPreamble{\mdpi@alias@lstlisting}%
+}
 
 \RequirePackage{caption}
 \isPreprints{%
@@ -1673,6 +1972,8 @@
 \captionsetup[scheme]{position=bottom,	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
 
 \captionsetup[listing]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
+
+\captionsetup[lstlisting]{position=top, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=on, justification=justified}
 
 \captionsetup[chart]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
 
@@ -1688,6 +1989,8 @@
 
 \captionsetup[listing]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
 
+\captionsetup[lstlisting]{position=top, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
+
 \captionsetup[chart]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
 
 \captionsetup[table]{position=top, 		labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, singlelinecheck=off, justification=justified}
@@ -1697,10 +2000,55 @@
 \captionsetup[graph]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
 }
 
-%% Non-floating figure block with long caption (\captionof{figure}{...}).
-%% TL2026 + \DocumentMetadata: use float tagging sockets (PDF/UA-2).
-%% TL2023 / no tagging: \UseTaggingSocket may be undefined -- skip safely.
-\newcommand{\mdpi@tagsocket}[1]{\ifdefined\UseTaggingSocket\UseTaggingSocket{#1}\fi}
+%% Consecutive [H] / longfigurecaption: collapse to 12pt.
+\newif\ifmdpi@floatskip
+\newcommand{\mdpi@floatskip@before}{%
+  \par
+  \@nobreakfalse
+  \ifmdpi@floatskip
+    \global\mdpi@floatskipfalse
+  \else
+    \addvspace{12pt}%
+  \fi
+}
+\newcommand{\mdpi@floatskip@after}{%
+  \par
+  \@nobreakfalse
+  \addvspace{12pt}%
+  \nointerlineskip
+  \global\mdpi@floatskiptrue
+}
+\ifdef{\AddToHook}{%
+  \AddToHook{para/begin}{\global\mdpi@floatskipfalse}%
+}{}
+
+%% Non-floating figure block with a long caption (\captionof{figure}{...}).
+%% caption.sty already provides \captionof. Bind the image to the caption
+%% skip (caption.sty may \let\@makecaption, so patch \caption@aboveskip).
+\newif\ifmdpi@lfc
+\renewcommand*\caption@aboveskip{%
+  \ifmdpi@lfc
+    \par
+    \nopagebreak
+  \fi
+  \vskip\abovecaptionskip
+}
+\NewDocumentEnvironment{longfigurecaption}{}
+ {%
+  \mdpi@floatskip@before
+  \nopagebreak
+  \begingroup
+  \mdpi@lfctrue
+  \parindent\z@
+  \def\@captype{figure}
+  \captionsetup{belowskip=0pt,parbox=none}%
+  \ignorespaces
+ }
+ {%
+  \par
+  \endgroup
+  \mdpi@floatskip@after
+ }
 
 %% For table footnotes
 \newsavebox{\@justcentbox}
@@ -1708,6 +2056,37 @@
 \sbox \@justcentbox{#1}
 \ifdim \wd \@justcentbox >\hsize #1
 \else \centerline{#1} \fi
+}
+%% Journal: always justified in the narrow column (same as table captions),
+%% even inside adjustwidth. Preprints: one line centered, wrapped justified,
+%% width = \textwidth (same as the table body).
+\newsavebox{\mdpi@tablefooter@box}
+\newcommand{\mdpi@tablefooter@journal}[1]{%
+  \parfillskip=\z@ plus 1fil
+  \ifdim\linewidth>\textwidth
+    \parshape 1 \dimexpr\linewidth-\textwidth\relax\textwidth
+  \fi
+  \noindent #1\par
+  \parshape 0
+}
+\newcommand{\mdpi@tablefooter@preprint}[1]{%
+  \sbox{\mdpi@tablefooter@box}{#1}%
+  \ifdim\wd\mdpi@tablefooter@box>\textwidth
+    \parfillskip=\z@ plus 1fil
+    \noindent #1\par
+  \else
+    \noindent\hb@xt@\textwidth{\hfil #1\hfil}\par
+  \fi
+}
+\NewDocumentCommand{\tablefooter}{+m}{%
+  \par
+  \begingroup
+    \parindent\z@
+    \footnotesize
+    \isPreprints
+      {\mdpi@tablefooter@preprint{#1}}
+      {\mdpi@tablefooter@journal{#1}}%
+  \endgroup
 }
 
 %% For text alignment in tables
@@ -1896,7 +2275,6 @@
         \ifthenelse{\equal{\@arttype}{Supfile}}{%
 		}{%
 		\ifthenelse{\equal{\@status}{submit}}{%
-		\fontdimen2\font=1.2pt
 			\raggedright\textbf{Copyright: }\copyright{} {\@ \the\year} by the \@authornum. %
 			Submitted to {\em\journalname} for possible open access publication under the terms and %
                    conditions of the %

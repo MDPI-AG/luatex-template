@@ -1,18 +1,12 @@
-% !TEX TS-program = pdfLaTeX
 %  LaTeX support: latex@mdpi.com 
 %  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
 %=================================================================
-
-
-\documentclass[acoustics,article,accept,moreauthors]{mdpi} 
-%\documentclass[preprints,article,submit,moreauthors]{mdpi-luatex} 
+\documentclass[acoustics,article,accept,moreauthors]{Definitions/mdpi} 
+%\documentclass[journal,article,submit,moreauthors,unicode]{Definitions/mdpi} % For some letters Palatino lacks
+%\documentclass[preprints,article,submit,moreauthors]{Definitions/mdpi} 
+%\documentclass[preprints,article,submit,moreauthors,unicode]{Definitions/mdpi} 
 % For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
-
-% Below journals will use APA reference format:
-% admsci, aieduc, behavsci, businesses, econometrics, economies, education, ejihpe, famsci, games, humans, ijcs, ijfs, investment, fclam, jintelligence, journalmedia, jrfm, jsam, languages, opermanag, peacestud, pmh, psycholint, publications, tourismhosp, youth
-
-% Below journals will use Chicago reference format:
-% arts, genealogy, histories, humanities, laws, literature, religions, risks, socsci
 
 %--------------------
 % Class Options:
@@ -21,13 +15,22 @@
 % journal
 %----------
 % Choose between the following MDPI journals:
-% accountaudit, acn, acoustics, actuators, addictions, addictprev, adhesives, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, aichem, aieng, aimater, aimed, aipa, air, aisens, aisoc, algorithms, allergies, alloys, amh, analog, analytica, analytics, anatomia, anesthres, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, appliedphys, applmech, applmicrobiol, applnano, applsci, aps, aquacj, archaeolstud, architecture, arm, arthropoda, asc, asi, astronautics, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, bioresourbioprod, biosensors, biosphere, biotech, birds, blockchains, bloods, blsf, brainsci, breath, buildings, cancers, carbon, cardio, cardiogenetics, cardiovascmed, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinbioenerg, clinpract, clockssleep, cmd, cmtr, coasts, coatings, colloids, colorants, commodities, complexities, complications, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryo, cryptography, crystals, csmf, ctn, culture, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, dhi, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, drugreact, drylands, dynamics, earth, ebj, ecm, ecologies, edm, eesp, electricity, electrochem, electronicmat, electronics, embodiedintell, encyclopedia, endocrines, energies, eng, engproc, entomology, entropy, environments, environremediat, epidemiologia, epigenomes, esa, est, fermentation, fibers, fintech, fire, fishes, fluids, foodeng, foods, forecasting, forensicsci, forests, fossstud, foundations, fractalfract, freshwater, fuels, future, futureinternet, futurepharmacol, futurephys, futuretransp, galaxies, gases, gastroent, gastrointestdisord, gastronomy, gels, genes, geochem, geographies, geohazards, geomatics, geometry, geosciences, geotechnics, geriatrics, germs, glacies, grainsci, grasses, green, greenhealth, gucdd, gynecolcancer, hardware, hazardousmatters, healthcare, healthcmater, hearts, hemato, hematolrep, hep, heritage, higheredu, highthroughput, horticulturae, hospitals, hydrobiology, hydrogen, hydrology, hydrometeorology, hydropower, hygiene, idr, iic, ijem, ijerph, ijgi, ijmd, ijms, ijns, ijom, ijp, ijpb, ijt, ijtm, ijtpp, ijtst, ime, immuno, industries, inflammj, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jaestheticmed, jal, japma, jcdd, jcm, jcp, jcrm, jcs, jcto, jdad, jdb, jdream, jemr, jeta, jfb, jfmk, jfth, jgbg, jgg, jimaging, jlpea, jmahp, jmmp, jmms, jmp, jmse, jne, jnt, jof, joi, joitmc, joma, jop, joptm, jor, jox, jpbi, jphytomed, jpm, jsan, jtaer, jvd, jzbg, kidneydial, kinasesphosphatases, knowledge, labmed, laboratories, lam, land, lasers, legumes, life, lights, limnolrev, lipidology, liquids, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, maritime, materials, materproc, mathematics, mca, mcb, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrics, metrology, micro, microarrays, microbiolres, microelectronics, micromachines, microorganisms, microplastics, microwave, minerals, mining, mmphys, modelling, molbank, molecules, mollusca, mps, msf, mti, multimedia, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neuroimaging, neurolint, neurosci, nitrogen, notspecified, nursrep, nutraceuticals, nutrients, obesities, occuphealth, oceans, ohbm, onco, optics, oral, organics, organoids, osteology, oxygen, pandemics, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pets, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, phc, philosophies, photochem, photonics, photovoltaics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, populations, poultry, powders, precision, precisoncol, preprints, proceedings, processes, prosthesis, proteomes, psf, psychiatryint, psychoactives, purification, quantumrep, quaternary, qubs, radiation, rareearths, rdt, reactions, realestate, receptors, recycling, regeneration, remotesensing, reports, reprodmed, resources, rheumato, rjpm, robotics, rsee, ruminants, safety, sanpp, sca, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, shi, signals, sinusitis, siuj, skins, smartcities, smartfish, sna, societies, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stratsediment, stresses, strokerep, superintelligence, surfaces, surgeries, suschem, sustainability, sustainfoods, sustainpackag, symmetry, synbio, systems, tae, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, therapeutics, thermo, timespace, tomography, toxics, toxins, tph, transplantology, transportation, traumacare, traumas, tri, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, welding, wem, wevj, wild, wind, women, world, zoonoticdis
+
+% Below journals will use APA reference format:
+% admsci, aieduc, behavsci, businesses, catalogs, commodities, econometrics, economies, education, ejihpe, famsci, fclam, games, humans, ijcs, ijfs, investment, jintelligence, joi, journalmedia, jrfm, jsam, languages, opermanag, peacestud, pmh, psycholint, publications, sbf, sciedu, tourismhosp, xmanagement, youth
+
+% Below journals will use Chicago reference format:
+% arts, genealogy, govpol, histories, humanities, laws, literature, religions, risks, socsci
+
+% Below journals will use ACS reference format:
+% aam, aamr, aapm, acbr, accountaudit, acn, acoustics, actuators, addictions, addictprev, adhesives, adolescents, aee, aep, aerobiology, aeronautics, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, aiaerosp, aiagents, aibiol, aichem, aieng, aimater, aimed, aipa, air, aisens, aisoc, aiua, algorithms, allergies, alloys, amh, analog, analytica, analytics, anatomia, anesthres, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, appliedphys, applmech, applmicrobiol, applnano, applsci, aps, aquacj, archaeolstud, architecture, arm, arthropoda, asc, asd, asi, astronautics, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bcrc, bdcc, beverages, bioactives, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, bioresourbioprod, biosensors, biosphere, biotech, birds, blockchains, bloods, blsf, brainsci, breath, bse, buildings, cancers, carbon, cardio, cardiogenetics, cardiovascmed, catalysts, cdr, cells, ceramics, challenges, chemeco, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinbioenerg, clinpract, clockssleep, cmd, cmtr, coasts, coatings, colloids, colorants, complexities, complications, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryo, cryptography, crystals, csmf, ctn, culture, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, dgg, dhi, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, drugreact, drylandsci, dynamics, earth, ebj, ece, ecm, eco-environsci, ecologies, edm, eesp, electricity, electrochem, electronicmat, electronics, embodiedintell, encyclopedia, endocrines, energies, eng, engproc, entomology, entropy, environments, environremediat, enzymology, epidemiologia, epigenomes, epilepsy, esa, est, fermentation, fibers, fintech, fire, fishes, fluids, foodeng, foods, forecasting, forensicsci, forests, fossstud, foundations, fractalfract, freshwater, fuels, future, futureinternet, futurepharmacol, futurephys, futuretransp, galaxies, gases, gastroent, gastrointestdisord, gastronomy, gels, genes, geochem, geographies, geohazards, geomatics, geometry, geosciences, geotechnics, geriatrics, germs, glacies, grainsci, grasses, green, greenhealth, gucdd, gynecolcancer, hardware, hazardousmatters, healthcare, healthcmater, hearts, hemato, hematolrep, hep, heritage, higheredu, highthroughput, hls, horticulturae, hospitals, humanoids, hydrobiology, hydrogen, hydrology, hydrometeorology, hydropower, hygiene, idhm, idr, iic, ijem, ijerph, ijgi, ijmd, ijms, ijns, ijom, ijp, ijpb, ijt, ijtm, ijtpp, ijtst, ime, immuno, industries, inflammj, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, iron, j, jaestheticmed, jal, japma, jcdd, jcm, jcp, jcrm, jcs, jcto, jdad, jdb, jdcp, jdream, jemr, jeta, jfb, jfmk, jfth, jgbg, jgg, jimaging, jissn, jlpea, jmahp, jmmp, jmms, jmp, jmse, jne, jnt, jof, joitmc, joma, jop, joptm, jor, jox, jpbi, jphytomed, jpm, jsan, jtaer, jvd, jzbg, kidneydial, kinasesphosphatases, knowledge, labmed, laboratories, lam, land, langtechnol, lasers, legumes, life, lights, limnolrev, lipidology, liquids, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, maritime, materials, materproc, mathematics, mca, mcb, measurements, meb, medicina, medicines, medsci, membranes, merits, metabolites, metals, metamaterialsadv, meteorology, methane, metrics, metrology, micro, microarrays, microbiolres, microchem, microelectronics, micromachines, microorganisms, microplastics, microwave, minerals, mining, mmphys, modelling, molbank, molecules, mollusca, mps, msf, mti, multimedia, muscles, musculoskeletsci, mutation, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neuroimaging, neurolint, neurosci, nitrogen, numbertheory, nursrep, nutraceuticals, nutrients, obesities, occuphealth, oceans, ohbm, onco, optics, optoelectronics, oral, organics, organoids, osteology, oxygen, pandemics, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pets, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, phc, philosophies, photochem, photonics, photovoltaics, phycology, physchem, physics, physiologia, pjm, plants, plasma, platforms, pnr, pollutants, polymers, polysaccharides, populations, poultry, powders, ppi, precision, precisoncol, prevhealthc, proceedings, processes, prosthesis, proteomes, psf, psychiatryint, psychoactives, purification, quantumrep, quaternary, qubs, radiation, rareearths, rdt, reactions, realestate, receptors, recycling, regeneration, remotesensing, reports, reprodmed, resources, rheumato, rjpm, robotics, rsee, ruminants, safety, sanpp, sca, sci, scipharm, sclerosis, seeds, sensors, senssyst, separations, sexes, sgf, shi, signals, sinusitis, siuj, skins, smartcities, smartfish, smartgrids, sna, societies, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, sti, stomatology, stratsediment, stresses, strokerep, superintelligence, surfaces, surgeries, susagric, suschem, susenvmgmt, sustainability, sustainfoods, sustainpackag, symmetry, synbio, systems, tae, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, therapeutics, thermo, timespace, tomography, totalenviron, toxics, toxins, tph, transplantology, transportation, traumacare, traumas, treeres, tri, tropicalmed, universe, urbansci, uro, vaccines, vehicles, veinslymphat, venereology, vetsci, vibration, virtualworlds, viruses, vision, vsd, waste, water, welding, wem, wetlres, wevj, wild, wind, winestud, women, world, xscience, zoonoticdis, zoos
 
 %---------
 % article
 %---------
 % The default type of manuscript is "article", but can be replaced by: 
-% abstract, addendum, article, benchmark, book, bookreview, briefcommunication, briefreport, casereport, changes, clinicopathologicalchallenge, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, creative, datadescriptor, discussion, entry, expressionofconcern, extendedabstract, editorial, essay, erratum, fieldguide, hypothesis, interestingimages, letter, meetingreport, monograph, newbookreceived, obituary, opinion, proceedingpaper, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, supfile, systematicreview, technicalnote, viewpoint, guidelines, registeredreport, tutorial,  giantsinurology, urologyaroundtheworld
+% abstract, addendum, article, benchmark, book, bookreview, briefcommunication, briefreport, casereport, changes, clinicopathologicalchallenge, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, creative, datadescriptor, discussion, entry, expressionofconcern, extendedabstract, editorial, essay, erratum, fieldguide, hypothesis, interestingimages, letter, meetingreport, monograph, newbookreceived, obituary, opinion, proceedingpaper, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, supfile, systematicreview, technicalnote, viewpoint, guidelines, registeredreport, tutorial, giantsinurology, urologyaroundtheworld, patentsummary
+
 % supfile = supplementary materials
 
 %----------
@@ -116,49 +119,47 @@
 \keyword{keyword 1; keyword 2; keyword 3 (List three to ten pertinent keywords specific to the article; yet reasonably common within the subject discipline.)} 
 
 % The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
-\PACS{J0101}
-\MSC{}
-\JEL{}
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Only for the journal Diversity
-\LSID{\url{http://}}
+%\LSID{\url{http://}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Only for the journal Applied Sciences
-\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Only for the journal Data
-\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this paper, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
+%\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this paper, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
 %\datasetlicense{License under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Only for the journal BioTech, Fishes, Neuroimaging and Toxins
-\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Only for the journal Encyclopedia
-\encyclopediadef{For entry manuscripts only: please provide a brief overview of the entry title instead of an abstract.}
+%\encyclopediadef{For entry manuscripts only: please provide a brief overview of the entry title instead of an abstract.}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Different journals have different requirements. Please check the specific journal guidelines in the "Instructions for Authors" on the journal's official website.
-\addhighlights{yes}
-\renewcommand{\addhighlights}{%
-
-\noindent The goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
-\textbf{What are the main findings?}
- \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
- \item First bullet.
- \item Second bullet.
- \end{itemize}\vspace{3pt}
-\textbf{What are the implications of the main findings?}
- \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
- \item First bullet.
- \item Second bullet.
- \end{itemize}
-}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Different journals have different requirements. Please check the specific journal guidelines in the "Instructions for Authors" on the journal's official website.
+%\addhighlights{%
+%This is an optional section, the goal of which is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple overview allowing the reader to quickly and simply find out what the article is about and what can be cited from it. Each of these parts should be up to 2~bullet points.
+%\minisec{What are the main findings?}
+% \begin{itemize}[nosep]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%\minisec{What are the implications of the main findings?}
+% \begin{itemize}[nosep]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -221,8 +222,7 @@ The text continues here.
 All figures and tables should be cited in the main text as Figure~\ref{fig1}, Table~\ref{tab1}, etc.
 
 \begin{figure}[H]
-%\isPreprints{\centering}{} % Only used for preprints
-\includegraphics[width=8.0 cm]{logo-mdpi}
+\includegraphics[width=8.0 cm]{Definitions/logo-mdpi}
 \caption{This is a figure. Schemes follow the same formatting.\label{fig1}}
 \end{figure}   
 \unskip
@@ -230,7 +230,6 @@ All figures and tables should be cited in the main text as Figure~\ref{fig1}, Ta
 \begin{table}[H] 
 %\small % Change table font size
 \caption{This is a table caption. Tables should be placed in the main text near the first time they are~cited.\label{tab1}}
-%\isPreprints{\centering}{} % Only used for preprints
 \begin{tabularx}{\textwidth}{CCC}
 \toprule
 \textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
@@ -239,38 +238,29 @@ Entry 1		& Data			& Data\\
 Entry 2		& Data			& Data \textsuperscript{1}\\
 \bottomrule
 \end{tabularx}
-
-\noindent{\small{\textsuperscript{1} Tables may have a footer.}}
+\tablefooter{\textsuperscript{1} Tables may have a footer.}
 \end{table}
 
 The text continues here (Figure~\ref{fig2} and Table~\ref{tab2}).
 
 % Example of a figure that spans the whole page width and with subfigures. The same concept works for tables, too.
 \begin{figure}[H]
-%\isPreprints{}{% This command is only used for ``preprints''.
 \begin{adjustwidth}{-\extralength}{0cm}
 \centering
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-\subfloat[\centering]{\includegraphics[width=7.0cm]{logo-mdpi}}
+\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
 %\hfill
-\subfloat[\centering]{\includegraphics[width=7.0cm]{logo-mdpi}}\\
-\subfloat[\centering]{\includegraphics[width=7.0cm]{logo-mdpi}}
+\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}\\
+\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
 %\hfill
-\subfloat[\centering]{\includegraphics[width=7.0cm]{logo-mdpi}}
-%\isPreprints{}{% This command is only used for ``preprints''.
+\subfloat[\centering]{\includegraphics[width=7.0cm]{Definitions/logo-mdpi}}
 \end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
 \caption{This is a wide figure. Schemes follow the same formatting. If there are multiple panels, they should be listed as follows: (\textbf{a}) Description of what is contained in the first panel. (\textbf{b}) Description of what is contained in the second panel. (\textbf{c}) Description of what is contained in the third panel. (\textbf{d})~Description of what is contained in the fourth panel. Figures should be placed in the main text near the first time they are cited.\label{fig2}}
 \end{figure} 
 
 \begin{table}[H]
 \caption{This is a wide table. Tables should be placed in the main text near the first time they are~cited.\label{tab2}}
-%\isPreprints{\centering}{% This command is only used for ``preprints''.
 	\begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%\isPreprints{\begin{tabularx}{\textwidth}{CCCC}}{% This command is only used for ``preprints''.
 		\begin{tabularx}{\fulllength}{CCCC}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
 			\toprule
 			\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}     & \textbf{Title 4}\\
 			\midrule
@@ -283,10 +273,8 @@ The text continues here (Figure~\ref{fig2} and Table~\ref{tab2}).
 			             	     & Data			& Data			& Data\\
 			\bottomrule
 		\end{tabularx}
-%		\isPreprints{}{% This command is only used for ``preprints''.
 	\end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-	\noindent{\small{* Tables may have a footer.}}
+\tablefooter{* Tables may have a footer.}
 \end{table}
 
 %\begin{listing}[H]
@@ -309,22 +297,17 @@ a = 1,
 the text following an equation need not be a new paragraph if it continues a sentence. Please punctuate equations as regular text.
 
 This is example 2 of an equation:
-%\isPreprints{}{% This command is only used for ``preprints''.
 \begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
 \begin{equation}
 a = b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z
 \end{equation}
-%\isPreprints{}{% This command is only used for ``preprints''.
 \end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
 
 If the text following an equation starts a new sentence, it should be a new paragraph. Please punctuate equations as regular text.
 
 %% Example of a page in landscape format (with table and table footnote).
 %\startlandscape
 %\begin{table}[H] %% Table in wide page
-%%\isPreprints{\centering}{} % This command is only used for ``preprints''.
 %\caption{This is a very wide table.\label{tab3}}
 %	\begin{tabularx}{\textwidth}{CCCC}
 %		\toprule
@@ -334,13 +317,9 @@ If the text following an equation starts a new sentence, it should be a new para
 %		Entry 2		& Data			& Data			& Data\textsuperscript{1}\\
 %		\bottomrule
 %	\end{tabularx}
-%%\isPreprints{}{% This command is only used for ``preprints''.
 %	\begin{adjustwidth}{+\extralength}{0cm}
-%%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%		\noindent\small{\textsuperscript{1} This is a table footnote.}
-%%\isPreprints{}{% This command is only used for ``preprints''.
+%     \tablefooter{\textsuperscript{1} This is a table footnote.}
 %	\end{adjustwidth}
-%%} % If the paper is ``preprints'', please uncomment this parenthesis.
 %\end{table}
 %\finishlandscape
 
@@ -379,30 +358,30 @@ This section is not mandatory but may be added if there are patents resulting fr
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% optional
-\supplementary{The following supporting information can be downloaded at \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
+%\supplementary{The following supporting information can be downloaded at \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
 
 % Only for journal Methods and Protocols:
 % If you wish to submit a video article, please do so with any other supplementary material.
- \supplementary{The following supporting information can be downloaded at \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
+% \supplementary{The following supporting information can be downloaded at \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
 
 % Only used for preprtints:
- \supplementary{The following supporting information can be downloaded at the website of this paper posted on \href{https://www.preprints.org/}{Preprints.org}.}
+% \supplementary{The following supporting information can be downloaded at the website of this paper posted on \href{https://www.preprints.org/}{Preprints.org}.}
 
 % Only for journal Hardware:
 % If you wish to submit a video article, please do so with any other supplementary material.
- \supplementary{The following supporting information can be downloaded at \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.\vspace{6pt}\\
-\begin{tabularx}{\textwidth}{lll}
-\toprule
-\textbf{Name} & \textbf{Type} & \textbf{Description} \\
-\midrule
-S1 & Python script (.py) & Script of python source code used in XX \\
-S2 & Text (.txt) & Script of modelling code used to make Figure X \\
-S3 & Text (.txt) & Raw data from experiment X \\
-S4 & Video (.mp4) & Video demonstrating the hardware in use \\
-... & ... & ... \\
-\bottomrule
-\end{tabularx}
-}
+% \supplementary{The following supporting information can be downloaded at \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.\vspace{6pt}\\
+%\begin{tabularx}{\textwidth}{lll}
+%\toprule
+%\textbf{Name} & \textbf{Type} & \textbf{Description} \\
+%\midrule
+%S1 & Python script (.py) & Script of python source code used in XX \\
+%S2 & Text (.txt) & Script of modelling code used to make Figure X \\
+%S3 & Text (.txt) & Raw data from experiment X \\
+%S4 & Video (.mp4) & Video demonstrating the hardware in use \\
+%... & ... & ... \\
+%\bottomrule
+%\end{tabularx}
+%}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \authorcontributions{For research articles with several authors, a short paragraph specifying their individual contributions must be provided. The following statements should be used ``Conceptualization, X.X. and Y.Y.; methodology, X.X.; software, X.X.; validation, X.X., Y.Y. and Z.Z.; formal analysis, X.X.; investigation, X.X.; resources, X.X.; data curation, X.X.; writing---original draft preparation, X.X.; writing---review and editing, X.X.; visualization, X.X.; supervision, X.X.; project administration, X.X.; funding acquisition, Y.Y. All authors have read and agreed to the published version of the manuscript.'', please turn to the  \href{http://img.mdpi.org/data/contributor-role-instruction.pdf}{CRediT taxonomy} for the term explanation. Authorship must be limited to those who have contributed substantially to the work~reported.}
@@ -452,7 +431,6 @@ LD      & Linear dichroism
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Optional
-\appendixtitles{no} % Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A"). If the appendix sections contain a heading then change the argument to "yes".
 \appendixstart
 \appendix
 \section[\appendixname~\thesection]{}
@@ -478,10 +456,8 @@ Entry 2		& Data			& Data\\
 All appendix sections must be cited in the main text. In the appendices, figures, tables, etc., should be labeled starting with “A”, e.g., Figure A1, Figure A2, etc.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\isPreprints{}{% This command is only used for ``preprints''.
 \begin{adjustwidth}{-\extralength}{0cm}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
-%\printendnotes[custom] % Un-comment to print a list of endnotes
+%\MDPIprintendnotes % Un-comment to print endnotes (heading: Note / Notes by count)
 
 \reftitle{References}
 
@@ -498,7 +474,7 @@ All appendix sections must be cited in the main text. In the appendices, figures
 %=====================================
 
 % ACS format
-%\isAPAandChicago{}{%
+\isAPAandChicago{}{%
 \begin{thebibliography}{999}
 % Reference 1
 \bibitem[Author1(year)]{ref-journal}
@@ -522,7 +498,7 @@ Author 1, A.B.; Author 2, C.D.; Author 3, E.F. Title of presentation. In Proceed
 \bibitem[Author9(year)]{ref-thesis}
 Author 1, A.B. Title of Thesis. Level of Thesis, Degree-Granting University, Location of University, Date of Completion.
 \end{thebibliography}
-%}
+}
 
 % Chicago format (Used for journal: arts, genealogy, histories, humanities, laws, literature, religions, risks, socsci)
 \isChicagoStyle{%
@@ -582,13 +558,8 @@ Harwood, J. (2008). \textit{Title of the cited article}. Available online: URL (
 
 % If authors have biography, please use the format below
 %\section*{Short Biography of Authors}
-%\bio
-%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{author1.pdf}}}
-%{\textbf{Firstname Lastname} Biography of first author}
-%
-%\bio
-%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{author2.jpg}}}
-%{\textbf{Firstname Lastname} Biography of second author}
+%\bio[example-image]{Firstname Lastname}{Biography of first author with a photo.}
+%\bio{Firstname Lastname}{Biography of second author without a photo.}
 
 % For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
 % To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
@@ -603,8 +574,6 @@ Harwood, J. (2008). \textit{Title of the cited article}. Available online: URL (
 %}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \PublishersNote{}
-%\isPreprints{}{% This command is only used for ``preprints''.
 \end{adjustwidth}
-%} % If the paper is ``preprints'', please uncomment this parenthesis.
 \end{document}
 
