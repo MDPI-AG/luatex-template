@@ -608,6 +608,7 @@
 \AddToHook{env/algorithmic/begin}
  {\EditInstance{item}{basic}{label-align=right,label-format=\mdpi@ALC@labelformat{#1}}}
 %    \end{macrocode}
+%
 % \subsection{Fontsizes}
 % The following font size are inherited from article
 % \begin{tabular}{lll}
@@ -1121,6 +1122,15 @@
 %    \begin{macrocode}
 \setenotez{backref=true}
 \isBookContribution{}{\setenotez{totoc=section}}
+\EditInstance{enotez-list}{plain}
+ {
+   format   =\small\leftskip0.76cm,
+   number   =\textsuperscript{\makebox[6mm][l]{#1}},
+   notes-sep=0pt
+ }
+%    \end{macrocode}
+% Kept for compatibility for documents still using `\printendnotes
+%    \begin{macrocode}
 \DeclareInstance{enotez-list}{custom}{paragraph}
  {
    format   =\small\leftskip0.76cm,
@@ -1129,6 +1139,7 @@
  }
 
 %    \end{macrocode}
+%
 % \subsection{Footnotes}
 % Only journal Laws uses \cs{footnote}.
 % Increase space between line and footnote
@@ -1148,6 +1159,43 @@
   {}{\fail}
 \let\@makefntext\footmisc@hang@makefntext
 %    \end{macrocode}
+%
+% \subsection{Table and author notes}
+% The internal mark command. We use an optional argument to be able to suppress 
+% the \cs{textsuperscript}.
+%    \begin{macrocode}
+\NewDocumentCommand\mdpi@fmark{sO{\textsuperscript}m}
+ {
+  \leavevmode
+  \protected@xdef\@thefnmark{mdpi/#3} % set the name
+  \int_gincr:N\g_fnote_id_int          % set the id
+  \IfBooleanTF{#1}
+   {%without link
+     \UseTaggingSocket{fnmark}{}{#2{#3}}
+   }  
+   {%with link
+     \UseTaggingSocket{fnmark}{}{\UseSocket{fnmark/link}{#2{#3}}}
+   }
+ }
+
+\NewDocumentCommand\mdpi@fnote{O{\textsuperscript}m+m}
+ {
+  \leavevmode
+  \protected@xdef\@thefnmark{mdpi/#2} %set the name
+  \int_gincr:N\g_fnote_id_int          %unique id 
+  \UseTaggingSocket{fntext/begin}
+  \socket_use:n{fntext/mark/link} % set the anchor
+  \UseTaggingSocket{fntext/mark}{}{#1{#2}}
+  \UseTaggingSocket{fntext/text}{}{#3}
+  \UseTaggingSocket{fntext/end}
+ }
+%    \end{macrocode}
+% Commands for table notes
+%    \begin{macrocode}
+\NewCommandCopy\tmark\mdpi@fmark
+\NewCommandCopy\tnote\mdpi@fnote
+%    \end{macrocode}
+%
 % \subsection{Widows and penalities}
 % Widows \& orphans are prohibited
 %    \begin{macrocode}
@@ -1501,6 +1549,7 @@
 % The \cs{@maketitle} command for the other cases.
 % For journals and preprints we have logos, article type and narrow column
 %    \begin{macrocode}
+\tl_new:N\g__mdpi_struct_title_tl
 \newcommand{\mdpi@maketitle}
   {  
 %    \end{macrocode}
@@ -1518,11 +1567,14 @@
      {
        \begin{adjustwidth}{-\mdpi@len@marginpar}{}
      }
-   \begin{flushleft}[tagging-suppress-paras=true,
-     tagging-recipe=standalone,
+   \UseTaggingSocket{struct/begin}{tag=title-block,firstkid}  
+   \tl_gset:Ne\g__mdpi_struct_title_tl{\tag_get:n{struct_num}}
+   \begin{flushleft}[
+     tagging-suppress-paras=true,
+     tagging-recipe=noop,
      tag-name=\UseStructureName{title/block},
      tag-attr-class=aria-banner]
-    \vspace*{-1.75cm}
+     \vspace*{-1.75cm}
      {%0
       \isPreprints
         {}
@@ -1549,39 +1601,33 @@
       \par
       \vspace{12pt}
      }%2
-    \ifthenelse
-     {\equal{\@longauthorlist}{\@empty}}
-     {}
-     {
-      \end{flushleft}%
-      \isPreprints
-        {}
-        {\end{adjustwidth}}
-      \vspace{-2.5pt}
-     }
+     \tl_if_empty:NF \@longauthorlist
+      {
+       \end{flushleft}
+       \UseTaggingSocket{struct/end}
+       \isPreprints
+         {}
+         {\end{adjustwidth}}
+       \vspace{-2.5pt}
+      }
      {%3
       \hyphenpenalty=10000
       \tolerance=1000
       \boldmath\bfseries
-      {\AssignStructureRole{para/textblock}{title-author}\@Author}
+      \AssignStructureRole{para/textblock}{title-author}\@Author
       \par
       \vspace{12pt}
      }%3
-  \ifthenelse
-    {\equal{\@longauthorlist}{\@empty}}
-    {\end{flushleft}
-     \isPreprints
-            {}
-            {\end{adjustwidth}}
-    }
-    {}%
-  \ifthenelse
-    {\equal{\@leftcolumnsplit}{\@empty}}
-    {% Left column split
-    }
-    {
-      \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
-    }
+     \tl_if_empty:NT \@longauthorlist     
+      {
+        \end{flushleft}
+        \UseTaggingSocket{struct/end}
+        \isPreprints
+          {}
+          {\end{adjustwidth}}
+      }     
+     \tl_if_empty:NF \@leftcolumnsplit
+      {\marginnote[\contentleftcolumn]{}}% Alignment with the affiliations
  }
 \ExplSyntaxOff
 
@@ -1657,7 +1703,7 @@
 %
 % A command for the font setup in this column:
 % \begin{macro}{\leftcolFont}
-% We increase the \cs{baselineskip} to 12pt and the \cs{parskip} to 6pt.
+% We increase the \cs{baselineskip} to 12pt and the \cs{parskip} to 3pt.
 %    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
@@ -1676,15 +1722,14 @@
 % \subsubsection{Part 1: Update the logo}%
 % \begin{macro}{\leftcolumnUpdatelogo}
 %    \begin{macrocode}
+\ExplSyntaxOn
 \newcommand{\leftcolumnUpdatelogo}
- {%
-   \ifthenelse
-     {\equal{\@status}{submit}}
-     {}
+ {
+   \tl_if_eq:NnF\@status{submit}
      {%
-       \href
+       \hrefurl
          {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\mdpi@mintwodigits{\the\month}-\mdpi@mintwodigits{\the\day}}
-         {\includegraphics[height=.6cm,actualtext=Check for updates]{Definitions/logo-updates}}%
+         {\includegraphics[height=.6cm,actualtext=Check~for~updates]{Definitions/logo-updates}}%
      }%
  }
 %    \end{macrocode}
@@ -1693,7 +1738,6 @@
 % \subsubsection{Part 2: Academic editor(s)}
 % \begin{macro}{\leftcolExternalEditor}
 %    \begin{macrocode}
-\ExplSyntaxOn
 \newcommand{\leftcolExternalEditor}
   {
     \tl_if_empty:NF\@externaleditor
@@ -1913,7 +1957,8 @@
   \isBookContribution
    {\vspace{12pt}}
    {
-     \begin{flushleft}
+     \UseTaggingSocket{struct/begin}{tag=\UseStructureName{para/semantic},parent=\g__mdpi_struct_title_tl}
+     \begin{flushleft}[tagging-recipe=noop]
      \hyphenpenalty=10000
      \tolerance=1000
      \footnotesize
@@ -1971,6 +2016,7 @@
      \tl_if_empty:NF\@LSID{\par\vskip12pt \@LSID \par}
      \end{flushleft}
      \par
+     \UseTaggingSocket{struct/end}
    }
  }
 %    \end{macrocode}
