@@ -1430,6 +1430,21 @@
  }
 %    \end{macrocode}
 %
+%\subsubsection{Tagging support}
+%    \begin{macrocode}
+\NewTaggingSocketPlug{title}{mdpi}
+ {
+   \par
+   \group_begin:
+     \tagpdfparaOff
+     \tag_struct_begin:n{tag=\UseStructureName{title/text},attribute-class=raggedright}
+     \tagmcbegin{}#2\tagmcend
+     \tag_struct_end:
+     \par
+   \group_end:
+ }        
+\AssignTaggingSocketPlug{title}{mdpi} 
+%    \end{macrocode}
 %\subsubsection{\cs{@maketitle}}
 %
 % Some variants have a different title format depending on \cs{@arttype}:
