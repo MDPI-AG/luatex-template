@@ -23,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-11-08}
+\def\mdpidate{2026-11-09}
 \def\mdpiversion{v6.5e}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
@@ -1331,7 +1331,7 @@
          {\rule{0pt}{0.6cm}\par}
          {\leftcolumnUpdatelogo\par}% 1
         \leftcolExternalEditor\par% 2
-        \leftcolDates\vspace{-2pt}% 3
+        \leftcolDates% 3
       }%
 }
 
@@ -1351,15 +1351,15 @@
          {\equal{\@status}{submit}}
          {\rule{0pt}{0.6cm}\par}
          {\leftcolumnUpdatelogo\par}% 1
-        \leftcolExternalEditor\vspace{-10pt}% 2
+        \leftcolExternalEditor% 2
       }%
 }
 
 \newcommand{\OptionTwoB}{%
         \leftcolFont
-	\leftcolDates\par\vspace{-2pt}% 3
+	\leftcolDates\par% 3
 	\leftcolumnCorrstatement\par% 4
-	\vspace{6pt}\leftcolumnCright% 5
+	\leftcolumnCright% 5
 }
 
 % Split option 3
@@ -1378,9 +1378,9 @@
 \newcommand{\OptionThreeB}{%
         \leftcolFont
 	\leftcolExternalEditor\par% 2
-	\leftcolDates\par\vspace{-2pt}% 3
+	\leftcolDates\par% 3
 	\leftcolumnCorrstatement\par% 4
-	\vspace{6pt}\leftcolumnCright% 5
+	\leftcolumnCright% 5
 }
 
 %%%% Maketitle part 2
