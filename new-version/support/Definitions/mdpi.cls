@@ -965,7 +965,10 @@
   \ifx\@addhighlights\@empty
   \else
     \ifx\addhighlights\mdpi@addhighlights@cmd
-      \noindent\textbf{Highlights\vspace{8pt}\\}%
+      \par\noindent\textbf{Highlights}\par
+      \nobreak
+      \vspace{8pt}%
+      \everypar{{\setbox\z@\lastbox}\everypar{}}%
       \@addhighlights
     \else
       \noindent\textbf{Highlights\vspace{-6pt}\\}%
