@@ -1836,33 +1836,68 @@
 \newcommand{\leftcolumnsplit}[1]{\gdef\@leftcolumnsplit{#1}}
 
 % Split option 1
-\newcommand{\OptionOneA}{
-  \leftcolExternalEditor %1
-  \leftcolDates\vspace{-2pt} %2
+\newcommand{\OptionOneA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+        \leftcolExternalEditor\par% 2
+        \leftcolDates% 3
+      }%
 }
 
-\newcommand{\OptionOneB}{
-  \leftcolumnCright %3
+\newcommand{\OptionOneB}{%
+  \leftcolFont
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
-% Split option 2
-\newcommand{\OptionTwoA}{
-  \leftcolExternalEditor\vspace{-10pt} %1
+% Split option 2	
+\newcommand{\OptionTwoA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+        \leftcolExternalEditor% 2
+      }%
 }
 
-\newcommand{\OptionTwoB}{
-  \leftcolDates\vspace{-2pt} %2
-  \vspace{6pt}\leftcolumnCright %3
+
+\newcommand{\OptionTwoB}{%
+  \leftcolFont
+	\leftcolDates\par% 3
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
 % Split option 3
-\newcommand{\OptionThreeA}{
+\newcommand{\OptionThreeA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \ifthenelse
+         {\equal{\@status}{submit}}
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+      }%
 }
 
-\newcommand{\OptionThreeB}{
-  \leftcolExternalEditor %1
-  \leftcolDates\vspace{-2pt} %2
-  \vspace{6pt}\leftcolumnCright %3
+
+\newcommand{\OptionThreeB}{%
+        \leftcolFont
+	\leftcolExternalEditor\par% 2
+	\leftcolDates\par% 3
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
 %    \end{macrocode}
