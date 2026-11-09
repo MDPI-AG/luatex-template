@@ -86,9 +86,11 @@ TEST 1: Show PDF Tags
      </text-block>
     </semantic-para>
    </Aside>
-   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+   <title-block xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.023"
-      rolemaps-to="Part"
+      xmlns:ARIA-1.1="http://iso.org/pdf/ssn/ARIA-1.1"
+      ARIA-1.1:role="banner"
+      rolemaps-to="Div"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.024"
@@ -125,23 +127,23 @@ TEST 1: Show PDF Tags
       >
      <?MarkedContent page="1" ?>Article
     </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+    <title-text xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.029"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
-       rolemaps-to="P"
+       rolemaps-to="Title"
       >
      <?MarkedContent page="1" ?>TITLE
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+    </title-text>
+    <title-author xmlns="https://www.latex-project.org/ns/dflt"
        id="ID.030"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>AUTHOR
-    </text-block>
-   </semantic-para>
+    </title-author>
+   </title-block>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.031"
       rolemaps-to="Part"
@@ -887,8 +889,6 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/b/n/18 T
 .....\TU/tg-pagella/b/n/18 I
 .....\discretionary (penalty 10000)
