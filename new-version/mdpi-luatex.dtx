@@ -2260,9 +2260,18 @@
 % We set up a dedicated headformat instance. 
 % Starting with 2026-11-01 we use a display headformat to 
 % get rid of the hanging indent.
+% In 2027-06-01 we have to set the left-margin to get
+% an indentation in a adjustwidth environment.
 %    \begin{macrocode}
-\DeclareInstance    {headformat}{mdpi/std}{display}
-  {heading-indent = 0pt,separator-b=\ ,}
+\IfFormatAtLeastTF{2027-06-01}
+ {
+   \DeclareInstance    {headformat}{mdpi/std}{display}
+     {heading-indent = 0pt,separator-b=\ , left-margin=\@totalleftmargin }
+ }
+ {
+   \DeclareInstance    {headformat}{mdpi/std}{display}
+     {heading-indent = 0pt,separator-b=\ ,}
+ }      
 \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
