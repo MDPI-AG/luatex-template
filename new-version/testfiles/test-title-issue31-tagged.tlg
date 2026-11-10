@@ -9,95 +9,6 @@ TEST 1: Show PDF Tags
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.0002"
     >
-   <Aside xmlns="http://iso.org/pdf2/ssn"
-      id="ID.0011"
-     >
-    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0012"
-       rolemaps-to="Part"
-      >
-     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0013"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="End"
-        rolemaps-to="P"
-       >
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0014"
-        >
-       <?MarkedContent page="1" ?>
-       <Span xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0015"
-          actualtext="Check for updates"
-         >
-        <?MarkedContent page="1" ?>
-       </Span>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
-     </text-block>
-    </semantic-para>
-    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0016"
-       rolemaps-to="Part"
-      >
-     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0017"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="Start"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>Received:
-     </text-block>
-    </semantic-para>
-    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0018"
-       rolemaps-to="Part"
-      >
-     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0019"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="Start"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>Accepted:
-     </text-block>
-    </semantic-para>
-    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0020"
-       rolemaps-to="Part"
-      >
-     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0021"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="Start"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>Published:
-     </text-block>
-    </semantic-para>
-    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0022"
-       rolemaps-to="Part"
-      >
-     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0023"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextAlign="Start"
-        rolemaps-to="P"
-       >
-      <?MarkedContent page="1" ?>Copyright: © 0000 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the 
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0024"
-        >
-       <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
-       <?ReferencedObject type="Annot" page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
-      <?MarkedContent page="1" ?>.
-     </text-block>
-    </semantic-para>
-   </Aside>
    <title-block xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0025"
       xmlns:ARIA-1.1="http://iso.org/pdf/ssn/ARIA-1.1"
@@ -208,508 +119,597 @@ TEST 1: Show PDF Tags
      </text-fragment>
      <?MarkedContent page="1" ?>*
     </title-author>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.0040"
+       rolemaps-to="Part"
+      >
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0041"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0042"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
+        >
+       <?MarkedContent page="1" ?>1 
+      </text-fragment>
+      <?MarkedContent page="1" ?>Affiliation 1; e-mail@e-mail.com
+     </text-block>
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0043"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
+       >
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0044"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
+        >
+       <?MarkedContent page="1" ?>2 
+      </text-fragment>
+      <?MarkedContent page="1" ?>Affiliation 2; e-mail@e-mail.com
+     </text-block>
+     <itemize xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0045"
+        xmlns:List="http://iso.org/pdf/ssn/List"
+        List:ListNumbering="Unordered"
+        rolemaps-to="L"
+       >
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0046"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0047"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>*
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0048"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0049"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0050"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0051"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0052"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0053"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>†
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0054"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0055"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0056"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>This paper is an extended version of our paper published in Conference.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0057"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0058"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0059"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>‡
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0060"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0061"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0062"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>First note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0063"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0064"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0065"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>§
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0066"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0067"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0068"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Second note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0069"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0070"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0071"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>‖
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0072"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0073"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0074"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Third note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0075"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0076"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0077"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>¶
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0078"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0079"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0080"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Fourth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0081"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0082"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>**
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0083"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0084"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0085"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Fifth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0086"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0087"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0088"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>††
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0089"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0090"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0091"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Sixth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0092"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0093"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0094"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>‡‡
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0095"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0096"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0097"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Seventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0098"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0099"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0100"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>§§
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0101"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0102"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0103"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Eighth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0104"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0105"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0106"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>‖‖
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0107"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0108"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0109"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Nineth noteLorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0110"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0111"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>
+        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0112"
+           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+           Layout:TextPosition="Sup"
+           rolemaps-to="Span"
+          >
+         <?MarkedContent page="1" ?>¶¶
+        </text-fragment>
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0113"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0114"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0115"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Tenth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+      <item xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0116"
+         rolemaps-to="LI"
+        >
+       <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0117"
+          rolemaps-to="Lbl"
+         >
+        <?MarkedContent page="1" ?>***
+       </itemlabel>
+       <itembody xmlns="https://www.latex-project.org/ns/dflt"
+          id="ID.0118"
+          rolemaps-to="LBody"
+         >
+        <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+           id="ID.0119"
+           rolemaps-to="Part"
+          >
+         <text-block xmlns="https://www.latex-project.org/ns/dflt"
+            id="ID.0120"
+            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+            Layout:TextAlign="Start"
+            rolemaps-to="P"
+           >
+          <?MarkedContent page="1" ?>Eleventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
+         </text-block>
+        </semantic-para>
+       </itembody>
+      </item>
+     </itemize>
+    </semantic-para>
    </title-block>
-   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.0040"
-      rolemaps-to="Part"
+   <Aside xmlns="http://iso.org/pdf2/ssn"
+      id="ID.0011"
      >
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0041"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.0012"
+       rolemaps-to="Part"
       >
-     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0042"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0013"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextPosition="Sup"
-        rolemaps-to="Span"
+        Layout:TextAlign="End"
+        rolemaps-to="P"
        >
-      <?MarkedContent page="1" ?>1 
-     </text-fragment>
-     <?MarkedContent page="1" ?>Affiliation 1; e-mail@e-mail.com
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0043"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
+      <Link xmlns="http://iso.org/pdf2/ssn"
+         id="ID.0014"
+        >
+       <?MarkedContent page="1" ?>
+       <Span xmlns="http://iso.org/pdf2/ssn"
+          id="ID.0015"
+          actualtext="Check for updates"
+         >
+        <?MarkedContent page="1" ?>
+       </Span>
+       <?MarkedContent page="1" ?>
+       <?ReferencedObject type="Annot" page="1" ?>
+      </Link>
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.0016"
+       rolemaps-to="Part"
       >
-     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0044"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0017"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextPosition="Sup"
-        rolemaps-to="Span"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
        >
-      <?MarkedContent page="1" ?>2 
-     </text-fragment>
-     <?MarkedContent page="1" ?>Affiliation 2; e-mail@e-mail.com
-    </text-block>
-    <itemize xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0045"
-       xmlns:List="http://iso.org/pdf/ssn/List"
-       List:ListNumbering="Unordered"
-       rolemaps-to="L"
+      <?MarkedContent page="1" ?>Received:
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.0018"
+       rolemaps-to="Part"
       >
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0046"
-        rolemaps-to="LI"
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0019"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
        >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0047"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>*
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0048"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0049"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0050"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0051"
-        rolemaps-to="LI"
+      <?MarkedContent page="1" ?>Accepted:
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.0020"
+       rolemaps-to="Part"
+      >
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0021"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
        >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0052"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0053"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>†
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0054"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0055"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0056"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>This paper is an extended version of our paper published in Conference.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0057"
-        rolemaps-to="LI"
+      <?MarkedContent page="1" ?>Published:
+     </text-block>
+    </semantic-para>
+    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.0022"
+       rolemaps-to="Part"
+      >
+     <text-block xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0023"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="P"
        >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0058"
-         rolemaps-to="Lbl"
+      <?MarkedContent page="1" ?>Copyright: © 0000 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the 
+      <Link xmlns="http://iso.org/pdf2/ssn"
+         id="ID.0024"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0059"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>‡
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0060"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0061"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0062"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>First note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0063"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0064"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0065"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>§
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0066"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0067"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0068"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Second note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0069"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0070"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0071"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>‖
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0072"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0073"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0074"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Third note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0075"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0076"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0077"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>¶
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0078"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0079"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0080"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Fourth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0081"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0082"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>**
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0083"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0084"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0085"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Fifth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0086"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0087"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0088"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>††
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0089"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0090"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0091"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Sixth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0092"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0093"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0094"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>‡‡
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0095"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0096"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0097"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Seventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0098"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0099"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0100"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>§§
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0101"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0102"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0103"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Eighth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0104"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0105"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0106"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>‖‖
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0107"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0108"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0109"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Nineth noteLorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0110"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0111"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0112"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>¶¶
-       </text-fragment>
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0113"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0114"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0115"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Tenth note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-     <item xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0116"
-        rolemaps-to="LI"
-       >
-      <itemlabel xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0117"
-         rolemaps-to="Lbl"
-        >
-       <?MarkedContent page="1" ?>***
-      </itemlabel>
-      <itembody xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0118"
-         rolemaps-to="LBody"
-        >
-       <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0119"
-          rolemaps-to="Part"
-         >
-        <text-block xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0120"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextAlign="Start"
-           rolemaps-to="P"
-          >
-         <?MarkedContent page="1" ?>Eleventh note Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis.
-        </text-block>
-       </semantic-para>
-      </itembody>
-     </item>
-    </itemize>
-   </semantic-para>
+       <?MarkedContent page="1" ?>Creative Commons Attribution (CC BY) license
+       <?ReferencedObject type="Annot" page="1" ?>
+       <?ReferencedObject type="Annot" page="1" ?>
+      </Link>
+      <?MarkedContent page="1" ?>.
+     </text-block>
+    </semantic-para>
+   </Aside>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
       id="ID.0121"
       rolemaps-to="Part"
