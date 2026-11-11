@@ -1644,74 +1644,73 @@
      \tl_if_empty:NF \@leftcolumnsplit
       {\marginnote[\contentleftcolumn]{}}% Alignment with the affiliations
  }
-\ExplSyntaxOff
 
-%%%% Header and footer on first page
-%% The plain page style needs to be redefined because with \maketitle in the article class, LaTeX applies the the plain page style automatically to the first page.
-\ifthenelse{\equal{\@journal}{preprints} %
-    \OR \equal{\@journal}{preprintschicago}
-    \OR \equal{\@journal}{preprintsapa}
-    \OR \equal{\@arttype}{Book}
-    \OR \equal{\@arttype}{Monograph}}{%
-  \fancypagestyle{plain}{%
-    \fancyhf{}
-    \isPreprints{}{%
-            \fancyfoot[C]{\footnotesize\thepage}
-            }%
-    }%
-  }{%
-  \ifthenelse{\equal{\@arttype}{Supfile}}{
-    % page header and footer styles for supplementary files
-    \fancypagestyle{plain}{
-      \fancyhf{}
-      \fancyhead[R]{
-        \footnotesize %
-        S\thepage{} of S\pageref*{LastPage}%
-        \\\rule{\mdpi@len@bodywidth}{0.4pt}%
-        }%
-      \fancyhead[L]{
-        \footnotesize %
-        \ifthenelse{\equal{\@status}{submit}}{%
-          Version {\@ \today} submitted to {\em \journalname}%
-          }{%
-          {\em \journalname} %
-          {\bfseries \@pubyear}, %
-          {\em \@pubvolume}, %
-          \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-            \@articlenumber%
-            }{%
-            S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}%
-            }%
-          . {\url{https://doi.org/\@doinum}}%
-          }%
-          \\\vspace{-2pt}\rule{\mdpi@len@bodywidth}{0.4pt}%
-        }%
-      }%
-    }{
-    \fancypagestyle{plain}{
-    \renewcommand{\footrulewidth}{0.4pt}
-      \fancyhead{\null\vspace{8pt}}
-      \fancyfoot[L]{
-      \footnotesize
-      \ifthenelse{\equal{\@status}{submit}}{%
-        Version {\@ \today} submitted to {\em \journalname}%
-        }{%
-        {\em\journalname\ }{\bfseries\@pubyear}, {\em \@pubvolume}, %
-        \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-          \@articlenumber %
-          }{%
-          \@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--\pageref*{LastPage}} %
-          }%
-        }%
-      }
-      \fancyfoot[R]{
-      \footnotesize
-      {%
-      }{\url{https://doi.org/\@doinum}}}%
+%    \end{macrocode}
+% \subsection{Header and footer on first page}
+%    \begin{macrocode}
+\newcommand\mdpi@pagestyle@plain@std
+  {
+    \fancypagestyle{plain}
+     {
+      \renewcommand{\footrulewidth}{0.4pt}
+      \fancyhead{\null\vspace{8pt}} %?
+      \fancyfoot[L]
+       {
+        \footnotesize
+        \tl_if_equal:NnTF\@status{submit}
+         {
+           Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
+         }
+         {\textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+          \tl_if_empty:NnTF \@continuouspages
+           {\@articlenumber}
+           {\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--\pageref*{LastPage}}}
+         }      
+       }
+      \fancyfoot[R]
+       {
+        \footnotesize
+        \url{https://doi.org/\@doinum}
+       }
     }
   }
-}
+\newcommand\mdpi@pagestyle@plain@supfile
+  {
+   \fancypagestyle{plain}
+     {
+      \fancyhf{}
+      \fancyhead[R]
+       {
+        \footnotesize 
+        S\thepage{}~ of~ S\pageref*{LastPage}
+        \\\rule{\mdpi@len@bodywidth}{0.4pt}
+       }
+      \fancyhead[L]
+       {
+        \footnotesize 
+        \tl_if_equal:NnTF\@status{submit}
+         {
+           Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
+         }
+         {
+          \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+          \tl_if_empty:NnTF \@continuouspages
+           {\@articlenumber}
+           {S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}}%  
+          .~{\url{https://doi.org/\@doinum}}   
+         }             
+         \\\vspace{-2pt}\rule{\mdpi@len@bodywidth}{0.4pt}%
+        }%
+      }%
+  }    
+\str_if_eq:onTF {\@arttype} {Supfile}
+  {\mdpi@pagestyle@plain@supfile}
+  {\mdpi@pagestyle@plain@std}
+\isPreprints{\fancypagestyle{plain}{\fancyhf{}}}{}
+\isBookContribution{\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\footnotesize\thepage}}{}
 
+
+\ExplSyntaxOff
 %    \end{macrocode}
 % \subsection[label=sec:leftcolumn]{Left Column}
 % Left column on first page (= \enquote{left column} = \enquote{leftcol})
@@ -3078,6 +3077,19 @@
 \renewcommand\headrule{} %% set line (from fancyhdr) in header to nothing
 
 \pagestyle{fancy}
+
+\str_if_eq:onTF {\@arttype} {Supfile}
+  {\mdpi@pagestyle@supfile}
+  {\mdpi@pagestyle@std}
+\isPreprints
+  {
+   \lhead{}  
+   \rfoot{\footnotesize\url{https://doi.org/\@doinum}}
+  } 
+  {}
+\isBookContribution{\cfoot{\footnotesize\thepage}}{}
+
+
 \lhead{
   \ifthenelse{\equal{\@journal}{preprints}%
   \OR \equal{\@journal}{preprintschicago}
