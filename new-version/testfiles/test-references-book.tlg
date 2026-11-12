@@ -4,11 +4,6 @@ LaTeX template Info: Declaring instance 'section' of type heading on line ....
 LaTeX template Info: Declaring instance 'section' of type heading on line ....
 LaTeX template Info: Declaring instance 'subsection' of type heading on line ....
 LaTeX template Info: Declaring instance 'subsubsection' of type heading on line ....
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.97998pt}.
 Completed box being shipped out [1]
 \vbox(600.6377+3.14552)x353.09862, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -40,26 +35,24 @@ Completed box being shipped out [1]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(12.0+0.0)x367.04037, direction TLT
-.....\hbox(12.0+0.0)x367.04037, direction TLT
+....\hbox(0.0+0.0)x367.04037, direction TLT
+.....\hbox(0.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(12.0+0.0)x367.04037, direction TLT
-.......\vbox(12.0+0.0)x367.04037, direction TLT
-........\hbox(9.78595+4.19403)x367.04037, direction TLT
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 183.52019fil, direction TLT
+......\hbox(0.0+0.0)x367.04037, direction TLT
+.......\vbox(0.0+0.0)x367.04037, direction TLT
+........\hbox(0.0+0.0)x367.04037, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 183.52019fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral direct <lua data reference ...>
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
@@ -78,10 +71,10 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 367.04037fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -89,7 +82,6 @@ Completed box being shipped out [1]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
@@ -1663,7 +1655,7 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(7.33946+3.14552)x367.04037, direction TLT
-.........\hbox(7.33946+3.14552)x367.04037, glue set 180.62018fil, direction TLT
+.........\hbox(7.33946+3.14552)x367.04037, glue set 181.62018fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\kern-0.2 (left margin)
 ..........\localpar
@@ -1673,7 +1665,6 @@ Completed box being shipped out [1]
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\TU/tg-pagella/m/n/8 1
-..........\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
 ..........\rule(7.33946+3.14552)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0

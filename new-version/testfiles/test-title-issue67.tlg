@@ -8,7 +8,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]
-\vbox(742.04784+4.19403)x489.10277, direction TLT
+\vbox(742.04784+3.14552)x489.10277, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 ..\kern-72.26999
@@ -38,9 +38,9 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(742.04784+4.19403)x489.10277, direction TLT
+.\vbox(742.04784+3.14552)x489.10277, direction TLT
 ..\glue -36.13487
-..\vbox(778.18271+4.19403)x394.35481, shifted 94.74796, direction TLT
+..\vbox(778.18271+3.14552)x394.35481, shifted 94.74796, direction TLT
 ...\vbox(12.0+0.0)x394.35481, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
@@ -1210,17 +1210,17 @@ Completed box being shipped out [1]
 ...\pdfliteral page <lua data reference ...>
 ...\pdfliteral page <lua data reference ...>
 ...\pdflinkstate 1
-...\glue(\baselineskip) 21.62003
-...\hbox(14.37997+4.19403)x394.35481, direction TLT
-....\hbox(14.37997+4.19403)x394.35481, direction TLT
+...\glue(\baselineskip) 24.06651
+...\hbox(11.93349+3.14552)x394.35481, direction TLT
+....\hbox(11.93349+3.14552)x394.35481, direction TLT
 .....\glue -130.88283
-.....\hbox(14.37997+4.19403)x525.23764, direction TLT
-......\vbox(14.37997+4.19403)x525.23764, direction TLT
+.....\hbox(11.93349+3.14552)x525.23764, direction TLT
+......\vbox(11.93349+3.14552)x525.23764, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
 .......\rule(0.4+0.0)x525.23764
 .......\glue 4.19403
-.......\hbox(9.78595+4.19403)x525.23764, direction TLT
+.......\hbox(7.33946+3.14552)x525.23764, direction TLT
 ........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 .........\vbox(7.33946+3.14552)x525.23764, direction TLT
 ..........\hbox(7.33946+3.14552)x525.23764, glue set 230.20282fil, direction TLT
@@ -1265,8 +1265,8 @@ Completed box being shipped out [1]
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
-........\vbox(9.78595+4.19403)x525.23764, direction TLT
-.........\hbox(9.78595+4.19403)x525.23764, glue set 262.61884fil, direction TLT
+........\vbox(0.0+0.0)x525.23764, direction TLT
+.........\hbox(0.0+0.0)x525.23764, glue set 262.61884fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -1274,7 +1274,6 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-..........\rule(9.78595+4.19403)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
@@ -1379,9 +1378,9 @@ Completed box being shipped out [1]
 ...\pdflinkstate 0
 .\kern0.0
 .\kern0.0
-.\kern-746.24187
+.\kern-745.19336
 .\hbox(0.0+0.0)x0.0, direction TLT
-.\kern746.24187
+.\kern745.19336
 .\pdfliteral page <lua data reference ...>
 <./Definitions/logo-updates.pdf><./Definitions/acoustics-logo.pdf><./Definitions/logo-mdpi.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.

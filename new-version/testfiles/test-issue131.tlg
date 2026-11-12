@@ -16,10 +16,10 @@ LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
 [1
 <./Definitions/logo-mdpi.pdf>]
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 21.49452pt, for example:
-(fancyhdr)                \setlength{\headheight}{21.49452pt}.
+(fancyhdr)                Make it at least 19.45453pt, for example:
+(fancyhdr)                \setlength{\headheight}{19.45453pt}.
 (fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-9.49452pt}.
+(fancyhdr)                \addtolength{\topmargin}{-7.45453pt}.
 [2] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-issue131.aux)

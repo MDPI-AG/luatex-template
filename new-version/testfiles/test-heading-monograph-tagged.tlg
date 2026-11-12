@@ -36,11 +36,6 @@ LaTeX Font Info:    Font shape `TU/tg-pagella-math-ssf/b/n' will be
 (Font)              scaled to size 4.64996pt on input line ....
 )
 \tf@toc=\write...
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.97998pt}.
 Completed box being shipped out [1]
 \vbox(600.6377+3.14552)x353.09862, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -75,27 +70,24 @@ Completed box being shipped out [1]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(12.0+0.0)x367.04037, direction TLT
-.....\hbox(12.0+0.0)x367.04037, direction TLT
+....\hbox(0.0+0.0)x367.04037, direction TLT
+.....\hbox(0.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(12.0+0.0)x367.04037, direction TLT
-.......\vbox(12.0+0.0)x367.04037, direction TLT
-........\hbox(9.78595+4.19403)x367.04037, direction TLT
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 183.52019fil, direction TLT
+......\hbox(0.0+0.0)x367.04037, direction TLT
+.......\vbox(0.0+0.0)x367.04037, direction TLT
+........\hbox(0.0+0.0)x367.04037, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 183.52019fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
@@ -114,10 +106,10 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 367.04037fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -125,13 +117,10 @@ Completed box being shipped out [1]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
@@ -1086,7 +1075,7 @@ Completed box being shipped out [1]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(7.33946+3.14552)x367.04037, direction TLT
-.........\hbox(7.33946+3.14552)x367.04037, glue set 180.62018fil, direction TLT
+.........\hbox(7.33946+3.14552)x367.04037, glue set 181.62018fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\kern-0.2 (left margin)
 ..........\localpar
@@ -1096,8 +1085,6 @@ Completed box being shipped out [1]
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\TU/tg-pagella/m/n/8 1
-..........\TU/tg-pagella/m/n/8  
-..........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
 ..........\rule(7.33946+3.14552)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
@@ -1126,11 +1113,6 @@ Completed box being shipped out [1]
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for 'english' will be used instead.
 (lipsum)                
 (lipsum)                With LuaTeX, lipsum requires babel to get proper hyphenation (you can use \usepackage[base]{babel}).
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.97998pt}.
 Completed box being shipped out [2]
 \vbox(600.6377+3.14552)x353.09862, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -1164,27 +1146,24 @@ Completed box being shipped out [2]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(12.0+0.0)x367.04037, direction TLT
-.....\hbox(12.0+0.0)x367.04037, direction TLT
+....\hbox(0.0+0.0)x367.04037, direction TLT
+.....\hbox(0.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(12.0+0.0)x367.04037, direction TLT
-.......\vbox(12.0+0.0)x367.04037, direction TLT
-........\hbox(9.78595+4.19403)x367.04037, direction TLT
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 183.52019fil, direction TLT
+......\hbox(0.0+0.0)x367.04037, direction TLT
+.......\vbox(0.0+0.0)x367.04037, direction TLT
+........\hbox(0.0+0.0)x367.04037, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 183.52019fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
@@ -1203,10 +1182,10 @@ Completed box being shipped out [2]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 367.04037fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -1214,13 +1193,10 @@ Completed box being shipped out [2]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
@@ -2775,7 +2751,7 @@ Completed box being shipped out [2]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(7.33946+3.14552)x367.04037, direction TLT
-.........\hbox(7.33946+3.14552)x367.04037, glue set 180.52019fil, direction TLT
+.........\hbox(7.33946+3.14552)x367.04037, glue set 181.52019fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -2784,8 +2760,6 @@ Completed box being shipped out [2]
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\TU/tg-pagella/m/n/8 2
-..........\TU/tg-pagella/m/n/8  
-..........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
 ..........\rule(7.33946+3.14552)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
@@ -2814,11 +2788,6 @@ LaTeX template Info: Declaring instance 'section' of type heading on line ....
 LaTeX template Info: Declaring instance 'section' of type heading on line ....
 LaTeX template Info: Declaring instance 'subsection' of type heading on line ....
 LaTeX template Info: Declaring instance 'subsubsection' of type heading on line ....
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.97998pt}.
 Completed box being shipped out [3]
 \vbox(600.6377+3.14552)x353.09862, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -2852,27 +2821,24 @@ Completed box being shipped out [3]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(12.0+0.0)x367.04037, direction TLT
-.....\hbox(12.0+0.0)x367.04037, direction TLT
+....\hbox(0.0+0.0)x367.04037, direction TLT
+.....\hbox(0.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(12.0+0.0)x367.04037, direction TLT
-.......\vbox(12.0+0.0)x367.04037, direction TLT
-........\hbox(9.78595+4.19403)x367.04037, direction TLT
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 183.52019fil, direction TLT
+......\hbox(0.0+0.0)x367.04037, direction TLT
+.......\vbox(0.0+0.0)x367.04037, direction TLT
+........\hbox(0.0+0.0)x367.04037, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 183.52019fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
@@ -2891,10 +2857,10 @@ Completed box being shipped out [3]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 367.04037fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -2902,13 +2868,10 @@ Completed box being shipped out [3]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
@@ -4475,7 +4438,7 @@ Completed box being shipped out [3]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(7.33946+3.14552)x367.04037, direction TLT
-.........\hbox(7.33946+3.14552)x367.04037, glue set 180.52019fil, direction TLT
+.........\hbox(7.33946+3.14552)x367.04037, glue set 181.52019fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -4484,8 +4447,6 @@ Completed box being shipped out [3]
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\TU/tg-pagella/m/n/8 3
-..........\TU/tg-pagella/m/n/8  
-..........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
 ..........\rule(7.33946+3.14552)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
@@ -5248,11 +5209,6 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-heading-monograph-tagged.xml (end) -----------
 ============================================================
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.97998pt}.
 Completed box being shipped out [4]
 \vbox(600.6377+3.14552)x353.09862, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -5286,27 +5242,24 @@ Completed box being shipped out [4]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(12.0+0.0)x367.04037, direction TLT
-.....\hbox(12.0+0.0)x367.04037, direction TLT
+....\hbox(0.0+0.0)x367.04037, direction TLT
+.....\hbox(0.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(12.0+0.0)x367.04037, direction TLT
-.......\vbox(12.0+0.0)x367.04037, direction TLT
-........\hbox(9.78595+4.19403)x367.04037, direction TLT
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 183.52019fil, direction TLT
+......\hbox(0.0+0.0)x367.04037, direction TLT
+.......\vbox(0.0+0.0)x367.04037, direction TLT
+........\hbox(0.0+0.0)x367.04037, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 183.52019fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
@@ -5325,10 +5278,10 @@ Completed box being shipped out [4]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(9.78595+4.19403)x0.0, glue set - 367.04037fil, direction TLT
+.........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(9.78595+4.19403)x367.04037, direction TLT
-...........\hbox(9.78595+4.19403)x367.04037, glue set 367.04037fil, direction TLT
+..........\vbox(0.0+0.0)x367.04037, direction TLT
+...........\hbox(0.0+0.0)x367.04037, glue set 367.04037fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -5336,13 +5289,10 @@ Completed box being shipped out [4]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\rule(9.78595+4.19403)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
 ........\glue 0.0
-....\pdfliteral page <lua data reference ...>
-....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
@@ -7034,7 +6984,7 @@ Completed box being shipped out [4]
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
 ........\vbox(7.33946+3.14552)x367.04037, direction TLT
-.........\hbox(7.33946+3.14552)x367.04037, glue set 180.62018fil, direction TLT
+.........\hbox(7.33946+3.14552)x367.04037, glue set 181.62018fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\kern-0.2 (left margin)
 ..........\localpar
@@ -7044,8 +6994,6 @@ Completed box being shipped out [4]
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
 ..........\TU/tg-pagella/m/n/8 4
-..........\TU/tg-pagella/m/n/8  
-..........\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
 ..........\rule(7.33946+3.14552)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
