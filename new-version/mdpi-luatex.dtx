@@ -1657,7 +1657,7 @@
       \fancyfoot[L]
        {
         \footnotesize
-        \tl_if_equal:NnTF\@status{submit}
+        \tl_if_eq:NnTF\@status{submit}
          {
            Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
          }
@@ -1688,7 +1688,7 @@
       \fancyhead[L]
        {
         \footnotesize 
-        \tl_if_equal:NnTF\@status{submit}
+        \tl_if_eq:NnTF\@status{submit}
          {
            Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
          }
@@ -1707,7 +1707,7 @@
   {\mdpi@pagestyle@plain@supfile}
   {\mdpi@pagestyle@plain@std}
 \isPreprints{\fancypagestyle{plain}{\fancyhf{}}}{}
-\isBookContribution{\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\footnotesize\thepage}}{}
+\isBookContribution{\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\footnotesize\thepage}}}{}
 
 
 \ExplSyntaxOff
@@ -3077,10 +3077,13 @@
 \renewcommand\headrule{} %% set line (from fancyhdr) in header to nothing
 
 \pagestyle{fancy}
+\ExplSyntaxOn
+%\str_if_eq:onTF {\@arttype} {Supfile}
+%  {\mdpi@pagestyle@supfile}
+%  {\mdpi@pagestyle@std}
 
-\str_if_eq:onTF {\@arttype} {Supfile}
-  {\mdpi@pagestyle@supfile}
-  {\mdpi@pagestyle@std}
+\ExplSyntaxOff
+
 \isPreprints
   {
    \lhead{}  
