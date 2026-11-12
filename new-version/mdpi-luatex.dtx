@@ -1469,6 +1469,216 @@
 \cs_new_protected:Npn \neworcid #1 #2 {\tl_const:cn {c__mdpi_orcid_#1_tl}{#2}}
 \cs_new_protected:Npn \useorcid #1
   {\hrefurl{https://orcid.org/\use:c{c__mdpi_orcid_#1_tl}}{\orcidicon}}
+%    \end{macrocode}
+%
+% \subsection{Page styles}
+%    \begin{macrocode}
+\renewcommand\headrule{} %% set line (from fancyhdr) in header to nothing
+\pagestyle{fancy}
+%    \end{macrocode}
+% \subsubsection{Standard journal pagestyle}
+% For the title page the plain style must be redefined.
+% The header is filled by the maketitle command.
+%    \begin{macrocode}
+\newcommand\mdpi@pagestyle@plain@std
+  {
+    \fancypagestyle{plain}
+     {
+      \renewcommand{\footrulewidth}{0.4pt}
+      \fancyhead{\null\vspace{8pt}} %?
+      \fancyfoot[L]
+       {
+        \footnotesize
+        \tl_if_eq:NnTF\@status{submit}
+         {
+           Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
+         }
+         {\textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+          \tl_if_empty:NTF \@continuouspages
+           {\@articlenumber}
+           {\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--\pageref*{LastPage}}}
+         }      
+       }
+      \fancyfoot[R]
+       {
+        \footnotesize
+        \url{https://doi.org/\@doinum}
+       }
+    }
+  }
+\newcommand\mdpi@pagestyle@std
+ {
+   \fancyhf{}
+   \fancyhead[L]
+    {
+     \footnotesize
+     \mdpi@isSubmitTF
+       {
+         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
+       }
+       {
+         \null\vspace{2pt}\textit{\journalname}~ \textbf{\@pubyear},~ {\textit{\@pubvolume}}
+         \tl_if_empty:NT\@continuouspages
+          {
+           ,~ \@articlenumber
+          }
+         \\      
+         \rule{\mdpi@len@bodywidth}{0.4pt}
+       }  
+    }
+   \fancyhead[R]
+    { 
+      \footnotesize
+      \tl_if_empty:NTF\@continuouspages
+       {
+         \thepage{}~ of~ \pageref*{LastPage}
+       }
+       {\thepage}
+      \\
+      \rule{\mdpi@len@bodywidth}{0.4pt}
+    }
+   \fancyfoot[R]{\footnotesize\url{https://doi.org/\@doinum}}   
+ }
+%    \end{macrocode}
+% \subsubsection{Supfiles}
+%    \begin{macrocode}
+\newcommand\mdpi@pagestyle@plain@supfile
+  {
+   \fancypagestyle{plain}
+     {
+      \fancyhf{}
+      \fancyhead[R]
+       {
+        \footnotesize 
+        S\thepage{}~ of~ S\pageref*{LastPage}
+        \\\rule{\mdpi@len@bodywidth}{0.4pt}
+       }
+      \fancyhead[L]
+       {
+        \footnotesize 
+        \tl_if_eq:NnTF\@status{submit}
+         {
+           Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
+         }
+         {
+          \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+          \tl_if_empty:NTF \@continuouspages
+           {\@articlenumber}
+           {S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}}%  
+          .~{\url{https://doi.org/\@doinum}}   
+         }             
+         \\\vspace{-2pt}\rule{\mdpi@len@bodywidth}{0.4pt}%
+        }%
+      }%
+  } 
+\newcommand\mdpi@pagestyle@supfile
+ {
+   \fancyhf{}
+   \fancyhead[L]
+    {
+     \footnotesize
+     \mdpi@isSubmitTF
+       {
+         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
+       }
+       {
+         \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+         \tl_if_empty:NTF \@continuouspages
+          {\@articlenumber.~}
+          {%
+           S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}.~ %
+          }%
+         \url{https://doi.org/\@doinum}
+       }%
+     \\      
+     \rule{\mdpi@len@bodywidth}{0.4pt}                 
+    }
+   \fancyhead[R]
+    {
+      \footnotesize S\thepage{}~ of~ S\pageref*{LastPage}
+      \\
+      \rule{\mdpi@len@bodywidth}{0.4pt}
+    }
+   \fancyfoot[R]{\footnotesize \url{https://doi.org/\@doinum}}
+ }
+ 
+%    \end{macrocode}
+% \subsubsection{Activation of standard or subfile styles}
+%    \begin{macrocode}
+\mdpi_is_Supfile:TF
+  {\mdpi@pagestyle@plain@supfile \mdpi@pagestyle@supfile}
+  {\mdpi@pagestyle@plain@std     \mdpi@pagestyle@std}
+%    \end{macrocode}
+% \subsubsection{Preprints}
+% Preprints have an empty first page and on the other pages 
+% only page numbers in the right header.
+%    \begin{macrocode}
+\isPreprints
+ {
+   \fancypagestyle{plain}{\fancyhf{}}
+   \fancyhf{}
+   \fancyhead[R]
+    { 
+      \footnotesize
+      \mdpi_is_Supfile:TF
+       {
+         S\thepage{}~ of~ S\pageref*{LastPage}
+       }
+       {
+        \tl_if_empty:NTF\@continuouspages
+         {
+           \thepage{}~ of~ \pageref*{LastPage}
+         }
+         {\thepage}
+       }
+    }
+ } 
+ {}
+%    \end{macrocode}
+% \subsubsection{Books}
+% Books have on all page the page number in the footer, in the middle.
+%    \begin{macrocode}
+\isBookContribution
+ {
+   \fancyhf{}
+   \fancyfoot[C]{\footnotesize\thepage}
+   \fancypagestyle{plain}[fancy]{}
+ }
+ {}
+%    \end{macrocode}
+% \subsubsection{Retracted articles}
+% The following page style is used on the first page if an article is retracted:
+%    \begin{macrocode}
+\newcommand\mdpi@pagestyle@plain@retracted
+ {
+  \fancypagestyle{plain}
+   {
+     \fancyhf{}
+     \fancyfoot[L]
+      {
+        \footnotesize%
+        \st{\textit{\journalname}~ \textbf{\@pubyear},~ \textit\@pubvolume, }%
+        \tl_if_empty:NTF\@continuouspages
+         {
+           \st{\@articlenumber}
+         }
+         {
+           \st{\@firstpage}\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{\st{--\mbox{\pageref*{LastPage}}}}%
+         }
+        \\
+        This~ paper~ has~ been~ retracted.~ A~ retraction~ notice~ was~ published~ on~ 
+        \@retractiondate{}~ in~ \textit{\@journalfull}~ \textbf{\@retractionnoticeyear},~ 
+        \textit{\@retractionnoticevolume},~ \@retractionnoticeidnumber.~
+         https://doi.org/\@retractionnoticedoi
+      }
+     \fancyfoot[R]
+      {
+        \footnotesize
+        \st{\href{https://doi.org/\@doinum}{https://doi.org/\@doinum}}
+      }
+     \renewcommand{\footrulewidth}{0.4pt}%
+   }
+ } 
 \ExplSyntaxOff
 %    \end{macrocode}
 %
@@ -1672,72 +1882,6 @@
       {\marginnote[\contentleftcolumn]{}}% Alignment with the affiliations
  }
 
-%    \end{macrocode}
-% \subsection{Header and footer on first page}
-%    \begin{macrocode}
-\newcommand\mdpi@pagestyle@plain@std
-  {
-    \fancypagestyle{plain}
-     {
-      \renewcommand{\footrulewidth}{0.4pt}
-      \fancyhead{\null\vspace{8pt}} %?
-      \fancyfoot[L]
-       {
-        \footnotesize
-        \tl_if_eq:NnTF\@status{submit}
-         {
-           Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
-         }
-         {\textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
-          \tl_if_empty:NTF \@continuouspages
-           {\@articlenumber}
-           {\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--\pageref*{LastPage}}}
-         }      
-       }
-      \fancyfoot[R]
-       {
-        \footnotesize
-        \url{https://doi.org/\@doinum}
-       }
-    }
-  }
-\newcommand\mdpi@pagestyle@plain@supfile
-  {
-   \fancypagestyle{plain}
-     {
-      \fancyhf{}
-      \fancyhead[R]
-       {
-        \footnotesize 
-        S\thepage{}~ of~ S\pageref*{LastPage}
-        \\\rule{\mdpi@len@bodywidth}{0.4pt}
-       }
-      \fancyhead[L]
-       {
-        \footnotesize 
-        \tl_if_eq:NnTF\@status{submit}
-         {
-           Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
-         }
-         {
-          \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
-          \tl_if_empty:NTF \@continuouspages
-           {\@articlenumber}
-           {S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}}%  
-          .~{\url{https://doi.org/\@doinum}}   
-         }             
-         \\\vspace{-2pt}\rule{\mdpi@len@bodywidth}{0.4pt}%
-        }%
-      }%
-  }    
-\mdpi_is_Supfile:TF
-  {\mdpi@pagestyle@plain@supfile}
-  {\mdpi@pagestyle@plain@std}
-\isPreprints{\fancypagestyle{plain}{\fancyhf{}}}{}
-\isBookContribution{\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\footnotesize\thepage}}}{}
-
-
-\ExplSyntaxOff
 %    \end{macrocode}
 % \subsection[label=sec:leftcolumn]{Left Column}
 % Left column on first page (= \enquote{left column} = \enquote{leftcol})
@@ -3072,9 +3216,9 @@
    }
 \setlist[description]{itemsep=0mm}
 %    \end{macrocode}
-
+% Quote environment
 %    \begin{macrocode}
-%%%% Quote environment
+%%%% 
 \renewenvironment{quote}{
   \list{}{
     \listparindent=0pt
@@ -3097,122 +3241,6 @@
 %% Link to supplementary material: www.mdpi.com/ISSN-number/volume-number/issue-number/article-number
 \newcommand{\linksupplementary}[1]{\url{https://www.mdpi.com/article/\@doinum/#1}}
 
-%%%% Header and footer (all pages except the first)
-\renewcommand\headrule{} %% set line (from fancyhdr) in header to nothing
-
-\pagestyle{fancy}
-\ExplSyntaxOn
-
-\newcommand\mdpi@pagestyle@std
- {
-   \lhead
-    {
-     \footnotesize
-     \mdpi@isSubmitTF
-       {
-         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
-       }
-       {
-         \null\vspace{2pt}\textit{\journalname}~ \textbf{\@pubyear},~ {\textit{\@pubvolume}}
-         \tl_if_empty:NT\@continuouspages
-          {
-           ,~ \@articlenumber
-          }
-         \\      
-         \rule{\mdpi@len@bodywidth}{0.4pt}
-       }  
-    }
-   \chead{}
-   \rhead
-    { 
-      \footnotesize
-      \tl_if_empty:NTF\@continuouspages
-       {
-         \thepage{}~ of~ \pageref*{LastPage}
-       }
-       {\thepage}
-      \\
-      \rule{\mdpi@len@bodywidth}{0.4pt}
-    }
-   \lfoot{}
-   \cfoot{}
-   \rfoot{\footnotesize\url{https://doi.org/\@doinum}}   
- }
-
-\newcommand\mdpi@pagestyle@supfile
- {
-   \lhead
-    {
-     \footnotesize
-     \mdpi@isSubmitTF
-       {
-         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
-       }
-       {
-         \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
-         \tl_if_empty:NTF \@continuouspages
-          {\@articlenumber.~}
-          {%
-           S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}.~ %
-          }%
-         \url{https://doi.org/\@doinum}
-       }%
-     \\      
-     \rule{\mdpi@len@bodywidth}{0.4pt}                 
-    }
-   \chead {}
-   \rhead
-    {
-      \footnotesize S\thepage{}~ of~ S\pageref*{LastPage}
-      \\
-      \rule{\mdpi@len@bodywidth}{0.4pt}
-    }
-   \lfoot{}
-   \cfoot{}
-   \rfoot{\footnotesize\url{https://doi.org/\@doinum}}
- }
-\mdpi_is_Supfile:TF
-  {\mdpi@pagestyle@supfile}
-  {\mdpi@pagestyle@std}
-
-\isPreprints
-  {  
-   \lhead{}  
-   \chead{}
-   \rhead
-    { 
-      \footnotesize
-      \mdpi_is_Supfile:TF
-       {
-         S\thepage{}~ of~ S\pageref*{LastPage}
-       }
-       {
-        \tl_if_empty:NTF\@continuouspages
-         {
-           \thepage{}~ of~ \pageref*{LastPage}
-         }
-         {\thepage}
-       }
-    }
-   \lfoot{} 
-   \cfoot{} 
-   \rfoot{}
-  } 
-  {}
-  
-\isBookContribution
- {
-  \lhead{}
-  \chead{}
-  \rhead{}
-  \lfoot{}
-  \cfoot{\footnotesize\thepage}
-  \rfoot{}
- }
- {}
-
-\ExplSyntaxOff
-
 %%%% Article type "Retraction"
 \def\@retractiondate{}% Date that the retraction notice was published
 \newcommand{\retractiondate}[1]{\gdef\@retractiondate{#1}}
@@ -3229,27 +3257,7 @@
   \RequirePackage{draftwatermark}
   \SetWatermarkText{RETRACTED}
   \SetWatermarkScale{0.8}
-  \fancypagestyle{plain}{
-  \fancyhf{}
-  \fancyfoot[L]{
-    \footnotesize%
-    \st{\mbox{\textit{\journalname} \textbf{\@pubyear}, \textit\@pubvolume, }}%
-    \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-      \st{\@articlenumber}%
-      }{%
-      \st{\@firstpage}\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{\st{--\mbox{\pageref*{LastPage}}}}%
-      }%
-    \\This paper has been retracted. A retraction notice was published on \@retractiondate{} %
-    in \textit{\@journalfull} \textbf{\@retractionnoticeyear}, \textit{\@retractionnoticevolume}, \@retractionnoticeidnumber. https://doi.org/\@retractionnoticedoi
-  }%
-  \fancyfoot[R]{
-    \footnotesize%
-    \st{{%
-    \href{https://doi.org/\@doinum}%
-    {https://doi.org/\@doinum}}}%
-  }%
-  \renewcommand{\footrulewidth}{0.4pt}%
-  }
+  \mdpi@pagestyle@plain@retracted
    }
 }
 
