@@ -1073,7 +1073,7 @@ Completed box being shipped out [1]
 .......\hbox(9.78595+4.19403)x525.23764, direction TLT
 ........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 .........\vbox(7.33946+3.14552)x525.23764, direction TLT
-..........\hbox(7.33946+3.14552)x525.23764, glue set 166.87082fil, direction TLT
+..........\hbox(7.33946+3.14552)x525.23764, glue set 166.85883fil, direction TLT
 ...........\kern-0.288 (left margin)
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -1154,6 +1154,7 @@ Completed box being shipped out [1]
 ...........\TU/tg-pagella/m/it/8 ﬁ
 ...........\TU/tg-pagella/m/it/8 e
 ...........\TU/tg-pagella/m/it/8 d
+...........\kern0.024 (italic)
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil

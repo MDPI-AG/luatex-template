@@ -1662,7 +1662,7 @@
            Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
          }
          {\textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
-          \tl_if_empty:NnTF \@continuouspages
+          \tl_if_empty:NTF \@continuouspages
            {\@articlenumber}
            {\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--\pageref*{LastPage}}}
          }      
@@ -1694,7 +1694,7 @@
          }
          {
           \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
-          \tl_if_empty:NnTF \@continuouspages
+          \tl_if_empty:NTF \@continuouspages
            {\@articlenumber}
            {S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}}%  
           .~{\url{https://doi.org/\@doinum}}   
