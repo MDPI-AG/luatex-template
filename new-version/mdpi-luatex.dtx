@@ -822,6 +822,33 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \subsection{Supfiles} 
+% This tests if the arttype is a Supfile
+% 
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \mdpi_is_Supfile: {TF,T,F}
+ {
+   \tl_if_eq:NnTF\@arttype{Supfile}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\cs_new_eq:NN \mdpi@isSupfileTF \mdpi_is_Supfile:TF
+\cs_new_eq:NN \mdpi@isSupfileT  \mdpi_is_Supfile:T
+\cs_new_eq:NN \mdpi@isSupfileF  \mdpi_is_Supfile:F
+%    \end{macrocode}
+%
+% \subsection{Submit status}
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \mdpi_is_submit: {TF,T,F}
+ {
+   \tl_if_eq:NnTF\@status{submit}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\cs_new_eq:NN \mdpi@isSubmitTF \mdpi_is_submit:TF
+\cs_new_eq:NN \mdpi@isSubmitT  \mdpi_is_submit:T
+\cs_new_eq:NN \mdpi@isSubmitF  \mdpi_is_submit:F
+%    \end{macrocode}
 % \subsubsection{Books}
 % This tests if this a Book or a Monograph
 % \begin{macro}{\isBookContribution}
@@ -1463,7 +1490,7 @@
 % If the status is submit (initial/default value) there is not journal logo
 % and we fake it with a rule.
 %    \begin{macrocode}
-   \tl_if_eq:enTF {\@status}{submit}
+   \mdpi@isSubmitTF
      {
        \phantom{\rule{0pt}{1.2cm}}\hfill
        \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{Definitions/\mdpi@logo@right}}%
@@ -1703,7 +1730,7 @@
         }%
       }%
   }    
-\str_if_eq:onTF {\@arttype} {Supfile}
+\mdpi_is_Supfile:TF
   {\mdpi@pagestyle@plain@supfile}
   {\mdpi@pagestyle@plain@std}
 \isPreprints{\fancypagestyle{plain}{\fancyhf{}}}{}
@@ -1836,8 +1863,7 @@
     \isPreprints
       {}
       {%
-        \ifthenelse
-         {\equal{\@status}{submit}}
+        \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
          {\leftcolumnUpdatelogo\par}%     % %1
         \leftcolExternalEditor\par        % %2
@@ -1899,8 +1925,7 @@
     \isPreprints
       {}
       {%
-        \ifthenelse
-         {\equal{\@status}{submit}}
+        \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
          {\leftcolumnUpdatelogo\par}% 1
         \leftcolExternalEditor\par% 2
@@ -1920,8 +1945,7 @@
     \isPreprints
       {}
       {%
-        \ifthenelse
-         {\equal{\@status}{submit}}
+        \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
          {\leftcolumnUpdatelogo\par}% 1
         \leftcolExternalEditor% 2
@@ -1942,8 +1966,7 @@
     \isPreprints
       {}
       {%
-        \ifthenelse
-         {\equal{\@status}{submit}}
+        \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
          {\leftcolumnUpdatelogo\par}% 1
       }%
@@ -2204,7 +2227,7 @@
   \AddToHook{begindocument/end}[mdpi/maketitle]{
     \maketitle
     \let\maketitle\relax
-    \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
+    \mdpi@isSubmitT{\linenumbers}%
     }%
   }{
   \AddToHook{begindocument/end}[mdpi/maketitle]{
@@ -2212,7 +2235,7 @@
     \let\maketitle\relax
     \maketitlen
     \let\maketitlen\relax
-    \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}%
+    \mdpi@isSubmitT{\linenumbers}%
     \mdpi@abstractkeywords
   }%
 }
@@ -3065,10 +3088,11 @@
   {\endlist}
 
 %%%% Supplementary file
-\ifthenelse{\equal{\@arttype}{Supfile}}{
-  \renewcommand{\thefigure}{S\arabic{figure}}%
-  \renewcommand{\thetable}{S\arabic{table}}%
-  }{}%
+\mdpi@isSupfileT
+  {
+   \renewcommand{\thefigure}{S\arabic{figure}}%
+   \renewcommand{\thetable}{S\arabic{table}}%
+  }
 
 %% Link to supplementary material: www.mdpi.com/ISSN-number/volume-number/issue-number/article-number
 \newcommand{\linksupplementary}[1]{\url{https://www.mdpi.com/article/\@doinum/#1}}
@@ -3078,86 +3102,116 @@
 
 \pagestyle{fancy}
 \ExplSyntaxOn
-%\str_if_eq:onTF {\@arttype} {Supfile}
-%  {\mdpi@pagestyle@supfile}
-%  {\mdpi@pagestyle@std}
 
-\ExplSyntaxOff
+\newcommand\mdpi@pagestyle@std
+ {
+   \lhead
+    {
+     \footnotesize
+     \mdpi@isSubmitTF
+       {
+         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
+       }
+       {
+         \null\vspace{2pt}\textit{\journalname}~ \textbf{\@pubyear},~ {\textit{\@pubvolume}}
+         \tl_if_empty:NT\@continuouspages
+          {
+           ,~ \@articlenumber
+          }
+         \\      
+         \rule{\mdpi@len@bodywidth}{0.4pt}
+       }  
+    }
+   \chead{}
+   \rhead
+    { 
+      \footnotesize
+      \tl_if_empty:NTF\@continuouspages
+       {
+         \thepage{}~ of~ \pageref*{LastPage}
+       }
+       {\thepage}
+      \\
+      \rule{\mdpi@len@bodywidth}{0.4pt}
+    }
+   \lfoot{}
+   \cfoot{}
+   \rfoot{\footnotesize\url{https://doi.org/\@doinum}}   
+ }
+
+\newcommand\mdpi@pagestyle@supfile
+ {
+   \lhead
+    {
+     \footnotesize
+     \mdpi@isSubmitTF
+       {
+         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
+       }
+       {
+         \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+         \tl_if_empty:NTF \@continuouspages
+          {\@articlenumber.~}
+          {%
+           S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}.~ %
+          }%
+         \url{https://doi.org/\@doinum}
+       }%
+     \\      
+     \rule{\mdpi@len@bodywidth}{0.4pt}                 
+    }
+   \chead {}
+   \rhead
+    {
+      \footnotesize S\thepage{}~ of~ S\pageref*{LastPage}
+      \\
+      \rule{\mdpi@len@bodywidth}{0.4pt}
+    }
+   \lfoot{}
+   \cfoot{}
+   \rfoot{\footnotesize\url{https://doi.org/\@doinum}}
+ }
+\mdpi_is_Supfile:TF
+  {\mdpi@pagestyle@supfile}
+  {\mdpi@pagestyle@std}
 
 \isPreprints
-  {
+  {  
    \lhead{}  
-   \rfoot{\footnotesize\url{https://doi.org/\@doinum}}
+   \chead{}
+   \rhead
+    { 
+      \footnotesize
+      \mdpi_is_Supfile:TF
+       {
+         S\thepage{}~ of~ S\pageref*{LastPage}
+       }
+       {
+        \tl_if_empty:NTF\@continuouspages
+         {
+           \thepage{}~ of~ \pageref*{LastPage}
+         }
+         {\thepage}
+       }
+    }
+   \lfoot{} 
+   \cfoot{} 
+   \rfoot{}
   } 
   {}
-\isBookContribution{\cfoot{\footnotesize\thepage}}{}
+  
+\isBookContribution
+ {
+  \lhead{}
+  \chead{}
+  \rhead{}
+  \lfoot{}
+  \cfoot{\footnotesize\thepage}
+  \rfoot{}
+ }
+ {}
 
-
-\lhead{
-  \ifthenelse{\equal{\@journal}{preprints}%
-  \OR \equal{\@journal}{preprintschicago}
-  \OR \equal{\@journal}{preprintsapa}
-  \OR \equal{\@arttype}{Book}
-  \OR \equal{\@arttype}{Monograph}}{%
-    }{%
-    \footnotesize%
-    \ifthenelse{\equal{\@status}{submit}}{%
-          \vspace{2pt}Version {\@ \today} submitted to {\em \journalname}%
-      }{%
-      \ifthenelse{\equal{\@arttype}{Supfile}}{%
-      {\em \journalname} {\bfseries \@pubyear}, {\em \@pubvolume}, %
-      \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-        \@articlenumber. %
-        }{%
-        S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}. %
-        }%
-      {\url{https://doi.org/\@doinum}}%
-      }{%
-      {\null\vspace{2pt}\em\journalname\ }{\bfseries\@pubyear}, {\em \@pubvolume}%
-      \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-        , \@articlenumber%
-        }{}%
-      }%
-      }\\%
-      \isPreprints{}{%
-      \rule{\mdpi@len@bodywidth}{0.4pt}%
-      }%
-    }%
-  }
-
-\rhead{%
-    \isBookContribution{}{%
-  \ifthenelse{\equal{\@arttype}{Supfile}}{%
-    \footnotesize S\thepage{} of S\pageref*{LastPage}%
-    }{%
-    \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-      \footnotesize\thepage{} of \pageref*{LastPage}%
-      }{%
-      \footnotesize\thepage%
-    }%
-    }\\%
-    \isPreprints{}{%
-    \rule{\mdpi@len@bodywidth}{0.4pt}%
-            }%
-  }%
-}
-
-\cfoot{%
-  \isBookContribution{%
-    \footnotesize\thepage
-    }{%
-  }
-}
-
-\isBookContribution{%
-    }{%
-      \isPreprints{}{%
-        \rfoot{%
-     \footnotesize%
-    {\url{https://doi.org/\@doinum}}%
-     }
-  }
-}
+\ExplSyntaxOff
 
 %%%% Article type "Retraction"
 \def\@retractiondate{}% Date that the retraction notice was published
@@ -3317,7 +3371,7 @@
 \newcommand{\mdpi@text@copyright}
   {
     \raggedright
-    \tl_if_eq:NnF\@arttype{Supfile}
+    \mdpi_is_Supfile:F
      {
       \tl_if_eq:NnTF\@status{submit}
          {
