@@ -23,8 +23,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-11-09}
-\def\mdpiversion{v6.5e}
+\def\mdpidate{2026-11-12}
+\def\mdpiversion{v6.5e-fixed}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
 
@@ -2082,7 +2082,7 @@
   \par
   \begingroup
     \parindent\z@
-    \footnotesize
+    \small
     \isPreprints
       {\mdpi@tablefooter@preprint{#1}}
       {\mdpi@tablefooter@journal{#1}}%
