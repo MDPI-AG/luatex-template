@@ -3118,7 +3118,7 @@
 % \begin{macro}{\ContinuedFloat}
 %    \begin{macrocode}
 \newcounter{mdpi@continuedfloat}
-\NewDocumentCommand\ContinuedFloat{s}{%
+\ProvideDocumentCommand\ContinuedFloat{s}{%
   \stepcounter{mdpi@continuedfloat}%
   \ExpandArgs{c}%
    \renewcommand{theH\@captype}{\UseName{the\@captype}.cont.\themdpi@continuedfloat}%
@@ -3396,8 +3396,9 @@
 %    \end{macrocode}
 %
 %\subsection{Perhaps obsolete commands}
-%TODO: check if this is still in use.
-% For transition period to change back to continuous page numbers
+% TODO: check if commands in this section are still in use.
+% To change back to continuous page numbers, still in use, see issue \#225
+% TODO: move to a sensible place. 
 %    \begin{macrocode}
 \def\@continuouspages{}
 \newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}
