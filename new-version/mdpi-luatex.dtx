@@ -179,10 +179,30 @@
 %    \begin{macrocode}
 \RequirePackage{lualineno}
 \newcounter{mdpi@lineno}
-\lualineno
+%    \end{macrocode}
+% the line option will work correctly with the next package version.
+%    \begin{macrocode}
+\IfPackageAtLeastTF{lualineno}{2026-11-14}
  {
-   define={name=mdpi toks={\stepcounter{mdpi@lineno}} right={\kern.8em\tiny\themdpi@lineno}}
+   \lualineno
+    {
+      define={name=mdpi 
+              toks={\stepcounter{mdpi@lineno}} 
+              right={\kern.8em\tiny\themdpi@lineno} 
+              line={recurse=false}
+              }
+    }
  }
+ {
+   \lualineno
+    {
+      define={name=mdpi 
+              toks={\stepcounter{mdpi@lineno}} 
+              right={\kern.8em\tiny\themdpi@lineno}               
+              }
+    }
+ }
+ 
 \newcommand\linenumbers{\lualineno{set=mdpi}}
 %    \end{macrocode}
 % Use in the biography environment. TODO: check if a proper list or display environment
