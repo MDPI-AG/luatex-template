@@ -667,24 +667,57 @@
   \begin{itemize}%
     [standalone=true,
      %tagging-recipe=standalonelist, %once latex offers something
-     label-format=\textsuperscript{##1},
+     label-format=\tl_if_in:nnTF {##1}{*}{##1}{\textsuperscript{##1}},
      #1,
      label-ref=\ifinner\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1}\fi,
      ]   
  }
  {\end{itemize}} 
- 
+
+\providecommand*{\mdpi@multiplefootnotemarker}{3sp}
+\newcommand\mdpi@fn@prepare
+  {
+    \kern-\mdpi@multiplefootnotemarker
+    \kern\mdpi@multiplefootnotemarker\relax
+  }
+\newcommand\mdpi@fn@check{%
+    \ifdim\lastkern=\mdpi@multiplefootnotemarker\relax
+      \edef\@x@sf{\the\spacefactor}%
+      \unkern
+      \unkern
+      \textsuperscript{,}%
+      \spacefactor\@x@sf\relax
+    \fi
+  }  
 \NewDocumentCommand\authormark{sm}
  {
   \leavevmode
-  \protected@xdef\@thefnmark{authornote/#2}
-  \int_gincr:N\g_fnote_id_int
-  \IfBooleanTF{#1}
-   {%without link
-     \UseTaggingSocket{fnmark}{}{\textsuperscript{#2}}
-   }  
-   {%with link
-     \UseTaggingSocket{fnmark}{}{\UseSocket{fnmark/link}{\textsuperscript{#2}}}
+  \clist_map_inline:nn {#2}
+   { 
+    \mdpi@fn@check 
+    \protected@xdef\@thefnmark{authornote/##1}
+    \int_gincr:N\g_fnote_id_int
+    \IfBooleanTF{#1}
+     {%without link
+      \UseTaggingSocket{fnmark}{}
+       {
+        \tl_if_in:nnTF 
+         {##1}{*}
+         {##1}{\textsuperscript{##1}}
+       }
+     }  
+     {%with link
+      \UseTaggingSocket{fnmark}{}
+        {
+          \UseSocket{fnmark/link}
+           {
+             \tl_if_in:nnTF 
+              {##1}{*}
+              {##1}{\textsuperscript{##1}}          
+           }
+        }
+     }
+    \mdpi@fn@prepare 
    }
  } 
 \ExplSyntaxOff 
