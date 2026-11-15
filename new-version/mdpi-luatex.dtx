@@ -629,6 +629,66 @@
  {\EditInstance{item}{basic}{label-align=right,label-format=\mdpi@ALC@labelformat{#1}}}
 %    \end{macrocode}
 %
+%  The affiliation and author notes should be tagged as footnotes (FENote).
+%  This will in future get better support in \LaTeX{} directly, but for now we
+%  provide the needed code here
+%    \begin{macrocode}
+\ExplSyntaxOn
+\cs_new_eq:NN \__mdpi_fnote_item_hook: \prg_do_nothing:
+\AddToHook{item/before}{\__mdpi_fnote_item_hook:}
+
+\tl_new:N\l__mdpi_fnote_currentstruct_tl
+\cs_new_protected:Npn \__mdpi_fnote_store_struct:
+ {
+   \tl_set:Ne \l__mdpi_fnote_currentstruct_tl { \tag_get:n{struct_num} }
+ }  
+ 
+\cs_new_protected:Npn \__mdpi_fnote_setup_note:nn #1#2 % #1 prefix, #2 label
+ {
+   \protected@xdef\@thefnmark{#1/#2}
+   \int_gincr:N\g_fnote_id_int   
+   \fnote_mark_gpop_all:nooN {struct}{ \@thefnmark }{ default } \l_tmpa_seq
+   \seq_map_inline:Nn \l_tmpa_seq
+     {\fnote_gput_refs:ee {##1}{ \l__mdpi_fnote_currentstruct_tl } }
+   \socket_use:n{fntext/mark/link}
+ }
+\tagpdfsetup{role/new-tag=authornotes/Part}
+\tagpdfsetup{role/new-tag=authornote/FENote}
+\tagpdfsetup{role/new-tag=authornotelabel/Lbl} 
+
+\NewDocumentEnvironment{authornotes}{O{}}
+ {
+  \AssignStructureRole{block/itemize}{authornotes}
+  \AssignStructureRole{block/list/item}{authornote}
+  \AssignStructureRole{block/list/label}{authornotelabel}
+  \AssignStructureRole{block/list/body}{Div}  
+  %activate the storing of structure numbers
+  \cs_set_eq:NN \__mdpi_fnote_item_hook: \__mdpifnote_store_struct: 
+  \begin{itemize}%
+    [standalone=true,
+     %tagging-recipe=standalonelist, %once latex offers something
+     label-format=\textsuperscript{##1},
+     #1,
+     label-ref=\ifinner\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1}\fi,
+     ]   
+ }
+ {\end{itemize}} 
+ 
+\NewDocumentCommand\authormark{sm}
+ {
+  \leavevmode
+  \protected@xdef\@thefnmark{authornote/#2}
+  \int_gincr:N\g_fnote_id_int
+  \IfBooleanTF{#1}
+   {%without link
+     \UseTaggingSocket{fnmark}{}{\textsuperscript{#2}}
+   }  
+   {%with link
+     \UseTaggingSocket{fnmark}{}{\UseSocket{fnmark/link}{\textsuperscript{#2}}}
+   }
+ } 
+\ExplSyntaxOff 
+%    \end{macrocode}
 % \subsection{Fontsizes}
 % The following font size are inherited from article
 % \begin{tabular}{lll}
