@@ -1176,8 +1176,8 @@ Completed box being shipped out [1]
 ........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
 .........\pdfliteral page <lua data reference ...>
 .........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{figure.1.cont.1} xyz
-.........\pdfdest name{figure.1.cont.1} xyz
+.........\pdfdest name{figure.1a} xyz
+.........\pdfdest name{figure.1a} xyz
 .........\penalty 10000
 .......\kern0.0
 .......\penalty 10000
@@ -1185,7 +1185,7 @@ Completed box being shipped out [1]
 .......\glue(\rightskip) 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces ss}}{\thepage }{figure.1.cont.1}\protected@file@percent }}
+......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces ss}}{\thepage }{figure.1a}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
 ......\glue(\parskip) 0.0
