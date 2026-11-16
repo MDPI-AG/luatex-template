@@ -663,13 +663,17 @@
   \AssignStructureRole{block/list/label}{authornotelabel}
   \AssignStructureRole{block/list/body}{Div}  
   %activate the storing of structure numbers
-  \cs_set_eq:NN \__mdpi_fnote_item_hook: \__mdpifnote_store_struct: 
+  \cs_set_eq:NN \__mdpi_fnote_item_hook: \__mdpi_fnote_store_struct: 
   \begin{itemize}%
-    [standalone=true,
-     %tagging-recipe=standalonelist, %once latex offers something
-     label-format=\tl_if_in:nnTF {##1}{*}{##1}{\textsuperscript{##1}},
+    [%standalone=true, %with 2027-06-01     
+     %label-format=,
      #1,
-     label-ref=\ifinner\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1}\fi,
+     %label-ref=\ifinner\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1}\fi,
+     nosep,
+     left-margin=\mdpi@len@tmpa,
+     label-width=\mdpi@len@tmpa,
+     label-sep=0pt,
+     align=left
      ]   
  }
  {\end{itemize}} 
@@ -2307,13 +2311,7 @@
        {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}
      \bool_if:NT\l__mdpi_frontmatter_notes_bool
        {
-        \begin{itemize}
-          [nosep,
-           left-margin=\mdpi@len@tmpa,
-           label-width=\mdpi@len@tmpa,
-           label-sep=0pt,
-           align=left
-          ]
+        \begin{authornotes}
         \tl_if_eq:NnTF\@authornum{author}
           {
             \stepcounter{mdpi@notecnt}
@@ -2340,7 +2338,7 @@
             \tl_use:c{@##1note}
            }
          }
-        \end{itemize}
+        \end{authornotes}
         \par
       }
      \tl_if_empty:NF\@LSID{\par\vskip12pt \@LSID \par}
