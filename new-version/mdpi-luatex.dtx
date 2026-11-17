@@ -2244,7 +2244,9 @@
 
 %    \end{macrocode}
 % \subsection{\cs{maketitlen} for notes after the main title}
-% We set up a counter and define symbols for the various notes:
+% We set up a counter and define symbols for the various notes. 
+% We need two variants: one with formatting and one with the \enquote{raw}
+% symbol, for the cross references in the FENote structure.
 %    \begin{macrocode}
 \ExplSyntaxOn
 \newcounter{mdpi@notecnt}
@@ -2268,6 +2270,26 @@
    \@ctrerr
    \fi
  }
+\def\mdpi@noterawsymbol
+ {
+   \ifcase\c@mdpi@notecnt
+   \or*     %corres
+   \or\textdagger   %conference
+   \or\textdaggerdbl% firstnote
+   \or\textsection  % secondnote etc
+   \or\textbardbl
+   \or\textparagraph
+   \or**
+   \or\textdagger\textdagger
+   \or\textdaggerdbl\textdaggerdbl
+   \or\textsection\textsection
+   \or\textbardbl\textbardbl
+   \or\textparagraph\textparagraph
+   \or ***
+   \else
+   \@ctrerr
+   \fi
+ } 
 %    \end{macrocode}
 % We avoid the use of the \cs{tabto} command as this uses math for measuring and
 % so gives unwanted structures if tagging is enabled. Instead the label is set inside
@@ -2322,19 +2344,22 @@
               \stepcounter{mdpi@notecnt}
             }
             {
-              \item[\mdpi@notelabel]\@corres
+              \stepcounter{mdpi@notecnt}
+              \item[label=\mdpi@noterawsymbol, label-format=\mdpi@notesymbol]\@corres
             }
           }
         \tl_if_empty:NF\@conference
           {
-            \item[\mdpi@notelabel]
+            \stepcounter{mdpi@notecnt}
+            \item[label=\mdpi@noterawsymbol, label-format=\mdpi@notesymbol]
             This~ paper~ is~ an~ extended~ version~ of~ our~ paper~ published~ in\space \@conference.
           }
         \clist_map_inline:nn{first,second,third,fourth,fifth,sixth,seventh,eighth,nineth,tenth,eleventh}
          {
           \tl_if_empty:cF{@##1note}
            {
-            \item[\mdpi@notelabel]
+            \stepcounter{mdpi@notecnt}
+            \item[label=\mdpi@noterawsymbol, label-format=\mdpi@notesymbol]
             \tl_use:c{@##1note}
            }
          }
