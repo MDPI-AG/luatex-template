@@ -668,7 +668,8 @@
     [%standalone=true, %with 2027-06-01     
      %label-format=,
      #1,
-     %label-ref=\ifinner\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1}\fi,
+     label-ref=\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1},
+     tag-attr-class,
      nosep,
      left-margin=\mdpi@len@tmpa,
      label-width=\mdpi@len@tmpa,
@@ -2274,22 +2275,22 @@
  {
    \ifcase\c@mdpi@notecnt
    \or*     %corres
-   \or\textdagger   %conference
-   \or\textdaggerdbl% firstnote
-   \or\textsection  % secondnote etc
-   \or\textbardbl
-   \or\textparagraph
+   \or\noexpand\textdagger   %conference
+   \or\noexpand\textdaggerdbl% firstnote
+   \or\noexpand\textsection  % secondnote etc
+   \or\noexpand\textbardbl
+   \or\noexpand\textparagraph
    \or**
-   \or\textdagger\textdagger
-   \or\textdaggerdbl\textdaggerdbl
-   \or\textsection\textsection
-   \or\textbardbl\textbardbl
-   \or\textparagraph\textparagraph
+   \or\noexpand\textdagger\textdagger
+   \or\noexpand\textdaggerdbl\textdaggerdbl
+   \or\noexpand\textsection\textsection
+   \or\noexpand\textbardbl\noexpand\textbardbl
+   \or\noexpand\textparagraph\noexpand\textparagraph
    \or ***
    \else
    \@ctrerr
    \fi
- } 
+ }
 %    \end{macrocode}
 % We avoid the use of the \cs{tabto} command as this uses math for measuring and
 % so gives unwanted structures if tagging is enabled. Instead the label is set inside
