@@ -77,28 +77,21 @@ TEST 1: Show PDF Tags
         referenced-as="16"
        >
        <?References objects="1" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0035"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0036"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>1
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>1
+      </text-fragment>
      </footnotemark>
      <Link xmlns="http://iso.org/pdf2/ssn"
-        id="ID.0037"
+        id="ID.0036"
        >
       <?MarkedContent page="1" ?>
       <Span xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0038"
+         id="ID.0037"
          actualtext="ORCID"
         >
        <?MarkedContent page="1" ?>
@@ -108,52 +101,38 @@ TEST 1: Show PDF Tags
      </Link>
      <?MarkedContent page="1" ?>, Firstname Lastname 
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0039"
+        id="ID.0038"
         rolemaps-to="Lbl"
         referenced-as="17"
        >
        <?References objects="2" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0040"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0039"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0041"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>2
-       </text-fragment>
-       <?MarkedContent page="1" ?> 
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>2 
+      </text-fragment>
      </footnotemark>
      <?MarkedContent page="1" ?>and Firstname Lastname 
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0042"
+        id="ID.0040"
         rolemaps-to="Lbl"
         referenced-as="18"
        >
        <?References objects="2" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0043"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0041"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0044"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>2
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>2
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0045"
+        id="ID.0042"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -161,43 +140,31 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>,
      </text-fragment>
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0046"
+        id="ID.0043"
         rolemaps-to="Lbl"
         referenced-as="19"
        >
        <?References objects="3" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0047"
-        >
-       <?MarkedContent page="1" ?>* 
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+      <?MarkedContent page="1" ?>* 
      </footnotemark>
      <?MarkedContent page="1" ?>and Firstname Lastname
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0048"
+        id="ID.0044"
         rolemaps-to="Lbl"
         referenced-as="20"
        >
        <?References objects="4" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0049"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0045"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0050"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>†
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>†
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0051"
+        id="ID.0046"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -205,26 +172,65 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>,
      </text-fragment>
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0052"
+        id="ID.0047"
         rolemaps-to="Lbl"
         referenced-as="21"
        >
        <?References objects="5" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0053"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0048"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0054"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>‡
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>‡
+      </text-fragment>
+     </footnotemark>
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0049"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextPosition="Sup"
+        rolemaps-to="Span"
+       >
+      <?MarkedContent page="1" ?>,
+     </text-fragment>
+     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0050"
+        rolemaps-to="Lbl"
+        referenced-as="22"
+       >
+       <?References objects="6" ?>
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0051"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
+        >
+       <?MarkedContent page="1" ?>§
+      </text-fragment>
+     </footnotemark>
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0052"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextPosition="Sup"
+        rolemaps-to="Span"
+       >
+      <?MarkedContent page="1" ?>,
+     </text-fragment>
+     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0053"
+        rolemaps-to="Lbl"
+        referenced-as="23"
+       >
+       <?References objects="7" ?>
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0054"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
+        >
+       <?MarkedContent page="1" ?>‖
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0055"
@@ -237,27 +243,20 @@ TEST 1: Show PDF Tags
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0056"
         rolemaps-to="Lbl"
-        referenced-as="22"
+        referenced-as="24"
        >
-       <?References objects="6" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
+       <?References objects="8" ?>
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.0057"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0058"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>§
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>¶
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0059"
+        id="ID.0058"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -265,26 +264,35 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>,
      </text-fragment>
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0060"
+        id="ID.0059"
         rolemaps-to="Lbl"
-        referenced-as="23"
+        referenced-as="25"
        >
-       <?References objects="7" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0061"
+       <?References objects="9" ?>
+      <?MarkedContent page="1" ?>**
+     </footnotemark>
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0060"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextPosition="Sup"
+        rolemaps-to="Span"
+       >
+      <?MarkedContent page="1" ?>,
+     </text-fragment>
+     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.0061"
+        rolemaps-to="Lbl"
+        referenced-as="26"
+       >
+       <?References objects="10" ?>
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0062"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0062"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>‖
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>††
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0063"
@@ -297,108 +305,20 @@ TEST 1: Show PDF Tags
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0064"
         rolemaps-to="Lbl"
-        referenced-as="24"
-       >
-       <?References objects="8" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0065"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0066"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>¶
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
-     </footnotemark>
-     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0067"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextPosition="Sup"
-        rolemaps-to="Span"
-       >
-      <?MarkedContent page="1" ?>,
-     </text-fragment>
-     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0068"
-        rolemaps-to="Lbl"
-        referenced-as="25"
-       >
-       <?References objects="9" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0069"
-        >
-       <?MarkedContent page="1" ?>**
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
-     </footnotemark>
-     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0070"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextPosition="Sup"
-        rolemaps-to="Span"
-       >
-      <?MarkedContent page="1" ?>,
-     </text-fragment>
-     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0071"
-        rolemaps-to="Lbl"
-        referenced-as="26"
-       >
-       <?References objects="10" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0072"
-        >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0073"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>††
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
-     </footnotemark>
-     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0074"
-        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-        Layout:TextPosition="Sup"
-        rolemaps-to="Span"
-       >
-      <?MarkedContent page="1" ?>,
-     </text-fragment>
-     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0075"
-        rolemaps-to="Lbl"
         referenced-as="27"
        >
        <?References objects="11" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0076"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0065"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0077"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>‡‡
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>‡‡
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0078"
+        id="ID.0066"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -406,29 +326,22 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>,
      </text-fragment>
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0079"
+        id="ID.0067"
         rolemaps-to="Lbl"
         referenced-as="28"
        >
        <?References objects="12" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0080"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0068"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0081"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>§§
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>§§
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0082"
+        id="ID.0069"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -436,29 +349,22 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>,
      </text-fragment>
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0083"
+        id="ID.0070"
         rolemaps-to="Lbl"
         referenced-as="29"
        >
        <?References objects="13" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0084"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0071"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0085"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>‖‖
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>‖‖
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0086"
+        id="ID.0072"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -466,29 +372,22 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>,
      </text-fragment>
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0087"
+        id="ID.0073"
         rolemaps-to="Lbl"
         referenced-as="30"
        >
        <?References objects="14" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0088"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.0074"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0089"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>¶¶
-       </text-fragment>
-       <?MarkedContent page="1" ?>
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+       <?MarkedContent page="1" ?>¶¶
+      </text-fragment>
      </footnotemark>
      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0090"
+        id="ID.0075"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextPosition="Sup"
         rolemaps-to="Span"
@@ -496,41 +395,36 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>,
      </text-fragment>
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.0091"
+        id="ID.0076"
         rolemaps-to="Lbl"
         referenced-as="31"
        >
        <?References objects="15" ?>
-      <Link xmlns="http://iso.org/pdf2/ssn"
-         id="ID.0092"
-        >
-       <?MarkedContent page="1" ?>***
-       <?ReferencedObject type="Annot" page="1" ?>
-      </Link>
+      <?MarkedContent page="1" ?>***
      </footnotemark>
     </title-author>
     <title-notes xmlns="https://www.latex-project.org/ns/local"
-       id="ID.0093"
+       id="ID.0077"
        rolemaps-to="semantic-para"
       >
      <affiliation xmlns="https://www.latex-project.org/ns/local"
-        id="ID.0094"
+        id="ID.0078"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="text-block"
        >
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0095"
+         id="ID.0079"
          rolemaps-to="FENote"
          referenced-as="1"
         >
         <?References objects="16" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0096"
+          id="ID.0080"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0097"
+           id="ID.0081"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -542,23 +436,23 @@ TEST 1: Show PDF Tags
       </footnote>
      </affiliation>
      <affiliation xmlns="https://www.latex-project.org/ns/local"
-        id="ID.0098"
+        id="ID.0082"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="text-block"
        >
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0099"
+         id="ID.0083"
          rolemaps-to="FENote"
          referenced-as="2"
         >
         <?References objects="17 18" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0100"
+          id="ID.0084"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0101"
+           id="ID.0085"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -570,30 +464,30 @@ TEST 1: Show PDF Tags
       </footnote>
      </affiliation>
      <authornotes xmlns="https://www.latex-project.org/ns/local"
-        id="ID.0102"
+        id="ID.0086"
         rolemaps-to="semantic-para"
        >
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0103"
+         id="ID.0087"
          rolemaps-to="FENote"
          referenced-as="3"
         >
         <?References objects="19" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0104"
+          id="ID.0088"
           rolemaps-to="Lbl"
          >
         <?MarkedContent page="1" ?>*
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0105"
+          id="ID.0089"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0106"
+           id="ID.0090"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0107"
+            id="ID.0091"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -604,17 +498,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0108"
+         id="ID.0092"
          rolemaps-to="FENote"
          referenced-as="4"
         >
         <?References objects="20" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0109"
+          id="ID.0093"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0110"
+           id="ID.0094"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -623,14 +517,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0111"
+          id="ID.0095"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0112"
+           id="ID.0096"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0113"
+            id="ID.0097"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -641,17 +535,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0114"
+         id="ID.0098"
          rolemaps-to="FENote"
          referenced-as="5"
         >
         <?References objects="21" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0115"
+          id="ID.0099"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0116"
+           id="ID.0100"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -660,14 +554,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0117"
+          id="ID.0101"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0118"
+           id="ID.0102"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0119"
+            id="ID.0103"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -678,17 +572,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0120"
+         id="ID.0104"
          rolemaps-to="FENote"
          referenced-as="6"
         >
         <?References objects="22" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0121"
+          id="ID.0105"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0122"
+           id="ID.0106"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -697,14 +591,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0123"
+          id="ID.0107"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0124"
+           id="ID.0108"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0125"
+            id="ID.0109"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -715,17 +609,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0126"
+         id="ID.0110"
          rolemaps-to="FENote"
          referenced-as="7"
         >
         <?References objects="23" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0127"
+          id="ID.0111"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0128"
+           id="ID.0112"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -734,14 +628,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0129"
+          id="ID.0113"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0130"
+           id="ID.0114"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0131"
+            id="ID.0115"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -752,17 +646,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0132"
+         id="ID.0116"
          rolemaps-to="FENote"
          referenced-as="8"
         >
         <?References objects="24" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0133"
+          id="ID.0117"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0134"
+           id="ID.0118"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -771,14 +665,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0135"
+          id="ID.0119"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0136"
+           id="ID.0120"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0137"
+            id="ID.0121"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -789,26 +683,26 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0138"
+         id="ID.0122"
          rolemaps-to="FENote"
          referenced-as="9"
         >
         <?References objects="25" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0139"
+          id="ID.0123"
           rolemaps-to="Lbl"
          >
         <?MarkedContent page="1" ?>**
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0140"
+          id="ID.0124"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0141"
+           id="ID.0125"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0142"
+            id="ID.0126"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -819,17 +713,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0143"
+         id="ID.0127"
          rolemaps-to="FENote"
          referenced-as="10"
         >
         <?References objects="26" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0144"
+          id="ID.0128"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0145"
+           id="ID.0129"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -838,14 +732,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0146"
+          id="ID.0130"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0147"
+           id="ID.0131"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0148"
+            id="ID.0132"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -856,17 +750,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0149"
+         id="ID.0133"
          rolemaps-to="FENote"
          referenced-as="11"
         >
         <?References objects="27" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0150"
+          id="ID.0134"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0151"
+           id="ID.0135"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -875,14 +769,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0152"
+          id="ID.0136"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0153"
+           id="ID.0137"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0154"
+            id="ID.0138"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -893,17 +787,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0155"
+         id="ID.0139"
          rolemaps-to="FENote"
          referenced-as="12"
         >
         <?References objects="28" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0156"
+          id="ID.0140"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0157"
+           id="ID.0141"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -912,14 +806,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0158"
+          id="ID.0142"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0159"
+           id="ID.0143"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0160"
+            id="ID.0144"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -930,17 +824,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0161"
+         id="ID.0145"
          rolemaps-to="FENote"
          referenced-as="13"
         >
         <?References objects="29" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0162"
+          id="ID.0146"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0163"
+           id="ID.0147"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -949,14 +843,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0164"
+          id="ID.0148"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0165"
+           id="ID.0149"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0166"
+            id="ID.0150"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -967,17 +861,17 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0167"
+         id="ID.0151"
          rolemaps-to="FENote"
          referenced-as="14"
         >
         <?References objects="30" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0168"
+          id="ID.0152"
           rolemaps-to="Lbl"
          >
         <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0169"
+           id="ID.0153"
            xmlns:Layout="http://iso.org/pdf/ssn/Layout"
            Layout:TextPosition="Sup"
            rolemaps-to="Span"
@@ -986,14 +880,14 @@ TEST 1: Show PDF Tags
         </text-fragment>
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0170"
+          id="ID.0154"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0171"
+           id="ID.0155"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0172"
+            id="ID.0156"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -1004,26 +898,26 @@ TEST 1: Show PDF Tags
        </Div>
       </footnote>
       <footnote xmlns="https://www.latex-project.org/ns/dflt"
-         id="ID.0173"
+         id="ID.0157"
          rolemaps-to="FENote"
          referenced-as="15"
         >
         <?References objects="31" ?>
        <footnotelabel xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.0174"
+          id="ID.0158"
           rolemaps-to="Lbl"
          >
         <?MarkedContent page="1" ?>***
        </footnotelabel>
        <Div xmlns="http://iso.org/pdf2/ssn"
-          id="ID.0175"
+          id="ID.0159"
          >
         <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.0176"
+           id="ID.0160"
            rolemaps-to="Part"
           >
          <text-block xmlns="https://www.latex-project.org/ns/dflt"
-            id="ID.0177"
+            id="ID.0161"
             xmlns:Layout="http://iso.org/pdf/ssn/Layout"
             Layout:TextAlign="Start"
             rolemaps-to="P"
@@ -1126,11 +1020,11 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </Aside>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.0178"
+      id="ID.0162"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.0179"
+       id="ID.0163"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -1139,7 +1033,7 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.0180"
+      id="ID.0164"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -1952,26 +1846,18 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 e
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 6} action struct name{footnote*.2} goto name{footnote*.2}
 .....\hbox(4.69+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 1
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://orcid.org/0000-0000-0000-000X) >>  /LTEX_position /isolated/StructParent 7} action user{}
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://orcid.org/0000-0000-0000-000X) >>  /LTEX_position /isolated/StructParent 6} action user{}
 .....\hbox(9.10466+0.0)x9.10509, direction TLT
 ......\hbox(9.10469+0.0)x9.10469, direction TLT
 .......\hbox(9.10469+0.0)x9.10469, direction TLT
@@ -2023,21 +1909,13 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 e
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 8} action struct name{footnote*.4} goto name{footnote*.4}
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 2
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\TU/tg-pagella/b/n/10  
@@ -2075,21 +1953,13 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 e
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 9} action struct name{footnote*.6} goto name{footnote*.6}
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 2
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2099,13 +1969,9 @@ Completed box being shipped out [1]
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 10} action struct name{footnote*.8} goto name{footnote*.8}
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/10 *
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\pdfliteral page <lua data reference ...>
@@ -2142,21 +2008,13 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 11} action struct name{footnote*.10} goto name{footnote*.10}
 .....\hbox(4.774+0.042)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 †
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2164,21 +2022,13 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 12} action struct name{footnote*.12} goto name{footnote*.12}
 .....\hbox(4.774+1.715)x3.5, shifted -3.46338, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ‡
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2186,21 +2036,13 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 13} action struct name{footnote*.14} goto name{footnote*.14}
 .....\hbox(4.865+1.519)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ^^a7
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2208,21 +2050,13 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 14} action struct name{footnote*.16} goto name{footnote*.16}
 .....\hbox(4.55+1.05)x2.968, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ‖
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2230,21 +2064,13 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 15} action struct name{footnote*.18} goto name{footnote*.18}
 .....\hbox(4.809+1.127)x4.487, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ^^b6
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2254,35 +2080,23 @@ Completed box being shipped out [1]
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 16} action struct name{footnote*.20} goto name{footnote*.20}
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/10 *
 .....\TU/tg-pagella/b/n/10 *
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
-......\pdfliteral direct <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ,
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 17} action struct name{footnote*.22} goto name{footnote*.22}
 .....\hbox(4.774+0.042)x7.0, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 †
 ......\TU/tg-pagella/b/n/7 †
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2290,22 +2104,14 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 18} action struct name{footnote*.24} goto name{footnote*.24}
 .....\hbox(4.774+1.715)x7.0, shifted -3.46338, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ‡
 ......\TU/tg-pagella/b/n/7 ‡
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2313,22 +2119,14 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 19} action struct name{footnote*.26} goto name{footnote*.26}
 .....\hbox(4.865+1.519)x7.0, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ^^a7
 ......\TU/tg-pagella/b/n/7 ^^a7
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2336,22 +2134,14 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 20} action struct name{footnote*.28} goto name{footnote*.28}
 .....\hbox(4.55+1.05)x5.936, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ‖
 ......\TU/tg-pagella/b/n/7 ‖
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2359,22 +2149,14 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 21} action struct name{footnote*.30} goto name{footnote*.30}
 .....\hbox(4.809+1.127)x8.974, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ^^b6
 ......\TU/tg-pagella/b/n/7 ^^b6
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -2384,12 +2166,9 @@ Completed box being shipped out [1]
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 22} action struct name{footnote*.32} goto name{footnote*.32}
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/10 *
 .....\TU/tg-pagella/b/n/10 *
 .....\TU/tg-pagella/b/n/10 *
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\penalty 10000
@@ -2416,18 +2195,10 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfliteral direct <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\pdfdest name{footnote*.2} xyz
-.......\pdfdest name{footnote*.2} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.33} xyz
-.......\pdfdest name{footnote*.33} xyz
+.......\pdfdest name{footnote*.17} xyz
+.......\pdfdest name{footnote*.17} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\hbox(6.79774+0.0)x13.59998, glue set 10.09998fil, direction TLT
@@ -2505,22 +2276,8 @@ Completed box being shipped out [1]
 ......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\pdfdest name{footnote*.4} xyz
-.......\pdfdest name{footnote*.4} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.6} xyz
-.......\pdfdest name{footnote*.6} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.34} xyz
-.......\pdfdest name{footnote*.34} xyz
+.......\pdfdest name{footnote*.18} xyz
+.......\pdfdest name{footnote*.18} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\hbox(6.76775+0.0)x13.59998, glue set 10.09998fil, direction TLT
@@ -2588,11 +2345,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.8} xyz
-....\pdfdest name{footnote*.8} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.35} xyz
-....\pdfdest name{footnote*.35} xyz
+....\pdfdest name{footnote*.19} xyz
+....\pdfdest name{footnote*.19} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -2855,11 +2609,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.10} xyz
-....\pdfdest name{footnote*.10} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.36} xyz
-....\pdfdest name{footnote*.36} xyz
+....\pdfdest name{footnote*.20} xyz
+....\pdfdest name{footnote*.20} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -2994,11 +2745,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.12} xyz
-....\pdfdest name{footnote*.12} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.37} xyz
-....\pdfdest name{footnote*.37} xyz
+....\pdfdest name{footnote*.21} xyz
+....\pdfdest name{footnote*.21} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -3224,11 +2972,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.14} xyz
-....\pdfdest name{footnote*.14} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.38} xyz
-....\pdfdest name{footnote*.38} xyz
+....\pdfdest name{footnote*.22} xyz
+....\pdfdest name{footnote*.22} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -3455,11 +3200,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.16} xyz
-....\pdfdest name{footnote*.16} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.39} xyz
-....\pdfdest name{footnote*.39} xyz
+....\pdfdest name{footnote*.23} xyz
+....\pdfdest name{footnote*.23} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -3684,11 +3426,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.18} xyz
-....\pdfdest name{footnote*.18} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.40} xyz
-....\pdfdest name{footnote*.40} xyz
+....\pdfdest name{footnote*.24} xyz
+....\pdfdest name{footnote*.24} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -3915,11 +3654,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.20} xyz
-....\pdfdest name{footnote*.20} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.41} xyz
-....\pdfdest name{footnote*.41} xyz
+....\pdfdest name{footnote*.25} xyz
+....\pdfdest name{footnote*.25} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -4143,11 +3879,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.22} xyz
-....\pdfdest name{footnote*.22} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.42} xyz
-....\pdfdest name{footnote*.42} xyz
+....\pdfdest name{footnote*.26} xyz
+....\pdfdest name{footnote*.26} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -4373,11 +4106,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.24} xyz
-....\pdfdest name{footnote*.24} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.43} xyz
-....\pdfdest name{footnote*.43} xyz
+....\pdfdest name{footnote*.27} xyz
+....\pdfdest name{footnote*.27} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -4609,11 +4339,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.26} xyz
-....\pdfdest name{footnote*.26} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.44} xyz
-....\pdfdest name{footnote*.44} xyz
+....\pdfdest name{footnote*.28} xyz
+....\pdfdest name{footnote*.28} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -4840,11 +4567,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.28} xyz
-....\pdfdest name{footnote*.28} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.45} xyz
-....\pdfdest name{footnote*.45} xyz
+....\pdfdest name{footnote*.29} xyz
+....\pdfdest name{footnote*.29} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -5072,9 +4796,6 @@ Completed box being shipped out [1]
 ....\pdfdest name{footnote*.30} xyz
 ....\pdfdest name{footnote*.30} xyz
 ....\penalty 10000
-....\pdfdest name{footnote*.46} xyz
-....\pdfdest name{footnote*.46} xyz
-....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 1.39325
@@ -5300,11 +5021,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.32} xyz
-....\pdfdest name{footnote*.32} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.47} xyz
-....\pdfdest name{footnote*.47} xyz
+....\pdfdest name{footnote*.31} xyz
+....\pdfdest name{footnote*.31} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -5642,7 +5360,7 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/acoustics0000000) >>  /LTEX_position /isolated/StructParent 23/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/acoustics0000000) >>  /LTEX_position /isolated/StructParent 7/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral direct <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 h
@@ -5746,8 +5464,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~180 structure objects
-(tagpdf)             with ~203 'MC' leaf nodes.
+(tagpdf)             Writing out ~164 structure objects
+(tagpdf)             with ~171 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

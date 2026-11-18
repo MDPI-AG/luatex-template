@@ -712,14 +712,11 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{footnote*.2}
 .....\hbox(4.69+0.021)x3.5, shifted -3.29218, direction TLT
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 1
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://orcid.org/0000-0000-0000-000X) >> } action user{}
@@ -727,6 +724,7 @@ Completed box being shipped out [1]
 ......\hbox(9.10469+0.0)x9.10469, direction TLT
 .......\hbox(9.10469+0.0)x9.10469, direction TLT
 ........\hbox(9.10469+0.0)x0.0, direction TLT
+.........\pdfliteral direct <lua data reference ...>
 .........\pdfsave
 .........\pdfsetmatrix{.08893 0 0 .08893}
 .........\hbox(102.3825+0.0)x0.0, glue set - 102.3825fil, direction TLT
@@ -764,18 +762,14 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{footnote*.4}
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 2
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 n
 .....\TU/tg-pagella/b/n/10 d
@@ -804,24 +798,17 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{footnote*.6}
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 2
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 ,
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{footnote*.8}
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/10 *
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\penalty 10000
@@ -848,18 +835,11 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.2} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.9} xyz
+.......\pdfdest name{footnote*.5} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\hbox(6.79774+0.0)x13.59998, glue set 10.09998fil, direction TLT
 ......\hbox(4.164+0.018)x3.0, shifted -2.63374, direction TLT
-.......\pdfliteral direct <lua data reference ...>
 .......\TU/tg-pagella/m/n/6 1
 ......\penalty 10000
 ......\glue 0.5
@@ -925,19 +905,7 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.4} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 .......\pdfdest name{footnote*.6} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.10} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\hbox(6.76775+0.0)x13.59998, glue set 10.09998fil, direction TLT
@@ -997,9 +965,7 @@ Completed box being shipped out [1]
 ....\penalty -51
 ....\glue 0.0 plus 1.0
 ....\glue 0.0
-....\pdfdest name{footnote*.8} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.11} xyz
+....\pdfdest name{footnote*.7} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -1239,7 +1205,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.12} xyz
+....\pdfdest name{footnote*.8} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -1357,7 +1323,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.13} xyz
+....\pdfdest name{footnote*.9} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -1558,7 +1524,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.14} xyz
+....\pdfdest name{footnote*.10} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -1760,7 +1726,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.15} xyz
+....\pdfdest name{footnote*.11} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -1960,7 +1926,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.16} xyz
+....\pdfdest name{footnote*.12} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -2162,7 +2128,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.17} xyz
+....\pdfdest name{footnote*.13} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -2361,7 +2327,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.18} xyz
+....\pdfdest name{footnote*.14} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -2562,7 +2528,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.19} xyz
+....\pdfdest name{footnote*.15} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -2769,7 +2735,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.20} xyz
+....\pdfdest name{footnote*.16} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -2971,7 +2937,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.21} xyz
+....\pdfdest name{footnote*.17} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -3172,7 +3138,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.22} xyz
+....\pdfdest name{footnote*.18} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -3374,7 +3340,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) 0.0 plus 1.0fil
 ....\penalty -51
 ....\glue 0.0
-....\pdfdest name{footnote*.23} xyz
+....\pdfdest name{footnote*.19} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0

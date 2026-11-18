@@ -729,26 +729,18 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 e
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 5} action struct name{footnote*.2} goto name{footnote*.2}
 .....\hbox(4.69+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 1
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://orcid.org/0000-0000-0000-000X) >>  /LTEX_position /isolated/StructParent 6} action user{}
+.....\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://orcid.org/0000-0000-0000-000X) >>  /LTEX_position /isolated/StructParent 5} action user{}
 .....\hbox(9.10466+0.0)x9.10509, direction TLT
 ......\hbox(9.10469+0.0)x9.10469, direction TLT
 .......\hbox(9.10469+0.0)x9.10469, direction TLT
@@ -800,21 +792,13 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 e
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 7} action struct name{footnote*.4} goto name{footnote*.4}
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 2
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\TU/tg-pagella/b/n/10  
@@ -852,21 +836,13 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 e
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 8} action struct name{footnote*.6} goto name{footnote*.6}
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
-......\pdfliteral direct <lua data reference ...>
 ......\TU/tg-pagella/b/n/7 2
 .....\penalty 10000
 .....\glue 0.5
 .....\kern0.0
-.....\pdfliteral direct <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
-.....\pdfendlink
 .....\hbox(0.987+1.162)x1.75, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -876,10 +852,7 @@ Completed box being shipped out [1]
 .....\kern0.0
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
-.....\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118]  /LTEX_position /isolated/StructParent 9} action struct name{footnote*.8} goto name{footnote*.8}
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/10 *
-.....\pdfendlink
 .....\kern-0.00005
 .....\kern0.00005
 .....\penalty 10000
@@ -906,18 +879,10 @@ Completed box being shipped out [1]
 .....\penalty 10000
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfliteral direct <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\pdfdest name{footnote*.2} xyz
-.......\pdfdest name{footnote*.2} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.9} xyz
-.......\pdfdest name{footnote*.9} xyz
+.......\pdfdest name{footnote*.5} xyz
+.......\pdfdest name{footnote*.5} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\hbox(6.79774+0.0)x13.59998, glue set 10.09998fil, direction TLT
@@ -995,22 +960,8 @@ Completed box being shipped out [1]
 ......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\pdfdest name{footnote*.4} xyz
-.......\pdfdest name{footnote*.4} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
 .......\pdfdest name{footnote*.6} xyz
 .......\pdfdest name{footnote*.6} xyz
-.......\penalty 10000
-.....\kern0.0
-.....\penalty 10000
-.....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, shifted -10.485, direction TLT
-.......\pdfdest name{footnote*.10} xyz
-.......\pdfdest name{footnote*.10} xyz
 .......\penalty 10000
 .....\kern0.0
 .....\hbox(6.76775+0.0)x13.59998, glue set 10.09998fil, direction TLT
@@ -1078,11 +1029,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.8} xyz
-....\pdfdest name{footnote*.8} xyz
-....\penalty 10000
-....\pdfdest name{footnote*.11} xyz
-....\pdfdest name{footnote*.11} xyz
+....\pdfdest name{footnote*.7} xyz
+....\pdfdest name{footnote*.7} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -1345,8 +1293,8 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
-....\pdfdest name{footnote*.12} xyz
-....\pdfdest name{footnote*.12} xyz
+....\pdfdest name{footnote*.8} xyz
+....\pdfdest name{footnote*.8} xyz
 ....\penalty 10000
 ....\glue(\parskip) 0.0
 ....\glue(\parskip) 0.0
@@ -1684,7 +1632,7 @@ Completed box being shipped out [1]
 ............\localleftbox=null
 ............\localrightbox=null
 ...........\hbox(0.0+0.0)x0.0, direction TLT
-...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/acoustics0000000) >>  /LTEX_position /isolated/StructParent 10/Contents (artifact)} action user{}
+...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/acoustics0000000) >>  /LTEX_position /isolated/StructParent 6/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral direct <lua data reference ...>
 ...........\TU/tg-pagella/m/n/8 h
@@ -1788,8 +1736,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~69 structure objects
-(tagpdf)             with ~68 'MC' leaf nodes.
+(tagpdf)             Writing out ~65 structure objects
+(tagpdf)             with ~60 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
