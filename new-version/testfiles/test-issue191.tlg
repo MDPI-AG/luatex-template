@@ -3156,8 +3156,8 @@ MathML statistic
 ==> 20 fitting MathML AF found
 ==> 20 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~164 structure objects
-(tagpdf)             with ~103 'MC' leaf nodes.
+(tagpdf)             Writing out ~163 structure objects
+(tagpdf)             with ~101 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

@@ -15,11 +15,11 @@ TEST 1: Show PDF Tags
       ARIA-1.1:role="banner"
       rolemaps-to="Div"
      >
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+    <title-logos xmlns="https://www.latex-project.org/ns/local"
        id="ID.024"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
-       rolemaps-to="P"
+       rolemaps-to="text-block"
       >
      <Link xmlns="http://iso.org/pdf2/ssn"
         id="ID.025"
@@ -34,24 +34,17 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+    </title-logos>
+    <title-subtext xmlns="https://www.latex-project.org/ns/local"
        id="ID.027"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.028"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
+       rolemaps-to="text-block"
       >
      <?MarkedContent page="1" ?>Article
-    </text-block>
+    </title-subtext>
     <title-text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.029"
+       id="ID.028"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="Title"
@@ -59,26 +52,26 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?>TITLE
     </title-text>
     <title-author xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.030"
+       id="ID.029"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>AUTHOR
     </title-author>
-    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.031"
-       rolemaps-to="Part"
+    <title-notes xmlns="https://www.latex-project.org/ns/local"
+       id="ID.030"
+       rolemaps-to="semantic-para"
       >
-     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.032"
+     <affiliation xmlns="https://www.latex-project.org/ns/local"
+        id="ID.031"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
-        rolemaps-to="P"
+        rolemaps-to="text-block"
        >
       <?MarkedContent page="1" ?>ADDRESS
-     </text-block>
-    </semantic-para>
+     </affiliation>
+    </title-notes>
    </title-block>
    <Aside xmlns="http://iso.org/pdf2/ssn"
       id="ID.011"
@@ -158,11 +151,11 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </Aside>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.033"
+      id="ID.032"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.034"
+       id="ID.033"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -171,7 +164,7 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.035"
+      id="ID.034"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -1217,8 +1210,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~35 structure objects
-(tagpdf)             with ~22 'MC' leaf nodes.
+(tagpdf)             Writing out ~34 structure objects
+(tagpdf)             with ~20 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

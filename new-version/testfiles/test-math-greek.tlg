@@ -15,11 +15,11 @@ TEST 1: Show PDF Tags
       ARIA-1.1:role="banner"
       rolemaps-to="Div"
      >
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+    <title-logos xmlns="https://www.latex-project.org/ns/local"
        id="ID.024"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
-       rolemaps-to="P"
+       rolemaps-to="text-block"
       >
      <Link xmlns="http://iso.org/pdf2/ssn"
         id="ID.025"
@@ -34,24 +34,17 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+    </title-logos>
+    <title-subtext xmlns="https://www.latex-project.org/ns/local"
        id="ID.027"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.028"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
+       rolemaps-to="text-block"
       >
      <?MarkedContent page="1" ?>Article
-    </text-block>
+    </title-subtext>
     <title-text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.029"
+       id="ID.028"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="Title"
@@ -59,26 +52,26 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?>TITLE
     </title-text>
     <title-author xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.030"
+       id="ID.029"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>AUTHOR
     </title-author>
-    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.031"
-       rolemaps-to="Part"
+    <title-notes xmlns="https://www.latex-project.org/ns/local"
+       id="ID.030"
+       rolemaps-to="semantic-para"
       >
-     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.032"
+     <affiliation xmlns="https://www.latex-project.org/ns/local"
+        id="ID.031"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
-        rolemaps-to="P"
+        rolemaps-to="text-block"
        >
       <?MarkedContent page="1" ?>ADDRESS
-     </text-block>
-    </semantic-para>
+     </affiliation>
+    </title-notes>
    </title-block>
    <Aside xmlns="http://iso.org/pdf2/ssn"
       id="ID.011"
@@ -158,17 +151,17 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </Aside>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.033"
+      id="ID.032"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.034"
+       id="ID.033"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.035"
+        id="ID.034"
         title="math"
         af="mathml-1.xml tag-AFfile1.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -183,7 +176,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛤
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.036"
+        id="ID.035"
         title="math"
         af="mathml-2.xml tag-AFfile2.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -198,7 +191,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛥
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.037"
+        id="ID.036"
         title="math"
         af="mathml-3.xml tag-AFfile3.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -213,7 +206,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛩
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.038"
+        id="ID.037"
         title="math"
         af="mathml-4.xml tag-AFfile4.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -228,7 +221,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛬
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.039"
+        id="ID.038"
         title="math"
         af="mathml-5.xml tag-AFfile5.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -243,7 +236,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛯
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.040"
+        id="ID.039"
         title="math"
         af="mathml-6.xml tag-AFfile6.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -258,7 +251,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛱
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.041"
+        id="ID.040"
         title="math"
         af="mathml-7.xml tag-AFfile7.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -273,7 +266,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛴
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.042"
+        id="ID.041"
         title="math"
         af="mathml-8.xml tag-AFfile8.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -288,7 +281,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛶
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.043"
+        id="ID.042"
         title="math"
         af="mathml-9.xml tag-AFfile9.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -303,7 +296,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛷
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.044"
+        id="ID.043"
         title="math"
         af="mathml-10.xml tag-AFfile10.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -318,7 +311,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>𝛹
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.045"
+        id="ID.044"
         title="math"
         af="mathml-11.xml tag-AFfile11.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -335,17 +328,17 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.046"
+      id="ID.045"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.047"
+       id="ID.046"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.048"
+        id="ID.047"
         title="math"
         af="mathml-12.xml tag-AFfile12.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -360,7 +353,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>α
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.049"
+        id="ID.048"
         title="math"
         af="mathml-13.xml tag-AFfile13.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -375,7 +368,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>β
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.050"
+        id="ID.049"
         title="math"
         af="mathml-14.xml tag-AFfile14.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -390,7 +383,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>γ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.051"
+        id="ID.050"
         title="math"
         af="mathml-15.xml tag-AFfile15.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -405,7 +398,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>δ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.052"
+        id="ID.051"
         title="math"
         af="mathml-16.xml tag-AFfile16.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -420,7 +413,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>ϵ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.053"
+        id="ID.052"
         title="math"
         af="mathml-17.xml tag-AFfile17.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -435,7 +428,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>ζ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.054"
+        id="ID.053"
         title="math"
         af="mathml-18.xml tag-AFfile18.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -450,7 +443,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>η
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.055"
+        id="ID.054"
         title="math"
         af="mathml-19.xml tag-AFfile19.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -465,7 +458,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>θ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.056"
+        id="ID.055"
         title="math"
         af="mathml-20.xml tag-AFfile20.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -480,7 +473,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>ι
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.057"
+        id="ID.056"
         title="math"
         af="mathml-21.xml tag-AFfile21.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -495,7 +488,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>κ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.058"
+        id="ID.057"
         title="math"
         af="mathml-22.xml tag-AFfile22.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -510,7 +503,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>λ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.059"
+        id="ID.058"
         title="math"
         af="mathml-23.xml tag-AFfile23.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -525,7 +518,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>μ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.060"
+        id="ID.059"
         title="math"
         af="mathml-24.xml tag-AFfile24.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -540,7 +533,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>ν
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.061"
+        id="ID.060"
         title="math"
         af="mathml-25.xml tag-AFfile25.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -555,7 +548,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>ξ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.062"
+        id="ID.061"
         title="math"
         af="mathml-26.xml tag-AFfile26.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -570,7 +563,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>π
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.063"
+        id="ID.062"
         title="math"
         af="mathml-27.xml tag-AFfile27.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -585,7 +578,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>ρ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.064"
+        id="ID.063"
         title="math"
         af="mathml-28.xml tag-AFfile28.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -600,7 +593,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>σ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.065"
+        id="ID.064"
         title="math"
         af="mathml-29.xml tag-AFfile29.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -615,7 +608,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>τ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.066"
+        id="ID.065"
         title="math"
         af="mathml-30.xml tag-AFfile30.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -630,7 +623,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>υ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.067"
+        id="ID.066"
         title="math"
         af="mathml-31.xml tag-AFfile31.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -645,7 +638,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>ϕ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.068"
+        id="ID.067"
         title="math"
         af="mathml-32.xml tag-AFfile32.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -660,7 +653,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>χ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.069"
+        id="ID.068"
         title="math"
         af="mathml-33.xml tag-AFfile33.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -675,7 +668,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>ψ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.070"
+        id="ID.069"
         title="math"
         af="mathml-34.xml tag-AFfile34.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -692,17 +685,17 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.071"
+      id="ID.070"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.072"
+       id="ID.071"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.073"
+        id="ID.072"
         title="math"
         af="mathml-35.xml tag-AFfile35.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -717,7 +710,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Γ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.074"
+        id="ID.073"
         title="math"
         af="mathml-36.xml tag-AFfile36.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -732,7 +725,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Δ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.075"
+        id="ID.074"
         title="math"
         af="mathml-37.xml tag-AFfile37.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -747,7 +740,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Θ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.076"
+        id="ID.075"
         title="math"
         af="mathml-38.xml tag-AFfile38.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -762,7 +755,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Λ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.077"
+        id="ID.076"
         title="math"
         af="mathml-39.xml tag-AFfile39.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -777,7 +770,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Ξ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.078"
+        id="ID.077"
         title="math"
         af="mathml-40.xml tag-AFfile40.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -792,7 +785,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Π
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.079"
+        id="ID.078"
         title="math"
         af="mathml-41.xml tag-AFfile41.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -807,7 +800,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Σ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.080"
+        id="ID.079"
         title="math"
         af="mathml-42.xml tag-AFfile42.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -822,7 +815,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Υ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.081"
+        id="ID.080"
         title="math"
         af="mathml-43.xml tag-AFfile43.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -837,7 +830,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Φ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.082"
+        id="ID.081"
         title="math"
         af="mathml-44.xml tag-AFfile44.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -852,7 +845,7 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>Ψ
      </Formula>
      <Formula xmlns="http://iso.org/pdf2/ssn"
-        id="ID.083"
+        id="ID.082"
         title="math"
         af="mathml-45.xml tag-AFfile45.tex"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
@@ -869,7 +862,7 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.084"
+      id="ID.083"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -2241,8 +2234,8 @@ MathML statistic
 ==> 45 fitting MathML AF found
 ==> 45 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~84 structure objects
-(tagpdf)             with ~114 'MC' leaf nodes.
+(tagpdf)             Writing out ~83 structure objects
+(tagpdf)             with ~112 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

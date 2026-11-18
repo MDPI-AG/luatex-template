@@ -15,11 +15,11 @@ TEST 1: Show PDF Tags
       ARIA-1.1:role="banner"
       rolemaps-to="Div"
      >
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+    <title-logos xmlns="https://www.latex-project.org/ns/local"
        id="ID.024"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
-       rolemaps-to="P"
+       rolemaps-to="text-block"
       >
      <Link xmlns="http://iso.org/pdf2/ssn"
         id="ID.025"
@@ -34,24 +34,17 @@ TEST 1: Show PDF Tags
       <?MarkedContent page="1" ?>
       <?ReferencedObject type="Annot" page="1" ?>
      </Link>
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+    </title-logos>
+    <title-subtext xmlns="https://www.latex-project.org/ns/local"
        id="ID.027"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.028"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
+       rolemaps-to="text-block"
       >
      <?MarkedContent page="1" ?>Article
-    </text-block>
+    </title-subtext>
     <title-text xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.029"
+       id="ID.028"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="Title"
@@ -59,26 +52,26 @@ TEST 1: Show PDF Tags
      <?MarkedContent page="1" ?>TITLE
     </title-text>
     <title-author xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.030"
+       id="ID.029"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
      <?MarkedContent page="1" ?>AUTHOR
     </title-author>
-    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.031"
-       rolemaps-to="Part"
+    <title-notes xmlns="https://www.latex-project.org/ns/local"
+       id="ID.030"
+       rolemaps-to="semantic-para"
       >
-     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.032"
+     <affiliation xmlns="https://www.latex-project.org/ns/local"
+        id="ID.031"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
-        rolemaps-to="P"
+        rolemaps-to="text-block"
        >
       <?MarkedContent page="1" ?>ADDRESS
-     </text-block>
-    </semantic-para>
+     </affiliation>
+    </title-notes>
    </title-block>
    <Aside xmlns="http://iso.org/pdf2/ssn"
       id="ID.011"
@@ -158,19 +151,19 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </Aside>
    <float xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.033"
+      id="ID.032"
       rolemaps-to="Aside"
      >
     <Caption xmlns="http://iso.org/pdf2/ssn"
-       id="ID.037"
+       id="ID.036"
       >
      <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.038"
+        id="ID.037"
        >
       <?MarkedContent page="1" ?>Figure 1. 
      </Lbl>
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.039"
+        id="ID.038"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -179,17 +172,17 @@ TEST 1: Show PDF Tags
      </text-block>
     </Caption>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.034"
+       id="ID.033"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.035"
+        id="ID.034"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
        >
       <Figure xmlns="http://iso.org/pdf2/ssn"
-         id="ID.036"
+         id="ID.035"
          alt="example-image.pdf"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:BBox="{ 166.39398, 383.51575, 486.3932, 623.51515 }"
@@ -201,19 +194,19 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </float>
    <float xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.040"
+      id="ID.039"
       rolemaps-to="Aside"
      >
     <Caption xmlns="http://iso.org/pdf2/ssn"
-       id="ID.044"
+       id="ID.043"
       >
      <Lbl xmlns="http://iso.org/pdf2/ssn"
-        id="ID.045"
+        id="ID.044"
        >
       <?MarkedContent page="1" ?>Figure 1. 
      </Lbl>
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.046"
+        id="ID.045"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
@@ -222,17 +215,17 @@ TEST 1: Show PDF Tags
      </text-block>
     </Caption>
     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.041"
+       id="ID.040"
        rolemaps-to="Part"
       >
      <text-block xmlns="https://www.latex-project.org/ns/dflt"
-        id="ID.042"
+        id="ID.041"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Justify"
         rolemaps-to="P"
        >
       <Figure xmlns="http://iso.org/pdf2/ssn"
-         id="ID.043"
+         id="ID.042"
          alt="example-image.pdf"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
          Layout:BBox="{ 166.39398, 93.58708, 486.3932, 333.58648 }"
@@ -244,7 +237,7 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </float>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.047"
+      id="ID.046"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -258,7 +251,7 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-198.xml (end) -----------
 ============================================================
-<example-image.pdf, id=60, 321.2pt x 240.9pt>
+<example-image.pdf, id=59, 321.2pt x 240.9pt>
 Package tagpdf Warning: Alternative text for graphic is missing.
 (tagpdf)                Using 'example-image.pdf' instead.
 File: example-image.pdf Graphic file (type pdf)
@@ -1460,8 +1453,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~47 structure objects
-(tagpdf)             with ~31 'MC' leaf nodes.
+(tagpdf)             Writing out ~46 structure objects
+(tagpdf)             with ~29 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
