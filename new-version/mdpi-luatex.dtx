@@ -653,15 +653,17 @@
      {\fnote_gput_refs:ee {##1}{ \l__mdpi_fnote_currentstruct_tl } }
    \socket_use:n{fntext/mark/link}
  }
-\tagpdfsetup{role/new-tag=authornotes/Part}
-\tagpdfsetup{role/new-tag=authornote/FENote}
-\tagpdfsetup{role/new-tag=authornotelabel/Lbl} 
+\tagpdfsetup{role/new-tag=authornotes/semantic-para}
+\tagpdfsetup{role/new-tag=title-notes/semantic-para}
+\tagpdfsetup{role/new-tag=affiliation/text-block}
+\tagpdfsetup{role/new-tag=title-logos/text-block}
+\tagpdfsetup{role/new-tag=title-subtext/text-block}
 
 \NewDocumentEnvironment{authornotes}{O{}}
  {
   \AssignStructureRole{block/itemize}{authornotes}
-  \AssignStructureRole{block/list/item}{authornote}
-  \AssignStructureRole{block/list/label}{authornotelabel}
+  \AssignStructureRole{block/list/item}{footnote}
+  \AssignStructureRole{block/list/label}{footnotelabel}
   \AssignStructureRole{block/list/body}{Div}  
   %activate the storing of structure numbers
   \cs_set_eq:NN \__mdpi_fnote_item_hook: \__mdpi_fnote_store_struct: 
@@ -1961,8 +1963,10 @@
         {}
         {
          \vspace{-2pt}%
+         \AssignStructureRole{para/textblock}{title-logos}
          \mdpi@maketitle@logoline
          \par
+         \UseTaggingSocket{para/off}
          \rule{\mdpi@len@bodywidth}{0.4pt}%
         }
       \par
@@ -1970,6 +1974,7 @@
      {%1
       \vspace{14pt}
       \normalsize
+      \AssignStructureRole{para/textblock}{title-subtext}
       \textit{\@arttype}
       \par
      }%1
@@ -2324,7 +2329,7 @@
   \isBookContribution
    {\vspace{12pt}}
    {
-     \UseTaggingSocket{struct/begin}{tag=\UseStructureName{para/semantic},parent=\g__mdpi_struct_title_tl}
+     \UseTaggingSocket{struct/begin}{tag=title-notes,parent=\g__mdpi_struct_title_tl}
      \begin{flushleft}[tagging-recipe=noop]
      \hyphenpenalty=10000
      \tolerance=1000
@@ -2335,7 +2340,9 @@
 %    \begin{macrocode}
      \tl_if_eq:NnF{\firstargument}{1}
        {\parshape 2~0cm \linewidth \dimeval{\mdpi@len@dist}~\dimeval{\linewidth-\mdpi@len@dist}}
+     \AssignStructureRole{para/textblock}{affiliation}  
      \@address
+     \AssignStructureRole{para/textblock}{text-block}
      \par
 %    \end{macrocode}
 % The rest of the notes are implemented with a list, this gives also better tagging.
