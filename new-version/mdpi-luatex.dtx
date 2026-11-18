@@ -72,6 +72,23 @@
 % that only one author is there and the text is set \emph{without} hanging indent.
 % \end{function}
 %
+%\begin{function}{\authormark}
+% \begin{syntax}
+% \cs{authormark}\Arg{comma list of markers}
+% \end{syntax}
+% This command should be used inside the \cs{Author} command to set
+% the note markers. The marker should be numbers or the symbols used in the notes.
+% \end{function}
+% 
+%\begin{function}{\affiliation}
+% \begin{syntax}
+% \cs{affiliation}\Arg{number}\Arg{text}
+% \end{syntax}
+% This command should be used inside the \cs{address} command to set
+% the affiliations of the authors. The affiliation will be tagged as FENote and
+% reference the related markers in the author list.
+% \end{function}
+
 % \subsection{Orcid}
 %
 % \begin{function}{\neworcid,\useorcid}
@@ -179,10 +196,30 @@
 %    \begin{macrocode}
 \RequirePackage{lualineno}
 \newcounter{mdpi@lineno}
-\lualineno
+%    \end{macrocode}
+% the line option will work correctly with the next package version.
+%    \begin{macrocode}
+\IfPackageAtLeastTF{lualineno}{2026-11-14}
  {
-   define={name=mdpi toks={\stepcounter{mdpi@lineno}} right={\kern.8em\tiny\themdpi@lineno}}
+   \lualineno
+    {
+      define={name=mdpi 
+              toks={\stepcounter{mdpi@lineno}} 
+              right={\kern.8em\tiny\themdpi@lineno} 
+              line={recurse=false}
+              }
+    }
  }
+ {
+   \lualineno
+    {
+      define={name=mdpi 
+              toks={\stepcounter{mdpi@lineno}} 
+              right={\kern.8em\tiny\themdpi@lineno}               
+              }
+    }
+ }
+ 
 \newcommand\linenumbers{\lualineno{set=mdpi}}
 %    \end{macrocode}
 % Use in the biography environment. TODO: check if a proper list or display environment
@@ -598,6 +635,15 @@
  }
 \ExplSyntaxOff
 %    \end{macrocode}
+% \subsection{Tags for tagging}
+% These tags are used for the title 
+%    \begin{macrocode}
+\tagpdfsetup{role/new-tag=authornotes/semantic-para}
+\tagpdfsetup{role/new-tag=title-notes/semantic-para}
+\tagpdfsetup{role/new-tag=affiliation/text-block}
+\tagpdfsetup{role/new-tag=title-logos/text-block}
+\tagpdfsetup{role/new-tag=title-subtext/text-block}
+%    \end{macrocode}
 %
 % \subsection{Temporary patches for taggings}
 % The algorithmic package redefines list labels and this is lost if \cs{DocumentMetadata}
@@ -607,6 +653,50 @@
    {\makebox[0pt][r]{\footnotesize\theALC@line:\hspace{\dimexpr\ALC@tlm-\labelsep}}}
 \AddToHook{env/algorithmic/begin}
  {\EditInstance{item}{basic}{label-align=right,label-format=\mdpi@ALC@labelformat{#1}}}
+%    \end{macrocode}
+%
+%  The affiliation and author notes should be tagged as footnotes (FENote).
+%  This will in future get better support in \LaTeX{} directly, but for now we
+%  provide the needed code here.
+%    \begin{macrocode}
+\ExplSyntaxOn
+\cs_new_eq:NN \__mdpi_fnote_item_hook: \prg_do_nothing:
+\AddToHook{item/before}{\__mdpi_fnote_item_hook:}
+
+\tl_new:N\l__mdpi_fnote_currentstruct_tl
+\cs_new_protected:Npn \__mdpi_fnote_store_struct:
+ {
+   \tl_set:Ne \l__mdpi_fnote_currentstruct_tl { \tag_get:n{struct_num} }
+ }  
+ 
+\cs_new_protected:Npn \__mdpi_fnote_setup_note:nn #1#2 % #1 prefix, #2 label
+ {
+   \protected@xdef\@thefnmark{#1/#2}
+   \int_gincr:N\g_fnote_id_int   
+   \fnote_mark_gpop_all:nooN {struct}{ \@thefnmark }{ default } \l_tmpa_seq
+   \seq_map_inline:Nn \l_tmpa_seq
+     {\fnote_gput_refs:ee {##1}{ \l__mdpi_fnote_currentstruct_tl } }
+   \socket_use:n{fntext/mark/link}
+ }
+%    \end{macrocode}
+% This code is used to insert commas between to markers in the author list:
+%    \begin{macrocode}
+\providecommand*{\mdpi@multiplefootnotemarker}{3sp}
+\newcommand\mdpi@fn@prepare
+  {
+    \kern-\mdpi@multiplefootnotemarker
+    \kern\mdpi@multiplefootnotemarker\relax
+  }
+\newcommand\mdpi@fn@check{%
+    \ifdim\lastkern=\mdpi@multiplefootnotemarker\relax
+      \edef\@x@sf{\the\spacefactor}%
+      \unkern
+      \unkern
+      \textsuperscript{,}%
+      \spacefactor\@x@sf\relax
+    \fi
+  }  
+\ExplSyntaxOff 
 %    \end{macrocode}
 % \subsection{Fontsizes}
 % The following font size are inherited from article
@@ -821,6 +911,33 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \subsection{Supfiles} 
+% This tests if the arttype is a Supfile
+% 
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \mdpi_is_Supfile: {TF,T,F}
+ {
+   \tl_if_eq:NnTF\@arttype{Supfile}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\cs_new_eq:NN \mdpi@isSupfileTF \mdpi_is_Supfile:TF
+\cs_new_eq:NN \mdpi@isSupfileT  \mdpi_is_Supfile:T
+\cs_new_eq:NN \mdpi@isSupfileF  \mdpi_is_Supfile:F
+%    \end{macrocode}
+%
+% \subsection{Submit status}
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \mdpi_is_submit: {TF,T,F}
+ {
+   \tl_if_eq:NnTF\@status{submit}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\cs_new_eq:NN \mdpi@isSubmitTF \mdpi_is_submit:TF
+\cs_new_eq:NN \mdpi@isSubmitT  \mdpi_is_submit:T
+\cs_new_eq:NN \mdpi@isSubmitF  \mdpi_is_submit:F
+%    \end{macrocode}
 % \subsubsection{Books}
 % This tests if this a Book or a Monograph
 % \begin{macro}{\isBookContribution}
@@ -1121,6 +1238,15 @@
 %    \begin{macrocode}
 \setenotez{backref=true}
 \isBookContribution{}{\setenotez{totoc=section}}
+\EditInstance{enotez-list}{plain}
+ {
+   format   =\small\leftskip0.76cm,
+   number   =\textsuperscript{\makebox[6mm][l]{#1}},
+   notes-sep=0pt
+ }
+%    \end{macrocode}
+% Kept for compatibility for documents still using `\printendnotes
+%    \begin{macrocode}
 \DeclareInstance{enotez-list}{custom}{paragraph}
  {
    format   =\small\leftskip0.76cm,
@@ -1129,6 +1255,7 @@
  }
 
 %    \end{macrocode}
+%
 % \subsection{Footnotes}
 % Only journal Laws uses \cs{footnote}.
 % Increase space between line and footnote
@@ -1148,6 +1275,48 @@
   {}{\fail}
 \let\@makefntext\footmisc@hang@makefntext
 %    \end{macrocode}
+%
+% \subsection{Table and author notes}
+% The internal mark command. We use an optional argument to be able to suppress 
+% the \cs{textsuperscript}.
+%    \begin{macrocode}
+\ExplSyntaxOn
+\NewDocumentCommand\mdpi@fmark{sO{\textsuperscript}m}
+ {
+  \leavevmode
+  \protected@xdef\@thefnmark{mdpi/#3} % set the name
+  \int_gincr:N\g_fnote_id_int          % set the id
+  \IfBooleanTF{#1}
+   {%without link
+     \UseTaggingSocket{fnmark}{}{#2{#3}}
+   }  
+   {%with link
+     \UseTaggingSocket{fnmark}{}{\UseSocket{fnmark/link}{#2{#3}}}
+   }
+ }
+
+\NewDocumentCommand\mdpi@fnote{O{\textsuperscript}mm+m}
+ {
+  \leavevmode
+  \protected@xdef\@thefnmark{#2/#3} %set the name
+  \int_gincr:N\g_fnote_id_int          %unique id 
+  \UseTaggingSocket{fntext/begin}
+  \socket_use:n{fntext/mark/link} % set the anchor
+  \UseTaggingSocket{fntext/mark}{}{#1{#3}}
+  \UseTaggingSocket{fntext/text}{}{#4}
+  \UseTaggingSocket{fntext/end}
+ }
+\ExplSyntaxOff 
+%    \end{macrocode}
+% Commands for table notes
+%    \begin{macrocode}
+\NewCommandCopy\tmark\mdpi@fmark
+\NewDocumentCommand\tnote{O{\textsuperscript}m+m}
+ {
+   \mdpi@fnote[#1]{mdpi}{#2}{#3}
+ }  
+%    \end{macrocode}
+%
 % \subsection{Widows and penalities}
 % Widows \& orphans are prohibited
 %    \begin{macrocode}
@@ -1394,10 +1563,221 @@
 \cs_new_protected:Npn \neworcid #1 #2 {\tl_const:cn {c__mdpi_orcid_#1_tl}{#2}}
 \cs_new_protected:Npn \useorcid #1
   {\hrefurl{https://orcid.org/\use:c{c__mdpi_orcid_#1_tl}}{\orcidicon}}
+%    \end{macrocode}
+%
+% \subsection{Page styles}
+%    \begin{macrocode}
+\renewcommand\headrule{} %% set line (from fancyhdr) in header to nothing
+\pagestyle{fancy}
+%    \end{macrocode}
+% \subsubsection{Standard journal pagestyle}
+% For the title page the plain style must be redefined.
+% The header is filled by the maketitle command.
+%    \begin{macrocode}
+\newcommand\mdpi@pagestyle@plain@std
+  {
+    \fancypagestyle{plain}
+     {
+      \renewcommand{\footrulewidth}{0.4pt}
+      \fancyhead{\null\vspace{8pt}} %?
+      \fancyfoot[L]
+       {
+        \footnotesize
+        \tl_if_eq:NnTF\@status{submit}
+         {
+           Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
+         }
+         {\textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+          \tl_if_empty:NTF \@continuouspages
+           {\@articlenumber}
+           {\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--\pageref*{LastPage}}}
+         }      
+       }
+      \fancyfoot[R]
+       {
+        \footnotesize
+        \url{https://doi.org/\@doinum}
+       }
+    }
+  }
+\newcommand\mdpi@pagestyle@std
+ {
+   \fancyhf{}
+   \fancyhead[L]
+    {
+     \footnotesize
+     \mdpi@isSubmitTF
+       {
+         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
+       }
+       {
+         \null\vspace{2pt}\textit{\journalname}~ \textbf{\@pubyear},~ {\textit{\@pubvolume}}
+         \tl_if_empty:NT\@continuouspages
+          {
+           ,~ \@articlenumber
+          }
+         \\      
+         \rule{\mdpi@len@bodywidth}{0.4pt}
+       }  
+    }
+   \fancyhead[R]
+    { 
+      \footnotesize
+      \tl_if_empty:NTF\@continuouspages
+       {
+         \thepage{}~ of~ \pageref*{LastPage}
+       }
+       {\thepage}
+      \\
+      \rule{\mdpi@len@bodywidth}{0.4pt}
+    }
+   \fancyfoot[R]{\footnotesize\url{https://doi.org/\@doinum}}   
+ }
+%    \end{macrocode}
+% \subsubsection{Supfiles}
+%    \begin{macrocode}
+\newcommand\mdpi@pagestyle@plain@supfile
+  {
+   \fancypagestyle{plain}
+     {
+      \fancyhf{}
+      \fancyhead[R]
+       {
+        \footnotesize 
+        S\thepage{}~ of~ S\pageref*{LastPage}
+        \\\rule{\mdpi@len@bodywidth}{0.4pt}
+       }
+      \fancyhead[L]
+       {
+        \footnotesize 
+        \tl_if_eq:NnTF\@status{submit}
+         {
+           Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
+         }
+         {
+          \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+          \tl_if_empty:NTF \@continuouspages
+           {\@articlenumber}
+           {S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}}%  
+          .~{\url{https://doi.org/\@doinum}}   
+         }             
+         \\\vspace{-2pt}\rule{\mdpi@len@bodywidth}{0.4pt}%
+        }%
+      }%
+  } 
+\newcommand\mdpi@pagestyle@supfile
+ {
+   \fancyhf{}
+   \fancyhead[L]
+    {
+     \footnotesize
+     \mdpi@isSubmitTF
+       {
+         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
+       }
+       {
+         \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
+         \tl_if_empty:NTF \@continuouspages
+          {\@articlenumber.~}
+          {%
+           S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}.~ %
+          }%
+         \url{https://doi.org/\@doinum}
+       }%
+     \\      
+     \rule{\mdpi@len@bodywidth}{0.4pt}                 
+    }
+   \fancyhead[R]
+    {
+      \footnotesize S\thepage{}~ of~ S\pageref*{LastPage}
+      \\
+      \rule{\mdpi@len@bodywidth}{0.4pt}
+    }
+   \fancyfoot[R]{\footnotesize \url{https://doi.org/\@doinum}}
+ }
+ 
+%    \end{macrocode}
+% \subsubsection{Activation of standard or subfile styles}
+%    \begin{macrocode}
+\mdpi_is_Supfile:TF
+  {\mdpi@pagestyle@plain@supfile \mdpi@pagestyle@supfile}
+  {\mdpi@pagestyle@plain@std     \mdpi@pagestyle@std}
+%    \end{macrocode}
+% \subsubsection{Preprints}
+% Preprints have an empty first page and on the other pages 
+% only page numbers in the right header.
+%    \begin{macrocode}
+\isPreprints
+ {
+   \fancypagestyle{plain}{\fancyhf{}}
+   \fancyhf{}
+   \fancyhead[R]
+    { 
+      \footnotesize
+      \mdpi_is_Supfile:TF
+       {
+         S\thepage{}~ of~ S\pageref*{LastPage}
+       }
+       {
+        \tl_if_empty:NTF\@continuouspages
+         {
+           \thepage{}~ of~ \pageref*{LastPage}
+         }
+         {\thepage}
+       }
+    }
+ } 
+ {}
+%    \end{macrocode}
+% \subsubsection{Books}
+% Books have on all page the page number in the footer, in the middle.
+%    \begin{macrocode}
+\isBookContribution
+ {
+   \fancyhf{}
+   \fancyfoot[C]{\footnotesize\thepage}
+   \fancypagestyle{plain}[fancy]{}
+ }
+ {}
+%    \end{macrocode}
+% \subsubsection{Retracted articles}
+% The following page style is used on the first page if an article is retracted:
+%    \begin{macrocode}
+\newcommand\mdpi@pagestyle@plain@retracted
+ {
+  \fancypagestyle{plain}
+   {
+     \fancyhf{}
+     \fancyfoot[L]
+      {
+        \footnotesize%
+        \st{\textit{\journalname}~ \textbf{\@pubyear},~ \textit\@pubvolume, }%
+        \tl_if_empty:NTF\@continuouspages
+         {
+           \st{\@articlenumber}
+         }
+         {
+           \st{\@firstpage}\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{\st{--\mbox{\pageref*{LastPage}}}}%
+         }
+        \\
+        This~ paper~ has~ been~ retracted.~ A~ retraction~ notice~ was~ published~ on~ 
+        \@retractiondate{}~ in~ \textit{\@journalfull}~ \textbf{\@retractionnoticeyear},~ 
+        \textit{\@retractionnoticevolume},~ \@retractionnoticeidnumber.~
+         https://doi.org/\@retractionnoticedoi
+      }
+     \fancyfoot[R]
+      {
+        \footnotesize
+        \st{\href{https://doi.org/\@doinum}{https://doi.org/\@doinum}}
+      }
+     \renewcommand{\footrulewidth}{0.4pt}%
+   }
+ } 
 \ExplSyntaxOff
 %    \end{macrocode}
 %
 % \subsection{Maketitle}
+% 
 % \subsubsection{Helper commands}
 % Store the url:
 %    \begin{macrocode}
@@ -1414,7 +1794,7 @@
 % If the status is submit (initial/default value) there is not journal logo
 % and we fake it with a rule.
 %    \begin{macrocode}
-   \tl_if_eq:enTF {\@status}{submit}
+   \mdpi@isSubmitTF
      {
        \phantom{\rule{0pt}{1.2cm}}\hfill
        \href{\mdpi@url}{\includegraphics[height=1cm,actualtext={MDPI~logo}]{Definitions/\mdpi@logo@right}}%
@@ -1429,6 +1809,21 @@
  }
 %    \end{macrocode}
 %
+%\subsubsection{Tagging support}
+%    \begin{macrocode}
+\NewTaggingSocketPlug{title}{mdpi}
+ {
+   \par
+   \group_begin:
+     \tagpdfparaOff
+     \tag_struct_begin:n{tag=\UseStructureName{title/text},attribute-class=raggedright}
+     \tagmcbegin{}#2\tagmcend
+     \tag_struct_end:
+     \par
+   \group_end:
+ }        
+\AssignTaggingSocketPlug{title}{mdpi} 
+%    \end{macrocode}
 %\subsubsection{\cs{@maketitle}}
 %
 % Some variants have a different title format depending on \cs{@arttype}:
@@ -1446,17 +1841,23 @@
 %    \begin{macrocode}
 \newcommand\mdpi@maketitle@Book
  {
-   \begin{flushleft}
+   \begin{flushleft}[
+     tagging-suppress-paras=true,
+     tagging-recipe=standalone,
+     tag-name=\UseStructureName{title/block},
+     tag-attr-class=aria-banner]
     \LARGE\boldmath\bfseries
     \hyphenpenalty=10000
     \tolerance=1000
     \vspace{14pt}
-    \@Title
+    \UseTaggingSocket{title}{}{\@Title}%
     \par
     \vspace{12pt}
     \normalsize
-    \@Author
+    \AssignStructureRole{para/textblock}{title-author}
+    \@Author    
     \par
+    \AssignStructureRole{para/textblock}{text-block}
     % can that ever happen with Book???
     \tl_if_empty:NF \@leftcolumnsplit
      {
@@ -1479,17 +1880,22 @@
    \isPreprints
      {\vspace{0.92cm}}
      {
-       \begin{adjustwidth}{-\extralength}{}
+       \begin{adjustwidth}{-\mdpi@len@marginpar}{}
      }
-   \begin{flushleft}
+   \begin{flushleft}[
+     tagging-suppress-paras=true,
+     tagging-recipe=standalone,
+     tag-name=\UseStructureName{title/block},
+     tag-attr-class=aria-banner]
      \LARGE
      \raggedright
      \hyphenpenalty=10000
      \tolerance=1000
-     \noindent\boldmath\textbf{Supplementary~Materials:~\@Title}%
+     \UseTaggingSocket{title}{}{\noindent\boldmath\textbf{Supplementary~Materials:~\@Title}}%
      \par
      \vspace{12pt}
      \normalsize
+     \AssignStructureRole{para/textblock}{title-author}%
      \noindent\boldmath\bfseries{\@Author}
    \end{flushleft}
    \isPreprints
@@ -1500,150 +1906,90 @@
 % The \cs{@maketitle} command for the other cases.
 % For journals and preprints we have logos, article type and narrow column
 %    \begin{macrocode}
+\tl_new:N\g__mdpi_struct_title_tl
 \newcommand{\mdpi@maketitle}
-  {
+  {  
 %    \end{macrocode}
 %   Default option for the left column.
 %   The left column should be aligned with the bottom of the text.
-%   For this we calculate the needed offset in \cs{MyLen} and move it down:
-%    \begin{macrocode}
-   \tl_if_empty:NT \@leftcolumnsplit
-     {\marginnote[\contentleftcolumn]{}[\MyLen]}
-%    \end{macrocode}
-%
+%   For this we calculate the needed offset in \cs{mdpi@len@leftcol@height} and move it down:
+%   In preprints the column is empty and we should avoid to tag it.
 %    \begin{macrocode}
    \isPreprints
-     {\vspace{0.92cm}}
      {
-       \begin{adjustwidth}{-\extralength}{}
+       \tl_if_empty:NT \@leftcolumnsplit
+        {\SuspendTagging{}\marginnote[\contentleftcolumn]{}[\mdpi@len@leftcol@height]\ResumeTagging{}}
+       \vspace{0.92cm}
      }
-   \begin{flushleft}
-    \vspace*{-1.75cm}
+     {
+       \tl_if_empty:NT \@leftcolumnsplit
+        {\marginnote[\contentleftcolumn]{}[\mdpi@len@leftcol@height]}
+       \begin{adjustwidth}{-\mdpi@len@marginpar}{}
+     }
+   \UseTaggingSocket{struct/begin}{tag=title-block,firstkid,attribute-class=aria-banner}  
+   \tl_gset:Ne\g__mdpi_struct_title_tl{\tag_get:n{struct_num}}
+   \begin{flushleft}[
+     tagging-suppress-paras=true,
+     tagging-recipe=noop,
+     ]
+     \vspace*{-1.75cm}
      {%0
       \isPreprints
         {}
         {
          \vspace{-2pt}%
+         \AssignStructureRole{para/textblock}{title-logos}
          \mdpi@maketitle@logoline
          \par
-         \rule{\fulllength}{0.4pt}%
+         \UseTaggingSocket{para/off}
+         \rule{\mdpi@len@bodywidth}{0.4pt}%
         }
       \par
      }%0
      {%1
       \vspace{14pt}
       \normalsize
+      \AssignStructureRole{para/textblock}{title-subtext}
       \textit{\@arttype}
       \par
      }%1
      {%2
       \LARGE
       \hyphenpenalty=10000
-      \tolerance=1000
-      \boldmath\bfseries{\@Title}
+      \tolerance=1000   
+      \boldmath\bfseries
+      \UseTaggingSocket{title}{}{\@Title}%
       \par
       \vspace{12pt}
      }%2
-    \ifthenelse
-     {\equal{\@longauthorlist}{\@empty}}
-     {}
-     {
-      \end{flushleft}%
-      \isPreprints
-        {}
-        {\end{adjustwidth}}
-      \vspace{-2.5pt}
-     }
+     \tl_if_empty:NF \@longauthorlist
+      {
+       \end{flushleft}
+       \UseTaggingSocket{struct/end}
+       \isPreprints
+         {}
+         {\end{adjustwidth}}
+       \vspace{-2.5pt}
+      }
      {%3
       \hyphenpenalty=10000
       \tolerance=1000
-      \boldmath\bfseries{\@Author}
+      \boldmath\bfseries
+      \AssignStructureRole{para/textblock}{title-author}\@Author
       \par
       \vspace{12pt}
      }%3
-  \ifthenelse
-    {\equal{\@longauthorlist}{\@empty}}
-    {\end{flushleft}
-     \isPreprints
-            {}
-            {\end{adjustwidth}}
-    }
-    {}%
-  \ifthenelse
-    {\equal{\@leftcolumnsplit}{\@empty}}
-    {% Left column split
-    }
-    {
-      \marginnote[\contentleftcolumn]{}% Alignment with the affiliations
-    }
+     \tl_if_empty:NT \@longauthorlist     
+      {
+        \end{flushleft}
+        \UseTaggingSocket{struct/end}
+        \isPreprints
+          {}
+          {\end{adjustwidth}}
+      }     
+     \tl_if_empty:NF \@leftcolumnsplit
+      {\marginnote[\contentleftcolumn]{}}% Alignment with the affiliations
  }
-\ExplSyntaxOff
-
-%%%% Header and footer on first page
-%% The plain page style needs to be redefined because with \maketitle in the article class, LaTeX applies the the plain page style automatically to the first page.
-\ifthenelse{\equal{\@journal}{preprints} %
-    \OR \equal{\@journal}{preprintschicago}
-    \OR \equal{\@journal}{preprintsapa}
-    \OR \equal{\@arttype}{Book}
-    \OR \equal{\@arttype}{Monograph}}{%
-  \fancypagestyle{plain}{%
-    \fancyhf{}
-    \isPreprints{}{%
-            \fancyfoot[C]{\footnotesize\thepage}
-            }%
-    }%
-  }{%
-  \ifthenelse{\equal{\@arttype}{Supfile}}{
-    % page header and footer styles for supplementary files
-    \fancypagestyle{plain}{
-      \fancyhf{}
-      \fancyhead[R]{
-        \footnotesize %
-        S\thepage{} of S\pageref*{LastPage}%
-        \\\rule{\fulllength}{0.4pt}%
-        }%
-      \fancyhead[L]{
-        \footnotesize %
-        \ifthenelse{\equal{\@status}{submit}}{%
-          Version {\@ \today} submitted to {\em \journalname}%
-          }{%
-          {\em \journalname} %
-          {\bfseries \@pubyear}, %
-          {\em \@pubvolume}, %
-          \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-            \@articlenumber%
-            }{%
-            S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}%
-            }%
-          . {\url{https://doi.org/\@doinum}}%
-          }%
-          \\\vspace{-2pt}\rule{\fulllength}{0.4pt}%
-        }%
-      }%
-    }{
-    \fancypagestyle{plain}{
-    \renewcommand{\footrulewidth}{0.4pt}
-      \fancyhead{\null\vspace{8pt}}
-      \fancyfoot[L]{
-      \footnotesize
-      \ifthenelse{\equal{\@status}{submit}}{%
-        Version {\@ \today} submitted to {\em \journalname}%
-        }{%
-        {\em\journalname\ }{\bfseries\@pubyear}, {\em \@pubvolume}, %
-        \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-          \@articlenumber %
-          }{%
-          \@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--\pageref*{LastPage}} %
-          }%
-        }%
-      }
-      \fancyfoot[R]{
-      \footnotesize
-      {%
-      }{\url{https://doi.org/\@doinum}}}%
-    }
-  }
-}
 
 %    \end{macrocode}
 % \subsection[label=sec:leftcolumn]{Left Column}
@@ -1651,7 +1997,7 @@
 %
 % A command for the font setup in this column:
 % \begin{macro}{\leftcolFont}
-% We increase the \cs{baselineskip} to 12pt and the \cs{parskip} to 6pt.
+% We increase the \cs{baselineskip} to 12pt and the \cs{parskip} to 3pt.
 %    \begin{macrocode}
 \newcommand{\leftcolFont}
  {%
@@ -1670,15 +2016,14 @@
 % \subsubsection{Part 1: Update the logo}%
 % \begin{macro}{\leftcolumnUpdatelogo}
 %    \begin{macrocode}
+\ExplSyntaxOn
 \newcommand{\leftcolumnUpdatelogo}
- {%
-   \ifthenelse
-     {\equal{\@status}{submit}}
-     {}
+ {
+   \tl_if_eq:NnF\@status{submit}
      {%
-       \href
+       \hrefurl
          {https://crossmark.crossref.org/dialog?doi=\@doinum&domain=pdf&date_stamp=\the\year-\mdpi@mintwodigits{\the\month}-\mdpi@mintwodigits{\the\day}}
-         {\includegraphics[height=.6cm,actualtext=Check for updates]{Definitions/logo-updates}}%
+         {\includegraphics[height=.6cm,actualtext=Check~for~updates]{Definitions/logo-updates}}%
      }%
  }
 %    \end{macrocode}
@@ -1687,7 +2032,6 @@
 % \subsubsection{Part 2: Academic editor(s)}
 % \begin{macro}{\leftcolExternalEditor}
 %    \begin{macrocode}
-\ExplSyntaxOn
 \newcommand{\leftcolExternalEditor}
   {
     \tl_if_empty:NF\@externaleditor
@@ -1772,8 +2116,7 @@
     \isPreprints
       {}
       {%
-        \ifthenelse
-         {\equal{\@status}{submit}}
+        \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
          {\leftcolumnUpdatelogo\par}%     % %1
         \leftcolExternalEditor\par        % %2
@@ -1784,28 +2127,31 @@
    }
 %    \end{macrocode}
 % \end{macro}
-
+% \cs{mdpi@len@leftcol@height} is used to store the height of the left column,
+% \cs{mdpi@box@leftcol} is used to store and measure the height of the left column.
 %    \begin{macrocode}
-\newlength{\MyLen} % For length of the left column content
-\newsavebox{\MyBox} % A box is needed to measure the length (= height) of the left column content
+\newlength\mdpi@len@leftcol@height 
+\newsavebox\mdpi@box@leftcol 
 %    \end{macrocode}
 
 % \subsection{Placing of the left column}
-% The following calculation needs to be done after begin document, but before the title is typeset.
+% The following calculation needs to be done after begin document, 
+% but before the title is typeset.
 % It is therefore executed in the \texttt{begindocument/end} hook.
 % It is only for measuring, so tagging should be suspended.
-% \begin{macro}{\calculateMyLen}
+% \begin{macro}{\mdpi@calculate@leftcol@height}
 %    \begin{macrocode}
-\newcommand{\calculateMyLen}
+\newcommand{\mdpi@calculate@leftcol@height}
   {%
    \SuspendTagging{}%
-   \savebox{\MyBox}
+   \savebox{\mdpi@box@leftcol}
     {%
 %    \end{macrocode}
-% \cs{leftcolumnlength} is the width of the left column defined in section \ref{sec:dimensions}.
+% \cs{mdpi@len@marginparwidth} is the width of the left column defined 
+% in section \ref{sec:dimensions}.
 % \cs{contentleftcolumn} is the content defined in section \ref{sec:leftcolumn}
 %    \begin{macrocode}
-     \parbox{\leftcolumnlength}{\contentleftcolumn}%
+     \parbox{\mdpi@len@marginparwidth}{\contentleftcolumn}%
     }%
    \ResumeTagging{}%
 %    \end{macrocode}
@@ -1814,7 +2160,7 @@
 %  to the bottom of \cs{textheight}. A small correction is added to account for
 %  the depth of a strutbox.
 %    \begin{macrocode}
-   \setlength{\MyLen}{\dimeval{\textheight-\dp\MyBox-\ht\MyBox-2.1pt}}%
+   \setlength{\mdpi@len@leftcol@height}{\dimeval{\textheight-\dp\mdpi@box@leftcol-\ht\mdpi@box@leftcol-2.1pt}}%
   }
 %    \end{macrocode}
 % \end{macro}%
@@ -1827,38 +2173,72 @@
 \newcommand{\leftcolumnsplit}[1]{\gdef\@leftcolumnsplit{#1}}
 
 % Split option 1
-\newcommand{\OptionOneA}{
-  \leftcolExternalEditor %1
-  \leftcolDates\vspace{-2pt} %2
+\newcommand{\OptionOneA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \mdpi@isSubmitTF
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+        \leftcolExternalEditor\par% 2
+        \leftcolDates% 3
+      }%
 }
 
-\newcommand{\OptionOneB}{
-  \leftcolumnCright %3
+\newcommand{\OptionOneB}{%
+  \leftcolFont
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
-% Split option 2
-\newcommand{\OptionTwoA}{
-  \leftcolExternalEditor\vspace{-10pt} %1
+% Split option 2	
+\newcommand{\OptionTwoA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \mdpi@isSubmitTF
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+        \leftcolExternalEditor% 2
+      }%
 }
 
-\newcommand{\OptionTwoB}{
-  \leftcolDates\vspace{-2pt} %2
-  \vspace{6pt}\leftcolumnCright %3
+
+\newcommand{\OptionTwoB}{%
+  \leftcolFont
+	\leftcolDates\par% 3
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
 % Split option 3
-\newcommand{\OptionThreeA}{
+\newcommand{\OptionThreeA}{%
+    \leftcolFont
+    \isPreprints
+      {}
+      {%
+        \mdpi@isSubmitTF
+         {\rule{0pt}{0.6cm}\par}
+         {\leftcolumnUpdatelogo\par}% 1
+      }%
 }
 
-\newcommand{\OptionThreeB}{
-  \leftcolExternalEditor %1
-  \leftcolDates\vspace{-2pt} %2
-  \vspace{6pt}\leftcolumnCright %3
+
+\newcommand{\OptionThreeB}{%
+        \leftcolFont
+	\leftcolExternalEditor\par% 2
+	\leftcolDates\par% 3
+	\leftcolumnCorrstatement\par% 4
+	\leftcolumnCright% 5
 }
 
 %    \end{macrocode}
 % \subsection{\cs{maketitlen} for notes after the main title}
-% We set up a counter and define symbols for the various notes:
+% We set up a counter and define symbols for the various notes. 
+% We need two variants: one with formatting and one with the \enquote{raw}
+% symbol, for the cross references in the FENote structure.
 %    \begin{macrocode}
 \ExplSyntaxOn
 \newcounter{mdpi@notecnt}
@@ -1882,19 +2262,120 @@
    \@ctrerr
    \fi
  }
+\def\mdpi@noterawsymbol
+ {
+   \ifcase\c@mdpi@notecnt
+   \or*     %corres
+   \or\noexpand\textdagger   %conference
+   \or\noexpand\textdaggerdbl% firstnote
+   \or\noexpand\textsection  % secondnote etc
+   \or\noexpand\textbardbl
+   \or\noexpand\textparagraph
+   \or**
+   \or\noexpand\textdagger\textdagger
+   \or\noexpand\textdaggerdbl\textdaggerdbl
+   \or\noexpand\textsection\textsection
+   \or\noexpand\textbardbl\noexpand\textbardbl
+   \or\noexpand\textparagraph\noexpand\textparagraph
+   \or ***
+   \else
+   \@ctrerr
+   \fi
+ }
 %    \end{macrocode}
 % We avoid the use of the \cs{tabto} command as this uses math for measuring and
 % so gives unwanted structures if tagging is enabled. Instead the label is set inside
 % a box.
-% TODO: semantic tagging should be improved.
-% TODO: the fake space is perhaps not needed, see pdfa discussion.
 %    \begin{macrocode}
 \newcommand\mdpi@notelabel
  {
    \stepcounter{mdpi@notecnt}\mdpi@notesymbol
  }
 %    \end{macrocode}
-%
+% \begin{environment}{mdpi@authornotes}
+% This environment is used for the authornotes, it tags a list as footnotes.
+%    \begin{macrocode}
+\NewDocumentEnvironment{mdpi@authornotes}{O{}}
+ {
+  \AssignStructureRole{block/itemize}{authornotes}
+  \AssignStructureRole{block/list/item}{footnote}
+  \AssignStructureRole{block/list/label}{footnotelabel}
+  \AssignStructureRole{block/list/body}{Div}  
+  %activate the storing of structure numbers
+  \cs_set_eq:NN \__mdpi_fnote_item_hook: \__mdpi_fnote_store_struct: 
+  \begin{itemize}%
+    [%standalone=true, %with 2027-06-01     
+     %label-format=,
+     #1,
+     label-ref=\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1},
+     tag-attr-class=,
+     nosep,
+     left-margin=\mdpi@len@tmpa,
+     label-width=\mdpi@len@tmpa,
+     label-sep=0pt,
+     align=left
+     ]   
+ }
+ {\end{itemize}} 
+
+%    \end{macrocode}
+% \end{environment}
+
+% \begin{macro}{\authormark}
+% This is a user command that should be used inside the \cs{Author} command.
+% For now it doesn't produce links, but this should be activated by uncommenting
+% the switch code. 
+%    \begin{macrocode}
+\NewDocumentCommand\authormark{sm}
+ {
+  \leavevmode
+  \clist_map_inline:nn {#2}
+   { 
+    \mdpi@fn@check 
+    \protected@xdef\@thefnmark{authornote/##1}
+    \int_gincr:N\g_fnote_id_int
+    \IfBooleanTF{#1}
+     {%without link
+      \UseTaggingSocket{fnmark}{}
+       {
+        \tl_if_in:nnTF 
+         {##1}{*}
+         {##1}{\textsuperscript{##1}}
+       }
+     }  
+     {%with link
+      \UseTaggingSocket{fnmark}{}
+        {
+          %\UseSocket{fnmark/link}
+           %{
+             \tl_if_in:nnTF 
+              {##1}{*}
+              {##1}{\textsuperscript{##1}}          
+           %}
+        }
+     }
+    \mdpi@fn@prepare 
+   }
+ } 
+%    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\affiliation}
+%    \begin{macrocode}
+\newcommand\mdpi@affiliation@format[1]{\makebox[\mdpi@len@dist][l]{\textsuperscript{#1}}} 
+\NewDocumentCommand\affiliation{mm} %#1 number, #2 text
+ {
+   \tl_if_empty:nTF{#1}
+    {
+      #2\par
+    }
+    {
+      \mdpi@fnote[\mdpi@affiliation@format]{authornote}{#1}{\ignorespaces#2}\par
+    }  
+ } 
+%    \end{macrocode}
+% \end{macro}
+% 
 % \begin{macro}{\maketitlen}
 %  This builds the block of notes:
 %    \begin{macrocode}
@@ -1904,7 +2385,8 @@
   \isBookContribution
    {\vspace{12pt}}
    {
-     \begin{flushleft}
+     \UseTaggingSocket{struct/begin}{tag=title-notes,parent=\g__mdpi_struct_title_tl}
+     \begin{flushleft}[tagging-recipe=noop]
      \hyphenpenalty=10000
      \tolerance=1000
      \footnotesize
@@ -1914,7 +2396,9 @@
 %    \begin{macrocode}
      \tl_if_eq:NnF{\firstargument}{1}
        {\parshape 2~0cm \linewidth \dimeval{\mdpi@len@dist}~\dimeval{\linewidth-\mdpi@len@dist}}
+     \AssignStructureRole{para/textblock}{affiliation}  
      \@address
+     \AssignStructureRole{para/textblock}{text-block}
      \par
 %    \end{macrocode}
 % The rest of the notes are implemented with a list, this gives also better tagging.
@@ -1924,13 +2408,7 @@
        {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}
      \bool_if:NT\l__mdpi_frontmatter_notes_bool
        {
-        \begin{itemize}
-          [nosep,
-           left-margin=\mdpi@len@tmpa,
-           label-width=\mdpi@len@tmpa,
-           label-sep=0pt,
-           align=left
-          ]
+        \begin{mdpi@authornotes}
         \tl_if_eq:NnTF\@authornum{author}
           {
             \stepcounter{mdpi@notecnt}
@@ -1941,27 +2419,32 @@
               \stepcounter{mdpi@notecnt}
             }
             {
-              \item[\mdpi@notelabel]\@corres
+              \stepcounter{mdpi@notecnt}
+              \item[label=\mdpi@noterawsymbol, label-format=\mdpi@notesymbol]\@corres
             }
           }
         \tl_if_empty:NF\@conference
           {
-            \item[\mdpi@notelabel]
+            \stepcounter{mdpi@notecnt}
+            \item[label=\mdpi@noterawsymbol, label-format=\mdpi@notesymbol]
             This~ paper~ is~ an~ extended~ version~ of~ our~ paper~ published~ in\space \@conference.
           }
         \clist_map_inline:nn{first,second,third,fourth,fifth,sixth,seventh,eighth,nineth,tenth,eleventh}
          {
           \tl_if_empty:cF{@##1note}
            {
-            \item[\mdpi@notelabel]
+            \stepcounter{mdpi@notecnt}
+            \item[label=\mdpi@noterawsymbol, label-format=\mdpi@notesymbol]
             \tl_use:c{@##1note}
            }
          }
-        \end{itemize}
+        \end{mdpi@authornotes}
+        \par
       }
      \tl_if_empty:NF\@LSID{\par\vskip12pt \@LSID \par}
      \end{flushleft}
      \par
+     \UseTaggingSocket{struct/end}
    }
  }
 %    \end{macrocode}
@@ -1996,52 +2479,32 @@
 % The first creates a captioned text with a display title, the second a run-in.
 % TODO: balance begin and endspace
 %    \begin{macrocode}
-\IfFormatAtLeastTF{2026-11-01}
- {
-    \NewDocumentCommand\mdpi@abstractnotes@display{mm}
-      {%
-       \tl_if_empty:NF#2
-        {
-          \begin{mdpi@notes}[title=#1,
-            punct=\\*[6pt],
-            after-hspace=0pt,
-            begin-vspace= 0pt,
-            end-vspace  = 12pt,
-            ]%
-           #2
-          \end{mdpi@notes}
-        }
-      }
-    \NewDocumentCommand\mdpi@abstractnotes@runin{mm}
-      {%
-       \tl_if_empty:NF#2
-        {
-          \begin{mdpi@notes}[title=#1,
-            begin-vspace= 0pt,
-            end-vspace  = 12pt,
-            ]%
-           #2
-          \end{mdpi@notes}
-        }
-      }
- }
- {
-   \NewDocumentCommand\mdpi@abstractnotes@display{mm}
-      {
-       \tl_if_empty:NF#2
-        {
-         \par\noindent\textbf{#1}\\*[6pt]
-          #2\par\vspace{12pt}
-        }
-      }
-   \NewDocumentCommand\mdpi@abstractnotes@runin{mm}
-      {
-       \tl_if_empty:NF#2
-        {
-         \par\noindent\textbf{#1\unskip :}~#2\unskip\par\vspace{12pt}
-        }
-      }
- }
+\NewDocumentCommand\mdpi@abstractnotes@display{mm}
+  {%
+   \tl_if_empty:NF#2
+    {
+      \begin{mdpi@notes}[title=#1,
+        punct=\\*[6pt],
+        after-hspace=0pt,
+        begin-vspace= 0pt,
+        end-vspace  = 12pt,
+        ]%
+       #2
+      \end{mdpi@notes}
+    }
+  }
+\NewDocumentCommand\mdpi@abstractnotes@runin{mm}
+  {%
+   \tl_if_empty:NF#2
+    {
+      \begin{mdpi@notes}[title=#1,
+        begin-vspace= 0pt,
+        end-vspace  = 12pt,
+        ]%
+       #2
+      \end{mdpi@notes}
+    }
+  }
 %    \end{macrocode}
 % \begin{macro}{\mdpi@abstractkeywords}
 % In a monograph this does nothing.
@@ -2114,12 +2577,12 @@
 %
 % Print \cs{maketitle} and \cs{mdpi@abstractkeywords} in the \texttt{begindocument/end} hook:
 %    \begin{macrocode}
-\AddToHook{begindocument/end}[mdpi/maketitle]{\calculateMyLen}
+\AddToHook{begindocument/end}[mdpi/maketitle]{\mdpi@calculate@leftcol@height}
 \ifthenelse{\equal{\@arttype}{Supfile}}{
   \AddToHook{begindocument/end}[mdpi/maketitle]{
     \maketitle
     \let\maketitle\relax
-    \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}
+    \mdpi@isSubmitT{\linenumbers}%
     }%
   }{
   \AddToHook{begindocument/end}[mdpi/maketitle]{
@@ -2127,7 +2590,7 @@
     \let\maketitle\relax
     \maketitlen
     \let\maketitlen\relax
-    \ifthenelse{\equal{\@status}{submit}}{\linenumbers}{}%
+    \mdpi@isSubmitT{\linenumbers}%
     \mdpi@abstractkeywords
   }%
 }
@@ -2175,9 +2638,20 @@
 % We set up a dedicated headformat instance. 
 % Starting with 2026-11-01 we use a display headformat to 
 % get rid of the hanging indent.
+% In 2027-06-01 we have to set the left-margin to get
+% an indentation in a adjustwidth environment.
 %    \begin{macrocode}
-\DeclareInstance    {headformat}{mdpi/std}{display}
-  {heading-indent = 0pt,separator-b=\ ,}
+\IfFormatAtLeastTF{2027-06-01}
+ {
+   \DeclareInstance    {headformat}{mdpi/std}{display}
+     {heading-indent = 0pt,separator-b=\ , left-margin=\@totalleftmargin }
+ }
+ {
+   \DeclareInstance    {headformat}{mdpi/std}{display}
+     {heading-indent = 0pt,separator-b=\ ,}
+  \DeclareTemplateInterfaceEquivalents{heading}{display}
+     {indent-first   : alias = para-indent}  
+ }      
 \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsubsection}{mdpi/std}
@@ -2191,7 +2665,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
-    para-indent=true,
+    indent-first=true,
   }
 %    \end{macrocode}
 % The format of \cs{section} differs in monographs:
@@ -2202,7 +2676,7 @@
     {
       heading-decls=\raggedright\LARGE\bfseries,
       after-vspace =8pt,
-      para-indent=true,
+      indent-first=true,
     }
  }
  {}
@@ -2215,7 +2689,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
-    para-indent=true,
+    indent-first=true,
     headformat-instance = subsection
   }
 %    \end{macrocode}
@@ -2227,7 +2701,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
-    para-indent=true,
+    indent-first=true,
     headformat-instance = subsection
   }
 %    \end{macrocode}
@@ -2242,8 +2716,8 @@
     , after-vspace  = 3pt
     , heading-decls = \raggedright\normalfont\normalsize
     , mark-cmd      = \paragraphmark {#1}
-    , number-format=\theheading.
-    , para-indent=true,
+    , number-format =\theheading.
+    , indent-first  =true,
     , headformat-instance = paragraph
   }
 %    \end{macrocode}
@@ -2251,7 +2725,7 @@
 %    \begin{macrocode}
 \EditInstance{heading}{subsubsection}
  {
-   para-indent=true
+   indent-first=true
  }
 %    \end{macrocode}
 % \subsection{Backmatter}
@@ -2262,7 +2736,7 @@
  {\NewDocumentEnvironment{journalbackmatter}{}{}{}}
  {
    \NewDocumentEnvironment{journalbackmatter}{}
-    {\begin{adjustwidth}{-\extralength}{0cm}}
+    {\begin{adjustwidth}{-\mdpi@len@marginpar}{0cm}}
     {\end{adjustwidth}}
  }
 %    \end{macrocode}
@@ -2276,71 +2750,58 @@
 % \begin{macro}{\backnotes}
 % \begin{macro}[no-user-doc]{\mdpi@backnotes}
 %    \begin{macrocode}
-\IfFormatAtLeastTF{2026-11-01}
- {
-   \DeclareInstance{blockenv}{mdpi-notes}{std}
-     {
-        name                = mdpi-notes
-       ,tag-name            = Sect
-       ,tagging-recipe      = standalone
-       ,standalone          = true
-       ,transparent-level   = true
-       ,block-instance      = mdpi-notes
-       ,inner-instance-type = captionedtext
-       ,inner-instance      = mdpi-notes
-       ,para-instance       = justify
-     }
-   \DeclareInstance{block}{mdpi-notes-1}{std}
-     {
-      ,begin-vspace       = 6pt
-      ,end-vspace         = 0pt
-      ,begin-extra-vspace = 0pt
-      ,end-extra-vspace   =  0pt
-      ,left-margin        = 0pt
-      ,para-indent        = \parindent
-      ,para-vspace        = \parskip
-     }
+\DeclareInstance{blockenv}{mdpi-notes}{std}
+  {
+     name                = mdpi-notes
+    ,tag-name            = Sect
+    ,tagging-recipe      = standalone
+    ,standalone          = true
+    ,transparent-level   = true
+    ,block-instance      = mdpi-notes
+    ,inner-instance-type = captionedtext
+    ,inner-instance      = mdpi-notes
+    ,para-instance       = justify
+  }
+\DeclareInstance{block}{mdpi-notes-1}{std}
+  {
+   ,begin-vspace       = 6pt
+   ,end-vspace         = 0pt
+   ,begin-extra-vspace = 0pt
+   ,end-extra-vspace   = 0pt
+   ,left-margin        = 0pt
+   ,para-indent        = \parindent
+   ,para-vspace        = \parskip
+  }
 %    \end{macrocode}
 % The captionedtext instance is currently based on the proof template.
 % This should be changed once a simpler template exist.
 % Note that the fontsize is not set here, so that it can react to the size in the context.
 %    \begin{macrocode}
-   \DeclareInstance{captionedtext}{mdpi-notes}{proof}
-     {
-       ,title    =  Note
-       ,after-hspace=0pt
-       ,punct=:\space
-       ,title-decls = \normalfont\bfseries
-       ,punct-decls= \normalfont\bfseries
-     }
+\DeclareInstance{captionedtext}{mdpi-notes}{proof}
+  {
+    ,title        = Note
+    ,after-hspace = 0pt
+    ,punct        = :\space
+    ,title-decls  = \normalfont\bfseries
+    ,punct-decls  = \normalfont\bfseries
+  }
 %    \end{macrocode}
 % Now we define an environment:
 %    \begin{macrocode}
-   \NewDocumentEnvironment{mdpi@notes}{O{}}
-     {\SimpleBlockEnv{mdpi-notes}{#1}}{\BlockEnvEnd}
+\NewDocumentEnvironment{mdpi@notes}{O{}}
+  {\SimpleBlockEnv{mdpi-notes}{#1}}
+  {\BlockEnvEnd}
 %    \end{macrocode}
 % For the backnotes we define a command that sets the fontsize to \cs{small}.
 % We also define the user command \cs{backnotes} command in term of this new instance.
 %    \begin{macrocode}
-   \NewDocumentCommand\mdpi@backnotes{m+m}
-    {%
-     \begin{mdpi@notes}[title=#1,caption-decls=\small,body-decls=\small]%
-     #2
-     \end{mdpi@notes}
-    }
+\NewDocumentCommand\mdpi@backnotes{m+m}
+ {%
+  \begin{mdpi@notes}[title=#1,caption-decls=\small,body-decls=\small]%
+  #2
+  \end{mdpi@notes}
  }
-%    \end{macrocode}
-% In older formats we fall back to a simple bold text:
-%    \begin{macrocode}
- {
-  \NewDocumentCommand\mdpi@backnotes{m+m}
-    {%
-      \par\vspace{6pt}%
-      \begingroup\small
-      \textbf{#1\unskip :} #2%
-      \unskip\par\endgroup
-    }
- }
+ 
 \NewCommandCopy\backnotes\mdpi@backnotes
 %    \end{macrocode}
 % \end{macro}
@@ -2398,29 +2859,18 @@
 %    \end{macrocode}
 % The new list of contributions, see issue \#97
 %    \begin{macrocode}
-\IfFormatAtLeastTF{2026-11-01}
- {
-   \NewDocumentCommand\listofcontributions{O{List of Contributions}+m}
-    {%
-      \begin{mdpi@notes}[title=#1,caption-placement=standalone,
+\NewDocumentCommand\listofcontributions{O{List of Contributions}+m}
+  {%
+    \begin{mdpi@notes}[title=#1,caption-placement=standalone,
        punct=,caption-decls=\small,body-decls=\small]%
 %    \end{macrocode}
 % we need to repeat the font size, see 
 % \url{https://github.com/latex3/tagging-project/issues/1686}
 %    \begin{macrocode}
-       \small%
-       #2%
-      \end{mdpi@notes}%
-    }
- }   
- {
-   \NewDocumentCommand\listofcontributions{O{List of Contributions}+m}
-     {\par\vspace{6pt}%
-      \begingroup\small
-      \textbf{#1}\par#2%
-      \unskip\par\endgroup
-     }      
- }    
+      \small%
+      #2%
+    \end{mdpi@notes}%
+  }
 %    \end{macrocode}
 %    \begin{macrocode}
 % UF TODO correct semantic, e.g.
@@ -2615,110 +3065,178 @@
 %    \end{macrocode}
 % \end{macro}
 
+% \subsection{Page layout}
+% \subsubsection{Dimensions}
+% The following dimensions are used by the main journal layout.
+% Preprints and books use different value set below directly.
+% The width of the left column, also used for \cs{marginparwidth}.
 %    \begin{macrocode}
-%%%% Dimensions
-%% Width of left column = marginparwidth
-\newlength{\leftcolumnlength}
-\setlength{\leftcolumnlength}{4.1cm}
-
-%% Width of left column plus marginsep
-\newlength{\extralength}
-\setlength{\extralength}{4.61cm} % = 0.51 cm + 4.1 cm (= marginparwidth + marginparsep)
-
-%% Width of the page minus the margins
+\newlength\mdpi@len@marginparwidth
+\setlength\mdpi@len@marginparwidth{4.1cm}
+%    \end{macrocode}
+% \cs{marginsep}
+%    \begin{macrocode}
+\newlength\mdpi@len@marginparsep
+\setlength\mdpi@len@marginparsep{0.50cm}
+%    \end{macrocode}
+% The outer margins of journals:
+%    \begin{macrocode}
+\newlength\mdpi@len@hmargin
+\setlength\mdpi@len@hmargin{1.27cm}
+\newlength\mdpi@len@topmargin
+\setlength\mdpi@len@topmargin{1.27cm}
+\newlength\mdpi@len@bottommargin
+\setlength\mdpi@len@bottommargin{1.08cm}
+%    \end{macrocode}
+%
+% \subsection{Calculated lengths}
+% The width of the left column plus \cs{marginsep}, 
+%    \begin{macrocode}
+\newlength\mdpi@len@marginpar
+\setlength\mdpi@len@marginpar
+   {\dimeval{\mdpi@len@marginparwidth+\mdpi@len@marginparsep}} % = 4.61cm
+%    \end{macrocode}
+% this length is the public version and used in the template:
+%    \begin{macrocode}
+\newlength\extralength
+\setlength\extralength{\mdpi@len@marginpar} % = 4.61cm
+%    \end{macrocode}
+% Width of the page minus the margins. 
+% TODO: that is too large for books. Is it used there?.
+%    \begin{macrocode}
+\newlength{\mdpi@len@bodywidth}
+\setlength{\mdpi@len@bodywidth}{\dimeval{\paperwidth - 2\mdpi@len@hmargin}}
+%    \end{macrocode}
+% TODO: check if a public length is needed.
+%    \begin{macrocode}
 \newlength{\fulllength}
-\setlength{\fulllength}{21 cm - 1.27 cm - 1.27 cm}
-
-%%% Layout
-\isPreprints{%
-  \RequirePackage[left=2.7cm,
-        right=2.7cm,
-        top=1.35cm,
-        bottom=1.08cm,
+\setlength{\fulllength}{\mdpi@len@bodywidth}
+%    \end{macrocode}
+% \subsection{Layout}
+% Preprints have larger margins.
+%    \begin{macrocode}
+\isPreprints
+  {%
+    \RequirePackage
+      [%
+        left   =2.7cm,
+        right  =2.7cm,
+        top    =1.35cm,
+        bottom =1.08cm,
         includehead,
         includefoot,
         footnotesep=0.6cm %moved from \skip\footins change for journal laws
-        ]{geometry}
-      }{
-\isBookContribution{%%
-  \RequirePackage[left=2.05cm,
-          right=2.05cm,
-          top=1.8cm,
-          bottom=0.75cm,
+      ]{geometry}
+  }
+%    \end{macrocode}
+% 
+%    \begin{macrocode}
+  {
+%    \end{macrocode}
+% Books have a smaller paper size. 
+%    \begin{macrocode}
+   \isBookContribution
+    {%%
+      \RequirePackage[
+          left      =2.05cm,
+          right     =2.05cm,
+          top       =1.8cm,
+          bottom    =0.75cm,
           paperwidth=170mm,
           paperheight=244mm,
-          footskip=20pt,
-          headsep=24pt,
+          footskip  =20pt,
+          headsep   =24pt,
           includefoot,
           footnotesep=0.6cm %moved from \skip\footins change for journal laws
           ]{geometry}
-  }{
-  \RequirePackage[left=5.87cm, %1.27 cm + 0.51 cm + 4.1 cm = 5.87 cm (= 1.27 cm + marginparwidth + marginparsep)
-        marginparwidth=4.1cm,
-        marginparsep=0.51cm,
-        right=1.27cm,
-        top=1.27cm,
-        bottom=1.08cm,
-        footskip=36pt,
-        headsep=24pt,
+      % needed? head is empty in book?    
+      %\fancyheadoffset[L]{\mdpi@len@marginpar}    
+    }
+%    \end{macrocode}
+% The main geometry setting for the journals. A4 paper with a large left column
+%    \begin{macrocode}
+    {
+      \RequirePackage
+       [
+        left=\dimeval{\mdpi@len@hmargin+\mdpi@len@marginparwidth+\mdpi@len@marginparsep},%=5.87cm,
+        marginparwidth=\mdpi@len@marginparwidth,
+        marginparsep  =\mdpi@len@marginparsep,
+        right         =\mdpi@len@hmargin,
+        top           =\mdpi@len@topmargin,
+        bottom        =\mdpi@len@bottommargin,
+        footskip      =36pt,
+        headsep       =24pt,
         includehead,
         includefoot,
         footnotesep=0.6cm %moved from \skip\footins change for journal laws
         ]{geometry}
-      }
-}
-
-\isPreprints{}{%
-\fancyheadoffset[L]{\extralength} % Header into the margin
-\isBookContribution{%
-  }{%
-  \fancyfootoffset[L]{\extralength}%
+      \fancyheadoffset[L]{\mdpi@len@marginpar}
+      \fancyfootoffset[L]{\mdpi@len@marginpar}% 
     }
-} % Footer into the margin
-
+  }
 %    \end{macrocode}
-%
+% \subsection{Landscape pages}
 % Commands for landscape page:
 % \begin{macro}{\startlandscape,\finishlandscape}
 %    \begin{macrocode}
-\newlength\mdpi@portrait@paperwidth
-\newlength\mdpi@portrait@paperheight
-\mdpi@portrait@paperheight= \paperheight
-\mdpi@portrait@paperwidth = \paperwidth
+\newlength\mdpi@len@portrait@paperwidth
+\newlength\mdpi@len@portrait@paperheight
+\mdpi@len@portrait@paperheight= \paperheight
+\mdpi@len@portrait@paperwidth = \paperwidth
 \newcommand{\startlandscape}{%
 \isPreprints
   {
    \clearpage
-   \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
-   \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
-                 right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
+   \UseName{pdf_pagesize_gset:nn}
+     {\mdpi@len@portrait@paperheight}{\mdpi@len@portrait@paperwidth}
+   \newgeometry
+     {
+      layoutwidth=297mm, layoutheight=210mm, 
+      left   =1.27cm,
+      right  =1.27cm, 
+      top    =1.27cm, 
+      bottom =1.08cm, 
+      includehead, 
+      includefoot
+     }
 %    \end{macrocode}
 % \cs{newgeometry} resets the paper dimension so we overwrite them again:
 %    \begin{macrocode}
-   \paperwidth =\mdpi@portrait@paperheight
-   \paperheight=\mdpi@portrait@paperwidth
+   \paperwidth =\mdpi@len@portrait@paperheight
+   \paperheight=\mdpi@len@portrait@paperwidth
    \fancyheadoffset{0pt}
    \captionsetup{margin={0cm,0cm}}
   }
   {
    \clearpage
-   \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperheight}{\mdpi@portrait@paperwidth}
-   \newgeometry{layoutwidth=297mm, layoutheight=210mm, left=1.27cm,
-                 right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
-   \paperwidth=\mdpi@portrait@paperheight
-   \paperheight=\mdpi@portrait@paperwidth
+   \UseName{pdf_pagesize_gset:nn}
+     {\mdpi@len@portrait@paperheight}{\mdpi@len@portrait@paperwidth}
+   \newgeometry
+     {
+       layoutwidth=297mm, layoutheight=210mm, 
+       left  =\mdpi@len@hmargin,
+       right =\mdpi@len@hmargin, 
+       top   =\mdpi@len@topmargin, 
+       bottom=\mdpi@len@bottommargin, 
+       includehead, 
+       includefoot
+     }
+   \paperwidth=\mdpi@len@portrait@paperheight
+   \paperheight=\mdpi@len@portrait@paperwidth
    \fancyheadoffset{0pt}
    \captionsetup{margin={4.6cm,0cm}}
   }
 }
 
-\newcommand{\finishlandscape}{%
+\newcommand{\finishlandscape}
+ {%
   \clearpage
-  \UseName{pdf_pagesize_gset:nn}{\mdpi@portrait@paperwidth}{\mdpi@portrait@paperheight}
+  \UseName{pdf_pagesize_gset:nn}
+    {\mdpi@len@portrait@paperwidth}{\mdpi@len@portrait@paperheight}
   \restoregeometry
-  \fancyheadoffset[L]{\extralength}
+  \fancyheadoffset[L]{\mdpi@len@marginpar}
   \captionsetup{margin={0cm,0cm}}
-}
+ }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -2775,8 +3293,8 @@
 %\RequirePackage{caption}
 \ExplSyntaxOn
 \clist_new:N\l__mdpi_tempa_clist
-\newlength\mdpi@caption@leftmargin
-\newlength\mdpi@caption@rightmargin
+\newlength\mdpi@len@caption@leftmargin
+\newlength\mdpi@len@caption@rightmargin
 %    \end{macrocode}
 % the subcaptionlite package defines the command as noop.
 %    \begin{macrocode}
@@ -2789,8 +3307,8 @@
    margin.code:n = 
     { 
       \clist_set:Nn \l__mdpi_tempa_clist {#1,#1}
-      \setlength\mdpi@caption@leftmargin{\clist_item:Nn\l__mdpi_tempa_clist{1}}
-      \setlength\mdpi@caption@rightmargin{\clist_item:Nn\l__mdpi_tempa_clist{2}}
+      \setlength\mdpi@len@caption@leftmargin {\clist_item:Nn\l__mdpi_tempa_clist{1}}
+      \setlength\mdpi@len@caption@rightmargin{\clist_item:Nn\l__mdpi_tempa_clist{2}}
     }        
  } 
 \ExplSyntaxOff 
@@ -2814,7 +3332,6 @@
 %    \begin{macrocode}
 \newcounter{mdpi@continuedfloat}
 \ProvideDocumentCommand\ContinuedFloat{s}{%
-  \stepcounter{mdpi@continuedfloat}%
   \stepcounter{mdpi@continuedfloat}%
   \ExpandArgs{c}%
    \renewcommand{theH\@captype}{\UseName{the\@captype}.cont.\themdpi@continuedfloat}%
@@ -2850,8 +3367,8 @@
 % We set the margin to the values from the caption package, so that e.g. landscape
 % can change them with \cs{captionsetup}
 %    \begin{macrocode}
-     \leftskip \mdpi@caption@leftmargin
-     \rightskip\mdpi@caption@rightmargin
+     \leftskip \mdpi@len@caption@leftmargin
+     \rightskip\mdpi@len@caption@rightmargin
      \parfillskip=\z@ plus 1fil
      \UseTaggingSocket{caption/begin}{\@current@float@struct}%
      \UseTaggingSocket{caption/label/begin}%
@@ -2879,6 +3396,7 @@
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X} % centered text in R columns
 
 %    \end{macrocode}
+%
 % \subsection{List settings}
 % The tagging code doesn't support yet the star-value for \texttt{leftmargin} and
 % the value \texttt{parleft} for align, so we adapted that and use fixed values
@@ -2911,9 +3429,9 @@
    }
 \setlist[description]{itemsep=0mm}
 %    \end{macrocode}
-
+% Quote environment
 %    \begin{macrocode}
-%%%% Quote environment
+%%%% 
 \renewenvironment{quote}{
   \list{}{
     \listparindent=0pt
@@ -2927,83 +3445,14 @@
   {\endlist}
 
 %%%% Supplementary file
-\ifthenelse{\equal{\@arttype}{Supfile}}{
-  \renewcommand{\thefigure}{S\arabic{figure}}%
-  \renewcommand{\thetable}{S\arabic{table}}%
-  }{}%
+\mdpi@isSupfileT
+  {
+   \renewcommand{\thefigure}{S\arabic{figure}}%
+   \renewcommand{\thetable}{S\arabic{table}}%
+  }
 
 %% Link to supplementary material: www.mdpi.com/ISSN-number/volume-number/issue-number/article-number
 \newcommand{\linksupplementary}[1]{\url{https://www.mdpi.com/article/\@doinum/#1}}
-
-%%%% Header and footer (all pages except the first)
-\renewcommand\headrule{} %% set line (from fancyhdr) in header to nothing
-
-\pagestyle{fancy}
-\lhead{
-  \ifthenelse{\equal{\@journal}{preprints}%
-  \OR \equal{\@journal}{preprintschicago}
-  \OR \equal{\@journal}{preprintsapa}
-  \OR \equal{\@arttype}{Book}
-  \OR \equal{\@arttype}{Monograph}}{%
-    }{%
-    \footnotesize%
-    \ifthenelse{\equal{\@status}{submit}}{%
-          \vspace{2pt}Version {\@ \today} submitted to {\em \journalname}%
-      }{%
-      \ifthenelse{\equal{\@arttype}{Supfile}}{%
-      {\em \journalname} {\bfseries \@pubyear}, {\em \@pubvolume}, %
-      \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-        \@articlenumber. %
-        }{%
-        S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}. %
-        }%
-      {\url{https://doi.org/\@doinum}}%
-      }{%
-      {\null\vspace{2pt}\em\journalname\ }{\bfseries\@pubyear}, {\em \@pubvolume}%
-      \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-        , \@articlenumber%
-        }{}%
-      }%
-      }\\%
-      \isPreprints{}{%
-      \rule{\fulllength}{0.4pt}%
-      }%
-    }%
-  }
-
-\rhead{%
-    \isBookContribution{}{%
-  \ifthenelse{\equal{\@arttype}{Supfile}}{%
-    \footnotesize S\thepage{} of S\pageref*{LastPage}%
-    }{%
-    \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-      \footnotesize\thepage{} of \pageref*{LastPage}%
-      }{%
-      \footnotesize\thepage%
-    }%
-    }\\%
-    \isPreprints{}{%
-    \rule{\fulllength}{0.4pt}%
-            }%
-  }%
-}
-
-\cfoot{%
-  \isBookContribution{%
-    \footnotesize\thepage
-    }{%
-  }
-}
-
-\isBookContribution{%
-    }{%
-      \isPreprints{}{%
-        \rfoot{%
-     \footnotesize%
-    {\url{https://doi.org/\@doinum}}%
-     }
-  }
-}
 
 %%%% Article type "Retraction"
 \def\@retractiondate{}% Date that the retraction notice was published
@@ -3021,27 +3470,7 @@
   \RequirePackage{draftwatermark}
   \SetWatermarkText{RETRACTED}
   \SetWatermarkScale{0.8}
-  \fancypagestyle{plain}{
-  \fancyhf{}
-  \fancyfoot[L]{
-    \footnotesize%
-    \st{\mbox{\textit{\journalname} \textbf{\@pubyear}, \textit\@pubvolume, }}%
-    \ifthenelse{\equal{\@continuouspages}{\@empty}}{%
-      \st{\@articlenumber}%
-      }{%
-      \st{\@firstpage}\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{\st{--\mbox{\pageref*{LastPage}}}}%
-      }%
-    \\This paper has been retracted. A retraction notice was published on \@retractiondate{} %
-    in \textit{\@journalfull} \textbf{\@retractionnoticeyear}, \textit{\@retractionnoticevolume}, \@retractionnoticeidnumber. https://doi.org/\@retractionnoticedoi
-  }%
-  \fancyfoot[R]{
-    \footnotesize%
-    \st{{%
-    \href{https://doi.org/\@doinum}%
-    {https://doi.org/\@doinum}}}%
-  }%
-  \renewcommand{\footrulewidth}{0.4pt}%
-  }
+  \mdpi@pagestyle@plain@retracted
    }
 }
 
@@ -3163,7 +3592,7 @@
 \newcommand{\mdpi@text@copyright}
   {
     \raggedright
-    \tl_if_eq:NnF\@arttype{Supfile}
+    \mdpi_is_Supfile:F
      {
       \tl_if_eq:NnTF\@status{submit}
          {
@@ -3180,8 +3609,9 @@
 %    \end{macrocode}
 %
 %\subsection{Perhaps obsolete commands}
-%TODO: check if this is still in use.
-% For transition period to change back to continuous page numbers
+% TODO: check if commands in this section are still in use.
+% To change back to continuous page numbers, still in use, see issue \#225
+% TODO: move to a sensible place. 
 %    \begin{macrocode}
 \def\@continuouspages{}
 \newcommand{\continuouspages}[1]{\gdef\@continuouspages{#1}}

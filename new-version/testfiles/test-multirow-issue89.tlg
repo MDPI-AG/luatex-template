@@ -9,6 +9,70 @@ TEST 1: Show PDF Tags
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"
     >
+   <title-block xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.023"
+      xmlns:ARIA-1.1="http://iso.org/pdf/ssn/ARIA-1.1"
+      ARIA-1.1:role="banner"
+      rolemaps-to="Div"
+     >
+    <title-logos xmlns="https://www.latex-project.org/ns/local"
+       id="ID.024"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="text-block"
+      >
+     <Link xmlns="http://iso.org/pdf2/ssn"
+        id="ID.025"
+       >
+      <?MarkedContent page="1" ?>
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.026"
+         actualtext="MDPI logo"
+        >
+       <?MarkedContent page="1" ?>
+      </Span>
+      <?MarkedContent page="1" ?>
+      <?ReferencedObject type="Annot" page="1" ?>
+     </Link>
+    </title-logos>
+    <title-subtext xmlns="https://www.latex-project.org/ns/local"
+       id="ID.027"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="text-block"
+      >
+     <?MarkedContent page="1" ?>Article
+    </title-subtext>
+    <title-text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.028"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="Title"
+      >
+     <?MarkedContent page="1" ?>TITLE
+    </title-text>
+    <title-author xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.029"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>AUTHOR
+    </title-author>
+    <title-notes xmlns="https://www.latex-project.org/ns/local"
+       id="ID.030"
+       rolemaps-to="semantic-para"
+      >
+     <affiliation xmlns="https://www.latex-project.org/ns/local"
+        id="ID.031"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="text-block"
+       >
+      <?MarkedContent page="1" ?>ADDRESS
+     </affiliation>
+    </title-notes>
+   </title-block>
    <Aside xmlns="http://iso.org/pdf2/ssn"
       id="ID.011"
      >
@@ -87,97 +151,33 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </Aside>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.023"
+      id="ID.032"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.024"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Link xmlns="http://iso.org/pdf2/ssn"
-        id="ID.025"
-       >
-      <?MarkedContent page="1" ?>
-      <Span xmlns="http://iso.org/pdf2/ssn"
-         id="ID.026"
-         actualtext="MDPI logo"
-        >
-       <?MarkedContent page="1" ?>
-      </Span>
-      <?MarkedContent page="1" ?>
-      <?ReferencedObject type="Annot" page="1" ?>
-     </Link>
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.027"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.028"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>Article
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.029"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>TITLE
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.030"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>AUTHOR
-    </text-block>
-   </semantic-para>
-   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.031"
-      rolemaps-to="Part"
-     >
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.032"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>ADDRESS
-    </text-block>
-   </semantic-para>
-   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.033"
-      rolemaps-to="Part"
-     >
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.034"
+       id="ID.033"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
     </text-block>
     <Table xmlns="http://iso.org/pdf2/ssn"
-       id="ID.035"
+       id="ID.034"
       >
      <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.036"
+        id="ID.035"
        >
       <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.037"
+         id="ID.036"
          xmlns:Table="http://iso.org/pdf/ssn/Table"
          Table:RowSpan="3"
         >
        <?MarkedContent page="1" ?>Entry 1 *
+      </TD>
+      <TD xmlns="http://iso.org/pdf2/ssn"
+         id="ID.037"
+        >
+       <?MarkedContent page="1" ?>Data
       </TD>
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.038"
@@ -189,15 +189,15 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
+     </TR>
+     <TR xmlns="http://iso.org/pdf2/ssn"
+        id="ID.040"
+       >
       <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.040"
+         id="ID.041"
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-     </TR>
-     <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.041"
-       >
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.042"
         >
@@ -208,15 +208,15 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
+     </TR>
+     <TR xmlns="http://iso.org/pdf2/ssn"
+        id="ID.044"
+       >
       <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.044"
+         id="ID.045"
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-     </TR>
-     <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.045"
-       >
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.046"
         >
@@ -227,39 +227,39 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-      <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.048"
-        >
-       <?MarkedContent page="1" ?>Data
-      </TD>
      </TR>
     </Table>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.049"
+       id="ID.048"
        rolemaps-to="P"
       >
     </text-block>
    </semantic-para>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.050"
+      id="ID.049"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.051"
+       id="ID.050"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
     </text-block>
     <Table xmlns="http://iso.org/pdf2/ssn"
-       id="ID.052"
+       id="ID.051"
       >
      <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.053"
+        id="ID.052"
        >
+      <TD xmlns="http://iso.org/pdf2/ssn"
+         id="ID.053"
+        >
+      </TD>
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.054"
         >
+       <?MarkedContent page="1" ?>Data
       </TD>
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.055"
@@ -271,18 +271,18 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-      <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.057"
-        >
-       <?MarkedContent page="1" ?>Data
-      </TD>
      </TR>
      <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.058"
+        id="ID.057"
        >
+      <TD xmlns="http://iso.org/pdf2/ssn"
+         id="ID.058"
+        >
+      </TD>
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.059"
         >
+       <?MarkedContent page="1" ?>Data
       </TD>
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.060"
@@ -294,19 +294,19 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-      <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.062"
-        >
-       <?MarkedContent page="1" ?>Data
-      </TD>
      </TR>
      <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.063"
+        id="ID.062"
        >
+      <TD xmlns="http://iso.org/pdf2/ssn"
+         id="ID.063"
+        >
+       <?MarkedContent page="1" ?>Entry 1 *
+      </TD>
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.064"
         >
-       <?MarkedContent page="1" ?>Entry 1 *
+       <?MarkedContent page="1" ?>Data
       </TD>
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.065"
@@ -318,42 +318,42 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-      <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.067"
-        >
-       <?MarkedContent page="1" ?>Data
-      </TD>
      </TR>
     </Table>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.068"
+       id="ID.067"
        rolemaps-to="P"
       >
     </text-block>
    </semantic-para>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.069"
+      id="ID.068"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.070"
+       id="ID.069"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
     </text-block>
     <Table xmlns="http://iso.org/pdf2/ssn"
-       id="ID.071"
+       id="ID.070"
       >
      <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.072"
+        id="ID.071"
        >
       <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.073"
+         id="ID.072"
          xmlns:Table="http://iso.org/pdf/ssn/Table"
          Table:RowSpan="3"
         >
        <?MarkedContent page="1" ?>Entry 1 *
+      </TD>
+      <TD xmlns="http://iso.org/pdf2/ssn"
+         id="ID.073"
+        >
+       <?MarkedContent page="1" ?>Data
       </TD>
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.074"
@@ -365,15 +365,15 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
+     </TR>
+     <TR xmlns="http://iso.org/pdf2/ssn"
+        id="ID.076"
+       >
       <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.076"
+         id="ID.077"
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-     </TR>
-     <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.077"
-       >
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.078"
         >
@@ -384,15 +384,15 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
+     </TR>
+     <TR xmlns="http://iso.org/pdf2/ssn"
+        id="ID.080"
+       >
       <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.080"
+         id="ID.081"
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-     </TR>
-     <TR xmlns="http://iso.org/pdf2/ssn"
-        id="ID.081"
-       >
       <TD xmlns="http://iso.org/pdf2/ssn"
          id="ID.082"
         >
@@ -403,21 +403,16 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>Data
       </TD>
-      <TD xmlns="http://iso.org/pdf2/ssn"
-         id="ID.084"
-        >
-       <?MarkedContent page="1" ?>Data
-      </TD>
      </TR>
     </Table>
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.085"
+       id="ID.084"
        rolemaps-to="P"
       >
     </text-block>
    </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.086"
+      id="ID.085"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -434,7 +429,7 @@ TEST 1: Show PDF Tags
 Class mdpi Warning: multirow with negative argument is not supported with tagging! on input line ....
 Underfull \hbox (badness 10000) in alignment at lines ...
 [][][][]
-\hbox(0.0+0.0)x394.35522, direction TLT
+\hbox(0.0+0.0)x394.35481, direction TLT
 .\glue(\tabskip) 0.0
 .\unsetbox(0.0+0.0)x50.74998
 .\glue(\tabskip) 0.0
@@ -446,16 +441,16 @@ Underfull \hbox (badness 10000) in alignment at lines ...
 .\glue(\tabskip) 0.0
 Overfull \hbox (21.33955pt too wide) in paragraph at lines ...
 [][] 
-\hbox(23.29495+18.64499)x394.35522, direction TLT
+\hbox(23.29495+18.64499)x394.35481, direction TLT
 .\localpar
 ..\localinterlinepenalty=0
 ..\localbrokenpenalty=0
 ..\localleftbox=null
 ..\localrightbox=null
 .\hbox(0.0+0.0)x21.33955, direction TLT
-.\hbox(23.29495+18.64499)x394.35522, direction TLT
-..\vbox(23.29495+18.64499)x394.35522, direction TLT
-...\hbox(9.78595+4.19403)x394.35522, direction TLT
+.\hbox(23.29495+18.64499)x394.35481, direction TLT
+..\vbox(23.29495+18.64499)x394.35481, direction TLT
+...\hbox(9.78595+4.19403)x394.35481, direction TLT
 ....\glue(\tabskip) 0.0
 ....\hbox(9.78595+4.19403)x50.74998, direction TLT
 .....\rule(9.78595+4.19403)x0.0
@@ -524,7 +519,7 @@ Overfull \hbox (21.33955pt too wide) in paragraph at lines ...
 .....\glue 6.0
 ....\glue(\tabskip) 0.0
 ...\glue(\lineskip) 0.0
-...\hbox(9.78595+4.19403)x394.35522, direction TLT
+...\hbox(9.78595+4.19403)x394.35481, direction TLT
 ....\glue(\tabskip) 0.0
 ....\hbox(9.78595+4.19403)x50.74998, glue set 38.74998fill, direction TLT
 .....\rule(9.78595+4.19403)x0.0
@@ -572,7 +567,7 @@ Overfull \hbox (21.33955pt too wide) in paragraph at lines ...
 .....\glue 6.0
 ....\glue(\tabskip) 0.0
 ...\glue(\lineskip) 0.0
-...\hbox(9.78595+4.19403)x394.35522, direction TLT
+...\hbox(9.78595+4.19403)x394.35481, direction TLT
 ....\glue(\tabskip) 0.0
 ....\hbox(9.78595+4.19403)x50.74998, glue set 38.74998fill, direction TLT
 .....\rule(9.78595+4.19403)x0.0
@@ -645,8 +640,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~86 structure objects
-(tagpdf)             with ~59 'MC' leaf nodes.
+(tagpdf)             Writing out ~85 structure objects
+(tagpdf)             with ~57 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

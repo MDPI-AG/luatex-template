@@ -9,6 +9,70 @@ TEST 1: Show PDF Tags
   <Document xmlns="http://iso.org/pdf2/ssn"
      id="ID.002"
     >
+   <title-block xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.023"
+      xmlns:ARIA-1.1="http://iso.org/pdf/ssn/ARIA-1.1"
+      ARIA-1.1:role="banner"
+      rolemaps-to="Div"
+     >
+    <title-logos xmlns="https://www.latex-project.org/ns/local"
+       id="ID.024"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="text-block"
+      >
+     <Link xmlns="http://iso.org/pdf2/ssn"
+        id="ID.025"
+       >
+      <?MarkedContent page="1" ?>
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.026"
+         actualtext="MDPI logo"
+        >
+       <?MarkedContent page="1" ?>
+      </Span>
+      <?MarkedContent page="1" ?>
+      <?ReferencedObject type="Annot" page="1" ?>
+     </Link>
+    </title-logos>
+    <title-subtext xmlns="https://www.latex-project.org/ns/local"
+       id="ID.027"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="text-block"
+      >
+     <?MarkedContent page="1" ?>Article
+    </title-subtext>
+    <title-text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.028"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="Title"
+      >
+     <?MarkedContent page="1" ?>TITLE
+    </title-text>
+    <title-author xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.029"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>AUTHOR
+    </title-author>
+    <title-notes xmlns="https://www.latex-project.org/ns/local"
+       id="ID.030"
+       rolemaps-to="semantic-para"
+      >
+     <affiliation xmlns="https://www.latex-project.org/ns/local"
+        id="ID.031"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextAlign="Start"
+        rolemaps-to="text-block"
+       >
+      <?MarkedContent page="1" ?>ADDRESS
+     </affiliation>
+    </title-notes>
+   </title-block>
    <Aside xmlns="http://iso.org/pdf2/ssn"
       id="ID.011"
      >
@@ -87,80 +151,11 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </Aside>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.023"
+      id="ID.032"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.024"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <Link xmlns="http://iso.org/pdf2/ssn"
-        id="ID.025"
-       >
-      <?MarkedContent page="1" ?>
-      <Span xmlns="http://iso.org/pdf2/ssn"
-         id="ID.026"
-         actualtext="MDPI logo"
-        >
-       <?MarkedContent page="1" ?>
-      </Span>
-      <?MarkedContent page="1" ?>
-      <?ReferencedObject type="Annot" page="1" ?>
-     </Link>
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.027"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.028"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>Article
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.029"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>TITLE
-    </text-block>
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.030"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>AUTHOR
-    </text-block>
-   </semantic-para>
-   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.031"
-      rolemaps-to="Part"
-     >
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.032"
-       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-       Layout:TextAlign="Start"
-       rolemaps-to="P"
-      >
-     <?MarkedContent page="1" ?>ADDRESS
-    </text-block>
-   </semantic-para>
-   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.033"
-      rolemaps-to="Part"
-     >
-    <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.034"
+       id="ID.033"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -169,7 +164,7 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.035"
+      id="ID.034"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -199,7 +194,7 @@ LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
 tagpdf: Info: some Link annotation(s) are not in Link or Reference structure elements
 tagpdf:       moved into a container at the end of the structure tree
 Completed box being shipped out [1]
-\vbox(742.04784+4.19403)x489.10277, direction TLT
+\vbox(742.04784+3.14552)x489.10277, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
 ..\kern-72.26999
@@ -219,9 +214,9 @@ Completed box being shipped out [1]
 ..\kern0.0
 ..\kern-36.13487
 ..\kern-1.00374
-..\hbox(0.0+0.0)x0.0, glue set - 93.7438fil, direction TLT
+..\hbox(0.0+0.0)x0.0, glue set - 93.74422fil, direction TLT
 ...\kern0.0
-...\kern94.74754
+...\kern94.74796
 ...\kern-1.00374
 ...\pdfdest name{page.1} xyz
 ...\pdfdest name{page.1} xyz
@@ -229,21 +224,21 @@ Completed box being shipped out [1]
 ...\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 0.0 plus 1.0fil minus 1.0fil
 .\glue(\lineskip) 0.0
-.\vbox(742.04784+4.19403)x489.10277, direction TLT
+.\vbox(742.04784+3.14552)x489.10277, direction TLT
 ..\glue -36.13487
-..\vbox(778.18271+4.19403)x394.35522, shifted 94.74754, direction TLT
-...\vbox(12.0+0.0)x394.35522, direction TLT
+..\vbox(778.18271+3.14552)x394.35481, shifted 94.74796, direction TLT
+...\vbox(12.0+0.0)x394.35481, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(12.0+0.0)x394.35522, direction TLT
-.....\hbox(12.0+0.0)x394.35522, direction TLT
-......\glue -131.16722
-......\hbox(12.0+0.0)x525.52245, direction TLT
-.......\vbox(12.0+0.0)x525.52245, direction TLT
-........\hbox(21.97998+0.0)x525.52245, direction TLT
-.........\hbox(21.97998+0.0)x0.0, glue set - 525.52246fil, direction TLT
-..........\vbox(21.97998+0.0)x525.52245, direction TLT
-...........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+....\hbox(12.0+0.0)x394.35481, direction TLT
+.....\hbox(12.0+0.0)x394.35481, direction TLT
+......\glue -130.88283
+......\hbox(12.0+0.0)x525.23764, direction TLT
+.......\vbox(12.0+0.0)x525.23764, direction TLT
+........\hbox(21.97998+0.0)x525.23764, direction TLT
+.........\hbox(21.97998+0.0)x0.0, glue set - 525.23767fil, direction TLT
+..........\vbox(21.97998+0.0)x525.23764, direction TLT
+...........\hbox(9.78595+4.19403)x525.23764, glue set 262.61884fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -261,8 +256,8 @@ Completed box being shipped out [1]
 ...........\glue 0.0
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\vbox(21.97998+0.0)x525.52245, direction TLT
-..........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+.........\vbox(21.97998+0.0)x525.23764, direction TLT
+..........\hbox(9.78595+4.19403)x525.23764, glue set 262.61884fil, direction TLT
 ...........\glue(\leftskip) 0.0 plus 1.0fil
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -278,10 +273,10 @@ Completed box being shipped out [1]
 ..........\glue 8.0
 ..........\glue 0.0
 .........\glue 0.0 plus 1.0fill
-.........\hbox(21.97998+0.0)x0.0, glue set - 525.52246fil, direction TLT
+.........\hbox(21.97998+0.0)x0.0, glue set - 525.23767fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(21.97998+0.0)x525.52245, direction TLT
-...........\hbox(9.78595+4.19403)x525.52245, glue set 525.52246fil, direction TLT
+..........\vbox(21.97998+0.0)x525.23764, direction TLT
+...........\hbox(9.78595+4.19403)x525.23764, glue set 525.23767fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -303,16 +298,16 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35522, glue set 558.3772fil, direction TLT
+...\vbox(706.18271+0.0)x394.35481, glue set 558.3772fil, direction TLT
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
-......\hbox(0.0+0.0)x0.0, glue set - 14.51074fil, direction TLT
+......\hbox(0.0+0.0)x0.0, glue set - 14.22636fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\vbox(0.0+0.0)x0.0, direction TLT
 ........\glue 0.0
 ........\glue 0.0
 ........\glue 0.0
-.......\glue 14.51074
+.......\glue 14.22636
 ....\write-{}
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
@@ -323,7 +318,7 @@ Completed box being shipped out [1]
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ......\savepos
 ......\write1{\newmarginnote{note.1.1}{{\themn@abspage }{\number \mn@lastxpos sp}}}
-......\hbox(0.0+0.0)x0.0, glue set - 131.1672fil, direction TLT
+......\hbox(0.0+0.0)x0.0, glue set - 130.88283fil, direction TLT
 .......\glue 0.0 plus 1.0fil minus 1.0fil
 .......\vbox(0.0+0.0)x116.65646, glue set - 571.30286fil, direction TLT
 ........\kern0.0
@@ -763,10 +758,10 @@ Completed box being shipped out [1]
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\kern167.01753
-.......\kern-94.74754
+.......\kern167.01794
+.......\kern-94.74796
 .......\kern-72.26999
-.......\kern14.51074
+.......\kern14.22636
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\glue -13.98
 ....\glue 13.98
@@ -789,7 +784,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\lineskip) 1.0
-....\hbox(34.14322+0.0)x525.52245, glue set 482.55368fill, shifted -131.16722, direction TLT
+....\hbox(34.14322+0.0)x525.23764, glue set 482.26886fill, shifted -130.88283, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -827,7 +822,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 13.58
-....\hbox(0.4+0.0)x525.52245, glue set 0.14241fil, shifted -131.16722, direction TLT
+....\hbox(0.4+0.0)x525.23764, shifted -130.88283, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -846,7 +841,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.65
-....\hbox(7.33+0.11)x525.52245, glue set 248.93622fil, shifted -131.16722, direction TLT
+....\hbox(7.33+0.11)x525.23764, glue set 248.79382fil, shifted -130.88283, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\kern-0.36 (left margin)
@@ -877,7 +872,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 8.632
-....\hbox(12.258+0.054)x525.52245, glue set 236.55322fil, shifted -131.16722, direction TLT
+....\hbox(12.258+0.054)x525.23764, glue set 236.41083fil, shifted -130.88283, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\kern-0.594 (left margin)
@@ -887,8 +882,6 @@ Completed box being shipped out [1]
 ......\localleftbox=null
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
-.....\pdfliteral page <lua data reference ...>
-.....\pdfliteral page <lua data reference ...>
 .....\TU/tg-pagella/b/n/18 T
 .....\TU/tg-pagella/b/n/18 I
 .....\discretionary (penalty 10000)
@@ -904,7 +897,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 6.976
-....\hbox(6.95+0.17)x525.52245, glue set 240.12622fil, shifted -131.16722, direction TLT
+....\hbox(6.95+0.17)x525.23764, glue set 239.98383fil, shifted -130.88283, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\kern-0.39 (left margin)
@@ -939,7 +932,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.643
-....\hbox(5.672+0.16)x394.35522, glue set 178.71362fil, direction TLT
+....\hbox(5.672+0.16)x394.35481, glue set 178.71341fil, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
 .....\kern-0.312 (left margin)
@@ -974,7 +967,7 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\hbox(6.21+0.2)x394.35522, glue set 330.72568fil, direction TLT
+....\hbox(6.21+0.2)x394.35481, glue set 330.72528fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1005,20 +998,20 @@ Completed box being shipped out [1]
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
 ...\pdflinkstate 1
-...\glue(\baselineskip) 21.62003
-...\hbox(14.37997+4.19403)x394.35522, direction TLT
-....\hbox(14.37997+4.19403)x394.35522, direction TLT
-.....\glue -131.16722
-.....\hbox(14.37997+4.19403)x525.52245, direction TLT
-......\vbox(14.37997+4.19403)x525.52245, direction TLT
+...\glue(\baselineskip) 24.06651
+...\hbox(11.93349+3.14552)x394.35481, direction TLT
+....\hbox(11.93349+3.14552)x394.35481, direction TLT
+.....\glue -130.88283
+.....\hbox(11.93349+3.14552)x525.23764, direction TLT
+......\vbox(11.93349+3.14552)x525.23764, direction TLT
 .......\pdfliteral page <lua data reference ...>
 .......\pdfliteral page <lua data reference ...>
-.......\rule(0.4+0.0)x525.52245
+.......\rule(0.4+0.0)x525.23764
 .......\glue 4.19403
-.......\hbox(9.78595+4.19403)x525.52245, direction TLT
-........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
-.........\vbox(7.33946+3.14552)x525.52245, direction TLT
-..........\hbox(7.33946+3.14552)x525.52245, glue set 167.01321fil, direction TLT
+.......\hbox(7.33946+3.14552)x525.23764, direction TLT
+........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
+.........\vbox(7.33946+3.14552)x525.23764, direction TLT
+..........\hbox(7.33946+3.14552)x525.23764, glue set 166.85883fil, direction TLT
 ...........\kern-0.288 (left margin)
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -1107,14 +1100,15 @@ Completed box being shipped out [1]
 ...........\TU/tg-pagella/m/it/8 ﬁ
 ...........\TU/tg-pagella/m/it/8 e
 ...........\TU/tg-pagella/m/it/8 d
+...........\kern0.024 (italic)
 ...........\rule(7.33946+3.14552)x0.0
 ...........\penalty 10000
 ...........\glue(\parfillskip) 0.0 plus 1.0fil
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 ........\glue 0.0 plus 1.0fill
-........\vbox(9.78595+4.19403)x525.52245, direction TLT
-.........\hbox(9.78595+4.19403)x525.52245, glue set 262.76123fil, direction TLT
+........\vbox(0.0+0.0)x525.23764, direction TLT
+.........\hbox(0.0+0.0)x525.23764, glue set 262.61884fil, direction TLT
 ..........\glue(\leftskip) 0.0 plus 1.0fil
 ..........\localpar
 ...........\localinterlinepenalty=0
@@ -1122,15 +1116,14 @@ Completed box being shipped out [1]
 ...........\localleftbox=null
 ...........\localrightbox=null
 ..........\hbox(0.0+0.0)x0.0, direction TLT
-..........\rule(9.78595+4.19403)x0.0
 ..........\penalty 10000
 ..........\glue(\parfillskip) 0.0
 ..........\glue(\rightskip) 0.0 plus 1.0fil
 ........\glue 0.0 plus 1.0fill
-........\hbox(7.33946+3.14552)x0.0, glue set - 525.52246fil, direction TLT
+........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
-.........\vbox(7.33946+3.14552)x525.52245, direction TLT
-..........\hbox(7.33946+3.14552)x525.52245, glue set 393.83441fil, direction TLT
+.........\vbox(7.33946+3.14552)x525.23764, direction TLT
+..........\hbox(7.33946+3.14552)x525.23764, glue set 393.54962fil, direction TLT
 ...........\glue(\leftskip) 0.0 plus 1.0fil
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -1202,9 +1195,9 @@ Completed box being shipped out [1]
 ...\pdflinkstate 0
 .\kern0.0
 .\kern0.0
-.\kern-746.24187
+.\kern-745.19336
 .\hbox(0.0+0.0)x0.0, direction TLT
-.\kern746.24187
+.\kern745.19336
 .\pdfliteral page <lua data reference ...>
 <./Definitions/logo-mdpi.pdf> 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -1217,8 +1210,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~35 structure objects
-(tagpdf)             with ~22 'MC' leaf nodes.
+(tagpdf)             Writing out ~34 structure objects
+(tagpdf)             with ~20 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree

@@ -1,0 +1,18 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\geometry{showframe,verbose=true}
+\usepackage{tikz}
+\START
+\begin{document}
+\showoutput
+\AddToHook{shipout/background}
+ {\put(10cm,-\paperheight){\tikz{\draw[red,<->](0,0)--++(0,1.08cm)node[midway]{1.08cm};}}
+  \put(10cm,0cm){\tikz[overlay]{\draw[red,<->](0,0)--++(0,-1.27cm)node[midway]{1.27cm};}}
+  \put(0cm,-0.8\paperheight)
+     {\tikz[overlay]{\draw[red,<->](0,0)--++(1.27cm,0cm)node[midway]{1.27cm};}}
+  \put(0cm,-0.7\paperheight)
+     {\tikz[overlay]{\draw[red,<->](0,0)--++(5.87cm,0cm)node[midway]{5.27cm};}}   
+ }
+bbb\newpage blub
+\end{document}
