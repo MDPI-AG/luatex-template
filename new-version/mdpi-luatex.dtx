@@ -72,6 +72,23 @@
 % that only one author is there and the text is set \emph{without} hanging indent.
 % \end{function}
 %
+%\begin{function}{\authormark}
+% \begin{syntax}
+% \cs{authormark}\Arg{comma list of markers}
+% \end{syntax}
+% This command should be used inside the \cs{Author} command to set
+% the note markers. The marker should be numbers or the symbols used in the notes.
+% \end{function}
+% 
+%\begin{function}{\affiliation}
+% \begin{syntax}
+% \cs{affiliation}\Arg{number}\Arg{text}
+% \end{syntax}
+% This command should be used inside the \cs{address} command to set
+% the affiliations of the authors. The affiliation will be tagged as FENote and
+% reference the related markers in the author list.
+% \end{function}
+
 % \subsection{Orcid}
 %
 % \begin{function}{\neworcid,\useorcid}
@@ -618,6 +635,15 @@
  }
 \ExplSyntaxOff
 %    \end{macrocode}
+% \subsection{Tags for tagging}
+% These tags are used for the title 
+%    \begin{macrocode}
+\tagpdfsetup{role/new-tag=authornotes/semantic-para}
+\tagpdfsetup{role/new-tag=title-notes/semantic-para}
+\tagpdfsetup{role/new-tag=affiliation/text-block}
+\tagpdfsetup{role/new-tag=title-logos/text-block}
+\tagpdfsetup{role/new-tag=title-subtext/text-block}
+%    \end{macrocode}
 %
 % \subsection{Temporary patches for taggings}
 % The algorithmic package redefines list labels and this is lost if \cs{DocumentMetadata}
@@ -632,7 +658,6 @@
 %  The affiliation and author notes should be tagged as footnotes (FENote).
 %  This will in future get better support in \LaTeX{} directly, but for now we
 %  provide the needed code here.
-%  TODO: move user definitions. 
 %    \begin{macrocode}
 \ExplSyntaxOn
 \cs_new_eq:NN \__mdpi_fnote_item_hook: \prg_do_nothing:
@@ -653,35 +678,9 @@
      {\fnote_gput_refs:ee {##1}{ \l__mdpi_fnote_currentstruct_tl } }
    \socket_use:n{fntext/mark/link}
  }
-\tagpdfsetup{role/new-tag=authornotes/semantic-para}
-\tagpdfsetup{role/new-tag=title-notes/semantic-para}
-\tagpdfsetup{role/new-tag=affiliation/text-block}
-\tagpdfsetup{role/new-tag=title-logos/text-block}
-\tagpdfsetup{role/new-tag=title-subtext/text-block}
-
-\NewDocumentEnvironment{authornotes}{O{}}
- {
-  \AssignStructureRole{block/itemize}{authornotes}
-  \AssignStructureRole{block/list/item}{footnote}
-  \AssignStructureRole{block/list/label}{footnotelabel}
-  \AssignStructureRole{block/list/body}{Div}  
-  %activate the storing of structure numbers
-  \cs_set_eq:NN \__mdpi_fnote_item_hook: \__mdpi_fnote_store_struct: 
-  \begin{itemize}%
-    [%standalone=true, %with 2027-06-01     
-     %label-format=,
-     #1,
-     label-ref=\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1},
-     tag-attr-class=,
-     nosep,
-     left-margin=\mdpi@len@tmpa,
-     label-width=\mdpi@len@tmpa,
-     label-sep=0pt,
-     align=left
-     ]   
- }
- {\end{itemize}} 
-
+%    \end{macrocode}
+% This code is used to insert commas between to markers in the author list:
+%    \begin{macrocode}
 \providecommand*{\mdpi@multiplefootnotemarker}{3sp}
 \newcommand\mdpi@fn@prepare
   {
@@ -697,48 +696,6 @@
       \spacefactor\@x@sf\relax
     \fi
   }  
-\NewDocumentCommand\authormark{sm}
- {
-  \leavevmode
-  \clist_map_inline:nn {#2}
-   { 
-    \mdpi@fn@check 
-    \protected@xdef\@thefnmark{authornote/##1}
-    \int_gincr:N\g_fnote_id_int
-    \IfBooleanTF{#1}
-     {%without link
-      \UseTaggingSocket{fnmark}{}
-       {
-        \tl_if_in:nnTF 
-         {##1}{*}
-         {##1}{\textsuperscript{##1}}
-       }
-     }  
-     {%with link
-      \UseTaggingSocket{fnmark}{}
-        {
-          \UseSocket{fnmark/link}
-           {
-             \tl_if_in:nnTF 
-              {##1}{*}
-              {##1}{\textsuperscript{##1}}          
-           }
-        }
-     }
-    \mdpi@fn@prepare 
-   }
- } 
-\newcommand\mdpi@affiliation@format[1]{\makebox[\mdpi@len@dist][l]{\textsuperscript{#1}}} 
-\NewDocumentCommand\affiliation{mm} %#1 number, #2 text
- {
-   \tl_if_empty:nTF{#1}
-    {
-      #2\par
-    }
-    {
-      \mdpi@fnote[\mdpi@affiliation@format]{authornote}{#1}{\ignorespaces#2}\par
-    }  
- } 
 \ExplSyntaxOff 
 %    \end{macrocode}
 % \subsection{Fontsizes}
@@ -2317,15 +2274,96 @@
 % We avoid the use of the \cs{tabto} command as this uses math for measuring and
 % so gives unwanted structures if tagging is enabled. Instead the label is set inside
 % a box.
-% TODO: semantic tagging should be improved.
-% TODO: the fake space is perhaps not needed, see pdfa discussion.
 %    \begin{macrocode}
 \newcommand\mdpi@notelabel
  {
    \stepcounter{mdpi@notecnt}\mdpi@notesymbol
  }
 %    \end{macrocode}
-%
+% \begin{environment}{mdpi@authornotes}
+% This environment is used for the authornotes, it tags a list as footnotes.
+%    \begin{macrocode}
+\NewDocumentEnvironment{mdpi@authornotes}{O{}}
+ {
+  \AssignStructureRole{block/itemize}{authornotes}
+  \AssignStructureRole{block/list/item}{footnote}
+  \AssignStructureRole{block/list/label}{footnotelabel}
+  \AssignStructureRole{block/list/body}{Div}  
+  %activate the storing of structure numbers
+  \cs_set_eq:NN \__mdpi_fnote_item_hook: \__mdpi_fnote_store_struct: 
+  \begin{itemize}%
+    [%standalone=true, %with 2027-06-01     
+     %label-format=,
+     #1,
+     label-ref=\UseName{__mdpi_fnote_setup_note:nn}{authornote}{##1},
+     tag-attr-class=,
+     nosep,
+     left-margin=\mdpi@len@tmpa,
+     label-width=\mdpi@len@tmpa,
+     label-sep=0pt,
+     align=left
+     ]   
+ }
+ {\end{itemize}} 
+
+%    \end{macrocode}
+% \end{environment}
+
+% \begin{macro}{\authormark}
+% This is a user command that should be used inside the \cs{Author} command.
+% For now it doesn't produce links, but this should be activated by uncommenting
+% the switch code. 
+%    \begin{macrocode}
+\NewDocumentCommand\authormark{sm}
+ {
+  \leavevmode
+  \clist_map_inline:nn {#2}
+   { 
+    \mdpi@fn@check 
+    \protected@xdef\@thefnmark{authornote/##1}
+    \int_gincr:N\g_fnote_id_int
+%    \IfBooleanTF{#1}
+%     {%without link
+      \UseTaggingSocket{fnmark}{}
+       {
+        \tl_if_in:nnTF 
+         {##1}{*}
+         {##1}{\textsuperscript{##1}}
+       }
+%     }  
+%     {%with link
+%      \UseTaggingSocket{fnmark}{}
+%        {
+%          \UseSocket{fnmark/link}
+%           {
+%             \tl_if_in:nnTF 
+%              {##1}{*}
+%              {##1}{\textsuperscript{##1}}          
+%           }
+%        }
+%     }
+    \mdpi@fn@prepare 
+   }
+ } 
+%    \end{macrocode}
+% \end{macro}
+% 
+% \begin{macro}{\affiliation}
+%    \begin{macrocode}
+\newcommand\mdpi@affiliation@format[1]{\makebox[\mdpi@len@dist][l]{\textsuperscript{#1}}} 
+\NewDocumentCommand\affiliation{mm} %#1 number, #2 text
+ {
+   \tl_if_empty:nTF{#1}
+    {
+      #2\par
+    }
+    {
+      \mdpi@fnote[\mdpi@affiliation@format]{authornote}{#1}{\ignorespaces#2}\par
+    }  
+ } 
+%    \end{macrocode}
+% \end{macro}
+% 
 % \begin{macro}{\maketitlen}
 %  This builds the block of notes:
 %    \begin{macrocode}
@@ -2358,7 +2396,7 @@
        {\mdpi@len@tmpa=\dimexpr\mdpi@len@dist\relax}
      \bool_if:NT\l__mdpi_frontmatter_notes_bool
        {
-        \begin{authornotes}
+        \begin{mdpi@authornotes}
         \tl_if_eq:NnTF\@authornum{author}
           {
             \stepcounter{mdpi@notecnt}
@@ -2388,7 +2426,7 @@
             \tl_use:c{@##1note}
            }
          }
-        \end{authornotes}
+        \end{mdpi@authornotes}
         \par
       }
      \tl_if_empty:NF\@LSID{\par\vskip12pt \@LSID \par}
