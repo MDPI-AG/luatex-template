@@ -1841,17 +1841,23 @@
 %    \begin{macrocode}
 \newcommand\mdpi@maketitle@Book
  {
-   \begin{flushleft}
+   \begin{flushleft}[
+     tagging-suppress-paras=true,
+     tagging-recipe=standalone,
+     tag-name=\UseStructureName{title/block},
+     tag-attr-class=aria-banner]
     \LARGE\boldmath\bfseries
     \hyphenpenalty=10000
     \tolerance=1000
     \vspace{14pt}
-    \@Title
+    \UseTaggingSocket{title}{}{\@Title}%
     \par
     \vspace{12pt}
     \normalsize
-    \@Author
+    \AssignStructureRole{para/textblock}{title-author}
+    \@Author    
     \par
+    \AssignStructureRole{para/textblock}{text-block}
     % can that ever happen with Book???
     \tl_if_empty:NF \@leftcolumnsplit
      {
@@ -1885,6 +1891,7 @@
      \par
      \vspace{12pt}
      \normalsize
+     \AssignStructureRole{para/textblock}{title-author}%
      \noindent\boldmath\bfseries{\@Author}
    \end{flushleft}
    \isPreprints
@@ -1920,8 +1927,7 @@
    \begin{flushleft}[
      tagging-suppress-paras=true,
      tagging-recipe=noop,
-     tag-name=\UseStructureName{title/block},
-     tag-attr-class=aria-banner]
+     ]
      \vspace*{-1.75cm}
      {%0
       \isPreprints

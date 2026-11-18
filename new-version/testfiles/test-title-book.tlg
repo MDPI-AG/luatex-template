@@ -319,6 +319,56 @@ LaTeX Font Info:    Font shape `TU/tg-pagella-math-ssf/b/n' will be
 (Font)              scaled to size 4.64996pt on input line ....
 \g__math_luamml_iow=\write...
 Package tagpdf Info: luamml has been enabled and will create a MathML file.
+============================================================
+TEST 1: Show PDF Tags
+============================================================
+-------- test-title-book.xml (start) ---------
+<PDF version="2.0">
+ <StructTreeRoot>
+  <Document xmlns="http://iso.org/pdf2/ssn"
+     id="ID.002"
+    >
+   <title-block xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.011"
+      xmlns:ARIA-1.1="http://iso.org/pdf/ssn/ARIA-1.1"
+      ARIA-1.1:role="banner"
+      rolemaps-to="Div"
+     >
+    <title-text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.012"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="Title"
+      >
+     <?MarkedContent page="1" ?>some title
+    </title-text>
+    <title-author xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.013"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>AUTHOR
+    </title-author>
+   </title-block>
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.014"
+      rolemaps-to="Part"
+     >
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.015"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>blub
+    </text-block>
+   </semantic-para>
+  </Document>
+ </StructTreeRoot>
+</PDF>
+-------- test-title-book.xml (end) -----------
+============================================================
 Completed box being shipped out [1]
 \vbox(600.6377+3.14552)x353.09862, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
