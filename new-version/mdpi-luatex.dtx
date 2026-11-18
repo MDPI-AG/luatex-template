@@ -2575,6 +2575,8 @@
  {
    \DeclareInstance    {headformat}{mdpi/std}{display}
      {heading-indent = 0pt,separator-b=\ ,}
+  \DeclareTemplateInterfaceEquivalents{heading}{display}
+     {indent-first   : alias = para-indent}  
  }      
 \DeclareInstanceCopy{headformat}{section}      {mdpi/std}
 \DeclareInstanceCopy{headformat}{subsection}   {mdpi/std}
@@ -2589,7 +2591,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
-    para-indent=true,
+    indent-first=true,
   }
 %    \end{macrocode}
 % The format of \cs{section} differs in monographs:
@@ -2600,7 +2602,7 @@
     {
       heading-decls=\raggedright\LARGE\bfseries,
       after-vspace =8pt,
-      para-indent=true,
+      indent-first=true,
     }
  }
  {}
@@ -2613,7 +2615,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
-    para-indent=true,
+    indent-first=true,
     headformat-instance = subsection
   }
 %    \end{macrocode}
@@ -2625,7 +2627,7 @@
     before-vspace=12pt,
     after-vspace =3pt,
     number-format=\theheading.,
-    para-indent=true,
+    indent-first=true,
     headformat-instance = subsection
   }
 %    \end{macrocode}
@@ -2640,8 +2642,8 @@
     , after-vspace  = 3pt
     , heading-decls = \raggedright\normalfont\normalsize
     , mark-cmd      = \paragraphmark {#1}
-    , number-format=\theheading.
-    , para-indent=true,
+    , number-format =\theheading.
+    , indent-first  =true,
     , headformat-instance = paragraph
   }
 %    \end{macrocode}
@@ -2649,7 +2651,7 @@
 %    \begin{macrocode}
 \EditInstance{heading}{subsubsection}
  {
-   para-indent=true
+   indent-first=true
  }
 %    \end{macrocode}
 % \subsection{Backmatter}
