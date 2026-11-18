@@ -1902,15 +1902,17 @@
 %   Default option for the left column.
 %   The left column should be aligned with the bottom of the text.
 %   For this we calculate the needed offset in \cs{mdpi@len@leftcol@height} and move it down:
-%    \begin{macrocode}
-   \tl_if_empty:NT \@leftcolumnsplit
-     {\marginnote[\contentleftcolumn]{}[\mdpi@len@leftcol@height]}
-%    \end{macrocode}
-%
+%   In preprints the column is empty and we should avoid to tag it.
 %    \begin{macrocode}
    \isPreprints
-     {\vspace{0.92cm}}
      {
+       \tl_if_empty:NT \@leftcolumnsplit
+        {\SuspendTagging{}\marginnote[\contentleftcolumn]{}[\mdpi@len@leftcol@height]\ResumeTagging{}}
+       \vspace{0.92cm}
+     }
+     {
+       \tl_if_empty:NT \@leftcolumnsplit
+        {\marginnote[\contentleftcolumn]{}[\mdpi@len@leftcol@height]}
        \begin{adjustwidth}{-\mdpi@len@marginpar}{}
      }
    \UseTaggingSocket{struct/begin}{tag=title-block,firstkid,attribute-class=aria-banner}  
