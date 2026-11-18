@@ -22,8 +22,9 @@
           ,***}}
           
 \address{%
-\textsuperscript{1} \quad Affiliation 1; e-mail@e-mail.com\\
-\textsuperscript{2} \quad Affiliation 2; e-mail@e-mail.com}
+\affiliation{1}{Affiliation 1; e-mail@e-mail.com}
+\affiliation{2}{Affiliation 2; e-mail@e-mail.com}
+}
 
 \corres{Correspondence: e-mail@e-mail.com; Tel.: (optional; include country code; if there are multiple corresponding authors, add author initials) +xx-xxxx-xxx-xxxx (F.L.)}
 \conference{Conference}
