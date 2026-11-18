@@ -731,7 +731,13 @@
 \newcommand\mdpi@affiliation@format[1]{\makebox[\mdpi@len@dist][l]{\textsuperscript{#1}}} 
 \NewDocumentCommand\affiliation{mm} %#1 number, #2 text
  {
-   \mdpi@fnote[\mdpi@affiliation@format]{authornote}{#1}{\ignorespaces#2}\par
+   \tl_if_empty:nTF{#1}
+    {
+      #2\par
+    }
+    {
+      \mdpi@fnote[\mdpi@affiliation@format]{authornote}{#1}{\ignorespaces#2}\par
+    }  
  } 
 \ExplSyntaxOff 
 %    \end{macrocode}
