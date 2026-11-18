@@ -199,10 +199,6 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line ....
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
-(../atbegshi-ltx.sty
-Package: atbegshi-ltx ....-..-.. v... Emulation of the original atbegshi
-package with kernel methods
-)
 *geometry* verbose mode - [ preamble ] result:
 * driver: luatex
 * paper: <default>
@@ -610,18 +606,25 @@ Completed box being shipped out [1]
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\rule(0.2+0.0)x394.35481
 ...\glue(\lineskip) 0.0
-...\hbox(706.18271+0.0)x525.23764, glue set 116.25647fil, direction TLT
+...\hbox(706.18271+0.0)x525.23764, glue set 130.88283fil, direction TLT
+....\glue -116.65646
+....\glue -14.22636
 ....\hbox(706.18271+0.0)x0.0, glue set - 0.2fil, direction TLT
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 .....\rule(706.18271+0.0)x0.2
-....\glue 394.35481
-....\rule(706.18271+0.0)x0.2
+....\glue 116.65646
+....\hbox(706.18271+0.0)x0.0, glue set - 0.2fil, direction TLT
+.....\rule(706.18271+0.0)x0.2
+.....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\glue 14.22636
 ....\hbox(706.18271+0.0)x0.0, glue set - 0.2fil, direction TLT
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 .....\rule(706.18271+0.0)x0.2
-....\glue 0.0 plus 1.0fil
-....\rule(706.18271+0.0)x0.2
+....\glue 394.35481
+....\hbox(706.18271+0.0)x0.0, glue set - 0.2fil, direction TLT
+.....\rule(706.18271+0.0)x0.2
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue(\baselineskip) 0.0
 ...\vbox(0.0+0.0)x394.35481, glue set - 0.2fil, direction TLT
 ....\glue 0.0 plus 1.0fil minus 1.0fil
@@ -1858,18 +1861,25 @@ Completed box being shipped out [2]
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\rule(0.2+0.0)x394.35481
 ...\glue(\lineskip) 0.0
-...\hbox(706.18271+0.0)x525.23764, glue set 116.25647fil, direction TLT
+...\hbox(706.18271+0.0)x525.23764, glue set 130.88283fil, direction TLT
+....\glue -116.65646
+....\glue -14.22636
 ....\hbox(706.18271+0.0)x0.0, glue set - 0.2fil, direction TLT
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 .....\rule(706.18271+0.0)x0.2
-....\glue 394.35481
-....\rule(706.18271+0.0)x0.2
+....\glue 116.65646
+....\hbox(706.18271+0.0)x0.0, glue set - 0.2fil, direction TLT
+.....\rule(706.18271+0.0)x0.2
+.....\glue 0.0 plus 1.0fil minus 1.0fil
 ....\glue 14.22636
 ....\hbox(706.18271+0.0)x0.0, glue set - 0.2fil, direction TLT
 .....\glue 0.0 plus 1.0fil minus 1.0fil
 .....\rule(706.18271+0.0)x0.2
-....\glue 0.0 plus 1.0fil
-....\rule(706.18271+0.0)x0.2
+....\glue 394.35481
+....\hbox(706.18271+0.0)x0.0, glue set - 0.2fil, direction TLT
+.....\rule(706.18271+0.0)x0.2
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\glue 0.0 plus 1.0fil minus 1.0fil
 ...\glue(\baselineskip) 0.0
 ...\vbox(0.0+0.0)x394.35481, glue set - 0.2fil, direction TLT
 ....\glue 0.0 plus 1.0fil minus 1.0fil
