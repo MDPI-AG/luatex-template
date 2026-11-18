@@ -316,8 +316,85 @@ LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
 (Font)              scaled to size 6.50995pt on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella-math-ssf/b/n' will be
 (Font)              scaled to size 4.64996pt on input line ....
+LaTeX Font Info:    Calculating math sizes for size <18> on input line ....
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <18> not available
+(Font)              size <17.28> substituted on input line ....
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <12.59995> not available
+(Font)              size <12> substituted on input line ....
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <18> not available
+(Font)              size <17.28> substituted on input line ....
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <12.59995> not available
+(Font)              size <12> substituted on input line ....
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <18> not available
+(Font)              size <17.28> substituted on input line ....
+LaTeX Font Warning: Font shape `U/wasy/m/n' in size <12.59995> not available
+(Font)              size <12> substituted on input line ....
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <18> not available
+(Font)              size <17.28> substituted on input line ....
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <12.59995> not available
+(Font)              size <12> substituted on input line ....
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <18> not available
+(Font)              size <17.28> substituted on input line ....
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <12.59995> not available
+(Font)              size <12> substituted on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
+(Font)              scaled to size 16.73987pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
+(Font)              scaled to size 11.71785pt on input line ....
+LaTeX Font Info:    Font shape `TU/tg-pagella-math-ssf/b/n' will be
+(Font)              scaled to size 8.36993pt on input line ....
 \g__math_luamml_iow=\write...
 Package tagpdf Info: luamml has been enabled and will create a MathML file.
+============================================================
+TEST 1: Show PDF Tags
+============================================================
+-------- test-title-supfile.xml (start) ---------
+<PDF version="2.0">
+ <StructTreeRoot>
+  <Document xmlns="http://iso.org/pdf2/ssn"
+     id="ID.002"
+    >
+   <title-block xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.011"
+      xmlns:ARIA-1.1="http://iso.org/pdf/ssn/ARIA-1.1"
+      ARIA-1.1:role="banner"
+      rolemaps-to="Div"
+     >
+    <title-text xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.012"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="Title"
+      >
+     <?MarkedContent page="1" ?>Supplementary Materials: some title
+    </title-text>
+    <title-author xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.013"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Start"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>AUTHOR
+    </title-author>
+   </title-block>
+   <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+      id="ID.014"
+      rolemaps-to="Part"
+     >
+    <text-block xmlns="https://www.latex-project.org/ns/dflt"
+       id="ID.015"
+       xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+       Layout:TextAlign="Justify"
+       rolemaps-to="P"
+      >
+     <?MarkedContent page="1" ?>xx46003109blub
+    </text-block>
+   </semantic-para>
+  </Document>
+ </StructTreeRoot>
+</PDF>
+-------- test-title-supfile.xml (end) -----------
+============================================================
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 19.45453pt, for example:
 (fancyhdr)                \setlength{\headheight}{19.45453pt}.
@@ -777,6 +854,8 @@ Completed box being shipped out [1]
 .\pdfliteral page <lua data reference ...>
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 <<latex-list-css.html>><<latex-align-css.html>> (test-title-supfile.aux)
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.72pt have occurred.
 MathML statistic
 ================
 ==> 0 MathML fragments read

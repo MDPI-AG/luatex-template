@@ -1882,12 +1882,16 @@
      {
        \begin{adjustwidth}{-\mdpi@len@marginpar}{}
      }
-   \begin{flushleft}
+   \begin{flushleft}[
+     tagging-suppress-paras=true,
+     tagging-recipe=standalone,
+     tag-name=\UseStructureName{title/block},
+     tag-attr-class=aria-banner]
      \LARGE
      \raggedright
      \hyphenpenalty=10000
      \tolerance=1000
-     \noindent\boldmath\textbf{Supplementary~Materials:~\@Title}%
+     \UseTaggingSocket{title}{}{\noindent\boldmath\textbf{Supplementary~Materials:~\@Title}}%
      \par
      \vspace{12pt}
      \normalsize
