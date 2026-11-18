@@ -2322,26 +2322,26 @@
     \mdpi@fn@check 
     \protected@xdef\@thefnmark{authornote/##1}
     \int_gincr:N\g_fnote_id_int
-%    \IfBooleanTF{#1}
-%     {%without link
+    \IfBooleanTF{#1}
+     {%without link
       \UseTaggingSocket{fnmark}{}
        {
         \tl_if_in:nnTF 
          {##1}{*}
          {##1}{\textsuperscript{##1}}
        }
-%     }  
-%     {%with link
-%      \UseTaggingSocket{fnmark}{}
-%        {
-%          \UseSocket{fnmark/link}
-%           {
-%             \tl_if_in:nnTF 
-%              {##1}{*}
-%              {##1}{\textsuperscript{##1}}          
-%           }
-%        }
-%     }
+     }  
+     {%with link
+      \UseTaggingSocket{fnmark}{}
+        {
+          %\UseSocket{fnmark/link}
+           %{
+             \tl_if_in:nnTF 
+              {##1}{*}
+              {##1}{\textsuperscript{##1}}          
+           %}
+        }
+     }
     \mdpi@fn@prepare 
    }
  } 
