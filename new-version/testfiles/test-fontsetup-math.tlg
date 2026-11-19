@@ -51,11 +51,6 @@ LaTeX Font Warning: Font shape `U/wasy/b/n' in size <12.59995> not available
 (Font)              size <12> substituted on input line ....
 LaTeX Font Warning: Font shape `U/wasy/b/n' in size <9> not available
 (Font)              Font shape `U/wasy/m/n' tried instead on input line ....
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 21.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{21.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
 LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
 (Font)              scaled to size 7.43994pt on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
@@ -154,6 +149,8 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0
 ...........\glue 8.0
 ...........\glue 0.0
+........\glue 8.0
+........\rule(0.0+0.0)x525.23764
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdflinkstate 0

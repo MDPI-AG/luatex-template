@@ -67,14 +67,14 @@ Completed box being shipped out [1]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 4.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(0.0+0.0)x367.04037, direction TLT
-.....\hbox(0.0+0.0)x367.04037, direction TLT
+....\hbox(8.0+0.0)x367.04037, direction TLT
+.....\hbox(8.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x367.04037, direction TLT
-.......\vbox(0.0+0.0)x367.04037, direction TLT
+......\hbox(8.0+0.0)x367.04037, direction TLT
+.......\vbox(8.0+0.0)x367.04037, direction TLT
 ........\hbox(0.0+0.0)x367.04037, direction TLT
 .........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\vbox(0.0+0.0)x367.04037, direction TLT
@@ -117,6 +117,9 @@ Completed box being shipped out [1]
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
+........\glue 8.0
+........\pdfliteral direct <lua data reference ...>
+........\rule(0.0+0.0)x367.04037
 ........\glue 0.0
 ....\pdflinkstate 0
 ...\glue 24.0
@@ -1030,14 +1033,14 @@ Completed box being shipped out [2]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 4.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(0.0+0.0)x367.04037, direction TLT
-.....\hbox(0.0+0.0)x367.04037, direction TLT
+....\hbox(8.0+0.0)x367.04037, direction TLT
+.....\hbox(8.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x367.04037, direction TLT
-.......\vbox(0.0+0.0)x367.04037, direction TLT
+......\hbox(8.0+0.0)x367.04037, direction TLT
+.......\vbox(8.0+0.0)x367.04037, direction TLT
 ........\hbox(0.0+0.0)x367.04037, direction TLT
 .........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\vbox(0.0+0.0)x367.04037, direction TLT
@@ -1080,6 +1083,9 @@ Completed box being shipped out [2]
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
+........\glue 8.0
+........\pdfliteral direct <lua data reference ...>
+........\rule(0.0+0.0)x367.04037
 ........\glue 0.0
 ....\pdflinkstate 0
 ...\glue 24.0
@@ -1106,7 +1112,6 @@ Completed box being shipped out [2]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
 .....\write1{\new@label@record{heading*.1}{{pagenum}{\__property_code_pagenum: }}}
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/18 1
 .....\TU/tg-pagella/b/n/18 .
 .....\glue(\spaceskip) 4.5 plus 2.25 minus 1.5
@@ -2518,14 +2523,14 @@ Completed box being shipped out [3]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 4.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(0.0+0.0)x367.04037, direction TLT
-.....\hbox(0.0+0.0)x367.04037, direction TLT
+....\hbox(8.0+0.0)x367.04037, direction TLT
+.....\hbox(8.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x367.04037, direction TLT
-.......\vbox(0.0+0.0)x367.04037, direction TLT
+......\hbox(8.0+0.0)x367.04037, direction TLT
+.......\vbox(8.0+0.0)x367.04037, direction TLT
 ........\hbox(0.0+0.0)x367.04037, direction TLT
 .........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\vbox(0.0+0.0)x367.04037, direction TLT
@@ -2568,6 +2573,9 @@ Completed box being shipped out [3]
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
+........\glue 8.0
+........\pdfliteral direct <lua data reference ...>
+........\rule(0.0+0.0)x367.04037
 ........\glue 0.0
 ....\pdflinkstate 0
 ...\glue 24.0
@@ -2595,7 +2603,6 @@ Completed box being shipped out [3]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
 .....\write1{\new@label@record{heading*.6}{{pagenum}{\__property_code_pagenum: }}}
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/12 A
 .....\TU/tg-pagella/b/n/12 p
 .....\discretionary (penalty 50)
@@ -4003,14 +4010,14 @@ Completed box being shipped out [4]
 .\vbox(600.6377+3.14552)x353.09862, direction TLT
 ..\glue -57.05495
 ..\vbox(657.69264+3.14552)x367.04037, shifted -13.94176, direction TLT
-...\vbox(12.0+0.0)x367.04037, glue set 12.0fil, direction TLT
+...\vbox(12.0+0.0)x367.04037, glue set 4.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(0.0+0.0)x367.04037, direction TLT
-.....\hbox(0.0+0.0)x367.04037, direction TLT
+....\hbox(8.0+0.0)x367.04037, direction TLT
+.....\hbox(8.0+0.0)x367.04037, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x367.04037, direction TLT
-.......\vbox(0.0+0.0)x367.04037, direction TLT
+......\hbox(8.0+0.0)x367.04037, direction TLT
+.......\vbox(8.0+0.0)x367.04037, direction TLT
 ........\hbox(0.0+0.0)x367.04037, direction TLT
 .........\hbox(0.0+0.0)x0.0, glue set - 367.04037fil, direction TLT
 ..........\vbox(0.0+0.0)x367.04037, direction TLT
@@ -4053,6 +4060,9 @@ Completed box being shipped out [4]
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
+........\glue 8.0
+........\pdfliteral direct <lua data reference ...>
+........\rule(0.0+0.0)x367.04037
 ........\glue 0.0
 ....\pdflinkstate 0
 ...\glue 24.0
@@ -4079,7 +4089,6 @@ Completed box being shipped out [4]
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
 .....\write1{\new@label@record{heading*.12}{{pagenum}{\__property_code_pagenum: }}}
-.....\pdfliteral direct <lua data reference ...>
 .....\TU/tg-pagella/b/n/12 A
 .....\TU/tg-pagella/b/n/12 p
 .....\discretionary (penalty 50)

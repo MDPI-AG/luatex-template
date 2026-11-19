@@ -178,11 +178,6 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-doifont-issue112.xml (end) -----------
 ============================================================
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 21.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{21.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -291,6 +286,8 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0
 ...........\glue 8.0
 ...........\glue 0.0
+........\glue 8.0
+........\rule(0.0+0.0)x525.23764
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfliteral page <lua data reference ...>
