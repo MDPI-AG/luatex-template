@@ -23,8 +23,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-11-12}
-\def\mdpiversion{v6.5e-fixed}
+\def\mdpidate{2026-11-09}
+\def\mdpiversion{v6.5e}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
 
