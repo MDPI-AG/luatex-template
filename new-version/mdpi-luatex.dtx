@@ -62,7 +62,8 @@
 % Graphics can be stored in folders \texttt{figures}, \texttt{Figures},
 % \texttt{figure} and \texttt{Figure}.
 %
-% \subsection{Frontmatter}
+% 
+% \subsection{Preamble declarations for the frontmatter}
 %
 % \begin{function}{\address}
 % \begin{syntax}
@@ -88,15 +89,13 @@
 % the affiliations of the authors. The affiliation will be tagged as FENote and
 % reference the related markers in the author list.
 % \end{function}
-
-% \subsection{Orcid}
-%
+% 
 % \begin{function}{\neworcid,\useorcid}
 % \begin{syntax}
 % \cs{neworcid}\Arg{key word}\Arg{ORCID}\\
 % \cs{useorcid}\Arg{key word}
 % \end{syntax}
-% With \cs{neworcid} a ORCID can be stored under the key word \meta{key word}
+% With \cs{neworcid} an ORCID can be stored under the key word \meta{key word}
 % and then use later with \cs{useorcid}. This will produce an icon with a link.
 % \end{function}
 %
@@ -129,13 +128,12 @@
 % \end{function}
 % 
 % \subsection{Appendix}
+% 
 % \begin{function}{\appendixtitles}
 % \begin{syntax}
 % \cs{appendixtitles}\Arg{string}
 % \end{syntax}
-% If used with an non-empty argument the code assumes that the following
-% section has a title and a period is added to the number. Obsolete with
-% a \LaTeX{} 2026-11-01.
+% This command is not needed anymore. 
 % \end{function}
 % \begin{function}{\appendixstart}
 % This command is not needed anymore. The numbering is reset automatically in the
@@ -176,13 +174,8 @@
 %    \begin{macrocode}
 \LoadClass[10pt,a4paper]{article}
 %    \end{macrocode}
-% \subsection{Packages}
-% Ensure that tagging commands are defined
-%    \begin{macrocode}
-\RequirePackage{tagpdf-base}
-%    \end{macrocode}
-%
-% \subsubsection{Tools}
+% \subsection{Packages and font setup}
+% \subsubsection{General tools}
 %    \begin{macrocode}
 \RequirePackage{calc}
 \RequirePackage{lastpage}
@@ -254,7 +247,7 @@
 \RequirePackage{microtype} % provides also \textls[]{}
 %    \end{macrocode}
 %
-% \subsection{Math font setup}
+% \subsubsection{Math font setup}
 % We load amssymb for e.g. \cs{square}
 %    \begin{macrocode}
 \RequirePackage{amsmath}
@@ -674,7 +667,7 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \subsection{Supfiles} 
+% \subsubsection{Supfiles} 
 % This tests if the arttype is a Supfile
 %    \begin{macrocode}
 \prg_new_conditional:Npnn \mdpi_is_Supfile: {TF,T,F}
@@ -688,7 +681,7 @@
 \cs_new_eq:NN \mdpi@isSupfileF  \mdpi_is_Supfile:F
 %    \end{macrocode}
 %
-% \subsection{Submit status}
+% \subsubsection{Submit status}
 %    \begin{macrocode}
 \prg_new_conditional:Npnn \mdpi_is_submit: {TF,T,F}
  {
@@ -782,8 +775,8 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \subsection{Tags for tagging}
-% These tags are used for the title 
+% \subsection{Tag names}
+% These tags are used for the tagging of the title 
 %    \begin{macrocode}
 \tagpdfsetup{role/new-tag=authornotes/semantic-para}
 \tagpdfsetup{role/new-tag=title-notes/semantic-para}
@@ -793,6 +786,7 @@
 %    \end{macrocode}
 %
 % \subsection{Temporary patches for taggings}
+% \subsubsection{algorithmic support}
 % The algorithmic package redefines list labels and this is lost if \cs{DocumentMetadata}
 % is used, so we need to edit locally the item instance, issue \#191
 %    \begin{macrocode}
@@ -802,6 +796,7 @@
  {\EditInstance{item}{basic}{label-align=right,label-format=\mdpi@ALC@labelformat{#1}}}
 %    \end{macrocode}
 %
+% \subsubsection{Tagging of author notes}
 %  The affiliation and author notes should be tagged as footnotes (FENote).
 %  This will in future get better support in \LaTeX{} directly, but for now we
 %  provide the needed code here.
@@ -1381,7 +1376,6 @@
 %
 
 % \subsection{Endnotes}
-% TODO: why does it declare a custom instance instead of changing the default?
 % TODO: perhaps better use a list template type for better tagging
 %    \begin{macrocode}
 \setenotez{backref=true}
@@ -1488,9 +1482,8 @@
 \setlength{\parindent}{0.75cm}
 
 %    \end{macrocode}
-% \subsection{Frontmatter}
-% TODO: improve tagging!
 %
+% \subsection{Frontmatter}
 % \subsubsection{Helper commands}
 % At first some length used in the frontmatter. \cs{dist} is no longer
 % used but kept for compatibility.
