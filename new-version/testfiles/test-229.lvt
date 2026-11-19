@@ -1,0 +1,17 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\addhighlights{%
+ \begin{itemize}[nosep]
+ \item First bullet.
+ \item Second bullet.
+ \end{itemize}
+ \begin{itemize}[nosep]
+ \item First bullet.
+ \item Second bullet.
+ \end{itemize}
+}
+\begin{document}
+\START\showoutput
+\end{document}
+
