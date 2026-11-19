@@ -115,7 +115,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35481, glue set 281.0893fil, direction TLT
+...\vbox(706.18271+0.0)x394.35481, glue set 293.08801fil, direction TLT
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.22636fil, direction TLT
@@ -782,7 +782,7 @@ Completed box being shipped out [1]
 ....\rule(0.4+0.0)x*
 ....\glue 12.0
 ....\glue 0.0
-....\glue 12.0 plus 2.0 minus 2.0
+....\glue 6.0 plus 1.0 minus 1.0
 ....\vbox(259.7275+0.0)x394.35481, direction TLT
 .....\rule(0.8+0.0)x*
 .....\kern2.0
@@ -2920,7 +2920,7 @@ Completed box being shipped out [1]
 .....\kern2.0
 .....\rule(0.4+0.0)x*
 .....\glue 0.0
-....\glue 12.0 plus 2.0 minus 2.0
+....\glue 6.0 plus 1.0 minus 1.0
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
