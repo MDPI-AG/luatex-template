@@ -185,7 +185,7 @@ TEST 1: Show PDF Tags
          id="ID.035"
          alt="example-image.pdf"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 166.39398, 383.51575, 486.3932, 623.51515 }"
+         Layout:BBox="{ 166.39398, 383.2393, 486.3932, 623.2387 }"
         >
        <?MarkedContent page="1" ?>
       </Figure>
@@ -228,7 +228,7 @@ TEST 1: Show PDF Tags
          id="ID.042"
          alt="example-image.pdf"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:BBox="{ 166.39398, 93.58708, 486.3932, 333.58648 }"
+         Layout:BBox="{ 166.39398, 103.18112, 486.3932, 343.18052 }"
         >
        <?MarkedContent page="1" ?>
       </Figure>
@@ -377,7 +377,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35481, glue set - 0.52312, direction TLT
+...\vbox(706.18271+0.0)x394.35481, glue set 3.62964fil, direction TLT
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.22636fil, direction TLT
@@ -1044,7 +1044,7 @@ Completed box being shipped out [1]
 ....\rule(0.4+0.0)x*
 ....\glue 12.0
 ....\glue 0.0
-....\glue 12.0 plus 2.0 minus 2.0
+....\glue 6.0 plus 1.0 minus 1.0
 ....\vbox(268.1084+0.0)x394.35481, direction TLT
 .....\vbox(268.1084+0.0)x394.35481, direction TLT
 ......\hbox(240.8994+0.0)x394.35481, glue set 70.6556fil, direction TLT
@@ -1133,8 +1133,8 @@ Completed box being shipped out [1]
 ........\TU/tg-pagella/m/n/5 1
 ......\glue 6.0
 ......\glue 0.0
-....\glue 12.0 plus 2.0 minus 2.0
-....\glue 12.0 plus 2.0 minus 2.0
+....\glue 6.0 plus 1.0 minus 1.0
+....\glue 6.0 plus 1.0 minus 1.0
 ....\glue(\lineskip) 1.0
 ....\vbox(268.1084+0.0)x394.35481, direction TLT
 .....\vbox(268.1084+0.0)x394.35481, direction TLT
@@ -1219,6 +1219,8 @@ Completed box being shipped out [1]
 ........\TU/tg-pagella/m/n/5 2
 ......\glue 6.0
 ......\glue 0.0
+....\glue 6.0 plus 1.0 minus 1.0
+....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil
 ...\pdflinkstate 1

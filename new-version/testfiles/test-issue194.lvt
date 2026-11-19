@@ -1,0 +1,37 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+%\intextsep=6.0pt plus 1.0pt minus 1.0pt
+\begin{document}
+\START\showoutput
+\begin{figure}[H]
+\caption{test\label{fig1}}
+\end{figure}   
+\unskip
+
+\begin{table}[H] 
+\caption{test.\label{tab12}}
+\begin{tabularx}{\textwidth}{CCC}
+\toprule
+\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}\\
+\midrule
+Entry 1		& Data			& Data\\
+Entry 2		& Data			& Data \textsuperscript{1}\\
+\bottomrule
+\end{tabularx}
+\end{table}
+\begin{figure}[H]
+\caption{test.\label{fig2}}
+\end{figure} 
+
+\begin{table}[H]
+\caption{test.\label{tab2}}		
+\begin{adjustwidth}{-\extralength}{0cm}
+\begin{tabularx}{\fulllength}{CCCC}
+			\toprule
+			\textbf{Title 1}	& \textbf{Title 2}	& \textbf{Title 3}     & \textbf{Title 4}\\
+			\bottomrule
+		\end{tabularx}
+\end{adjustwidth}
+\end{table}
+\end{document}

@@ -138,7 +138,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35481, glue set 460.21967fil, direction TLT
+...\vbox(706.18271+0.0)x394.35481, glue set 472.21838fil, direction TLT
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.22636fil, direction TLT
@@ -853,7 +853,7 @@ Completed box being shipped out [1]
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
 ......\TU/tg-pagella/m/n/5 1
-....\glue 12.0 plus 2.0 minus 2.0
+....\glue 6.0 plus 1.0 minus 1.0
 ....\glue(\lineskip) 1.0
 ....\vbox(46.15599+0.0)x394.35481, direction TLT
 .....\vbox(46.15599+0.0)x394.35481, direction TLT
@@ -1004,7 +1004,7 @@ Completed box being shipped out [1]
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
 ......\glue 0.0
-....\glue 12.0 plus 2.0 minus 2.0
+....\glue 6.0 plus 1.0 minus 1.0
 ....\glue 0.0 plus 1.0fil
 ....\glue 17.07182
 ....\kern-3.0
