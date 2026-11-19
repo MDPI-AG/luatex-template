@@ -2620,21 +2620,48 @@
 % These commands are used to format the various parts.
 % The first creates a captioned text with a display title, the second a run-in.
 % TODO: balance begin and endspace
+% In 2027-06-01 the display version can use new keys, until then we have to use 
+% a strut for the spacing, see issue \#229.
 %    \begin{macrocode}
-\NewDocumentCommand\mdpi@abstractnotes@display{mm}
-  {%
-   \tl_if_empty:NF#2
-    {
-      \begin{mdpi@notes}[title=#1,
-        punct=\\*[6pt],
-        after-hspace=0pt,
-        begin-vspace= 0pt,
-        end-vspace  = 12pt,
-        ]%
-       #2
-      \end{mdpi@notes}
-    }
-  }
+\IfFormatAtLeastTF{2027-06-01}
+ {
+   \NewDocumentCommand\mdpi@abstractnotes@display{mm}
+     {%
+      \tl_if_empty:NF#2
+       {
+         \begin{mdpi@notes}[
+           title=#1,
+           caption-placement=standalone,
+           standalone-vspace=6pt,
+           indent-first=false,
+           body-decls+=\OmitIndent,
+           after-hspace=0pt,
+           begin-vspace= 0pt,
+           end-vspace  = 12pt,
+           ]%
+          #2
+         \end{mdpi@notes}
+       }
+     } 
+ }
+ {
+   \NewDocumentCommand\mdpi@abstractnotes@display{mm}
+     {%
+      \tl_if_empty:NF#2
+       {
+         \begin{mdpi@notes}[
+           title=\rule[\dimeval{-0.7\baselineskip-6pt}]{0pt}{0pt}\strut#1,
+           caption-placement=standalone,
+           body-decls+=\OmitIndent,
+           after-hspace=0pt,
+           begin-vspace= 0pt,
+           end-vspace  = 12pt,
+           ]%
+          #2
+         \end{mdpi@notes}
+       }
+     }
+ }
 \NewDocumentCommand\mdpi@abstractnotes@runin{mm}
   {%
    \tl_if_empty:NF#2
