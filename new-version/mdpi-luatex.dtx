@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-11-19}
-\def\mdpiversion{v7.1p}
+\def\mdpiversion{v7.1q}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2657,16 +2657,18 @@
   \newcommand\mdpi@abstractkeywords
    {
 %    \end{macrocode}
-% For journal Applied Sciences:
-%    \begin{macrocode}
-    \mdpi@abstractnotes@display{Featured~Application}{\@featuredapplication}
-%    \end{macrocode}
 % 6. Highlights. Note that this requires a change in the template
 % as previously it redefines \cs{addhighlights} and not 
 % \cs{@addhighlights} to contain the actual text,
 % probably because they got problems with list, issue 172
+% For compatibility with the old syntax we test if \cs{@addhighlights} contains yes.
 %    \begin{macrocode}
+    \tl_if_eq:NnT\@addhighlights{yes}{\cs_set_eq:NN\@addhighlights\addhighlights}
     \mdpi@abstractnotes@display{Highlights}{\@addhighlights}
+%    \end{macrocode}
+% For journal Applied Sciences:
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Featured~Application}{\@featuredapplication}
 %    \end{macrocode}
 % A simple summary
 %    \begin{macrocode}
