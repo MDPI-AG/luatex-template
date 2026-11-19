@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-11-13}
-\def\mdpiversion{v7.1o}
+\def\mdpidate{2026-11-19}
+\def\mdpiversion{v7.1p}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -635,6 +635,153 @@
  }
 \ExplSyntaxOff
 %    \end{macrocode}
+%
+% \subsection{Journal conditionals}
+% The following defines a number of conditionals used in the follow-up code
+% to setup layouts and more depending on the journal, the journal type, 
+% the document type and the status.
+% 
+% The command \cs{@journal} is defined in \texttt{journalnames.tex} and
+% is by default \texttt{notspecified}.
+% 
+% The command \cs{@journaltype} used in the conditionals
+% is defined in \texttt{journalnames.tex} and is by default
+% (if no journal is specified and the journal name is \texttt{notspecified})
+% \texttt{ACS}. The tests are mostly used to set up the bib style.
+%
+% The command \cs{@arttype} is defined through the class options and
+% is by default \texttt{Article} (relevant for the tests are only 
+% \texttt{book}, \texttt{monograph} and \texttt{supfile}). 
+% The tests are mostly used for the layout.
+% 
+% The command \cs{@status} is set through the options \texttt{submit} and \texttt{accept}
+% and is by default \texttt{submit}. 
+%
+% \subsubsection{Preprints}
+% This tests if the journal is a preprint type.
+% \begin{macro}{\isPreprints}
+%    \begin{macrocode}
+\ExplSyntaxOn
+\newcommand{\isPreprints}
+ {
+  \str_case:onTF {\@journal}
+   {
+    {preprints}{}
+    {preprintschicago}{}
+    {preprintsapa}{}
+   }
+ }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Supfiles} 
+% This tests if the arttype is a Supfile
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \mdpi_is_Supfile: {TF,T,F}
+ {
+   \tl_if_eq:NnTF\@arttype{Supfile}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\cs_new_eq:NN \mdpi@isSupfileTF \mdpi_is_Supfile:TF
+\cs_new_eq:NN \mdpi@isSupfileT  \mdpi_is_Supfile:T
+\cs_new_eq:NN \mdpi@isSupfileF  \mdpi_is_Supfile:F
+%    \end{macrocode}
+%
+% \subsection{Submit status}
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \mdpi_is_submit: {TF,T,F}
+ {
+   \tl_if_eq:NnTF\@status{submit}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\cs_new_eq:NN \mdpi@isSubmitTF \mdpi_is_submit:TF
+\cs_new_eq:NN \mdpi@isSubmitT  \mdpi_is_submit:T
+\cs_new_eq:NN \mdpi@isSubmitF  \mdpi_is_submit:F
+%    \end{macrocode}
+% \subsubsection{Books}
+% This tests if this a Book or a Monograph
+% \begin{macro}{\isBookContribution}
+%    \begin{macrocode}
+\newcommand\isBookContribution
+ {
+   \str_case:onTF {\@arttype}
+    {
+      {Book}{}
+      {Monograph}{}
+    }
+ }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsubsection{Monographs}
+% \begin{macro}{\isMonograph}
+% This tests if this is a monograph
+%    \begin{macrocode}
+\newcommand\isMonograph
+ {
+  \str_if_eq:onTF {\@arttype} {Monograph}
+ }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsubsection{Chicago style journals}
+% A test for journals that use the \texttt{mdpi\_chicago} bibliography style.
+% \begin{macro}{\isChicagoStyle}
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \__mdpi_is_journal_chicagostyle: {TF,p}
+ {
+   \str_if_eq:onTF {\@journaltype} {Chicago}
+    {\prg_return_true:}
+    {\prg_return_false:}
+ }
+\newcommand\isChicagoStyle{\__mdpi_is_journal_chicagostyle:TF}
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsubsection{APA style journals}
+% Journals in \emph{APAstyle} use the package \pkg{mdpi_apacite} and the bibliography style
+% \texttt{mdpi\_apacite}.
+%
+% \begin{macro}{\isAPAStyle}
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF,p}
+ {
+  \str_if_eq:onTF {\@journaltype} {APA}
+   {\prg_return_true:}
+   {\prg_return_false:}
+ }
+\newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsubsection{APA or Chicago style journals}
+%
+% A combination of both tests: true if a journal is either APA or a Chicago style journal.
+% \begin{macro}{\isAPAorChicago,\isAPAandChicago}
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
+ {
+   \bool_lazy_or:nnTF
+    { \__mdpi_is_journal_apastyle_p: }
+    { \__mdpi_is_journal_chicagostyle_p: }
+    {
+      \prg_return_true:
+    }
+    {
+      \prg_return_false:
+    }
+ }
+\newcommand{\isAPAorChicago}{\__mdpi_is_journal_apa_or_chicago_style:TF}
+%    \end{macrocode}
+% For compatibility we provide an alias using \texttt{and}:
+%    \begin{macrocode}
+\let\isAPAandChicago\isAPAorChicago
+\ExplSyntaxOff
+%    \end{macrocode}
+% \end{macro}
+%
 % \subsection{Tags for tagging}
 % These tags are used for the title 
 %    \begin{macrocode}
@@ -774,6 +921,141 @@
 \AddToHook{fntext}{\linespread{0.9061}}
 %    \end{macrocode}
 %
+% \subsection{Page layout}
+% \subsubsection{Dimensions}
+% The following dimensions are used by the main journal layout.
+% Preprints and books use different value set below directly.
+% The width of the left column, also used for \cs{marginparwidth}.
+%    \begin{macrocode}
+\newlength\mdpi@len@marginparwidth
+\setlength\mdpi@len@marginparwidth{4.1cm}
+%    \end{macrocode}
+% \cs{marginsep}
+%    \begin{macrocode}
+\newlength\mdpi@len@marginparsep
+\setlength\mdpi@len@marginparsep{0.50cm}
+%    \end{macrocode}
+% The outer margins of journals:
+%    \begin{macrocode}
+\newlength\mdpi@len@hmargin
+\setlength\mdpi@len@hmargin{1.27cm}
+\newlength\mdpi@len@topmargin
+\setlength\mdpi@len@topmargin{1.27cm}
+\newlength\mdpi@len@bottommargin
+\setlength\mdpi@len@bottommargin{1.08cm}
+%    \end{macrocode}
+%
+% \subsubsection{Calculated lengths}
+% The width of the left column plus \cs{marginsep}, 
+% In supfiles there is no left column (issue \#236).
+% TODO: check if the value should also be zero in preprints.
+%    \begin{macrocode}
+\newlength\mdpi@len@marginpar
+\mdpi@isSupfileF
+ {
+  \setlength\mdpi@len@marginpar
+   {\dimeval{\mdpi@len@marginparwidth+\mdpi@len@marginparsep}} % = 4.61cm
+ }  
+%    \end{macrocode}
+% this length is the public version and used in the template:
+%    \begin{macrocode}
+\newlength\extralength
+\setlength\extralength{\mdpi@len@marginpar} % = 4.61cm
+%    \end{macrocode}
+% Width of the page minus the margins. 
+% TODO: that is too large for books. Is it used there?.
+%    \begin{macrocode}
+\newlength{\mdpi@len@bodywidth}
+\setlength{\mdpi@len@bodywidth}{\dimeval{\paperwidth - 2\mdpi@len@hmargin}}
+%    \end{macrocode}
+% TODO: check if a public length is needed.
+%    \begin{macrocode}
+\newlength{\fulllength}
+\setlength{\fulllength}{\mdpi@len@bodywidth}
+%    \end{macrocode}
+% \subsubsection{Layout}
+% Preprints have larger margins.
+%    \begin{macrocode}
+\isPreprints
+  {%
+    \RequirePackage
+      [%
+        left   =2.7cm,
+        right  =2.7cm,
+        top    =1.35cm,
+        bottom =1.08cm,
+        includehead,
+        includefoot,
+        footnotesep=0.6cm %moved from \skip\footins change for journal laws
+      ]{geometry}
+  }
+%    \end{macrocode}
+% 
+%    \begin{macrocode}
+  {
+%    \end{macrocode}
+% Books have a smaller paper size. 
+%    \begin{macrocode}
+   \isBookContribution
+    {%%
+      \RequirePackage[
+          left      =2.05cm,
+          right     =2.05cm,
+          top       =1.8cm,
+          bottom    =0.75cm,
+          paperwidth=170mm,
+          paperheight=244mm,
+          footskip  =20pt,
+          headsep   =24pt,
+          includefoot,
+          footnotesep=0.6cm %moved from \skip\footins change for journal laws
+          ]{geometry}
+    }
+%    \end{macrocode}
+% The main geometry setting for the journals. A4 paper with a large left column
+% for journal, with a normal left margin for supfile.
+%    \begin{macrocode}
+    {
+     \mdpi@isSupfileTF
+      {
+        \RequirePackage
+         [
+          left          =\mdpi@len@hmargin,
+          right         =\mdpi@len@hmargin,
+          top           =\mdpi@len@topmargin,
+          bottom        =\mdpi@len@bottommargin,
+          footskip      =36pt,
+          headsep       =24pt,
+          includehead,
+          includefoot,
+          footnotesep=0.6cm %moved from \skip\footins change for journal laws
+          ]{geometry}        
+      }
+      {
+        \RequirePackage
+         [
+          left=\dimeval{\mdpi@len@hmargin+\mdpi@len@marginparwidth+\mdpi@len@marginparsep},%=5.87cm,
+          marginparwidth=\mdpi@len@marginparwidth,
+          marginparsep  =\mdpi@len@marginparsep,
+          right         =\mdpi@len@hmargin,
+          top           =\mdpi@len@topmargin,
+          bottom        =\mdpi@len@bottommargin,
+          footskip      =36pt,
+          headsep       =24pt,
+          includehead,
+          includefoot,
+          footnotesep=0.6cm %moved from \skip\footins change for journal laws
+          ]{geometry}
+        \AddToHook{begindocument}
+         {  
+           \fancyheadoffset[L]{\mdpi@len@marginpar}
+           \fancyfootoffset[L]{\mdpi@len@marginpar}% 
+         }  
+      }
+    }
+  }
+%    \end{macrocode}
+%
 % \subsection{Highlighting}
 % A simple command to put something in a yellow box:
 %    \begin{macrocode}
@@ -885,141 +1167,7 @@
 %    \end{macrocode}
 %
 %
-% \subsection{Journal conditionals}
-% The command \cs{@journaltype} used in the conditionals
-% is defined in \texttt{journalnames.tex} and is by default
-% (if no journal is specified and the journal name is \texttt{notspecified})
-% \texttt{ACS}.
-%
-% The command \cs{@arttype} is defined through the class options and
-% is by default \texttt{Article}.
-%
-% \subsubsection{Preprints}
-% This tests if the journal is a preprint type.
-% \begin{macro}{\isPreprints}
-%    \begin{macrocode}
-\ExplSyntaxOn
-\newcommand{\isPreprints}
- {
-  \str_case:onTF {\@journal}
-   {
-    {preprints}{}
-    {preprintschicago}{}
-    {preprintsapa}{}
-   }
- }
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsection{Supfiles} 
-% This tests if the arttype is a Supfile
-% 
-%    \begin{macrocode}
-\prg_new_conditional:Npnn \mdpi_is_Supfile: {TF,T,F}
- {
-   \tl_if_eq:NnTF\@arttype{Supfile}
-    {\prg_return_true:}
-    {\prg_return_false:}
- }
-\cs_new_eq:NN \mdpi@isSupfileTF \mdpi_is_Supfile:TF
-\cs_new_eq:NN \mdpi@isSupfileT  \mdpi_is_Supfile:T
-\cs_new_eq:NN \mdpi@isSupfileF  \mdpi_is_Supfile:F
-%    \end{macrocode}
-%
-% \subsection{Submit status}
-%    \begin{macrocode}
-\prg_new_conditional:Npnn \mdpi_is_submit: {TF,T,F}
- {
-   \tl_if_eq:NnTF\@status{submit}
-    {\prg_return_true:}
-    {\prg_return_false:}
- }
-\cs_new_eq:NN \mdpi@isSubmitTF \mdpi_is_submit:TF
-\cs_new_eq:NN \mdpi@isSubmitT  \mdpi_is_submit:T
-\cs_new_eq:NN \mdpi@isSubmitF  \mdpi_is_submit:F
-%    \end{macrocode}
-% \subsubsection{Books}
-% This tests if this a Book or a Monograph
-% \begin{macro}{\isBookContribution}
-%    \begin{macrocode}
-\newcommand\isBookContribution
- {
-   \str_case:onTF {\@arttype}
-    {
-      {Book}{}
-      {Monograph}{}
-    }
- }
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsubsection{Monographs}
-% \begin{macro}{\isMonograph}
-% This tests if this is a monograph
-%    \begin{macrocode}
-\newcommand\isMonograph
- {
-  \str_if_eq:onTF {\@arttype} {Monograph}
- }
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsubsection{Chicago style journals}
-% A test for journals that use the \texttt{mdpi\_chicago} bibliography style.
-% \begin{macro}{\isChicagoStyle}
-%    \begin{macrocode}
-\prg_new_conditional:Npnn \__mdpi_is_journal_chicagostyle: {TF,p}
- {
-   \str_if_eq:onTF {\@journaltype} {Chicago}
-    {\prg_return_true:}
-    {\prg_return_false:}
- }
-\newcommand\isChicagoStyle{\__mdpi_is_journal_chicagostyle:TF}
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsubsection{APA style journals}
-% Journals in \emph{APAstyle} use the package \pkg{mdpi_apacite} and the bibliography style
-% \texttt{mdpi\_apacite}.
-%
-% \begin{macro}{\isAPAStyle}
-%    \begin{macrocode}
-\prg_new_conditional:Npnn \__mdpi_is_journal_apastyle: {TF,p}
- {
-  \str_if_eq:onTF {\@journaltype} {APA}
-   {\prg_return_true:}
-   {\prg_return_false:}
- }
-\newcommand{\isAPAStyle}{\__mdpi_is_journal_apastyle:TF}
-%    \end{macrocode}
-% \end{macro}
-%
-% \subsubsection{APA or Chicago style journals}
-%
-% A combination of both tests: true if a journal is either APA or a Chicago style journal.
-% \begin{macro}{\isAPAorChicago,\isAPAandChicago}
-%    \begin{macrocode}
-\prg_new_conditional:Npnn \__mdpi_is_journal_apa_or_chicago_style: {TF}
- {
-   \bool_lazy_or:nnTF
-    { \__mdpi_is_journal_apastyle_p: }
-    { \__mdpi_is_journal_chicagostyle_p: }
-    {
-      \prg_return_true:
-    }
-    {
-      \prg_return_false:
-    }
- }
-\newcommand{\isAPAorChicago}{\__mdpi_is_journal_apa_or_chicago_style:TF}
-%    \end{macrocode}
-% For compatibility we provide an alias using \texttt{and}:
-%    \begin{macrocode}
-\let\isAPAandChicago\isAPAorChicago
-\ExplSyntaxOff
-%    \end{macrocode}
-% \end{macro}
-%
+
 % \subsection{References}
 % The default system is natbib, APA style journals use a local version
 % of the \pkg{apacite} package.
@@ -1245,7 +1393,8 @@
    notes-sep=0pt
  }
 %    \end{macrocode}
-% Kept for compatibility for documents still using `\printendnotes
+% Kept for compatibility for documents still using \cs{printendnotes} with the option
+% argument \texttt{[custom]}.
 %    \begin{macrocode}
 \DeclareInstance{enotez-list}{custom}{paragraph}
  {
@@ -1872,6 +2021,7 @@
 %    \end{macrocode}
 %
 % The \cs{@maketitle} command if \cs{@arttype} is a Supfile.
+% There is no large margin so we do not have to displace the title (issue \#236)
 % In this case the left column is empty so we do not have to set it.
 %    \begin{macrocode}
 \newcommand\mdpi@maketitle@Supfile
@@ -1879,9 +2029,7 @@
    \hbox{}
    \isPreprints
      {\vspace{0.92cm}}
-     {
-       \begin{adjustwidth}{-\mdpi@len@marginpar}{}
-     }
+     {}
    \begin{flushleft}[
      tagging-suppress-paras=true,
      tagging-recipe=standalone,
@@ -1898,9 +2046,6 @@
      \AssignStructureRole{para/textblock}{title-author}%
      \noindent\boldmath\bfseries{\@Author}
    \end{flushleft}
-   \isPreprints
-     {}
-     {\end{adjustwidth}}
  }
 %    \end{macrocode}
 % The \cs{@maketitle} command for the other cases.
@@ -3065,116 +3210,7 @@
 %    \end{macrocode}
 % \end{macro}
 
-% \subsection{Page layout}
-% \subsubsection{Dimensions}
-% The following dimensions are used by the main journal layout.
-% Preprints and books use different value set below directly.
-% The width of the left column, also used for \cs{marginparwidth}.
-%    \begin{macrocode}
-\newlength\mdpi@len@marginparwidth
-\setlength\mdpi@len@marginparwidth{4.1cm}
-%    \end{macrocode}
-% \cs{marginsep}
-%    \begin{macrocode}
-\newlength\mdpi@len@marginparsep
-\setlength\mdpi@len@marginparsep{0.50cm}
-%    \end{macrocode}
-% The outer margins of journals:
-%    \begin{macrocode}
-\newlength\mdpi@len@hmargin
-\setlength\mdpi@len@hmargin{1.27cm}
-\newlength\mdpi@len@topmargin
-\setlength\mdpi@len@topmargin{1.27cm}
-\newlength\mdpi@len@bottommargin
-\setlength\mdpi@len@bottommargin{1.08cm}
-%    \end{macrocode}
-%
-% \subsection{Calculated lengths}
-% The width of the left column plus \cs{marginsep}, 
-%    \begin{macrocode}
-\newlength\mdpi@len@marginpar
-\setlength\mdpi@len@marginpar
-   {\dimeval{\mdpi@len@marginparwidth+\mdpi@len@marginparsep}} % = 4.61cm
-%    \end{macrocode}
-% this length is the public version and used in the template:
-%    \begin{macrocode}
-\newlength\extralength
-\setlength\extralength{\mdpi@len@marginpar} % = 4.61cm
-%    \end{macrocode}
-% Width of the page minus the margins. 
-% TODO: that is too large for books. Is it used there?.
-%    \begin{macrocode}
-\newlength{\mdpi@len@bodywidth}
-\setlength{\mdpi@len@bodywidth}{\dimeval{\paperwidth - 2\mdpi@len@hmargin}}
-%    \end{macrocode}
-% TODO: check if a public length is needed.
-%    \begin{macrocode}
-\newlength{\fulllength}
-\setlength{\fulllength}{\mdpi@len@bodywidth}
-%    \end{macrocode}
-% \subsection{Layout}
-% Preprints have larger margins.
-%    \begin{macrocode}
-\isPreprints
-  {%
-    \RequirePackage
-      [%
-        left   =2.7cm,
-        right  =2.7cm,
-        top    =1.35cm,
-        bottom =1.08cm,
-        includehead,
-        includefoot,
-        footnotesep=0.6cm %moved from \skip\footins change for journal laws
-      ]{geometry}
-  }
-%    \end{macrocode}
-% 
-%    \begin{macrocode}
-  {
-%    \end{macrocode}
-% Books have a smaller paper size. 
-%    \begin{macrocode}
-   \isBookContribution
-    {%%
-      \RequirePackage[
-          left      =2.05cm,
-          right     =2.05cm,
-          top       =1.8cm,
-          bottom    =0.75cm,
-          paperwidth=170mm,
-          paperheight=244mm,
-          footskip  =20pt,
-          headsep   =24pt,
-          includefoot,
-          footnotesep=0.6cm %moved from \skip\footins change for journal laws
-          ]{geometry}
-      % needed? head is empty in book?    
-      %\fancyheadoffset[L]{\mdpi@len@marginpar}    
-    }
-%    \end{macrocode}
-% The main geometry setting for the journals. A4 paper with a large left column
-%    \begin{macrocode}
-    {
-      \RequirePackage
-       [
-        left=\dimeval{\mdpi@len@hmargin+\mdpi@len@marginparwidth+\mdpi@len@marginparsep},%=5.87cm,
-        marginparwidth=\mdpi@len@marginparwidth,
-        marginparsep  =\mdpi@len@marginparsep,
-        right         =\mdpi@len@hmargin,
-        top           =\mdpi@len@topmargin,
-        bottom        =\mdpi@len@bottommargin,
-        footskip      =36pt,
-        headsep       =24pt,
-        includehead,
-        includefoot,
-        footnotesep=0.6cm %moved from \skip\footins change for journal laws
-        ]{geometry}
-      \fancyheadoffset[L]{\mdpi@len@marginpar}
-      \fancyfootoffset[L]{\mdpi@len@marginpar}% 
-    }
-  }
-%    \end{macrocode}
+
 % \subsection{Landscape pages}
 % Commands for landscape page:
 % \begin{macro}{\startlandscape,\finishlandscape}
