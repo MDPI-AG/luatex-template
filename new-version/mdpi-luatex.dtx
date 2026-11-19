@@ -2657,10 +2657,6 @@
   \newcommand\mdpi@abstractkeywords
    {
 %    \end{macrocode}
-% For journal Applied Sciences:
-%    \begin{macrocode}
-    \mdpi@abstractnotes@display{Featured~Application}{\@featuredapplication}
-%    \end{macrocode}
 % 6. Highlights. Note that this requires a change in the template
 % as previously it redefines \cs{addhighlights} and not 
 % \cs{@addhighlights} to contain the actual text,
@@ -2669,6 +2665,10 @@
 %    \begin{macrocode}
     \tl_if_eq:NnT\@addhighlights{yes}{\cs_set_eq:NN\@addhighlights\addhighlights}
     \mdpi@abstractnotes@display{Highlights}{\@addhighlights}
+%    \end{macrocode}
+% For journal Applied Sciences:
+%    \begin{macrocode}
+    \mdpi@abstractnotes@display{Featured~Application}{\@featuredapplication}
 %    \end{macrocode}
 % A simple summary
 %    \begin{macrocode}
