@@ -391,7 +391,7 @@
 %
 % \subsubsection{Page style}
 %    \begin{macrocode}
-\RequirePackage{fancyhdr}
+\RequirePackage[nocheck]{fancyhdr}
 %    \end{macrocode}
 %
 % \subsubsection{Lists}
@@ -1020,7 +1020,7 @@
           top           =\mdpi@len@topmargin,
           bottom        =\mdpi@len@bottommargin,
           footskip      =36pt,
-          headsep       =24pt,
+          headsep       =24pt, 
           includehead,
           includefoot,
           footnotesep=0.6cm %moved from \skip\footins change for journal laws
@@ -1035,8 +1035,8 @@
           right         =\mdpi@len@hmargin,
           top           =\mdpi@len@topmargin,
           bottom        =\mdpi@len@bottommargin,
-          footskip      =36pt,
-          headsep       =24pt,
+          footskip      =36pt,         
+          headsep       =24pt, 
           includehead,
           includefoot,
           footnotesep=0.6cm %moved from \skip\footins change for journal laws
@@ -1162,7 +1162,6 @@
 %    \end{macrocode}
 %
 %
-
 % \subsection{References}
 % The default system is natbib, APA style journals use a local version
 % of the \pkg{apacite} package.
@@ -1422,6 +1421,7 @@
 % \subsection{Table and author notes}
 % The internal mark command. We use an optional argument to be able to suppress 
 % the \cs{textsuperscript}.
+% TODO: document
 %    \begin{macrocode}
 \ExplSyntaxOn
 \NewDocumentCommand\mdpi@fmark{sO{\textsuperscript}m}
@@ -1708,10 +1708,16 @@
 %    \end{macrocode}
 %
 % \subsection{Page styles}
+%
 %    \begin{macrocode}
-\renewcommand\headrule{} %% set line (from fancyhdr) in header to nothing
 \pagestyle{fancy}
 %    \end{macrocode}
+% The skip for the rule makes the head too large but we suppress the warning
+% when loading the package.
+%    \begin{macrocode}
+\renewcommand\headruleskip{8pt}
+%    \end{macrocode}
+%
 % \subsubsection{Standard journal pagestyle}
 % For the title page the plain style must be redefined.
 % The header is filled by the maketitle command.
@@ -1720,7 +1726,8 @@
   {
     \fancypagestyle{plain}
      {
-      \renewcommand{\footrulewidth}{0.4pt}
+      \renewcommand\headrulewidth{0pt}
+      \renewcommand\footrulewidth{0.4pt}
       \fancyhead{\null\vspace{8pt}} %?
       \fancyfoot[L]
        {
@@ -1747,31 +1754,27 @@
    \fancyhf{}
    \fancyhead[L]
     {
-     \footnotesize
+     \footnotesize\strut
      \mdpi@isSubmitTF
        {
-         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
+         Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
        }
        {
-         \null\vspace{2pt}\textit{\journalname}~ \textbf{\@pubyear},~ {\textit{\@pubvolume}}
+         \textit{\journalname}~ \textbf{\@pubyear},~ {\textit{\@pubvolume}}
          \tl_if_empty:NT\@continuouspages
           {
            ,~ \@articlenumber
           }
-         \\      
-         \rule{\mdpi@len@bodywidth}{0.4pt}
        }  
     }
    \fancyhead[R]
     { 
-      \footnotesize
+      \footnotesize\strut
       \tl_if_empty:NTF\@continuouspages
        {
          \thepage{}~ of~ \pageref*{LastPage}
        }
        {\thepage}
-      \\
-      \rule{\mdpi@len@bodywidth}{0.4pt}
     }
    \fancyfoot[R]{\footnotesize\url{https://doi.org/\@doinum}}   
  }
@@ -1782,16 +1785,16 @@
   {
    \fancypagestyle{plain}
      {
+      \renewcommand\headrulewidth{0pt}
       \fancyhf{}
       \fancyhead[R]
        {
-        \footnotesize 
+        \footnotesize \strut
         S\thepage{}~ of~ S\pageref*{LastPage}
-        \\\rule{\mdpi@len@bodywidth}{0.4pt}
        }
       \fancyhead[L]
        {
-        \footnotesize 
+        \footnotesize \strut
         \tl_if_eq:NnTF\@status{submit}
          {
            Version~ {\@ \today}~ submitted~ to~ \textit{\journalname}
@@ -1803,7 +1806,6 @@
            {S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}}%  
           .~{\url{https://doi.org/\@doinum}}   
          }             
-         \\\vspace{-2pt}\rule{\mdpi@len@bodywidth}{0.4pt}%
         }%
       }%
   } 
@@ -1812,28 +1814,24 @@
    \fancyhf{}
    \fancyhead[L]
     {
-     \footnotesize
+     \footnotesize\strut 
      \mdpi@isSubmitTF
        {
-         \vspace{2pt}Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
+         Version~ {\@ \today}~ submitted~ to~ {\textit{\journalname}}
        }
        {
          \textit{\journalname}~ \textbf{\@pubyear},~ \textit{\@pubvolume},~  %
          \tl_if_empty:NTF \@continuouspages
           {\@articlenumber.~}
           {%
-           S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}.~ %
+            S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}.~ %
           }%
          \url{https://doi.org/\@doinum}
        }%
-     \\      
-     \rule{\mdpi@len@bodywidth}{0.4pt}                 
     }
    \fancyhead[R]
     {
-      \footnotesize S\thepage{}~ of~ S\pageref*{LastPage}
-      \\
-      \rule{\mdpi@len@bodywidth}{0.4pt}
+      \footnotesize\strut S\thepage{}~ of~ S\pageref*{LastPage}
     }
    \fancyfoot[R]{\footnotesize \url{https://doi.org/\@doinum}}
  }
@@ -1851,11 +1849,15 @@
 %    \begin{macrocode}
 \isPreprints
  {
-   \fancypagestyle{plain}{\fancyhf{}}
+   \fancypagestyle{plain}
+    {
+     \fancyhf{}
+     \renewcommand\headrulewidth{0pt}
+    }
    \fancyhf{}
    \fancyhead[R]
     { 
-      \footnotesize
+      \footnotesize\strut
       \mdpi_is_Supfile:TF
        {
          S\thepage{}~ of~ S\pageref*{LastPage}
@@ -1878,6 +1880,7 @@
  {
    \fancyhf{}
    \fancyfoot[C]{\footnotesize\thepage}
+   \renewcommand\headrulewidth{0pt}
    \fancypagestyle{plain}[fancy]{}
  }
  {}
@@ -1890,9 +1893,10 @@
   \fancypagestyle{plain}
    {
      \fancyhf{}
+     \renewcommand\headrulewidth{0pt}
      \fancyfoot[L]
       {
-        \footnotesize%
+        \footnotesize
         \st{\textit{\journalname}~ \textbf{\@pubyear},~ \textit\@pubvolume, }%
         \tl_if_empty:NTF\@continuouspages
          {

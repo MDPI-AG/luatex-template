@@ -433,11 +433,6 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-bio.xml (end) -----------
 ============================================================
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 21.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{21.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
 LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
 (Font)              scaled to size 7.43994pt on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
@@ -542,6 +537,8 @@ Completed box being shipped out [1]
 ............\glue(\rightskip) 0.0
 ...........\glue 8.0
 ...........\glue 0.0
+........\glue 8.0
+........\rule(0.0+0.0)x525.23764
 ........\glue 0.0
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfliteral page <lua data reference ...>
@@ -1477,11 +1474,6 @@ File: example-image-10x16.pdf Graphic file (type pdf)
 <use example-image-10x16.pdf>
 Package luatex.def Info: example-image-10x16.pdf  used on input line ....
 (luatex.def)             Requested size: 94.25142pt x 150.80228pt.
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 19.45453pt, for example:
-(fancyhdr)                \setlength{\headheight}{19.45453pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-7.45453pt}.
 Completed box being shipped out [2]
 \vbox(742.04784+3.14552)x489.10277, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -1523,19 +1515,19 @@ Completed box being shipped out [2]
 ......\glue -130.88283
 ......\hbox(12.0+0.0)x525.23764, direction TLT
 .......\vbox(12.0+0.0)x525.23764, direction TLT
-........\hbox(16.309+3.14552)x525.23764, direction TLT
-.........\hbox(12.48499+0.0)x0.0, glue set - 525.23767fil, direction TLT
-..........\vbox(12.48499+0.0)x525.23764, direction TLT
-...........\hbox(7.33946+3.14552)x525.23764, glue set 166.85883fil, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\kern-0.288 (left margin)
+........\hbox(7.33946+3.14552)x525.23764, direction TLT
+.........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
+..........\vbox(7.33946+3.14552)x525.23764, direction TLT
+...........\hbox(7.33946+3.14552)x525.23764, glue set 166.71481fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(7.33946+3.14552)x0.0
 ............\TU/tg-pagella/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/tg-pagella/m/n/8 e
@@ -1622,8 +1614,6 @@ Completed box being shipped out [2]
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
-...........\glue 2.0
-...........\glue 0.0
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
 .........\vbox(0.0+0.0)x525.23764, direction TLT
@@ -1639,10 +1629,10 @@ Completed box being shipped out [2]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(16.309+3.14552)x0.0, glue set - 525.23767fil, direction TLT
+.........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(16.309+3.14552)x525.23764, direction TLT
-...........\hbox(5.824+0.16)x525.23764, glue set 506.20563fil, direction TLT
+..........\vbox(7.33946+3.14552)x525.23764, direction TLT
+...........\hbox(7.33946+3.14552)x525.23764, glue set 506.20563fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -1650,6 +1640,7 @@ Completed box being shipped out [2]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\rule(7.33946+3.14552)x0.0
 ............\TU/tg-pagella/m/n/8 2
 ............\TU/tg-pagella/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
@@ -1659,28 +1650,13 @@ Completed box being shipped out [2]
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
 ............\TU/tg-pagella/m/n/8 3
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\penalty 10000
-............\glue(\parfillskip) 0.0
-............\glue(\rightskip) 0.0
-...........\glue 0.0
-...........\glue(\parskip) 0.0
-...........\glue(\parskip) 0.0
-...........\glue(\baselineskip) 2.98553
-...........\hbox(7.33946+3.14552)x525.23764, direction TLT
-............\glue(\leftskip) 0.0 plus 1.0fil
-............\localpar
-.............\localinterlinepenalty=0
-.............\localbrokenpenalty=0
-.............\localleftbox=null
-.............\localrightbox=null
-............\hbox(0.0+0.0)x0.0, direction TLT
-............\hbox(0.4+0.0)x525.23764, direction TLT
-.............\rule(0.4+0.0)x525.23764
 ............\rule(7.33946+3.14552)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
-........\glue 0.0
+........\glue 8.0
+........\rule(0.4+0.0)x525.23764
+........\glue -0.4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
@@ -7467,11 +7443,6 @@ Completed box being shipped out [2]
 .\kern0.0
 .\pdfliteral page <lua data reference ...>
 <../example-image-10x16.pdf>
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 19.45453pt, for example:
-(fancyhdr)                \setlength{\headheight}{19.45453pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-7.45453pt}.
 Completed box being shipped out [3]
 \vbox(742.04784+3.14552)x489.10277, direction TLT
 .\hbox(0.0+0.0)x0.0, direction TLT
@@ -7513,19 +7484,19 @@ Completed box being shipped out [3]
 ......\glue -130.88283
 ......\hbox(12.0+0.0)x525.23764, direction TLT
 .......\vbox(12.0+0.0)x525.23764, direction TLT
-........\hbox(16.309+3.14552)x525.23764, direction TLT
-.........\hbox(12.48499+0.0)x0.0, glue set - 525.23767fil, direction TLT
-..........\vbox(12.48499+0.0)x525.23764, direction TLT
-...........\hbox(7.33946+3.14552)x525.23764, glue set 166.85883fil, direction TLT
-............\pdfliteral page <lua data reference ...>
-............\pdfliteral page <lua data reference ...>
-............\kern-0.288 (left margin)
+........\hbox(7.33946+3.14552)x525.23764, direction TLT
+.........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
+..........\vbox(7.33946+3.14552)x525.23764, direction TLT
+...........\hbox(7.33946+3.14552)x525.23764, glue set 166.71481fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\pdfliteral page <lua data reference ...>
+............\pdfliteral page <lua data reference ...>
+............\rule(7.33946+3.14552)x0.0
 ............\TU/tg-pagella/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/tg-pagella/m/n/8 e
@@ -7612,8 +7583,6 @@ Completed box being shipped out [3]
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
-...........\glue 2.0
-...........\glue 0.0
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
 .........\vbox(0.0+0.0)x525.23764, direction TLT
@@ -7629,10 +7598,10 @@ Completed box being shipped out [3]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(16.309+3.14552)x0.0, glue set - 525.23767fil, direction TLT
+.........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(16.309+3.14552)x525.23764, direction TLT
-...........\hbox(5.824+0.16)x525.23764, glue set 506.20563fil, direction TLT
+..........\vbox(7.33946+3.14552)x525.23764, direction TLT
+...........\hbox(7.33946+3.14552)x525.23764, glue set 506.20563fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
 ............\localpar
 .............\localinterlinepenalty=0
@@ -7640,6 +7609,7 @@ Completed box being shipped out [3]
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\rule(7.33946+3.14552)x0.0
 ............\TU/tg-pagella/m/n/8 3
 ............\TU/tg-pagella/m/n/8  
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
@@ -7649,28 +7619,13 @@ Completed box being shipped out [3]
 ............\glue(\spaceskip) 0.0 plus 1.0 minus 0.66667
 ............\TU/tg-pagella/m/n/8 3
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\penalty 10000
-............\glue(\parfillskip) 0.0
-............\glue(\rightskip) 0.0
-...........\glue 0.0
-...........\glue(\parskip) 0.0
-...........\glue(\parskip) 0.0
-...........\glue(\baselineskip) 2.98553
-...........\hbox(7.33946+3.14552)x525.23764, direction TLT
-............\glue(\leftskip) 0.0 plus 1.0fil
-............\localpar
-.............\localinterlinepenalty=0
-.............\localbrokenpenalty=0
-.............\localleftbox=null
-.............\localrightbox=null
-............\hbox(0.0+0.0)x0.0, direction TLT
-............\hbox(0.4+0.0)x525.23764, direction TLT
-.............\rule(0.4+0.0)x525.23764
 ............\rule(7.33946+3.14552)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
-........\glue 0.0
+........\glue 8.0
+........\rule(0.4+0.0)x525.23764
+........\glue -0.4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>

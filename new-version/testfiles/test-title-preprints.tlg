@@ -313,14 +313,14 @@ Completed box being shipped out [1]
 .\vbox(742.04784+0.0)x448.41554, direction TLT
 ..\glue -33.8586
 ..\vbox(775.90643+0.0)x443.86319, shifted 4.55235, direction TLT
-...\vbox(12.0+0.0)x443.86319, glue set 12.0fil, direction TLT
+...\vbox(12.0+0.0)x443.86319, glue set 4.0fil, direction TLT
 ....\glue 0.0 plus 1.0fil
 ....\pdflinkstate 1
-....\hbox(0.0+0.0)x443.86319, direction TLT
-.....\hbox(0.0+0.0)x443.86319, direction TLT
+....\hbox(8.0+0.0)x443.86319, direction TLT
+.....\hbox(8.0+0.0)x443.86319, direction TLT
 ......\glue 0.0 plus 1.0fil minus 1.0fil
-......\hbox(0.0+0.0)x443.86319, direction TLT
-.......\vbox(0.0+0.0)x443.86319, direction TLT
+......\hbox(8.0+0.0)x443.86319, direction TLT
+.......\vbox(8.0+0.0)x443.86319, direction TLT
 ........\hbox(0.0+0.0)x443.86319, direction TLT
 .........\hbox(0.0+0.0)x0.0, glue set - 443.86319fil, direction TLT
 ..........\vbox(0.0+0.0)x443.86319, direction TLT
@@ -363,7 +363,13 @@ Completed box being shipped out [1]
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
+........\glue 8.0
+........\pdfliteral page <lua data reference ...>
+........\pdfliteral page <lua data reference ...>
+........\rule(0.0+0.0)x443.86319
 ........\glue 0.0
+....\pdfliteral page <lua data reference ...>
+....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 25.0
 ...\glue(\lineskip) 0.0

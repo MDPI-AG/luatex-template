@@ -4,23 +4,12 @@ Don't change this file in any respect.
 12.815pt
 12.0004pt
 12.815pt
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 21.97998pt, for example:
-(fancyhdr)                \setlength{\headheight}{21.97998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-9.97998pt}.
 LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
 (Font)              scaled to size 7.43994pt on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
 (Font)              scaled to size 5.57996pt on input line ....
 [1
-<./Definitions/logo-mdpi.pdf>]
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 19.45453pt, for example:
-(fancyhdr)                \setlength{\headheight}{19.45453pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-7.45453pt}.
-[2] 
+<./Definitions/logo-mdpi.pdf>] [2] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (test-issue131.aux)
 ***************

@@ -49,11 +49,6 @@ LaTeX Font Info:    Font shape `TU/tg-pagella/bx/it' in size <7> not available
 (Font)              Font shape `TU/tg-pagella/b/it' tried instead on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella/bx/it' in size <5> not available
 (Font)              Font shape `TU/tg-pagella/b/it' tried instead on input line ....
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 19.45453pt, for example:
-(fancyhdr)                \setlength{\headheight}{19.45453pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-7.45453pt}.
 LaTeX Font Info:    Font shape `TU/tg-pagella/bx/n' in size <8> not available
 (Font)              Font shape `TU/tg-pagella/b/n' tried instead on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella/bx/n' in size <6> not available
@@ -101,11 +96,10 @@ Completed box being shipped out [1]
 ......\glue -130.88283
 ......\hbox(12.0+0.0)x525.23764, direction TLT
 .......\vbox(12.0+0.0)x525.23764, direction TLT
-........\hbox(16.309+3.14552)x525.23764, direction TLT
-.........\hbox(12.48499+0.0)x0.0, glue set - 525.23767fil, direction TLT
-..........\vbox(12.48499+0.0)x525.23764, direction TLT
-...........\hbox(7.33946+3.14552)x525.23764, glue set 166.85883fil, direction TLT
-............\kern-0.288 (left margin)
+........\hbox(7.33946+3.14552)x525.23764, direction TLT
+.........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
+..........\vbox(7.33946+3.14552)x525.23764, direction TLT
+...........\hbox(7.33946+3.14552)x525.23764, glue set 166.71481fil, direction TLT
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
@@ -113,6 +107,7 @@ Completed box being shipped out [1]
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
 ............\pdfliteral direct <lua data reference ...>
+............\rule(7.33946+3.14552)x0.0
 ............\TU/tg-pagella/m/n/8 V
 ............\kern-0.72 (font)
 ............\TU/tg-pagella/m/n/8 e
@@ -191,8 +186,6 @@ Completed box being shipped out [1]
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0 plus 1.0fil
 ............\glue(\rightskip) 0.0 plus 1.0fil
-...........\glue 2.0
-...........\glue 0.0
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\glue 0.0 plus 1.0fill
 .........\vbox(0.0+0.0)x525.23764, direction TLT
@@ -208,18 +201,18 @@ Completed box being shipped out [1]
 ...........\glue(\parfillskip) 0.0
 ...........\glue(\rightskip) 0.0 plus 1.0fil
 .........\glue 0.0 plus 1.0fill
-.........\hbox(16.309+3.14552)x0.0, glue set - 525.23767fil, direction TLT
+.........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-..........\vbox(16.309+3.14552)x525.23764, direction TLT
-...........\hbox(5.824+0.16)x525.23764, glue set 506.60565fil, direction TLT
+..........\vbox(7.33946+3.14552)x525.23764, direction TLT
+...........\hbox(7.33946+3.14552)x525.23764, glue set 506.20563fil, direction TLT
 ............\glue(\leftskip) 0.0 plus 1.0fil
-............\kern-0.2 (left margin)
 ............\localpar
 .............\localinterlinepenalty=0
 .............\localbrokenpenalty=0
 .............\localleftbox=null
 .............\localrightbox=null
 ............\hbox(0.0+0.0)x0.0, direction TLT
+............\rule(7.33946+3.14552)x0.0
 ............\TU/tg-pagella/m/n/8 1
 ............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
 ............\TU/tg-pagella/m/n/8 o
@@ -227,29 +220,13 @@ Completed box being shipped out [1]
 ............\glue(\spaceskip) 2.0 plus 1.0 minus 0.66667
 ............\TU/tg-pagella/m/n/8 1
 ............\hbox(0.0+0.0)x0.0, direction TLT
-............\penalty 10000
-............\kern-0.2 (right margin)
-............\glue(\parfillskip) 0.0
-............\glue(\rightskip) 0.0
-...........\glue 0.0
-...........\glue(\parskip) 0.0
-...........\glue(\parskip) 0.0
-...........\glue(\baselineskip) 2.98553
-...........\hbox(7.33946+3.14552)x525.23764, direction TLT
-............\glue(\leftskip) 0.0 plus 1.0fil
-............\localpar
-.............\localinterlinepenalty=0
-.............\localbrokenpenalty=0
-.............\localleftbox=null
-.............\localrightbox=null
-............\hbox(0.0+0.0)x0.0, direction TLT
-............\hbox(0.4+0.0)x525.23764, direction TLT
-.............\rule(0.4+0.0)x525.23764
 ............\rule(7.33946+3.14552)x0.0
 ............\penalty 10000
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
-........\glue 0.0
+........\glue 8.0
+........\rule(0.4+0.0)x525.23764
+........\glue -0.4
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\pdflinkstate 0
 ...\glue 24.0
