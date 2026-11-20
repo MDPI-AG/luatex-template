@@ -708,6 +708,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 .....\hbox(4.69+0.021)x3.5, shifted -3.29218, direction TLT
 ......\TU/tg-pagella/b/n/7 1
@@ -758,6 +759,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\TU/tg-pagella/b/n/7 2
@@ -794,6 +796,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\TU/tg-pagella/b/n/7 2

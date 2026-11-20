@@ -147,7 +147,7 @@ TEST 1: Show PDF Tags
        <?References objects="3" ?>
       <?MarkedContent page="1" ?>* 
      </footnotemark>
-     <?MarkedContent page="1" ?>and Firstname Lastname
+     <?MarkedContent page="1" ?>and Firstname Lastname 
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.0044"
         rolemaps-to="Lbl"
@@ -1841,6 +1841,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\hbox(4.69+0.021)x3.5, shifted -3.29218, direction TLT
@@ -1904,6 +1905,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
@@ -1948,6 +1950,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
@@ -1994,7 +1997,7 @@ Completed box being shipped out [1]
 .....\glue(\rightskip) -2.5 plus 1.0fil
 ....\penalty 20000
 ....\glue(\baselineskip) 4.08261
-....\hbox(8.23738+0.17)x525.23764, glue set 188.3463fil, shifted -130.88283, direction TLT
+....\hbox(8.23738+0.17)x525.23764, glue set 187.0963fil, shifted -130.88283, direction TLT
 .....\TU/tg-pagella/b/n/10 L
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 s
@@ -2005,6 +2008,9 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
+.....\TU/tg-pagella/b/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\hbox(4.774+0.042)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
