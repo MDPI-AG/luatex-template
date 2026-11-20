@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-11-20}
-\def\mdpiversion{v7.1u}
+\def\mdpiversion{v7.1v}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -1378,7 +1378,11 @@
 % \subsection{Endnotes}
 % TODO: perhaps better use a list template type for better tagging
 %    \begin{macrocode}
-\setenotez{backref=true}
+\setenotez{
+  backref=true,
+  list-name={\ifnum\value{endnote}=1 Note\else Notes\fi}
+  }
+
 \isBookContribution{}{\setenotez{totoc=section}}
 \EditInstance{enotez-list}{plain}
  {

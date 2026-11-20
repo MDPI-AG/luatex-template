@@ -1,0 +1,9 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\begin{document}
+abc\endnote{blub}
+
+\newpage\START\showoutput
+\printendnotes
+\end{document}
