@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-11-20}
-\def\mdpiversion{v7.1t}
+\def\mdpiversion{v7.1u}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -79,6 +79,7 @@
 % \end{syntax}
 % This command should be used inside the \cs{Author} command to set
 % the note markers. The marker should be numbers or the symbols used in the notes.
+% The command forces an unbreakable space at the begin.
 % \end{function}
 % 
 %\begin{function}{\affiliation}
@@ -2482,6 +2483,7 @@
 \NewDocumentCommand\authormark{sm}
  {
   \leavevmode
+  \tl_if_empty:nF{#2}{\unskip\nobreakspace}
   \clist_map_inline:nn {#2}
    { 
     \mdpi@fn@check 

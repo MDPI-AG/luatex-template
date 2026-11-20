@@ -357,7 +357,7 @@ Completed box being shipped out [1]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35481, glue set 532.91992fil, direction TLT
+...\vbox(706.18271+0.0)x394.35481, glue set 546.89838fil, direction TLT
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.22636fil, direction TLT
@@ -995,6 +995,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\hbox(4.69+0.021)x3.5, shifted -3.29218, direction TLT
@@ -1058,6 +1059,7 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
@@ -1129,9 +1131,9 @@ Completed box being shipped out [1]
 .....\kern-1.25 (right margin)
 .....\TU/tg-pagella/b/n/10  
 .....\glue(\rightskip) -2.5
-....\penalty 10000
-....\glue(\baselineskip) 5.12
-....\hbox(7.2+1.66)x394.35481, glue set - 0.01863, direction TLT
+....\penalty 20000
+....\glue(\baselineskip) 4.40782
+....\hbox(7.91217+1.66)x394.35481, glue set - 1.0, direction TLT
 .....\TU/tg-pagella/b/n/10 F
 .....\TU/tg-pagella/b/n/10 i
 .....\TU/tg-pagella/b/n/10 r
@@ -1241,11 +1243,9 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
 .....\TU/tg-pagella/b/n/10  
-.....\glue(\rightskip) -2.5
-....\penalty 10000
-....\glue(\baselineskip) 4.40782
-....\hbox(7.91217+0.0)x394.35481, glue set 383.8948fil, direction TLT
+.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\hbox(4.62+0.021)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
@@ -1274,7 +1274,7 @@ Completed box being shipped out [1]
 ....\glue 10.0 plus 4.0 minus 5.0
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
-....\glue(\baselineskip) 4.813
+....\glue(\baselineskip) 3.153
 ....\hbox(5.672+0.16)x394.35481, glue set 178.71341fil, direction TLT
 .....\pdfliteral page <lua data reference ...>
 .....\pdfliteral page <lua data reference ...>
