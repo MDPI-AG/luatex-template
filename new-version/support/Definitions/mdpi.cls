@@ -23,8 +23,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-11-09}
-\def\mdpiversion{v6.5e}
+\def\mdpidate{2026-11-17}
+\def\mdpiversion{v6.5f}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
 
@@ -224,6 +224,10 @@
          \OR \equal{\@journal}{preprintschicago}%
          \OR \equal{\@journal}{preprintsapa}%
 	}%
+}
+
+\newcommand{\isSupfile}{%
+	\ifthenelse{\equal{\@arttype}{Supfile}}%
 }
 
 %% Short date block (proceedings-style journals); long = Received/Revised/Accepted/Published.
@@ -678,15 +682,18 @@
 	\protected@xdef\cref@gcurrentlabel@temp{[#1][#2][\mdpi@cref@prefix]#4}%
 }
 
+% Ignore \hl error warning in the metadata
 \ifdef{\AddToHook}{
 \DeclareHookRule{begindocument}{hyperref}{before}{mdpi}
-	\AddToHook{begindocument/before}{ 
+	\AddToHook{begindocument/before}{
 		\hyperrefpackage
+		\pdfstringdefDisableCommands{\def\hl#1{#1}}
              \crefnameDefinitions
              \crefAppendixFix
 		}
 	}{
 	     \hyperrefpackage
+	     \pdfstringdefDisableCommands{\def\hl#1{#1}}
            \crefnameDefinitions
            \crefAppendixFix
 }
@@ -1056,9 +1063,9 @@
 						}{%
 						S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}%
 						}%
-					. {\url{https://doi.org/\@doinum}}%
+						. {\url{https://doi.org/\@doinum}}%
 					}%
-					\\\vspace{-2pt}\rule{\fulllength}{0.4pt}%
+					\\\rule{\fulllength}{0.4pt}%
 				}%
 			}%
 		}{
@@ -1090,9 +1097,11 @@
 \renewcommand{\@maketitle}{
 	\isBookContribution{% for books we have no logos, article type and narrow column
             }{% for journals and preprints we have logos, article type and narrow column
+		\isSupfile{}{%
 		\ifthenelse{\equal{\@leftcolumnsplit}{\@empty}}{% Default option for the left column
 			\marginnote[\contentleftcolumn]{}[\MyLen] % Bottom aligned
 			}{%
+		}
 		}
 		\isPreprints{\vspace{0.92cm}}{%
 		\begin{adjustwidth}{-\extralength}{}
@@ -1876,6 +1885,16 @@
 					headsep=24pt,
 					includefoot]{geometry}
 	}{
+	\isSupfile{%
+	\RequirePackage[left=1.27cm,
+				right=1.27cm,
+				top=1.27cm,
+				bottom=1.08cm,
+				footskip=36pt,
+				headsep=24pt,
+				includehead,
+				includefoot]{geometry}
+	}{
 	\RequirePackage[left=5.87cm, %1.27 cm + 0.51 cm + 4.1 cm = 5.87 cm (= 1.27 cm + marginparwidth + marginparsep)
 				marginparwidth=4.1cm,
 				marginparsep=0.51cm,
@@ -1887,13 +1906,17 @@
 				includehead,
 				includefoot]{geometry}
       }
+	}
 }
 
-%% Preprints have no left column: keep \begin{adjustwidth}{-\extralength} and \tabularx{\fulllength}.
+%% Preprints / Supfile have no left column: keep \begin{adjustwidth}{-\extralength} and \tabularx{\fulllength}.
 \isPreprints{%
 	\setlength{\extralength}{0pt}%
 	\setlength{\fulllength}{\textwidth}%
-}{}
+}{\isSupfile{%
+	\setlength{\extralength}{0pt}%
+	\setlength{\fulllength}{\textwidth}%
+}{}}
 
 \isPreprints{}{%
 \fancyheadoffset[L]{\extralength} % Header into the margin
@@ -1922,7 +1945,7 @@
 	\pdfpagewidth=\paperwidth
 	\newgeometry{layoutwidth=297mm, layoutheight=210 mm, left=1.27cm, right=1.27cm, top=1.27cm, bottom=1.08cm, includehead, includefoot}
 	\fancyheadoffset{0pt}
-	\captionsetup{margin={4.6cm,0cm}}
+	\isSupfile{\captionsetup{margin={0cm,0cm}}}{\captionsetup{margin={4.6cm,0cm}}}
 	}
 }
 
@@ -1966,7 +1989,7 @@
 }
 
 \RequirePackage{caption}
-\isPreprints{%
+\ifthenelse{\equal{\@journal}{preprints} \OR \equal{\@journal}{preprintschicago} \OR \equal{\@journal}{preprintsapa} \OR \equal{\@arttype}{Supfile}}{%
 \captionsetup[figure]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
 
 \captionsetup[scheme]{position=bottom,	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=on, justification=justified}
@@ -1999,6 +2022,33 @@
 
 \captionsetup[graph]{position=bottom, 	labelfont={bf, small, stretch=1.17}, labelsep=period, textfont={small, stretch=1.17}, aboveskip=6pt, belowskip=-6pt, singlelinecheck=off, justification=justified}
 }
+
+%% Preprints/Supfile: \centering only in \@floatboxreset; restore justify after [H].
+\newcommand{\mdpi@restore@justify}{%
+  \ifvmode\else\par\fi
+  \leftskip\z@skip
+  \rightskip\z@skip
+  \parfillskip=\z@ \@plus 1fil\relax
+}
+\newcommand{\mdpi@install@wide@floatcenter}{%
+  \AddToHook{cmd/@floatboxreset/after}{\centering}%
+  \AddToHook{env/figure/after}{\mdpi@restore@justify}%
+  \AddToHook{env/figure*/after}{\mdpi@restore@justify}%
+  \AddToHook{env/table/after}{\mdpi@restore@justify}%
+  \AddToHook{env/table*/after}{\mdpi@restore@justify}%
+  \AddToHook{env/listing/after}{\mdpi@restore@justify}%
+  \AddToHook{env/listing*/after}{\mdpi@restore@justify}%
+  \AddToHook{env/scheme/after}{\mdpi@restore@justify}%
+  \AddToHook{env/scheme*/after}{\mdpi@restore@justify}%
+  \AddToHook{env/chart/after}{\mdpi@restore@justify}%
+  \AddToHook{env/chart*/after}{\mdpi@restore@justify}%
+  \AddToHook{env/graph/after}{\mdpi@restore@justify}%
+  \AddToHook{env/graph*/after}{\mdpi@restore@justify}%
+  \AddToHook{env/boxenv/after}{\mdpi@restore@justify}%
+  \AddToHook{env/boxenv*/after}{\mdpi@restore@justify}%
+  \AddToHook{env/longfigurecaption/after}{\mdpi@restore@justify}%
+}
+\isPreprints{\mdpi@install@wide@floatcenter}{\isSupfile{\mdpi@install@wide@floatcenter}{}}
 
 %% Consecutive [H] / longfigurecaption: collapse to 12pt.
 \newif\ifmdpi@floatskip
@@ -2085,7 +2135,9 @@
     \small
     \isPreprints
       {\mdpi@tablefooter@preprint{#1}}
-      {\mdpi@tablefooter@journal{#1}}%
+      {\isSupfile
+        {\mdpi@tablefooter@preprint{#1}}
+        {\mdpi@tablefooter@journal{#1}}}%
   \endgroup
 }
 
@@ -2144,7 +2196,7 @@
 				}{%
 				S\@firstpage\ifnumcomp{\getpagerefnumber{LastPage}}{=}{\@firstpage}{}{--S\pageref*{LastPage}}. %
 				}%
-			{\url{https://doi.org/\@doinum}}%
+				{\url{https://doi.org/\@doinum}}%
 			}{%
 			{\null\vspace{2pt}\em\journalname\ }{\bfseries\@pubyear}, {\em \@pubvolume}%
 			\ifthenelse{\equal{\@continuouspages}{\@empty}}{%
@@ -2185,10 +2237,12 @@
 \isBookContribution{%
     }{%
       \isPreprints{}{%
+        \isSupfile{}{%
         \rfoot{%
 	   \fontsize{8}{8}\selectfont%
 	  {\url{https://doi.org/\@doinum}}%
      }
+        }%
   }
 }
 
