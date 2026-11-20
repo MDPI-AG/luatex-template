@@ -57,7 +57,7 @@ TEST 1: Show PDF Tags
        Layout:TextAlign="Start"
        rolemaps-to="P"
       >
-     <?MarkedContent page="1" ?>Firstname Lastname, Firstname Lastname and Firstname Lastname
+     <?MarkedContent page="1" ?>Firstname Lastname, Firstname Lastname and Firstname Lastname 
      <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.030"
         rolemaps-to="Lbl"
@@ -943,7 +943,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 5.85982
-....\hbox(8.06618+1.66)x525.23764, glue set 108.88882fil, shifted -130.88283, direction TLT
+....\hbox(8.06618+1.66)x525.23764, glue set 107.63882fil, shifted -130.88283, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -1034,6 +1034,9 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 a
 .....\TU/tg-pagella/b/n/10 m
 .....\TU/tg-pagella/b/n/10 e
+.....\penalty 10000
+.....\TU/tg-pagella/b/n/10  
+.....\glue(\spaceskip) 0.0 plus 1.25 minus 0.83333
 .....\hbox(4.774+0.042)x3.5, shifted -3.29218, direction TLT
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
