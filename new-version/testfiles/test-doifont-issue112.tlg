@@ -178,10 +178,6 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-doifont-issue112.xml (end) -----------
 ============================================================
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
 (Font)              scaled to size 7.43994pt on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be
@@ -1120,7 +1116,7 @@ Completed box being shipped out [1]
 ........\hbox(7.33946+3.14552)x0.0, glue set - 525.23767fil, direction TLT
 .........\glue 0.0 plus 1.0fil minus 1.0fil
 .........\vbox(7.33946+3.14552)x525.23764, direction TLT
-..........\hbox(7.33946+3.14552)x525.23764, glue set 393.54962fil, direction TLT
+..........\hbox(7.33946+3.14552)x525.23764, glue set 410.08563fil, direction TLT
 ...........\glue(\leftskip) 0.0 plus 1.0fil
 ...........\localpar
 ............\localinterlinepenalty=0
@@ -1131,54 +1127,54 @@ Completed box being shipped out [1]
 ...........\pdfstartlink(*+*)x* attr{/Subtype /Link /Border [0 0 0] /H /I /C [0.724708 0.4 0.717646] /A <</Type /Action /S /URI /URI (https://doi.org/10.3390/0000000) >>  /LTEX_position /isolated/StructParent 4/Contents (artifact)} action user{}
 ...........\mathon
 ...........\pdfliteral direct <lua data reference ...>
-...........\TU/lmtt/m/n/8 h
-...........\TU/lmtt/m/n/8 t
-...........\TU/lmtt/m/n/8 t
-...........\TU/lmtt/m/n/8 p
-...........\TU/lmtt/m/n/8 s
+...........\TU/tg-pagella/m/n/8 h
+...........\TU/tg-pagella/m/n/8 t
+...........\TU/tg-pagella/m/n/8 t
+...........\TU/tg-pagella/m/n/8 p
+...........\TU/tg-pagella/m/n/8 s
 ...........\glue(\thickmuskip) 0.0
-...........\TU/lmtt/m/n/8 :
-...........\TU/lmtt/m/n/8 /
-...........\TU/lmtt/m/n/8 /
+...........\TU/tg-pagella/m/n/8 :
+...........\TU/tg-pagella/m/n/8 /
+...........\TU/tg-pagella/m/n/8 /
 ...........\penalty 500
 ...........\glue(\thickmuskip) 0.0
-...........\TU/lmtt/m/n/8 d
-...........\TU/lmtt/m/n/8 o
-...........\TU/lmtt/m/n/8 i
+...........\TU/tg-pagella/m/n/8 d
+...........\TU/tg-pagella/m/n/8 o
+...........\TU/tg-pagella/m/n/8 i
 ...........\glue(\medmuskip) 0.0
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/lmtt/m/n/8 .
-...........\TU/lmtt/m/n/8 o
-...........\TU/lmtt/m/n/8 r
-...........\TU/lmtt/m/n/8 g
+...........\TU/tg-pagella/m/n/8 .
+...........\TU/tg-pagella/m/n/8 o
+...........\TU/tg-pagella/m/n/8 r
+...........\TU/tg-pagella/m/n/8 g
 ...........\glue(\thickmuskip) 0.0
-...........\TU/lmtt/m/n/8 /
+...........\TU/tg-pagella/m/n/8 /
 ...........\penalty 500
 ...........\glue(\thickmuskip) 0.0
-...........\TU/lmtt/m/n/8 1
-...........\TU/lmtt/m/n/8 0
+...........\TU/tg-pagella/m/n/8 1
+...........\TU/tg-pagella/m/n/8 0
 ...........\glue(\medmuskip) 0.0
 ...........\hbox(0.0+0.0)x0.0, direction TLT
 ...........\penalty 700
 ...........\glue(\medmuskip) 0.0
-...........\TU/lmtt/m/n/8 .
-...........\TU/lmtt/m/n/8 3
-...........\TU/lmtt/m/n/8 3
-...........\TU/lmtt/m/n/8 9
-...........\TU/lmtt/m/n/8 0
+...........\TU/tg-pagella/m/n/8 .
+...........\TU/tg-pagella/m/n/8 3
+...........\TU/tg-pagella/m/n/8 3
+...........\TU/tg-pagella/m/n/8 9
+...........\TU/tg-pagella/m/n/8 0
 ...........\glue(\thickmuskip) 0.0
-...........\TU/lmtt/m/n/8 /
+...........\TU/tg-pagella/m/n/8 /
 ...........\penalty 500
 ...........\glue(\thickmuskip) 0.0
-...........\TU/lmtt/m/n/8 0
-...........\TU/lmtt/m/n/8 0
-...........\TU/lmtt/m/n/8 0
-...........\TU/lmtt/m/n/8 0
-...........\TU/lmtt/m/n/8 0
-...........\TU/lmtt/m/n/8 0
-...........\TU/lmtt/m/n/8 0
+...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 0
+...........\TU/tg-pagella/m/n/8 0
 ...........\mathoff
 ...........\pdfendlink
 ...........\pdfliteral direct <lua data reference ...>
