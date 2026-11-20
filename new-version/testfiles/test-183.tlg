@@ -175,7 +175,7 @@ Completed box being shipped out [2]
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x394.35481, glue set 680.18707fil, direction TLT
+...\vbox(706.18271+0.0)x394.35481, glue set 667.37341fil, direction TLT
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 14.22636fil, direction TLT
@@ -185,11 +185,11 @@ Completed box being shipped out [2]
 ........\glue 0.0
 ........\glue 0.0
 .......\glue 14.22636
-....\pdfdest name{section*.1} xyz
-....\write1{\@writefile{toc}{\protect \contentsline {section}{Note}{\thepage }{section*.1}\protected@file@percent }}
 ....\pdfdest name{section*.2} xyz
+....\write1{\@writefile{toc}{\protect \contentsline {section}{Notes}{\thepage }{section*.2}\protected@file@percent }}
+....\pdfdest name{section*.3} xyz
 ....\glue(\topskip) 1.828
-....\hbox(8.172+0.204)x394.35481, glue set 183.96541fil, direction TLT
+....\hbox(8.172+0.204)x394.35481, glue set 181.3014fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -197,18 +197,19 @@ Completed box being shipped out [2]
 ......\localrightbox=null
 .....\hbox(0.0+0.0)x0.0, direction TLT
 .....\glue 0.0
-.....\write1{\new@label@record{heading*.0}{{pagenum}{\__property_code_pagenum: }}}
+.....\write1{\new@label@record{heading*.1}{{pagenum}{\__property_code_pagenum: }}}
 .....\TU/tg-pagella/b/n/12 N
 .....\kern-0.24 (font)
 .....\TU/tg-pagella/b/n/12 o
 .....\TU/tg-pagella/b/n/12 t
 .....\TU/tg-pagella/b/n/12 e
+.....\TU/tg-pagella/b/n/12 s
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
-.....\hbox(3.445+0.015)x10.50003, direction TLT
+.....\hbox(3.47+0.015)x10.50003, direction TLT
 ......\kern8.00003
-......\TU/tg-pagella/m/n/5 2
+......\TU/tg-pagella/m/n/5 4
 ....\penalty 10000
 ....\glue 3.0
 ....\glue(\parskip) 0.0 plus 1.0
@@ -247,7 +248,43 @@ Completed box being shipped out [2]
 .....\glue(\rightskip) 0.0
 .....\hbox(3.445+0.1)x10.50003, direction TLT
 ......\kern8.00003
-......\TU/tg-pagella/m/n/5 3
+......\TU/tg-pagella/m/n/5 5
+....\glue(\parskip) 0.0 plus 1.0
+....\glue(\parskip) 0.0
+....\glue(\baselineskip) 3.74405
+....\hbox(8.96295+0.108)x394.35481, glue set 360.63489fil, direction TLT
+.....\glue(\leftskip) 21.62393
+.....\localpar
+......\localinterlinepenalty=0
+......\localbrokenpenalty=0
+......\localleftbox=null
+......\localrightbox=null
+.....\hbox(8.96295+0.0)x0.0, glue set - 19.82164fil, direction TLT
+......\glue 0.0 plus 1.0fil minus 1.0fil
+......\hbox(6.0+0.018)x17.07164, shifted -2.96295, direction TLT
+.......\hbox(6.0+0.018)x17.07164, glue set 14.07164fil, direction TLT
+........\hbox(0.0+0.0)x0.0, shifted -6.0, direction TLT
+.........\pdfdest name{enz.2} xyz
+.........\penalty 10000
+........\pdfstartlink(*+*)x* attr{/Border [0 0 0] /H /I /C [0.701176 0.4 0.414118] } action goto name{enz.2.backref}
+........\pdfliteral direct <lua data reference ...>
+........\TU/tg-pagella/m/n/6 2
+........\pdfendlink
+........\glue 0.0 plus 1.0fil minus 1.0fil
+......\penalty 10000
+......\glue 0.5
+......\kern0.0
+......\glue(\spaceskip) 2.25 plus 1.125 minus 0.75
+.....\pdfliteral direct <lua data reference ...>
+.....\TU/tg-pagella/m/n/9 b
+.....\TU/tg-pagella/m/n/9 l
+.....\TU/tg-pagella/m/n/9 a
+.....\penalty 10000
+.....\glue(\parfillskip) 0.0 plus 1.0fil
+.....\glue(\rightskip) 0.0
+.....\hbox(3.445+0.1)x10.50003, direction TLT
+......\kern8.00003
+......\TU/tg-pagella/m/n/5 6
 ....\glue 0.0 plus 1.0fil
 ....\glue 0.0
 ....\glue 0.0 plus 0.0001fil

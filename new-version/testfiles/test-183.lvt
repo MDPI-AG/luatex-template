@@ -2,8 +2,10 @@
 \input{regression-test}
 \documentclass{mdpi-luatex}
 \begin{document}
-abc\endnote{blub}
+\tableofcontents
+abc\endnote{blub} \endnote{bla}
 
 \newpage\START\showoutput
+
 \printendnotes
 \end{document}

@@ -1458,7 +1458,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.23
-....\hbox(6.94+0.2)x394.35481, glue set 353.24478fill, direction TLT
+....\hbox(6.94+0.2)x394.35481, glue set 357.4848fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1479,7 +1479,6 @@ Completed box being shipped out [1]
 .....\kern-0.15 (font)
 .....\TU/tg-pagella/m/n/10 t
 .....\TU/tg-pagella/m/n/10 e
-.....\TU/tg-pagella/m/n/10 s
 .....\pdfendlink
 .....\penalty 10000
 .....\penalty 10000
@@ -2130,7 +2129,7 @@ Completed box being shipped out [1]
 ......\TU/tg-pagella/m/n/5 7
 ....\pdfdest name{section*.2} xyz
 ....\pdfdest name{section*.2} xyz
-....\write1{\@writefile{toc}{\protect \contentsline {section}{Notes}{\thepage }{section*.2}\protected@file@percent }}
+....\write1{\@writefile{toc}{\protect \contentsline {section}{Note}{\thepage }{section*.2}\protected@file@percent }}
 ....\penalty -300
 ....\glue 12.0
 ....\glue -12.2
@@ -2145,7 +2144,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 7.94801
-....\hbox(8.172+0.204)x394.35481, glue set 181.3014fil, direction TLT
+....\hbox(8.172+0.204)x394.35481, glue set 183.96541fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -2161,7 +2160,6 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/12 o
 .....\TU/tg-pagella/b/n/12 t
 .....\TU/tg-pagella/b/n/12 e
-.....\TU/tg-pagella/b/n/12 s
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0 plus 1.0fil
