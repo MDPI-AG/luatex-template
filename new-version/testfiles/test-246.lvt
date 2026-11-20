@@ -1,0 +1,13 @@
+% !TEX TS-program = LuaLaTeX
+\DocumentMetadata{tagging=on}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\Title{Title}
+\newcommand{\orcidauthorA}{0000-0000-0000-000X} 
+\Author{Firstname Lastname \authormark{1}\orcidA{}, Firstname Lastname \authormark{2}, Firstname Lastname, Firstname Lastname, Firstname Lastname, Firstname Lastname, Firstname Lastname  and Firstname Lastname \authormark{2,*} }
+\longauthorlist{yes}
+\begin{document}
+\START\showoutput
+test
+\SHOWPDFTAGS
+\end{document}
