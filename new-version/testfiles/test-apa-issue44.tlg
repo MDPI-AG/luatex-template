@@ -251,10 +251,6 @@ TEST 1: Show PDF Tags
 </PDF>
 -------- test-apa-issue44.xml (end) -----------
 ============================================================
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/tg-pagella-math/b/n' will be
 (Font)              scaled to size 7.43994pt on input line ....
 LaTeX Font Info:    Font shape `TU/tg-pagella-math-sf/b/n' will be

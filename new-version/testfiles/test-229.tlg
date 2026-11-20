@@ -703,7 +703,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.03404
-....\hbox(9.78595+15.78595)x394.35481, glue set 339.09149fil, direction TLT
+....\hbox(9.78595+15.78595)x394.35481, glue set 344.9248fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
 ......\localbrokenpenalty=0
@@ -725,8 +725,6 @@ Completed box being shipped out [1]
 .....\TU/tg-pagella/b/n/10 h
 .....\TU/tg-pagella/b/n/10 t
 .....\TU/tg-pagella/b/n/10 s
-.....\TU/tg-pagella/b/n/10 :
-.....\glue(\spaceskip) 3.33333 plus 2.5 minus 0.41666
 .....\penalty 10000
 .....\glue(\parfillskip) 0.0 plus 1.0fil
 .....\glue(\rightskip) 0.0
