@@ -26,7 +26,7 @@
 %%      v7.0: switch to lualatex
 %
 \def\mdpidate{2026-11-20}
-\def\mdpiversion{v7.1s}
+\def\mdpiversion{v7.1t}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2117,7 +2117,18 @@
       \hyphenpenalty=10000
       \tolerance=1000
       \boldmath\bfseries
-      \AssignStructureRole{para/textblock}{title-author}\@Author
+      \tl_if_empty:NTF \@longauthorlist      
+        {\AssignStructureRole{para/textblock}{title-author}\@Author}
+        {
+         {
+          \UseTaggingSocket{para/Off}
+          \UseTaggingSocket
+             {struct-mc}
+             {tag=title-author,parent=\g__mdpi_struct_title_tl}
+             {\noindent\@Author}
+          \par    
+         } 
+        }               
       \par
       \vspace{12pt}
      }%3
