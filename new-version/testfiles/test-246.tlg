@@ -55,94 +55,82 @@ TEST 1: Show PDF Tags
        id="ID.029"
        rolemaps-to="P"
       >
-     <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
+     <?MarkedContent page="1" ?>Firstname Lastname 
+     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
         id="ID.030"
-        rolemaps-to="Part"
+        rolemaps-to="Lbl"
        >
-      <text-block xmlns="https://www.latex-project.org/ns/dflt"
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
          id="ID.031"
          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-         Layout:TextAlign="Justify"
-         rolemaps-to="P"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
         >
-       <?MarkedContent page="1" ?>Firstname Lastname 
-       <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.032"
-          rolemaps-to="Lbl"
-         >
-        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.033"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextPosition="Sup"
-           rolemaps-to="Span"
-          >
-         <?MarkedContent page="1" ?>1
-        </text-fragment>
-       </footnotemark>
-       <Link xmlns="http://iso.org/pdf2/ssn"
-          id="ID.034"
-         >
-        <?MarkedContent page="1" ?>
-        <Span xmlns="http://iso.org/pdf2/ssn"
-           id="ID.035"
-           actualtext="ORCID"
-          >
-         <?MarkedContent page="1" ?>
-        </Span>
-        <?MarkedContent page="1" ?>
-        <?ReferencedObject type="Annot" page="1" ?>
-       </Link>
-       <?MarkedContent page="1" ?>, Firstname Lastname 
-       <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.036"
-          rolemaps-to="Lbl"
-         >
-        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.037"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextPosition="Sup"
-           rolemaps-to="Span"
-          >
-         <?MarkedContent page="1" ?>2
-        </text-fragment>
-       </footnotemark>
-       <?MarkedContent page="1" ?>, Firstname Lastname, Firstname Lastname, Firstname Lastname, Firstname Lastname, Firstname Lastname and Firstname Lastname 
-       <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.038"
-          rolemaps-to="Lbl"
-         >
-        <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-           id="ID.039"
-           xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-           Layout:TextPosition="Sup"
-           rolemaps-to="Span"
-          >
-         <?MarkedContent page="1" ?>2
-        </text-fragment>
-       </footnotemark>
-       <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.040"
-          xmlns:Layout="http://iso.org/pdf/ssn/Layout"
-          Layout:TextPosition="Sup"
-          rolemaps-to="Span"
-         >
-        <?MarkedContent page="1" ?>,
-       </text-fragment>
-       <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
-          id="ID.041"
-          rolemaps-to="Lbl"
-         >
-        <?MarkedContent page="1" ?>*
-       </footnotemark>
-      </text-block>
-     </semantic-para>
+       <?MarkedContent page="1" ?>1
+      </text-fragment>
+     </footnotemark>
+     <Link xmlns="http://iso.org/pdf2/ssn"
+        id="ID.032"
+       >
+      <?MarkedContent page="1" ?>
+      <Span xmlns="http://iso.org/pdf2/ssn"
+         id="ID.033"
+         actualtext="ORCID"
+        >
+       <?MarkedContent page="1" ?>
+      </Span>
+      <?MarkedContent page="1" ?>
+      <?ReferencedObject type="Annot" page="1" ?>
+     </Link>
+     <?MarkedContent page="1" ?>, Firstname Lastname 
+     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.034"
+        rolemaps-to="Lbl"
+       >
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.035"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
+        >
+       <?MarkedContent page="1" ?>2
+      </text-fragment>
+     </footnotemark>
+     <?MarkedContent page="1" ?>, Firstname Lastname, Firstname Lastname, Firstname Lastname, Firstname Lastname, Firstname Lastname and Firstname Lastname 
+     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.036"
+        rolemaps-to="Lbl"
+       >
+      <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+         id="ID.037"
+         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+         Layout:TextPosition="Sup"
+         rolemaps-to="Span"
+        >
+       <?MarkedContent page="1" ?>2
+      </text-fragment>
+     </footnotemark>
+     <text-fragment xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.038"
+        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
+        Layout:TextPosition="Sup"
+        rolemaps-to="Span"
+       >
+      <?MarkedContent page="1" ?>,
+     </text-fragment>
+     <footnotemark xmlns="https://www.latex-project.org/ns/dflt"
+        id="ID.039"
+        rolemaps-to="Lbl"
+       >
+      <?MarkedContent page="1" ?>*
+     </footnotemark>
     </title-author>
     <title-notes xmlns="https://www.latex-project.org/ns/local"
-       id="ID.042"
+       id="ID.040"
        rolemaps-to="semantic-para"
       >
      <affiliation xmlns="https://www.latex-project.org/ns/local"
-        id="ID.043"
+        id="ID.041"
         xmlns:Layout="http://iso.org/pdf/ssn/Layout"
         Layout:TextAlign="Start"
         rolemaps-to="text-block"
@@ -229,11 +217,11 @@ TEST 1: Show PDF Tags
     </semantic-para>
    </Aside>
    <semantic-para xmlns="https://www.latex-project.org/ns/dflt"
-      id="ID.044"
+      id="ID.042"
       rolemaps-to="Part"
      >
     <text-block xmlns="https://www.latex-project.org/ns/dflt"
-       id="ID.045"
+       id="ID.043"
        xmlns:Layout="http://iso.org/pdf/ssn/Layout"
        Layout:TextAlign="Justify"
        rolemaps-to="P"
@@ -242,7 +230,7 @@ TEST 1: Show PDF Tags
     </text-block>
    </semantic-para>
    <Artifact xmlns="http://iso.org/pdf2/ssn"
-      id="ID.046"
+      id="ID.044"
       title="Ignored link annotations"
      >
     <Link xmlns="http://iso.org/pdf2/ssn"
@@ -1576,8 +1564,8 @@ MathML statistic
 ==> 0 fitting MathML AF found
 ==> 0 MathML AF attached
 Package tagpdf Info: Finalizing the tagging structure:
-(tagpdf)             Writing out ~46 structure objects
-(tagpdf)             with ~41 'MC' leaf nodes.
+(tagpdf)             Writing out ~44 structure objects
+(tagpdf)             with ~40 'MC' leaf nodes.
 (tagpdf)             Be patient if there are lots of objects!
 Package tagpdf Info: writing ParentTree
 Package tagpdf Info: writing IDTree
@@ -1587,5 +1575,5 @@ Package tagpdf Info: writing NameSpaces
 Package tagpdf Info: writing StructElems
 Package tagpdf Info: writing Root
 ***************
-Compilation 1 of test file completed with exit status 1
-Compilation 2 of test file completed with exit status 1
+Compilation 1 of test file completed with exit status 0
+Compilation 2 of test file completed with exit status 0
