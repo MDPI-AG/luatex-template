@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-11-19}
-\def\mdpiversion{v7.1r}
+\def\mdpidate{2026-11-20}
+\def\mdpiversion{v7.1s}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -2632,6 +2632,7 @@
          \begin{mdpi@notes}[
            title=#1,
            caption-placement=standalone,
+           punct=,
            standalone-vspace=6pt,
            indent-first=false,
            body-decls+=\OmitIndent,
@@ -2653,6 +2654,7 @@
            title=\rule[\dimeval{-0.7\baselineskip-6pt}]{0pt}{0pt}\strut#1,
            caption-placement=standalone,
            body-decls+=\OmitIndent,
+           punct=,
            after-hspace=0pt,
            begin-vspace= 0pt,
            end-vspace  = 12pt,
