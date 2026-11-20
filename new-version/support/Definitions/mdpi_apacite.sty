@@ -12,10 +12,10 @@
 %% 
 %% This file is part of the `apacite' package.
 %% -------------------------------------------
-%% Updated on December 17, 2024
+%% Updated on October 17, 2026
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{mdpi_apacite}[2026-06-24 v6.03b apacite adapted for mdpi]
+\ProvidesPackage{mdpi_apacite}[2026-10-17 v6.03c apacite adapted for mdpi]
 
 %% apacite.sty : citation and reference list according to APA manual
 %% Written by Erik Meijer
@@ -1774,7 +1774,8 @@
     \def\url@APACrmstyle{\def\UrlFont{\rmfamily}\APACurlBreaks }%
     \def\url@APACsfstyle{\def\UrlFont{\sffamily}\APACurlBreaks }%
     \def\url@APACsamestyle{\def\UrlFont{}\APACurlBreaks }%
-    \urlstyle{APACtt}%
+    % MDPI: match body roman (texgyrepagella), not typewriter
+    \urlstyle{APACrm}%
   }{}%
 }
 \AtBeginDocument{%
