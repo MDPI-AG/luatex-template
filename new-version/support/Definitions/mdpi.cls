@@ -23,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% IDENTIFICATION
-\def\mdpidate{2026-11-17}
+\def\mdpidate{2026-11-21}
 \def\mdpiversion{v6.5f}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{Definitions/mdpi}[\mdpidate\ \mdpiversion\ MDPI paper class for pdflatex]
@@ -883,6 +883,45 @@
 \newcommand{\copyrightyear}[1]{\gdef\@copyrightyear{#1}}
 \def\@address{Address}
 \newcommand{\address}[2][]{\renewcommand{\firstargument}{#1}\gdef\@address{#2}}
+\providecommand*{\mdpi@multiplefootnotemarker}{3sp}
+\newcommand{\mdpi@fn@prepare}{%
+	\kern-\mdpi@multiplefootnotemarker
+	\kern\mdpi@multiplefootnotemarker\relax
+}
+\newcommand{\mdpi@fn@check}{%
+	\ifdim\lastkern=\mdpi@multiplefootnotemarker\relax
+		\edef\@x@sf{\the\spacefactor}%
+		\unkern
+		\unkern
+		\textsuperscript{,}%
+		\spacefactor\@x@sf\relax
+	\fi
+}
+\newcommand{\mdpi@authormark@item}[1]{%
+	\mdpi@fn@check
+	\in@{*}{#1}%
+	\ifin@
+		#1%
+	\else
+		\textsuperscript{#1}%
+	\fi
+	\mdpi@fn@prepare
+}
+\newcommand{\authormark}[1]{%
+	\leavevmode
+	\unskip\nobreakspace
+	\@for\mdpi@am@item:=#1\do{%
+		\expandafter\mdpi@authormark@item\expandafter{\mdpi@am@item}%
+	}%
+}
+\newcommand{\affiliation}[2]{%
+	\def\mdpi@affil@arg{#1}%
+	\ifx\mdpi@affil@arg\@empty
+		#2\par
+	\else
+		\makebox[\dist][l]{\textsuperscript{#1}}\ignorespaces#2\par
+	\fi
+}
 \newcommand{\corresfirstargument}{}
 \def\@corres{}
 \newcommand{\corres}[2][]{\renewcommand{\corresfirstargument}{#1}\gdef\@corres{#2}} 
@@ -2122,6 +2161,7 @@
 \newcommand{\mdpi@tablefooter@preprint}[1]{%
   \sbox{\mdpi@tablefooter@box}{#1}%
   \ifdim\wd\mdpi@tablefooter@box>\textwidth
+    \mdpi@restore@justify
     \parfillskip=\z@ plus 1fil
     \noindent #1\par
   \else
