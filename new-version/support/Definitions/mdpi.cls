@@ -2122,6 +2122,7 @@
 \newcommand{\mdpi@tablefooter@preprint}[1]{%
   \sbox{\mdpi@tablefooter@box}{#1}%
   \ifdim\wd\mdpi@tablefooter@box>\textwidth
+    \mdpi@restore@justify
     \parfillskip=\z@ plus 1fil
     \noindent #1\par
   \else
