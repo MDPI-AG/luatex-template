@@ -189,7 +189,6 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>
       </Figure>
-      <?MarkedContent page="1" ?>
      </text-block>
     </semantic-para>
    </float>
@@ -232,7 +231,6 @@ TEST 1: Show PDF Tags
         >
        <?MarkedContent page="1" ?>
       </Figure>
-      <?MarkedContent page="1" ?>
      </text-block>
     </semantic-para>
    </float>
@@ -1047,7 +1045,7 @@ Completed box being shipped out [1]
 ....\glue 6.0 plus 1.0 minus 1.0
 ....\vbox(268.1084+0.0)x394.35481, direction TLT
 .....\vbox(268.1084+0.0)x394.35481, direction TLT
-......\hbox(240.8994+0.0)x394.35481, glue set 70.6556fil, direction TLT
+......\hbox(240.8994+0.0)x394.35481, glue set 73.1556fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
@@ -1069,21 +1067,13 @@ Completed box being shipped out [1]
 ............\glue 0.0 plus 1.0fil minus 1.0fil
 ..........\kern321.2
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{figure.1} xyz
-.........\pdfdest name{figure.1} xyz
-.........\penalty 10000
-.......\kern0.0
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
+......\pdfdest name{figure.1} xyz
+......\pdfdest name{figure.1} xyz
 ......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces \protect \textit  {Cont.}}}{\thepage }{figure.1}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0
@@ -1138,7 +1128,7 @@ Completed box being shipped out [1]
 ....\glue(\lineskip) 1.0
 ....\vbox(268.1084+0.0)x394.35481, direction TLT
 .....\vbox(268.1084+0.0)x394.35481, direction TLT
-......\hbox(240.8994+0.0)x394.35481, glue set 70.6556fil, direction TLT
+......\hbox(240.8994+0.0)x394.35481, glue set 73.1556fil, direction TLT
 .......\localpar
 ........\localinterlinepenalty=0
 ........\localbrokenpenalty=0
@@ -1160,21 +1150,13 @@ Completed box being shipped out [1]
 ............\glue 0.0 plus 1.0fil minus 1.0fil
 ..........\kern321.2
 ..........\glue 0.0 plus 1.0fil minus 1.0fil
-.......\glue(\spaceskip) 2.5 plus 1.25 minus 0.83333
-.......\penalty 10000
-.......\hbox(0.0+0.0)x0.0, direction TLT
-........\hbox(0.0+0.0)x0.0, shifted -12.0004, direction TLT
-.........\pdfliteral page <lua data reference ...>
-.........\pdfliteral page <lua data reference ...>
-.........\pdfdest name{figure.1a} xyz
-.........\pdfdest name{figure.1a} xyz
-.........\penalty 10000
-.......\kern0.0
 .......\penalty 10000
 .......\glue(\parfillskip) 0.0 plus 1.0fil
 .......\glue(\rightskip) 0.0
 ......\pdfliteral page <lua data reference ...>
 ......\pdfliteral page <lua data reference ...>
+......\pdfdest name{figure.1a} xyz
+......\pdfdest name{figure.1a} xyz
 ......\write1{\@writefile{lof}{\protect \contentsline {figure}{\protect \numberline {1}{\ignorespaces ss}}{\thepage }{figure.1a}\protected@file@percent }}
 ......\glue 6.0
 ......\glue(\parskip) 0.0

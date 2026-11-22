@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-11-20}
-\def\mdpiversion{v7.1v}
+\def\mdpidate{2026-11-21}
+\def\mdpiversion{v7.1w}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -3438,12 +3438,15 @@
 % This should be replaced by templates once there are implemented in LaTeX.
 % Captions use the normal linespacing so have to reset the reduced
 % \cs{baselinestretch} (gh/131).
+% We also ensure that caption starts in vmode for issue \#255.
 %    \begin{macrocode}
 \abovecaptionskip=6pt
 \belowcaptionskip=6pt
 \AtBeginDocument
  {
+   \pretocmd\caption{\par}{}{}
    \long\def\@makecaption#1#2{%
+     \par
      \UseHookWithArguments{cmd/@makecaption/before}{2}{#1}{#2}%
      \vskip\abovecaptionskip
      \renewcommand\baselinestretch{1}%

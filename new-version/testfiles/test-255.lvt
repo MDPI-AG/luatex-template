@@ -1,0 +1,13 @@
+%!TEX TS-program = LuaLaTeX
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex}
+\usepackage{lipsum}
+\begin{document}
+\START\showoutput
+\begin{figure}[H]
+\includegraphics[width=15cm]{example-image}
+\caption{Test.}
+\label{figaa}
+\end{figure}
+\end{document}
