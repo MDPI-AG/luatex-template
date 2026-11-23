@@ -656,15 +656,21 @@
 % \begin{macro}{\isPreprints}
 %    \begin{macrocode}
 \ExplSyntaxOn
-\newcommand{\isPreprints}
+\prg_new_conditional:Npnn \mdpi_is_Preprints: {TF,T,F}
  {
-  \str_case:onTF {\@journal}
-   {
-    {preprints}{}
-    {preprintschicago}{}
-    {preprintsapa}{}
-   }
+   \str_case:onTF {\@journal}
+    {
+     {preprints}{}
+     {preprintschicago}{}
+     {preprintsapa}{}
+    }
+    {\prg_return_true:}
+    {\prg_return_false:}
  }
+\cs_new_eq:NN \mdpi@isPreprintsTF \mdpi_is_Preprints:TF
+\cs_new_eq:NN \mdpi@isPreprintsT  \mdpi_is_Preprints:T
+\cs_new_eq:NN \mdpi@isPreprintsF  \mdpi_is_Preprints:F 
+\cs_new_eq:NN \isPreprints \mdpi_is_Preprints:TF
 %    \end{macrocode}
 % \end{macro}
 %
@@ -972,7 +978,7 @@
 % \subsubsection{Layout}
 % Preprints have larger margins.
 %    \begin{macrocode}
-\isPreprints
+\mdpi@isPreprintsTF
   {%
     \RequirePackage
       [%
@@ -1790,8 +1796,7 @@
 \newcommand\mdpi@pagestyle@plain@supfile
   {
    \fancypagestyle{plain}
-     {
-      \renewcommand\headrulewidth{0pt}
+     {      
       \fancyhf{}
       \fancyhead[R]
        {
@@ -1853,7 +1858,7 @@
 % Preprints have an empty first page and on the other pages 
 % only page numbers in the right header.
 %    \begin{macrocode}
-\isPreprints
+\mdpi@isPreprintsT
  {
    \fancypagestyle{plain}
     {
@@ -1877,7 +1882,6 @@
        }
     }
  } 
- {}
 %    \end{macrocode}
 % \subsubsection{Books}
 % Books have on all page the page number in the footer, in the middle.
@@ -2028,11 +2032,9 @@
 % In this case the left column is empty so we do not have to set it.
 %    \begin{macrocode}
 \newcommand\mdpi@maketitle@Supfile
- {
-   \hbox{}
-   \isPreprints
+ {   
+   \mdpi@isPreprintsT
      {\vspace{0.92cm}}
-     {}
    \begin{flushleft}[
      tagging-suppress-paras=true,
      tagging-recipe=standalone,
@@ -2063,7 +2065,7 @@
 %   For this we calculate the needed offset in \cs{mdpi@len@leftcol@height} and move it down:
 %   In preprints the column is empty and we should avoid to tag it.
 %    \begin{macrocode}
-   \isPreprints
+   \mdpi@isPreprintsTF
      {
        \tl_if_empty:NT \@leftcolumnsplit
         {\SuspendTagging{}\marginnote[\contentleftcolumn]{}[\mdpi@len@leftcol@height]\ResumeTagging{}}
@@ -2082,8 +2084,7 @@
      ]
      \vspace*{-1.75cm}
      {%0
-      \isPreprints
-        {}
+      \mdpi@isPreprintsF
         {
          \vspace{-2pt}%
          \AssignStructureRole{para/textblock}{title-logos}
@@ -2114,9 +2115,7 @@
       {
        \end{flushleft}
        \UseTaggingSocket{struct/end}
-       \isPreprints
-         {}
-         {\end{adjustwidth}}
+       \mdpi@isPreprintsF{\end{adjustwidth}}
        \vspace{-2.5pt}
       }
      {%3
@@ -2142,8 +2141,7 @@
       {
         \end{flushleft}
         \UseTaggingSocket{struct/end}
-        \isPreprints
-          {}
+        \mdpi@isPreprintsF
           {\end{adjustwidth}}
       }     
      \tl_if_empty:NF \@leftcolumnsplit
@@ -2230,8 +2228,7 @@
 
 \newcommand{\leftcolDates}
  {%
-   \isPreprints
-    {}
+   \mdpi@isPreprintsF
     {\UseName{mdpi@datesblock@\@journaldatesblock}}%
  }
 %    \end{macrocode}
@@ -2242,8 +2239,7 @@
 %    \begin{macrocode}
 \newcommand{\leftcolumnCorrstatement}
  {%
-   \isPreprints
-    {}
+   \mdpi@isPreprintsF
     {%
       \ifthenelse
         {\equal{\@CorrStatement}{yes}}
@@ -2259,7 +2255,7 @@
 %    \begin{macrocode}
 \newcommand{\leftcolumnCright}
   {%
-    \isPreprints{}{\mdpi@text@copyright}%
+    \mdpi@isPreprintsF{\mdpi@text@copyright}%
   }
 %    \end{macrocode}
 % \end{macro}
@@ -2272,8 +2268,7 @@
  \newcommand{\contentleftcolumn}
   {%
     \leftcolFont
-    \isPreprints
-      {}
+    \mdpi@isPreprintsF
       {%
         \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
@@ -2334,8 +2329,7 @@
 % Split option 1
 \newcommand{\OptionOneA}{%
     \leftcolFont
-    \isPreprints
-      {}
+    \mdpi@isPreprintsF
       {%
         \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
@@ -2354,8 +2348,7 @@
 % Split option 2	
 \newcommand{\OptionTwoA}{%
     \leftcolFont
-    \isPreprints
-      {}
+    \mdpi@isPreprintsF
       {%
         \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
@@ -2375,8 +2368,7 @@
 % Split option 3
 \newcommand{\OptionThreeA}{%
     \leftcolFont
-    \isPreprints
-      {}
+    \mdpi@isPreprintsF
       {%
         \mdpi@isSubmitTF
          {\rule{0pt}{0.6cm}\par}
@@ -2923,7 +2915,7 @@
 % 
 % The backmatter is in a \env{adjustwidth} environment, we define a wrapper for this,
 %    \begin{macrocode}
-\isPreprints
+\mdpi@isPreprintsTF
  {\NewDocumentEnvironment{journalbackmatter}{}{}{}}
  {
    \NewDocumentEnvironment{journalbackmatter}{}
@@ -3266,7 +3258,7 @@
 \mdpi@len@portrait@paperheight= \paperheight
 \mdpi@len@portrait@paperwidth = \paperwidth
 \newcommand{\startlandscape}{%
-\isPreprints
+\mdpi@isPreprintsTF
   {
    \clearpage
    \UseName{pdf_pagesize_gset:nn}
@@ -3326,6 +3318,11 @@
 % In-text spacing
 %    \begin{macrocode}
 \intextsep=6.0pt plus 1.0pt minus 1.0pt
+%    \end{macrocode}
+% In preprints and supfiles the contents is always centered:
+%    \begin{macrocode}
+
+\AddToHook{cmd/@floatboxreset/before}{\centering}
 %    \end{macrocode}
 % New floating environments:
 %    \begin{macrocode}
@@ -3427,7 +3424,7 @@
 %
 % Why this??
 %    \begin{macrocode}
-\isPreprints
+\mdpi@isPreprintsTF
  {
   \captionsetup{singlelinecheck=on}
  }
