@@ -25,8 +25,8 @@
 %%      v6.0 layout change December 2025
 %%      v7.0: switch to lualatex
 %
-\def\mdpidate{2026-11-21}
-\def\mdpiversion{v7.1w}
+\def\mdpidate{2026-11-23}
+\def\mdpiversion{v7.1x}
 %<*driver>
 \DocumentMetadata{tagging=on}
 \documentclass{l3in2edoc}
@@ -1371,16 +1371,17 @@
      pdfauthor  ={\@AuthorNames}
    }%
  }
-\ExplSyntaxOff
 %    \end{macrocode}
 %
 
 % \subsection{Endnotes}
 % TODO: perhaps better use a list template type for better tagging
 %    \begin{macrocode}
+\newcounter{mdpi@cnt@endnotes}
+\pretocmd\enotez@note{\stepcounter{mdpi@cnt@endnotes}}{}{\fail}
 \setenotez{
   backref=true,
-  list-name={\ifnum\value{endnote}=1 Note\else Notes\fi}
+  list-name={\int_compare:nNnTF{\c@mdpi@cnt@endnotes}={1}{Note}{Notes}}
   }
 
 \isBookContribution{}{\setenotez{totoc=section}}
@@ -1400,7 +1401,7 @@
    number   =\textsuperscript{\makebox[6mm][l]{#1}},
    notes-sep=0pt
  }
-
+\ExplSyntaxOff
 %    \end{macrocode}
 %
 % \subsection{Footnotes}

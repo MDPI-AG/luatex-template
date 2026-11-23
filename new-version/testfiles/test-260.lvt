@@ -1,0 +1,8 @@
+\DocumentMetadata{}
+\input{regression-test}
+\documentclass{mdpi-luatex} 
+\begin{document}
+some text\endnote[a]{some text}, aaaa\endnote{more text}
+\newpage \START\showoutput
+\printendnotes
+\end{document}
