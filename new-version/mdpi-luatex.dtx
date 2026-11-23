@@ -3321,8 +3321,8 @@
 %    \end{macrocode}
 % In preprints and supfiles the contents is always centered:
 %    \begin{macrocode}
-
-\AddToHook{cmd/@floatboxreset/before}{\centering}
+\mdpi@isPreprintsT{\AddToHook{cmd/@floatboxreset/before}{\centering}}
+\mdpi@isSupfileT  {\AddToHook{cmd/@floatboxreset/before}{\centering}}
 %    \end{macrocode}
 % New floating environments:
 %    \begin{macrocode}
