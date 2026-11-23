@@ -1458,7 +1458,7 @@ Completed box being shipped out [1]
 ....\glue(\parskip) 0.0 plus 1.0
 ....\glue(\parskip) 0.0
 ....\glue(\baselineskip) 4.23
-....\hbox(6.94+0.2)x394.35481, glue set 357.4848fill, direction TLT
+....\hbox(6.94+0.2)x394.35481, glue set 353.24478fill, direction TLT
 .....\glue(\leftskip) 15.0
 .....\localpar
 ......\localinterlinepenalty=0
@@ -1479,6 +1479,7 @@ Completed box being shipped out [1]
 .....\kern-0.15 (font)
 .....\TU/tg-pagella/m/n/10 t
 .....\TU/tg-pagella/m/n/10 e
+.....\TU/tg-pagella/m/n/10 s
 .....\pdfendlink
 .....\penalty 10000
 .....\penalty 10000
