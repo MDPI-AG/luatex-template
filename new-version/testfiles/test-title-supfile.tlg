@@ -387,7 +387,7 @@ TEST 1: Show PDF Tags
        Layout:TextAlign="Justify"
        rolemaps-to="P"
       >
-     <?MarkedContent page="1" ?>xx44692389blub
+     <?MarkedContent page="1" ?>xx46530018blub
     </text-block>
    </semantic-para>
   </Document>
@@ -579,14 +579,14 @@ Completed box being shipped out [1]
 ............\glue(\parfillskip) 0.0
 ............\glue(\rightskip) 0.0
 ........\glue 8.0
-........\rule(0.0+0.0)x525.23764
-........\glue 0.0
+........\rule(0.4+0.0)x525.23764
+........\glue -0.4
 ....\pdfliteral page <lua data reference ...>
 ....\pdfliteral page <lua data reference ...>
 ....\pdflinkstate 0
 ...\glue 24.0
 ...\glue(\lineskip) 0.0
-...\vbox(706.18271+0.0)x525.23764, glue set 614.95703fil, direction TLT
+...\vbox(706.18271+0.0)x525.23764, glue set 642.99402fil, direction TLT
 ....\vbox(0.0+0.0)x0.0, direction TLT
 .....\hbox(0.0+0.0)x0.0, direction TLT
 ......\hbox(0.0+0.0)x0.0, glue set - 11.0fil, direction TLT
@@ -600,13 +600,7 @@ Completed box being shipped out [1]
 ....\pdfcolorstack 0 push {0 g 0 G}
 ....\pdfdest name{Doc-Start} xyz
 ....\pdfdest name{Doc-Start} xyz
-....\glue(\topskip) 10.0
-....\hbox(0.0+0.0)x0.0, direction TLT
-....\penalty -51
-....\glue 10.0 plus 4.0 minus 5.0
-....\glue(\parskip) 0.0 plus 1.0
-....\glue(\parskip) 0.0
-....\glue(\baselineskip) 8.04
+....\glue(\topskip) 0.0
 ....\hbox(12.96+4.788)x525.23764, glue set 111.81181fil, direction TLT
 .....\localpar
 ......\localinterlinepenalty=0
@@ -722,13 +716,13 @@ Completed box being shipped out [1]
 .....\savepos
 .....\write1{\new@label@record{title}{{ypos}{\__property_code_ypos: }}}
 .....\TU/tg-pagella/m/n/10 4
-.....\TU/tg-pagella/m/n/10 4
 .....\TU/tg-pagella/m/n/10 6
-.....\TU/tg-pagella/m/n/10 9
-.....\TU/tg-pagella/m/n/10 2
+.....\TU/tg-pagella/m/n/10 5
 .....\TU/tg-pagella/m/n/10 3
+.....\TU/tg-pagella/m/n/10 0
+.....\TU/tg-pagella/m/n/10 0
+.....\TU/tg-pagella/m/n/10 1
 .....\TU/tg-pagella/m/n/10 8
-.....\TU/tg-pagella/m/n/10 9
 .....\TU/tg-pagella/m/n/10 b
 .....\TU/tg-pagella/m/n/10 l
 .....\TU/tg-pagella/m/n/10 u
